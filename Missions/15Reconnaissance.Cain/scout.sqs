@@ -1,0 +1,161 @@
+setacctime 1
+
+leader roman groupradio "15r08"
+
+~5
+
+titlecut ["", "black out", 4]
+
+~5
+
+setacctime 1
+
+us_off playmove "FxToHand"
+talk switchmove "effectstandtalk"
+sitdown switchmove "effectstandsitdown"
+
+[] exec "dip.sqs"
+
+aP setpos getmarkerpos "playerReturn"
+aP setunitpos "up"
+aP setdir 160
+aP action ["weaponinhand"]
+
+Double setpos getmarkerpos "playerBase"
+
+
+_camera = "camera" camCreate [0,0,0] 
+_camera cameraEffect ["internal","back"]
+
+
+titlecut ["", "black in", 2]
+
+
+ShowCinemaBorder false
+CutRSC ["binocular","plain down",0.05]
+
+
+;=== 15:17:09
+_camera camSetTarget [-45001.73,93067.66,-10188.25]
+_camera camSetPos [6347.63,7874.60,2.00]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~2
+
+;=== 15:17:19
+_camera camSetTarget [7036.78,106508.22,-16382.39]
+_camera camSetPos [6347.63,7874.60,2.00]
+_camera camSetFOV 0.149
+_camera camCommit 4
+@camCommitted _camera
+
+~0.5
+
+;=== 15:17:30
+_camera camSetTarget [-16335.61,103475.63,-18520.94]
+_camera camSetPos [6347.63,7874.60,2.00]
+_camera camSetFOV 0.149
+_camera camCommit 5
+@camCommitted _camera
+
+~2
+
+;=== 15:17:43
+_camera camSetTarget [-36120.64,96477.82,-18521.24]
+_camera camSetPos [6347.63,7874.60,2.00]
+_camera camSetFOV 0.149
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 15:18:16
+_camera camSetTarget [-59230.34,75591.44,-33298.15]
+_camera camSetPos [6347.63,7874.60,2.00]
+_camera camSetFOV 0.149
+_camera camCommit 6
+@camCommitted _camera
+
+~0.5
+
+;=== 15:18:33
+_camera camSetTarget [-77651.80,56584.30,-23827.28]
+_camera camSetPos [6347.63,7874.60,2.00]
+_camera camSetFOV 0.149
+_camera camCommit 4
+@camCommitted _camera
+
+Double say "15v29"
+
+
+;=== 15:18:40
+_camera camSetTarget [-82525.77,42677.35,-29760.10]
+_camera camSetPos [6347.63,7874.60,2.00]
+_camera camSetFOV 0.149
+_camera camCommit 5
+@camCommitted _camera
+
+aP sideradio "15r09"
+Lemontov sideradio "15r10"
+
+;=== 15:18:53
+_camera camSetTarget [-85173.06,38943.14,-25587.64]
+_camera camSetPos [6347.63,7874.60,2.00]
+_camera camSetFOV 0.149
+_camera camCommit 3
+@camCommitted _camera
+
+~4
+
+;=== 15:21:37
+_camera camSetTarget [-80838.34,47967.21,-28050.67]
+_camera camSetPos [6347.63,7874.60,2.00]
+_camera camSetFOV 0.232
+_camera camCommit 5
+@camCommitted _camera
+
+~2
+
+ShowCinemaBorder true
+CutRSC ["Default","Plain Down",100]
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+titlecut ["", "black in", 1]
+
+aP setpos getmarkerpos "playerReturn"
+
+deletevehicle Double
+
+~1
+
+toConvoy=true
+
+"3" objstatus "done"
+
+Lemontov sideradio "15r11"
+
+"BaseDeer" setmarkertype "Warning"
+
+~45
+
+setacctime 1
+
+Lemontov sideradio "15r12"
+
+leader leonid sideradio "15r13"
+
+Lemontov sideradio "15r14"
+
+~15
+
+toBase=true
+
+"Escape" setmarkertype "End"
+
+"4" objstatus "failed"
+
+"5" objstatus "active"
+
+exit

@@ -1,0 +1,51 @@
+"5" objstatus "done"
+
+enableradio false
+
+setacctime 1
+
+_camera = "camera" camCreate [0,0,0] 
+_camera cameraEffect ["internal","back"]
+
+
+
+
+;=== 15:26:04
+_camera camSetTarget [-43083.98,74204.57,-54528.48]
+_camera camSetPos [6718.90,7125.88,26.86]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+
+titletext [ localize "STRC_END_SUCCESS","plain"]
+
+;=== 15:26:10
+_camera camSetTarget [-38518.92,68055.95,-64698.24]
+_camera camSetPos [6718.90,7125.88,31.94]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+
+;=== 15:26:48
+_camera camSetTarget [-28310.88,68127.38,-71089.52]
+_camera camSetPos [6536.52,7439.09,102.30]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+
+;=== 15:27:32
+_camera camSetTarget [-20751.55,77684.23,-65895.41]
+_camera camSetPos [6365.80,7758.04,132.33]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+~0.5
+titlecut ["","black out",2]
+~3
+end=true
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit

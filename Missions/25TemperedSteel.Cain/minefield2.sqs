@@ -1,0 +1,67 @@
+setacctime 1
+
+aP sideradio "25r08"
+
+"3" objstatus "done"
+
+"Minefield2" setmarkercolor "ColorGreen"
+
+~2
+
+secondMinefieldDone=true
+
+~10
+
+savegame
+
+~2
+
+setacctime 1
+
+aP sideradio "25r09"
+
+leader yuri sideradio "25r10"
+
+leader ulyana sideradio "25r11"
+
+~20
+
+aP groupradio "25r12"
+
+~4
+
+yashin setpos getmarkerpos "yashin_1"
+y1 setpos getmarkerpos "y1_1"
+y2 setpos getmarkerpos "y2_1"
+y3 setpos getmarkerpos "y3_1"
+y4 setpos getmarkerpos "y4_1"
+y5 setpos getmarkerpos "y5_1"
+y6 setpos getmarkerpos "y6_1"
+y7 setpos getmarkerpos "y7_1"
+y8 setpos getmarkerpos "y8_1"
+
+[engineer1, engineer2, engineer3] join grpnull
+[yashin, y1, y2, y3, y4, y5, y6, y7, y8] join aP
+
+engineer1 domove getmarkerpos "engineersAway"
+engineer2 domove getmarkerpos "engineersAway"
+engineer3 domove getmarkerpos "engineersAway"
+
+~1
+
+yashin groupradio "25r13"
+
+~5
+
+1 SetRadioMsg localize "STRM_RADIO_ATTACK"
+2 SetRadioMsg localize "STRM_RADIO_ATTACK_CHOPPERS"
+
+hint localize "STRM_RADIO_ATTACK_HINT"
+
+~30
+
+deletevehicle engineer1
+deletevehicle engineer2
+deletevehicle engineer3
+
+exit

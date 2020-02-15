@@ -1,0 +1,42 @@
+
+setacctime 1
+
+Hlidka=Hlidka+1
+
+? Hlidka == 1  : goto "first_hlidka"
+
+? Hlidka == 2  : goto "second_hlidka"
+
+aP groupradio "16r04"
+
+"2" objstatus "done"
+
+aP addrating 200
+
+Splneno=Splneno+1
+
+patrolDone=true
+
+goto "end"
+
+#first_hlidka
+
+aP groupradio "16r02"
+
+aP addrating 200
+
+goto "end"
+
+#second_hlidka
+
+aP groupradio "16r03"
+
+aP addrating 200
+
+#end
+
+~2
+
+savegame
+
+exit

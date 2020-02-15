@@ -1,0 +1,138 @@
+version=11;
+class Mission
+{
+	randomSeed=5623299;
+	class Intel
+	{
+		resistanceWest=0.000000;
+		resistanceEast=1.000000;
+		startWeather=0.800000;
+		startFog=0.500000;
+		forecastWeather=0.843922;
+		forecastFog=0.787894;
+		month=11;
+		day=7;
+		minute=55;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={5924.250488,89.988632,5900.373047};
+					azimut=115.000000;
+					id=0;
+					side="EAST";
+					vehicle="Ural";
+					lock="LOCKED";
+					skill=0.200000;
+					text="auto";
+					init="group this allowfleeing 0; group this setgroupid [""CHARLIE"",""GROUPCOLOR0""]; charlie = group this; this lock true; ClearWeaponCargo this;  ClearMagazineCargo this";
+				};
+				class Item1
+				{
+					position[]={5904.282715,91.479492,5905.454590};
+					azimut=115.000000;
+					id=1;
+					side="EAST";
+					vehicle="Ural";
+					skill=0.200000;
+					text="nakladak";
+					init="ClearWeaponCargo this;  ClearMagazineCargo this";
+				};
+				class Item2
+				{
+					position[]={5942.300781,88.282791,5891.520508};
+					azimut=115.000000;
+					id=2;
+					side="EAST";
+					vehicle="UralRefuel";
+					rank="CORPORAL";
+					skill=0.200000;
+					text="fuel";
+				};
+				class Item3
+				{
+					position[]={5964.141113,86.344215,5883.794922};
+					azimut=115.000000;
+					id=3;
+					side="EAST";
+					vehicle="UralReammo";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.600000;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={5978.036133,84.624779,5876.971680};
+					combatMode="BLUE";
+					formation="COLUMN";
+					speed="FULL";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={6454.243652,72.465782,5624.406250};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6270.360840,91.129242,5947.689941};
+					id=4;
+					side="EAST";
+					vehicle="SoldierEB";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.600000;
+					init="this exec ""foto.sqs""";
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	randomSeed=9470979;
+	class Intel
+	{
+	};
+};
+class OutroWin
+{
+	randomSeed=5454339;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=4606979;
+	class Intel
+	{
+	};
+};

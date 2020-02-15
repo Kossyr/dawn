@@ -1,0 +1,54 @@
+0 fademusic 0
+titlecut ["","black in",5]
+
+setacctime 1
+
+baza = [East,"HQ"]
+
+heli lock true
+
+victory=false
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 17:55:42
+_camera camSetTarget heli
+_camera camSetPos [5105.01,2288.54,51.48]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+enableradio false
+playmusic "7thDecide"
+
+0 fademusic 0.1
+0 fadesound 0.1
+
+~10
+
+titlecut ["","white out",1]
+
+~1
+2 fademusic 0.1
+2 fadesound 0.1
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+titlecut ["","white in",1]
+
+~3
+Dostoevsky say "01v01"
+
+~13.5
+Dostoevsky say "01v02"
+
+~12
+Dostoevsky say "01v03"
+
+~1
+
+9 fadesound 1
+10 fademusic 0.4
+
+exit

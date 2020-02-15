@@ -1,0 +1,22 @@
+
+setacctime 1
+
+aP addrating 100
+
+AADestroyed=AADestroyed+1
+
+? AADestroyed == 3 : goto "all_aa" ;
+
+baza sideradio "25r23"
+
+goto "ex"
+
+#all_aa
+
+baza sideradio "25r24"
+
+"6" objstatus "done"
+
+#ex
+
+exit

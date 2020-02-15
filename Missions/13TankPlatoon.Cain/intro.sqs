@@ -1,0 +1,115 @@
+
+titlecut["","black in", 3]
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+playMusic "track5"
+off setmimic "normal"
+kukuschkin setmimic "normal"
+setacctime 1
+
+off setpos getmarkerpos "off"
+
+;=== 15:31:22
+_camera camSetTarget [-47838.65,88728.28,-19844.90]
+_camera camSetPos [7757.20,8090.03,11.16]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 15:32:11
+_camera camSetTarget [-88341.75,-8920.58,-21488.30]
+_camera camSetPos [7757.07,8097.87,7.63]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+~1
+;=== 15:34:23
+_camera camSetTarget tanky
+_camera camSetPos [7753.67,8107.98,1.20]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+@vylozil
+;=== 15:34:55
+_camera camSetTarget kukuschkin
+_camera camSetPos [7776.23,8107.17,3.48]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 15:35:09
+_camera camSetTarget kukuschkin
+_camera camSetPos [7764.48,8106.78,3.04]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+@dosel
+~0.4
+kukuschkin stop true
+kukuschkin setpos getmarkerpos "kukuschkin"
+kukuschkin setdir 275
+;=== 9:35:43
+_camera camSetTarget kukuschkin
+_camera camSetPos [7756.76,8106.81,1.49]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+1 fademusic 0.2
+kukuschkin say "13v01"
+kukuschkin playmove "effectstandsalute"
+~3
+kukuschkin playmove "effectstand"
+~1
+;=== 9:36:38
+_camera camSetTarget off
+_camera camSetPos [7759.34,8106.53,1.65]
+_camera camSetFOV 0.2
+_camera camCommit 0
+@camCommitted _camera
+off say "13v02"
+~4
+;=== 9:38:02
+_camera camSetTarget off
+_camera camSetPos [7757.01,8107.03,1.50]
+_camera camSetFOV 0.4
+_camera camCommit 0
+@camCommitted _camera
+off playmove "effectstandtalk"
+off say "13v03"
+~7
+;=== 9:38:50
+_camera camSetTarget kukuschkin
+_camera camSetPos [7757.06,8106.94,1.51]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+kukuschkin say "13v04"
+~4
+;=== 9:39:09
+_camera camSetTarget off
+_camera camSetPos [7757.06,8106.94,1.51]
+_camera camSetFOV 0.4
+_camera camCommit 0
+@camCommitted _camera
+off say "13v05"
+~8
+;=== 9:40:06
+_camera camSetTarget kukuschkin
+_camera camSetPos [7756.79,8106.88,1.49]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+kukuschkin setmimic "normal"
+kukuschkin say "13v06"
+kukuschkin playmove "effectstandsalute"
+titlecut ["","black out",3]
+~1
+kukuschkin playmove "effectstandsaluteend"
+3 fademusic 0
+~3
+end=true
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit

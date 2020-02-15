@@ -1,0 +1,64 @@
+titlecut ["","black out",2]
+tankisti=true
+setacctime 1
+~2
+setacctime 1
+aP action ["EJECT"]
+UnassignVehicle aP
+aP setpos getmarkerpos "aP"
+tankaP setpos getmarkerpos "tankaP"
+~1
+setacctime 1
+aP action ["WEAPONONBACK"]
+tankaP setpos getmarkerpos "tankaP"
+aP setpos getmarkerpos "aP"
+aP setdir 185
+tankaP setdir 185
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+~1
+titlecut ["","black in",3]
+;=== 18:08:07
+_camera camSetTarget aP
+_camera camSetPos [6896.02,6764.26,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+aP say "13v07"
+~0.5
+aP playmove "effectstandsalute"
+~2
+;=== 18:09:07
+_camera camSetTarget Forlov
+_camera camSetPos [6895.92,6762.43,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+enableradio true
+Forlov say "13v08"
+aP playmove "EffectStandSaluteEnd"
+~4
+[aP] join Forlov
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+Forlov AssignAsCommander tank1
+p1 AssignAsCommander tank2
+aP assignascommander tankaP
+p2 assignasgunner tank1
+p3 assignasdriver tank1
+p4 assignasgunner tank2
+p5 assignasdriver tank2
+p6 assignasgunner tankaP
+p7 assignasdriver tankaP
+
+~1
+aP action ["WEAPONINHAND"]
+"1" objstatus "done"
+nastupovat=true
+set="aware"
+"_x setbehaviour set" forEach units yankee
+~5
+
+savegame
+
+exit

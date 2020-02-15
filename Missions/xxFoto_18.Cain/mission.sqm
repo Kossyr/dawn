@@ -1,0 +1,184 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"bis_resistance"
+	};
+	randomSeed=4496387;
+	class Intel
+	{
+		startWeather=0.787644;
+		forecastWeather=0.737619;
+		month=12;
+		day=8;
+		hour=13;
+		minute=10;
+	};
+	class Groups
+	{
+		items=4;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9556.798828,128.474991,10047.759766};
+					azimut=320.000000;
+					id=2;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					rank="LIEUTNANT";
+					skill=0.600000;
+					init="this setidentity ""rashiv""; this setbehaviour ""safe""";
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9572.966797,128.474991,10069.041992};
+					azimut=320.000000;
+					id=3;
+					side="EAST";
+					vehicle="OfficerE";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					init="this exec ""foto.sqs""";
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9558.850586,128.474991,10046.635742};
+					azimut=320.000000;
+					id=4;
+					side="EAST";
+					vehicle="SoldierEB";
+					leader=1;
+					skill=0.600000;
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9556.851563,128.474991,10046.205078};
+					azimut=320.000000;
+					id=5;
+					side="EAST";
+					vehicle="SoldierEMG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.600000;
+					text="yashin";
+					init="this setidentity ""yashin""";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=2;
+		class Item0
+		{
+			position[]={9560.126953,128.474991,10039.456055};
+			azimut=260.000000;
+			id=0;
+			side="EMPTY";
+			vehicle="Ural";
+			skill=0.600000;
+		};
+		class Item1
+		{
+			position[]={9560.869141,128.474991,10043.355469};
+			azimut=255.000000;
+			id=1;
+			side="EMPTY";
+			vehicle="UAZ";
+			skill=0.600000;
+		};
+	};
+	class Markers
+	{
+		items=5;
+		class Item0
+		{
+			position[]={7633.772461,208.235001,7115.323730};
+			name="arrow_2";
+			type="Arrow";
+			colorName="ColorRed";
+			b=3.000000;
+			angle=340.000000;
+		};
+		class Item1
+		{
+			position[]={7033.419922,407.079376,7012.725098};
+			name="arrow_3";
+			type="Arrow";
+			colorName="ColorRed";
+			b=3.000000;
+			angle=30.000000;
+		};
+		class Item2
+		{
+			position[]={7213.683105,390.410706,7319.630859};
+			name="presun1";
+			type="Empty";
+		};
+		class Item3
+		{
+			position[]={7237.485840,385.186432,7312.751465};
+			name="presun1_1";
+			type="Empty";
+		};
+		class Item4
+		{
+			position[]={7255.470703,380.465546,7302.698730};
+			name="presun1_2";
+			type="Empty";
+		};
+	};
+};
+class Intro
+{
+	randomSeed=16594947;
+	class Intel
+	{
+	};
+};
+class OutroWin
+{
+	randomSeed=10896899;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=12524035;
+	class Intel
+	{
+	};
+};

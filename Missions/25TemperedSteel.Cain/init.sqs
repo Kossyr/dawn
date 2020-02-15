@@ -1,0 +1,58 @@
+titleCut ["","BLACK IN", 3]
+
+baza = [East,"HQ"]
+
+MinesDeactivated=0
+AADestroyed=0
+
+preparationDone=false
+firstMinefieldDone=false
+secondMinefieldDone=false
+fortificationsEast=false
+fortificationsWest=false
+reserves=false
+
+Syomin assignasdriver h1
+SyominGunner assignasgunner h1
+Ablomov assignasdriver h2
+Koltsov assignasgunner h2
+
+"aa1" setmarkertype "empty"
+"aa2" setmarkertype "empty"
+"aa3" setmarkertype "empty"
+
+~2
+
+baza sideradio "25r18"
+
+aP sideradio "25r01"
+
+~10
+
+[yashin, y1, y2, y3, y4, y5, y6, y7, y8] join grpnull
+[engineer1, engineer2, engineer3] join aP
+
+~2
+
+yashin domove getmarkerpos "yashin"
+y1 domove getmarkerpos "y1"
+y2 domove getmarkerpos "y2"
+y3 domove getmarkerpos "y3"
+y4 domove getmarkerpos "y4"
+y5 domove getmarkerpos "y5"
+y6 domove getmarkerpos "y6"
+y7 domove getmarkerpos "y7"
+y8 domove getmarkerpos "y8"
+
+engineer1 groupradio "25r02"
+
+~5
+
+aP sideradio "25r03"
+
+"1" objstatus "done"
+
+preparationDone=true
+
+
+exit

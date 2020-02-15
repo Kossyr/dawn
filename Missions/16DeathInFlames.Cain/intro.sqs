@@ -1,0 +1,113 @@
+titlecut["","black in",3]
+
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+playmusic "track5"
+
+Lemontov setmimic "Angry"
+s1 setmimic "normal"
+s2 setmimic "normal"
+
+
+s2 reveal lemontov
+s1 reveal lemontov
+s2 switchmove "TakeFlag"
+
+;=== 12:30:48
+_camera camSetTarget [-60906.37,-66465.79,12193.62]
+_camera camSetPos [6358.86,6594.95,7.78]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+;=== 12:31:11
+_camera camSetTarget [-76599.20,-47417.57,-13696.67]
+_camera camSetPos [6359.41,6595.81,1.32]
+_camera camSetFOV 0.700
+_camera camCommit 5
+
+
+s2 switchmove "TakeFlagToCombat"
+3 fademusic 0.5
+~3
+
+Lemontov say "16v01"
+s2 reveal lemontov
+s1 reveal lemontov
+
+@camCommitted _camera
+
+~1
+
+
+;=== 12:31:34
+_camera camSetTarget [1728.90,106152.02,-7714.86]
+_camera camSetPos [6356.94,6594.25,1.24]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 12:31:55
+_camera camSetTarget [572.26,106307.66,-4402.84]
+_camera camSetPos [6357.10,6593.63,1.20]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+
+
+s2 switchmove "TakeFlagToCombat"
+
+;=== 12:34:19
+_camera camSetTarget [28642.98,-90233.48,-10820.92]
+_camera camSetPos [6356.05,6596.47,1.44]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+s2 playmove "TakeFlagToCombat"
+
+s1 reveal lemontov
+s1 dowatch lemontov
+s1 say "16v02"
+
+s2 reveal lemontov
+s2 dowatch lemontov
+
+~4
+
+;=== 12:35:34
+_camera camSetTarget [83084.73,70572.17,-3962.13]
+_camera camSetPos [6355.92,6594.56,1.37]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Lemontov say "16v03"
+
+;=== 12:35:49
+_camera camSetTarget [41968.35,99802.45,7091.17]
+_camera camSetPos [6356.43,6594.01,1.24]
+_camera camSetFOV 0.700
+_camera camCommit 8
+
+~4
+
+Lemontov setmimic "agressive"
+
+@camCommitted _camera
+4 fademusic 0
+
+titlecut["", "black out", 3]
+
+~4
+
+end=true
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit

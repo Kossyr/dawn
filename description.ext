@@ -1,0 +1,575 @@
+class CfgIdentities
+{
+  class Rashiv
+  {
+    name = "Sergei Rashiv";
+    face = "Face29";
+    glasses = "None";
+    speaker = "John";
+    pitch = 1.079923;
+  };
+  class Lemontov
+  {
+    name = "Grigory Lemontov";
+    face = "Face27";
+    glasses = "None";
+    speaker = "Rob";
+    pitch = 1.016017;
+  };
+  class Kukushkin
+  {
+    name = "Dmitri Kukushkin";
+    face = "Face40";
+    glasses = "None";
+    speaker = "Rich";
+    pitch = 1.031744;
+  };
+  class Ablomov
+  {
+    name = "Nikolay Ablomov";
+    face = "Face51";
+    glasses = "None";
+    speaker = "Marc";
+    pitch = 1.095815;
+  };
+  class Astier
+  {
+    name = "Gaston Astier";
+    face = "Face6";
+    glasses = "None";
+    speaker = "Tom";
+    pitch = 0.923914;
+  };
+  class Poincare
+  {
+    name = "Jean Poincare";
+    face = "Face1";
+    glasses = "None";
+    speaker = "Patrick";
+    pitch = 1.0000;
+  };
+  class Dostoevsky
+  {
+    name = "Mikhail Dostoevsky";
+    face = "Face21";
+    glasses = "None";
+    speaker = "Tom";
+    pitch = 0.979981;
+  };
+  class Ivan
+  {
+    name = "Ivan Morokov";
+    face = "Face12";
+    glasses = "None";
+    speaker = "Patrick";
+    pitch = 1.019938;
+  };
+  class Kaplinsky
+  {
+    name = "Josif Kaplinsky";
+    face = "Face38";
+    glasses = "None";
+    speaker = "Marc";
+    pitch = 1.063865;
+  };
+  class Frolov
+  {
+    name = "Makariy Frolov";
+    face = "Face46";
+    glasses = "Sunglasses";
+    speaker = "Rob";
+    pitch = 1.171655;
+  };
+  class Dyaconsen
+  {
+    name = "George Dyaconsen";
+    face = "Face3";
+    glasses = "Not";
+    speaker = "Ted";
+    pitch = 0.96;
+  };
+  class Epgayd
+  {
+    name = "James Epgayd";
+    face = "Face9";
+    glasses = "Not";
+    speaker = "George";
+    pitch = 0.98;
+  };
+  class Shaposhnikov
+  {
+    name = "Stas Shaposhnikov";
+    face = "Face36";
+    glasses = "Not";
+    speaker="Rich";
+	pitch=0.948077;
+  };
+ class Yashin
+  {
+    name = "Vadim Yashin";
+    face = "Face43";
+    glasses = "Not";
+    speaker="Ted";
+	pitch=1.060354;
+  };
+  class Zubarev
+  {
+    name = "Zinoviy	Zubarev";
+    face="Face45";
+	glasses="Spectacles";
+	speaker="Adam";
+	pitch=1.000000;
+  };
+  class Koltsov
+  {
+    name = "Ippolit	Koltsov";
+    face="Face42";
+	glasses="None";
+	speaker="Paul";
+	pitch=0.944043;
+  };
+  class Syomin
+  {
+    name = "Valentin Syomin";
+	face="Face11";
+	glasses="None";
+	speaker="Marc";
+	pitch=0.876191;
+  };
+  class Johnson
+  {
+    name = "Steve Johnson";
+    face = "Face33";
+    glasses = "Not";
+    speaker = "Adam";
+    pitch = 1.00;
+  };
+  class Volkov
+  {
+    name = "Vladimir Volkov";
+    face = "Face18";
+    glasses = "Not";
+    speaker = "Adam";
+    pitch = 1.00;
+  };
+};
+
+class CfgSounds
+{
+	sounds[] = { };
+
+	class AwayRashivAlone
+	{
+		name = "AwayRashivAlone";
+		sound[] = {"AwayRashivAlone.ogg", db+10, 1.00};
+		titles[] = {0,$STRC_AwayRashivAlone};
+	};
+	class AwayLemontov
+	{
+		name = "AwayLemontov";
+		sound[] = {"AwayLemontov.ogg", db+10, 1.00};
+		titles[] = {0,$STRC_AwayLemontov};
+	};
+	class AwayAblomov
+	{
+		name = "AwayAblomov";
+		sound[] = {"AwayAblomov.ogg", db+10, 1.00};
+		titles[] = {0,$STRC_AwayAblomov};
+	};
+};
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class AwayRashivPrivate
+	{
+		name = "AwayRashivPrivate";
+		sound[] = {"AwayRashivPrivate.ogg", db+10, 1.0};
+		title = $STRC_AwayRashivPrivate;
+	};
+	class AwayRashivCorporal
+	{
+		name = "AwayRashivCorporal";
+		sound[] = {"AwayRashivCorporal.ogg", db+10, 1.0};
+		title = $STRC_AwayRashivCorporal;
+	};
+	class AwayRashivLemontov
+	{
+		name = "AwayRashivLemontov";
+		sound[] = {"AwayRashivLemontov.ogg", db+10, 1.0};
+		title = $STRC_AwayRashivLemontov;
+	};
+	class AwayKukushkinPlatoon
+	{
+		name = "AwayKukushkinPlatoon";
+		sound[] = {"AwayKukushkinPlatoon.ogg", db+10, 1.0};
+		title = $STRC_AwayKukushkinPlatoon;
+	};
+	class AwayRashivLieutenant
+	{
+		name = "AwayRashivLieutenant";
+		sound[] = {"AwayRashivLieutenant.ogg", db+10, 1.0};
+		title = $STRC_AwayRashivLieutenant;
+	};
+};
+
+
+
+
+class MissionDefault
+{
+ 	lives = -1;
+
+	lost = ;
+	end1 = ;
+	end2 = ;
+	end3 = ;
+	end4 = ;
+	end5 = ;
+	end6 = ;
+};
+
+class Campaign
+{
+	name = "Red Dawn";
+	firstBattle = Part1;
+	
+	
+	class Part1
+	{
+		name = "FLASHPOINT";
+
+		cutscene = ;
+
+		firstMission = XChapterI;
+		lost = Part2;
+		end1 = Part2;
+		end2 = Part2;
+		end3 = Part2;
+		end4 = Part2;
+		end5 = Part2;
+		end6 = Part2;
+		
+
+		class XChapterI: MissionDefault
+		{
+ 			noAward=true;
+			end1 = 01FirstStrike;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 01FirstStrike;
+			template = XChapterI.Eden;
+		};
+		class 01FirstStrike: MissionDefault
+		{
+			end1 = 02CourseNorth;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 01FirstStrike;
+			template = 01FirstStrike.Eden;
+		};
+		class 02CourseNorth: MissionDefault
+		{
+			end1 = 03Support;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 02CourseNorth;
+			template = 02CourseNorth.Eden;
+		};
+		class 03Support: MissionDefault
+		{
+			end1 = 04MorningRain;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 03Support;
+			template = 03Support.Eden;
+		};		
+		class 04MorningRain: MissionDefault
+		{
+			end1 = 05LostPatrol;
+			end2 = 04MorningRain;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 04MorningRain;
+			template = 04MorningRain.Eden;
+		};		
+		class 05LostPatrol: MissionDefault
+		{
+			end1 = 06Reversal;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 05LostPatrol;
+			template = 05LostPatrol.Eden;
+		};
+		class 06Reversal: MissionDefault
+		{
+			end1 = 07Retreat;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 06Reversal;
+			template = 06Reversal.Eden;
+		};
+
+		class 07Retreat: MissionDefault
+		{
+			end1 = 08UnexpectedAlly;
+			end2 = 08UnexpectedAlly;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 07Retreat;
+			template = 07Retreat.EDEN;
+		};
+		class 08UnexpectedAlly: MissionDefault
+		{
+			end1 = 09Respite;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 08UnexpectedAlly;
+			template = 08UnexpectedAlly.Eden;
+		};
+		class 09Respite: MissionDefault
+		{
+			end1 = 10Defenders;
+			end2 = 10Defenders;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 09Respite;
+			template = 09Respite.CAIN;
+		};
+       class 10Defenders: MissionDefault
+		{
+			end1 = 11DeathToTanks;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 10Defenders;
+			template = 10Defenders.CAIN;
+		};
+		class 11DeathToTanks: MissionDefault
+		{
+			end1 = ;
+			end2 = 11DeathToTanks;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 11DeathToTanks;
+			template = 11DeathToTanks.CAIN;
+		};
+	};
+
+	class Part2
+	{
+		name = "BATTLE FOR KOLGUYEV";
+
+		cutscene = ;
+
+		firstMission = XChapterII;
+		lost = ;
+		end1 = ;
+		end2 = ;
+		end3 = ;
+		end4 = ;
+		end5 = ;
+		end6 = ;
+
+
+		class XChapterII: MissionDefault
+		{
+ 			noAward=true;
+			end1 = 12CounterAttack;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 12CounterAttack;
+			template = XChapterII.Cain;
+		};
+		class 12CounterAttack: MissionDefault
+		{
+			end1 = 13TankPlatoon;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 12CounterAttack;
+			template = 12CounterAttack.Cain;
+		};
+		class 13TankPlatoon: MissionDefault
+		{
+			end1 = 14HeavyRide;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 13TankPlatoon;
+			template = 13TankPlatoon.Cain;
+		};
+		class 14HeavyRide: MissionDefault
+		{
+			end1 = 15Reconnaissance;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 14HeavyRide;
+			template = 14HeavyRide.Cain;
+		};
+		class 15Reconnaissance: MissionDefault
+		{
+			end1 = 16DeathInFlames;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 15Reconnaissance;
+			template = 15Reconnaissance.Cain;
+		};
+		class 16DeathInFlames: MissionDefault
+		{
+			end1 = 17Storm;
+			end2 = 17Storm;
+			end3 = 17Storm;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 16DeathInFlames;
+			template = 16DeathInFlames.Cain;
+		};
+		class 17Storm: MissionDefault
+		{
+			end1 = 18Lieutenant;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 17Storm;
+			template = 17Storm.Cain;
+		};
+		class 18Lieutenant: MissionDefault
+		{
+			end1 = 19Siege;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 18Lieutenant;
+			template = 18Lieutenant.Cain;
+		};
+		class 19Siege: MissionDefault
+		{
+			end1 = 20Ghosts;
+			end2 = 19Siege;
+			end3 = 19Siege;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 19Siege;
+			template = 19Siege.Cain;
+		};
+		class 20Ghosts: MissionDefault
+		{
+			end1 = 21Offensive;
+			end2 = 21Offensive;
+			end3 = 21Offensive;
+			end4 = 21Offensive;
+			end5 = ;
+			end6 = ;
+			lost = 20Ghosts;
+			template = 20Ghosts.Cain;
+		};
+		class 21Offensive: MissionDefault
+		{
+			end1 = 22AirSupport;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 21Offensive;
+			template = 21Offensive.Cain;
+		};
+		class 22AirSupport: MissionDefault
+		{
+			end1 = 23Squadron;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 22AirSupport;
+			template = 22AirSupport.Cain;
+		};
+		class 23Squadron: MissionDefault
+		{
+			end1 = 24NightOwls;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 23Squadron;
+			template = 23Squadron.Cain;
+		};
+		class 24NightOwls: MissionDefault
+		{
+			end1 = 25TemperedSteel;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 24NightOwls;
+			template = 24NightOwls.Cain;
+		};
+		class 25TemperedSteel: MissionDefault
+		{
+			end1 = ;
+			end2 = 25TemperedSteel;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 25TemperedSteel;
+			template = 25TemperedSteel.Cain;
+		};
+	};
+};

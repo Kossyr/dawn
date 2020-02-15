@@ -1,0 +1,122 @@
+
+
+setacctime 1
+
+"1" objstatus "done"
+
+aP action ["WEAPONONBACK"]
+
+Koltsov stop true
+
+Koltsov setpos getmarkerpos "KoltsovCinema"
+Koltsov setdir 10
+
+AblomovCinema setpos getmarkerpos "AblomovCinema"
+AblomovCinema setdir 350
+
+aP setpos getmarkerpos "CinemaEmpty"
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;=== 20:51:36
+_camera camSetTarget [-39281.02,96876.05,-2945.38]
+_camera camSetPos [9177.48,9454.40,1.51]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Syomin setmimic "Normal"
+Syomin say "23v12"
+
+;=== 20:52:42
+_camera camSetTarget [-47140.05,92031.11,-2945.28]
+_camera camSetPos [9177.86,9453.48,1.25]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+
+~4
+
+Syomin say "23v13"
+
+~2
+
+;=== 20:54:04
+_camera camSetTarget [8556.06,109456.05,61.10]
+_camera camSetPos [9162.46,9457.89,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:54:28
+_camera camSetTarget [-18784.82,105471.54,61.16]
+_camera camSetPos [9166.72,9457.41,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+
+;=== 20:54:58
+_camera camSetTarget [40107.30,104436.74,-4557.41]
+_camera camSetPos [9176.77,9454.20,1.43]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 20:55:06
+_camera camSetTarget [21711.19,108555.30,-4557.68]
+_camera camSetPos [9176.79,9453.00,1.43]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+;=== 20:55:34
+_camera camSetTarget [102514.03,-26413.08,-941.56]
+_camera camSetPos [9173.58,9454.56,1.36]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Syomin say "23v14"
+
+~3
+
+;=== 20:55:51
+_camera camSetTarget [-10777.48,106432.27,14131.62]
+_camera camSetPos [9177.25,9454.36,1.41]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~4
+
+Koltsov stop false
+
+AblomovCinema setpos getmarkerpos "GetOut"
+aP setpos getmarkerpos "AblomovCinema"
+aP setdir 350
+
+Syomin assignasdriver mi24_1
+SyominGunner assignasgunner mi24_1
+aP assignasdriver mi24_2
+Koltsov assignasgunner mi24_2
+
+enableradio true
+
+Syomin setbehaviour "Aware"
+SyominGunner setbehaviour "Aware"
+Koltsov setbehaviour "Aware"
+aP setbehaviour "Aware"
+
+~1
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+[Koltsov, aP] join Syomin
+
+aP action ["WEAPONINHAND"]
+
+takeOff=true
+
+exit

@@ -1,0 +1,191 @@
+
+titlecut["","black in",3]
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+playmusic ["RTrack8", 13]
+
+c1 setmimic "normal"
+c2 setmimic "normal"
+c3 setmimic "normal"
+c4 setmimic "normal"
+c5 setmimic "normal"
+c6 setmimic "normal"
+c7 setmimic "normal"
+c8 setmimic "normal"
+c9 setmimic "normal"
+Kukushkin setmimic "normal"
+
+kukushkinLongLive=true
+
+;=== 18:16:31
+_camera camSetTarget [77091.26,-63945.17,570.19]
+_camera camSetPos [7695.22,8076.40,6.31]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+;=== 18:16:46
+_camera camSetTarget [77091.26,-63945.17,570.50]
+_camera camSetPos [7707.33,8063.86,6.45]
+_camera camSetFOV 0.700
+_camera camCommit 7
+~5
+2.5 fademusic 0.3
+Frolov switchmove "EffectStandTalk"
+Frolov setmimic "Angry"
+~1.5
+
+;=== 18:19:52
+_camera camSetTarget [-37125.99,-80707.14,10909.77]
+_camera camSetPos [7725.18,8039.96,1.33]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+Frolov say "21v01"
+
+;=== 18:20:01
+_camera camSetTarget [-59271.81,-65815.38,7842.53]
+_camera camSetPos [7725.70,8040.03,1.33]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+;=== 18:23:26
+_camera camSetTarget [104081.08,-18333.26,-3652.01]
+_camera camSetPos [7704.73,8046.33,2.26]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:23:34
+_camera camSetTarget [76868.35,-61329.88,-19753.54]
+_camera camSetPos [7709.95,8056.68,4.20]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+Frolov say "21v02"
+
+;=== 18:23:54
+_camera camSetTarget [32607.35,-88795.95,2223.86]
+_camera camSetPos [7724.52,8039.94,1.39]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:23:59
+_camera camSetTarget [32607.35,-88795.95,2223.76]
+_camera camSetPos [7724.29,8040.84,1.39]
+_camera camSetFOV 0.700
+_camera camCommit 8
+@camCommitted _camera
+
+Frolov say "21v03"
+
+;=== 18:24:26
+_camera camSetTarget [-85670.21,43680.96,-1554.56]
+_camera camSetPos [7744.27,8040.36,1.39]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 18:24:46
+_camera camSetTarget [-49822.13,89681.96,-4354.35]
+_camera camSetPos [7729.28,8035.99,1.39]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+
+;=== 18:25:05
+_camera camSetTarget [-12471.43,-89788.16,-4354.76]
+_camera camSetPos [7725.00,8039.90,1.39]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~2
+
+Frolov say "21v04"
+Frolov playmove "effectstand"
+
+
+2.5 fademusic 0
+~2.5
+
+playmusic "RTrack4"
+0 fademusic 0.4
+
+~3
+
+;=== 18:25:54
+_camera camSetTarget [106439.73,23223.77,-4354.48]
+_camera camSetPos [7708.63,8045.02,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+c1 setmimic "Angry"
+c2 setmimic "Angry"
+c3 setmimic "Angry"
+c4 setmimic "Angry"
+c5 setmimic "Angry"
+c6 setmimic "Angry"
+c7 setmimic "Angry"
+c8 setmimic "Angry"
+c9 setmimic "Angry"
+c10 setmimic "Angry"
+Kukushkin setmimic "Angry"
+
+c1 playmove "effectstandsalute"
+c2 playmove "effectstandsalute"
+c3 playmove "effectstandsalute"
+c4 playmove "effectstandsalute"
+c5 playmove "effectstandsalute"
+c6 playmove "effectstandsalute"
+c7 playmove "effectstandsalute"
+c8 playmove "effectstandsalute"
+c9 playmove "effectstandsalute"
+c10 playmove "effectstandsalute"
+Kukushkin playmove "effectstandsalute"
+
+[] exec "intro_longlive.sqs"
+
+titletext [ localize "STRM_21v05","plain down"]
+
+~2
+
+;=== 18:26:19
+_camera camSetTarget [87368.10,68349.15,-4356.29]
+_camera camSetPos [7736.44,8041.56,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 18:26:27
+_camera camSetTarget [19182.73,107274.95,-4356.74]
+_camera camSetPos [7739.68,8041.58,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+
+~0.5
+
+Kukushkin setmimic "Smile"
+kukushkinLongLive=false
+
+~1
+
+titlecut["", "black out", 3]
+
+4 fademusic 0
+4 fadesound 0
+~4
+
+end=true
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit
