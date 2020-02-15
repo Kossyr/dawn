@@ -319,10 +319,9 @@ _camera camCommit 0
 @camCommitted _camera
 George say "08v15"
 ~0.5
-George domove getpos les
+George domove getmarkerpos les
 ~2
 James dowatch George
-George domove getpos les
 ;=== 22:14:53
 _camera camSetTarget [95465.21,49850.72,-3980.98]
 _camera camSetPos [6191.46,4976.19,1.24]
@@ -421,7 +420,7 @@ _camera camCommit 12
 James setBehaviour "combat"
 James setUnitPos "up"
 ~1
-[] exec "handgun.sqs"
+James exec "handgun.sqs"
 ;=== 9:47:58
 _camera camSetTarget [-44407.59,90137.79,-13599.99]
 _camera camSetPos [6193.78,4976.77,1.58]
@@ -492,7 +491,6 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 James say "08v28"
-James switchMove "HandGunStand"
 ~1
 playsound "gunshot"
 James switchMove "CombatDyingVer3"
