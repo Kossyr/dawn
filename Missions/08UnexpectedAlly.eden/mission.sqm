@@ -2064,7 +2064,7 @@ class Intro
 	};
 	class Groups
 	{
-		items=31;
+		items=30;
 		class Item0
 		{
 			side="EAST";
@@ -2908,24 +2908,6 @@ class Intro
 		};
 		class Item19
 		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={6308.705566,74.655479,5032.527832};
-					id=30;
-					side="LOGIC";
-					vehicle="Logic";
-					leader=1;
-					skill=0.600000;
-					text="les";
-				};
-			};
-		};
-		class Item20
-		{
 			side="GUER";
 			class Vehicles
 			{
@@ -2933,7 +2915,7 @@ class Intro
 				class Item0
 				{
 					position[]={2855.901855,88.414169,5295.661133};
-					id=31;
+					id=30;
 					side="GUER";
 					vehicle="SoldierGB";
 					leader=1;
@@ -2943,7 +2925,7 @@ class Intro
 				class Item1
 				{
 					position[]={2853.618652,88.290718,5292.098145};
-					id=32;
+					id=31;
 					side="GUER";
 					vehicle="SoldierGB";
 					skill=1.000000;
@@ -2952,7 +2934,7 @@ class Intro
 				class Item2
 				{
 					position[]={2858.202393,88.376244,5292.098145};
-					id=33;
+					id=32;
 					side="GUER";
 					vehicle="SoldierGB";
 					skill=1.000000;
@@ -2961,7 +2943,7 @@ class Intro
 				class Item3
 				{
 					position[]={2848.816650,88.337654,5296.901855};
-					id=34;
+					id=33;
 					side="GUER";
 					vehicle="SoldierGMG";
 					skill=1.000000;
@@ -2970,7 +2952,7 @@ class Intro
 				class Item4
 				{
 					position[]={2853.182129,88.440872,5298.867188};
-					id=35;
+					id=34;
 					side="GUER";
 					vehicle="SoldierGMG";
 					skill=1.000000;
@@ -2979,7 +2961,7 @@ class Intro
 				class Item5
 				{
 					position[]={2852.090332,88.317703,5294.281738};
-					id=36;
+					id=35;
 					side="GUER";
 					vehicle="SoldierGMG";
 					skill=1.000000;
@@ -2988,7 +2970,7 @@ class Intro
 				class Item6
 				{
 					position[]={2858.638672,88.471626,5297.120117};
-					id=37;
+					id=36;
 					side="GUER";
 					vehicle="SoldierGSniper";
 					skill=1.000000;
@@ -2997,7 +2979,7 @@ class Intro
 				class Item7
 				{
 					position[]={2856.237793,88.295929,5290.352051};
-					id=38;
+					id=37;
 					side="GUER";
 					vehicle="SoldierGB";
 					skill=1.000000;
@@ -3006,7 +2988,7 @@ class Intro
 				class Item8
 				{
 					position[]={2857.765869,88.302704,5289.478516};
-					id=39;
+					id=38;
 					side="GUER";
 					vehicle="SoldierGB";
 					skill=1.000000;
@@ -3015,7 +2997,7 @@ class Intro
 				class Item9
 				{
 					position[]={2852.309082,88.209343,5289.914551};
-					id=40;
+					id=39;
 					side="GUER";
 					vehicle="SoldierGB";
 					skill=1.000000;
@@ -3024,7 +3006,7 @@ class Intro
 				class Item10
 				{
 					position[]={2846.852295,88.167648,5290.788086};
-					id=41;
+					id=40;
 					side="GUER";
 					vehicle="SoldierGB";
 					skill=1.000000;
@@ -3048,7 +3030,7 @@ class Intro
 				};
 			};
 		};
-		class Item21
+		class Item20
 		{
 			side="EAST";
 			class Vehicles
@@ -3058,13 +3040,34 @@ class Intro
 				{
 					position[]={6816.296387,58.297337,4827.196289};
 					azimut=120.000000;
-					id=42;
+					id=41;
 					side="EAST";
 					vehicle="SoldierEB";
 					leader=1;
 					skill=0.600000;
 					text="aP5";
 					init="this dowatch Astier; this setbehaviour ""Careless""; this setidentity ""rashiv""; removeallweapons this";
+				};
+			};
+		};
+		class Item21
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6819.636719,58.366478,4825.868164};
+					azimut=305.000000;
+					id=42;
+					side="GUER";
+					vehicle="OfficerG";
+					leader=1;
+					rank="LIEUTNANT";
+					skill=0.600000;
+					text="Astier";
+					init="this dowatch aP5; this setbehaviour ""careless"";  this removeweapon ""binocular""; this setidentity ""Astier""";
 				};
 			};
 		};
@@ -3076,16 +3079,15 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6819.636719,58.366478,4825.868164};
-					azimut=305.000000;
-					id=43;
+					position[]={6827.552246,57.617245,4833.490723};
+					azimut=5.000000;
+					id=44;
 					side="GUER";
-					vehicle="OfficerG";
+					vehicle="SoldierGMG";
 					leader=1;
-					rank="LIEUTNANT";
+					lock="LOCKED";
 					skill=0.600000;
-					text="Astier";
-					init="this dowatch aP5; this setbehaviour ""careless"";  this removeweapon ""binocular""; this setidentity ""Astier""";
+					init="this setidentity ""Poincare""";
 				};
 			};
 		};
@@ -3097,15 +3099,14 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6827.552246,57.617245,4833.490723};
-					azimut=5.000000;
-					id=45;
+					position[]={6820.005859,58.261921,4831.395020};
+					azimut=345.000000;
+					id=43;
 					side="GUER";
-					vehicle="SoldierGMG";
+					vehicle="SoldierGB";
 					leader=1;
 					lock="LOCKED";
 					skill=0.600000;
-					init="this setidentity ""Poincare""";
 				};
 			};
 		};
@@ -3117,11 +3118,11 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6820.005859,58.261921,4831.395020};
-					azimut=345.000000;
-					id=44;
+					position[]={6831.854004,58.016106,4824.558105};
+					azimut=160.000000;
+					id=46;
 					side="GUER";
-					vehicle="SoldierGB";
+					vehicle="SoldierGMG";
 					leader=1;
 					lock="LOCKED";
 					skill=0.600000;
@@ -3136,11 +3137,11 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6831.854004,58.016106,4824.558105};
+					position[]={6825.075684,58.475994,4820.171875};
 					azimut=160.000000;
-					id=47;
+					id=45;
 					side="GUER";
-					vehicle="SoldierGMG";
+					vehicle="SoldierGB";
 					leader=1;
 					lock="LOCKED";
 					skill=0.600000;
@@ -3155,9 +3156,9 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6825.075684,58.475994,4820.171875};
-					azimut=160.000000;
-					id=46;
+					position[]={6811.646973,58.201092,4818.490723};
+					azimut=225.000000;
+					id=47;
 					side="GUER";
 					vehicle="SoldierGB";
 					leader=1;
@@ -3174,14 +3175,15 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6811.646973,58.201092,4818.490723};
-					azimut=225.000000;
-					id=48;
+					position[]={6816.056641,58.292377,4821.529785};
+					azimut=15.000000;
+					id=50;
 					side="GUER";
-					vehicle="SoldierGB";
+					vehicle="SoldierGMG";
 					leader=1;
 					lock="LOCKED";
 					skill=0.600000;
+					init="this setbehaviour ""safe""";
 				};
 			};
 		};
@@ -3193,11 +3195,11 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6816.056641,58.292377,4821.529785};
-					azimut=15.000000;
-					id=51;
+					position[]={6810.408691,58.175461,4825.785156};
+					azimut=115.000000;
+					id=49;
 					side="GUER";
-					vehicle="SoldierGMG";
+					vehicle="SoldierGB";
 					leader=1;
 					lock="LOCKED";
 					skill=0.600000;
@@ -3213,29 +3215,9 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6810.408691,58.175461,4825.785156};
-					azimut=115.000000;
-					id=50;
-					side="GUER";
-					vehicle="SoldierGB";
-					leader=1;
-					lock="LOCKED";
-					skill=0.600000;
-					init="this setbehaviour ""safe""";
-				};
-			};
-		};
-		class Item30
-		{
-			side="GUER";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
 					position[]={6806.021973,58.084652,4820.340820};
 					azimut=265.000000;
-					id=49;
+					id=48;
 					side="GUER";
 					vehicle="SoldierGB";
 					leader=1;
@@ -3292,7 +3274,7 @@ class Intro
 		{
 			position[]={6823.190918,57.698772,4836.063477};
 			azimut=250.000000;
-			id=52;
+			id=51;
 			side="EMPTY";
 			vehicle="UAZG";
 			leader=1;
@@ -3335,26 +3317,26 @@ class Intro
 		};
 		class Item5
 		{
-			position[]={6193.082520,77.358719,4977.969238};
-			name="zabijak";
-			type="Flag";
-		};
-		class Item6
-		{
 			position[]={6194.928223,77.578552,4975.303711};
 			name="aP4";
 			type="Flag";
 		};
-		class Item7
+		class Item6
 		{
 			position[]={6131.992188,78.395256,4964.446289};
 			name="partyzani";
 			type="Flag";
 		};
-		class Item8
+		class Item7
 		{
 			position[]={1148.299072,88.292183,11453.897461};
 			name="pryc";
+			type="Flag";
+		};
+		class Item8
+		{
+			position[]={6304.218262,76.843842,4995.196777};
+			name="les";
 			type="Flag";
 		};
 	};
