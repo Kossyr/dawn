@@ -1,0 +1,134 @@
+titlecut ["","black in",8]
+
+aP switchmove "FXToKneel"
+ivan switchmove "effectstandsitdown"
+rusak switchmove "effectstand"
+rusak2 switchmove "FxToHand"
+rusak setmimic "surprised"
+playmusic "RTrack9"
+
+setacctime 1
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 19:10:02
+_camera camSetTarget [19635.03,102809.91,18.38]
+_camera camSetPos [4991.45,3891.93,6.04]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+;=== 19:10:20
+_camera camSetTarget [-73351.87,66031.55,17.47]
+_camera camSetPos [4995.30,3888.88,0.83]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+1 fademusic 0.1
+rusak say "03v01"
+~2.5
+;=== 19:11:04
+_camera camSetTarget [101232.27,21463.46,-20690.98]
+_camera camSetPos [4990.99,3890.39,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+ivan setmimic "angry"
+ivan say "03v02"
+~5.5
+;=== 19:12:07
+_camera camSetTarget [55353.02,90029.95,6592.38]
+_camera camSetPos [4991.20,3888.01,0.84]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:12:13
+_camera camSetTarget [96930.33,42668.19,6592.46]
+_camera camSetPos [4990.29,3889.56,1.01]
+_camera camSetFOV 0.700
+_camera camCommit 24
+rusak say "03v03"
+~1.2
+ivan say "03v04"
+~9
+rusak setmimic "hurt"
+rusak say "03v05"
+~13
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+;=== 19:14:43
+_camera camSetTarget [-17321.76,-93482.30,-4461.08]
+_camera camSetPos [4993.57,3893.14,1.01]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+ivan setmimic "normal"
+rusak setmimic "normal"
+ivan say "03v06"
+~5
+;=== 19:15:14
+_camera camSetTarget [-93565.43,-12410.86,-4461.21]
+_camera camSetPos [4995.69,3890.60,1.01]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+rusak dowatch [4972.30,3887.65,2.00]
+ivan dowatch [4972.30,3887.65,2.00]
+ivan setmimic "sad"
+rusak setmimic "sad"
+rusak say "03v07"
+~2
+ivan say "03v08"
+~3
+rusak say "03v09"
+~2
+ivan say "03v10"
+jdi=true
+~1
+Dostoevsky setpos getmarkerpos "off"
+~1
+;=== 19:18:33
+_camera camSetTarget Dostoevsky
+_camera camSetPos [4992.45,3888.49,1.01]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+rusak dowatch Dostoevsky
+ivan dowatch Dostoevsky
+Dostoevsky say "03v11"
+~4
+rusak playmove "effectstand"
+ivan playmove "effectstand"
+;=== 19:19:25
+_camera camSetTarget [100493.69,33398.57,2117.02]
+_camera camSetPos [4970.71,3886.79,0.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+titleText["","PLAIN DOWN"]
+~4
+aP switchmove "FXfromKneel"
+;=== 19:20:55
+_camera camSetTarget [100493.69,33398.57,2117.14]
+_camera camSetPos [4970.71,3886.79,1.20]
+_camera camSetFOV 0.700
+_camera camCommit 3
+
+~1
+
+titlecut ["","black out",3]
+4 fademusic 0
+~4
+
+end=true
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit
+

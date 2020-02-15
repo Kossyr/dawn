@@ -1,0 +1,40 @@
+; script na vynucený výsadek vojákù z vrtulníku
+; voláno z editoru syntaxí
+; [<jméno vedoucího skupiny>, <jméno vrtulníku>] exec "eject.sqs"
+
+; naètení zadaných hodnot do scriptu
+
+_leader = _this select 0
+_heli = _this select 1
+
+; vytvoøení promìnné, kde budou všichni z jednotky zadaného vedoucího
+
+_group = units _leader
+
+; spoèítá, kolik je v této skupinì lidí
+
+_total = count _group
+_i = 0
+
+; nyní následuje smyèka, kdy vyskoèí jeden po druhém v urèítém èasovém intervalu
+
+#loop
+
+(_group select _i) action ["eject", _heli]
+unassignvehicle (_group select _i)
+
+; samotný èasový interval a pøechod na dalšího èlena ve skupinì
+
+~2
+_i = _i + 1
+
+; bude opakovat smyèku, dokud všichni nevyskáèí
+
+? _i < _total : goto "loop"
+
+~10
+
+nakladak setdammage 1
+auto setdammage 1
+
+exit

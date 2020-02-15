@@ -1,0 +1,138 @@
+titlecut["","black in",3]
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+Ablomov setmimic "Normal"
+Koltsov setmimic "Normal"
+
+0 fademusic 0
+0.5 fademusic 1
+
+playmusic "Track3"
+
+~0.1
+
+pilotHand switchmove "FXToHand"
+pilotTalk switchmove "EffectStandTalk"
+
+
+;=== 20:05:07
+_camera camSetTarget [-36437.02,-77095.41,108.28]
+_camera camSetPos [11468.05,10683.32,2.11]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~4
+
+;=== 21:42:13
+_camera camSetTarget [72766.85,88750.39,11841.30]
+_camera camSetPos [11449.28,10632.06,1.15]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titlecut ["", "white in", 0.5]
+
+~2
+
+;=== 21:42:42
+_camera camSetTarget [79457.13,-62392.90,-6302.77]
+_camera camSetPos [11448.64,10639.49,3.84]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titlecut ["", "white in", 0.5]
+
+~2
+
+;=== 21:43:04
+_camera camSetTarget [-58591.53,-60561.66,4979.92]
+_camera camSetPos [11455.72,10639.76,0.99]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titlecut ["", "white in", 0.5]
+
+~2
+
+;=== 21:45:00
+_camera camSetTarget [-13377.12,100858.92,-35151.31]
+_camera camSetPos [11452.22,10634.27,2.27]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+titlecut ["", "white in", 0.5]
+
+;=== 21:45:10
+_camera camSetTarget [-13377.12,100858.92,-35150.84]
+_camera camSetPos [11450.68,10639.92,2.30]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+~1
+
+;=== 21:45:20
+_camera camSetTarget [31398.55,106747.16,-19009.32]
+_camera camSetPos [11450.68,10639.92,2.30]
+_camera camSetFOV 0.700
+_camera camCommit 1.5
+@camCommitted _camera
+
+~0.5
+
+0.5 fademusic 0.3
+
+titlecut ["", "black in", 0.5]
+
+;=== 20:05:51
+_camera camSetTarget [22506.40,109782.73,-6908.82]
+_camera camSetPos [11451.61,10643.64,1.49]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Koltsov say "22v01"
+Koltsov setmimic "Sad"
+
+~4
+
+Ablomov say "22v02"
+Ablomov setmimic "Smile"
+
+~7
+
+Koltsov say "22v03"
+Koltsov setmimic "Normal"
+
+~5
+
+;=== 20:07:43
+_camera camSetTarget [-88538.64,11726.82,-750.11]
+_camera camSetPos [11451.82,10644.87,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Ablomov setmimic "Angry"
+Ablomov say "22v04"
+
+~4
+
+
+titlecut ["", "black out", 4]
+5 fademusic 0
+~5
+
+end=true
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit

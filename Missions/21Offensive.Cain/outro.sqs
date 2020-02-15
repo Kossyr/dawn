@@ -1,0 +1,40 @@
+setacctime 1
+
+baza sideradio "21r07"
+
+"5" objstatus "done"
+
+~2
+
+
+enableradio false
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 12:43:42
+_camera camSetTarget [93035.77,-39877.92,-10526.77]
+_camera camSetPos [5379.20,6992.84,40.14]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titletext [ localize "STRC_END_SUCCESS","plain"]
+
+;=== 12:44:00
+_camera camSetTarget [92512.19,-39597.95,-14966.92]
+_camera camSetPos [5379.20,6992.84,70.84]
+_camera camSetFOV 0.700
+_camera camCommit 12
+
+~8
+
+titlecut ["","black out",3]
+
+@camCommitted _camera
+
+end=true
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit

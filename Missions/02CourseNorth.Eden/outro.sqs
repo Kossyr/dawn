@@ -1,0 +1,35 @@
+titlecut ["","black in",1]
+
+setacctime 1
+
+"2" objstatus "done"
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 15:38:34
+_camera camSetTarget [-47571.10,85530.06,-29424.33]
+_camera camSetPos [5451.36,6048.92,15.08]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+titletext [ localize "STRC_END_SUCCESS","plain"]
+
+;=== 15:38:59
+_camera camSetTarget [65188.07,61307.61,-58028.88]
+_camera camSetPos [5462.77,6049.56,24.19]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+titlecut ["","black out",2]
+
+~4
+
+end=true
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit

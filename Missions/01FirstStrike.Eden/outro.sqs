@@ -1,0 +1,42 @@
+4 fademusic 0.5
+playmusic "Track1"
+"1" objstatus "done"
+setacctime 1
+
+baza sideradio "01r02"
+
+~5
+setacctime 1
+titlecut ["","black in",1]
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 22:54:49
+_camera camSetTarget [50776.13,81645.18,-43046.85]
+_camera camSetPos [4976.28,3897.28,33.57]
+_camera camSetFOV 0.766
+_camera camCommit 0
+@camCommitted _camera
+;=== 22:55:01
+_camera camSetTarget [47713.17,76445.68,-53877.47]
+_camera camSetPos [4970.91,3888.20,50.94]
+_camera camSetFOV 0.766
+_camera camCommit 20
+
+titletext [ localize "STRC_END_SUCCESS","plain"]
+
+~12
+
+titlecut ["","black out",3]
+
+4 fademusic 0
+
+~4
+
+end=true
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit
