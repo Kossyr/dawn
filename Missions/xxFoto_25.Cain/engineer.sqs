@@ -1,0 +1,35 @@
+_unit = _this
+
+#check
+
+? (not alive _unit) : goto "dead"
+
+_obj = nearestObject [_unit, "Mine"]
+
+?(typeOf _obj == "Mine") && (_obj distance _unit < 3): goto "delete"
+~2
+goto "check"
+
+#delete
+
+? (not alive _unit) : goto "dead"
+
+_unit doWatch _obj
+~1
+? (not alive _unit) : goto "dead"
+_unit switchMove "Medic"
+~4
+? (not alive _unit) : goto "dead"
+
+deleteVehicle _obj
+
+MinesDeactivated=MinesDeactivated+1
+
+hint format [localize "STRM_HINT_MINES" + " %1", MinesDeactivated]
+
+~2
+goto "check"
+
+#dead
+
+exit
