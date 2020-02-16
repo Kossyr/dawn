@@ -137,6 +137,8 @@ ivan4 dowatch James
 aP4 dowatch James
 James dowatch ivan4
 
+George stop true
+
 ;=== 21:57:11
 _camera camSetTarget [45852.66,96536.86,-6357.20]
 _camera camSetPos [6190.93,4964.58,1.19]
@@ -158,8 +160,8 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 James setmimic "smile"
-James say "08v06"
-~8
+James say "08v05"
+~5
 ;=== 21:58:51
 _camera camSetTarget [80796.77,-60947.66,-9287.82]
 _camera camSetPos [6191.18,4978.62,1.74]
@@ -167,9 +169,10 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 James setmimic "angry"
-James say "08v07"
-George dowatch [6196.96,4975.04,1.49]
-~8
+James say "08v06"
+George setdir 165
+
+~7
 ;=== 22:02:48
 _camera camSetTarget [67232.30,84179.13,78.99]
 _camera camSetPos [6191.61,4970.32,1.31]
@@ -188,8 +191,8 @@ _camera camSetPos [6193.33,4976.35,1.58]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-James say "08v08"
-~10
+James say "08v07"
+~8
 ;=== 22:04:48
 _camera camSetTarget [74057.96,-68432.53,2457.41]
 _camera camSetPos [6193.74,4975.86,1.46]
@@ -197,7 +200,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ivan4 setmimic "angry"
-ivan4 say "08v09"
+ivan4 say "08v08"
 ;=== 22:04:56
 _camera camSetTarget [21384.14,-93806.37,-3281.29]
 _camera camSetPos [6195.09,4976.24,1.64]
@@ -212,6 +215,9 @@ _camera camCommit 0
 @camCommitted _camera
 titleText["","PLAIN DOWN"]
 James reveal George
+George reveal James
+
+
 ~1
 James setBehaviour "combat"
 James setUnitPos "up"
@@ -225,6 +231,7 @@ playSound "glock"
 playmusic "RTrack1b"
 
 James reveal George
+George reveal James
 
 0 fademusic 0.5
 ivan4 switchMove "CombatDyingVer3"
@@ -239,8 +246,10 @@ _camera camCommit 0
 ~1
 setacctime 1
 James reveal George
+George reveal James
 aP4 setmimic "angry"
-George dowatch [6192.19,4978.36,1.87]
+George setdir 305
+
 
 ~1
 James reveal George
@@ -253,12 +262,12 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 James dowatch George
-George say "08v10"
+George say "08v09"
 ;=== 22:09:24
 _camera camSetTarget [-20892.99,101204.11,2597.67]
 _camera camSetPos [6194.46,4975.63,1.08]
 _camera camSetFOV 0.700
-_camera camCommit 4
+_camera camCommit 3
 @camCommitted _camera
 ;=== 22:10:00
 _camera camSetTarget [-43187.04,91101.02,-11931.99]
@@ -268,7 +277,7 @@ _camera camCommit 0
 @camCommitted _camera
 2 fademusic 0.1
 James setmimic "angry"
-James say "08v11"
+James say "08v10"
 ~4
 ;=== 22:11:01
 _camera camSetTarget [97421.67,-27197.96,-25261.98]
@@ -280,7 +289,7 @@ _camera camCommit 0
 _camera camSetTarget [43959.27,-86836.99,-11933.02]
 _camera camSetPos [6196.27,4976.26,1.56]
 _camera camSetFOV 0.700
-_camera camCommit 4
+_camera camCommit 3
 @camCommitted _camera
 ;=== 22:11:33
 _camera camSetTarget [104796.89,20382.74,-6217.74]
@@ -288,8 +297,8 @@ _camera camSetPos [6191.50,4977.12,1.54]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-George say "08v12"
-~6
+George say "08v11"
+~7
 ;=== 22:12:05
 _camera camSetTarget [-29714.83,97778.79,-9845.48]
 _camera camSetPos [6193.33,4977.33,1.59]
@@ -297,8 +306,8 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 James setmimic "surprised"
-James say "08v13"
-~4
+James say "08v12"
+~5
 ;=== 22:12:28
 _camera camSetTarget [-53292.66,84741.32,-9845.96]
 _camera camSetPos [6195.15,4975.45,1.42]
@@ -306,38 +315,32 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 George setmimic "normal"
-George say "08v14"
-~4
+George say "08v13"
+~3
 James setmimic "smile"
-James say "08v15"
-~5
-;=== 22:13:54
-_camera camSetTarget [92279.05,-43178.72,-16367.40]
-_camera camSetPos [6193.75,4975.81,1.51]
-_camera camSetFOV 0.700
-_camera camCommit 0
-@camCommitted _camera
-~4
+James say "08v14"
+~3
 ;=== 22:14:10
 _camera camSetTarget [44083.96,-87156.79,-8591.11]
 _camera camSetPos [6192.82,4980.37,1.65]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-George say "08v16"
-~0.5
-George domove getpos les
+George say "08v15"
+~1.5
+George stop false
+George domove getmarkerpos "les"
 ~2
-James dowatch George
-George domove getpos les
-;=== 22:14:53
-_camera camSetTarget [95465.21,49850.72,-3980.98]
-_camera camSetPos [6191.46,4976.19,1.24]
+;=== 1:36:44
+_camera camSetTarget [-73815.78,62933.95,-15397.96]
+_camera camSetPos [6193.90,4977.43,1.51]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~3
-James say "08v17"
+George domove getmarkerpos "les"
+James dowatch George
+~2
+James say "08v16"
 ~3
 titlecut ["","black out",1]
 ~1
@@ -359,12 +362,12 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 James setmimic "normal"
-James say "08v18"
+James say "08v17"
 ;=== 9:40:24
 _camera camSetTarget [-25582.13,99789.72,77.84]
 _camera camSetPos [6194.87,4972.94,1.41]
 _camera camSetFOV 0.700
-_camera camCommit 11
+_camera camCommit 8
 @camCommitted _camera
 ;=== 9:41:40
 _camera camSetTarget [49633.87,-85096.09,77.85]
@@ -374,7 +377,7 @@ _camera camCommit 0
 @camCommitted _camera
 titleText["","PLAIN DOWN"]
 ~2
-aP4 say "08v19"
+aP4 say "08v18"
 ~3
 ;=== 9:43:32
 _camera camSetTarget [-5739.59,103630.68,-11098.88]
@@ -382,8 +385,8 @@ _camera camSetPos [6193.21,4976.77,1.47]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-James say "08v20"
-~2
+James say "08v19"
+~1
 titleText["","PLAIN DOWN"]
 ;=== 9:43:59
 _camera camSetTarget [43174.63,-87403.66,-9846.09]
@@ -396,21 +399,21 @@ _camera camSetTarget [43174.63,-87403.66,-9846.52]
 _camera camSetPos [6194.68,4976.11,1.74]
 _camera camSetFOV 0.700
 _camera camCommit 3
-aP4 say "08v21"
+aP4 say "08v20"
 @camCommitted _camera
-~3
+~0.5
 ;=== 9:44:58
 _camera camSetTarget [-93190.74,109.92,-9846.75]
 _camera camSetPos [6196.38,4977.77,1.43]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-James say "08v22"
+James say "08v21"
 ;=== 9:45:05
 _camera camSetTarget [-66483.07,72939.41,-9846.26]
 _camera camSetPos [6196.21,4974.85,1.54]
 _camera camSetFOV 0.700
-_camera camCommit 6
+_camera camCommit 4
 @camCommitted _camera
 ;=== 9:45:44
 _camera camSetTarget [46252.06,-86109.77,-9846.74]
@@ -418,17 +421,17 @@ _camera camSetPos [6194.32,4977.39,1.75]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-aP4 say "08v23"
+aP4 say "08v22"
 ;=== 9:45:49
 _camera camSetTarget [65596.50,-74853.57,-9846.31]
 _camera camSetPos [6194.08,4976.50,1.71]
 _camera camSetFOV 0.700
-_camera camCommit 9
+_camera camCommit 12
 @camCommitted _camera
 James setBehaviour "combat"
 James setUnitPos "up"
 ~1
-[] exec "handgun.sqs"
+James exec "handgun.sqs"
 ;=== 9:47:58
 _camera camSetTarget [-44407.59,90137.79,-13599.99]
 _camera camSetPos [6193.78,4976.77,1.58]
@@ -437,7 +440,7 @@ _camera camCommit 0
 @camCommitted _camera
 ~0.5
 James setmimic "angry"
-James say "08v24"
+James say "08v23"
 ~2
 ;=== 9:49:02
 _camera camSetTarget [43657.19,96674.55,-13599.88]
@@ -449,7 +452,7 @@ _camera camCommit 0
 _camera camSetTarget [-92750.69,9693.72,-13599.39]
 _camera camSetPos [6197.68,4976.25,1.52]
 _camera camSetFOV 0.700
-_camera camCommit 4
+_camera camCommit 6
 @camCommitted _camera
 ;=== 9:49:19
 _camera camSetTarget [-46186.28,89055.73,-13599.32]
@@ -458,7 +461,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~2
-James say "08v25"
+James say "08v24"
 ~1
 ;=== 9:49:54
 _camera camSetTarget [65664.51,-74244.98,-13599.63]
@@ -466,7 +469,7 @@ _camera camSetPos [6193.65,4977.06,1.52]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~3
+~2
 ;=== 9:50:06
 _camera camSetTarget [-42123.91,91452.66,-13599.69]
 _camera camSetPos [6193.76,4976.71,1.50]
@@ -474,7 +477,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~0.1
-James say "08v26"
+James say "08v25"
 ~2
 ;=== 9:50:31
 _camera camSetTarget [-11592.66,102423.43,-13599.52]
@@ -482,7 +485,7 @@ _camera camSetPos [6194.23,4973.54,1.31]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-James say "08v27"
+James say "08v26"
 ~1
 ;=== 9:50:51
 _camera camSetTarget [39434.40,-88947.02,-8451.83]
@@ -490,7 +493,7 @@ _camera camSetPos [6193.22,4979.85,1.64]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-James say "08v28"
+James say "08v27"
 ~1
 ;=== 9:51:06
 _camera camSetTarget [-28227.63,98476.99,-8452.03]
@@ -498,8 +501,7 @@ _camera camSetPos [6193.58,4976.56,1.35]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-James say "08v29"
-James switchMove "HandGunStand"
+James say "08v28"
 ~1
 playsound "gunshot"
 James switchMove "CombatDyingVer3"
@@ -516,7 +518,7 @@ _camera camSetPos [6192.10,4965.49,1.39]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-vojak say "08v30"
+vojak say "08v29"
 ;=== 9:58:41
 _camera camSetTarget [-82971.06,49417.04,-8451.06]
 _camera camSetPos [6201.57,4970.62,1.29]
@@ -632,8 +634,8 @@ _camera camSetPos [6816.85,4826.84,1.63]
 _camera camSetFOV 0.607
 _camera camCommit 0
 @camCommitted _camera
-aP5 say "08v31"
-~4
+aP5 say "08v30"
+~3
 ;=== 12:25:52
 _camera camSetTarget [99071.76,-33765.77,60.07]
 _camera camSetPos [6818.69,4826.24,1.58]
@@ -641,12 +643,12 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Astier setmimic "surprised"
-Astier say "08v32"
+Astier say "08v31"
 ;=== 12:25:59
 _camera camSetTarget [94266.88,-43242.70,-6375.94]
 _camera camSetPos [6815.44,4828.43,1.82]
 _camera camSetFOV 0.700
-_camera camCommit 8
+_camera camCommit 10
 
 ~2
 Astier setmimic "normal"
@@ -659,12 +661,12 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 aP5 setmimic "normal"
-aP5 say "08v33"
+aP5 say "08v32"
 ;=== 12:27:01
 _camera camSetTarget [-84798.26,43022.88,-12092.05]
 _camera camSetPos [6817.28,4826.83,1.61]
 _camera camSetFOV 0.700
-_camera camCommit 8
+_camera camCommit 6
 @camCommitted _camera
 ;=== 12:28:03
 _camera camSetTarget [102184.99,-24654.46,-5958.23]
@@ -672,9 +674,9 @@ _camera camSetPos [6818.93,4826.04,1.58]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Astier say "08v34"
+Astier say "08v33"
 9 fademusic 0
-~9
+~4
 titlecut ["","black out",3]
 ~3
 titleText["","PLAIN DOWN"]

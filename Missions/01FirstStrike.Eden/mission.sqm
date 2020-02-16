@@ -426,7 +426,7 @@ class Mission
 				class Item1
 				{
 					position[]={5046.605957,16.334999,3970.729736};
-					synchronizations[]={2};
+					synchronizations[]={1};
 					class Effects
 					{
 					};
@@ -599,7 +599,7 @@ class Mission
 				class Item1
 				{
 					position[]={4843.186035,16.334999,4064.353271};
-					synchronizations[]={1};
+					synchronizations[]={0};
 					class Effects
 					{
 					};
@@ -1023,14 +1023,16 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=4;
+				items=3;
 				class Item0
 				{
 					position[]={5180.306641,19.551945,4110.278809};
+					type="HOLD";
 					combatMode="YELLOW";
 					formation="LINE";
 					speed="NORMAL";
 					combat="AWARE";
+					synchronizations[]={2};
 					class Effects
 					{
 					};
@@ -1038,22 +1040,13 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={5178.228027,18.535500,4108.198730};
-					synchronizations[]={0};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-				class Item2
-				{
 					position[]={5067.901367,16.334999,3972.887451};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 				};
-				class Item3
+				class Item2
 				{
 					position[]={5028.243652,16.334999,3945.421631};
 					type="SENTRY";
@@ -1101,12 +1094,14 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=5;
+				items=4;
 				class Item0
 				{
 					position[]={5052.504395,15.494289,3831.641602};
+					type="HOLD";
 					combatMode="YELLOW";
 					speed="LIMITED";
+					synchronizations[]={3};
 					class Effects
 					{
 					};
@@ -1114,8 +1109,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={5050.680176,16.106668,3836.389160};
-					synchronizations[]={3};
+					position[]={5027.618652,16.334999,3906.133301};
 					class Effects
 					{
 					};
@@ -1123,21 +1117,13 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={5027.618652,16.334999,3906.133301};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-				class Item3
-				{
 					position[]={4975.049805,16.334999,3935.024170};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 				};
-				class Item4
+				class Item3
 				{
 					position[]={4950.977539,16.334999,3941.614502};
 					type="SENTRY";
@@ -1333,13 +1319,14 @@ class Mission
 			b=20.000000;
 			angle=50.000000;
 			activationBy="MEMBER";
+			type="SWITCH";
 			age="UNKNOWN";
 			idVehicle=1;
 			text="RUSSIANS CLOSE - AMERICANS TO DEFEND";
 			class Effects
 			{
 			};
-			synchronizations[]={0,3};
+			synchronizations[]={2,3};
 		};
 		class Item2
 		{
@@ -1393,7 +1380,7 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={1,2};
+			synchronizations[]={0,1};
 		};
 		class Item6
 		{
