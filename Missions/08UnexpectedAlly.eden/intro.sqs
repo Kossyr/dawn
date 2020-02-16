@@ -137,6 +137,8 @@ ivan4 dowatch James
 aP4 dowatch James
 James dowatch ivan4
 
+George stop true
+
 ;=== 21:57:11
 _camera camSetTarget [45852.66,96536.86,-6357.20]
 _camera camSetPos [6190.93,4964.58,1.19]
@@ -168,7 +170,8 @@ _camera camCommit 0
 @camCommitted _camera
 James setmimic "angry"
 James say "08v06"
-George dowatch [6196.96,4975.04,1.49]
+George setdir 165
+
 ~7
 ;=== 22:02:48
 _camera camSetTarget [67232.30,84179.13,78.99]
@@ -212,6 +215,9 @@ _camera camCommit 0
 @camCommitted _camera
 titleText["","PLAIN DOWN"]
 James reveal George
+George reveal James
+
+
 ~1
 James setBehaviour "combat"
 James setUnitPos "up"
@@ -225,6 +231,7 @@ playSound "glock"
 playmusic "RTrack1b"
 
 James reveal George
+George reveal James
 
 0 fademusic 0.5
 ivan4 switchMove "CombatDyingVer3"
@@ -239,8 +246,10 @@ _camera camCommit 0
 ~1
 setacctime 1
 James reveal George
+George reveal James
 aP4 setmimic "angry"
-George dowatch [6192.19,4978.36,1.87]
+George setdir 305
+
 
 ~1
 James reveal George
@@ -319,15 +328,17 @@ _camera camCommit 0
 @camCommitted _camera
 George say "08v15"
 ~0.5
-George domove getmarkerpos les
+George stop false
+George domove getmarkerpos "les"
 ~2
-James dowatch George
-;=== 22:14:53
-_camera camSetTarget [95465.21,49850.72,-3980.98]
-_camera camSetPos [6191.46,4976.19,1.24]
+;=== 1:36:44
+_camera camSetTarget [-73815.78,62933.95,-15397.96]
+_camera camSetPos [6193.90,4977.43,1.51]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
+George domove getmarkerpos "les"
+James dowatch George
 ~3
 James say "08v16"
 ~3
@@ -637,7 +648,7 @@ Astier say "08v31"
 _camera camSetTarget [94266.88,-43242.70,-6375.94]
 _camera camSetPos [6815.44,4828.43,1.82]
 _camera camSetFOV 0.700
-_camera camCommit 8
+_camera camCommit 10
 
 ~2
 Astier setmimic "normal"
