@@ -302,14 +302,16 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=6;
+				items=5;
 				class Item0
 				{
 					position[]={6247.813477,20.653025,3476.606689};
+					type="HOLD";
 					combatMode="YELLOW";
 					formation="COLUMN";
 					speed="FULL";
 					combat="COMBAT";
+					synchronizations[]={0};
 					class Effects
 					{
 					};
@@ -317,8 +319,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={6249.029297,21.005140,3484.065918};
-					synchronizations[]={0};
+					position[]={6703.414063,34.296749,4019.529053};
 					class Effects
 					{
 					};
@@ -326,7 +327,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={6703.414063,34.296749,4019.529053};
+					position[]={6931.378906,37.429268,4361.989746};
 					class Effects
 					{
 					};
@@ -334,21 +335,13 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={6931.378906,37.429268,4361.989746};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-				class Item4
-				{
 					position[]={6976.651855,40.019527,4428.134277};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 				};
-				class Item5
+				class Item4
 				{
 					position[]={7447.049805,20.879999,4843.065430};
 					class Effects
@@ -664,6 +657,7 @@ class Mission
 			position[]={6692.183105,2.176272,3376.514404};
 			a=0.000000;
 			b=0.000000;
+			type="SWITCH";
 			age="UNKNOWN";
 			text="GO SECOND WAVE";
 			expCond="second_wave";
