@@ -1,6 +1,7 @@
 
 _leader = _this select 0
-_heli = _this select 1
+_vehicle = _this select 1
+_interval = _this select 2
 
 _group = units _leader
 
@@ -9,17 +10,13 @@ _i = 0
 
 #loop
 
-(_group select _i) action ["eject", _heli]
+(_group select _i) action ["eject", _vehicle]
 unassignvehicle (_group select _i)
 
-~2
+~_interval
+
 _i = _i + 1
 
 ? _i < _total : goto "loop"
-
-~10
-
-nakladak setdammage 1
-auto setdammage 1
 
 exit
