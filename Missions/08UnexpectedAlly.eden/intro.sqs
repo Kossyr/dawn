@@ -538,12 +538,10 @@ p9 setpos getmarkerpos "partyzani"
 p10 setpos getmarkerpos "partyzani"
 p11 setpos getmarkerpos "partyzani"
 
-p1 addeventhandler [{dammaged},{(_this select 0) setdamage (damage (_this select 0)-(_this select 2))}]
-p1 addeventhandler [{hit},{(_this select 0) setdamage (damage (_this select 0)-(_this select 2))}]
-
-p2 addeventhandler [{dammaged},{(_this select 0) setdamage (damage (_this select 0)-(_this select 2))}]
-p2 addeventhandler [{hit},{(_this select 0) setdamage (damage (_this select 0)-(_this select 2))}]
-
+p1 exec "invincibility.sqs"
+p2 exec "invincibility.sqs"
+aP4 exec "invincibility.sqs"
+aP4 setcaptive true
 
 ;=== 10:02:09
 _camera camSetTarget [104681.43,-12296.50,78.95]
@@ -551,9 +549,6 @@ _camera camSetPos [6185.06,4977.07,1.46]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-aP4 setcaptive true
-aP4 addeventhandler [{dammaged},{(_this select 0) setdamage (damage (_this select 0)-(_this select 2))}]
-aP4 addeventhandler [{hit},{(_this select 0) setdamage (damage (_this select 0)-(_this select 2))}]
 ~4
 utok=true
 playmusic "RTrack5"
