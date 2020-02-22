@@ -1,0 +1,116 @@
+titletext["","plain"]
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+playmusic ["RTrack8",18]
+
+playsound "bum"
+
+astierArrival=true
+
+titlecut["","white out",0.2]
+~1
+titlecut["","white in",2]
+;=== 16:58:50
+_camera camSetTarget [49276.95,-82476.48,-3379.22]
+_camera camSetPos [4858.07,7046.89,1.68]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+;=== 21:08:04
+_camera camSetTarget [-40508.37,96186.14,1910.62]
+_camera camSetPos [4842.00,7077.89,2.00]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+	astierGlue=true
+	
+	_who = uazg;
+	
+	_dx = 2;
+	_dy = 0;
+	_dz = 1.65;
+	
+	
+	#loop
+
+	_camera camSetTarget uazg
+	_camera camSetPos [(getpos _who select 0) + _dx * sin (getdir _who) - _dy * cos (getdir _who), (getpos _who select 1) + _dx * cos (getdir _who) + _dy * sin (getdir _who), (getpos _who select 2)+_dz]
+	_camera camSetFOV 0.900
+	_camera camCommit 0
+	@camCommitted _camera
+	
+	? astierGlueEnd : goto "glueend"
+	goto "loop"
+	
+	#glueend
+
+;=== 20:56:51
+_camera camSetTarget [18488.47,-90205.59,-18507.57]
+_camera camSetPos [4833.28,7083.80,3.47]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:57:02
+_camera camSetTarget [-6434.85,-90522.94,-18509.17]
+_camera camSetPos [4818.40,7070.35,9.92]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+;=== 20:57:36
+_camera camSetTarget [79428.19,73286.78,-6131.19]
+_camera camSetPos [4788.81,7030.83,1.92]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:57:47
+_camera camSetTarget [73867.09,79345.80,679.12]
+_camera camSetPos [4801.58,7025.88,1.92]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+;=== 20:58:20
+_camera camSetTarget [-76621.95,-50909.71,-3339.09]
+_camera camSetPos [4834.94,6991.36,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+Astier setpos getmarkerpos "astier_pos1"
+Poincare setpos getmarkerpos "poincare_pos1"
+;=== 20:58:48
+_camera camSetTarget [102217.38,-15323.55,-3339.57]
+_camera camSetPos [4799.48,6981.76,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:58:57
+_camera camSetTarget [44707.18,-84642.31,-3339.49]
+_camera camSetPos [4810.13,6987.25,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~1
+astierParade=true
+
+;=== 21:05:54
+_camera camSetTarget [32754.45,103052.78,161.06]
+_camera camSetPos [4807.53,7037.05,1.40]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 21:06:03
+_camera camSetTarget [35430.83,102230.61,160.62]
+_camera camSetPos [4804.76,7031.79,1.40]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+
+dismissed=true
+
+
+exit
