@@ -193,7 +193,7 @@ _camera camCommit 0
 richman say "x00v07"
 fuelman setmimic "Angry"
 ~1
-fuelman switchmove "FXFromTable"
+fuelman switchmove "FXStandEndTable"
 ~3
 richman stop true
 richman setpos getmarkerpos "richman_pos"
@@ -279,7 +279,7 @@ _camera camCommit 0
 _camera camSetTarget [-92585.46,15099.63,-33146.71]
 _camera camSetPos [1294.40,5969.45,4.02]
 _camera camSetFOV 0.700
-_camera camCommit 7
+_camera camCommit 10
 @camCommitted _camera
 punchGo=true
 punchCar setdammage 1
@@ -325,9 +325,9 @@ riotCar setdammage 0.3
 titlecut["","black out",0.5]
 @camCommitted _camera
 titlecut["","black in",0.5]
-fuelman switchmove "FXStandDropTel"
-richman switchmove "FXToTable"
 radio say "x00v14"
+fuelman setmimic "sad"
+richman setmimic "sad"
 ;=== 16:03:06
 _camera camSetTarget [103044.94,34818.32,-12825.80]
 _camera camSetPos [9642.36,1486.06,1.54]
@@ -340,5 +340,12 @@ _camera camSetPos [9647.72,1486.45,1.38]
 _camera camSetFOV 0.700
 _camera camCommit 12
 @camCommitted _camera
+radio say "x00v15"
+~7
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+[] exec "intro_part3.sqs"
 
 exit
