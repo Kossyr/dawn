@@ -1,0 +1,111 @@
+
+
+titletext["","plain"]
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+ship setpos getmarkerpos "ship_pos"
+
+fisherman stop true
+fisherman setpos getmarkerpos "fisherman_pos2"
+fisherman setdir 340
+fisherman switchmove "FxToKneel"
+
+keeper stop true
+keeper setpos getmarkerpos "keeper_pos3"
+keeper setdir 180
+keeper disableai "autotarget"
+keeper switchmove "EffectStandSitDown"
+
+fisherman setmimic "normal"
+keeper setmimic "normal"
+
+titlecut ["","white out", 0.2]
+
+~0.2
+
+titlecut ["","white in",1]
+
+;=== 19:25:58
+_camera camSetTarget [-63426.73,67620.20,-5310.20]
+_camera camSetPos [10327.05,301.21,1.29]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+invasionGo=true
+~2.5
+
+keeper say "x00v31"
+~1.5
+;=== 19:26:32
+_camera camSetTarget [-63724.31,-66550.93,-6847.60]
+_camera camSetPos [10323.47,304.14,1.42]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+fisherman say "x00v32"
+fisherman setmimic "surprised"
+fisherman switchmove "FxFromKneel"
+~2
+fisherman dowatch [10376.44,291.37,15.29]
+keeper setdir 90 
+keeper dowatch [10376.44,291.37,15.29]
+playmusic "Track9"
+~0.5
+;=== 19:27:57
+_camera camSetTarget [-82941.57,36367.46,142.71]
+_camera camSetPos [10328.69,302.95,1.29]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+keeper setmimic "surprised"
+keeper say "x00v33"
+keeper switchmove "FxShow3"
+1.5 fademusic 1
+~1.5
+;=== 19:29:01
+_camera camSetTarget [110042.66,1619.14,7696.30]
+_camera camSetPos [10345.46,290.41,6.47]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+titletext["","plain down"]
+~4
+keeper setpos getmarkerpos "keeper_pos4"
+keeper setdir 90
+fisherman setpos getmarkerpos "fisherman_pos3"
+fisherman setdir 90
+
+[_camera,chin,[0,0,-1.5],chin,[0,5,-1.5],0.7] exec "logiccam.sqs"
+@lighthouseSighted
+startglcam=false
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+_camera = "camera" camcreate [10321.66,300.00,1.13]
+_camera cameraeffect ["internal","back"]
+
+fisherman reveal chin
+keeper reveal chin
+fisherman dowatch chin
+keeper dowatch chin
+
+;=== 19:44:22
+_camera camSetTarget [109948.65,-5286.50,6606.86]
+_camera camSetPos [10321.66,300.00,1.13]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:44:47
+_camera camSetTarget [108856.75,-5225.28,16200.91]
+_camera camSetPos [10327.37,298.53,1.22]
+_camera camSetFOV 0.700
+_camera camCommit 5
+~4
+titlecut ["","black out",1]
+@camCommitted _camera
+
+
+
+exit

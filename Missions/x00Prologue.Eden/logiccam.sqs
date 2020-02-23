@@ -1,0 +1,58 @@
+;________________________
+;::::::::::::::::::::::::
+;
+;Logiccam1.0
+;author <Blanco>
+;created 25/02/2004 5:07:54
+;________________________
+;::::::::::::::::::::::::
+
+startglcam = true
+_camid = _this select 0
+_tgt = _this select 1
+_gl1prop = _this select 2
+_tgt2 = _this select 3
+_gl2prop = _this select 4
+_setvof = _this select 5
+
+_gl1 = "logic" camcreate getpos _tgt
+_gl2 = "logic" camcreate getpos _tgt2
+
+#loop
+?!(startglcam) : goto "endcam"
+_tgtdir = getDir _tgt + (_gl1prop select 0)
+_tgtx = getPos _tgt select 0
+_tgty = getPos _tgt select 1
+_tgtz = getPos _tgt select 2
+
+
+
+_tgtxdir = _tgtx + (_gl1prop select 1)* (sin _tgtdir)
+_tgtydir = _tgty + (_gl1prop select 1)* (cos _tgtdir)
+
+
+_tgtdir2 = getDir _tgt2 + (_gl2prop select 0)
+_tgtx2 = getPos _tgt2 select 0
+_tgty2 = getPos _tgt2 select 1
+_tgtz2 = getPos _tgt2 select 2
+
+_tgtxdir2 = _tgtx2 + (_gl2prop select 1)* (sin _tgtdir2)
+_tgtydir2 = _tgty2 + (_gl2prop select 1)* (cos _tgtdir2)
+
+_gl1 setDir _tgtdir
+_gl2 setDir _tgtdir2
+
+_gl1 setPos [_tgtxdir,_tgtydir,_tgtz + (_gl1prop select 2)]
+_gl2 setPos [_tgtxdir2,_tgtydir2,_tgtz2 + (_gl2prop select 2)]
+
+
+_camid camsetpos getpos _gl1
+_camid camsettarget _gl2
+_camid camsetfov _Setvof
+_camid camcommit 0
+
+goto "loop"
+#endcam
+@!(startglcam)
+deletevehicle _gl1;deletevehicle _gl2
+exit
