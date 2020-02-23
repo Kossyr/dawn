@@ -162,7 +162,7 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={4839.290039,159.029999,7074.898926};
+					position[]={4816.843750,159.029999,7054.226563};
 					special="CARGO";
 					id=4;
 					side="LOGIC";
@@ -201,7 +201,7 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={9660.635742,12.872757,1492.075439};
+					position[]={9663.691406,12.589867,1493.528076};
 					azimut=275.000000;
 					id=10;
 					side="CIV";
@@ -217,7 +217,7 @@ class Intro
 				items=3;
 				class Item0
 				{
-					position[]={9659.596680,12.944249,1492.178345};
+					position[]={9662.652344,12.661359,1493.630981};
 					type="HOLD";
 					speed="LIMITED";
 					synchronizations[]={4};
@@ -228,7 +228,7 @@ class Intro
 				};
 				class Item1
 				{
-					position[]={9648.321289,14.127213,1492.340820};
+					position[]={9651.674805,13.662078,1493.938354};
 					speed="LIMITED";
 					class Effects
 					{
@@ -1962,7 +1962,32 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="Daladier";
-					init="this setidentity ""Daladier""; this setbehaviour ""safe""";
+					init="this setidentity ""Daladier""; this setbehaviour ""safe""; this addweapon ""glock""";
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={4811.052246,159.029999,6985.750000};
+					type="HOLD";
+					speed="LIMITED";
+					synchronizations[]={33};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={4809.224121,159.029999,7006.843262};
+					type="HOLD";
+					speed="LIMITED";
+					class Effects
+					{
+					};
+					showWP="NEVER";
 				};
 			};
 		};
@@ -2332,7 +2357,7 @@ class Intro
 				items=4;
 				class Item0
 				{
-					position[]={4805.787598,159.029999,7039.154297};
+					position[]={4805.915527,159.029999,7039.059570};
 					type="HOLD";
 					synchronizations[]={30};
 					class Effects
@@ -2394,7 +2419,7 @@ class Intro
 				items=4;
 				class Item0
 				{
-					position[]={4806.691895,159.029999,7040.807129};
+					position[]={4806.787598,159.029999,7040.759766};
 					type="HOLD";
 					synchronizations[]={28};
 					class Effects
@@ -2456,7 +2481,7 @@ class Intro
 				items=4;
 				class Item0
 				{
-					position[]={4806.122559,159.029999,7040.017578};
+					position[]={4806.314941,159.029999,7039.852051};
 					type="HOLD";
 					synchronizations[]={29};
 					class Effects
@@ -2691,7 +2716,7 @@ class Intro
 			};
 			class Waypoints
 			{
-				items=6;
+				items=7;
 				class Item0
 				{
 					position[]={4793.658203,158.031143,7171.624023};
@@ -2706,7 +2731,7 @@ class Intro
 				};
 				class Item1
 				{
-					position[]={4847.493164,159.029999,7072.177246};
+					position[]={4838.636230,159.029999,7076.802246};
 					class Effects
 					{
 					};
@@ -2714,7 +2739,7 @@ class Intro
 				};
 				class Item2
 				{
-					position[]={4816.923828,159.029999,7050.808105};
+					position[]={4813.518066,159.029999,7050.379395};
 					type="GETOUT";
 					speed="LIMITED";
 					class Effects
@@ -2724,7 +2749,7 @@ class Intro
 				};
 				class Item3
 				{
-					position[]={4810.995117,159.029999,7043.922363};
+					position[]={4811.389160,159.029999,7044.503418};
 					type="HOLD";
 					speed="FULL";
 					synchronizations[]={25};
@@ -2744,7 +2769,19 @@ class Intro
 				};
 				class Item5
 				{
-					position[]={4806.186035,159.029999,7029.730957};
+					position[]={4807.434082,159.029999,7028.197754};
+					type="HOLD";
+					synchronizations[]={32};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item6
+				{
+					position[]={4809.046387,159.029999,7008.394043};
+					type="HOLD";
+					speed="LIMITED";
 					class Effects
 					{
 					};
@@ -2891,7 +2928,7 @@ class Intro
 	};
 	class Vehicles
 	{
-		items=31;
+		items=32;
 		class Item0
 		{
 			position[]={10297.085938,27.821161,412.631226};
@@ -3201,6 +3238,16 @@ class Intro
 			vehicle="UAZG";
 			skill=0.600000;
 		};
+		class Item31
+		{
+			position[]={4881.475586,159.029999,6994.291016};
+			azimut=330.000000;
+			id=150;
+			side="EMPTY";
+			vehicle="SkodaGreen";
+			leader=1;
+			skill=0.600000;
+		};
 	};
 	class Markers
 	{
@@ -3231,20 +3278,20 @@ class Intro
 		};
 		class Item4
 		{
-			position[]={4812.057617,159.029999,7047.157227};
-			name="poincare_pos1";
+			position[]={4806.635742,159.029999,7029.037598};
+			name="poincare_pos2";
 			type="Flag";
 		};
 		class Item5
 		{
-			position[]={4812.988770,159.029999,7046.070801};
-			name="astier_pos1";
+			position[]={4807.730469,159.029999,7028.730957};
+			name="astier_pos2";
 			type="Flag";
 		};
 	};
 	class Sensors
 	{
-		items=33;
+		items=36;
 		class Item0
 		{
 			position[]={10313.225586,25.046913,413.759613};
@@ -3581,9 +3628,9 @@ class Intro
 			position[]={4909.324707,156.289764,7173.664063};
 			a=0.000000;
 			b=0.000000;
-			timeoutMin=4.000000;
-			timeoutMid=4.000000;
-			timeoutMax=4.000000;
+			timeoutMin=3.000000;
+			timeoutMid=3.000000;
+			timeoutMax=3.000000;
 			age="UNKNOWN";
 			expCond="astierGlue";
 			expActiv="astierGlueEnd=true";
@@ -3614,6 +3661,7 @@ class Intro
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=136;
+			expCond="this and astierParade";
 			expActiv="salute1 exec ""salutation.sqs""";
 			class Effects
 			{
@@ -3629,6 +3677,7 @@ class Intro
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=136;
+			expCond="this and astierParade";
 			expActiv="salute2 exec ""salutation.sqs""";
 			class Effects
 			{
@@ -3644,6 +3693,7 @@ class Intro
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=136;
+			expCond="this and astierParade";
 			expActiv="salute3 exec ""salutation.sqs""";
 			class Effects
 			{
@@ -3659,6 +3709,7 @@ class Intro
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=136;
+			expCond="this and astierParade";
 			expActiv="salute4 exec ""salutation.sqs""";
 			class Effects
 			{
@@ -3674,6 +3725,7 @@ class Intro
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=136;
+			expCond="this and astierParade";
 			expActiv="salute5 exec ""salutation.sqs""";
 			class Effects
 			{
@@ -3689,7 +3741,46 @@ class Intro
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=136;
+			expCond="this and astierParade";
 			expActiv="salute6 exec ""salutation.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item33
+		{
+			position[]={4821.308594,159.029999,7001.180176};
+			a=0.000000;
+			b=0.000000;
+			type="SWITCH";
+			age="UNKNOWN";
+			expCond="meetingDaladierGo";
+			class Effects
+			{
+			};
+			synchronizations[]={33};
+		};
+		class Item34
+		{
+			position[]={4820.115234,159.029999,7011.147949};
+			a=0.000000;
+			b=0.000000;
+			type="SWITCH";
+			age="UNKNOWN";
+			expCond="meetingAstierGo";
+			class Effects
+			{
+			};
+			synchronizations[]={32};
+		};
+		class Item35
+		{
+			position[]={5002.491699,156.197800,7147.182617};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			expCond="meeting";
+			expActiv="astier stop true; Astier setpos getmarkerpos ""astier_pos2""; astier setdir 180; poincare stop true; poincare setpos getmarkerpos ""poincare_pos2""; poincare setdir 180;astier exec ""camera.sqs""";
 			class Effects
 			{
 			};

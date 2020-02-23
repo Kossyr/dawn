@@ -7,6 +7,9 @@ playmusic ["RTrack8",18]
 
 playsound "bum"
 
+astierParade=false
+dismissed=false
+
 astierArrival=true
 
 titlecut["","white out",0.2]
@@ -44,7 +47,7 @@ _camera camCommit 0
 	_camera camCommit 0
 	@camCommitted _camera
 	
-	? astierGlueEnd : goto "glueend"
+	? astierGlueEnd : goto "glueEnd"
 	goto "loop"
 	
 	#glueend
@@ -80,8 +83,6 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~3
-Astier setpos getmarkerpos "astier_pos1"
-Poincare setpos getmarkerpos "poincare_pos1"
 ;=== 20:58:48
 _camera camSetTarget [102217.38,-15323.55,-3339.57]
 _camera camSetPos [4799.48,6981.76,1.53]
@@ -96,7 +97,6 @@ _camera camCommit 5
 @camCommitted _camera
 ~1
 astierParade=true
-
 ;=== 21:05:54
 _camera camSetTarget [32754.45,103052.78,161.06]
 _camera camSetPos [4807.53,7037.05,1.40]
@@ -111,6 +111,72 @@ _camera camCommit 10
 @camCommitted _camera
 
 dismissed=true
+~2
+playmusic "Track7"
+;=== 10:48:42
+_camera camSetTarget [66912.42,-71325.83,-2859.50]
+_camera camSetPos [4805.47,6991.56,1.09]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Astier stop true
+Poincare stop true
+Astier setpos getmarkerpos "astier_pos2"
+Poincare setpos getmarkerpos "poincare_pos2"
+Poincare setdir 180
+Astier setdir 180
+
+Daladier dowatch [4807.72,7029.04,1.57]
+Astier dowatch [4811.06,6985.36,1.72]
+Poincare dowatch [4811.06,6985.36,1.72]
+
+~1.5
+Astier setpos getmarkerpos "astier_pos2"
+Poincare setpos getmarkerpos "poincare_pos2"
+Poincare setdir 180
+Astier setdir 180
+~1
+;=== 10:49:13
+_camera camSetTarget [12617.60,-92342.56,-8377.38]
+_camera camSetPos [4810.94,6986.01,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Daladier setmimic "Smile"
+~2.5
+;=== 10:53:43
+_camera camSetTarget [20921.06,105720.80,379.91]
+_camera camSetPos [4807.63,7028.15,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Astier setmimic "Angry"
+~2.5
+;=== 10:54:13
+_camera camSetTarget [12630.96,-92662.32,-10.11]
+_camera camSetPos [4807.01,7030.99,1.01]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+;=== 10:55:02
+_camera camSetTarget [104379.22,16249.71,440.63]
+_camera camSetPos [4805.62,7028.90,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Poincare setmimic "Cynical"
+Poincare say "x00v16"
+;=== 10:55:09
+_camera camSetTarget [103436.58,23516.84,441.07]
+_camera camSetPos [4805.67,7028.54,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+Astier setmimic "Normal"
+Astier say "x00v17"
+~6
+Poincare say "x00v18"
 
 
 exit
