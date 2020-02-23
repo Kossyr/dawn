@@ -162,7 +162,7 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={4816.843750,159.029999,7054.226563};
+					position[]={5058.414551,151.422272,7142.028320};
 					special="CARGO";
 					id=4;
 					side="LOGIC";
@@ -2769,7 +2769,7 @@ class Intro
 				};
 				class Item5
 				{
-					position[]={4807.434082,159.029999,7028.197754};
+					position[]={4807.722168,159.029999,7028.150391};
 					type="HOLD";
 					synchronizations[]={32};
 					class Effects
@@ -2779,7 +2779,7 @@ class Intro
 				};
 				class Item6
 				{
-					position[]={4809.046387,159.029999,7008.394043};
+					position[]={4809.286621,159.029999,7008.482422};
 					type="HOLD";
 					speed="LIMITED";
 					class Effects
@@ -3251,7 +3251,7 @@ class Intro
 	};
 	class Markers
 	{
-		items=6;
+		items=8;
 		class Item0
 		{
 			position[]={10323.923828,30.618727,306.293488};
@@ -3286,6 +3286,18 @@ class Intro
 		{
 			position[]={4807.730469,159.029999,7028.730957};
 			name="astier_pos2";
+			type="Flag";
+		};
+		class Item6
+		{
+			position[]={4809.206543,159.029999,7008.786133};
+			name="astier_pos3";
+			type="Flag";
+		};
+		class Item7
+		{
+			position[]={4809.257813,159.029999,7006.517578};
+			name="daladier_pos1";
 			type="Flag";
 		};
 	};
@@ -3775,12 +3787,12 @@ class Intro
 		};
 		class Item35
 		{
-			position[]={5002.491699,156.197800,7147.182617};
+			position[]={5017.231934,156.001312,7146.503418};
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
 			expCond="meeting";
-			expActiv="astier stop true; Astier setpos getmarkerpos ""astier_pos2""; astier setdir 180; poincare stop true; poincare setpos getmarkerpos ""poincare_pos2""; poincare setdir 180;astier exec ""camera.sqs""";
+			expActiv="astier stop true; Astier setpos getmarkerpos ""astier_pos3""; astier setdir 180; daladier stop true; daladier setpos getmarkerpos ""daladier_pos1""; daladier setdir 0; daladier exec ""camera.sqs""";
 			class Effects
 			{
 			};
