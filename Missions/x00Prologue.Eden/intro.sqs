@@ -8,6 +8,52 @@ _camera cameraeffect ["internal","back"]
 
 astierParade=false
 dismissed=false
+choppersCloser=false
+invasionGo=false
+lighthouseSighted=false
+fishermanCarGo=false
+keeperGo=false
+tractorGo=false
+commonerGo=false
+churchGo=false
+drunkGo=false
+bikeGo=false
+policeGo=false
+richmanGo=false
+chinookGo=false
+lamentinGo=false
+rioting=false
+punchGo=false
+riotGo=false
+glassShatter=false
+end=false
+manhunt=false
+policePatrol=false
+ricochet=false
+fire1=false
+fire2=false
+fire3=false
+fire4=false
+fire5=false
+fire6=false
+fire7=false
+fire8=false
+poincareRescue=false
+weCanGo=false
+astierGetIn=false
+americanPatrol2=false
+thereHeIs=false
+americanPatrol=false
+meetingDaladierGo=false
+astierEscape=false
+meetingAstierGo=false
+arrestGo=false
+resCaptured=false
+astierGlue=false
+astierGlue2=false
+astierGlue3=false
+astierArrival=false
+logo=false
 
 playmusic "RTrack6"
 0 fadesound 0
@@ -571,6 +617,21 @@ radio say "x00v15"
 
 choppersCloser=true
 
+Daladier setpos getmarkerpos "daladier_init"
+Daladier setdir 355
+salute1 setpos getmarkerpos "salute1"
+salute1 setdir 120
+salute2 setpos getmarkerpos "salute2"
+salute2 setdir 120
+salute3 setpos getmarkerpos "salute3"
+salute3 setdir 120
+salute4 setpos getmarkerpos "salute4"
+salute4 setdir 120
+salute5 setpos getmarkerpos "salute5"
+salute5 setdir 120
+salute6 setpos getmarkerpos "salute6"
+salute6 setdir 120
+
 titletext["","plain"]
 
 playmusic ["RTrack8",18]
@@ -677,6 +738,19 @@ _camera camSetTarget [35430.83,102230.61,160.62]
 _camera camSetPos [4804.76,7031.79,1.40]
 _camera camSetFOV 0.700
 _camera camCommit 10
+~2
+salute1 exec "salutation.sqs"
+~1
+salute2 exec "salutation.sqs"
+~1
+salute3 exec "salutation.sqs"
+~1
+salute4 exec "salutation.sqs"
+~1
+salute5 exec "salutation.sqs"
+~1
+salute6 exec "salutation.sqs"
+~1
 @camCommitted _camera
 
 dismissed=true
@@ -749,7 +823,7 @@ _camera camCommit 3
 @camCommitted _camera
 Astier setmimic "Normal"
 Astier say "x00v17"
-~2.5
+~3
 Poincare say "x00v18"
 ~1
 1 fademusic 1
@@ -997,8 +1071,9 @@ fisherman switchmove "FxFromKneel"
 fisherman dowatch [10376.44,291.37,15.29]
 keeper setdir 90 
 keeper dowatch [10376.44,291.37,15.29]
+~1.5
 playmusic "Track9"
-~2.5
+~1
 ;=== 19:27:57
 _camera camSetTarget [-82941.57,36367.46,142.71]
 _camera camSetPos [10328.69,302.95,1.29]
@@ -1332,6 +1407,9 @@ _camera camSetPos [4922.36,6939.07,1.53]
 _camera camSetFOV 0.700
 _camera camCommit 5
 @camCommitted _camera
+astier setpos getmarkerpos "astier_pos5"
+astier setdir 165
+astier stop true
 ;=== 13:45:38
 _camera camSetTarget [-30470.22,100482.55,160.59]
 _camera camSetPos [4910.72,6950.68,2.00]
@@ -1355,10 +1433,6 @@ police_jeep2 setpos getmarkerpos "police_patrol2"
 police_jeep2 setbehaviour "combat"
 police_jeep2 switchmove "crouch"
 police_jeep2 setunitpos "up"
-
-astier setpos getmarkerpos "astier_pos5"
-astier setdir 165
-astier stop true
 
 ;=== 13:49:10
 _camera camSetTarget [58039.13,-77781.20,160.87]
