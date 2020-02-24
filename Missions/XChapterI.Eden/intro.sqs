@@ -546,7 +546,7 @@ titlecut ["","black in",4]
 
 nasmrt=true
 
-ostrelovac dotarget Dostoevsky
+ostrelovac dotarget off
 ostrelovac removeweapon "binocular"
 ostrelovac removeweapon "Ingram"
 ostrelovac removemagazines "IngramMag"
@@ -554,13 +554,13 @@ ostrelovac removemagazines "IngramMag"
 ; zaber na skupinu
 
 ;=== 9:31:40
-_camera camSetTarget Dostoevsky
+_camera camSetTarget off
 _camera camSetPos [2595.22,5360.69,1.45]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ;=== 9:31:57
-_camera camSetTarget Dostoevsky
+_camera camSetTarget off
 _camera camSetPos [2588.71,5358.81,1.45]
 _camera camSetFOV 0.700
 _camera camCommit 6
@@ -581,15 +581,15 @@ _camera camCommit 0
 ; dustojnik zasah
 
 ;=== 9:33:25
-_camera camSetTarget Dostoevsky
+_camera camSetTarget off
 _camera camSetPos [2552.23,5346.34,2.00]
 _camera camSetFOV 0.409
 _camera camCommit 0
 @camCommitted _camera
 zabijak setpos getmarkerpos "zabijak"
 ~2
-ostrelovac dofire Dostoevsky
-@not alive Dostoevsky
+ostrelovac dofire off
+@not alive off
 setacctime 0.2
 ~0.4
 setacctime 1
