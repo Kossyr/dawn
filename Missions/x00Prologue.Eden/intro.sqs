@@ -6,7 +6,12 @@ titleCut ["","BLACK IN",10000]
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
+astierParade=false
+dismissed=false
+
 playmusic "RTrack6"
+0 fadesound 0
+0 fademusic 1
 
 ;=== 16:20:42
 _camera camSetTarget [107816.13,-9039.41,20081.34]
@@ -19,7 +24,7 @@ titlecut["", "black in", 5]
 
 fishermanCarGo=true
 ~5
-
+0 fadesound 1
 
 ;=== 16:21:34
 _camera camSetTarget [109697.25,-9220.09,5234.81]
@@ -83,6 +88,8 @@ fisherman stop true
 fisherman setpos getmarkerpos "fisherman_pos1"
 fisherman setdir 25
 fisherman playmove "FxToKneel"
+
+0 fadesound 0.1
 
 ;=== 16:31:15
 _camera camSetTarget [-74307.63,49121.59,21329.98]
@@ -208,6 +215,8 @@ titlecut["", "black out", 2]
 ~3
 
 ; part 2 (Saint Pierre)
+
+0 fadesound 1
 
 titlecut["", "black in", 2]
 
@@ -433,7 +442,7 @@ _camera camCommit 0
 _camera camSetTarget [-43303.73,-81675.04,-16704.09]
 _camera camSetPos [9649.78,1489.79,1.37]
 _camera camSetFOV 0.700
-_camera camCommit 12
+_camera camCommit 16
 ~2.5
 radio say "x00v10"
 @camCommitted _camera
@@ -448,8 +457,8 @@ _camera camCommit 0
 _camera camSetTarget [14635.33,99335.14,-20002.83]
 _camera camSetPos [9648.89,1486.42,1.61]
 _camera camSetFOV 0.700
-_camera camCommit 20
-~6
+_camera camCommit 31
+~9
 radio say "x00v11"
 richman switchmove "FxToHand"
 fuelman switchmove "FXCivilArmsAkimboR"
@@ -465,7 +474,7 @@ _camera camCommit 0
 _camera camSetTarget [-69206.74,-51790.86,-30687.00]
 _camera camSetPos [9650.94,1489.62,2.01]
 _camera camSetFOV 0.700
-_camera camCommit 12
+_camera camCommit 27
 radio say "x00v12"
 fuelman switchmove "FXStandhip"
 richman switchmove "FXNewcivil"
@@ -488,7 +497,9 @@ _camera camCommit 0
 _camera camSetTarget [-92585.46,15099.63,-33146.71]
 _camera camSetPos [1294.40,5969.45,4.02]
 _camera camSetFOV 0.700
-_camera camCommit 10
+_camera camCommit 13
+~12
+titletext [localize STRM_x00v13, "plain down"]
 @camCommitted _camera
 punchGo=true
 punchCar setdammage 1
@@ -503,7 +514,7 @@ _camera camCommit 0
 _camera camSetTarget [48599.95,92526.77,-16508.47]
 _camera camSetPos [1301.91,5992.26,2.00]
 _camera camSetFOV 0.700
-_camera camCommit 4
+_camera camCommit 5
 riotPunch1 switchmove "StandStrokeFist"
 ~1
 riotPunch2 switchmove "StandStrokeFist"
@@ -527,7 +538,7 @@ _camera camCommit 0
 _camera camSetTarget [48957.00,92066.15,-17890.60]
 _camera camSetPos [1276.70,6019.60,2.00]
 _camera camSetFOV 0.700
-_camera camCommit 6
+_camera camCommit 8
 ~1.5
 riotMan setmimic "Agresive"
 riotMan switchmove "CombatStrokeGun"
@@ -551,10 +562,10 @@ _camera camCommit 0
 _camera camSetTarget [63747.08,84602.91,-12825.90]
 _camera camSetPos [9647.72,1486.45,1.38]
 _camera camSetFOV 0.700
-_camera camCommit 12
+_camera camCommit 24
 @camCommitted _camera
 radio say "x00v15"
-~7
+~13.5
 
 ; part 3 (The Meeting in Montignac)
 
@@ -565,9 +576,6 @@ titletext["","plain"]
 playmusic ["RTrack8",18]
 
 playsound "bum"
-
-astierParade=false
-dismissed=false
 
 Daladier dowatch [4807.72,7029.04,1.57]
 
@@ -737,13 +745,13 @@ Poincare say "x00v16"
 _camera camSetTarget [103436.58,23516.84,441.07]
 _camera camSetPos [4805.67,7028.54,1.45]
 _camera camSetFOV 0.700
-_camera camCommit 4
+_camera camCommit 3
 @camCommitted _camera
 Astier setmimic "Normal"
 Astier say "x00v17"
-~5
+~2.5
 Poincare say "x00v18"
-~2
+~1
 1 fademusic 1
 AStier stop false
 meetingAstierGo=true
@@ -819,14 +827,14 @@ _camera camCommit 0
 Astier setmimic "Normal"
 Daladier setmimic "Normal"
 Astier say "x00v19"
-~2
+~1.5
 Daladier say "x00v20"
-~3
+~3.5
 Astier setmimic "Angry"
 Astier say "x00v21"
-~2
+~2.5
 Daladier say "x00v22"
-~1
+~1.5
 ;=== 15:36:28
 _camera camSetTarget [14394.75,105915.16,-11038.00]
 _camera camSetPos [4809.08,7007.46,1.57]
@@ -835,7 +843,7 @@ _camera camCommit 0
 @camCommitted _camera
 Astier say "x00v23"
 Astier switchmove "FXCivilHandMouth"
-~4
+~3.5
 ;=== 15:44:00
 _camera camSetTarget [-961.00,-92516.59,-7689.26]
 _camera camSetPos [4809.57,7007.73,1.50]
@@ -844,7 +852,7 @@ _camera camCommit 0
 @camCommitted _camera
 Daladier say "x00v24"
 Daladier switchmove "FXCivilLookaround"
-~6
+~5.5
 Astier say "x00v25"
 Astier switchmove "FXCivilArmsAkimboL"
 ;=== 15:45:08
@@ -867,7 +875,7 @@ Daladier switchmove "FxShow2"
 _camera camSetTarget [-31822.92,-85918.33,-4615.22]
 _camera camSetPos [4809.75,7007.66,1.50]
 _camera camSetFOV 0.700
-_camera camCommit 5
+_camera camCommit 4.5
 @camCommitted _camera
 ;=== 15:47:27
 _camera camSetTarget [-40043.39,96054.88,-7480.12]
@@ -882,7 +890,7 @@ Astier switchmove "Default"
 _camera camSetTarget [-79017.36,60991.91,-7479.72]
 _camera camSetPos [4810.99,7006.40,1.50]
 _camera camSetFOV 0.700
-_camera camCommit 7
+_camera camCommit 6.5
 @camCommitted _camera
 ;=== 15:48:56
 _camera camSetTarget [3542.42,-92553.67,-9108.64]
@@ -897,7 +905,7 @@ Daladier switchmove "FXCivilArmsAkimboR"
 _camera camSetTarget [41657.69,-85492.02,-9109.02]
 _camera camSetPos [4808.70,7007.89,1.50]
 _camera camSetFOV 0.700
-_camera camCommit 12
+_camera camCommit 25.5
 @camCommitted _camera
 
 ;=== 15:50:18
@@ -910,7 +918,7 @@ _camera camCommit 0
 Astier setmimic "Agresive"
 Astier say "x00v29"
 
-~5
+~8.5
 
 ;=== 15:51:00
 _camera camSetTarget [104792.91,5340.38,257.98]
@@ -925,7 +933,7 @@ Daladier switchmove "FxToHand"
 _camera camSetTarget [99751.54,38399.77,257.52]
 _camera camSetPos [4806.97,7006.78,1.23]
 _camera camSetFOV 0.700
-_camera camCommit 3
+_camera camCommit 5
 @camCommitted _camera
 ;=== 15:51:39
 _camera camSetTarget [16815.25,-91472.80,12711.62]
@@ -950,7 +958,7 @@ keeper switchmove "EffectStandSitDown"
 
 fisherman setmimic "normal"
 keeper setmimic "normal"
-~2
+~2.5
 
 ; part 4 (The Invasion)
 
@@ -990,7 +998,7 @@ fisherman dowatch [10376.44,291.37,15.29]
 keeper setdir 90 
 keeper dowatch [10376.44,291.37,15.29]
 playmusic "Track9"
-~0.5
+~2.5
 ;=== 19:27:57
 _camera camSetTarget [-82941.57,36367.46,142.71]
 _camera camSetPos [10328.69,302.95,1.29]
@@ -1138,8 +1146,8 @@ Astier say "x00v34"
 _camera camSetTarget [-7838.75,106203.91,160.84]
 _camera camSetPos [4809.62,7007.03,1.47]
 _camera camSetFOV 0.700
-_camera camCommit 5
-~3
+_camera camCommit 3.5
+~2
 Astier setmimic "Angry"
 @camCommitted _camera
 ;=== 10:40:32
@@ -1150,7 +1158,7 @@ _camera camCommit 0
 @camCommitted _camera
 Daladier setmimic "Sad"
 Daladier say "x00v35"
-~4
+~3.5
 ;=== 10:41:21
 _camera camSetTarget [19333.30,105937.74,-1238.94]
 _camera camSetPos [4809.15,7007.97,1.47]
@@ -1162,7 +1170,7 @@ Astier say "x00v36"
 _camera camSetTarget [19333.30,105937.74,-1239.35]
 _camera camSetPos [4809.09,7007.61,1.47]
 _camera camSetFOV 0.700
-_camera camCommit 5
+_camera camCommit 5.5
 @camCommitted _camera
 
 ; part 6 (The Escape)
@@ -1181,7 +1189,7 @@ _camera camCommit 0
 Daladier setmimic "Angry"
 Astier setmimic "Normal"
 Daladier say "x00v37"
-~1.5
+~4
 Daladier switchmove "FxShow3"
 ~0.6
 ;=== 10:42:43
@@ -1469,11 +1477,10 @@ _camera camSetPos [4975.42,6979.66,1.12]
 _camera camSetFOV 0.375
 _camera camCommit 0
 @camCommitted _camera
-~1
 Astier stop false
 Astier assignascargo uazg2
 AstierGetIn=true
-~3
+~1.5
 ;=== 14:45:19
 _camera camSetTarget uazg2
 _camera camSetPos [4979.19,6959.08,2.30]
@@ -1488,6 +1495,7 @@ _camera camCommit 5
 @camCommitted _camera
 @(Astier in uazg2)
 weCanGo=true
+1 fadesound 0.2
 ~1
 astierGlue2=true
 	
@@ -1539,6 +1547,7 @@ _camera camSetPos [5114.79,7098.99,1.51]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
+0.5 fadesound 1
 ;=== 14:50:53
 _camera camSetTarget [19535.63,105497.15,-10333.05]
 _camera camSetPos [5114.79,7098.99,20.44]
