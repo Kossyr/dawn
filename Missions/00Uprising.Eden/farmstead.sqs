@@ -1,0 +1,219 @@
+
+setacctime 1
+
+enableradio false
+
+titlecut["","black out",2]
+
+~2.5
+
+deletevehicle church1
+deletevehicle church2
+deletevehicle church3
+deletevehicle church4
+deletevehicle church5
+deletevehicle barrel1
+deletevehicle barrel2
+
+deletevehicle actor
+
+
+[res6, res7, res8, res9] join Astier
+
+Astier stop true
+res1 stop true
+res2 stop true
+res3 stop true
+res4 stop true
+res5 stop true
+res6 stop true
+res7 stop true
+res8 stop true
+res9 stop true
+
+res1 setpos getmarkerpos "farmstead_res1"
+res2 setpos getmarkerpos "farmstead_res2"
+res3 setpos getmarkerpos "farmstead_res3"
+res4 setpos getmarkerpos "farmstead_res4"
+res5 setpos getmarkerpos "farmstead_res5"
+res6 setpos getmarkerpos "farmstead_res6"
+res7 setpos getmarkerpos "farmstead_res7"
+res8 setpos getmarkerpos "farmstead_res8"
+res9 setpos getmarkerpos "farmstead_res9"
+Astier setpos getmarkerpos "farmstead_astier"
+
+res1 setdir 250
+res2 setdir 250
+res3 setdir 250
+res4 setdir 250
+res5 setdir 250
+res6 setdir 250
+res7 setdir 250
+res8 setdir 250
+res9 setdir 250
+
+Astier setdir 75
+
+aP action ["WEAPONONBACK"]
+aP setpos getmarkerpos "farmstead_ap"
+aP setdir 250
+
+ammo1 setpos getmarkerpos "farmstead_ammo1"
+ammo2 setpos getmarkerpos "farmstead_ammo2"
+ammo3 setpos getmarkerpos "farmstead_ammo3"
+
+ammo1 setdir 340
+ammo2 setdir 340
+ammo3 setdir 160
+
+ammo_crate1 setpos getmarkerpos "farmstead_ammo_crate1"
+ammo_crate2 setpos getmarkerpos "farmstead_ammo_crate2"
+
+~0.5
+
+setacctime 1
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+aP setpos getmarkerpos "farmstead_ap"
+aP setdir 250
+
+titlecut ["","black in",2]
+
+;=== 21:56:44
+_camera camSetTarget [-82189.38,51311.99,88.49]
+_camera camSetPos [6778.89,5653.19,6.06]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 21:56:56
+_camera camSetTarget [-89689.02,29852.09,-10392.62]
+_camera camSetPos [6771.13,5655.56,5.97]
+_camera camSetFOV 0.524
+_camera camCommit 5
+@camCommitted _camera
+Astier switchmove "EffectStandTalk"
+Astier say "00v47"
+Astier setmimic "normal"
+;=== 21:57:49
+_camera camSetTarget [-93090.34,11384.86,-1425.04]
+_camera camSetPos [6734.61,5662.43,1.36]
+_camera camSetFOV 0.524
+_camera camCommit 0
+@camCommitted _camera
+;=== 21:57:58
+_camera camSetTarget [-86571.77,-30278.94,-1424.95]
+_camera camSetPos [6733.69,5663.14,1.35]
+_camera camSetFOV 0.524
+_camera camCommit 6
+@camCommitted _camera
+;=== 21:58:40
+_camera camSetTarget [93986.05,54483.02,-1424.91]
+_camera camSetPos [6728.06,5659.20,1.68]
+_camera camSetFOV 0.524
+_camera camCommit 0
+@camCommitted _camera
+Astier say "00v48"
+;=== 21:59:19
+_camera camSetTarget [104412.39,-15440.04,3557.49]
+_camera camSetPos [6727.13,5666.05,1.54]
+_camera camSetFOV 0.524
+_camera camCommit 7
+@camCommitted _camera
+;=== 21:59:35
+_camera camSetTarget [-89089.05,-22726.70,3557.43]
+_camera camSetPos [6733.43,5662.98,1.40]
+_camera camSetFOV 0.524
+_camera camCommit 0
+@camCommitted _camera
+~5
+Astier say "00v49"
+~0.5
+;=== 22:00:13
+_camera camSetTarget [105189.76,-10958.39,-5486.16]
+_camera camSetPos [6737.71,5660.13,1.64]
+_camera camSetFOV 0.524
+_camera camCommit 0
+@camCommitted _camera
+;=== 22:00:18
+_camera camSetTarget [102854.99,-19824.05,-10500.90]
+_camera camSetPos [6737.52,5659.35,1.65]
+_camera camSetFOV 0.524
+_camera camCommit 4
+@camCommitted _camera
+Astier switchmove "EffectStand"
+;=== 22:00:28
+_camera camSetTarget [-89130.80,-22720.90,-1820.71]
+_camera camSetPos [6734.12,5663.18,1.42]
+_camera camSetFOV 0.524
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+~0.5
+
+savegame
+
+~1
+
+enableradio true
+
+Astier stop false
+res1 stop false
+res2 stop false
+res3 stop false
+res4 stop false
+res5 stop false
+res6 stop false
+res7 stop false
+res8 stop false
+res9 stop false
+
+~1
+
+afterFarmstead=true
+convoyGo=true
+
+~25
+
+afterFarmstead2=true
+
+removeallweapons res4
+res4 addmagazine "M16"
+res4 addmagazine "M16"
+res4 addmagazine "M16"
+res4 addmagazine "M16"
+res4 addmagazine "M16"
+res4 addmagazine "M16"
+res4 addmagazine "M16"
+res4 addweapon "M16"
+res4 addmagazine "LAWLauncher"
+res4 addmagazine "LAWLauncher"
+res4 addweapon "LAWLauncher"
+
+removeallweapons res5
+res5 addmagazine "M4"
+res5 addmagazine "M4"
+res5 addmagazine "M4"
+res5 addmagazine "M4"
+res5 addmagazine "M4"
+res5 addweapon "XMS"
+res5 addmagazine "CarlGustavLauncher"
+res5 addweapon "CarlGustavLauncher"
+
+removeallweapons res7
+res7 addmagazine "GrenadeLauncher"
+res7 addmagazine "GrenadeLauncher"
+res7 addmagazine "GrenadeLauncher"
+res7 addmagazine "M16"
+res7 addmagazine "M16"
+res7 addmagazine "M16"
+res7 addmagazine "M16"
+res7 addmagazine "M16"
+res7 addweapon "GrenadeLauncher"
+
+exit
