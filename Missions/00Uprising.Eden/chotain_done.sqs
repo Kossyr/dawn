@@ -54,6 +54,9 @@ ammo1 setfuel 0
 ammo2 setfuel 0
 ammo3 setfuel 0
 
+res1 stop false
+res2 stop false
+
 setacctime 1
 
 _camera = "camera" camcreate [0,0,0]
@@ -191,7 +194,7 @@ _camera camSetTarget [91098.15,59849.94,-7078.66]
 _camera camSetPos [7110.04,6050.75,1.32]
 _camera camSetFOV 0.700
 _camera camCommit 6
-~1
+~5
 ammo1 setfuel 1
 ammo2 setfuel 1
 ammo3 setfuel 1
@@ -220,14 +223,26 @@ actor dowatch [7091.50,6056.01,2.02]
 actor setmimic "Default"
 res3 setmimic "Default"
 Astier dowatch [7114.54,6049.12,1.86]
-
+~1
 unassignvehicle Astier
 Astier action ["EJECT"]
-
 ammo2 setfuel 0
 ammo3 setfuel 0
 
-~5
+~1
+    _who = astier;
+	
+    _dx = 2;
+	_dy = 0;
+	_dz = 1.65;
+
+	_camera camSetTarget astier
+	_camera camSetPos [(getpos _who select 0) + _dx * sin (getdir _who) - _dy * cos (getdir _who), (getpos _who select 1) + _dx * cos (getdir _who) + _dy * sin (getdir _who), (getpos _who select 2)+_dz]
+	_camera camSetFOV 0.900
+	_camera camCommit 0
+	@camCommitted _camera
+
+~4.5
 
 Astier say "00v46"
 
@@ -238,7 +253,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-~1.2
+~2
 
 Astier switchmove "FxShow3"
 
