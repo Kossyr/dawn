@@ -98,7 +98,6 @@ class Mission
 					speed="NORMAL";
 					combat="SAFE";
 					expActiv="[] exec ""plan.sqs""";
-					synchronizations[]={24};
 					class Effects
 					{
 					};
@@ -109,7 +108,6 @@ class Mission
 					position[]={6848.645020,110.735512,7167.683594};
 					speed="FULL";
 					combat="AWARE";
-					synchronizations[]={25};
 					class Effects
 					{
 					};
@@ -119,7 +117,6 @@ class Mission
 				{
 					position[]={6054.927246,188.141968,6991.198242};
 					type="GETOUT";
-					synchronizations[]={26};
 					class Effects
 					{
 					};
@@ -130,7 +127,7 @@ class Mission
 					position[]={5754.943359,192.599991,7012.760254};
 					type="HOLD";
 					speed="NORMAL";
-					synchronizations[]={18,27};
+					synchronizations[]={18};
 					class Effects
 					{
 					};
@@ -142,7 +139,7 @@ class Mission
 					type="HOLD";
 					formation="COLUMN";
 					combat="SAFE";
-					synchronizations[]={19,28};
+					synchronizations[]={19};
 					class Effects
 					{
 					};
@@ -152,7 +149,6 @@ class Mission
 				{
 					position[]={7089.009277,108.347382,6058.194824};
 					type="GETIN";
-					synchronizations[]={29};
 					class Effects
 					{
 					};
@@ -162,7 +158,6 @@ class Mission
 				{
 					position[]={6773.561035,82.795570,5669.890625};
 					type="GETOUT";
-					synchronizations[]={30};
 					class Effects
 					{
 					};
@@ -204,7 +199,7 @@ class Mission
 					position[]={6506.617676,72.540634,5583.134766};
 					type="HOLD";
 					combat="STEALTH";
-					synchronizations[]={31};
+					synchronizations[]={24};
 					class Effects
 					{
 					};
@@ -1269,7 +1264,7 @@ class Mission
 					leader=1;
 					skill=1.000000;
 					text="res3";
-					init="this setbehaviour ""safe""";
+					init="this setbehaviour ""safe""; this setidentity ""Calvet""";
 				};
 			};
 		};
@@ -1486,7 +1481,7 @@ class Mission
 					formation="COLUMN";
 					speed="NORMAL";
 					combat="SAFE";
-					synchronizations[]={32};
+					synchronizations[]={25};
 					class Effects
 					{
 					};
@@ -2892,7 +2887,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=29;
+		items=35;
 		class Item0
 		{
 			position[]={6055.311035,188.096863,6989.253906};
@@ -3066,6 +3061,7 @@ class Mission
 			activationBy="WEST";
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
+			expCond="this and not churchBurned";
 			expActiv="[] exec ""chotain_done.sqs""";
 			class Effects
 			{
@@ -3131,7 +3127,6 @@ class Mission
 			activationBy="LEADER";
 			age="UNKNOWN";
 			idVehicle=6;
-			expCond="false";
 			expActiv="[] exec ""farmstead.sqs""";
 			class Effects
 			{
@@ -3202,7 +3197,7 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={31};
+			synchronizations[]={24};
 		};
 		class Item23
 		{
@@ -3261,20 +3256,6 @@ class Mission
 		};
 		class Item27
 		{
-			position[]={6763.611816,84.876785,5705.986328};
-			a=0.000000;
-			b=0.000000;
-			type="SWITCH";
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="[] exec ""farmstead.sqs""; unassignvehicle aP; unassignvehicle Astier; unassignvehicle res1; unassignvehicle res2; [res3, res4, res5] join Astier";
-			class Effects
-			{
-			};
-			synchronizations[]={24,25,26,27,28,29,30};
-		};
-		class Item28
-		{
 			position[]={6512.106934,72.694969,5397.127441};
 			a=0.000000;
 			b=0.000000;
@@ -3284,7 +3265,115 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={32};
+			synchronizations[]={25};
+		};
+		class Item28
+		{
+			position[]={6763.901367,83.229347,5680.601074};
+			b=7.000000;
+			angle=140.000000;
+			rectangular=1;
+			activationBy="LEADER";
+			age="UNKNOWN";
+			idVehicle=6;
+			expActiv="[] exec ""farmstead_info.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item29
+		{
+			position[]={7366.185059,1.793249,6350.663086};
+			a=0.000000;
+			b=0.000000;
+			interruptable=1;
+			age="UNKNOWN";
+			text="CHURCH START";
+			expCond="churchCountdown";
+			expActiv="hint localize ""STRM_CHURCH_HINT_1""";
+			class Effects
+			{
+			};
+		};
+		class Item30
+		{
+			position[]={7425.787109,1.793249,6350.663086};
+			a=0.000000;
+			b=0.000000;
+			timeoutMin=45.000000;
+			timeoutMid=45.000000;
+			timeoutMax=45.000000;
+			interruptable=1;
+			age="UNKNOWN";
+			text="CHURCH COUNTDOWN";
+			expCond="churchCountdown";
+			expActiv="hint localize ""STRM_CHURCH_HINT_2""";
+			class Effects
+			{
+			};
+		};
+		class Item31
+		{
+			position[]={7493.902832,1.793249,6346.479492};
+			a=0.000000;
+			b=0.000000;
+			timeoutMin=95.000000;
+			timeoutMid=95.000000;
+			timeoutMax=95.000000;
+			interruptable=1;
+			age="UNKNOWN";
+			text="CHURCH COUNTDOWN";
+			expCond="churchCountdown";
+			expActiv="hint localize ""STRM_CHURCH_HINT_3""";
+			class Effects
+			{
+			};
+		};
+		class Item32
+		{
+			position[]={7559.180664,1.793249,6348.571777};
+			a=0.000000;
+			b=0.000000;
+			timeoutMin=120.000000;
+			timeoutMid=120.000000;
+			timeoutMax=120.000000;
+			interruptable=1;
+			age="UNKNOWN";
+			text="CHURCH COUNTDOWN";
+			expCond="churchCountdown";
+			expActiv="hint localize ""STRM_CHURCH_HINT_4""";
+			class Effects
+			{
+			};
+		};
+		class Item33
+		{
+			position[]={7618.781738,1.793249,6348.571777};
+			a=0.000000;
+			b=0.000000;
+			timeoutMin=140.000000;
+			timeoutMid=140.000000;
+			timeoutMax=140.000000;
+			interruptable=1;
+			age="UNKNOWN";
+			text="CHURCH COUNTDOWN";
+			expCond="churchCountdown";
+			expActiv="[] exec ""outro2.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item34
+		{
+			position[]={8176.493164,-49.703842,7013.308594};
+			a=0.000000;
+			b=0.000000;
+			type="END2";
+			age="UNKNOWN";
+			expCond="end2";
+			class Effects
+			{
+			};
 		};
 	};
 };
