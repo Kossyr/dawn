@@ -2,6 +2,8 @@
 
 ? churchBurned : goto "ex" ;
 
+chotainClear=true
+
 churchCountdown=false
 
 7 fademusic 0
@@ -21,6 +23,11 @@ titlecut ["","black out",2]
 aP action ["WEAPONONBACK"]
 
 astier dowatch objnull
+
+unassignvehicle aP
+unassignvehicle Astier
+unassignvehicle res1
+unassignvehicle res2
 
 aP setpos getmarkerpos "chotain_uazg_clear"
 uazg setpos getmarkerpos "chotain_uazg2"
@@ -45,10 +52,6 @@ Astier assignasdriver ammo1
 res1 assignasdriver ammo2
 res2 assignasdriver ammo3
 
-Astier moveindriver ammo1
-res1 moveindriver ammo2
-res2 moveindriver ammo3
-
 ammo1 setpos getmarkerpos "chotain_astier"
 ammo2 setpos getmarkerpos "chotain_res1"
 ammo3 setpos getmarkerpos "chotain_res2"
@@ -63,6 +66,12 @@ ammo3 setfuel 0
 
 res1 stop false
 res2 stop false
+
+~0.5
+
+Astier moveindriver ammo1
+res1 moveindriver ammo2
+res2 moveindriver ammo3
 
 setacctime 1
 
@@ -232,7 +241,7 @@ ammo2 setfuel 1
 ammo3 setfuel 1
 res3 setmimic "Surprised"
 res4 setmimic "Surprised"
-res5 setmimic 'Surprised"
+res5 setmimic "Surprised"
 ~1
 res3 say "00v47"
 ~3
@@ -253,16 +262,18 @@ res3 setmimic "Default"
 res4 setmimic "Default"
 res5 setmimic "Default"
 Astier dowatch [7114.54,6049.12,1.86]
+
+@astierConvoyChurch
 ~1
 unassignvehicle Astier
 Astier action ["EJECT"]
 ammo2 setfuel 0
 ammo3 setfuel 0
 
-~1
+~2
     _who = astier;
 	
-    _dx = 2;
+    _dx = 1;
 	_dy = 0;
 	_dz = 1.65;
 

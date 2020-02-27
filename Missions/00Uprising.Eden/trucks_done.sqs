@@ -2,30 +2,29 @@ setacctime 1
 
 Astier groupradio "00r02"
 
+trucksClear=true
+
 ~5
 
 titlecut ["","black out",2]
-~2
+~1
+
+enableradio false
+
+astierCareless=true
+
+~1
 
 setacctime 1
 
-enableradio false
 Astier stop true
 res1 stop true
 res2 stop true
-
-Astier setbehaviour "safe"
-res1 setbehaviour "safe"
-res2 setbehaviour "safe"
 
 Astier action ["WEAPONONBACK"]
 res1 action ["WEAPONONBACK"]
 res2 action ["WEAPONONBACK"]
 aP action ["WEAPONONBACK"]
-
-Astier setunitpos "up"
-res1 setunitpos "up"
-res2 setunitpos "up"
 
 Astier setpos getmarkerpos "trucks_astier"
 res1 setpos getmarkerpos "trucks_clear_res1"
@@ -122,7 +121,7 @@ actor setpos getmarkerpos "away"
 res1 setdir 205
 res2 setdir 25
 
-res1 switchmove "EffectStandTalk"
+res1 switchmove ""
 res2 switchmove "FxInHand"
 
 aP setpos getmarkerpos "trucks_ap"
