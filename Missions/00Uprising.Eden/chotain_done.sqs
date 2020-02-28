@@ -107,7 +107,7 @@ res3 setmimic "smile"
 _camera camSetTarget [24083.30,-92476.05,-1859.95]
 _camera camSetPos [7110.90,6053.46,1.44]
 _camera camSetFOV 0.700
-_camera camCommit 4
+_camera camCommit 2.5
 @camCommitted _camera
 ;=== 19:53:08
 _camera camSetTarget [59.96,105469.10,8260.87]
@@ -117,7 +117,7 @@ _camera camCommit 0
 @camCommitted _camera
 actor setmimic "Normal"
 actor say "00v38"
-~3
+~3.5
 ;=== 19:54:09
 _camera camSetTarget [-49155.45,-76549.30,-3160.42]
 _camera camSetPos [7112.84,6053.31,1.63]
@@ -130,7 +130,7 @@ res3 setmimic "Normal"
 _camera camSetTarget [-65752.77,-62356.46,-3160.87]
 _camera camSetPos [7113.37,6052.91,1.64]
 _camera camSetFOV 0.700
-_camera camCommit 5
+_camera camCommit 4.5
 @camCommitted _camera
 ;=== 19:55:39
 _camera camSetTarget [79530.39,74768.70,-5642.71]
@@ -139,7 +139,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 actor say "00v40"
-~2
+~1.5
 ;=== 19:56:07
 _camera camSetTarget [-15582.86,-91330.41,-1166.11]
 _camera camSetPos [7111.58,6052.03,1.50]
@@ -160,7 +160,7 @@ _camera camCommit 0
 _camera camSetTarget [29312.56,-91442.06,-1166.28]
 _camera camSetPos [7110.72,6053.87,1.44]
 _camera camSetFOV 0.700
-_camera camCommit 5
+_camera camCommit 11.5
 @camCommitted _camera
 ;=== 19:57:14
 _camera camSetTarget [28921.68,103635.69,-1166.21]
@@ -170,7 +170,7 @@ _camera camCommit 0
 @camCommitted _camera
 actor switchmove "FXCivilHandMouth"
 actor say "00v42"
-~5
+~8.5
 ;=== 19:58:17
 _camera camSetTarget [-47587.67,-77650.52,-1165.79]
 _camera camSetPos [7112.59,6052.88,1.52]
@@ -184,9 +184,9 @@ res3 switchmove "FXCivilArmsAkimboL"
 _camera camSetTarget [-76224.87,-49216.32,109.23]
 _camera camSetPos [7113.96,6052.61,1.59]
 _camera camSetFOV 0.700
-_camera camCommit 4
+_camera camCommit 12
 ~1.5
-res3 setmimic "Angry"
+res3 setmimic "Normal"
 @camCommitted _camera
 ;=== 19:59:41
 _camera camSetTarget [-15107.05,-91448.23,195.07]
@@ -194,9 +194,9 @@ _camera camSetPos [7111.61,6052.13,1.45]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~2
+~1
 res3 setmimic "Agresive"
-~2
+~3.5
 ;=== 20:00:24
 _camera camSetTarget [99710.80,43113.16,-7078.87]
 _camera camSetPos [7110.41,6051.62,1.37]
@@ -209,7 +209,7 @@ actor say "00v44"
 _camera camSetTarget [91098.15,59849.94,-7078.66]
 _camera camSetPos [7110.04,6050.75,1.32]
 _camera camSetFOV 0.700
-_camera camCommit 6
+_camera camCommit 8.5
 @camCommitted _camera
 ;=== 20:02:18
 _camera camSetTarget [9656.32,-93655.62,-7078.64]
@@ -219,9 +219,9 @@ _camera camCommit 0
 @camCommitted _camera
 res3 setmimic "Hurt"
 res3 say "00v45"
-~4
+~3
 res3 setmimic "Normal"
-~2
+~7.5
 ;=== 20:00:24
 _camera camSetTarget [99710.80,43113.16,-7078.87]
 _camera camSetPos [7110.41,6051.62,1.37]
@@ -244,7 +244,7 @@ res4 setmimic "Surprised"
 res5 setmimic "Surprised"
 ~1
 res3 say "00v47"
-~3
+~4.5
 ;=== 20:03:36
 _camera camSetTarget ammo1
 _camera camSetPos [7093.74,6050.58,2.22]
@@ -271,19 +271,6 @@ ammo2 setfuel 0
 ammo3 setfuel 0
 
 ~2
-    _who = astier;
-	
-    _dx = 1;
-	_dy = 0;
-	_dz = 1.65;
-
-	_camera camSetTarget astier
-	_camera camSetPos [(getpos _who select 0) + _dx * sin (getdir _who) - _dy * cos (getdir _who), (getpos _who select 1) + _dx * cos (getdir _who) + _dy * sin (getdir _who), (getpos _who select 2)+_dz]
-	_camera camSetFOV 0.900
-	_camera camCommit 0
-	@camCommitted _camera
-
-~4.5
 
 Astier say "00v48"
 
@@ -310,7 +297,7 @@ _camera camCommit 0
 _camera camSetTarget [-16972.85,-89305.97,18064.59]
 _camera camSetPos [7109.11,6079.81,3.22]
 _camera camSetFOV 0.700
-_camera camCommit 5
+_camera camCommit 7
 @camCommitted _camera
 
 
