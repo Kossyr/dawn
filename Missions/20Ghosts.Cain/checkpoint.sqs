@@ -1,0 +1,22 @@
+
+Checkpoints=Checkpoints+1
+
+? Checkpoints < 3 : goto "hint"
+
+"1" objstatus "done"
+
+aP addrating 400
+
+SideQuests=SideQuests+1
+
+goto "ex"
+
+#hint
+
+Hint localize "STRM_HINT_CHECKPOINT"
+
+aP addrating 200
+
+#ex
+
+exit

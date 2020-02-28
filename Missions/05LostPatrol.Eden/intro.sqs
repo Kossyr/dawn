@@ -1,0 +1,96 @@
+titlecut ["","black in",8]
+
+playmusic "Track1"
+
+setacctime 1
+Dostoevsky switchmove "FxStandRotateTable"
+Dostoevsky setmimic "normal"
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 18:08:17
+_camera camSetTarget auto
+_camera camSetPos [1331.93,5876.24,2.00]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~8
+;=== 18:10:16
+_camera camSetTarget [-8582.00,95479.19,-43195.12]
+_camera camSetPos [1330.27,5878.52,23.09]
+_camera camSetFOV 0.700
+_camera camCommit 8
+@camCommitted _camera
+~0.8
+;=== 18:10:28
+_camera camSetTarget [-34364.53,88695.52,-43209.14]
+_camera camSetPos [1324.26,5929.85,23.09]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+;=== 18:10:40
+_camera camSetTarget [-71056.66,29131.20,-64982.18]
+_camera camSetPos [1259.41,5986.21,23.09]
+_camera camSetFOV 0.700
+_camera camCommit 8
+~6
+titlecut ["","black out",2]
+@camCommitted _camera
+~1
+titlecut ["","black in",2]
+;=== 18:13:08
+_camera camSetTarget [54365.88,-79085.25,-12750.66]
+_camera camSetPos [2568.06,5484.95,1.49]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:13:35
+_camera camSetTarget [54365.88,-79085.25,-12750.45]
+_camera camSetPos [2655.32,5342.57,3.25]
+_camera camSetFOV 0.700
+_camera camCommit 12
+
+~8
+titlecut ["","black out",3]
+jedte=true
+@camCommitted _camera
+titlecut ["","black in",3]
+;=== 18:16:51
+_camera camSetTarget [104448.57,-5799.36,-1803.31]
+_camera camSetPos [4944.90,3983.68,1.04]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:17:17
+_camera camSetTarget [93295.52,-34438.66,-26809.66]
+_camera camSetPos [4964.52,3972.58,12.32]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+~1
+;=== 18:20:20
+_camera camSetTarget [95209.28,-27287.70,-29763.63]
+_camera camSetPos [5001.00,3945.82,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+1 fademusic 0.1
+playsound "05v01"
+;=== 18:20:27
+_camera camSetTarget [23580.41,-89690.21,-29763.96]
+_camera camSetPos [5002.16,3946.60,1.72]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+titlecut ["","black out",3]
+3 fademusic 0
+~3
+titleText["","PLAIN DOWN"]
+~1
+end=true
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit
