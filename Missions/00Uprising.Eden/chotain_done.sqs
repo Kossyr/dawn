@@ -4,6 +4,12 @@
 
 chotainClear=true
 
+[res1, res2] join Astier
+
+res1 stop false
+res2 stop false
+Astier stop false
+
 churchCountdown=false
 
 7 fademusic 0
@@ -15,6 +21,8 @@ setacctime 1
 aP say "00v36"
 
 ~5
+
+astierChurchGo=true
 
 titlecut ["","black out",2]
 
@@ -37,7 +45,6 @@ actor setpos getmarkerpos "chotain_ap"
 actor setdir 185
 actor dowatch [7111.36,6051.14,1.73]
 
-
 res3 setpos getmarkerpos "chotain_res3"
 res4 setpos getmarkerpos "chotain_res4"
 res5 setpos getmarkerpos "chotain_res5"
@@ -45,8 +52,6 @@ res5 setpos getmarkerpos "chotain_res5"
 res3 dowatch [7111.64,6052.15,1.67]
 res4 dowatch [7111.64,6052.15,1.67]
 res5 dowatch [7111.64,6052.15,1.67]
-
-astierChurchGo=true
 
 Astier assignasdriver ammo1
 res1 assignasdriver ammo2
@@ -63,9 +68,6 @@ ammo3 setdir 185
 ammo1 setfuel 0
 ammo2 setfuel 0
 ammo3 setfuel 0
-
-res1 stop false
-res2 stop false
 
 ~0.5
 
