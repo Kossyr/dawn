@@ -1,0 +1,201 @@
+setacctime 1
+
+titlecut ["","black out",2]
+
+~2.5
+
+setViewDistance 1800
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+0 fademusic 1
+playmusic ["RTrack10",8]
+
+uazg setpos getmarkerpos "chotain_uazg_clear"
+uazg setdir 180
+
+? not (aP in uazg) : aP moveindriver uazg ;
+
+~0.5
+
+setacctime 1
+
+titlecut ["","black in",2]
+
+;=== 16:13:49
+_camera camSetTarget [61494.18,89423.02,-8793.70]
+_camera camSetPos [7065.46,6007.63,8.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+;=== 16:14:28
+_camera camSetTarget [98969.73,-33375.57,571.04]
+_camera camSetPos [7069.78,6044.98,1.76]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3.5
+;=== 16:15:27
+_camera camSetTarget [52110.70,-82862.29,-8102.14]
+_camera camSetPos [7107.48,6061.10,2.10]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 16:15:34
+_camera camSetTarget [69463.20,-71735.20,7858.09]
+_camera camSetPos [7106.17,6057.25,1.51]
+_camera camSetFOV 0.700
+_camera camCommit 4
+4 fademusic 0.4
+@camCommitted _camera
+;=== 16:15:44
+_camera camSetTarget [83344.77,70741.97,-1793.51]
+_camera camSetPos [7110.92,6052.06,1.18]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+am_off say "00v31"
+am_off setmimic "Angry"
+;=== 16:15:52
+_camera camSetTarget [62963.64,88978.79,-1793.82]
+_camera camSetPos [7111.29,6051.72,1.18]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+;=== 16:17:26
+_camera camSetTarget [-36664.70,-82238.30,17050.93]
+_camera camSetPos [7114.50,6058.40,1.39]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+;=== 16:18:01
+_camera camSetTarget [106854.86,9943.94,5863.45]
+_camera camSetPos [7096.44,6052.64,1.05]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+am_gunner say "00v32"
+am_gunner setmimic "Angry"
+~3.3
+;=== 16:18:42
+_camera camSetTarget [-49382.98,87823.39,-10905.10]
+_camera camSetPos [7114.97,6051.20,1.36]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+am_soldier say "00v33"
+am_soldier setmimic "Angry"
+;=== 16:18:49
+_camera camSetTarget [-10136.15,103933.20,-10905.50]
+_camera camSetPos [7113.90,6049.89,1.25]
+_camera camSetFOV 0.649
+_camera camCommit 3
+@camCommitted _camera
+;=== 16:19:12
+_camera camSetTarget [-15912.28,-91243.63,-1082.24]
+_camera camSetPos [7112.45,6062.74,4.50]
+_camera camSetFOV 0.649
+_camera camCommit 0
+@camCommitted _camera
+;=== 16:19:21
+_camera camSetTarget [33917.01,-90265.73,-1082.65]
+_camera camSetPos [7097.55,6063.36,3.02]
+_camera camSetFOV 0.649
+_camera camCommit 4
+@camCommitted _camera
+;=== 16:19:41
+_camera camSetTarget [97978.09,47786.80,-1084.15]
+_camera camSetPos [7111.10,6052.27,1.30]
+_camera camSetFOV 0.649
+_camera camCommit 0
+@camCommitted _camera
+am_off say "00v34"
+am_off setmimic "agresive"
+~4
+am_pointer dowatch [7086.41,6029.89,1.37]
+am_pointer setdir 205
+;=== 16:22:05
+_camera camSetTarget [74140.88,80212.80,109.63]
+_camera camSetPos [7084.91,6027.22,1.18]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 16:22:10
+_camera camSetTarget [59237.06,91351.00,109.32]
+_camera camSetPos [7085.59,6026.77,1.18]
+_camera camSetFOV 0.700
+_camera camCommit 4
+~0.5
+am_pointer switchmove "FxShow3"
+~2
+firefighterGo=true
+@camCommitted _camera
+~0.5
+;=== 16:23:59
+_camera camSetTarget [-52817.00,86096.28,109.22]
+_camera camSetPos [7094.68,6029.69,0.70]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+am_firefighter stop true
+am_firefighter setpos getmarkerpos "firefighter_pos"
+am_firefighter setdir 65
+am_firefighter playmove "Medic"
+~3.5
+firefighterGo2=true
+~0.5
+am_firefighter stop false
+~1
+[[0,-0.5,0.5],0.1,30,barrel1] exec "fireEffect.sqs"  
+[[0,-0.5,0.5],0.1,30,barrel2] exec "fireEffect.sqs"
+~1
+;=== 16:29:49
+_camera camSetTarget [99939.55,30799.79,27746.49]
+_camera camSetPos [7081.46,6029.38,1.07]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 16:30:01
+_camera camSetTarget [103321.23,31701.88,8918.24]
+_camera camSetPos [7074.38,6027.49,3.92]
+_camera camSetFOV 0.700
+_camera camCommit 10
+~1
+[[0,0,8],0.5,0,church1] exec "fireEffect.sqs"
+~2.5
+[[0,0,12],0.5,0,church2] exec "fireEffect.sqs"
+~3
+[[0,0,7],0.5,0,church3] exec "fireEffect.sqs"
+[[0,0,10],0.5,0,church4] exec "fireEffect.sqs"
+~2.5
+[[0,0,8],0.5,0,church5] exec "fireEffect.sqs"
+@camCommitted _camera
+~2
+uazg setpos getmarkerpos "chotain_uazg"
+uazg setdir 180
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+aP setbehaviour "Aware"
+
+~1
+
+savegame
+
+~1
+
+0 fademusic 0.2
+playmusic "Track10"
+7 fademusic 0.8
+
+aP say "00v35"
+
+~4.5
+
+churchCountdown=true
+
+exit

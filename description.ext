@@ -152,6 +152,22 @@ class CfgIdentities
     speaker = "Adam";
     pitch = 1.00;
   };
+  class Daladier
+  {
+    name = "Edouard Daladier";
+    face = "Face16";
+    glasses = "Not";
+    speaker = "Adam";
+    pitch = 1.00;
+  };
+   class Calvet
+  {
+    name = "Pierre Calvet";
+    face = "Face13";
+    glasses = "Not";
+    speaker = "Jonah";
+	pitch = 1.031975;
+  };
 };
 
 class CfgSounds
@@ -236,14 +252,14 @@ class Campaign
 	name = "Red Dawn";
 	firstBattle = Part1;
 	
-	
+
 	class Part1
 	{
-		name = "FLASHPOINT";
+		name = "Prologue";
 
 		cutscene = ;
 
-		firstMission = XChapterI;
+		firstMission = x00Prologue;
 		lost = Part2;
 		end1 = Part2;
 		end2 = Part2;
@@ -251,9 +267,51 @@ class Campaign
 		end4 = Part2;
 		end5 = Part2;
 		end6 = Part2;
+
+		class x00Prologue: MissionDefault
+		{
+ 			noAward=true;
+			end1 = 00Uprising;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 00Uprising;
+			template = x00Prologue.Eden;
+		};
+
+		class 00Uprising: MissionDefault
+		{
+ 			noAward=true;
+			end1 = ;
+			end2 = 00Uprising;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 00Uprising;
+			template = 00Uprising.Eden;
+		};
+	}
+	
+	class Part2
+	{
+		name = "FLASHPOINT";
+
+		cutscene = ;
+
+		firstMission = x01Chapter;
+		lost = Part3;
+		end1 = Part3;
+		end2 = Part3;
+		end3 = Part3;
+		end4 = Part3;
+		end5 = Part3;
+		end6 = Part3;
 		
 
-		class XChapterI: MissionDefault
+		class x01Chapter: MissionDefault
 		{
  			noAward=true;
 			end1 = 01FirstStrike;
@@ -263,7 +321,7 @@ class Campaign
 			end5 = ;
 			end6 = ;
 			lost = 01FirstStrike;
-			template = XChapterI.Eden;
+			template = x01Chapter.Eden;
 		};
 		class 01FirstStrike: MissionDefault
 		{
@@ -389,13 +447,13 @@ class Campaign
 		};
 	};
 
-	class Part2
+	class Part3
 	{
 		name = "BATTLE FOR KOLGUYEV";
 
 		cutscene = ;
 
-		firstMission = XChapterII;
+		firstMission = x02Chapter;
 		lost = ;
 		end1 = ;
 		end2 = ;
@@ -405,7 +463,7 @@ class Campaign
 		end6 = ;
 
 
-		class XChapterII: MissionDefault
+		class x02Chapter: MissionDefault
 		{
  			noAward=true;
 			end1 = 12CounterAttack;
@@ -415,7 +473,7 @@ class Campaign
 			end5 = ;
 			end6 = ;
 			lost = 12CounterAttack;
-			template = XChapterII.Cain;
+			template = x02Chapter.Cain;
 		};
 		class 12CounterAttack: MissionDefault
 		{

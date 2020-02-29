@@ -1,0 +1,55 @@
+titlecut["","black in", 4]
+
+enableradio false
+
+0 fademusic 0.2
+
+playmusic "Track3"
+
+res1 assignasdriver uazg
+res2 assignascargo uazg
+Astier assignascargo uazg
+aP assignascargo uazg
+
+trucksDone=false
+trucksAware=false
+chotainAware=false
+trucksHere=false
+astierChurchGo=false
+astierChurchGo2=false
+convoyAmbush=false
+afterFarmstead=false
+afterFarmstead2=false
+churchCountdown=false
+churchBurned=false
+trucksClear=false
+chotainClear=false
+
+"Chotain" setmarkertype "Empty"
+
+clearmagazinecargo ammo_crate1
+clearweaponcargo ammo_crate1
+
+clearmagazinecargo ammo_crate2
+clearweaponcargo ammo_crate2
+
+ammo_crate1 addweaponcargo ["M16",3]
+ammo_crate1 addweaponcargo ["M60",1]
+ammo_crate1 addweaponcargo ["XMS",1]
+
+ammo_crate2 addweaponcargo ["M16GrenadeLauncher",1]
+ammo_crate2 addweaponcargo ["LAWLauncher",1]
+
+ammo_crate1 addmagazinecargo ["M16",12]
+ammo_crate1 addmagazinecargo ["M60",5]
+ammo_crate1 addmagazinecargo ["M4",6]
+ammo_crate2 addmagazinecargo ["HandGrenade",10]
+ammo_crate2 addmagazinecargo ["GrenadeLauncher",3]
+ammo_crate2 addmagazinecargo ["LAWLauncher",2]
+
+
+~1.5
+
+Astier say "00v19"
+
+exit
