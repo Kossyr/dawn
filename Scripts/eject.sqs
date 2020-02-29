@@ -1,0 +1,22 @@
+
+_leader = _this select 0
+_vehicle = _this select 1
+_interval = _this select 2
+
+_group = units _leader
+
+_total = count _group
+_i = 0
+
+#loop
+
+(_group select _i) action ["eject", _vehicle]
+unassignvehicle (_group select _i)
+
+~_interval
+
+_i = _i + 1
+
+? _i < _total : goto "loop"
+
+exit
