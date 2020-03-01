@@ -1441,7 +1441,7 @@ class Mission
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.733333;
-					init="group this allowfleeing 0";
+					init="group this allowfleeing 0; amTanks = group this";
 				};
 				class Item1
 				{
@@ -1581,7 +1581,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={6817.288086,56.927662,4852.172852};
+					position[]={6759.458496,55.986893,4805.580566};
 					type="HOLD";
 					class Effects
 					{
@@ -1704,7 +1704,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={6763.335449,55.691456,4800.063965};
+					position[]={6699.226074,61.618473,4954.135742};
 					type="UNLOAD";
 					class Effects
 					{
@@ -1713,7 +1713,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={6765.404297,55.951351,4801.349609};
+					position[]={6703.396973,61.866875,4948.896973};
 					type="GETOUT";
 					class Effects
 					{
@@ -2636,7 +2636,7 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={7306.993164,106.281281,5364.185547};
+					position[]={7434.709961,83.128822,5200.283203};
 					azimut=190.000000;
 					id=134;
 					side="WEST";
@@ -2647,7 +2647,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={7301.259766,106.295761,5368.527344};
+					position[]={7428.976563,84.514496,5204.625000};
 					azimut=190.000000;
 					id=135;
 					side="WEST";
@@ -2657,7 +2657,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={7316.053711,105.482323,5368.031250};
+					position[]={7443.770508,81.314857,5204.128906};
 					azimut=190.000000;
 					id=136;
 					side="WEST";
@@ -2671,7 +2671,7 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={7305.966797,106.956596,5354.648438};
+					position[]={7433.683594,84.130836,5190.746094};
 					type="HOLD";
 					synchronizations[]={40};
 					class Effects
@@ -2714,7 +2714,7 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={7148.341309,107.772881,5415.161133};
+					position[]={7125.636230,108.793350,5402.389160};
 					azimut=190.000000;
 					id=137;
 					side="WEST";
@@ -2725,7 +2725,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={7142.607910,107.656021,5419.502930};
+					position[]={7119.902832,108.676491,5406.730957};
 					azimut=190.000000;
 					id=138;
 					side="WEST";
@@ -2735,7 +2735,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={7157.401855,107.407600,5419.006836};
+					position[]={7134.696777,108.448059,5406.234863};
 					azimut=190.000000;
 					id=139;
 					side="WEST";
@@ -2749,7 +2749,7 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={7147.314941,108.262527,5405.624023};
+					position[]={7124.609863,109.553192,5392.852051};
 					type="HOLD";
 					synchronizations[]={41};
 					class Effects
@@ -3175,7 +3175,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=27;
+		items=30;
 		class Item0
 		{
 			position[]={5665.873047,104.397011,6153.527832};
@@ -3309,9 +3309,6 @@ class Mission
 			position[]={8071.022461,1.604730,6147.856445};
 			a=0.000000;
 			b=0.000000;
-			timeoutMin=8.000000;
-			timeoutMid=8.000000;
-			timeoutMax=8.000000;
 			type="END1";
 			age="UNKNOWN";
 			expCond="end";
@@ -3402,7 +3399,7 @@ class Mission
 		};
 		class Item16
 		{
-			position[]={7165.908691,114.486320,4918.502441};
+			position[]={7098.680176,105.538826,4949.531250};
 			a=0.000000;
 			b=0.000000;
 			type="SWITCH";
@@ -3415,7 +3412,7 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={6138.936523,73.760498,5150.116211};
+			position[]={6168.586914,73.042946,5116.760742};
 			a=0.000000;
 			b=0.000000;
 			type="SWITCH";
@@ -3447,7 +3444,7 @@ class Mission
 		};
 		class Item19
 		{
-			position[]={6559.670898,54.553276,4853.655273};
+			position[]={6544.155762,57.396030,4865.291016};
 			a=0.000000;
 			b=0.000000;
 			type="SWITCH";
@@ -3535,7 +3532,7 @@ class Mission
 		};
 		class Item25
 		{
-			position[]={7028.416992,78.194038,4673.741211};
+			position[]={7068.104980,86.900772,4660.443848};
 			a=350.000000;
 			b=30.000000;
 			angle=140.000000;
@@ -3558,6 +3555,54 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=7;
 			expActiv="[] exec ""outro.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item27
+		{
+			position[]={6758.926270,69.663254,4954.506348};
+			a=750.000000;
+			b=600.000000;
+			angle=40.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=7;
+			text="OUT OF BOUNDS - WARNING";
+			expCond="this and alive aP and not (aP in nakladak) and jedeme";
+			expActiv="[] exec ""outofbounds_rashiv_alone.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item28
+		{
+			position[]={6788.610840,70.575882,4951.081543};
+			a=820.000000;
+			b=670.000000;
+			angle=40.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=7;
+			text="OUT OF BOUNDS - KILL";
+			expCond="this and alive aP and not (aP in nakladak) and jedeme";
+			expActiv="[] exec ""outofbounds.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item29
+		{
+			position[]={6567.227051,47.822731,4775.886230};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			expCond="not canmove b1 and not canmove b2";
+			expActiv="amTanks setcombatMode ""Green""";
 			class Effects
 			{
 			};
