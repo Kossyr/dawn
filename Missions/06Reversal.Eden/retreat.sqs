@@ -1,0 +1,20 @@
+setacctime 1
+
+? retreat : goto "ex" ;
+
+baza sideradio "06r07"
+baza sideradio "06r08"
+
+"4" objstatus "failed"
+"5" objstatus "Active"
+
+~4
+
+entreDeuxGo=true
+retreat=true
+
+? not hillTaken : "3" objstatus "failed" ;
+
+#ex
+
+exit
