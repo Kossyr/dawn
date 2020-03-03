@@ -3175,7 +3175,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=30;
+		items=31;
 		class Item0
 		{
 			position[]={5665.873047,104.397011,6153.527832};
@@ -3418,8 +3418,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="LAST ALIVE";
-			expCond="aP == leader anton and tanksShowDone";
-			expActiv="[] exec ""last.sqs""";
+			expCond="alive aP and {alive _x} count units anton == 1 and tanksShowDone";
 			class Effects
 			{
 			};
@@ -3603,6 +3602,18 @@ class Mission
 			age="UNKNOWN";
 			expCond="not canmove b1 and not canmove b2";
 			expActiv="amTanks setcombatMode ""Green""";
+			class Effects
+			{
+			};
+		};
+		class Item30
+		{
+			position[]={6155.692871,72.495865,5207.379883};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			expCond="aP == leader anton and tanksShowDone";
+			expActiv="[] exec ""last.sqs""";
 			class Effects
 			{
 			};
