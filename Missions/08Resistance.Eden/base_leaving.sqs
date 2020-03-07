@@ -1,0 +1,41 @@
+
+playmusic "Track2"
+
+~4
+
+setacctime 1
+
+titlecut ["","black in",0.5]
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 7:37:18
+_camera camSetTarget [40744.60,-90064.96,2113.89]
+_camera camSetPos [7506.58,4229.21,1.49]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~5
+
+titlecut ["","black out",3]
+
+~3
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+titlecut["","black in",2]
+
+car1 setpos getmarkerpos "driver1_1"
+car2 setpos getmarkerpos "driver2_1"
+car3 setpos getmarkerpos "driver3_1"
+
+car1 setdir 10
+car2 setdir 350
+car3 setdir 350
+
+carsGo=true
+
+exit
