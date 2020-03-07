@@ -1,0 +1,25 @@
+setacctime 1
+
+leader player sideradio "08r04"
+
+"2" objstatus "done"
+
+"_x assignascargo car3" foreach units group player
+driver1 assignasdriver car1
+driver2 assignasdriver car2
+driver3 assignasdriver car3
+
+~2
+
+getInTrucks=true
+
+driver1 setpos getmarkerpos "driver1"
+driver2 setpos getmarkerpos "driver2"
+driver3 setpos getmarkerpos "driver3"
+
+~10
+
+savegame
+
+exit
+
