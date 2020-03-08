@@ -5,8 +5,6 @@ _camera cameraeffect ["internal","back"]
 
 playmusic "Track5"
 
-exit
-
 ;=== 17:56:07
 _camera camSetTarget [-33395.70,94331.69,-1166.58]
 _camera camSetPos [8956.20,3753.49,1.63]
@@ -32,6 +30,7 @@ _camera camSetTarget [102691.85,-30949.79,1947.89]
 _camera camSetPos [8927.44,3766.54,1.40]
 _camera camSetFOV 0.700
 _camera camCommit 5
+2 fademusic 0.2
 ~2
 Calvet setmimic "Smile"
 Calvet say "09v01"
@@ -52,7 +51,6 @@ Rashiv say "09v02"
 ~3
 Rashiv setmimic "Normal"
 @camCommitted _camera
-
 
 ;=== 18:11:49
 _camera camSetTarget [96336.72,-44547.00,-4806.24]
@@ -91,3 +89,104 @@ Calvet say "09v05"
 Poincare dowatch [8927.78,3767.13,1.68]
 Rashiv dowatch [8929.45,3767.38,1.71]
 Calvet dowatch [8929.45,3767.38,1.71]
+Poincare say "09v06"
+~1
+;=== 11:52:32
+_camera camSetTarget [-88189.25,27082.08,-4678.96]
+_camera camSetPos [8931.29,3766.24,1.22]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+Poincare stop true
+Poincare setpos getmarkerpos "poincare_pos2"
+Poincare setdir 255
+;=== 11:38:04
+_camera camSetTarget [103565.51,35341.64,7068.31]
+_camera camSetPos [8929.07,3767.24,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+Poincare stop false
+;=== 11:49:55
+_camera camSetTarget [-87933.78,27608.27,-6777.56]
+_camera camSetPos [8930.62,3766.43,1.41]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Rashiv setmimic "Sad"
+Rashiv say "09v07"
+~4
+;=== 11:51:02
+_camera camSetTarget [107972.46,17354.05,2596.30]
+_camera camSetPos [8928.45,3767.37,1.39]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Poincare say "09v08"
+;=== 11:51:14
+_camera camSetTarget [87026.89,66176.72,2596.70]
+_camera camSetPos [8928.73,3766.84,1.40]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+Poincare say "09v09"
+~6
+;=== 11:51:38
+_camera camSetTarget [-88983.77,23952.61,2596.37]
+_camera camSetPos [8928.73,3767.06,1.40]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Rashiv setmimic "Angry"
+Rashiv say "09v10"
+~4
+;=== 11:52:02
+_camera camSetTarget [101274.34,42048.80,-2300.89]
+_camera camSetPos [8926.43,3766.31,1.36]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Poincare say "09v11"
+Rashiv setmimic "Sad"
+Calvet setmimic "Sad"
+Rashiv reveal Poincare
+Calvet reveal Poincare
+;=== 11:52:12
+_camera camSetTarget [87963.27,64977.75,-2300.50]
+_camera camSetPos [8926.86,3765.55,1.37]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+poincareGo=true
+;=== 11:52:32
+_camera camSetTarget [-88189.25,27082.08,-4678.96]
+_camera camSetPos [8931.29,3766.24,1.22]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 11:52:44
+_camera camSetTarget [-88189.25,27082.08,-4678.98]
+_camera camSetPos [8932.90,3765.85,1.25]
+_camera camSetFOV 0.700
+_camera camCommit 8
+~0.5
+Rashiv reveal Poincare
+Calvet reveal Poincare
+~0.5
+Rashiv dowatch Poincare
+Calvet dowatch Poincare
+3 fademusic 1
+~5
+titlecut["","black out",3]
+~2
+3 fademusic 0
+@camCommitted _camera
+~1
+end=true
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit
