@@ -2891,7 +2891,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=38;
+		items=39;
 		class Item0
 		{
 			position[]={6055.311035,188.096863,6989.253906};
@@ -3412,6 +3412,18 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=6;
 			expActiv="astierConvoyChurch=true";
+			class Effects
+			{
+			};
+		};
+		class Item38
+		{
+			position[]={5950.746582,160.795486,7536.972656};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			expCond="(not canmove ammo1 or not canmove ammo2 or not canmove ammo3 or not canmove uazg) and not carClear";
+			expActiv="[] exec ""outro3.sqs""";
 			class Effects
 			{
 			};
