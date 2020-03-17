@@ -4,12 +4,14 @@ class Mission
 	addOns[]=
 	{
 		"bis_resistance",
-		"Hunter"
+		"Hunter",
+		"BIS_WeaponPack"
 	};
 	addOnsAuto[]=
 	{
 		"bis_resistance",
-		"Hunter"
+		"Hunter",
+		"BIS_WeaponPack"
 	};
 	randomSeed=12881923;
 	class Intel
@@ -227,6 +229,7 @@ class Mission
 					formation="WEDGE";
 					speed="NORMAL";
 					combat="AWARE";
+					description="@STRM_WAYPOINT_VALLEY";
 					synchronizations[]={6};
 					class Effects
 					{
@@ -236,6 +239,7 @@ class Mission
 				class Item1
 				{
 					position[]={8602.171875,309.633057,1685.236328};
+					description="@STRM_WAYPOINT_CAMP";
 					class Effects
 					{
 					};
@@ -246,6 +250,7 @@ class Mission
 					position[]={8699.576172,305.461029,1671.799438};
 					type="HOLD";
 					formation="LINE";
+					description="@STRM_WAYPOINT_CAMP";
 					synchronizations[]={7};
 					class Effects
 					{
@@ -256,6 +261,7 @@ class Mission
 				{
 					position[]={9102.207031,195.867615,1146.809326};
 					formation="WEDGE";
+					description="@STRM_WAYPOINT_CASTLE";
 					class Effects
 					{
 					};
@@ -265,6 +271,7 @@ class Mission
 				{
 					position[]={9370.319336,191.396500,1042.222534};
 					type="HOLD";
+					description="@STRM_WAYPOINT_CASTLE";
 					class Effects
 					{
 					};
@@ -1489,7 +1496,7 @@ class Mission
 					azimut=200.000000;
 					id=121;
 					side="GUER";
-					vehicle="SoldierGMG";
+					vehicle="SoldierGSniper";
 					leader=1;
 					skill=0.200000;
 					text="tower1";
@@ -1527,7 +1534,7 @@ class Mission
 					azimut=230.000000;
 					id=123;
 					side="GUER";
-					vehicle="SoldierGB";
+					vehicle="SoldierGMG";
 					leader=1;
 					skill=0.200000;
 					text="tower3";
@@ -1537,7 +1544,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=57;
+		items=59;
 		class Item0
 		{
 			position[]={7174.264160,123.770393,2434.288086};
@@ -2084,10 +2091,30 @@ class Mission
 			leader=1;
 			skill=0.200000;
 		};
+		class Item57
+		{
+			position[]={9437.059570,183.855209,1059.403198};
+			azimut=320.000000;
+			id=124;
+			side="EMPTY";
+			vehicle="Jeep";
+			leader=1;
+			skill=1.000000;
+		};
+		class Item58
+		{
+			position[]={9448.923828,181.972321,1045.595581};
+			azimut=315.000000;
+			id=125;
+			side="EMPTY";
+			vehicle="Truck5t";
+			leader=1;
+			skill=1.000000;
+		};
 	};
 	class Markers
 	{
-		items=5;
+		items=7;
 		class Item0
 		{
 			position[]={8155.846191,163.981110,1971.319580};
@@ -2126,6 +2153,30 @@ class Mission
 			position[]={7198.195801,124.132675,2427.046875};
 			name="guard_go";
 			type="Empty";
+		};
+		class Item5
+		{
+			position[]={5319.744629,63.539997,6222.080078};
+			name="Enemy";
+			markerType="ELLIPSE";
+			type="Flag";
+			colorName="ColorRed";
+			fillName="Horizontal";
+			a=3200.000000;
+			b=1800.000000;
+			angle=120.000000;
+		};
+		class Item6
+		{
+			position[]={8700.250977,207.210846,3984.055420};
+			name="eenemy2";
+			markerType="ELLIPSE";
+			type="Flag";
+			colorName="ColorRed";
+			fillName="Horizontal";
+			a=3000.000000;
+			b=900.000000;
+			angle=62.000000;
 		};
 	};
 	class Sensors
@@ -2255,8 +2306,8 @@ class Mission
 		};
 		class Item9
 		{
-			position[]={8323.422852,205.474060,1868.039063};
-			a=200.000000;
+			position[]={8359.206055,202.808060,1898.812256};
+			a=450.000000;
 			b=25.000000;
 			angle=120.000000;
 			rectangular=1;
@@ -2271,9 +2322,9 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={8659.046875,306.633423,1670.504883};
-			a=70.000000;
-			b=100.000000;
+			position[]={8729.357422,308.276672,1665.286377};
+			a=120.000000;
+			b=150.000000;
 			angle=10.000000;
 			rectangular=1;
 			activationBy="MEMBER";
@@ -2301,9 +2352,9 @@ class Mission
 		};
 		class Item12
 		{
-			position[]={9090.833008,200.443939,1173.382568};
-			a=150.000000;
-			b=30.000000;
+			position[]={9299.835938,183.209167,1053.905518};
+			a=320.000000;
+			b=200.000000;
 			angle=150.000000;
 			rectangular=1;
 			activationBy="LEADER";
@@ -2347,7 +2398,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond=" aP distance tower3 <= 3";
+			expCond="aP distance tower3 <= 3";
 			expActiv="[] exec ""castle_tower.sqs""";
 			class Effects
 			{
