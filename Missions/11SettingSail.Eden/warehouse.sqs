@@ -1,0 +1,17 @@
+setacctime 1
+
+WarehouseGuard1 setpos getmarkerpos "guard_warehouse"
+
+? not (aP == vehicle aP) : aP action ["EJECT"]
+
+~2
+
+WarehouseGuard1 say "11v85"
+~5
+WarehouseGuard1 say "11v86"
+~5
+aP say "11v87"
+"9" objstatus "active"
+"Explosives" setmarkertype "Marker"
+lookingForDistraction=true
+exit

@@ -7,12 +7,24 @@ Astier assignasdriver amCar
 aP assignascargo amCar
 
 Astier stop true
+AstierCemetery stop true
 
 enableradio false
 
 gateGo=false
 splitGo=false
 foundCalverra=false
+InTheCity=false
+GoingToDurras=false
+stealingTruck=true
+truckGone=false
+hasTruck=false
+lookingForDistraction=false
+warehouseBan=true
+soundHorn=false
+
+fuelDone=false
+explosivesDone=false
 
 "3" objstatus "hidden"
 "4" objstatus "hidden"
@@ -21,14 +33,22 @@ foundCalverra=false
 "7" objstatus "hidden"
 "9" objstatus "hidden"
 "10" objstatus "hidden"
+"11" objstatus "hidden"
 
 "Fuel" setmarkertype "Empty"
 "Calverra" setmarkertype "Empty"
 "Explosives" setmarkertype "Empty"
 "Cemetery" setmarkertype "Empty"
+"Pub" setmarkertype "Empty"
 
 aP setcaptive true
 Astier setcaptive true
+AstierCemetery setcaptive true
+removeallweapons AstierCemetery
+AstierCemetery addweapon "M16"
+AstierCemetery addweapon "PipeBomb"
+AstierCemetery addweapon "PipeBomb"
+AstierCemetery addweapon "PipeBomb"
 
 boat1 setfuel 0
 boat2 setfuel 0
