@@ -1,0 +1,33 @@
+setacctime 1
+
+aP say "11v89"
+
+~3
+
+WarehouseTractor setpos getmarkerpos "tractor_warehouse"
+WarehouseTractor setdir 145
+
+aP setpos getmarkerpos "rashiv_warehouse_tractor"
+aP setdir 190
+
+~2
+soundHorn=true
+[] exec "warehouse_horn.sqs"
+
+~2
+WarehouseGuard1 say "11v90"
+~3
+warehouseGo1=true
+~2
+WarehouseGuard2 say "11v91"
+~1
+warehouseGo2=true
+~2
+"9" objstatus "done"
+warehouseBan=false
+
+exit
+
+
+
+

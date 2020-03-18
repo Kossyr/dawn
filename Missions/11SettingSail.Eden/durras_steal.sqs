@@ -1,0 +1,49 @@
+setacctime 1
+
+stealingTruck=false
+
+~1
+
+DurrasGuard1 say "11v78"
+
+_escapeTime = 5
+_i = 0
+
+#loop
+
+~1
+
+? truckGone : goto "truckIsGone" ;
+
+_i = _i + 1
+
+? _i < _escapeTime : goto "loop"
+
+setacctime 1
+
+titlecut["","black in",0.5]
+? aP in FuelTruck : aP action ["EJECT"] ;
+aP setpos getmarkerpos "rashiv_durras_front"
+aP setdir 250
+FuelTruck setpos getmarkerpos "durras_truck"
+FuelTruck setdir 70
+stealingTruck=true
+
+Tracer say "11v80"
+
+goto "ex"
+
+#truckIsGone
+
+Tracer say "11v79"
+"6" objstatus "done"
+"7" objstatus "active"
+hasTruck=true
+~3
+aP say "11v81"
+
+#ex
+
+
+exit
+
