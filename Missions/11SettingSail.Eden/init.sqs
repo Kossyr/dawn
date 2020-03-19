@@ -9,6 +9,10 @@ aP assignascargo amCar
 Astier stop true
 AstierCemetery stop true
 
+"_x stop true" foreach units beachGuard
+"_x stop true" foreach units machineGunners
+"_x stop true" foreach units fireCampers
+
 enableradio false
 
 gateGo=false
@@ -16,6 +20,7 @@ splitGo=false
 foundCalverra=false
 InTheCity=false
 GoingToDurras=false
+inTheCastle=true
 stealingTruck=true
 truckGone=false
 hasTruck=false
@@ -25,6 +30,7 @@ soundHorn=false
 
 fuelDone=false
 explosivesDone=false
+fleeing=false
 
 "3" objstatus "hidden"
 "4" objstatus "hidden"
@@ -43,12 +49,6 @@ explosivesDone=false
 
 aP setcaptive true
 Astier setcaptive true
-AstierCemetery setcaptive true
-removeallweapons AstierCemetery
-AstierCemetery addweapon "M16"
-AstierCemetery addweapon "PipeBomb"
-AstierCemetery addweapon "PipeBomb"
-AstierCemetery addweapon "PipeBomb"
 
 boat1 setfuel 0
 boat2 setfuel 0
@@ -58,6 +58,8 @@ boat4 setfuel 0
 drunk1 setpos [9539.23,1551.85,0.52]
 drunk2 setpos [9540.01,1552.78,0.52]
 barman setpos [9536.85,1553.12,0.47]
+
+rebelFireCheck = aP AddEventHandler ["fired", {_this exec "rebel_fire_check.sqs"}]
 
 
 ~2

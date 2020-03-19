@@ -3,6 +3,8 @@ setacctime 1
 FuelTruck setpos getmarkerpos "truck_beach"
 FuelTruck setdir 100
 
+goingToDurras=false
+
 ? aP in FuelTruck : aP action ["EJECT"]
 
 Calverra setpos getmarkerpos "calverra_beach"
@@ -15,7 +17,7 @@ Calverra say "11v83"
 "3" objstatus "done"
 FuelTruck lock true
 fuelDone=true
-? explosivesDone : aP say "11v94" ;
-? not explosivesDone : aP say "11v92" ;
+? explosivesDone : aP say "11v95" ;
+? not explosivesDone : aP say "11v93" ;
 
 exit

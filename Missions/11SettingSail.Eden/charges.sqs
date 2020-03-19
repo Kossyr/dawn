@@ -1,0 +1,38 @@
+setacctime 1
+
+Astier sideradio "11r02"
+
+~10
+
+fleeing=true
+
+Astier setpos getmarkerpos "astier_hide"
+Astier setbehaviour "stealth"
+
+~1
+
+Astier action ["TOUCHOFF"]
+
+~1
+aP removeEventHandler ["Fired", rebelFireCheck]
+"11" objstatus "done"
+aP setcaptive false
+alarm=true
+setAware=true
+beachClear=true
+PortGunMaster assignasgunner PortGun
+[PortGunMaster] OrderGetIn true
+"_x stop false" foreach units beachGuard
+"_x stop false" foreach units machineGunners
+"_x stop false" foreach units fireCampers
+
+deletevehicle randomner14
+
+
+
+~4
+"12" objstatus "done"
+setacctime 1
+Astier sideradio "11r03"
+
+exit
