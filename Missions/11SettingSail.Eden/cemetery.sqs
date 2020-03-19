@@ -1,28 +1,46 @@
 setacctime 1
 
+AstierCemetery setpos getmarkerpos "astier_cemetery"
 "10" objstatus "done"
 ~2
-AstierCemetery say "11v95"
+AstierCemetery say "11v96"
 ~5
-aP say "11v96"
-~5
-AstierCemetery say "11v97"
+aP say "11v97"
 ~5
 AstierCemetery say "11v98"
 ~5
-aP say "11v99"
+AstierCemetery say "11v99"
 ~5
-AstierCemetery say "11v100"
+aP say "11v100"
 ~5
-aP say "11v101"
+AstierCemetery say "11v101"
 ~5
-AstierCemetery say "11v102"
+aP say "11v102"
 ~5
-aP say "11v103"
+AstierCemetery say "11v103"
 ~5
-AstierCemetery say "11v104"
+aP say "11v104"
+~5
+AstierCemetery say "11v105"
 ~5
 
+AstierCemetery stop false
+removeallweapons AstierCemetery
+AstierCemetery addweapon "M16"
+AstierCemetery addweapon "PipeBomb"
+AstierCemetery addweapon "PipeBomb"
+AstierCemetery addweapon "PipeBomb"
+AstierCemetery setbehaviour "aware"
+
 "11" objstatus "active"
+
+boat1 setfuel 1
+boat2 setfuel 1
+boat3 setfuel 1
+boat4 setfuel 1
+
+~2
+
+savegame
 
 exit

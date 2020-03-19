@@ -1,0 +1,43 @@
+setacctime 1
+
+inTheCity=false
+
+"13" objstatus "done"
+
+Astier sideradio "11r04"
+Poincare sideradio "11r05"
+Calvet sideradio "11r06"
+aP sideradio "11r07"
+Astier sideradio "11r08"
+~32
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 16:33:22
+_camera camSetTarget [95703.98,-49455.37,-2800.16]
+_camera camSetPos [9715.66,1516.10,7.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titletext [ localize "STRC_END_SUCCESS","plain"]
+
+;=== 16:33:50
+_camera camSetTarget [98091.88,-45205.41,-2800.34]
+_camera camSetPos [9721.64,1512.61,12.91]
+_camera camSetFOV 0.700
+_camera camCommit 16
+~8
+titlecut["","black out",8]
+@camCommitted _camera
+
+~1
+
+
+end=true
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit
