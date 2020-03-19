@@ -1,22 +1,90 @@
 setacctime 1
 
+"7" objstatus "done"
+titlecut["","black out",0.5]
+~0.5
+
 FuelTruck setpos getmarkerpos "truck_beach"
-FuelTruck setdir 100
+FuelTruck setdir 280
+
+~1
+
+
+cinema=true
+
+FuelTruck setpos getmarkerpos "truck_beach"
+FuelTruck setdir 280
 
 goingToDurras=false
 
 ? aP in FuelTruck : aP action ["EJECT"]
 
-Calverra setpos getmarkerpos "calverra_beach"
+aP action ["WEAPONONBACK"]
 
-"7" objstatus "done"
+aP setpos getmarkerpos "player_away"
+Calverra setpos getmarkerpos "calverra_beach";
+RashivBeach setpos getmarkerpos "rashiv_beach";
+
+RashivBeach dowatch [9693.00,1473.54,1.62]
+Calverra dowatch [9693.33,1475.69,1.58]
+
+~0.5
+
+setacctime 1
+
+titlecut["","black in",0.5]
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 19:09:04
+_camera camSetTarget [-16254.81,-95099.94,12.62]
+_camera camSetPos [9693.38,1474.88,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
 Calverra say "11v82"
+Calverra setmimic "Surprised"
 ~5
 Calverra say "11v83"
-~5
+;=== 19:09:22
+_camera camSetTarget [-9574.81,99307.49,-7523.64]
+_camera camSetPos [9694.30,1471.34,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:09:29
+_camera camSetTarget [-68352.95,63534.96,-7523.56]
+_camera camSetPos [9695.17,1472.87,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+;=== 19:10:03
+_camera camSetTarget [-4381.70,-97431.55,-4384.22]
+_camera camSetPos [9693.34,1475.09,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+deletevehicle RashivBeach
+aP setpos getmarkerpos "rashiv_beach"
+aP setdir 185
+
+
 "3" objstatus "done"
 FuelTruck lock true
 fuelDone=true
+
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+cinema=false
+
+~1
+
 ? explosivesDone : aP say "11v95" ;
 ? not explosivesDone : aP say "11v93" ;
 
