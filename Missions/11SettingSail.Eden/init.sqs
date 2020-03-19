@@ -27,6 +27,7 @@ hasTruck=false
 lookingForDistraction=false
 warehouseBan=true
 soundHorn=false
+cinema=false
 
 fuelDone=false
 explosivesDone=false
@@ -59,8 +60,9 @@ drunk1 setpos [9539.23,1551.85,0.52]
 drunk2 setpos [9540.01,1552.78,0.52]
 barman setpos [9536.85,1553.12,0.47]
 
-rebelFireCheck = aP AddEventHandler ["fired", {_this exec "rebel_fire_check.sqs"}]
+Calverra dowatch [9523.55,1577.14,1.14]
 
+rebelFireCheck = aP AddEventHandler ["fired", {_this exec "rebel_fire_check.sqs"}]
 
 ~2
 

@@ -4,30 +4,103 @@ setacctime 1
 
 "Pub" setmarkertype "Empty"
 
-Calverra setpos getmarkerpos "calverra_pub"
+cinema=true
+
+aP setpos getmarkerpos "player_away"
+Calverra setpos getmarkerpos "calverra_pub";
+RashivPub setpos getmarkerpos "rashiv_pub";
+
+RashivPub dowatch [9526.09,1573.07,1.71]
+
+RashivPub setmimic "Normal"
+Calverra setmimic "Angry"
+
+
+aP action ["WEAPONONBACK"]
 
 foundCalverra=true
 
-aP say "11v62"
-~5
+
+titlecut["","black in",0.5]
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+;=== 18:21:23
+_camera camSetTarget [88157.59,-60146.03,-2744.94]
+_camera camSetPos [9525.36,1573.41,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+RashivPub say "11v62"
+~1.5
+Calverra dowatch [9527.07,1571.55,1.63]
+~1
 Calverra say "11v63"
+Calverra switchmove "FXCivilLookaround2"
+Calverra setmimic "Surprised"
+;=== 18:23:11
+_camera camSetTarget [-26490.57,94816.05,2912.78]
+_camera camSetPos [9526.43,1572.02,1.42]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:23:23
+_camera camSetTarget [-67430.47,65425.97,-493.92]
+_camera camSetPos [9526.96,1572.34,1.42]
+_camera camSetFOV 0.700
+_camera camCommit 15
 ~5
 Calverra say "11v64"
+Calverra setmimic "Sad"
+Calverra switchmove "FXStandhip"
 ~5
 Calverra say "11v65"
-~5
+Calverra switchmove "FxShow2"
+@camCommitted _camera
 Calverra say "11v66"
+;=== 18:25:22
+_camera camSetTarget [-81126.73,43081.93,-7621.90]
+_camera camSetPos [9528.40,1571.31,1.47]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 ~5
-aP say "11v67"
+RashivPub say "11v67"
+;=== 18:27:01
+_camera camSetTarget [71145.55,-77062.48,-4417.50]
+_camera camSetPos [9526.69,1572.07,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 ~5
 Calverra say "11v68"
+Calverra setmimic "smile"
+
+;=== 18:27:15
+_camera camSetTarget [-45186.18,84844.22,-8468.44]
+_camera camSetPos [9526.93,1571.76,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
 ~5
+deletevehicle RashivPub
+aP setpos getmarkerpos "rashiv_pub"
+aP setdir 330
+Calverra setmimic "Normal"
 "5" objstatus "active"
 "Fuel" setmarkertype "Marker"
 "Calverra" setmarkertype "Marker"
 GoingToDurras=true
-Calverra setspeedmode "limited"
 Calverra domove getmarkerpos "calverra_beach"
+Calverra dowatch objnull
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+cinema=false
+
 ~2.5
 aP say "11v69"
 
