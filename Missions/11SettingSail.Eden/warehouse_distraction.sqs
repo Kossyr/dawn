@@ -2,19 +2,109 @@ setacctime 1
 
 aP say "11v90"
 
-~3
-
-WarehouseTractor setpos getmarkerpos "tractor_warehouse"
-WarehouseTractor setdir 145
-
-aP setpos getmarkerpos "rashiv_warehouse_tractor"
-aP setdir 190
-
 ~2
+
+titlecut ["","black out",1]
+~1.2
+
+setacctime 1
+
+cinema = true
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+aP setpos getmarkerpos "player_away"
+aP action ["WEAPONINHAND"]
+
+RashivTractor setmimic "Normal"
+
+RashivTractor setpos getmarkerpos "rashiv_tractor"
+
+titlecut["","black in",1]
+;=== 14:55:07
+_camera camSetTarget [-78222.26,49623.75,-3751.31]
+_camera camSetPos [9469.72,1708.97,1.74]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:55:50
+_camera camSetTarget [-54784.63,78334.57,355.53]
+_camera camSetPos [9467.58,1708.86,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~1
+;=== 14:56:06
+_camera camSetTarget [60233.67,-84322.17,-4536.81]
+_camera camSetPos [9465.17,1711.05,1.39]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+RashivTractor switchmove "FXCivilLookaround"
+;=== 14:56:11
+_camera camSetTarget [82571.67,-66366.63,-4536.83]
+_camera camSetPos [9464.62,1710.65,1.39]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+RashivTractor assignasdriver WarehouseTractor
+[RashivTractor] orderGetIn true
+;=== 14:57:28
+_camera camSetTarget [-21745.19,96571.98,-5114.51]
+_camera camSetPos [9466.60,1706.95,1.70]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:57:35
+_camera camSetTarget [-50885.09,81342.02,-3973.09]
+_camera camSetPos [9467.85,1708.43,1.68]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@(RashivTractor in WarehouseTractor)
+RashivTractor domove getmarkerpos "tractor_warehouse"
+RashivTractor setbehaviour "aware"
+~2
+titlecut["","white out",0.2]
+~0.2
+titlecut["","white in",0.2]
+WarehouseTractor setpos getmarkerpos "tractor_warehouse";
+WarehouseTractor setdir 145;
+;=== 15:00:09
+_camera camSetTarget [-87181.12,27126.66,25.54]
+_camera camSetPos [9522.60,1663.12,2.12]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 15:00:16
+_camera camSetTarget [-90357.17,6584.79,25.05]
+_camera camSetPos [9521.81,1666.41,2.12]
+_camera camSetFOV 0.700
+_camera camCommit 4
+~0.8
+RashivTractor action ["EJECT"]
+unassignvehicle RashivTractor
+~1.5
+RashivTractor dowatch [9514.10,1667.78,1.20]
+RashivTractor playmove "Medic"
+@camCommitted _camera
+~2.2
 soundHorn=true
 [] exec "warehouse_horn.sqs"
-
 ~2
+;=== 15:03:38
+_camera camSetTarget [84963.42,53363.51,-40386.87]
+_camera camSetPos [9507.46,1663.63,4.21]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 15:03:48
+_camera camSetTarget [84963.42,53363.51,-40386.87]
+_camera camSetPos [9494.55,1654.79,3.40]
+_camera camSetFOV 0.700
+_camera camCommit 5.5
+@camCommitted _camera
+~0.5
 WarehouseGuard1 say "11v91"
 ~3
 WarehouseGuard1 domove getmarkerpos "guard_warehouse1_tractor"
@@ -22,9 +112,20 @@ WarehouseGuard1 domove getmarkerpos "guard_warehouse1_tractor"
 WarehouseGuard2 say "11v92"
 ~1
 WarehouseGuard2 domove getmarkerpos "guard_warehouse2_tractor"
-~2
+~3
+
 "9" objstatus "done"
 warehouseBan=false
+
+deletevehicle RashivTractor
+aP setpos getmarkerpos "rashiv_warehouse_tractor"
+aP setdir 285
+
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+cinema=false
 
 exit
 

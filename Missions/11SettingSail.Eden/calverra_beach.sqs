@@ -4,13 +4,17 @@ setacctime 1
 titlecut["","black out",0.5]
 ~0.5
 
+
+cinema=true
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
 FuelTruck setpos getmarkerpos "truck_beach"
 FuelTruck setdir 280
 
 ~1
 
-
-cinema=true
 
 FuelTruck setpos getmarkerpos "truck_beach"
 FuelTruck setdir 280
@@ -28,14 +32,15 @@ RashivBeach setpos getmarkerpos "rashiv_beach";
 RashivBeach dowatch [9693.00,1473.54,1.62]
 Calverra dowatch [9693.33,1475.69,1.58]
 
+Calverra setmimic "Smile"
+RashivBeach setmimic "Normal"
+
 ~0.5
 
 setacctime 1
 
 titlecut["","black in",0.5]
 
-_camera = "camera" camcreate [0,0,0]
-_camera cameraeffect ["internal","back"]
 
 ;=== 19:09:04
 _camera camSetTarget [-16254.81,-95099.94,12.62]
@@ -76,7 +81,10 @@ aP setdir 185
 "3" objstatus "done"
 FuelTruck lock true
 fuelDone=true
-
+Calverra setmimic "normal"
+deletevehicle Tracer
+deletevehicle DurrasGuard1
+deletevehicle DurrasGuard2
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
@@ -85,7 +93,12 @@ cinema=false
 
 ~1
 
+setacctime 1
 ? explosivesDone : aP say "11v95" ;
 ? not explosivesDone : aP say "11v93" ;
+
+~6
+
+savegame
 
 exit
