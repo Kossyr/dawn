@@ -1,0 +1,20 @@
+setacctime 1
+
+soundHorn=false
+
+"8" objstatus "done"
+
+explosivesDone=true
+
+? fuelDone : aP say "11v95" ;
+? not fuelDone : aP say "11v94" ;
+
+~10
+WarehouseGuard1 domove getmarkerpos "guard_warehouse1"
+WarehouseGuard2 domove getmarkerpos "guard_warehouse2"
+
+~10
+
+warehouseBan=true
+
+exit

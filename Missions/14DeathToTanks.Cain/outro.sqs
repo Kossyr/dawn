@@ -1,0 +1,42 @@
+"1" objstatus "done"
+
+missionDone=true
+
+~2
+
+setacctime 1
+
+leader delta groupradio "11r08"
+
+~1
+
+enableradio false
+
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+;=== 19:54:45
+_camera camSetTarget [-46708.99,-79841.30,-2054.76]
+_camera camSetPos [7005.73,4481.40,2.95]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+titletext [ localize "STRC_END_SUCCESS","plain"]
+;=== 19:54:54
+_camera camSetTarget [-46312.84,-79219.39,-12243.60]
+_camera camSetPos [7005.73,4481.40,17.18]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+
+
+titlecut ["","black out",1]
+
+~1
+
+end=true
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit

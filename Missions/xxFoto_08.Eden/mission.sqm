@@ -1,18 +1,17 @@
 version=11;
 class Mission
 {
-	randomSeed=12189187;
+	randomSeed=6837763;
 	class Intel
 	{
 		resistanceWest=0.000000;
 		resistanceEast=1.000000;
-		startWeather=0.656179;
-		startFog=0.306403;
-		forecastWeather=0.516103;
-		forecastFog=0.425213;
+		startWeather=0.700000;
+		forecastWeather=0.900000;
 		month=11;
 		day=7;
-		hour=8;
+		hour=10;
+		minute=5;
 	};
 	class Groups
 	{
@@ -25,15 +24,14 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={6823.277344,58.309193,4828.378906};
-					azimut=120.000000;
+					position[]={7709.958496,192.199524,4197.906250};
 					id=0;
 					side="EAST";
 					vehicle="SoldierEB";
+					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.600000;
-					text="rashiv";
-					init="this setidentity ""rashiv""; removeallweapons this; this addweapon ""ak47""";
+					init="this exec ""foto.sqs""";
 				};
 			};
 		};
@@ -45,16 +43,15 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={6822.669434,58.427319,4827.354980};
-					azimut=115.000000;
+					position[]={7408.692383,156.450623,4208.964355};
+					azimut=100.000000;
 					id=1;
 					side="GUER";
-					vehicle="OfficerG";
+					vehicle="SoldierGMG";
 					leader=1;
-					rank="LIEUTNANT";
 					skill=0.600000;
-					text="novak";
-					init="this removeweapon ""binocular""; this setidentity ""novak""";
+					text="Calvet";
+					init="this setidentity ""Calvet""";
 				};
 			};
 		};
@@ -66,53 +63,35 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={6828.359863,58.326855,4823.291016};
-					azimut=160.000000;
+					position[]={7407.592773,156.463531,4206.409180};
+					azimut=115.000000;
 					id=2;
 					side="GUER";
-					vehicle="SoldierGMG";
-					player="PLAYER COMMANDER";
+					vehicle="SoldierGB";
 					leader=1;
-					lock="LOCKED";
 					skill=0.600000;
-					init="this exec ""foto.sqs""";
 				};
 			};
-		};
-	};
-	class Vehicles
-	{
-		items=1;
-		class Item0
-		{
-			position[]={6820.585938,58.120502,4832.730469};
-			azimut=250.000000;
-			id=3;
-			side="EMPTY";
-			vehicle="UAZG";
-			leader=1;
-			lock="LOCKED";
-			skill=0.600000;
 		};
 	};
 };
 class Intro
 {
-	randomSeed=15186435;
+	randomSeed=9946627;
 	class Intel
 	{
 	};
 };
 class OutroWin
 {
-	randomSeed=13888003;
+	randomSeed=7969795;
 	class Intel
 	{
 	};
 };
 class OutroLoose
 {
-	randomSeed=13147651;
+	randomSeed=1627651;
 	class Intel
 	{
 	};

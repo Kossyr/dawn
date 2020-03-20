@@ -89,7 +89,7 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=15;
+				items=16;
 				class Item0
 				{
 					position[]={7070.674316,37.817547,7444.844238};
@@ -156,7 +156,7 @@ class Mission
 				class Item6
 				{
 					position[]={7089.608398,108.390877,6059.373535};
-					type="HOLD";
+					type="GETOUT";
 					formation="COLUMN";
 					combat="SAFE";
 					synchronizations[]={17};
@@ -176,6 +176,15 @@ class Mission
 				};
 				class Item8
 				{
+					position[]={7084.849609,108.142433,6052.640625};
+					type="GETIN";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item9
+				{
 					position[]={6773.561035,82.795570,5669.890625};
 					type="GETOUT";
 					class Effects
@@ -183,7 +192,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item9
+				class Item10
 				{
 					position[]={6733.605469,82.129883,5662.952148};
 					type="HOLD";
@@ -193,7 +202,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item10
+				class Item11
 				{
 					position[]={6729.133789,82.130333,5662.994141};
 					type="HOLD";
@@ -206,7 +215,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item11
+				class Item12
 				{
 					position[]={6532.423340,72.963692,5551.590820};
 					class Effects
@@ -214,7 +223,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item12
+				class Item13
 				{
 					position[]={6518.207520,72.660728,5570.095703};
 					type="HOLD";
@@ -225,7 +234,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item13
+				class Item14
 				{
 					position[]={6363.249023,72.705444,5681.119141};
 					combatMode="RED";
@@ -235,7 +244,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item14
+				class Item15
 				{
 					position[]={6302.136230,73.262688,5717.438477};
 					type="SAD";
@@ -2882,7 +2891,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=38;
+		items=41;
 		class Item0
 		{
 			position[]={6055.311035,188.096863,6989.253906};
@@ -3403,6 +3412,50 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=6;
 			expActiv="astierConvoyChurch=true";
+			class Effects
+			{
+			};
+		};
+		class Item38
+		{
+			position[]={5950.746582,160.795486,7536.972656};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			expCond="(not canmove ammo1 or not canmove ammo2 or not canmove ammo3 or not canmove uazg) and not carClear";
+			expActiv="[] exec ""outro3.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item39
+		{
+			position[]={6479.894043,148.171631,6437.129883};
+			a=1000.000000;
+			b=1200.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=0;
+			expCond="this and alive aP and not cinema";
+			expActiv="[] exec ""out.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item40
+		{
+			position[]={6486.684082,148.461365,6438.219727};
+			a=1050.000000;
+			b=1250.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=0;
+			expCond="this and alive aP and not cinema";
+			expActiv="aP setdammage 1";
 			class Effects
 			{
 			};

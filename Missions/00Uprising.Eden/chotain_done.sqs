@@ -3,6 +3,7 @@
 ? churchBurned : goto "ex" ;
 
 chotainClear=true
+cinema=true
 
 [res1, res2] join Astier
 
@@ -309,6 +310,8 @@ actor dowatch objnull
 aP setpos getmarkerpos "chotain_ap"
 aP setdir 340
 
+cinem=false
+
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
@@ -320,11 +323,14 @@ res4 assignascargo uazg
 res5 assignascargo uazg
 aP assignasdriver uazg
 Astier assignasdriver ammo1
+res1 assignasdriver ammo2
+res2 assignasdriver ammo3
 
 actor dowatch objnull
 res3 dowatch objnull
 res4 dowatch objnull
 res5 dowatch objnull
+Astier dowatch objnull
 
 ~0.5
 

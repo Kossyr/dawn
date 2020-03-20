@@ -1,0 +1,70 @@
+
+setacctime 1
+
+aP say "11v84"
+~1.5
+titlecut["","black out",3]
+~3.5
+cinema = true
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+aP setpos getmarkerpos "player_away"
+aP action ["WEAPONONBACK"]
+
+WarehouseGuard1 setpos getmarkerpos "guard_warehouse1";
+RashivWarehouse setpos getmarkerpos "rashiv_warehouse";
+RashivWarehouse dowatch [9497.01,1658.53,1.63]
+WarehouseGuard1 dowatch [9496.44,1656.49,1.59]
+
+WarehouseGuard1 setmimic "Angry"
+RashivWarehouse setmimic "Normal"
+
+~0.5
+titlecut["","black in",0.5]
+;=== 13:56:55
+_camera camSetTarget [50901.52,92641.35,-2567.33]
+_camera camSetPos [9497.11,1652.64,1.25]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+WarehouseGuard1 say "11v85"
+;=== 13:57:15
+_camera camSetTarget [4874.17,101514.39,-2567.62]
+_camera camSetPos [9497.27,1655.01,1.28]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+WarehouseGuard1 say "11v86"
+;=== 13:57:34
+_camera camSetTarget [33250.25,98761.22,-2567.71]
+_camera camSetPos [9496.93,1657.93,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+deletevehicle RashivWarehouse
+aP setpos getmarkerpos "rashiv_warehouse"
+aP setdir 10
+"Explosives" setmarkertype "Marker"
+lookingForDistraction=true
+WarehouseGuard1 dowatch objnull
+
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+
+cinema=false
+
+~3
+aP say "11v87"
+"9" objstatus "active"
+
+
+~6 
+
+savegame
+
+exit
