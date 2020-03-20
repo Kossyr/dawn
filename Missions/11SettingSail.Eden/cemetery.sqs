@@ -1,36 +1,131 @@
+
+titlecut["","black in",1]
+
+"10" objstatus "done"
+
 setacctime 1
 
-AstierCemetery setpos getmarkerpos "astier_cemetery"
-"10" objstatus "done"
-~2
+cinema=true
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+aP setpos getmarkerpos "player_away"
+aP action ["WEAPONONBACK"]
+
+AstierCharges setpos getmarkerpos "astier_charges"
+AstierCemetery setpos getmarkerpos "astier_cemetery";
+RashivCemetery setpos getmarkerpos "rashiv_cemetery";
+RashivCemetery dowatch [9866.93,1582.47,1.62]
+AstierCemetery dowatch [9864.91,1582.48,1.62]
+
+AstierCemetery setmimic "Normal"
+RashivCemetery setmimic "Normal"
+
+;=== 14:17:32
+_camera camSetTarget [109418.04,956.59,-9421.82]
+_camera camSetPos [9865.84,1582.41,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 AstierCemetery say "11v96"
 ~5
-aP say "11v97"
-~5
+;=== 14:20:33
+_camera camSetTarget [-81553.38,-38084.82,-8268.15]
+_camera camSetPos [9868.16,1583.39,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+RashivCemetery say "11v97"
+;=== 14:20:46
+_camera camSetTarget [-60639.89,-68845.33,-8267.88]
+_camera camSetPos [9867.26,1583.41,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
 AstierCemetery say "11v98"
-~5
+AstierCemetery setmimic "Smile"
+;=== 14:21:16
+_camera camSetTarget [108665.82,-11459.41,-8267.82]
+_camera camSetPos [9866.17,1582.54,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~4
+AstierCemetery setmimic "Sad"
+~2
 AstierCemetery say "11v99"
-~5
-aP say "11v100"
-~5
+~3
+;=== 14:25:28
+_camera camSetTarget [-72561.46,57593.27,-8268.01]
+_camera camSetPos [9865.58,1582.13,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+RashivCemetery say "11v100"
+RashivCemetery setmimic "surprised"
+~1.5
+;=== 14:26:14
+_camera camSetTarget [103772.91,34937.73,-8268.23]
+_camera camSetPos [9864.17,1581.85,1.43]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 AstierCemetery say "11v101"
-~5
-aP say "11v102"
-~5
+AstierCemetery setmimic "Normal"
+~7
+;=== 14:26:59
+_camera camSetTarget [-89334.09,8301.49,-10676.36]
+_camera camSetPos [9865.92,1582.41,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+RashivCemetery say "11v102"
+RashivCemetery setmimic "Normal"
+;=== 14:27:10
+_camera camSetTarget [-88367.69,-16911.04,-2841.93]
+_camera camSetPos [9865.92,1582.75,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+;=== 14:28:10
+_camera camSetTarget [109473.58,-6783.34,-2882.50]
+_camera camSetPos [9866.13,1582.52,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 AstierCemetery say "11v103"
-~5
-aP say "11v104"
-~5
+~8
+;=== 14:28:30
+_camera camSetTarget [-89869.06,8262.61,-2882.49]
+_camera camSetPos [9865.62,1582.45,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+RashivCemetery say "11v104"
+RashivCemetery setmimic "Angry"
+~2
+;=== 14:28:57
+_camera camSetTarget [109811.35,3207.34,-2882.45]
+_camera camSetPos [9866.40,1582.43,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 AstierCemetery say "11v105"
-~5
-
-AstierCemetery stop false
-removeallweapons AstierCemetery
-AstierCemetery addweapon "M16"
-AstierCemetery addweapon "PipeBomb"
-AstierCemetery addweapon "PipeBomb"
-AstierCemetery addweapon "PipeBomb"
-AstierCemetery setbehaviour "aware"
+AstierCemetery setmimic "Angry"
+~3
+deletevehicle AstierCemetery
+deletevehicle RashivCemetery
+aP setpos getmarkerpos "rashiv_cemetery"
+aP setdir 90
+AstierCharges setpos getmarkerpos "astier_cemetery"
+AstierCharges stop false
+removeallweapons AstierCharges
+AstierCharges addweapon "M16"
+AstierCharges addweapon "PipeBomb"
+AstierCharges addweapon "PipeBomb"
+AstierCharges addweapon "PipeBomb"
+AstierCharges setbehaviour "aware"
 
 "11" objstatus "active"
 
@@ -39,7 +134,12 @@ boat2 setfuel 1
 boat3 setfuel 1
 boat4 setfuel 1
 
-~2
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+cinema=false
+
+~4
 
 savegame
 
