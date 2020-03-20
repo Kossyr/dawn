@@ -1296,7 +1296,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=18;
+		items=19;
 		class Item0
 		{
 			position[]={1497.862671,47.262554,5469.799805};
@@ -1569,6 +1569,18 @@ class Mission
 			text="PLAYER REPELLED ALL";
 			expCond="{alive _x} count thislist <= 0 and not canmove m113";
 			expActiv="[] exec ""outro.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item18
+		{
+			position[]={1782.902100,0.343067,7237.620605};
+			a=0.000000;
+			b=0.000000;
+			type="LOOSE";
+			age="UNKNOWN";
+			expCond="not alive Lemontov";
 			class Effects
 			{
 			};

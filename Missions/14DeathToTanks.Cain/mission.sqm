@@ -493,7 +493,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=14;
+		items=15;
 		class Item0
 		{
 			position[]={6985.807617,36.967903,4405.213867};
@@ -698,6 +698,20 @@ class Mission
 			text="OUT OF BOUNDS - KILL";
 			expCond="this and alive aP";
 			expActiv="[] exec ""outofbounds.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item14
+		{
+			position[]={6967.198242,37.454559,4395.179688};
+			a=300.000000;
+			b=300.000000;
+			rectangular=1;
+			activationBy="WEST";
+			age="UNKNOWN";
+			expCond="missionDone";
+			expActiv="""_x setdammage 1"" foreach thislist";
 			class Effects
 			{
 			};

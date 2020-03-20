@@ -2181,7 +2181,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=19;
+		items=20;
 		class Item0
 		{
 			position[]={7180.466309,123.977959,2455.915039};
@@ -2448,6 +2448,18 @@ class Mission
 			text="OUT OF BOUNDS - KILL";
 			expCond="this and alive aP and not (aP in resTransport)";
 			expActiv="[] exec ""outofbounds.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item19
+		{
+			position[]={5416.185547,-6.249191,3639.329590};
+			a=0.000000;
+			b=0.000000;
+			type="LOOSE";
+			age="UNKNOWN";
+			expCond="not alive Astier";
 			class Effects
 			{
 			};

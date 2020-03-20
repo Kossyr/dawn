@@ -5132,7 +5132,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=56;
+		items=62;
 		class Item0
 		{
 			position[]={9709.200195,12.647430,1429.110718};
@@ -5486,8 +5486,8 @@ class Mission
 		class Item25
 		{
 			position[]={9503.950195,25.516809,1659.715332};
-			a=23.000000;
-			b=18.000000;
+			a=32.000000;
+			b=27.000000;
 			angle=50.000000;
 			rectangular=1;
 			activationBy="VEHICLE";
@@ -5930,6 +5930,80 @@ class Mission
 			age="UNKNOWN";
 			expCond="(aP in boat1 or aP in boat2 or aP in boat3 or aP in boat4) and not escaping";
 			expActiv="aP setcaptive false; setAware=true";
+			class Effects
+			{
+			};
+		};
+		class Item56
+		{
+			position[]={9830.608398,0.673246,1451.216675};
+			b=35.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			age="UNKNOWN";
+			idVehicle=0;
+			expCond="this and not escaping";
+			class Effects
+			{
+				voice="Eng24";
+			};
+		};
+		class Item57
+		{
+			position[]={9492.583984,233.452255,2747.023926};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			expCond="not canmove FuelTruck and not fuelDone";
+			expActiv="[] exec ""outro3.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item58
+		{
+			position[]={10528.695313,185.598587,2099.773438};
+			a=0.000000;
+			b=0.000000;
+			type="END2";
+			age="UNKNOWN";
+			expCond="end2";
+			class Effects
+			{
+			};
+		};
+		class Item59
+		{
+			position[]={10970.785156,45.379246,1648.334473};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			expCond="not alive Calvet or not alive Poincare or not alive Astier or not alive AstierCharges or not alive Calverra or not alive Tracer";
+			expActiv="[] exec ""outro3.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item60
+		{
+			position[]={9475.611328,28.716516,1728.601074};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			expCond="not canmove WarehouseTractor and not explosivesDone";
+			expActiv="[] exec ""outro2.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item61
+		{
+			position[]={11058.435547,13.487551,1521.138672};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			expCond="not inTheCity and not canmove boat1 and not canmove boat2 and not canmove boat3 and not canmove boat4";
+			expActiv="[] exec ""outro2.sqs""";
 			class Effects
 			{
 			};
