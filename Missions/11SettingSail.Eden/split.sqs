@@ -1,0 +1,101 @@
+
+InTheCity=true
+4 fademusic 0
+~4
+
+setacctime 1
+
+[aP] join grpnull
+
+cinema=true
+aP setpos getmarkerpos "player_away"
+Astier setpos getmarkerpos "astier_away"
+Astier stop true
+
+aP action ["WEAPONONBACK"]
+
+RashivSplit setpos getmarkerpos "rashiv_split";
+AstierSplit setpos getmarkerpos "astier_split";
+guard setpos getmarkerpos "guard_split";
+
+AstierSplit playmove "EffectStand"
+
+AstierSplit setmimic "normal"
+guard setmimic "Normal"
+RashivSplit setmimic "normal"
+
+guard dowatch [9668.23,1527.36,1.63]
+AstierSplit dowatch [9666.04,1526.99,1.72]
+RashivSplit dowatch [9666.04,1526.99,1.72]
+
+titlecut["","black in",0.5]
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 17:52:38
+_camera camSetTarget [-90319.66,-74.76,13.39]
+_camera camSetPos [9667.51,1526.98,1.39]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+guard say "11v45"
+guard playmove "EffectStandSalute"
+~2
+AstierSplit say "11v46"
+;=== 17:54:21
+_camera camSetTarget [108124.20,-14689.99,-6526.14]
+_camera camSetPos [9664.62,1527.78,1.40]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 17:54:48
+_camera camSetTarget [98465.96,-43724.87,-8147.09]
+_camera camSetPos [9665.25,1528.19,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 2
+~0.5
+guard playmove "EffectStandSaluteEnd"
+@camCommitted _camera
+guard say "11v47"
+;=== 17:55:36
+_camera camSetTarget [-89521.13,11269.70,-8147.28]
+_camera camSetPos [9666.90,1526.84,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+AstierSplit say "11v48"
+;=== 17:56:07
+_camera camSetTarget [103551.59,-32685.81,-3884.47]
+_camera camSetPos [9667.34,1527.54,1.44]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~4
+;=== 17:56:24
+_camera camSetTarget [-65203.85,67011.79,-10260.76]
+_camera camSetPos [9669.71,1525.98,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AstierSplit dowatch [9669.83,1525.59,1.62]
+~3
+deletevehicle RashivSplit
+aP setpos getmarkerpos "rashiv_split"
+aP setdir 295
+AstierSplit dowatch objnull
+guard say "11v49"
+guard domove getmarkerpos "guard_tent"
+AstierSplit domove getmarkerpos "astier_tent"
+splitGo=true
+amCar lock false
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+cinema=false
+
+exit

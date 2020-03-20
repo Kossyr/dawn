@@ -1,0 +1,104 @@
+titlecut ["","black in",10000]
+
+c1 assignasdriver car
+"_x assignascargo car" foreach units poincareGroup
+
+car setfuel 0
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+playmusic "RTrack9"
+
+~1.5
+
+titlecut["","black in",2]
+
+;=== 16:59:17
+_camera camSetTarget [-3539.91,104597.51,61.19]
+_camera camSetPos [4195.36,4896.98,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 16:59:25
+_camera camSetTarget [-21593.14,101518.05,61.07]
+_camera camSetPos [4195.82,4900.62,1.41]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+;=== 16:59:40
+_camera camSetTarget [-82870.30,54057.27,61.29]
+_camera camSetPos [4210.88,4895.90,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+0 fademusic 0.2
+Calvet setmimic "Smile"
+Calvet say "10v01"
+;=== 17:00:44
+_camera camSetTarget [-82261.36,55124.14,61.31]
+_camera camSetPos [4208.37,4897.29,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 6.5
+@camCommitted _camera
+;=== 17:01:21
+_camera camSetTarget [-52943.77,86956.14,61.28]
+_camera camSetPos [4207.68,4896.94,1.44]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Calvet say "10v02"
+;=== 17:01:39
+_camera camSetTarget [-60038.96,81449.30,3560.59]
+_camera camSetPos [4207.37,4897.62,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+Calvet setmimic "Normal"
+Calvet say "10v03"
+~2.5
+1 fademusic 1
+titlecut ["","black in",0.5]
+Calvet setpos getmarkerpos "calvet_pos"
+Rashiv setpos getmarkerpos "rashiv_pos"
+Calvet assignascargo car
+Rashiv assignascargo car
+[Calvet, Rashiv] orderGetIn true
+Calvet setdir 225
+Rashiv setdir 225
+;=== 17:04:04
+_camera camSetTarget [20763.73,-93703.46,61.18]
+_camera camSetPos [4194.83,4914.10,1.11]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 17:05:01
+_camera camSetTarget [36756.07,-89637.30,60.81]
+_camera camSetPos [4194.66,4912.97,1.17]
+_camera camSetFOV 0.700
+_camera camCommit 8
+@(Rashiv in car and Calvet in car)
+car setfuel 1
+
+;=== 17:06:20
+_camera camSetTarget [-46552.24,-81247.59,61.40]
+_camera camSetPos [4199.92,4916.31,1.03]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 17:06:26
+_camera camSetTarget [-46552.24,-81247.59,61.20]
+_camera camSetPos [4199.92,4916.31,8.83]
+_camera camSetFOV 0.700
+_camera camCommit 10
+~7
+titlecut["","black out",3]
+3 fademusic 0
+@camCommitted _camera
+end=true
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit

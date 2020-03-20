@@ -1,0 +1,49 @@
+setacctime 1
+
+leader medics sideradio "09r04"
+
+carClear=true
+
+~5
+
+convoyGo=true
+
+savegame
+
+~5
+
+unassignvehicle aP
+
+"deletevehicle _x" foreach units raven
+
+"3" objstatus "done"
+
+tank setpos getmarkerpos "tank_pos"
+tank setdir 0
+car1 setpos getmarkerpos "car1_pos"
+car1 setdir 0
+car2 setpos getmarkerpos "car2_pos"
+car2 setdir 0
+
+~5
+
+Poincare sideradio "09r05"
+leader reinforcements sideradio "09r06"
+leader medics sideradio "09r07"
+Poincare sideradio "09r08"
+Poincare sideradio "09r09"
+~15
+
+"4" objstatus "active"
+"EnemyAttack" setmarkertype "Arrow"
+"Farm" setmarkertype "Flag"
+
+[medic2, medic3, medic4] join leader medics
+
+medicsGo=true
+
+~15
+
+[aP] join leader medics
+
+exit

@@ -231,9 +231,6 @@ class CfgRadio
 	};
 };
 
-
-
-
 class MissionDefault
 {
  	lives = -1;
@@ -392,8 +389,8 @@ class Campaign
 
 		class 07Retreat: MissionDefault
 		{
-			end1 = 08UnexpectedAlly;
-			end2 = 08UnexpectedAlly;
+			end1 = 08Resistance;
+			end2 = ;
 			end3 = ;
 			end4 = ;
 			end5 = ;
@@ -401,49 +398,82 @@ class Campaign
 			lost = 07Retreat;
 			template = 07Retreat.Eden;
 		};
-		class 08UnexpectedAlly: MissionDefault
+		class 08Resistance: MissionDefault
 		{
-			end1 = 09Respite;
+			end1 = 09TestingMettle;
 			end2 = ;
 			end3 = ;
 			end4 = ;
 			end5 = ;
 			end6 = ;
-			lost = 08UnexpectedAlly;
-			template = 08UnexpectedAlly.Eden;
+			lost = 08Resistance;
+			template = 08Resistance.Eden;
 		};
-		class 09Respite: MissionDefault
+		class 09TestingMettle: MissionDefault
 		{
-			end1 = 10Defenders;
-			end2 = 10Defenders;
+			end1 = 10LionHead;
+			end2 = 09TestingMettle;
 			end3 = ;
 			end4 = ;
 			end5 = ;
 			end6 = ;
-			lost = 09Respite;
-			template = 09Respite.Cain;
+			lost = 09TestingMettle;
+			template = 09TestingMettle.Eden;
 		};
-       class 10Defenders: MissionDefault
+		class 10LionHead: MissionDefault
 		{
-			end1 = 11DeathToTanks;
+			end1 = 11SettingSail;
 			end2 = ;
 			end3 = ;
 			end4 = ;
 			end5 = ;
 			end6 = ;
-			lost = 10Defenders;
-			template = 10Defenders.Cain;
+			lost = 10LionHead;
+			template = 10LionHead.Eden;
 		};
-		class 11DeathToTanks: MissionDefault
+		class 11SettingSail: MissionDefault
+		{
+			end1 = 12Respite;
+			end2 = 11SettingSail;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 11SettingSail;
+			template = 11SettingSail.Eden;
+		};
+		class 12Respite: MissionDefault
+		{
+			end1 = 13Defenders;
+			end2 = 13Defenders;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 12Respite;
+			template = 12Respite.Cain;
+		};
+       class 13Defenders: MissionDefault
+		{
+			end1 = 14DeathToTanks;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 13Defenders;
+			template = 13Defenders.Cain;
+		};
+		class 14DeathToTanks: MissionDefault
 		{
 			end1 = ;
-			end2 = 11DeathToTanks;
+			end2 = 14DeathToTanks;
 			end3 = ;
 			end4 = ;
 			end5 = ;
 			end6 = ;
-			lost = 11DeathToTanks;
-			template = 11DeathToTanks.Cain;
+			lost = 14DeathToTanks;
+			template = 14DeathToTanks.Cain;
 		};
 	};
 
@@ -466,170 +496,170 @@ class Campaign
 		class x02Chapter: MissionDefault
 		{
  			noAward=true;
-			end1 = 12CounterAttack;
+			end1 = 15CounterAttack;
 			end2 = ;
 			end3 = ;
 			end4 = ;
 			end5 = ;
 			end6 = ;
-			lost = 12CounterAttack;
+			lost = 15CounterAttack;
 			template = x02Chapter.Cain;
 		};
-		class 12CounterAttack: MissionDefault
+		class 15CounterAttack: MissionDefault
 		{
-			end1 = 13TankPlatoon;
+			end1 = 16TankPlatoon;
 			end2 = ;
 			end3 = ;
 			end4 = ;
 			end5 = ;
 			end6 = ;
-			lost = 12CounterAttack;
-			template = 12CounterAttack.Cain;
+			lost = 15CounterAttack;
+			template = 15CounterAttack.Cain;
 		};
-		class 13TankPlatoon: MissionDefault
+		class 16TankPlatoon: MissionDefault
 		{
-			end1 = 14HeavyRide;
+			end1 = 17HeavyRide;
 			end2 = ;
 			end3 = ;
 			end4 = ;
 			end5 = ;
 			end6 = ;
-			lost = 13TankPlatoon;
-			template = 13TankPlatoon.Cain;
+			lost = 16TankPlatoon;
+			template = 16TankPlatoon.Cain;
 		};
-		class 14HeavyRide: MissionDefault
+		class 17HeavyRide: MissionDefault
 		{
-			end1 = 15Reconnaissance;
+			end1 = 18Reconnaissance;
 			end2 = ;
 			end3 = ;
 			end4 = ;
 			end5 = ;
 			end6 = ;
-			lost = 14HeavyRide;
-			template = 14HeavyRide.Cain;
+			lost = 17HeavyRide;
+			template = 17HeavyRide.Cain;
 		};
-		class 15Reconnaissance: MissionDefault
+		class 18Reconnaissance: MissionDefault
 		{
-			end1 = 16DeathInFlames;
+			end1 = 19DeathInFlames;
 			end2 = ;
 			end3 = ;
 			end4 = ;
 			end5 = ;
 			end6 = ;
-			lost = 15Reconnaissance;
-			template = 15Reconnaissance.Cain;
+			lost = 18Reconnaissance;
+			template = 18Reconnaissance.Cain;
 		};
-		class 16DeathInFlames: MissionDefault
+		class 19DeathInFlames: MissionDefault
 		{
-			end1 = 17Storm;
-			end2 = 17Storm;
-			end3 = 17Storm;
+			end1 = 20Storm;
+			end2 = 20Storm;
+			end3 = 20Storm;
 			end4 = ;
 			end5 = ;
 			end6 = ;
-			lost = 16DeathInFlames;
-			template = 16DeathInFlames.Cain;
+			lost = 19DeathInFlames;
+			template = 19DeathInFlames.Cain;
 		};
-		class 17Storm: MissionDefault
+		class 20Storm: MissionDefault
 		{
-			end1 = 18Lieutenant;
+			end1 = 21Lieutenant;
 			end2 = ;
 			end3 = ;
 			end4 = ;
 			end5 = ;
 			end6 = ;
-			lost = 17Storm;
-			template = 17Storm.Cain;
+			lost = 20Storm;
+			template = 20Storm.Cain;
 		};
-		class 18Lieutenant: MissionDefault
+		class 21Lieutenant: MissionDefault
 		{
-			end1 = 19Siege;
+			end1 = 22Siege;
 			end2 = ;
 			end3 = ;
 			end4 = ;
 			end5 = ;
 			end6 = ;
-			lost = 18Lieutenant;
-			template = 18Lieutenant.Cain;
+			lost = 21Lieutenant;
+			template = 21Lieutenant.Cain;
 		};
-		class 19Siege: MissionDefault
+		class 22Siege: MissionDefault
 		{
-			end1 = 20Ghosts;
-			end2 = 19Siege;
-			end3 = 19Siege;
+			end1 = 23Ghosts;
+			end2 = 22Siege;
+			end3 = 22Siege;
 			end4 = ;
 			end5 = ;
 			end6 = ;
-			lost = 19Siege;
-			template = 19Siege.Cain;
+			lost = 22Siege;
+			template = 22Siege.Cain;
 		};
-		class 20Ghosts: MissionDefault
+		class 23Ghosts: MissionDefault
 		{
-			end1 = 21Offensive;
-			end2 = 21Offensive;
-			end3 = 21Offensive;
-			end4 = 21Offensive;
+			end1 = 24Offensive;
+			end2 = 24Offensive;
+			end3 = 24Offensive;
+			end4 = 24Offensive;
 			end5 = ;
 			end6 = ;
-			lost = 20Ghosts;
-			template = 20Ghosts.Cain;
+			lost = 23Ghosts;
+			template = 23Ghosts.Cain;
 		};
-		class 21Offensive: MissionDefault
+		class 24Offensive: MissionDefault
 		{
-			end1 = 22AirSupport;
+			end1 = 25AirSupport;
 			end2 = ;
 			end3 = ;
 			end4 = ;
 			end5 = ;
 			end6 = ;
-			lost = 21Offensive;
-			template = 21Offensive.Cain;
+			lost = 24Offensive;
+			template = 24Offensive.Cain;
 		};
-		class 22AirSupport: MissionDefault
+		class 25AirSupport: MissionDefault
 		{
-			end1 = 23Squadron;
+			end1 = 26Squadron;
 			end2 = ;
 			end3 = ;
 			end4 = ;
 			end5 = ;
 			end6 = ;
-			lost = 22AirSupport;
-			template = 22AirSupport.Cain;
+			lost = 25AirSupport;
+			template = 25AirSupport.Cain;
 		};
-		class 23Squadron: MissionDefault
+		class 26Squadron: MissionDefault
 		{
-			end1 = 24NightOwls;
+			end1 = 27NightOwls;
 			end2 = ;
 			end3 = ;
 			end4 = ;
 			end5 = ;
 			end6 = ;
-			lost = 23Squadron;
-			template = 23Squadron.Cain;
+			lost = 26Squadron;
+			template = 26Squadron.Cain;
 		};
-		class 24NightOwls: MissionDefault
+		class 27NightOwls: MissionDefault
 		{
-			end1 = 25TemperedSteel;
+			end1 = 28TemperedSteel;
 			end2 = ;
 			end3 = ;
 			end4 = ;
 			end5 = ;
 			end6 = ;
-			lost = 24NightOwls;
-			template = 24NightOwls.Cain;
+			lost = 27NightOwls;
+			template = 27NightOwls.Cain;
 		};
-		class 25TemperedSteel: MissionDefault
+		class 28TemperedSteel: MissionDefault
 		{
-			end1 = 26RedHammer;
-			end2 = 25TemperedSteel;
+			end1 = 29RedHammer;
+			end2 = 28TemperedSteel;
 			end3 = ;
 			end4 = ;
 			end5 = ;
 			end6 = ;
-			lost = 25TemperedSteel;
-			template = 25TemperedSteel.Cain;
+			lost = 28TemperedSteel;
+			template = 28TemperedSteel.Cain;
 		};
-		class 26RedHammer: MissionDefault
+		class 29RedHammer: MissionDefault
 		{
 			end1 = ;
 			end2 = ;
@@ -637,8 +667,8 @@ class Campaign
 			end4 = ;
 			end5 = ;
 			end6 = ;
-			lost = 26RedHammer;
-			template = 26RedHammer.Cain;
+			lost = 29RedHammer;
+			template = 29RedHammer.Cain;
 		};
 	};
 };
