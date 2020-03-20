@@ -2891,7 +2891,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=39;
+		items=41;
 		class Item0
 		{
 			position[]={6055.311035,188.096863,6989.253906};
@@ -3424,6 +3424,38 @@ class Mission
 			age="UNKNOWN";
 			expCond="(not canmove ammo1 or not canmove ammo2 or not canmove ammo3 or not canmove uazg) and not carClear";
 			expActiv="[] exec ""outro3.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item39
+		{
+			position[]={6479.894043,148.171631,6437.129883};
+			a=1000.000000;
+			b=1200.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=0;
+			expCond="this and alive aP and not cinema";
+			expActiv="[] exec ""out.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item40
+		{
+			position[]={6486.684082,148.461365,6438.219727};
+			a=1050.000000;
+			b=1250.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=0;
+			expCond="this and alive aP and not cinema";
+			expActiv="aP setdammage 1";
 			class Effects
 			{
 			};
