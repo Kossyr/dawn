@@ -119,13 +119,11 @@ deletevehicle RashivCemetery
 aP setpos getmarkerpos "rashiv_cemetery"
 aP setdir 90
 AstierCharges setpos getmarkerpos "astier_cemetery"
-AstierCharges stop false
 removeallweapons AstierCharges
 AstierCharges addweapon "M16"
 AstierCharges addweapon "PipeBomb"
 AstierCharges addweapon "PipeBomb"
 AstierCharges addweapon "PipeBomb"
-AstierCharges setbehaviour "aware"
 
 "11" objstatus "active"
 
@@ -139,7 +137,11 @@ camDestroy _camera
 
 cinema=false
 
-~4
+
+~1
+AstierCharges stop false
+AstierCharges setbehaviour "aware"
+~2
 
 savegame
 

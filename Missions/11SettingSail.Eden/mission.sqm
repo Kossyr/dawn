@@ -3341,6 +3341,7 @@ class Mission
 			leader=1;
 			lock="LOCKED";
 			skill=0.858102;
+			text="T4";
 		};
 		class Item94
 		{
@@ -3353,6 +3354,7 @@ class Mission
 			leader=1;
 			lock="LOCKED";
 			skill=0.858102;
+			text="T3";
 		};
 		class Item95
 		{
@@ -3365,6 +3367,7 @@ class Mission
 			leader=1;
 			lock="LOCKED";
 			skill=0.858102;
+			text="T2";
 		};
 		class Item96
 		{
@@ -3377,6 +3380,7 @@ class Mission
 			leader=1;
 			lock="LOCKED";
 			skill=0.858102;
+			text="T1";
 		};
 		class Item97
 		{
@@ -5128,7 +5132,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=52;
+		items=56;
 		class Item0
 		{
 			position[]={9709.200195,12.647430,1429.110718};
@@ -5741,7 +5745,7 @@ class Mission
 			position[]={9307.283203,77.294220,2119.917969};
 			a=1000.000000;
 			b=350.000000;
-			angle=50.000000;
+			angle=45.000000;
 			rectangular=1;
 			activationBy="WEST";
 			type="SWITCH";
@@ -5875,6 +5879,57 @@ class Mission
 			text="OUT OF BOUNDS - KILL";
 			expCond="this and not cinema and alive aP and inTheCity and goingToDurras";
 			expActiv="[] exec ""outofbounds.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item52
+		{
+			position[]={9827.353516,5.366905,1509.392578};
+			a=25.000000;
+			b=25.000000;
+			rectangular=1;
+			age="UNKNOWN";
+			expCond="beachSounds";
+			class Effects
+			{
+				voice="Eng18";
+			};
+		};
+		class Item53
+		{
+			position[]={9827.353516,5.366905,1509.392578};
+			a=25.000000;
+			b=25.000000;
+			rectangular=1;
+			age="UNKNOWN";
+			expCond="beachSounds";
+			class Effects
+			{
+				voice="Eng18";
+			};
+		};
+		class Item54
+		{
+			position[]={9773.131836,3.076808,1480.324585};
+			a=25.000000;
+			b=25.000000;
+			rectangular=1;
+			age="UNKNOWN";
+			expCond="beachSounds";
+			class Effects
+			{
+				voice="Eng20";
+			};
+		};
+		class Item55
+		{
+			position[]={9873.484375,0.673246,1308.142822};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			expCond="(aP in boat1 or aP in boat2 or aP in boat3 or aP in boat4) and not escaping";
+			expActiv="aP setcaptive false; setAware=true";
 			class Effects
 			{
 			};

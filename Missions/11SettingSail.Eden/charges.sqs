@@ -4,14 +4,14 @@ Astier sideradio "11r02"
 
 ~10
 
-fleeing=true
+escaping=true
 
-Astier setpos getmarkerpos "astier_hide"
-Astier setbehaviour "stealth"
+AstierCharges setpos getmarkerpos "astier_hide"
+AstierCharges setbehaviour "stealth"
 
 ~1
 
-Astier action ["TOUCHOFF"]
+AstierCharges action ["TOUCHOFF"]
 
 ~1
 aP removeEventHandler ["Fired", rebelFireCheck]
@@ -26,10 +26,20 @@ PortGunMaster assignasgunner PortGun
 "_x stop false" foreach units machineGunners
 "_x stop false" foreach units fireCampers
 
+beachSounds=true
+
 deletevehicle officer
 deletevehicle Calverra
+deletevehicle gate_keeper
 
-~4
+~1
+T1 setdammage 1
+~1
+T2 setdammage 1
+~1
+T3 setdammage 1
+~1
+T4 setdammage 1
 "12" objstatus "done"
 setacctime 1
 Astier sideradio "11r03"
