@@ -2859,6 +2859,7 @@ class Mission
 			activationBy="WEST";
 			type="SWITCH";
 			age="UNKNOWN";
+			text="FARM IS SECURED";
 			expCond="{alive _x} count thislist <= 1";
 			expActiv="[] exec ""farm.sqs""";
 			class Effects
@@ -2890,6 +2891,7 @@ class Mission
 			timeoutMax=8.000000;
 			type="SWITCH";
 			age="UNKNOWN";
+			text="ATTACK THE HILL";
 			expCond="hillGo";
 			class Effects
 			{
@@ -2903,6 +2905,7 @@ class Mission
 			b=0.000000;
 			type="SWITCH";
 			age="UNKNOWN";
+			text="ATTACK ENTRE DEUX";
 			expCond="entreDeuxGo";
 			class Effects
 			{
@@ -2916,6 +2919,7 @@ class Mission
 			b=0.000000;
 			type="SWITCH";
 			age="UNKNOWN";
+			text="GENERAL RETREAT";
 			expCond="retreat";
 			class Effects
 			{
@@ -2998,6 +3002,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=7;
+			text="RETREAT SUCCESSFUL";
 			expCond="this and retreat";
 			expActiv="[] exec ""outro.sqs""";
 			class Effects

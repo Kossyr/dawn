@@ -5,11 +5,12 @@ enableradio true
 
 setacctime 1
 
-driver resTransport vehicleradio "10r01"
+driver resTransport globalradio "10r01"
+~2.5
 leader player sideradio "10r02"
 leader player sideradio "10r03"
 ~6
-[leader player, resTransport, 1] exec "eject.sqs"
+[leader player, resTransport, 0.5] exec "eject.sqs"
 resTransport lock false
 ~2
 "1" objstatus "done"

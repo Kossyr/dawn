@@ -28,7 +28,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=48;
+		items=55;
 		class Item0
 		{
 			side="GUER";
@@ -148,7 +148,7 @@ class Mission
 					leader=1;
 					skill=1.000000;
 					text="Calvet";
-					init="this setidentity ""Calvet""; this setbehaviour ""safe""; this setgroupid [""CHARLIE"",""GROUPCOLOR0""]";
+					init="this disableai ""autotarget""; this setidentity ""Calvet""; this setbehaviour ""safe""; this setgroupid [""CHARLIE"",""GROUPCOLOR0""]";
 				};
 			};
 		};
@@ -168,7 +168,7 @@ class Mission
 					leader=1;
 					skill=1.000000;
 					text="Poincare";
-					init="this setidentity ""Poincare""; this setbehaviour ""safe""; this setgroupid [""BRAVO"",""GROUPCOLOR0""]";
+					init="this disableai ""autotarget""; this setidentity ""Poincare""; this setbehaviour ""safe""; this setgroupid [""BRAVO"",""GROUPCOLOR0""]";
 				};
 			};
 		};
@@ -2398,10 +2398,148 @@ class Mission
 				};
 			};
 		};
+		class Item48
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9367.724609,191.461441,1040.245728};
+					azimut=295.000000;
+					id=333;
+					side="CIV";
+					vehicle="Civilian4";
+					leader=1;
+					skill=0.600000;
+					text="captive1";
+					init="this setcaptive true; this setbehaviour ""careless""; this disableai ""autotarget""";
+				};
+			};
+		};
+		class Item49
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9367.237305,191.461548,1039.034790};
+					azimut=295.000000;
+					id=334;
+					side="CIV";
+					vehicle="Civilian7";
+					leader=1;
+					skill=0.600000;
+					text="captive2";
+					init="this setcaptive true; this setbehaviour ""Careless""; this disableai ""autotarget""";
+				};
+			};
+		};
+		class Item50
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9366.600586,191.470901,1038.091675};
+					azimut=295.000000;
+					id=335;
+					side="WEST";
+					vehicle="SoldierWB";
+					leader=1;
+					skill=0.600000;
+					text="captive3";
+					init="removeallweapons this; this setbehaviour ""careless""; this setcaptive true; this disableai ""autotarget""";
+				};
+			};
+		};
+		class Item51
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9366.124023,191.472412,1037.006226};
+					azimut=295.000000;
+					id=336;
+					side="WEST";
+					vehicle="SoldierWB";
+					leader=1;
+					skill=0.600000;
+					text="captive4";
+					init="removeallweapons this; this setbehaviour ""careless""; this setcaptive true; this disableai ""autotarget""";
+				};
+			};
+		};
+		class Item52
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9365.651367,191.474304,1035.955566};
+					azimut=295.000000;
+					id=337;
+					side="WEST";
+					vehicle="SoldierWB";
+					leader=1;
+					skill=0.600000;
+					text="captive5";
+					init="removeallweapons this; this setbehaviour ""careless""; this setcaptive true; this disableai ""autotarget""";
+				};
+			};
+		};
+		class Item53
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9363.960938,191.589050,1039.698608};
+					azimut=120.000000;
+					id=338;
+					side="GUER";
+					vehicle="SoldierGMG";
+					leader=1;
+					skill=0.600000;
+					text="resGuardian";
+					init="this setbehaviour ""safe""";
+				};
+			};
+		};
+		class Item54
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9363.775391,191.624039,1041.662598};
+					azimut=135.000000;
+					id=339;
+					side="GUER";
+					vehicle="SoldierGB";
+					leader=1;
+					skill=0.600000;
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=233;
+		items=234;
 		class Item0
 		{
 			position[]={9385.629883,191.004700,1057.521240};
@@ -4830,6 +4968,17 @@ class Mission
 			leader=1;
 			skill=0.858102;
 		};
+		class Item233
+		{
+			position[]={9349.610352,189.693680,1038.883179};
+			azimut=205.000000;
+			id=340;
+			side="EMPTY";
+			vehicle="Truck5t";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
 	};
 	class Markers
 	{
@@ -5132,7 +5281,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=62;
+		items=63;
 		class Item0
 		{
 			position[]={9709.200195,12.647430,1429.110718};
@@ -5163,7 +5312,7 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={9631.195313,112.506844,1010.270630};
+			position[]={9652.360352,83.376762,1110.842773};
 			a=20.000000;
 			b=10.000000;
 			angle=40.000000;
@@ -5178,7 +5327,7 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={9705.237305,53.662594,1168.487549};
+			position[]={9725.486328,37.330601,1224.746704};
 			a=20.000000;
 			b=10.000000;
 			angle=40.000000;
@@ -5202,6 +5351,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="OFFICER CINEMATIC";
 			expCond="this and splitGo";
 			expActiv="[] exec ""officer.sqs""";
 			class Effects
@@ -5384,6 +5534,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="CALVERRA PUB CINEMATIC";
 			expCond="aP distance Calverra <= 3 and not foundCalverra";
 			expActiv="[] exec ""calverra_pub.sqs""";
 			class Effects
@@ -5399,6 +5550,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="DURRAS CINEMATIC";
 			expActiv="[] exec ""durras.sqs""";
 			class Effects
 			{
@@ -5415,6 +5567,7 @@ class Mission
 			repeating=1;
 			age="UNKNOWN";
 			idVehicle=0;
+			text="PLAYER CAUGHT IN THE FRONT";
 			expCond="this and stealingTruck";
 			expActiv="[] exec ""durras_front.sqs""";
 			class Effects
@@ -5433,7 +5586,8 @@ class Mission
 			repeating=1;
 			age="UNKNOWN";
 			idVehicle=0;
-			expCond="this and stealingTruck";
+			text="PLAYER CAUGHT IN THE BACK";
+			expCond="this and stealingTruck and backyardGuardPresent";
 			expActiv="[] exec ""durras_back.sqs""";
 			class Effects
 			{
@@ -5446,6 +5600,7 @@ class Mission
 			b=0.000000;
 			repeating=1;
 			age="UNKNOWN";
+			text="PLAYER IS STEALING THE TRUCK";
 			expCond="aP in FuelTruck and stealingTruck";
 			expActiv="[] exec ""durras_steal.sqs""";
 			class Effects
@@ -5464,6 +5619,7 @@ class Mission
 			repeating=1;
 			age="UNKNOWN";
 			idVehicle=179;
+			text="PLAYER HAS STOLEN THE TRUCK";
 			expCond="this and not stealingTruck";
 			expActiv="truckGone=true";
 			expDesactiv="truckGone=false";
@@ -5477,6 +5633,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="CALVERRA BEACH CINEMATIC";
 			expCond="aP distance Calverra <= 4 and hasTruck";
 			expActiv="[] exec ""calverra_beach.sqs""";
 			class Effects
@@ -5493,6 +5650,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="WAREHOUSE CINEMATIC";
 			expActiv="[] exec ""warehouse.sqs""";
 			class Effects
 			{
@@ -5523,6 +5681,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="TRACTOR CINEMATIC";
 			expCond="this and lookingForDistraction";
 			expActiv="[] exec ""warehouse_distraction.sqs""";
 			class Effects
@@ -5538,6 +5697,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="TRACTOR SOUNDS";
 			expCond="this and lookingForDistraction";
 			expActiv="[] exec ""tractor.sqs""";
 			class Effects
@@ -5567,6 +5727,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="FUEL AND EXPLOSIVES DONE - GASTON AT CEMETERY";
 			expCond="fuelDone and explosivesDone";
 			expActiv="[] exec ""cemetery_time.sqs""";
 			class Effects
@@ -5582,6 +5743,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="CEMETERY CINEMATIC";
 			expCond="this and fuelDone and explosivesDone";
 			expActiv="[] exec ""cemetery.sqs""";
 			class Effects
@@ -5758,8 +5920,8 @@ class Mission
 		};
 		class Item44
 		{
-			position[]={9604.659180,21.876720,1572.032104};
-			a=60.000000;
+			position[]={9638.294922,15.256765,1560.253906};
+			a=80.000000;
 			b=65.000000;
 			angle=23.000000;
 			rectangular=1;
@@ -5793,6 +5955,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="PLAYER ESCAPED FROM EVERON";
 			expCond="this and alive aP and (aP in boat1 or aP in boat2 or aP in boat3 or aP in boat4)";
 			expActiv="[] exec ""outro.sqs""";
 			class Effects
@@ -5928,6 +6091,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="PLAYER JUMPED IN A BOAT WITHOUT DISTRACTION";
 			expCond="(aP in boat1 or aP in boat2 or aP in boat3 or aP in boat4) and not escaping";
 			expActiv="aP setcaptive false; setAware=true";
 			class Effects
@@ -5954,7 +6118,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="not canmove FuelTruck and not fuelDone";
+			expCond="not canmove FuelTruck and not carClear";
 			expActiv="[] exec ""outro3.sqs""";
 			class Effects
 			{
@@ -6004,6 +6168,26 @@ class Mission
 			age="UNKNOWN";
 			expCond="not inTheCity and not canmove boat1 and not canmove boat2 and not canmove boat3 and not canmove boat4";
 			expActiv="[] exec ""outro2.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item62
+		{
+			position[]={8789.293945,88.154999,2720.890625};
+			a=16.000000;
+			b=10.000000;
+			angle=72.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			repeating=1;
+			timeoutMin=1.000000;
+			timeoutMid=1.000000;
+			timeoutMax=1.000000;
+			age="UNKNOWN";
+			idVehicle=181;
+			expActiv="backyardGuardPresent=true";
+			expDesactiv="backyardGuardPresent=false";
 			class Effects
 			{
 			};

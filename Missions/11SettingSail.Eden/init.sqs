@@ -7,7 +7,6 @@ Astier assignasdriver amCar
 aP assignascargo amCar
 
 Astier stop true
-AstierCemetery stop true
 
 "_x stop true" foreach units beachGuard
 "_x stop true" foreach units machineGunners
@@ -28,6 +27,8 @@ lookingForDistraction=false
 warehouseBan=true
 soundHorn=false
 cinema=false
+backyardGuardPresent=true
+carClear=false
 
 fuelDone=false
 explosivesDone=false
@@ -51,6 +52,8 @@ escaping=false
 aP setcaptive true
 Astier setcaptive true
 
+AstierCharges stop true
+
 boat1 setfuel 0
 boat2 setfuel 0
 boat3 setfuel 0
@@ -66,7 +69,16 @@ rebelFireCheck = aP AddEventHandler ["fired", {_this exec "rebel_fire_check.sqs"
 
 playmusic "Track1"
 
-~2
+~0.5
+
+resGuardian switchmove "EffectStandTalk"
+captive1 switchmove "FXStandSur"
+captive2 switchmove "FXStandSur"
+captive3 switchmove "FXStandSur"
+captive4 switchmove "FXStandSur"
+captive5 switchmove "FXStandSur"
+
+~1.5
 
 Astier say "11v24"
 
