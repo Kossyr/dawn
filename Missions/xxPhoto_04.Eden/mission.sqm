@@ -1,0 +1,102 @@
+version=11;
+class Mission
+{
+	randomSeed=3297795;
+	class Intel
+	{
+		resistanceWest=0.000000;
+		resistanceEast=1.000000;
+		startWeather=0.800000;
+		startFog=0.300000;
+		forecastWeather=0.910000;
+		forecastFog=0.200000;
+		month=11;
+		day=4;
+		hour=6;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1686.275391,87.109200,5727.719238};
+					azimut=335.000000;
+					id=0;
+					side="EAST";
+					vehicle="SoldierEB";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					init="this addweapon ""nvgoggles""; this exec ""photo.sqs""";
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1667.694946,85.552689,5703.382813};
+					azimut=335.000000;
+					id=1;
+					side="EAST";
+					vehicle="SoldierEB";
+					leader=1;
+					skill=0.600000;
+					text="rashiv";
+					init="this setidentity ""rashiv""";
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1667.855713,85.651024,5705.064941};
+					azimut=335.000000;
+					id=2;
+					side="EAST";
+					vehicle="SoldierESaboteurPipe";
+					leader=1;
+					skill=0.600000;
+					text="lemontov";
+					init="this setidentity ""lemontov""; removeallweapons this; this addweapon ""svddragunov""";
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	randomSeed=2581507;
+	class Intel
+	{
+	};
+};
+class OutroWin
+{
+	randomSeed=13339139;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=1436163;
+	class Intel
+	{
+	};
+};
