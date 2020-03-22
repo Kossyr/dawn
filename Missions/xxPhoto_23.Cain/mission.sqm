@@ -1,0 +1,119 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"Bizon"
+	};
+	addOnsAuto[]=
+	{
+		"Bizon"
+	};
+	randomSeed=14136323;
+	class Intel
+	{
+		startWeather=0.887594;
+		startFog=1.000000;
+		forecastWeather=0.900000;
+		forecastFog=1.000000;
+		month=12;
+		day=12;
+		minute=45;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6155.471191,400.621643,5861.219727};
+					azimut=25.000000;
+					id=0;
+					side="EAST";
+					vehicle="SoldierESaboteurBizon";
+					leader=1;
+					rank="MAJOR";
+					skill=1.000000;
+					text="aP";
+					init="this setidentity ""Lemontov""; this setgroupid [""DELTA"",""GROUPCOLOR0""]";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6163.576172,400.684357,5872.264160};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6203.174805,400.009277,5922.850098};
+					azimut=250.000000;
+					id=1;
+					side="EAST";
+					vehicle="SoldierEB";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6167.889160,400.394958,5867.798828};
+					azimut=250.000000;
+					id=2;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.600000;
+					init="this exec ""photo.sqs""";
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	randomSeed=2967043;
+	class Intel
+	{
+	};
+};
+class OutroWin
+{
+	randomSeed=808963;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=5423107;
+	class Intel
+	{
+	};
+};

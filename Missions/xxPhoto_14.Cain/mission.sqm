@@ -1,0 +1,140 @@
+version=11;
+class Mission
+{
+	randomSeed=9278467;
+	class Intel
+	{
+		startWeather=0.787644;
+		startFog=0.168834;
+		forecastWeather=0.725112;
+		forecastFog=0.506503;
+		month=11;
+		day=30;
+		hour=8;
+		minute=20;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={7007.741211,36.963520,4422.631348};
+					azimut=50.000000;
+					id=0;
+					side="WEST";
+					vehicle="M1Abrams";
+					leader=1;
+					skill=0.600000;
+				};
+				class Item1
+				{
+					position[]={6988.262207,37.163246,4409.651855};
+					azimut=50.000000;
+					id=2;
+					side="WEST";
+					vehicle="M60";
+					skill=0.600000;
+				};
+				class Item2
+				{
+					position[]={6975.738281,36.750202,4396.023438};
+					azimut=50.000000;
+					id=3;
+					side="WEST";
+					vehicle="M60";
+					skill=0.600000;
+				};
+				class Item3
+				{
+					position[]={6963.810547,36.519718,4384.593750};
+					azimut=50.000000;
+					id=4;
+					side="WEST";
+					vehicle="M60";
+					skill=0.600000;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7012.087891,36.934990,4425.603516};
+					combatMode="BLUE";
+					formation="COLUMN";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6990.406738,40.756664,4447.735840};
+					azimut=145.000000;
+					id=1;
+					side="EAST";
+					vehicle="SoldierELAW";
+					leader=1;
+					skill=0.600000;
+					text="rashiv";
+					init="this setidentity ""rashiv""";
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6701.162109,92.313080,4557.952637};
+					azimut=50.000000;
+					id=5;
+					side="EAST";
+					vehicle="SoldierEB";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					init="this exec ""photo.sqs""";
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	randomSeed=1684995;
+	class Intel
+	{
+	};
+};
+class OutroWin
+{
+	randomSeed=13746691;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=11339267;
+	class Intel
+	{
+	};
+};
