@@ -3023,6 +3023,7 @@ class Mission
 			activationBy="WEST";
 			type="SWITCH";
 			age="UNKNOWN";
+			text="ALERT AND REINFORCEMENTS";
 			expCond="lemouleAware";
 			expActiv="""_x setbehaviour """"aware"""""" foreach thislist";
 			class Effects
@@ -3039,6 +3040,7 @@ class Mission
 			activationBy="GUER";
 			activationType="WEST D";
 			age="UNKNOWN";
+			text="RESISTANCE DETECTED";
 			expActiv="lemouleAware=true";
 			class Effects
 			{
@@ -3053,6 +3055,7 @@ class Mission
 			activationBy="LEADER";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="THE GROUP GOT HERE";
 			expActiv="carGroup=true";
 			class Effects
 			{
@@ -3066,6 +3069,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=7;
+			text="PLAYER IS HERE";
 			expActiv="carPlayer=true";
 			class Effects
 			{
@@ -3079,6 +3083,7 @@ class Mission
 			rectangular=1;
 			activationBy="WEST";
 			age="UNKNOWN";
+			text="ENEMIES WERE KILLED";
 			expCond="{alive _x} count thislist <= 1";
 			expActiv="carEnemy=true";
 			class Effects
@@ -3091,6 +3096,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="RUN TO THE CAR";
 			expCond="carEnemy or ((carGroup or carPlayer) and not carEnemy)";
 			expActiv="[] exec ""car.sqs""";
 			class Effects
@@ -3103,6 +3109,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="PLAYER IN THE CAR";
 			expCond="aP in car";
 			expActiv="[] exec ""car_done.sqs""";
 			class Effects
@@ -3130,6 +3137,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=7;
+			text="PLAYER ARRIVED WITH CAR";
 			expCond="this and raidDone";
 			expActiv="[] exec ""farm.sqs""";
 			class Effects
@@ -3182,6 +3190,7 @@ class Mission
 			activationBy="WEST";
 			type="SWITCH";
 			age="UNKNOWN";
+			text="SEND FOR REINFORCEMENTS";
 			class Effects
 			{
 			};
@@ -3196,6 +3205,7 @@ class Mission
 			rectangular=1;
 			activationBy="WEST";
 			age="UNKNOWN";
+			text="ATTACK REPELLED";
 			expCond="{alive _x} count thislist <= 2 and not canmove tank and {alive _x} count units att1 <= 1 and {alive _x} count units att2 <= 1";
 			expActiv="[] exec ""outro.sqs""; ""_x setdammage 1"" foreach thislist";
 			class Effects
@@ -3214,6 +3224,7 @@ class Mission
 			timeoutMid=5.000000;
 			timeoutMax=10.000000;
 			age="UNKNOWN";
+			text="RESISTANCE IS NOT ON FARM";
 			expActiv="farmResistanceGone=true";
 			expDesactiv="farmResistanceGone=false";
 			class Effects
@@ -3229,6 +3240,7 @@ class Mission
 			timeoutMid=5.000000;
 			timeoutMax=10.000000;
 			age="UNKNOWN";
+			text="THE WEST ARE ON THE FARM";
 			expActiv="farmWestPresent=true";
 			expDesactiv="farmWestPresent=false";
 			class Effects
@@ -3241,6 +3253,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="CAR DESTROYED BEFORE HOSPITAL";
 			expCond="not canmove car and not carClear";
 			expActiv="[] exec ""outro2.sqs""";
 			class Effects
