@@ -10,13 +10,6 @@ titlecut ["","black in",3]
 repairman playmove "FxToKneel"
 repairitman playmove "FxToHand"
 
-off reveal dyaconsen
-off reveal epgayd
-dyaconsen reveal off
-dyaconsen reveal epgayd
-epgayd reveal off
-epgayd reveal dyaconsen
-
 dyaconsen setmimic "Normal"
 off setmimic "sad"
 epgayd setmimic "hurt"
@@ -28,14 +21,6 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~5
-
-off reveal dyaconsen
-off reveal epgayd
-dyaconsen reveal off
-dyaconsen reveal epgayd
-epgayd reveal off
-epgayd reveal dyaconsen
-
 
 ;=== 18:56:33
 _camera camSetTarget [104326.63,-4345.61,-11205.33]
@@ -51,10 +36,9 @@ _camera camCommit 7
 @camCommitted _camera
 ~1
 
-dyaconsen dowatch epgayd
-epgayd dowatch off
-off dowatch epgayd
-
+dyaconsen dowatch [5331.66,3356.52,1.70]
+off dowatch [5331.66,3356.52,1.70]
+epgayd dowatch [5330.98,3357.70,1.70]
 
 ;=== 18:57:07
 _camera camSetTarget [87191.35,-50169.45,-20584.43]
@@ -77,13 +61,14 @@ _camera camSetPos [5332.44,3359.41,1.58]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-1 fademusic 0.2
-epgayd say "x02v01"
 ;=== 18:58:07
 _camera camSetTarget [33786.64,-92492.31,-1702.16]
 _camera camSetPos [5331.44,3357.48,1.58]
 _camera camSetFOV 0.700
 _camera camCommit 4
+1.5 fademusic 0.2
+~1.5
+epgayd say "x02v01"
 @camCommitted _camera
 ;=== 19:04:10
 _camera camSetTarget [27153.93,99711.09,-15411.08]
@@ -96,11 +81,11 @@ off say "x02v02"
 _camera camSetTarget [33707.30,97988.30,-15411.37]
 _camera camSetPos [5330.97,3355.94,1.74]
 _camera camSetFOV 0.700
-_camera camCommit 10
+_camera camCommit 11
 
-~5
+~4.5
+epgayd dowatch [5332.34,3358.02,1.70]
 
-epgayd dowatch dyaconsen
 
 dyaconsen say "x02v03"
 
@@ -116,7 +101,7 @@ _camera camCommit 0
 
 epgayd say "x02v04"
 
-~6
+~5.5
 
 ;=== 9:00:34
 _camera camSetTarget [-51967.77,84795.68,-9109.80]
@@ -131,9 +116,9 @@ dyaconsen say "x02v05"
 _camera camSetTarget [-94231.52,1744.14,-9110.23]
 _camera camSetPos [5333.71,3357.34,1.60]
 _camera camSetFOV 0.700
-_camera camCommit 14
+_camera camCommit 13
 
-~6
+~4.5
 
 epgayd setmimic "angry"
 
@@ -150,20 +135,20 @@ _camera camCommit 0
 
 off say "x02v07"
 
-~5
+~5.5
 
-dyaconsen dowatch off
+dyaconsen dowatch [5330.98,3357.70,1.70]
 
 dyaconsen say "x02v08"
 
-~4
+~2.5
 
-off dowatch dyaconsen
+off dowatch [5332.34,3358.02,1.70]
 off setmimic "agressive"
 
 off say "x02v09"
 
-~2
+~3
 
 ;=== 9:03:57
 _camera camSetTarget [6587.26,-96211.02,-9109.79]
@@ -177,21 +162,21 @@ _camera camCommit 0
 _camera camSetTarget [74415.80,-68356.20,-9110.25]
 _camera camSetPos [5330.63,3359.04,1.60]
 _camera camSetFOV 0.700
-_camera camCommit 18
+_camera camCommit 15.5
 
-~2
+~3.5
 
-dyyaconsen say "x02v10"
+dyaconsen say "x02v10"
 
-~4
+~2.8
 
 off say "x02v11"
 
-~5
+~3.5
 
 dyaconsen say "x02v12"
 
-~4
+~3.5
 
 off say "x02v13"
 
@@ -211,9 +196,9 @@ epgayd say "x02v14"
 off setmimic "normal"
 epgayd setmimic "sad"
 
-off dowatch epgayd
-dyaconsen dowatch epgayd
-epgayd dowatch off
+dyaconsen dowatch [5331.66,3356.52,1.70]
+off dowatch [5331.66,3356.52,1.70]
+epgayd dowatch [5330.98,3357.70,1.70]
 
 ~3
 
@@ -224,13 +209,13 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-~4
+~6
 
 epgayd say "x02v15"
 
-~10
+~11
 
-epgayd dowatch dyaconsen
+epgayd dowatch [5332.34,3358.02,1.70]
 
 epgayd say "x02v16"
 
@@ -246,12 +231,12 @@ _camera camCommit 0
 _camera camSetTarget [-83932.62,-40655.13,-9654.98]
 _camera camSetPos [5333.25,3357.88,1.60]
 _camera camSetFOV 0.700
-_camera camCommit 10
+_camera camCommit 17.5
 @camCommitted _camera
 
 off say "x02v17"
 
-~5
+~3.5
 
 ;=== 9:08:44
 _camera camSetTarget [104157.41,11497.26,-12853.80]
@@ -260,11 +245,11 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-epgayd dowatch off
+epgayd dowatch [5330.98,3357.70,1.70]
 epgayd setmimic "normal"
 epgayd say "x02v18"
 
-~4
+~1.5
 
 ;=== 9:09:39
 _camera camSetTarget [-55403.38,82363.18,-8263.82]
@@ -275,7 +260,7 @@ _camera camCommit 0
 
 off say "x02v19"
 
-~5
+~7.5
 
 ;=== 9:10:31
 _camera camSetTarget [100779.64,-22765.38,-14320.06]
@@ -289,11 +274,11 @@ _camera camCommit 0
 _camera camSetTarget [63370.80,83508.97,-14319.81]
 _camera camSetPos [5330.82,3356.08,1.67]
 _camera camSetFOV 0.700
-_camera camCommit 13
+_camera camCommit 12.5
 
 epgayd say "x02v20"
 
-~6
+~5.5
 
 dyaconsen say "x02v21"
 
@@ -326,9 +311,9 @@ epgayd setmimic "normal"
 _camera camSetTarget [97276.32,39514.75,-15378.42]
 _camera camSetPos [5329.97,3356.74,1.67]
 _camera camSetFOV 0.700
-_camera camCommit 10
+_camera camCommit 16
 
-~7
+~11.6
 
 off say "x02v24"
 
@@ -338,12 +323,12 @@ off say "x02v24"
 
 dyaconsen say "x02v25"
 
-~4
+~3.6
 
 off setmimic "angry"
 off say "x02v26"
 
-~3
+~3.5
 
 ;=== 9:13:44
 _camera camSetTarget [-1933.74,-95174.28,-15378.24]
@@ -362,7 +347,7 @@ _camera camSetFOV 0.700
 _camera camCommit 6
 @camCommitted _camera
 
-epgayd dowatch dyaconsen
+epgayd dowatch [5332.34,3358.02,1.70]
 
 epgayd say "x02v28"
 
@@ -373,15 +358,15 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-~5
+~6.5
 
 dyaconsen say "x02v29"
 
 off setmimic "normal"
 
-~2
+~1.1
 
-epgayd dowatch off
+epgayd dowatch [5330.98,3357.70,1.70]
 
 epgayd say "x02v30"
 
@@ -392,11 +377,11 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-~6
+~6.5
 
 off say "x02v31"
 
-~2
+~1.1
 
 ;=== 19:19:55
 _camera camSetTarget [35710.78,-91395.97,-9857.55]
@@ -405,8 +390,9 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 epgayd say "x02v32"
+playMusic ["Track6", 20]
 ~4
-3 fademusic 0.5
+6 fademusic 1
 off playmove "effectstandsalute"
 dyaconsen playmove "effectstandsalute"
 ;=== 19:21:12
@@ -427,8 +413,9 @@ _camera camCommit 10
 titlecut ["","black out",5]
 ~6
 titletext [localize "STRM_CHAPTER_TEXT","PLAIN"]
-6 fademusic 0
-~6
+~3
+3 fademusic 0
+~3
 @camCommitted _camera
 end=true
 
