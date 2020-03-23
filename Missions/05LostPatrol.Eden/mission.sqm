@@ -18,7 +18,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=23;
+		items=24;
 		class Item0
 		{
 			side="EAST";
@@ -823,7 +823,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={3483.907959,2.048596,7151.291504};
@@ -842,6 +842,15 @@ class Mission
 					id=46;
 					side="WEST";
 					vehicle="SoldierWB";
+					skill=0.641898;
+				};
+				class Item2
+				{
+					position[]={3496.426270,5.052529,7138.594238};
+					special="NONE";
+					id=62;
+					side="WEST";
+					vehicle="SoldierWMG";
 					skill=0.641898;
 				};
 			};
@@ -969,7 +978,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={3612.048096,18.729666,7169.218750};
@@ -988,6 +997,15 @@ class Mission
 					id=50;
 					side="WEST";
 					vehicle="SoldierWB";
+					skill=0.641898;
+				};
+				class Item2
+				{
+					position[]={3627.918213,22.664989,7155.709961};
+					special="NONE";
+					id=63;
+					side="WEST";
+					vehicle="SoldierWMG";
 					skill=0.641898;
 				};
 			};
@@ -1185,6 +1203,76 @@ class Mission
 				class Item3
 				{
 					position[]={2607.506836,83.204994,5414.333496};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item23
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={3372.059570,2.393924,7129.643066};
+					special="NONE";
+					id=59;
+					side="WEST";
+					vehicle="SoldierWB";
+					leader=1;
+					skill=0.641898;
+					init="group this allowfleeing 0";
+				};
+				class Item1
+				{
+					position[]={3364.847412,4.861270,7116.735840};
+					special="NONE";
+					id=60;
+					side="WEST";
+					vehicle="SoldierWB";
+					skill=0.641898;
+				};
+				class Item2
+				{
+					position[]={3378.972656,2.508771,7117.512695};
+					special="NONE";
+					id=61;
+					side="WEST";
+					vehicle="SoldierWMG";
+					skill=0.641898;
+				};
+			};
+			class Waypoints
+			{
+				items=3;
+				class Item0
+				{
+					position[]={3374.649170,6.944957,7081.270508};
+					type="HOLD";
+					combatMode="YELLOW";
+					combat="AWARE";
+					synchronizations[]={12};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={3509.661865,55.138477,6698.265625};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={3583.261963,70.313728,6604.331055};
+					type="SENTRY";
 					class Effects
 					{
 					};
@@ -1476,7 +1564,7 @@ class Mission
 			activationBy="WEST";
 			activationType="EAST D";
 			age="UNKNOWN";
-			expCond="this or (not alive h1 or not alive h2 or not alive h3 or not alive h4)";
+			expCond="this or (not alive h1 or not alive h2 or not alive h3)";
 			expActiv="[] exec ""contact.sqs""";
 			class Effects
 			{
@@ -1556,7 +1644,7 @@ class Mission
 		};
 		class Item11
 		{
-			position[]={3417.928223,41.792019,6782.909180};
+			position[]={3102.367188,40.845695,6758.256348};
 			a=0.000000;
 			b=0.000000;
 			type="SWITCH";
@@ -1565,7 +1653,7 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={10,11};
+			synchronizations[]={10,11,12};
 		};
 		class Item12
 		{
@@ -1666,10 +1754,6 @@ class Mission
 };
 class Intro
 {
-	addOns[]=
-	{
-		"bis_resistance"
-	};
 	randomSeed=15500291;
 	class Intel
 	{
