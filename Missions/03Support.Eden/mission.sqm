@@ -106,7 +106,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={3236.749512,103.499992,5132.348145};
+					position[]={3199.991455,103.499939,5126.578125};
 					type="HOLD";
 					synchronizations[]={17};
 					class Effects
@@ -371,7 +371,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3313.214844,103.499992,5138.643066};
+					position[]={3316.330078,103.499992,5137.475098};
 					azimut=235.000000;
 					id=16;
 					side="EAST";
@@ -503,7 +503,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
-					init="group this allowfleeing 0";
+					init="group this allowfleeing 0; holders = group this";
 				};
 				class Item1
 				{
@@ -775,7 +775,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					position[]={2654.235840,83.204994,5368.146484};
@@ -797,6 +797,16 @@ class Mission
 					vehicle="M113";
 					skill=0.800000;
 					text="T2";
+				};
+				class Item2
+				{
+					position[]={2647.570313,83.204994,5376.795898};
+					azimut=5.000000;
+					id=108;
+					side="WEST";
+					vehicle="M60";
+					skill=0.600000;
+					text="T3";
 				};
 			};
 			class Waypoints
@@ -1775,7 +1785,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={3259.591797,102.848877,5262.722168};
+					position[]={3234.669922,105.406715,5248.703125};
 					class Effects
 					{
 					};
@@ -2094,7 +2104,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="INCOMING TANKS DONE - SEND IN THE SECOND WAVE";
-			expCond="not canmove T1 and not canmove T2";
+			expCond="not canmove T1 and not canmove T2 and not canmove T3";
 			expActiv="[] exec ""second_wave.sqs""";
 			class Effects
 			{

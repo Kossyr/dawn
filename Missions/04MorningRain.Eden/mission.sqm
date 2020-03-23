@@ -519,6 +519,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
+					init="group this allowfleeing 0";
 				};
 				class Item1
 				{
@@ -592,7 +593,7 @@ class Mission
 				class Item1
 				{
 					position[]={1274.058960,65.474998,6006.992676};
-					type="GUARD";
+					type="HOLD";
 					combatMode="YELLOW";
 					class Effects
 					{
@@ -616,6 +617,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
+					init="group this allowfleeing 0";
 				};
 				class Item1
 				{
@@ -687,7 +689,7 @@ class Mission
 				class Item2
 				{
 					position[]={1211.641846,65.474998,5915.411133};
-					type="GUARD";
+					type="HOLD";
 					combatMode="YELLOW";
 					class Effects
 					{
@@ -711,6 +713,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
+					init="group this allowfleeing 0";
 				};
 				class Item1
 				{
@@ -783,7 +786,7 @@ class Mission
 				class Item1
 				{
 					position[]={1278.665161,65.474998,5918.756836};
-					type="GUARD";
+					type="HOLD";
 					combatMode="YELLOW";
 					class Effects
 					{
@@ -808,7 +811,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.200000;
-					init="group this allowfleeing 0";
+					init="group this allowfleeing 0; firstWave = group this";
 				};
 				class Item1
 				{
@@ -816,7 +819,7 @@ class Mission
 					special="CARGO";
 					id=49;
 					side="WEST";
-					vehicle="SoldierWB";
+					vehicle="SoldierWLAW";
 					skill=0.200000;
 				};
 				class Item2
@@ -857,7 +860,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={1645.494507,46.163574,5968.524414};
+					position[]={1731.369629,47.095490,5931.640137};
 					type="GETOUT";
 					class Effects
 					{
@@ -903,7 +906,7 @@ class Mission
 					position[]={1949.232056,114.177711,5710.139648};
 					id=53;
 					side="WEST";
-					vehicle="SoldierWMiner";
+					vehicle="SoldierWB";
 					skill=0.200000;
 				};
 				class Item2
@@ -974,19 +977,19 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={2241.259277,31.556519,6949.778809};
-					azimut=184.948166;
+					position[]={2407.924072,40.946751,6305.442383};
+					azimut=184.947998;
 					id=55;
 					side="WEST";
 					vehicle="M113";
 					leader=1;
 					skill=0.200000;
-					text="m113";
+					text="apc";
 					init="group this allowfleeing 0";
 				};
 				class Item1
 				{
-					position[]={2240.980225,32.542286,6965.634277};
+					position[]={2407.645020,37.067371,6321.297852};
 					azimut=184.948166;
 					id=56;
 					side="WEST";
@@ -1000,7 +1003,7 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={2239.967041,30.217752,6933.003906};
+					position[]={2406.631836,45.351151,6288.667480};
 					type="HOLD";
 					formation="COLUMN";
 					combat="SAFE";
@@ -1014,6 +1017,7 @@ class Mission
 				{
 					position[]={1674.579224,43.472404,5956.942871};
 					type="TR UNLOAD";
+					expActiv="unassignvehicle driver car; driver car action [""EJECT""]";
 					class Effects
 					{
 					};
@@ -1047,18 +1051,18 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={2252.389404,34.900570,6969.143555};
-					azimut=-130.051956;
+					position[]={2419.054199,36.113861,6324.807129};
+					azimut=-130.052002;
 					id=57;
 					side="WEST";
 					vehicle="OfficerWNight";
 					leader=1;
 					skill=0.200000;
-					init="group this allowfleeing 0; this moveincargo car";
+					init="group this allowfleeing 0; this moveincargo car; secondWave = group this";
 				};
 				class Item1
 				{
-					position[]={2250.596436,34.682114,6972.096191};
+					position[]={2417.261230,35.483120,6327.759766};
 					azimut=-130.051956;
 					id=58;
 					side="WEST";
@@ -1068,7 +1072,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={2252.598877,35.169292,6971.909668};
+					position[]={2419.263672,35.508987,6327.573242};
 					azimut=-130.051956;
 					id=59;
 					side="WEST";
@@ -1078,7 +1082,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={2254.393555,35.509201,6970.503906};
+					position[]={2421.058350,35.804245,6326.167480};
 					azimut=-130.051956;
 					id=60;
 					side="WEST";
@@ -1128,7 +1132,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=5;
+		items=14;
 		class Item0
 		{
 			position[]={1817.317993,93.674599,5509.354980};
@@ -1179,6 +1183,93 @@ class Mission
 			vehicle="M1Abrams";
 			skill=0.200000;
 			text="tank4";
+		};
+		class Item5
+		{
+			position[]={1308.242920,65.474998,5957.031738};
+			id=61;
+			side="EMPTY";
+			vehicle="FlagCarrier";
+			leader=1;
+			skill=0.466667;
+			init="this setflagtexture ""usa_vlajka.pac""";
+		};
+		class Item6
+		{
+			position[]={1208.117065,65.474998,5984.005859};
+			azimut=185.000000;
+			id=62;
+			side="EMPTY";
+			vehicle="Camp";
+			leader=1;
+			skill=0.466667;
+		};
+		class Item7
+		{
+			position[]={1208.855103,65.474998,5995.354004};
+			azimut=185.000000;
+			id=63;
+			side="EMPTY";
+			vehicle="Camp";
+			leader=1;
+			skill=0.466667;
+		};
+		class Item8
+		{
+			position[]={1242.437744,65.474998,6010.300293};
+			azimut=270.000000;
+			id=64;
+			side="EMPTY";
+			vehicle="Camp";
+			leader=1;
+			skill=0.466667;
+		};
+		class Item9
+		{
+			position[]={1228.414185,65.474998,6009.193359};
+			azimut=270.000000;
+			id=65;
+			side="EMPTY";
+			vehicle="Camp";
+			leader=1;
+			skill=0.466667;
+		};
+		class Item10
+		{
+			position[]={1248.304810,65.474998,5981.514160};
+			azimut=270.000000;
+			id=66;
+			side="EMPTY";
+			vehicle="Camp";
+			leader=1;
+			skill=0.466667;
+		};
+		class Item11
+		{
+			position[]={1291.209106,65.474998,5956.373047};
+			id=67;
+			side="EMPTY";
+			vehicle="Camp";
+			leader=1;
+			skill=0.466667;
+		};
+		class Item12
+		{
+			position[]={1291.437500,65.474998,5965.278809};
+			id=68;
+			side="EMPTY";
+			vehicle="Camp";
+			leader=1;
+			skill=0.466667;
+		};
+		class Item13
+		{
+			position[]={1291.437622,65.474998,5973.328613};
+			id=69;
+			side="EMPTY";
+			vehicle="Camp";
+			leader=1;
+			skill=0.466667;
 		};
 	};
 	class Markers
@@ -1296,7 +1387,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=19;
+		items=20;
 		class Item0
 		{
 			position[]={1497.862671,47.262554,5469.799805};
@@ -1470,15 +1561,14 @@ class Mission
 		};
 		class Item11
 		{
-			position[]={1980.785156,27.352411,6138.472656};
-			a=500.000000;
-			b=380.000000;
-			angle=120.000000;
+			position[]={1851.020508,1.793269,6310.573730};
+			a=0.000000;
+			b=0.000000;
 			activationBy="WEST";
 			type="SWITCH";
 			age="UNKNOWN";
 			text="PLAYER REPELLED INFANTRY";
-			expCond="{alive _x} count thislist <= 0";
+			expCond="{alive _x} count units firstWave <= 1";
 			expActiv="[] exec ""tank.sqs""";
 			class Effects
 			{
@@ -1519,7 +1609,7 @@ class Mission
 		};
 		class Item14
 		{
-			position[]={1536.250977,75.371643,5895.696289};
+			position[]={1452.574463,71.578728,5919.332031};
 			b=500.000000;
 			angle=20.000000;
 			activationBy="MEMBER";
@@ -1533,7 +1623,7 @@ class Mission
 		};
 		class Item15
 		{
-			position[]={1538.701416,74.269814,5902.018555};
+			position[]={1452.851807,71.618340,5919.133789};
 			b=500.000000;
 			angle=20.000000;
 			activationBy="MEMBER";
@@ -1559,15 +1649,15 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={2032.671143,22.527138,6127.545410};
-			a=500.000000;
-			b=380.000000;
+			position[]={1850.501465,1.793269,6412.730469};
+			a=0.000000;
+			b=0.000000;
 			angle=120.000000;
 			activationBy="WEST";
 			type="SWITCH";
 			age="UNKNOWN";
 			text="PLAYER REPELLED ALL";
-			expCond="{alive _x} count thislist <= 0 and not canmove m113";
+			expCond="{alive _x} count units secondWave <= 0 and not canmove apc";
 			expActiv="[] exec ""outro.sqs""";
 			class Effects
 			{
@@ -1581,6 +1671,20 @@ class Mission
 			type="LOOSE";
 			age="UNKNOWN";
 			expCond="not alive Lemontov";
+			class Effects
+			{
+			};
+		};
+		class Item19
+		{
+			position[]={1461.428589,72.312485,5916.376953};
+			b=500.000000;
+			angle=20.000000;
+			activationBy="MEMBER";
+			age="UNKNOWN";
+			idVehicle=57;
+			text="ENEMY GOT TO LEMONTOV";
+			expActiv="[] exec ""outro2.sqs""";
 			class Effects
 			{
 			};
