@@ -2014,7 +2014,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.858102;
 					text="AstierCharges";
-					init="this setidentity ""Astier""; this setcaptive true; this setbehaviour ""safe""";
+					init="this setidentity ""Astier""; this setcaptive true; this setbehaviour ""careless""";
 				};
 			};
 			class Waypoints
@@ -5281,7 +5281,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=63;
+		items=65;
 		class Item0
 		{
 			position[]={9709.200195,12.647430,1429.110718};
@@ -6074,10 +6074,13 @@ class Mission
 		};
 		class Item54
 		{
-			position[]={9773.131836,3.076808,1480.324585};
+			position[]={9768.784180,3.220687,1473.803711};
 			a=25.000000;
 			b=25.000000;
 			rectangular=1;
+			timeoutMin=2.000000;
+			timeoutMid=2.000000;
+			timeoutMax=2.000000;
 			age="UNKNOWN";
 			expCond="beachSounds";
 			class Effects
@@ -6114,11 +6117,11 @@ class Mission
 		};
 		class Item57
 		{
-			position[]={9492.583984,233.452255,2747.023926};
+			position[]={10544.275391,104.232742,1773.372559};
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="not canmove FuelTruck and not carClear";
+			expCond="not canmove FuelTruck and not fuelDone";
 			expActiv="[] exec ""outro3.sqs""";
 			class Effects
 			{
@@ -6142,7 +6145,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="not alive Calvet or not alive Poincare or not alive Astier or not alive AstierCharges or not alive Calverra or not alive Tracer";
+			expCond="not alive Calvet or not alive Poincare or not alive Astier or not alive AstierCharges";
 			expActiv="[] exec ""outro3.sqs""";
 			class Effects
 			{
@@ -6188,6 +6191,30 @@ class Mission
 			idVehicle=181;
 			expActiv="backyardGuardPresent=true";
 			expDesactiv="backyardGuardPresent=false";
+			class Effects
+			{
+			};
+		};
+		class Item63
+		{
+			position[]={10563.481445,142.420135,1834.776367};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			expCond="not alive Calverra and not fuelDone";
+			expActiv="[] exec ""outro3.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item64
+		{
+			position[]={10659.738281,127.911621,1829.827881};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			expCond="not alive Tracer or not alive DurassGuard1 or not alive DurassGuard2 and not fuelDone";
+			expActiv="[] exec ""outro3.sqs""";
 			class Effects
 			{
 			};
