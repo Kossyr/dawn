@@ -27,7 +27,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=11;
+		items=12;
 		class Item0
 		{
 			side="EAST";
@@ -821,11 +821,11 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={7755.958984,311.125549,8086.087402};
-					azimut=25.000000;
+					position[]={7733.696289,311.264984,8087.944336};
+					azimut=340.000000;
 					id=61;
 					side="EAST";
-					vehicle="SoldierEB";
+					vehicle="SoldierEMG";
 					leader=1;
 					skill=0.600000;
 					init="this setbehaviour ""safe""";
@@ -837,39 +837,37 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=2;
+				items=1;
 				class Item0
 				{
-					position[]={7734.003906,311.264984,8091.768555};
-					azimut=350.000000;
+					position[]={7724.564941,311.264984,8092.919922};
 					id=62;
 					side="EAST";
-					vehicle="SoldierEB";
+					vehicle="SoldierECrew";
 					leader=1;
+					lock="LOCKED";
 					skill=0.600000;
-				};
-				class Item1
-				{
-					position[]={7734.118164,311.264984,8090.263672};
-					azimut=350.000000;
-					id=63;
-					side="EAST";
-					vehicle="SoldierEB";
-					skill=0.600000;
+					init="this setbehaviour ""safe""";
 				};
 			};
-			class Waypoints
+		};
+		class Item11
+		{
+			side="EAST";
+			class Vehicles
 			{
 				items=1;
 				class Item0
 				{
-					position[]={7730.370605,311.264984,8096.389648};
-					speed="LIMITED";
-					combat="CARELESS";
-					class Effects
-					{
-					};
-					showWP="NEVER";
+					position[]={7724.658203,311.264984,8093.794434};
+					azimut=185.000000;
+					id=63;
+					side="EAST";
+					vehicle="SoldierECrew";
+					leader=1;
+					lock="LOCKED";
+					skill=0.600000;
+					init="this setbehaviour ""safe""";
 				};
 			};
 		};
@@ -1371,7 +1369,7 @@ class Intro
 	};
 	class Groups
 	{
-		items=5;
+		items=7;
 		class Item0
 		{
 			side="EAST";
@@ -1409,7 +1407,7 @@ class Intro
 				};
 				class Item1
 				{
-					position[]={7757.010742,310.810699,8106.716797};
+					position[]={7756.434082,310.848083,8106.716797};
 					class Effects
 					{
 					};
@@ -1481,39 +1479,60 @@ class Intro
 			side="EAST";
 			class Vehicles
 			{
-				items=2;
+				items=1;
 				class Item0
 				{
-					position[]={7736.646484,311.264984,8090.377930};
-					azimut=350.000000;
+					position[]={7724.510254,311.264984,8095.636230};
+					azimut=340.000000;
 					id=12;
 					side="EAST";
-					vehicle="SoldierEB";
+					vehicle="SoldierECrew";
 					leader=1;
+					lock="LOCKED";
 					skill=0.600000;
-				};
-				class Item1
-				{
-					position[]={7736.760742,311.264984,8088.873047};
-					azimut=350.000000;
-					id=13;
-					side="EAST";
-					vehicle="SoldierEB";
-					skill=0.600000;
+					text="crewer1";
+					init="this setbehaviour ""safe""";
 				};
 			};
-			class Waypoints
+		};
+		class Item5
+		{
+			side="EAST";
+			class Vehicles
 			{
 				items=1;
 				class Item0
 				{
-					position[]={7733.013184,311.264984,8094.999023};
-					speed="LIMITED";
-					combat="CARELESS";
-					class Effects
-					{
-					};
-					showWP="NEVER";
+					position[]={7725.245117,311.264984,8095.204102};
+					azimut=320.000000;
+					id=13;
+					side="EAST";
+					vehicle="SoldierECrew";
+					leader=1;
+					lock="LOCKED";
+					skill=0.600000;
+					text="crewer2";
+					init="this setbehaviour ""safe""";
+				};
+			};
+		};
+		class Item6
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7736.722656,311.264984,8086.529297};
+					azimut=335.000000;
+					id=14;
+					side="EAST";
+					vehicle="SoldierEMG";
+					leader=1;
+					lock="LOCKED";
+					skill=0.600000;
+					init="this setbehaviour ""safe""";
 				};
 			};
 		};
@@ -1610,29 +1629,15 @@ class Intro
 		};
 		class Item1
 		{
-			position[]={7757.975098,310.748199,8106.718262};
+			position[]={7757.143555,310.802094,8106.671387};
 			name="kukuschkin";
 			type="Flag";
 		};
 	};
 	class Sensors
 	{
-		items=2;
+		items=1;
 		class Item0
-		{
-			position[]={7755.893066,310.883118,8106.729004};
-			a=5.000000;
-			b=5.000000;
-			rectangular=1;
-			activationBy="VEHICLE";
-			age="UNKNOWN";
-			idVehicle=2;
-			expActiv="dosel=true";
-			class Effects
-			{
-			};
-		};
-		class Item1
 		{
 			position[]={7684.942871,309.475189,8129.767090};
 			a=0.000000;
