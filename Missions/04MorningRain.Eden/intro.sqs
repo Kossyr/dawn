@@ -3,14 +3,18 @@ titlecut ["","black in",3]
 rusak1 playmove "effectstandtalk"
 rusak2 switchmove "FXTOHAND"
 Dostoevsky playmove "effectstandtalk"
-Dostoevsky dowatch aP
-aP dowatch Dostoevsky
 rusak1 setmimic "hurt"
 rusak2 setmimic "normal"
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
 playmusic "RTrack2"
+
+rusak2 dowatch [5028.59,3960.29,1.49]
+rusak1 dowatch [5027.60,3958.63,1.64]
+Dostoevsky dowatch [5017.98,3967.95,1.72]
+aP dowatch [5017.62,3969.83,1.72]
+
 
 setacctime 1
 
@@ -103,7 +107,7 @@ _camera camSetPos [5019.53,3969.99,1.67]
 _camera camSetFOV 0.700
 _camera camCommit 5
 @camCommitted _camera
-~3
+~4
 ;=== 15:38:20
 _camera camSetTarget [-17420.34,101273.77,-5302.66]
 _camera camSetPos [5017.74,3968.85,1.69]
@@ -141,6 +145,10 @@ _camera camCommit 5
 aP2 domove getmarkerpos "ohniste"
 Lemontov setmimic "Cynic"
 
+aP2 dowatch [2125.24,4717.40,1.61]
+Lemontov dowatch [2126.03,4719.85,1.57]
+
+
 ;=== 15:49:55
 _camera camSetTarget [450.05,-95032.98,-6677.44]
 _camera camSetPos [2125.74,4727.28,1.29]
@@ -159,8 +167,6 @@ _camera camSetPos [2125.30,4718.31,1.69]
 _camera camSetFOV 0.700
 _camera camCommit 4
 @camCommitted _camera
-aP2 dowatch Lemontov
-Lemontov dowatch aP2
 ~1
 ;=== 15:53:19
 _camera camSetTarget [-5148.82,-95014.45,37.53]
