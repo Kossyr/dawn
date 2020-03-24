@@ -3,6 +3,10 @@ titlecut ["","black in",10000]
 c1 assignasdriver car
 "_x assignascargo car" foreach units poincareGroup
 
+Rashiv dowatch [4206.99,4898.10,1.65]
+Rashiv setmimic "Normal"
+Calvet dowatch [4207.98,4896.66,1.67]
+
 car setfuel 0
 
 _camera = "camera" camcreate [0,0,0]
@@ -60,6 +64,8 @@ Calvet say "10v03"
 ~3
 1 fademusic 1
 titlecut ["","black in",0.5]
+Calvet dowatch objnull
+Rashiv dowatch objnull
 Calvet setpos getmarkerpos "calvet_pos"
 Rashiv setpos getmarkerpos "rashiv_pos"
 Calvet assignascargo car

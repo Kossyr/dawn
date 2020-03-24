@@ -7,7 +7,8 @@ rusak2 switchmove "FxToHand"
 rusak setmimic "surprised"
 playmusic "RTrack9"
 
-setacctime 1
+rusak dowatch [4993.64,3889.81,0.73]
+ivan dowatch [4992.23,3891.05,1.60]
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -47,19 +48,14 @@ _camera camCommit 0
 _camera camSetTarget [96930.33,42668.19,6592.46]
 _camera camSetPos [4990.29,3889.56,1.01]
 _camera camSetFOV 0.700
-_camera camCommit 24
+_camera camCommit 23.2
 rusak say "03v03"
 ~1.2
 ivan say "03v04"
 ~9
 rusak setmimic "hurt"
 rusak say "03v05"
-~13
-
-player cameraEffect ["terminate","back"]
-camDestroy _camera
-_camera = "camera" camcreate [0,0,0]
-_camera cameraeffect ["internal","back"]
+@camCommitted _camera
 ;=== 19:14:43
 _camera camSetTarget [-17321.76,-93482.30,-4461.08]
 _camera camSetPos [4993.57,3893.14,1.01]
@@ -78,11 +74,12 @@ _camera camCommit 0
 @camCommitted _camera
 
 rusak dowatch [4972.30,3887.65,2.00]
-ivan dowatch [4972.30,3887.65,2.00]
 ivan setmimic "sad"
 rusak setmimic "sad"
 rusak say "03v07"
-~2
+~1
+ivan dowatch [4972.30,3887.65,2.00]
+~1
 ivan say "03v08"
 ~3
 rusak say "03v09"
@@ -91,6 +88,7 @@ ivan say "03v10"
 jdi=true
 ~1
 Dostoevsky setpos getmarkerpos "off"
+Dostoevsky dowatch [4993.10,3890.60,1.54]
 ~1
 ;=== 19:18:33
 _camera camSetTarget Dostoevsky
@@ -98,8 +96,8 @@ _camera camSetPos [4992.45,3888.49,1.01]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-rusak dowatch Dostoevsky
-ivan dowatch Dostoevsky
+rusak dowatch [5001.47,3895.80,1.44]
+ivan dowatch [5001.47,3895.80,1.44]
 Dostoevsky say "03v11"
 ~4
 rusak playmove "effectstand"

@@ -16,6 +16,11 @@ AblomovCinema setdir 350
 
 aP setpos getmarkerpos "CinemaEmpty"
 
+AblomovCinema dowatch [9177.07,9455.18,1.58]
+Koltsov dowatch [9177.07,9455.18,1.58]
+Syomin dowatch [9177.06,9453.35,1.62]
+
+
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
@@ -92,7 +97,11 @@ _camera camCommit 0
 
 Koltsov stop false
 
-AblomovCinema setpos getmarkerpos "GetOut"
+Syomin dowatch objnull
+Koltsov dowatch objnull
+AblomovCinema dowatch objnull
+
+deletevehicle AblomovCinema
 aP setpos getmarkerpos "AblomovCinema"
 aP setdir 350
 
