@@ -65,13 +65,6 @@ Shaposhnikov setpos getmarkerpos "volkovShaposhnikov"
 Shaposhnikov stop true
 Shaposhnikov setdir 310
 
-Lemontov reveal Shaposhnikov
-Lemontov reveal Zubarev
-Shaposhnikov reveal Lemontov
-Shaposhnikov reveal Zubarev
-Zubarev reveal Lemontov
-Zubarev reveal Shaposhnikov
-
 
 ; beginning
 
@@ -111,17 +104,9 @@ _camera camCommit 0
 
 ~2
 
+Lemontov dowatch [8558.04,9305.68,1.71]
+Shaposhnikov dowatch [8558.04,9305.68,1.71]
 
-
-Lemontov reveal Shaposhnikov
-Lemontov reveal Zubarev
-Shaposhnikov reveal Lemontov
-Shaposhnikov reveal Zubarev
-Zubarev reveal Lemontov
-Zubarev reveal Shaposhnikov
-
-Lemontov dowatch Zubarev
-Shaposhnikov dowatch Zubarev
 
 Lemontov say "21v02"
 
@@ -282,20 +267,11 @@ Volkov setdir 150
 Zubarev setpos getmarkerpos "volkovZubarev"
 Zubarev setdir 150
 
-Lemontov reveal Volkov
-Shaposhnikov reveal Volkov
-Zubarev reveal Volkov
-
-Volkov reveal Lemontov
-Volkov reveal Shaposhnikov
-Volkov reveal Zubarev
-
 ; rest of volkov discussion
 
 
-Shaposhnikov dowatch Volkov
-Lemontov dowatch Volkov
-
+Shaposhnikov dowatch [8557.53,9305.28,1.67]
+Lemontov dowatch [8557.53,9305.28,1.67]
 
 Shaposhnikov say "21v04"
 
@@ -311,21 +287,6 @@ _camera camCommit 0
 
 ~2
 
-
-Lemontov reveal Shaposhnikov
-Lemontov reveal Zubarev
-Shaposhnikov reveal Lemontov
-Shaposhnikov reveal Zubarev
-Zubarev reveal Lemontov
-Zubarev reveal Shaposhnikov
-Lemontov reveal Volkov
-Shaposhnikov reveal Volkov
-Zubarev reveal Volkov
-Volkov reveal Lemontov
-Volkov reveal Shaposhnikov
-Volkov reveal Zubarev
-
-
 Lemontov playmove "effectstandsalute"
 
 ~0.5
@@ -340,19 +301,6 @@ Shaposhnikov setmimic "Normal"
 Lemontov setmimic "Angry"
 
 ~0.5
-
-Lemontov reveal Shaposhnikov
-Lemontov reveal Zubarev
-Shaposhnikov reveal Lemontov
-Shaposhnikov reveal Zubarev
-Zubarev reveal Lemontov
-Zubarev reveal Shaposhnikov
-Lemontov reveal Volkov
-Shaposhnikov reveal Volkov
-Zubarev reveal Volkov
-Volkov reveal Lemontov
-Volkov reveal Shaposhnikov
-Volkov reveal Zubarev
 
 ;=== 20:12:37
 _camera camSetTarget [-3528.46,108045.45,-10106.54]
@@ -401,11 +349,11 @@ _camera camCommit 0
 
 Zubarev say "21v08"
 
-Zubarev doWatch Volkov
+Zubarev doWatch [8557.53,9305.28,1.67]
 
 ~6
 
-Volkov dowatch Zubarev
+Volkov dowatch [8559.14,9305.98,1.70]
 
 Volkov say "21v09"
 
@@ -459,7 +407,8 @@ Volkov say "21v13"
 
 ~2
 
-Volkov dowatch Lemontov
+Volkov dowatch [8557.83,9303.31,1.66]
+
 
 ~0.5
 
@@ -470,7 +419,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Zubarev dowatch Lemontov
+Zubarev dowatch  [8557.83,9303.31,1.66]
 
 ~8
 
@@ -551,9 +500,6 @@ Shaposhnikov2 disableai "autotarget"
 
 Lemontov2 switchmove "EffectStand"
 
-Lemontov2 reveal Shaposhnikov2
-Shaposhnikov2 reveal Lemontov2
-
 ;=== 22:07:51
 _camera camSetTarget [85344.58,75006.40,-5882.30]
 _camera camSetPos [9591.64,10004.06,5.69]
@@ -561,13 +507,10 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-~1
-Lemontov2 reveal Shaposhnikov2
-Shaposhnikov2 reveal Lemontov2
-~2
+~3
 
-Lemontov2 dowatch Shaposhnikov2
-Shaposhnikov2 dowatch Lemontov2
+Lemontov2 dowatch [9573.21,10036.35,1.73]
+Shaposhnikov2 dowatch [9574.78,10038.00,1.73]
 
 stan=true
 
@@ -664,7 +607,7 @@ guard say "21v22"
 
 ~1.5
 
-Shaposhnikov2 dowatch Lemontov
+Shaposhnikov2 dowatch [9574.78,10038.00,1.73]
 
 ~0.8
 
@@ -693,36 +636,27 @@ titlecut ["", "black in", 0.5]
 Lemontov2 dowatch objnull
 Shaposhnikov2 dowatch objnull
 
-Lemontov2 switchmove ""
-Lemontov2 setmimic "normal"
-Lemontov2 setpos getmarkerpos "lemontovLemontov"
-Lemontov2 setdir 185
-Lemontov2 stop true
+Lemontov2 switchmove "";
+Lemontov2 setmimic "normal";
+Lemontov2 setpos getmarkerpos "lemontovLemontov";
+Lemontov2 setdir 185;
+Lemontov2 stop true;
 
-Shaposhnikov2 setmimic "normal"
-Shaposhnikov2 setpos getmarkerpos "lemontovShaposhnikov"
-Shaposhnikov2 setdir 155
-Shaposhnikov2 stop true
+Shaposhnikov2 setmimic "normal";
+Shaposhnikov2 setpos getmarkerpos "lemontovShaposhnikov";
+Shaposhnikov2 setdir 155;
+Shaposhnikov2 stop true;
 
-Rashiv setmimic "normal"
-guard setmimic "normal"
+Rashiv setmimic "normal";
+guard setmimic "normal";
 
-Rashiv setpos getmarkerpos "lemontovRashivSecond"
-guard setpos getmarkerpos "lemontovGuardSecond"
+Rashiv setpos getmarkerpos "lemontovRashivSecond";
+guard setpos getmarkerpos "lemontovGuardSecond";
 
-
-Lemontov2 reveal Rashiv
-Lemontov2 reveal guard
-Lemontov2 reveal Shaposhnikov2
-Shaposhnikov2 reveal Lemontov2
-Shaposhnikov2 reveal Rashiv
-Shaposhnikov2 reveal guard
-Rashiv reveal Lemontov2
-Rashiv reveal Shaposhnikov2
-Rashiv reveal guard
-guard reveal Rashiv
-guard reveal Lemontov2
-guard reveal Shaposhnikov2
+Shaposhnikov2 dowatch [9574.66,10031.11,1.67]
+Lemontov2 dowatch [9574.66,10031.11,1.67]
+guard dowatch [9577.07,10033.56,1.67]
+Rashiv dowatch [9577.07,10033.56,1.67]
 
 
 ;=== 22:33:06
@@ -742,19 +676,6 @@ _camera camCommit 8
 
 ~1.5
 
-Lemontov2 reveal Rashiv
-Lemontov2 reveal guard
-Lemontov2 reveal Shaposhnikov2
-Shaposhnikov2 reveal Lemontov2
-Shaposhnikov2 reveal Rashiv
-Shaposhnikov2 reveal guard
-Rashiv reveal Lemontov2
-Rashiv reveal Shaposhnikov2
-Rashiv reveal guard
-guard reveal Rashiv
-guard reveal Lemontov2
-guard reveal Shaposhnikov2
-
 guard playmove "effectstandsalute"
 
 ~1.2
@@ -765,8 +686,8 @@ guard domove getmarkerpos "getout"
 
 ~1.5
 
-Lemontov2 dowatch Rashiv
-Shaposhnikov2 dowatch Rashiv
+Lemontov2 dowatch [9576.38,10031.46,1.67]
+Shaposhnikov2 dowatch [9576.38,10031.46,1.67]
 
 Rashiv say "21v25"
 
@@ -828,12 +749,14 @@ Lemontov2 say "21v28"
 
 ~9
 
+Rashiv dowatch [9574.87,10032.96,1.67]
 
 Shaposhnikov2 setmimic "smile"
 Shaposhnikov2 say "21v29"
 
 
 @camCommitted _camera
+Rashiv dowatch [9577.07,10033.56,1.67]
 
 ;=== 22:38:38
 _camera camSetTarget [39097.97,105365.16,-6208.96]

@@ -1,8 +1,5 @@
 setacctime 1
 
-relief reveal yashin
-yashin reveal relief
-
 titlecut ["", "black out", 1]
 
 "1" objstatus "done"
@@ -18,23 +15,25 @@ aP action ["WEAPONONBACK"]
 aP setdir 300
 aP setpos getmarkerpos "CinemaEmpty"
 
-RashivCinema setdir 300
-RashivCinema setpos getmarkerpos "rashivCinema"
+RashivCinema setdir 300;
+RashivCinema setpos getmarkerpos "rashivCinema";
 
 setacctime 1
 
 ~1
 
-yashin setpos getmarkerpos "yashinCinema"
-yashin setdir 320
+yashin setpos getmarkerpos "yashinCinema";
+yashin setdir 320;
+
+RashivCinema dowatch [4259.81,2935.72,1.62]
+yashin dowatch [4259.81,2935.72,1.62]
+relief dowatch [4262.02,2933.31,1.62]
+
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
 titlecut["","black in",1]
-
-relief dowatch yashin
-yashin dowatch relief
 
 relief say "12v30"
 
@@ -45,12 +44,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-~1
-
-relief dowatch yashin
-yashin dowatch relief
-
-~5.5
+~6.5
 
 ;=== 16:17:37
 _camera camSetTarget [99239.96,-28173.54,-3250.85]
@@ -72,7 +66,7 @@ yashin say "12v31"
 
 relief say "12v32"
 
-~6.5
+~6.2
 
 ;=== 16:18:36
 _camera camSetTarget [-10428.99,-95748.30,-6746.08]
@@ -84,6 +78,9 @@ _camera camCommit 0
 
 RashivCinema setmimic "Cynical"
 RashivCinema say "12v33"
+
+relief dowatch [4262.72,2934.75,1.62]
+
 
 ~3.5
 
