@@ -1,0 +1,72 @@
+titlecut["","black in",4]
+
+playmusic "Track8"
+
+0 fadesound 0
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+fisherman setmimic "smile"
+
+;=== 14:33:31
+_camera camSetTarget [107284.90,34408.16,1.87]
+_camera camSetPos [10681.48,8523.36,1.87]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:33:45
+_camera camSetTarget [99277.70,54496.87,-7131.86]
+_camera camSetPos [10749.27,8543.77,4.18]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+fisherman switchmove "FxStandHip"
+;=== 14:40:01
+_camera camSetTarget [54247.33,98474.00,4668.75]
+_camera camSetPos [10756.37,8547.15,1.65]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:41:32
+_camera camSetTarget [76319.88,83522.36,8951.94]
+_camera camSetPos [10755.12,8546.94,1.28]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+;=== 14:33:55
+_camera camSetTarget [103063.84,-27654.93,12982.82]
+_camera camSetPos [10754.76,8549.29,0.96]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:34:02
+_camera camSetTarget [88783.23,-52633.04,12983.24]
+_camera camSetPos [10754.68,8549.11,1.00]
+_camera camSetFOV 0.700
+_camera camCommit 6
+6 fadesound 1
+~1
+fisherman dowatch [10754.36,8543.29,2.14]
+fisherman setmimic "surprised"
+@camCommitted _camera
+;=== 14:34:49
+_camera camSetTarget [-64077.90,-56493.04,12983.18]
+_camera camSetPos [10762.89,8549.78,0.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:34:59
+_camera camSetTarget [-77112.92,-37386.62,12983.50]
+_camera camSetPos [10759.94,8548.84,0.85]
+_camera camSetFOV 0.700
+_camera camCommit 12
+~9
+3 fademusic 0
+titlecut["","black out",2]
+@camCommitted _camera
+end=true
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit
