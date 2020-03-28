@@ -1,0 +1,28 @@
+setacctime 1
+
+ivan sideradio "29r04"
+
+~40
+
+setacctime 1
+
+"2" objstatus "done"
+
+ivan sideradio "29r05"
+
+engineersDone=true
+
+"_x setunitpos ""auto""" foreach units engineers
+"_x setcaptive false" foreach units engineers
+
+engineers setcombatmode "RED"
+
+#loop
+
+_obj = nearestObject [minefieldDestroyer, "Mine"]
+
+? (typeOf _obj == "Mine") : deletevehicle _obj ; goto "loop" ;
+
+deleteVehicle minefieldDestroyer
+
+exit
