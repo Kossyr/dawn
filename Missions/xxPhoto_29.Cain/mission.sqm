@@ -1,0 +1,139 @@
+version=11;
+class Mission
+{
+	randomSeed=5153283;
+	class Intel
+	{
+		startWeather=0.700000;
+		forecastWeather=0.700000;
+		month=12;
+		day=18;
+		hour=11;
+		minute=15;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5031.334473,143.163544,7705.134766};
+					id=0;
+					side="EAST";
+					vehicle="SoldierEB";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					init="this exec ""photo.sqs""";
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={5539.568848,10.334334,8064.545410};
+					azimut=280.136200;
+					id=1;
+					side="EAST";
+					vehicle="T80";
+					leader=1;
+					rank="LIEUTNANT";
+					skill=1.000000;
+					text="aP";
+					init="commander this setidentity ""Kukushkin""; this setgroupid [""YANKEE"",""GROUPCOLOR0""]";
+				};
+				class Item1
+				{
+					position[]={5556.490723,11.508080,8051.606934};
+					azimut=275.136200;
+					id=2;
+					side="EAST";
+					vehicle="T80";
+					rank="SERGEANT";
+					skill=1.000000;
+				};
+				class Item2
+				{
+					position[]={5559.195801,10.801182,8063.444824};
+					azimut=275.136200;
+					id=3;
+					side="EAST";
+					vehicle="T80";
+					rank="CORPORAL";
+					skill=1.000000;
+				};
+				class Item3
+				{
+					position[]={5561.232422,11.044031,8075.531250};
+					azimut=275.136200;
+					id=4;
+					side="EAST";
+					vehicle="T80";
+					rank="CORPORAL";
+					skill=1.000000;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5377.087402,7.110347,8083.018555};
+					type="HOLD";
+					combatMode="YELLOW";
+					formation="COLUMN";
+					speed="NORMAL";
+					combat="SAFE";
+					description="@STRM_WAYPOINT_MEETING_POINT";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=1;
+		class Item0
+		{
+			position[]={5566.943359,11.068027,8060.283691};
+			name="Start";
+			text="@STRC_MARKER_START";
+			type="Start";
+			angle=280.136200;
+		};
+	};
+};
+class Intro
+{
+	randomSeed=16334339;
+	class Intel
+	{
+	};
+};
+class OutroWin
+{
+	randomSeed=1660931;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=1486339;
+	class Intel
+	{
+	};
+};
