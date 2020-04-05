@@ -151,6 +151,7 @@ class Mission
 				{
 					position[]={5960.606934,150.494354,6629.986816};
 					type="HOLD";
+					description="@STRM_WAYPOINT_HILL";
 					synchronizations[]={5};
 					class Effects
 					{
@@ -740,7 +741,7 @@ class Mission
 					leader=1;
 					skill=1.000000;
 					text="fyodor1";
-					init="group this allowfleeing 0; fyodor = group this; this setgroupid [""FOXTROT"",""GROUPCOLOR0""]";
+					init="group this allowfleeing 0; fyodor = group this; this setgroupid [""FOXTROT"",""GROUPCOLOR0""]; clearmagazinecargo this; clearweaponcargo this";
 				};
 				class Item1
 				{
@@ -751,6 +752,7 @@ class Mission
 					vehicle="BMP";
 					skill=1.000000;
 					text="fyodor2";
+					init="clearmagazinecargo this; clearweaponcargo this";
 				};
 			};
 			class Waypoints
@@ -2169,6 +2171,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
+					init="group this allowfleeing 0";
 				};
 				class Item1
 				{
@@ -2992,7 +2995,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="FARM IS SECURED";
-			expCond="{alive _x} count thislist <= 1";
+			expCond="{alive _x} count thislist <= 0";
 			expActiv="[] exec ""farm.sqs""";
 			class Effects
 			{
