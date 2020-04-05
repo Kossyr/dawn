@@ -911,8 +911,8 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={1956.612793,114.625519,5708.627930};
-					id=54;
+					position[]={1953.842896,114.421364,5709.863281};
+					id=69;
 					side="WEST";
 					vehicle="SoldierWG";
 					skill=0.200000;
@@ -979,7 +979,7 @@ class Mission
 				{
 					position[]={2407.924072,40.946751,6305.442383};
 					azimut=184.947998;
-					id=55;
+					id=54;
 					side="WEST";
 					vehicle="M113";
 					leader=1;
@@ -991,7 +991,7 @@ class Mission
 				{
 					position[]={2407.645020,37.067371,6321.297852};
 					azimut=184.948166;
-					id=56;
+					id=55;
 					side="WEST";
 					vehicle="Truck5tOpen";
 					skill=0.200000;
@@ -1053,7 +1053,7 @@ class Mission
 				{
 					position[]={2419.054199,36.113861,6324.807129};
 					azimut=-130.052002;
-					id=57;
+					id=56;
 					side="WEST";
 					vehicle="OfficerWNight";
 					leader=1;
@@ -1064,7 +1064,7 @@ class Mission
 				{
 					position[]={2417.261230,35.483120,6327.759766};
 					azimut=-130.051956;
-					id=58;
+					id=57;
 					side="WEST";
 					vehicle="SoldierWB";
 					skill=0.200000;
@@ -1074,7 +1074,7 @@ class Mission
 				{
 					position[]={2419.263672,35.508987,6327.573242};
 					azimut=-130.051956;
-					id=59;
+					id=58;
 					side="WEST";
 					vehicle="SoldierWB";
 					skill=0.200000;
@@ -1084,7 +1084,7 @@ class Mission
 				{
 					position[]={2421.058350,35.804245,6326.167480};
 					azimut=-130.051956;
-					id=60;
+					id=59;
 					side="WEST";
 					vehicle="SoldierWB";
 					skill=0.200000;
@@ -1187,7 +1187,7 @@ class Mission
 		class Item5
 		{
 			position[]={1308.242920,65.474998,5957.031738};
-			id=61;
+			id=60;
 			side="EMPTY";
 			vehicle="FlagCarrier";
 			leader=1;
@@ -1198,7 +1198,7 @@ class Mission
 		{
 			position[]={1208.117065,65.474998,5984.005859};
 			azimut=185.000000;
-			id=62;
+			id=61;
 			side="EMPTY";
 			vehicle="Camp";
 			leader=1;
@@ -1208,7 +1208,7 @@ class Mission
 		{
 			position[]={1208.855103,65.474998,5995.354004};
 			azimut=185.000000;
-			id=63;
+			id=62;
 			side="EMPTY";
 			vehicle="Camp";
 			leader=1;
@@ -1218,7 +1218,7 @@ class Mission
 		{
 			position[]={1242.437744,65.474998,6010.300293};
 			azimut=270.000000;
-			id=64;
+			id=63;
 			side="EMPTY";
 			vehicle="Camp";
 			leader=1;
@@ -1228,7 +1228,7 @@ class Mission
 		{
 			position[]={1228.414185,65.474998,6009.193359};
 			azimut=270.000000;
-			id=65;
+			id=64;
 			side="EMPTY";
 			vehicle="Camp";
 			leader=1;
@@ -1238,7 +1238,7 @@ class Mission
 		{
 			position[]={1248.304810,65.474998,5981.514160};
 			azimut=270.000000;
-			id=66;
+			id=65;
 			side="EMPTY";
 			vehicle="Camp";
 			leader=1;
@@ -1247,7 +1247,7 @@ class Mission
 		class Item11
 		{
 			position[]={1291.209106,65.474998,5956.373047};
-			id=67;
+			id=66;
 			side="EMPTY";
 			vehicle="Camp";
 			leader=1;
@@ -1256,7 +1256,7 @@ class Mission
 		class Item12
 		{
 			position[]={1291.437500,65.474998,5965.278809};
-			id=68;
+			id=67;
 			side="EMPTY";
 			vehicle="Camp";
 			leader=1;
@@ -1265,7 +1265,7 @@ class Mission
 		class Item13
 		{
 			position[]={1291.437622,65.474998,5973.328613};
-			id=69;
+			id=68;
 			side="EMPTY";
 			vehicle="Camp";
 			leader=1;
@@ -1670,7 +1670,7 @@ class Mission
 			angle=20.000000;
 			activationBy="MEMBER";
 			age="UNKNOWN";
-			idVehicle=57;
+			idVehicle=56;
 			text="ENEMY GOT TO LEMONTOV";
 			expActiv="[] exec ""outro2.sqs""";
 			class Effects
@@ -1683,7 +1683,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="not alive Lemontov";
+			expCond="not alive Lemontov and not strilej";
 			expActiv="[] exec ""outro2.sqs""";
 			class Effects
 			{
@@ -2090,6 +2090,8 @@ class Intro
 		class Item0
 		{
 			position[]={2134.536865,38.837200,4740.268066};
+			a=0.000000;
+			b=0.000000;
 			age="UNKNOWN";
 			expCond="jed";
 			class Effects
@@ -2100,6 +2102,8 @@ class Intro
 		class Item1
 		{
 			position[]={4304.104004,74.149246,5337.719727};
+			a=0.000000;
+			b=0.000000;
 			type="END1";
 			age="UNKNOWN";
 			expCond="end";
