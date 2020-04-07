@@ -1,13 +1,10 @@
 setacctime 1
 
-? aP == leader anton : goto "ex" ;
+? aP == leader anton : goto "kill_others" ;
 
 leader anton sideradio "07r12"
 
 ~35
-
-"_x setdammage 1" foreach units leonid
-"_x setdammage 1" foreach units boris
 
 sol setdammage 1
 dostoevsky setdammage 1
@@ -17,6 +14,9 @@ sol2 setdammage 1
 sol3 setdammage 1
 sol4 setdammage 1
 
-#ex
+#kill_others
+
+"_x setdammage 1" foreach units leonid
+"_x setdammage 1" foreach units boris
 
 exit

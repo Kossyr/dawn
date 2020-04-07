@@ -2,4 +2,54 @@ titleCut ["","BLACK IN", 3]
 
 firefly = [East,"AirBase"]
 
+eastClear=false
+centreClear=false
+westClear=false
+toShips=false
+toHome=false
+forward=false
+shipsDetected=false
+shipsPursued=false
+
+Syomin AssignAsDriver chopper1
+SyominGunner AssignAsGunner chopper1
+Koltsov AssignAsGunner chopper2
+aP AssignAsDriver chopper2
+
+"Ships" setmarkertype "Empty"
+"3" objstatus "hidden"
+
+
+ship setcaptive true
+ship_1 setcaptive true
+ship_2 setcaptive true
+ship_3 setcaptive true
+ship_4 setcaptive true
+ship_5 setcaptive true
+ship_6 setcaptive true
+
+WhiteFlag setflagowner driver ship
+WhiteFlag_1 setflagowner driver ship_1
+WhiteFlag_2 setflagowner driver ship_2
+WhiteFlag_3 setflagowner driver ship_3
+WhiteFlag_4 setflagowner driver ship_4
+WhiteFlag_5 setflagowner driver ship_5
+WhiteFlag_6 setflagowner driver ship_6
+
+ship setpos getmarkerpos "ship_7"
+ship_1 setpos getmarkerpos "ship_1_1"
+ship_2 setpos getmarkerpos "ship_2_1"
+ship_3 setpos getmarkerpos "ship_3_1"
+ship_4 setpos getmarkerpos "ship_4_1"
+ship_5 setpos getmarkerpos "ship_5_1"
+ship_6 setpos getmarkerpos "ship_6_1"
+
+ship stop true
+ship_1 stop true
+ship_2 stop true
+ship_3 stop true
+ship_4 stop true
+ship_5 stop true
+ship_6 stop true
+
 exit
