@@ -40,7 +40,7 @@ class Mission
 					rank="COLONEL";
 					skill=1.000000;
 					text="Syomin";
-					init="this setidentity ""Syomin""";
+					init="this setidentity ""Syomin""; this setgroupid [""november"",""groupcolor0""]";
 				};
 				class Item1
 				{
@@ -117,7 +117,6 @@ class Mission
 				class Item4
 				{
 					position[]={5287.455566,11.380075,2990.111328};
-					type="HOLD";
 					synchronizations[]={23};
 					class Effects
 					{
@@ -3399,7 +3398,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=16;
+		items=18;
 		class Item0
 		{
 			position[]={5146.054688,330.093842,4767.867188};
@@ -3615,6 +3614,38 @@ class Mission
 			idVehicle=55;
 			expCond="this and (vehicle aP==aP) and alive aP and toHome";
 			expActiv="[] exec ""outro.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item16
+		{
+			position[]={5417.125488,92.573425,3648.531738};
+			a=3200.000000;
+			b=3000.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=58;
+			expCond="this and alive aP";
+			expActiv="[] exec ""outofbounds_ablomov.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item17
+		{
+			position[]={5433.292480,91.770584,3649.878174};
+			a=3400.000000;
+			b=3200.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=58;
+			expCond="this and alive aP";
+			expActiv="[] exec ""outofbounds.sqs""";
 			class Effects
 			{
 			};
