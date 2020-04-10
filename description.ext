@@ -490,13 +490,13 @@ class Campaign
 		cutscene = ;
 
 		firstMission = x02Chapter;
-		lost = ;
-		end1 = ;
-		end2 = ;
-		end3 = ;
-		end4 = ;
-		end5 = ;
-		end6 = ;
+		lost = Part4;
+		end1 = Part4;
+		end2 = Part4;
+		end3 = Part4;
+		end4 = Part4;
+		end5 = Part4;
+		end6 = Part4;
 
 
 		class x02Chapter: MissionDefault
@@ -686,6 +686,34 @@ class Campaign
 			end6 = ;
 			lost = 30Checkmate;
 			template = 30Checkmate.Cain;
+		};
+	};
+	class Part4
+	{
+		name = "RECLAMATION";
+
+		cutscene = ;
+
+		firstMission = x03Chapter;
+		lost = ;
+		end1 = ;
+		end2 = ;
+		end3 = ;
+		end4 = ;
+		end5 = ;
+		end6 = ;
+
+		class x03Chapter: MissionDefault
+		{
+ 			noAward=true;
+			end1 = ;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = ;
+			template = x03Chapter.Cain;
 		};
 	};
 };
