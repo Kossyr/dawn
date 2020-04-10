@@ -1,0 +1,233 @@
+version=11;
+class Mission
+{
+	randomSeed=9917443;
+	class Intel
+	{
+		briefingName="@STRCN_x03";
+	};
+};
+class Intro
+{
+	randomSeed=5487619;
+	class Intel
+	{
+		startWeather=0.700000;
+		forecastWeather=0.900000;
+		month=12;
+		day=22;
+		hour=13;
+		minute=5;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5611.862305,85.165031,3665.969727};
+					id=0;
+					side="EAST";
+					vehicle="SoldierEB";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.500000;
+					init="this exec ""intro.sqs""";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5282.520020,63.584999,3367.846680};
+					id=1;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.500000;
+					init="this exec ""camera.sqs""";
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5261.786133,63.584999,3384.003418};
+					azimut=90.000000;
+					id=2;
+					side="EAST";
+					vehicle="SoldierEG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.700000;
+					text="aP";
+					init="this setidentity ""rashiv""; this setbehaviour ""safe""; this setgroupid [""zulu"", ""groupcolor0""]; this removemagazine ""GrenadeLauncher""; this addmagazine ""FlareRed""; this addmagazine ""FlareRed""";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=12;
+		class Item0
+		{
+			position[]={5261.231445,63.584999,3384.088135};
+			id=3;
+			side="EMPTY";
+			vehicle="Camp";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item1
+		{
+			position[]={5261.231445,63.584999,3374.020508};
+			id=4;
+			side="EMPTY";
+			vehicle="Camp";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item2
+		{
+			position[]={5260.973145,63.584999,3359.445801};
+			id=5;
+			side="EMPTY";
+			vehicle="Camp";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item3
+		{
+			position[]={5260.973145,63.584999,3349.378174};
+			id=6;
+			side="EMPTY";
+			vehicle="Camp";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item4
+		{
+			position[]={5312.989746,63.584999,3361.623535};
+			id=7;
+			side="EMPTY";
+			vehicle="FlagCarrier";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item5
+		{
+			position[]={5346.979004,63.584999,3393.686768};
+			azimut=355.000000;
+			id=8;
+			side="EMPTY";
+			vehicle="Fire";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item6
+		{
+			position[]={5315.077148,63.584999,3365.676270};
+			azimut=355.000000;
+			id=9;
+			side="EMPTY";
+			vehicle="Fire";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item7
+		{
+			position[]={5277.824707,63.584999,3350.488281};
+			azimut=355.000000;
+			id=10;
+			side="EMPTY";
+			vehicle="Fire";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item8
+		{
+			position[]={5267.625488,63.584999,3379.297852};
+			azimut=355.000000;
+			id=11;
+			side="EMPTY";
+			vehicle="Fire";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item9
+		{
+			position[]={5356.140137,63.584999,3394.556396};
+			azimut=110.000000;
+			id=12;
+			side="EMPTY";
+			vehicle="M113Wreck";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item10
+		{
+			position[]={5353.743652,63.584999,3379.841553};
+			azimut=60.000000;
+			id=13;
+			side="EMPTY";
+			vehicle="M113Wreck";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item11
+		{
+			position[]={5301.520996,63.584999,3342.350830};
+			azimut=190.000000;
+			id=14;
+			side="EMPTY";
+			vehicle="JeepWreck1";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+	};
+	class Markers
+	{
+		items=1;
+		class Item0
+		{
+			position[]={5265.085938,63.584999,3383.778809};
+			name="Start";
+			text="@STRC_MARKER_START";
+			type="Start";
+			colorName="ColorGreen";
+			angle=90.000000;
+		};
+	};
+};
+class OutroWin
+{
+	randomSeed=3231235;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=13660163;
+	class Intel
+	{
+	};
+};
