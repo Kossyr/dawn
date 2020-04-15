@@ -6657,6 +6657,7 @@ class Mission
 			activationBy="WEST";
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
+			text="MINEFIELD TAKEN";
 			expCond="this and not firstMinefieldDone";
 			expActiv="[] exec ""minefieldTaken1.sqs""";
 			class Effects
@@ -6669,6 +6670,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="FIRST MINEFIELD DEACTIVATED";
 			expCond="MinesDeactivated==3";
 			expActiv="[] exec ""minefield1.sqs""";
 			class Effects
@@ -6685,6 +6687,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="MINEFIELD TAKEN";
 			expActiv="[] exec ""minefieldTaken2.sqs""";
 			class Effects
 			{
@@ -6697,6 +6700,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="SECOND MINEFIELD DEACTIVATED";
 			expCond="MinesDeactivated==6";
 			expActiv="[] exec ""minefield2.sqs""";
 			class Effects
@@ -6755,6 +6759,7 @@ class Mission
 			b=95.000000;
 			activationBy="EAST";
 			age="UNKNOWN";
+			text="EAST PRESENT - FORTIFICATIONS ALMOST DONE";
 			expActiv="fortificationsEast=true";
 			class Effects
 			{
@@ -6767,6 +6772,7 @@ class Mission
 			b=85.000000;
 			activationBy="WEST";
 			age="UNKNOWN";
+			text="WEST BEATEN - FORTIFICATIONS ALMOST DONE";
 			expCond="{alive _x} count thislist <= 2";
 			expActiv="fortificationsWest=true";
 			class Effects
@@ -6780,6 +6786,7 @@ class Mission
 			b=0.000000;
 			type="SWITCH";
 			age="UNKNOWN";
+			text="FORTIFICATIONS SEIZED";
 			expCond="fortificationsEast and fortificationsWest";
 			expActiv="[] exec ""fortifications.sqs""";
 			class Effects
@@ -6793,6 +6800,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="AA DESTROYED";
 			expCond="not canmove aa1";
 			expActiv="[] exec ""aa1Destroyed.sqs""";
 			class Effects
@@ -6805,6 +6813,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="AA DESTROYED";
 			expCond="not canmove aa2";
 			expActiv="[] exec ""aa2Destroyed.sqs""";
 			class Effects
@@ -6817,6 +6826,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="AA DESTROYED";
 			expCond="not canmove aa3";
 			expActiv="[] exec ""aa3Destroyed.sqs""";
 			class Effects
@@ -6833,6 +6843,7 @@ class Mission
 			activationType="EAST D";
 			age="UNKNOWN";
 			idVehicle=296;
+			text="AA DISCOVERED";
 			expCond="this and canmove aa3";
 			expActiv="[] exec ""aa3.sqs""";
 			class Effects
@@ -6849,6 +6860,7 @@ class Mission
 			activationType="EAST D";
 			age="UNKNOWN";
 			idVehicle=297;
+			text="AA DISCOVERED";
 			expCond="this and canmove aa2";
 			expActiv="[] exec ""aa2.sqs""";
 			class Effects
@@ -6865,6 +6877,7 @@ class Mission
 			activationType="EAST D";
 			age="UNKNOWN";
 			idVehicle=298;
+			text="AA DISCOVERED";
 			expCond="this and canmove aa1";
 			expActiv="[] exec ""aa1.sqs""";
 			class Effects
@@ -6879,6 +6892,7 @@ class Mission
 			angle=25.000000;
 			activationBy="WEST";
 			age="UNKNOWN";
+			text="RESERVES ARE COMING IN";
 			expActiv="[] exec ""reserves.sqs""";
 			class Effects
 			{
@@ -6892,7 +6906,8 @@ class Mission
 			rectangular=1;
 			activationBy="WEST";
 			age="UNKNOWN";
-			expCond="{alive _x} count thislist <= 1";
+			text="BASE TAKEN";
+			expCond="{alive _x} count thislist <= 2";
 			expActiv="[] exec ""outro.sqs""; ""_x setdammage 1"" foreach thislist";
 			class Effects
 			{
@@ -6940,6 +6955,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="ANTON IS OUT";
 			expCond="""alive _x"" count units anton == 0";
 			expActiv="[] exec ""outGroup.sqs""";
 			class Effects
@@ -6952,6 +6968,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="BORIS IS OUT";
 			expCond="""alive _x"" count units boris == 0";
 			expActiv="[] exec ""outGroup.sqs""";
 			class Effects
@@ -6964,6 +6981,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="ROMAN IS OUT";
 			expCond="""alive _x"" count units roman == 0";
 			expActiv="[] exec ""outGroup.sqs""";
 			class Effects
@@ -6976,6 +6994,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="ENGINEERS ARE OUT";
 			expCond="not secondMinefieldDone and (not alive engineer1 and not alive engineer2 and not alive engineer3)";
 			expActiv="[] exec ""outEngineers.sqs""";
 			class Effects

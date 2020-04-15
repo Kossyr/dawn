@@ -3685,6 +3685,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="WE ARRIVED TO HELP THE BASE";
 			expActiv="[] exec ""arrival.sqs""";
 			class Effects
 			{
@@ -3740,6 +3741,7 @@ class Mission
 			activationBy="WEST";
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
+			text="ATTACK REPELLED";
 			expCond="{alive _x} count thislist <= 3 and not canmove m1 and not canmove m2";
 			expActiv="""_x setdammage 1"" foreach thislist; aP exec ""after_fight.sqs""";
 			class Effects
@@ -3805,6 +3807,7 @@ class Mission
 			b=300.000000;
 			activationBy="WEST";
 			age="UNKNOWN";
+			text="COUNTERATTACK SUCCESSFUL";
 			expCond="{alive _x} count thislist <= 2";
 			expActiv="""_x setdammage 1"" foreach thislist; aP exec ""outro.sqs""";
 			class Effects

@@ -2747,6 +2747,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="START THE ATTACK";
 			expActiv="[] exec ""close.sqs""";
 			class Effects
 			{
@@ -2774,6 +2775,7 @@ class Mission
 			rectangular=1;
 			activationBy="WEST";
 			age="UNKNOWN";
+			text="THE BASE IS SECURED";
 			expCond="{alive _x} count thislist <= 5 and (not canmove B1 and not canmove B2 and not canmove B3 and not canmove B4)";
 			expActiv="[] exec ""base.sqs""";
 			class Effects
@@ -2788,6 +2790,7 @@ class Mission
 			activationBy="MEMBER";
 			age="UNKNOWN";
 			idVehicle=176;
+			text="COUNTERATTACK ARRIVED";
 			expActiv="[] exec ""incoming.sqs""";
 			class Effects
 			{
@@ -2799,6 +2802,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="COUNTERATTACK REPELLED";
 			expCond="not canmove T1 and not canmove T2 and not canmove T3 and not canmove T4 and not canmove T5 and not canmove T6 and not canmove T7 and not canmove T8";
 			expActiv="[] exec ""outro.sqs""";
 			class Effects
