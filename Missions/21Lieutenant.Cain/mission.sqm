@@ -3308,6 +3308,7 @@ class Mission
 			activationBy="MEMBER";
 			age="UNKNOWN";
 			idVehicle=2;
+			text="HOSPITAL UNITS JOIN";
 			expActiv="aP exec ""hospital.sqs""";
 			class Effects
 			{
@@ -3322,6 +3323,7 @@ class Mission
 			activationBy="MEMBER";
 			age="UNKNOWN";
 			idVehicle=2;
+			text="HELIPORT UNITS JOIN";
 			expCond="this and atReady";
 			expActiv="aP exec ""heliport.sqs""";
 			class Effects
@@ -3337,6 +3339,7 @@ class Mission
 			activationBy="MEMBER";
 			age="UNKNOWN";
 			idVehicle=2;
+			text="CROSSROADS UNITS JOIN";
 			expActiv="aP exec ""crossroads.sqs""";
 			class Effects
 			{
@@ -3348,6 +3351,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="UNITS ARE GATHERED";
 			expCond="jednotky==3";
 			expActiv="[] exec ""gathered.sqs""";
 			class Effects
@@ -3388,6 +3392,7 @@ class Mission
 			activationBy="MEMBER";
 			age="UNKNOWN";
 			idVehicle=2;
+			text="RASHIV GOT HERE WITH HIS UNITS";
 			expCond="this and not usGoIn";
 			expActiv="[] exec ""defense.sqs""";
 			class Effects
@@ -3403,6 +3408,7 @@ class Mission
 			activationBy="EAST";
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
+			text="NO EAST PRESENCE IS FAILURE";
 			expActiv="[] exec ""outro2.sqs""";
 			class Effects
 			{
@@ -3416,6 +3422,7 @@ class Mission
 			rectangular=1;
 			activationBy="WEST";
 			age="UNKNOWN";
+			text="ATTACK REPELLED";
 			expCond="{alive _x} count thislist <= 2 and not canmove T1 and not canmove T2";
 			expActiv="[] exec ""outro.sqs""; ""_x setdammage 1"" foreach thislist";
 			class Effects
@@ -3481,6 +3488,7 @@ class Mission
 			timeoutMax=600.000000;
 			interruptable=1;
 			age="UNKNOWN";
+			text="ATTACK TIMEOUT";
 			expCond="not usGoIn";
 			expActiv="[] exec ""late.sqs""";
 			class Effects
@@ -3496,6 +3504,7 @@ class Mission
 			activationBy="MEMBER";
 			age="UNKNOWN";
 			idVehicle=2;
+			text="TIMEOUT - RASHIV GOT HERE BUT DID NOT GATHER UNITS";
 			expCond="this and not usGoIn";
 			expActiv="[] exec ""late.sqs""";
 			class Effects

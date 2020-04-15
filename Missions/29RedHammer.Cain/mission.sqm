@@ -6647,6 +6647,7 @@ class Mission
 			activationBy="LEADER";
 			age="UNKNOWN";
 			idVehicle=196;
+			text="BMPS READY";
 			expActiv="bmpReady=true";
 			class Effects
 			{
@@ -6660,6 +6661,7 @@ class Mission
 			activationBy="LEADER";
 			age="UNKNOWN";
 			idVehicle=227;
+			text="TANKS READY";
 			expActiv="t72Ready=true";
 			class Effects
 			{
@@ -6674,6 +6676,7 @@ class Mission
 			activationBy="LEADER";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="KUKUSHKIN READY";
 			expActiv="playerReady=true";
 			class Effects
 			{
@@ -6685,6 +6688,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="ALL IS READY";
 			expCond="playerReady and bmpReady and t72Ready";
 			expActiv="[] exec ""ready.sqs""";
 			class Effects
@@ -6732,6 +6736,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="ENGINEERS TAKE OUT THE MINEFIELD";
 			expCond="not canmove APC1 and not canmove APC2 or this";
 			expActiv="[] exec ""engineers.sqs""";
 			class Effects
@@ -6762,6 +6767,7 @@ class Mission
 			activationBy="LEADER";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="KUKUSHKIN GOT HERE";
 			expActiv="playerFront=true";
 			class Effects
 			{
@@ -6775,6 +6781,7 @@ class Mission
 			activationBy="WEST";
 			type="SWITCH";
 			age="UNKNOWN";
+			text="FORTIFICATIONS SEIZED";
 			expCond="playerFront and {alive _x} count thislist <= 5 and not canmove F1 and not canmove F2 and not canmove F3 and not canmove F4";
 			expActiv="[] exec ""front_done.sqs""";
 			class Effects
@@ -6793,6 +6800,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="HELP FROM THE FOREST";
 			expActiv="[] exec ""deeper_close.sqs""";
 			class Effects
 			{
@@ -6807,6 +6815,7 @@ class Mission
 			activationBy="WEST";
 			type="SWITCH";
 			age="UNKNOWN";
+			text="FORTIFICATIONS SEIZED";
 			expCond="{alive _x} count thislist <= 2";
 			expActiv="[] exec ""deeper.sqs""";
 			class Effects
@@ -6838,6 +6847,7 @@ class Mission
 			activationBy="WEST";
 			type="SWITCH";
 			age="UNKNOWN";
+			text="BASE TAKEN";
 			expCond="{alive _x} count thislist <= 5";
 			expActiv="[] exec ""base.sqs""";
 			class Effects
@@ -6868,6 +6878,7 @@ class Mission
 			activationBy="MEMBER";
 			age="UNKNOWN";
 			idVehicle=416;
+			text="REINFORCEMENTS ARE COMING";
 			expActiv="[] exec ""reinforcements_coming.sqs""";
 			class Effects
 			{
@@ -6880,6 +6891,7 @@ class Mission
 			b=0.000000;
 			type="SWITCH";
 			age="UNKNOWN";
+			text="REINFORCEMENTS REPELLED";
 			expCond="not canmove T1 and not canmove T2 and not canmove T3 and not canmove T4 and not canmove T5 and not canmove T6";
 			expActiv="[] exec ""reinforcements.sqs""";
 			class Effects
@@ -6897,6 +6909,7 @@ class Mission
 			activationBy="MEMBER";
 			age="UNKNOWN";
 			idVehicle=416;
+			text="REINFORCEMENTS ARE CLOSE";
 			expActiv="[] exec ""reinforcements_crossroads.sqs""";
 			class Effects
 			{
@@ -6912,6 +6925,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="CHECKPOINT CLEARED";
 			expActiv="[] exec ""checkpoint.sqs""";
 			class Effects
 			{
@@ -6956,6 +6970,7 @@ class Mission
 			activationBy="WEST";
 			type="SWITCH";
 			age="UNKNOWN";
+			text="LAST BASE TAKEN";
 			expCond="{alive _x} count thislist <= 3 and not canmove H1 and not canmove H2 and not canmove H3 and not canmove H4";
 			expActiv="[] exec ""base2.sqs""";
 			class Effects
@@ -6971,6 +6986,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="VICTORY";
 			expCond="this and raiseFlag";
 			expActiv="[] exec ""outro.sqs""";
 			class Effects

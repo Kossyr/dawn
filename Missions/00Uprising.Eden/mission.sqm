@@ -2903,6 +2903,7 @@ class Mission
 			activationBy="MEMBER";
 			age="UNKNOWN";
 			idVehicle=6;
+			text="WE ARRIVED BOYS";
 			expActiv="[] exec ""trucks_here.sqs""";
 			class Effects
 			{
@@ -2932,6 +2933,7 @@ class Mission
 			activationBy="WEST";
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
+			text="WE ARE HERE AND WEST IS GONE";
 			expCond="this and trucksHere";
 			expActiv="[] exec ""trucks_done.sqs""";
 			class Effects
@@ -2944,6 +2946,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="POINCARE WENT BACK FOR THE CAR";
 			expCond="trucksDone and (aP in uazg)";
 			expActiv="[] exec ""chotain_info.sqs""";
 			class Effects
@@ -2987,6 +2990,7 @@ class Mission
 			activationBy="LEADER";
 			age="UNKNOWN";
 			idVehicle=6;
+			text="WE ARE IN ENTRE DEUX";
 			expActiv="trucksHere=true";
 			class Effects
 			{
@@ -3041,6 +3045,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="CHOTAIN CHURCH CINEMATIC";
 			expActiv="[] exec ""chotain_church.sqs""";
 			class Effects
 			{
@@ -3054,6 +3059,7 @@ class Mission
 			activationBy="WEST";
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
+			text="CHOTAIN CALVET CINEMATIC";
 			expCond="this and not churchBurned";
 			expActiv="[] exec ""chotain_done.sqs""";
 			class Effects
@@ -3092,6 +3098,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="FUEL EM UP";
 			expCond="astierChurchGo2 and (aP in uazg) and (Astier in ammo1)";
 			expActiv="ammo2 setfuel 1; ammo3 setfuel 1";
 			class Effects
@@ -3120,6 +3127,7 @@ class Mission
 			activationBy="LEADER";
 			age="UNKNOWN";
 			idVehicle=6;
+			text="FARMSTEAD CINEMATIC";
 			expActiv="[] exec ""farmstead.sqs""";
 			class Effects
 			{
@@ -3160,6 +3168,7 @@ class Mission
 			activationBy="LEADER";
 			age="UNKNOWN";
 			idVehicle=78;
+			text="RAVEN SEES CONVOY";
 			expActiv="[] exec ""convoy_raven.sqs""";
 			class Effects
 			{
@@ -3174,6 +3183,7 @@ class Mission
 			activationBy="LEADER";
 			age="UNKNOWN";
 			idVehicle=78;
+			text="CONVOY IS CLOSE";
 			expActiv="[] exec ""convoy_close.sqs""";
 			class Effects
 			{
@@ -3214,6 +3224,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=78;
+			text="CONVOY AMBUSH GO";
 			expActiv="[] exec ""convoy_ambush.sqs""";
 			class Effects
 			{
@@ -3268,6 +3279,7 @@ class Mission
 			activationBy="LEADER";
 			age="UNKNOWN";
 			idVehicle=6;
+			text="WE ARRIVED TO THE RENDEZ VOUS";
 			expActiv="[] exec ""farmstead_info.sqs""";
 			class Effects
 			{
@@ -3374,6 +3386,7 @@ class Mission
 			b=250.000000;
 			activationBy="WEST";
 			age="UNKNOWN";
+			text="CLEAR THE AREA OF ANY STRAGGLERS";
 			expCond="trucksClear";
 			expActiv="""_x setdammage 1"" foreach thislist";
 			class Effects
@@ -3387,6 +3400,7 @@ class Mission
 			b=350.000000;
 			activationBy="WEST";
 			age="UNKNOWN";
+			text="CLEAR THE AREA OF ANY STRAGGLERS";
 			expCond="chotainClear";
 			expActiv="""_x setdammage 1"" foreach thislist";
 			class Effects
@@ -3425,6 +3439,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="POINCARE DESTROYED ANY OV THE VEHICLES";
 			expCond="(not canmove ammo1 or not canmove ammo2 or not canmove ammo3 or not canmove uazg) and not carClear";
 			expActiv="[] exec ""outro3.sqs""";
 			class Effects

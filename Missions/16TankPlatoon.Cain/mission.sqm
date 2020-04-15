@@ -1190,6 +1190,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="KUKUSHKIN JOINS THE TANK CREW";
 			expActiv="aP exec ""tank_crews.sqs""";
 			class Effects
 			{
@@ -1217,6 +1218,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			idVehicle=22;
+			text="TANKS COMING FROM THE SOUTH";
 			expActiv="[] exec ""tanks_south.sqs""";
 			class Effects
 			{
@@ -1236,6 +1238,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			idVehicle=22;
+			text="WE ARRIVED AT THE BASE - SEND IN THE NORTHERN TANKS";
 			expActiv="[] exec ""tanks_north.sqs""";
 			class Effects
 			{
@@ -1249,6 +1252,7 @@ class Mission
 			b=0.000000;
 			type="SWITCH";
 			age="UNKNOWN";
+			text="NORTHERN TANKS DESTROYED";
 			expCond="not canmove utok1 and not canmove utok2 and not canmove utok3";
 			expActiv="aP exec ""outro.sqs""";
 			class Effects
@@ -1263,6 +1267,7 @@ class Mission
 			b=0.000000;
 			type="SWITCH";
 			age="UNKNOWN";
+			text="SOUTHERN TANKS DESTROYED";
 			expCond="not canmove enemy1 and not canmove enemy2 and not canmove enemy3 and not canmove enemy4";
 			expActiv="[] exec ""tanks_south_done.sqs""";
 			class Effects

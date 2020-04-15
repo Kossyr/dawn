@@ -1289,6 +1289,7 @@ class Mission
 			activationBy="MEMBER";
 			age="UNKNOWN";
 			idVehicle=15;
+			text="SQUADRON CINEMATIC";
 			expActiv="[] exec ""squadron.sqs""";
 			class Effects
 			{
@@ -1304,6 +1305,7 @@ class Mission
 			activationType="EAST D";
 			age="UNKNOWN";
 			idVehicle=17;
+			text="CONVOY SIGHTED";
 			expActiv="[] exec ""convoy_attack.sqs""";
 			class Effects
 			{
@@ -1315,6 +1317,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="CONVOY DESTROYED";
 			expCond="not canmove C1 and not canmove C2 and not canmove C4";
 			expActiv="[] exec ""convoy_done.sqs""";
 			class Effects
@@ -1327,6 +1330,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="BASE SECURED";
 			expCond="not canmove B1 and not canmove B2 and not canmove B3 and not canmove B4";
 			expActiv="[] exec ""base.sqs""";
 			class Effects
@@ -1342,6 +1346,7 @@ class Mission
 			activationBy="MEMBER";
 			age="UNKNOWN";
 			idVehicle=6;
+			text="VICTORY";
 			expCond="this and canEnd and (vehicle aP==aP) and alive aP";
 			expActiv="[] exec ""outro.sqs""";
 			class Effects

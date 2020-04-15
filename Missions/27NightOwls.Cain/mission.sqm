@@ -3935,6 +3935,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="IVAN BMP IS OUT";
 			expCond="not canmove ivanBMP";
 			expActiv="[] exec ""ivan_bmp.sqs""";
 			class Effects
@@ -3947,7 +3948,8 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="count units ivan == 0 and not canmove bmp";
+			text="IVAN IS OUT";
+			expCond="{alive _x} count units ivan == 0 and not canmove bmp";
 			expActiv="[] exec ""ivan_dead.sqs""";
 			class Effects
 			{
@@ -3959,6 +3961,7 @@ class Mission
 			activationBy="WEST";
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
+			text="CROSSROADS CLEARED";
 			expActiv="[] exec ""crossroads.sqs""";
 			class Effects
 			{
@@ -3974,6 +3977,7 @@ class Mission
 			activationBy="LEADER";
 			age="UNKNOWN";
 			idVehicle=6;
+			text="IVAN INFANTRY READY";
 			expCond="this and crossroadsDone";
 			expActiv="ivanInfReady=true";
 			class Effects
@@ -3990,6 +3994,7 @@ class Mission
 			activationBy="MEMBER";
 			age="UNKNOWN";
 			idVehicle=5;
+			text="IVAN BMP READY";
 			expCond="this and crossroadsDone";
 			expActiv="ivanBmpReady=true";
 			class Effects
@@ -4002,6 +4007,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="IVAN READY";
 			expCond="ivanInfReady and ivanBmpReady";
 			expActiv="[] exec ""ivan_camp_ready.sqs""";
 			class Effects
@@ -4016,6 +4022,7 @@ class Mission
 			rectangular=1;
 			activationBy="WEST";
 			age="UNKNOWN";
+			text="CAMP CLEARED";
 			expCond="{alive _x} count thislist <= 2";
 			expActiv="[] exec ""camp.sqs""; ""_x setdammage 1"" foreach thislist";
 			class Effects
@@ -4031,6 +4038,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="DEFEND THE CAMP";
 			class Effects
 			{
 			};
@@ -4043,6 +4051,7 @@ class Mission
 			b=0.000000;
 			type="SWITCH";
 			age="UNKNOWN";
+			text="AA DESTROYED";
 			expCond="not canmove AA";
 			expActiv="[] exec ""aa.sqs""";
 			class Effects
@@ -4057,6 +4066,7 @@ class Mission
 			b=120.000000;
 			activationBy="WEST";
 			age="UNKNOWN";
+			text="MOUNTAIN TOP SEIZED";
 			expCond="{alive _x} count thislist <= 2";
 			expActiv="mountainTopDone=true";
 			class Effects
@@ -4069,6 +4079,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="MOUNTAIN TOP DONE - VICTORY";
 			expCond="aaDone and mountainTopDone and airborneDone";
 			expActiv="[] exec ""outro.sqs""";
 			class Effects
@@ -4096,6 +4107,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=148;
+			text="PARATROOPERS";
 			expActiv="[heli2_off, heli2, 0.5] exec ""eject.sqs""; airborne2=true";
 			class Effects
 			{
@@ -4110,6 +4122,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=147;
+			text="PARATROOPERS";
 			expActiv="[heli1_off, heli1, 0.5] exec ""eject.sqs""; airborne3=true";
 			class Effects
 			{
@@ -4124,6 +4137,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=151;
+			text="PARATROOPERS";
 			expActiv="[heli3_off, heli3, 0.5] exec ""eject.sqs""; airborne1=true";
 			class Effects
 			{
@@ -4138,6 +4152,7 @@ class Mission
 			timeoutMid=90.000000;
 			timeoutMax=120.000000;
 			age="UNKNOWN";
+			text="PARATROOPERS ARE IN";
 			expCond="airborne1 and airborne2 and airborne3";
 			expActiv="airborneDone=true";
 			class Effects
@@ -4218,11 +4233,13 @@ class Mission
 		};
 		class Item25
 		{
-			position[]={5733.407715,433.914856,5954.436035};
-			b=30.000000;
+			position[]={5741.195801,433.572540,5953.288086};
+			b=70.000000;
 			activationBy="EAST";
+			activationType="WEST D";
 			type="SWITCH";
 			age="UNKNOWN";
+			text="FLARE";
 			class Effects
 			{
 			};
@@ -4245,12 +4262,15 @@ class Mission
 		};
 		class Item27
 		{
-			position[]={5609.492676,444.430420,5909.437012};
+			position[]={5634.101563,437.437469,5891.649414};
 			a=70.000000;
+			b=80.000000;
 			angle=170.000000;
 			activationBy="EAST";
+			activationType="WEST D";
 			type="SWITCH";
 			age="UNKNOWN";
+			text="FLARE";
 			class Effects
 			{
 			};
@@ -4258,12 +4278,15 @@ class Mission
 		};
 		class Item28
 		{
-			position[]={5475.489746,451.046051,5882.960938};
+			position[]={5477.046875,448.885590,5857.701660};
 			a=100.000000;
+			b=85.000000;
 			angle=170.000000;
 			activationBy="EAST";
+			activationType="WEST D";
 			type="SWITCH";
 			age="UNKNOWN";
+			text="FLARE";
 			class Effects
 			{
 			};
@@ -4278,6 +4301,7 @@ class Mission
 			activationType="WEST D";
 			type="SWITCH";
 			age="UNKNOWN";
+			text="FLARE";
 			class Effects
 			{
 			};

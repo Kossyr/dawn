@@ -1189,7 +1189,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=8;
+		items=6;
 		class Item0
 		{
 			position[]={11451.690430,106.995613,10644.983398};
@@ -1241,25 +1241,6 @@ class Mission
 			type="Flag1";
 			colorName="ColorBlack";
 		};
-		class Item6
-		{
-			position[]={6178.938477,33.299782,8017.554688};
-			name="WesternFront";
-			text="@STRM_MARKER_WESTERN_FRONT";
-			type="Flag1";
-			colorName="ColorGreen";
-		};
-		class Item7
-		{
-			position[]={6129.830078,36.269997,7945.573730};
-			name="WesternForts";
-			markerType="RECTANGLE";
-			type="Flag";
-			colorName="ColorGreen";
-			a=40.000000;
-			b=20.000000;
-			angle=65.000000;
-		};
 	};
 	class Sensors
 	{
@@ -1296,6 +1277,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="TANKS DESTROYED - GO HOME";
 			expCond="not canmove T1 and not canmove T2";
 			expActiv="[] exec ""tanks.sqs""";
 			class Effects
@@ -1323,6 +1305,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=25;
+			text="VICTORY";
 			expCond="this and canEnd";
 			expActiv="[] exec ""outro.sqs""";
 			class Effects

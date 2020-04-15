@@ -7187,6 +7187,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=244;
+			text="PARATROOPERS";
 			expActiv="[off1, heli1, 0.5] exec ""eject.sqs""";
 			class Effects
 			{
@@ -7201,6 +7202,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=245;
+			text="PARATROOPERS";
 			expActiv="[off2, heli2, 0.5] exec ""eject.sqs""";
 			class Effects
 			{
@@ -7228,6 +7230,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=22;
+			text="RASHIV ARRIVED";
 			expActiv="[] exec ""centralfront.sqs""";
 			class Effects
 			{
@@ -7243,7 +7246,7 @@ class Mission
 			timeoutMax=180.000000;
 			interruptable=1;
 			age="UNKNOWN";
-			text="TIMEOUT FOR SECOND";
+			text="TIMEOUT FOR SECOND WAVE";
 			expCond="first";
 			expActiv="[] exec ""centralfront2.sqs""";
 			class Effects
@@ -7259,6 +7262,7 @@ class Mission
 			rectangular=1;
 			activationBy="WEST";
 			age="UNKNOWN";
+			text="FIRST WAVE REPELLED";
 			expCond="{alive _x} count thislist <= 2 and not canmove T1 and not canmove T2";
 			expActiv="[] exec ""centralfront2.sqs""";
 			class Effects
@@ -7274,6 +7278,7 @@ class Mission
 			rectangular=1;
 			activationBy="WEST";
 			age="UNKNOWN";
+			text="SECOND WAVE REPELLED";
 			expCond="{alive _x} count thislist <= 4 and not canmove T3 and not canmove T4 and not canmove T5 and not canmove T6";
 			expActiv="[] exec ""centralfront3.sqs""; ""_x setdammage 1"" foreach thislist";
 			class Effects
@@ -7314,6 +7319,7 @@ class Mission
 			rectangular=1;
 			activationBy="WEST";
 			age="UNKNOWN";
+			text="FINAL BREAKTHROUGH - VICTORY";
 			expCond="{alive _x} count thislist <= 3";
 			expActiv="[] exec ""outro.sqs""; ""_x setdammage 1"" foreach thislist";
 			class Effects
@@ -7329,6 +7335,7 @@ class Mission
 			activationBy="EAST";
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
+			text="EAST NOT HERE - OVER";
 			expCond="this and not final and alive aP";
 			expActiv="[] exec ""outro2.sqs""";
 			class Effects
@@ -7344,6 +7351,7 @@ class Mission
 			activationBy="EAST";
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
+			text="EAST NOT PRESENT - OVER";
 			expCond="this and final and alive aP";
 			expActiv="[] exec ""outro3.sqs""";
 			class Effects
@@ -7455,6 +7463,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=22;
+			text="RASHIV GO THERE - SEND IN THE TANKS";
 			expCond="this and final";
 			expActiv="[] exec ""tanks.sqs""";
 			class Effects

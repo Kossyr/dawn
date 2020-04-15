@@ -591,6 +591,7 @@ class Mission
 				class Item0
 				{
 					position[]={6616.034668,256.764374,7415.170410};
+					type="HOLD";
 					speed="LIMITED";
 					combat="AWARE";
 					synchronizations[]={6};
@@ -651,6 +652,7 @@ class Mission
 				{
 					position[]={6773.032715,283.108917,7423.979492};
 					id=56;
+					type="HOLD";
 					synchronizations[]={11};
 					class Effects
 					{
@@ -695,6 +697,7 @@ class Mission
 				{
 					position[]={6767.267578,281.569641,7425.549805};
 					id=57;
+					type="HOLD";
 					synchronizations[]={5};
 					class Effects
 					{
@@ -756,6 +759,7 @@ class Mission
 				{
 					position[]={6779.687012,286.007690,7420.382324};
 					id=58;
+					type="HOLD";
 					synchronizations[]={4};
 					class Effects
 					{
@@ -941,6 +945,7 @@ class Mission
 				{
 					position[]={6770.006836,280.820984,7430.784668};
 					id=68;
+					type="HOLD";
 					synchronizations[]={7};
 					class Effects
 					{
@@ -1001,6 +1006,7 @@ class Mission
 				{
 					position[]={6493.919922,171.611679,7596.508789};
 					id=70;
+					type="HOLD";
 					synchronizations[]={10};
 					class Effects
 					{
@@ -1045,6 +1051,8 @@ class Mission
 				{
 					position[]={6483.920898,170.406616,7600.948730};
 					id=71;
+					type="HOLD";
+					synchronizations[]={14};
 					class Effects
 					{
 					};
@@ -3173,6 +3181,7 @@ class Mission
 				class Item0
 				{
 					position[]={6432.968750,165.007721,7615.539551};
+					type="HOLD";
 					synchronizations[]={13};
 					class Effects
 					{
@@ -3227,7 +3236,7 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					position[]={6765.000977,168.532242,7738.943359};
@@ -3258,6 +3267,16 @@ class Mission
 				{
 					position[]={6727.228027,165.209930,7741.342773};
 					type="CYCLE";
+					synchronizations[]={15};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item4
+				{
+					position[]={6505.627441,184.683090,7559.878418};
+					type="SAD";
 					class Effects
 					{
 					};
@@ -4845,6 +4864,7 @@ class Mission
 			b=0.000000;
 			type="SWITCH";
 			age="UNKNOWN";
+			text="EVERYONE ONBOARD - LET'S GO";
 			expCond="getin1 and getin2";
 			expActiv="[] exec ""talking.sqs""";
 			class Effects
@@ -4858,6 +4878,7 @@ class Mission
 			activationBy="LEADER";
 			age="UNKNOWN";
 			idVehicle=21;
+			text="CONVOY ARRIVED ON POSITION";
 			expActiv="[] exec ""arrival.sqs""";
 			class Effects
 			{
@@ -4870,7 +4891,9 @@ class Mission
 			b=100.000000;
 			activationBy="EAST";
 			activationType="WEST D";
+			type="SWITCH";
 			age="UNKNOWN";
+			text="FLAME OFF WHEN ENEMY DETECTED";
 			expActiv="fire1 inflame false";
 			class Effects
 			{
@@ -4884,12 +4907,14 @@ class Mission
 			b=200.000000;
 			activationBy="EAST";
 			activationType="WEST D";
+			type="SWITCH";
 			age="UNKNOWN";
+			text="FLAME OFF WHEN ENEMY DETECTED";
 			expActiv="fire2 inflame false";
 			class Effects
 			{
 			};
-			synchronizations[]={10,13};
+			synchronizations[]={10,13,14,15};
 		};
 		class Item7
 		{
@@ -4899,6 +4924,7 @@ class Mission
 			activationBy="LEADER";
 			age="UNKNOWN";
 			idVehicle=27;
+			text="SCOUT THE BASE";
 			expActiv="[] exec ""scout.sqs""";
 			class Effects
 			{
@@ -4911,6 +4937,7 @@ class Mission
 			activationBy="LEADER";
 			age="UNKNOWN";
 			idVehicle=27;
+			text="WE REACHED THE FOREST";
 			expActiv="[] exec ""forest.sqs""";
 			class Effects
 			{
@@ -4924,6 +4951,7 @@ class Mission
 			activationBy="LEADER";
 			age="UNKNOWN";
 			idVehicle=36;
+			text="KONSTANTIN SCOUTING";
 			expActiv="[] exec ""konstantin.sqs""";
 			class Effects
 			{
@@ -4962,6 +4990,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="RASHIV FOUND M21 SNIPER RIFLE";
 			expCond="aP hasweapon ""M21""";
 			expActiv="[] exec ""m21.sqs""";
 			class Effects
@@ -5634,7 +5663,6 @@ class Intro
 		class Item15
 		{
 			position[]={9591.931641,128.474991,10010.745117};
-			azimut=355.000000;
 			id=16;
 			side="EMPTY";
 			vehicle="FlagCarrier";
