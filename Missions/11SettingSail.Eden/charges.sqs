@@ -15,6 +15,10 @@ AstierCharges action ["TOUCHOFF"]
 
 ~1
 aP removeEventHandler ["Fired", rebelFireCheck]
+
+~1
+T1 setdammage 1
+~0.5
 "11" objstatus "done"
 aP addrating 1000
 aP setcaptive false
@@ -33,9 +37,13 @@ deletevehicle officer
 deletevehicle Calverra
 deletevehicle gate_keeper
 
-~1
-T1 setdammage 1
-~1
+
+BeachFire1 inflame false
+BeachFire2 inflame false
+BeachFire3 inflame false
+BeachFire4 inflame false
+
+~0.5
 T2 setdammage 1
 ~1
 T3 setdammage 1
