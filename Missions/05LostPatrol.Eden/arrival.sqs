@@ -1,15 +1,35 @@
+borisUral setdammage 1
+[[0,-0.5,0.5],0.5,360,borisUral] exec "fireEffect.sqs" 
 
+~3
+
+setacctime 1
+
+auto sideradio "05r01"
+~2
+"1" objstatus "done"
+aP addrating 1000
+
+auto lock false
+
+~15
 
 savegame
 
 ~1
 
-setacctime 1
+goForest=true
+auto setcaptive true
 
-leader anton groupradio "05r01"
+~1.5
 
-"1" objstatus "DONE"
-aP addrating 1000
+leader player groupradio "05r02"
 
+~10
+
+cargo1 setpos [0,0,0]
+cargo2 setpos [0,0,0]
+deletevehicle cargo1
+deletevehicle cargo2
 
 exit

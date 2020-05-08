@@ -2,14 +2,30 @@
 "4" objstatus "done"
 aP addrating 1000
 
+~3
+
+setacctime "1"
+
+? borisRescured : baza sideradio "05r11"
+? not borisRescued : baza sideradio "05r12"
+
+~1
+
+enableradio false
+
+
+~7
+
+
 titletext [ localize "STRC_END_SUCCESS","plain"]
 
-~5
+~8
 
 titlecut["","black out",4]
 
 ~5
 
-end=true
+? borisRescured : end=true
+? not borisRescued : end2=true
 
 exit
