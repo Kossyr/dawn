@@ -4,14 +4,16 @@ playmusic "Track6"
 
 baza = [East,"HQ"]
 
-0 fademusic 0
-15 fademusic 0.5
 "3" objstatus "hidden"
-"4" objstatus "hidden"
 
 ClearWeaponCargo auto
 ClearMagazineCargo auto
 
-jedeme=false
+
+transportCome=false
+borisRescued=false
+goForest=false
+
+"_x stop true" foreach units boris
 
 exit
