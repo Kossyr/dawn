@@ -1,0 +1,21 @@
+tanksGo=true
+
+~10
+
+setacctime 1
+
+Lemontov groupradio "14r02"
+
+
+~10
+
+group player setcombatmode "green"
+group player setbehaviour "stealth"
+
+reinforcements setcombatmode "green"
+reinforcements setbehaviour "stealth"
+
+"_x setunitpos ""down""" foreach units group player
+"_x setunitpos ""down""" foreach units reinforcements
+
+exit

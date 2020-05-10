@@ -1,51 +1,112 @@
-titlecut ["","black in",10000]
+titlecut["","black in",3]
 
-0 fadeMusic 0.5
 playMusic "Track6"
 
 setacctime 1
 
+0 fadesound 0
+
+6 fadesound 1
+
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
-~5
-titlecut ["","black in",3]
-;=== 17:30:24
-_camera camSetTarget [104550.93,18914.73,12.33]
-_camera camSetPos [5801.23,3150.95,1.72]
+
+leave=false
+
+;=== 17:19:06
+_camera camSetTarget [14562.00,-96392.50,3375.59]
+_camera camSetPos [5797.19,3166.13,5.89]
 _camera camSetFOV 0.700
 _camera camCommit 0
+@camCommitted _camera
+~6
+;=== 17:19:16
+_camera camSetTarget [-63734.02,-66054.01,-19319.36]
+_camera camSetPos [5797.19,3166.13,5.89]
+_camera camSetFOV 0.700
+_camera camCommit 5
 @camCommitted _camera
 ~2
-;=== 17:30:52
-_camera camSetTarget [104151.37,-14939.09,12.43]
-_camera camSetPos [5801.23,3150.95,2.79]
-_camera camSetFOV 0.700
-_camera camCommit 11
-@camCommitted _camera
-~2
-;=== 17:32:00
-_camera camSetTarget tank
-_camera camSetPos [5807.97,3153.76,1.35]
+;=== 17:19:31
+_camera camSetTarget [97297.60,42521.13,-8238.46]
+_camera camSetPos [5753.73,3130.02,4.54]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-jedeme=true
-~10
-;=== 17:32:37
-_camera camSetTarget tank
-_camera camSetPos [5868.58,3138.57,9.70]
+;=== 17:19:39
+_camera camSetTarget [94514.22,48456.12,-8238.55]
+_camera camSetPos [5764.49,3125.73,6.83]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+;=== 17:24:48
+_camera camSetTarget [-92193.43,-16173.87,-4113.92]
+_camera camSetPos [5834.69,3150.79,1.25]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-;=== 17:32:45
-_camera camSetTarget tank
-_camera camSetPos [5868.58,3138.57,16.40]
+~6
+;=== 17:30:30
+_camera camSetTarget [101949.76,-24358.98,-263.50]
+_camera camSetPos [5809.91,3155.65,1.22]
 _camera camSetFOV 0.700
-_camera camCommit 20
-~18
-2 fademusic 0
-titlecut ["","black out",2]
+_camera camCommit 0
 @camCommitted _camera
+;=== 17:30:46
+_camera camSetTarget [58849.79,87929.27,-263.12]
+_camera camSetPos [5811.55,3153.87,1.39]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+Pointer dowatch [5824.81,3173.43,1.45]
+~1.5
+;=== 17:35:42
+_camera camSetTarget [-30172.47,-89522.73,-10457.54]
+_camera camSetPos [5823.17,3184.31,1.03]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Pointer switchmove "FxShow3"
+~1
+loadThemUp=true
+"_x stop false" foreach units group embarking
+;=== 17:31:21
+_camera camSetTarget [31953.17,-92381.96,-13519.73]
+_camera camSetPos [5821.61,3188.72,3.27]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+Pointer domove getmarkerpos "away"
+;=== 17:25:19
+_camera camSetTarget [98711.10,-29355.16,-17530.57]
+_camera camSetPos [5789.59,3165.53,5.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 17:25:31
+_camera camSetTarget [103757.73,-12811.94,-12132.07]
+_camera camSetPos [5793.04,3158.73,5.74]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+;=== 17:28:12
+_camera camSetTarget [86955.29,61059.60,7940.09]
+_camera camSetPos [5821.69,3141.46,1.26]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+@leave
+;=== 17:28:39
+_camera camSetTarget [100486.41,33961.40,-9394.00]
+_camera camSetPos [5821.69,3141.46,16.65]
+_camera camSetFOV 0.700
+_camera camCommit 16
+~13
+titlecut["","black out",3]
+3 fademusic 0
+@camCommitted _camera
+
+
 end=true
 
 player cameraEffect ["terminate","back"]
