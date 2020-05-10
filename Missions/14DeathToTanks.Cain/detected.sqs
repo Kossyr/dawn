@@ -1,0 +1,28 @@
+setacctime 1
+
+"3" objstatus "failed"
+aP addrating -500
+
+Lemontov groupradio "14r06"
+
+ambushStart=true
+
+
+group player setcombatMode "Red"
+group player setbehaviour "combat"
+
+reinforcements setcombatMode "Red"
+reinforcements setbehaviour "combat"
+
+
+"_x setunitpos ""auto""" foreach units group player
+"_x setunitpos ""auto""" foreach units reinforcements
+
+[TRUCK] join grpnull
+TRUCK setfuel 0
+
+~2
+
+[leader amInfantry, TRUCK, 1] exec "eject.sqs"
+
+exit

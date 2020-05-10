@@ -1,6 +1,55 @@
 titlecut ["","black in",3]
 
 baza = [East,"HQ"]
-utok=false
+
+Kaplinsky stop true
+"_x stop true" foreach units reinforcements
+
+"_x assignascargo transportUaz" foreach units group player
+"_x assignascargo transportUral" foreach units reinforcements
+
+
+Crate addweaponcargo ["RPGLauncher",1]
+Crate addmagazinecargo ["RPGLauncher",5]
+
+enableradio false
+
+ambushStart=false
+boardUaz=false
+boardUral=false
+minesDone=false
+retreat1=false
+retreat2=false
+retreat3=false
+ambushPosition=false
+
+Lemontov dowatch [7417.54,4792.34,1.48]
+Shaposhnikov dowatch [7420.86,4790.64,1.48]
+Kaplinsky dowatch [7420.86,4790.64,1.48]
+
+
+~1.5
+
+Kaplinsky say "14v01"
+~5
+Lemontov say "14v02"
+~1
+Lemontov dowatch [7420.51,4792.57,1.48]
+~4
+Shaposhnikov say "14v03"
+~1
+Shaposhnikov dowatch objnull
+shaposhnikovGo=true
+~1.5
+Lemontov dowatch [7415.40,4789.79,1.30]
+~0.5
+Lemontov say "14v04"
+~0.3
+transportGo=true
+Kaplinsky stop false
+"_x stop false" foreach units reinforcements
+
+Kaplinsky dowatch objnull
+Lemontov dowatch objnull
 
 exit

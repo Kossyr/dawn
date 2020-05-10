@@ -1,0 +1,27 @@
+~2
+
+setacctime 1
+
+Lemontov groupradio "14r04"
+
+
+group player setcombatMode "Red"
+group player setbehaviour "combat"
+
+reinforcements setcombatMode "Red"
+reinforcements setbehaviour "combat"
+
+
+"_x setunitpos ""auto""" foreach units group player
+"_x setunitpos ""auto""" foreach units reinforcements
+
+TRUCK setfuel 0
+[TRUCK] join grpnull
+
+ambushStart=true
+
+~2
+
+[leader amInfantry, TRUCK, 1] exec "eject.sqs"
+
+exit
