@@ -1,0 +1,36 @@
+setacctime 1
+
+"4" objstatus "done"
+aP addrating 1000
+
+Lemontov sideradio "04r12"
+
+clearArea=true
+
+~3
+
+[Kaplinsky, S1, S2, S3] join grpnull
+
+? alive Kaplinsky : Kaplinsky domove getmarkerpos "hide"
+? alive S1 : S1 domove getmarkerpos "hide"
+? alive S2 : S2 domove getmarkerpos "hide"
+? alive S3 : S3 domove getmarkerpos "hide"
+
+group player setcombatmode "BLUE"
+yelena setcombatmode "BLUE"
+
+toOutlook=true
+
+~5
+
+savegame
+
+~20
+
+? alive Kaplinsky : deletevehicle Kaplinsky
+? alive S1 : deletevehicle S1
+? alive S2 : deletevehicle S2
+? alive S3 : deletevehicle S3
+
+
+exit

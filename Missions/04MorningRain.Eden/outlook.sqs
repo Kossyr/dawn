@@ -1,0 +1,86 @@
+setacctime 1
+
+Lemontov setcaptive true
+
+group player setbehaviour "stealth"
+"_x setunitpos ""down""" foreach units group player
+
+"_x stop false" foreach units specops
+Grenadier1 stop false
+Grenadier2 stop false
+Grenadier3 stop false
+Grenadier4 stop false
+"_x setpos getmarkerpos ""specops""" foreach units specops
+Grenadier1 setpos getmarkerpos "Grenadier1"
+Grenadier2 setpos getmarkerpos "Grenadier2"
+Grenadier3 setpos getmarkerpos "Grenadier3"
+Grenadier4 setpos getmarkerpos "Grenadier4"
+
+~1
+
+setacctime 1
+Lemontov groupradio "04r13"
+
+"6" objstatus "done"
+aP addrating 1000
+
+~10
+
+playmusic "RTrack5"
+
+setacctime 1
+
+Lemontov sideradio "04r14"
+
+~5
+
+yelena setcombatmode "YELLOW"
+specops setcombatmode "YELLOW"
+group player setcombatmode "YELLOW"
+
+LamentinPhase1=true
+
+~1
+
+Spec1 action ["TOUCHOFF"]
+
+~2
+
+Spec2 action ["TOUCHOFF"]
+Spec3 action ["TOUCHOFF"]
+
+~3
+
+Spec4 action ["TOUCHOFF"]
+
+~5
+
+deletevehicle Spec1
+deletevehicle Spec2
+deletevehicle Spec3
+deletevehicle Spec4
+
+~15
+
+setacctime 1
+
+leader yelena sideradio "04r15"
+Lemontov sideradio "04r16"
+
+~4
+
+"8" objstatus "active"
+
+"_x stop false" foreach units patrol
+"_x setcaptive true" foreach units patrol
+Patrol1 setpos getmarkerpos "Patrol1"
+Patrol2 setpos getmarkerpos "Patrol2"
+Patrol3 setpos getmarkerpos "Patrol3"
+
+~1
+
+savegame
+
+exit
+
+
