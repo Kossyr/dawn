@@ -9,15 +9,19 @@ clearArea=true
 
 ~3
 
+group player setcombatmode "BLUE"
+yelena setcombatmode "BLUE"
+
+"_x setunitpos ""up""" foreach units group player
+
+~2
+
 [Kaplinsky, S1, S2, S3] join grpnull
 
 ? alive Kaplinsky : Kaplinsky domove getmarkerpos "hide"
 ? alive S1 : S1 domove getmarkerpos "hide"
 ? alive S2 : S2 domove getmarkerpos "hide"
 ? alive S3 : S3 domove getmarkerpos "hide"
-
-group player setcombatmode "BLUE"
-yelena setcombatmode "BLUE"
 
 toOutlook=true
 

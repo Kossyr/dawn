@@ -3,7 +3,8 @@ setacctime 1
 Lemontov setcaptive true
 
 group player setbehaviour "stealth"
-"_x setunitpos ""down""" foreach units group player
+
+LamentinReady=true
 
 "_x stop false" foreach units specops
 Grenadier1 stop false
@@ -11,6 +12,7 @@ Grenadier2 stop false
 Grenadier3 stop false
 Grenadier4 stop false
 "_x setpos getmarkerpos ""specops""" foreach units specops
+"_x setpos getmarkerpos ""yelena_lamentin""" foreach units yelena
 Grenadier1 setpos getmarkerpos "Grenadier1"
 Grenadier2 setpos getmarkerpos "Grenadier2"
 Grenadier3 setpos getmarkerpos "Grenadier3"
@@ -24,15 +26,23 @@ Lemontov groupradio "04r13"
 "6" objstatus "done"
 aP addrating 1000
 
+~15
+
+"_x setunitpos ""down""" foreach units group player
+
 ~10
 
-playmusic "RTrack5"
 
 setacctime 1
 
 Lemontov sideradio "04r14"
 
 ~5
+
+enableradio false
+
+
+playmusic "RTrack5"
 
 yelena setcombatmode "YELLOW"
 specops setcombatmode "YELLOW"
@@ -60,7 +70,11 @@ deletevehicle Spec2
 deletevehicle Spec3
 deletevehicle Spec4
 
-~15
+~14
+
+enableradio true
+
+~1
 
 setacctime 1
 
