@@ -8,12 +8,28 @@ Lemontov sideradio "04r18"
 
 ~2
 
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 15:14:27
+_camera camSetTarget [-46290.42,93684.20,-3858.88]
+_camera camSetPos [1372.54,5860.65,4.09]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+;=== 15:14:55
+_camera camSetTarget [-54060.91,81982.03,-33558.11]
+_camera camSetPos [1372.54,5860.65,32.77]
+_camera camSetFOV 0.700
+_camera camCommit 12
 
 enableradio false
 
+~2
 titletext [ localize "STRC_END_SUCCESS","plain"]
-
-~7
+@camCommitted _camera
 
 titlecut ["","black out",2]
 

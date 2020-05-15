@@ -1,19 +1,56 @@
 titlecut ["","black in",3]
 
-playmusic "Track6"
-
 baza = [East,"HQ"]
 
+"2" objstatus "hidden"
 "3" objstatus "hidden"
+"4" objstatus "hidden"
+"5" objstatus "hidden"
 
 ClearWeaponCargo auto
 ClearMagazineCargo auto
 
+car lock true
 
 transportCome=false
 borisRescued=false
 goForest=false
+inLeMoule=false
+allAboard=false
+
+"Forest" setmarkertype "Empty"
 
 "_x stop true" foreach units boris
+
+playmusic "Track2"
+
+enableradio false
+
+~3
+
+3 fadesound 0.1
+3 fademusic 0.3
+
+~3
+
+setacctime 1
+
+Dostoevsky say "05v03"
+~5
+Dostoevsky say "05v04"
+~5
+Dostoevsky say "05v05"
+~5
+Dostoevsky say "05v06"
+~5
+Dostoevsky say "05v07"
+~5
+Dostoevsky say "05v08"
+~5
+Dostoevsky say "05v09"
+~5
+1 fademusic 0.8
+1 fadesound 1
+
 
 exit

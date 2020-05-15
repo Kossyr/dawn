@@ -23,11 +23,10 @@ class Mission
 		month=11;
 		day=4;
 		hour=6;
-		minute=50;
 	};
 	class Groups
 	{
-		items=49;
+		items=51;
 		class Item0
 		{
 			side="EAST";
@@ -45,7 +44,7 @@ class Mission
 					rank="MAJOR";
 					skill=1.000000;
 					text="Lemontov";
-					init="this setidentity ""Lemontov""; this setgroupid [""DELTA"",""groupcolor0""]; group this allowfleeing 0; removeallweapons this; this addweapon ""nvgoggles""; this addmagazine ""svddragunov""; this addmagazine ""svddragunov""; this addmagazine ""svddragunov""; this addmagazine ""svddragunov""; this addmagazine ""svddragunov""; this addmagazine ""svddragunov""; this addmagazine ""svddragunov""; this addmagazine ""svddragunov""; this addmagazine ""svddragunov""; this addmagazine ""svddragunov""; this addweapon ""svddragunov""; this addweapon ""binocular""";
+					init="this setidentity ""Lemontov""; this setgroupid [""DELTA"",""groupcolor0""]; group this allowfleeing 0; removeallweapons this; this addweapon ""nvgoggles""; this addmagazine ""svddragunov""; this addmagazine ""svddragunov""; this addmagazine ""svddragunov""; this addmagazine ""svddragunov""; this addmagazine ""svddragunov""; this addmagazine ""svddragunov""; this addmagazine ""svddragunov""; this addmagazine ""svddragunov""; this addmagazine ""svddragunov""; this addmagazine ""svddragunov""; this addweapon ""svddragunov""";
 				};
 				class Item1
 				{
@@ -65,7 +64,7 @@ class Mission
 				items=8;
 				class Item0
 				{
-					position[]={1487.797363,42.987709,5446.395508};
+					position[]={1484.495972,43.292347,5447.206543};
 					type="HOLD";
 					combatMode="BLUE";
 					speed="NORMAL";
@@ -230,7 +229,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1.000000;
 					text="ivanGroup";
-					init="ivan = group this; group this allowfleeing 0; this setgroupid [""kilo"",""groupcolor 0""]";
+					init="ivan = group this; group this allowfleeing 0; this setgroupid [""KILO"",""groupcolor0""]";
 				};
 				class Item1
 				{
@@ -2393,8 +2392,9 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={1449.270020,73.534615,5891.730957};
-					type="HOLD";
+					position[]={1627.633789,19.597221,5315.164551};
+					id=26;
+					type="DESTROY";
 					class Effects
 					{
 					};
@@ -2550,7 +2550,7 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={1341.065796,65.474998,5883.127441};
+					position[]={1347.916504,65.474998,5889.523926};
 					azimut=130.000000;
 					id=203;
 					side="WEST";
@@ -2561,7 +2561,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={1340.546021,65.474998,5885.676758};
+					position[]={1347.396729,65.474998,5892.073242};
 					azimut=130.000000;
 					id=204;
 					side="WEST";
@@ -2570,7 +2570,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={1338.878784,65.474998,5883.874512};
+					position[]={1345.729492,65.474998,5890.270996};
 					azimut=130.000000;
 					id=205;
 					side="WEST";
@@ -2583,7 +2583,7 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={1342.372437,65.474998,5881.598633};
+					position[]={1349.223145,65.474998,5887.995117};
 					type="HOLD";
 					combatMode="BLUE";
 					synchronizations[]={31};
@@ -2594,7 +2594,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={1348.960205,65.474998,5870.324219};
+					position[]={1349.416992,65.474998,5869.145508};
 					type="SENTRY";
 					combatMode="YELLOW";
 					class Effects
@@ -3307,6 +3307,46 @@ class Mission
 					{
 					};
 					showWP="NEVER";
+				};
+			};
+		};
+		class Item49
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2106.646484,51.294678,4983.953613};
+					azimut=280.000000;
+					id=242;
+					side="EAST";
+					vehicle="SoldierESaboteurPipe";
+					leader=1;
+					skill=1.000000;
+					text="LemontovCinema";
+					init="removeallweapons this; this addweapon ""svddragunov""; this setbehaviour ""safe""; this setidentity ""Lemontov""";
+				};
+			};
+		};
+		class Item50
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2106.357666,51.007675,4982.535645};
+					azimut=300.000000;
+					id=243;
+					side="EAST";
+					vehicle="SoldierEB";
+					leader=1;
+					skill=1.000000;
+					text="RashivCinema";
+					init="this setidentity ""Rashiv""; this setbehaviour ""Careless""";
 				};
 			};
 		};
@@ -4533,7 +4573,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=34;
+		items=38;
 		class Item0
 		{
 			position[]={4417.020996,33.196949,5874.707031};
@@ -4678,7 +4718,7 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={1516.112305,78.717613,5870.004395};
+			position[]={1505.664673,78.975098,5872.004883};
 			name="ourarrow_2";
 			type="Arrow";
 			colorName="ColorGreen";
@@ -4795,6 +4835,30 @@ class Mission
 		{
 			position[]={1588.296631,52.481045,5974.544434};
 			name="yelena_lamentin";
+			type="Empty";
+		};
+		class Item34
+		{
+			position[]={1484.483521,43.339001,5447.826172};
+			name="HarbourCinemaLemontov";
+			type="Empty";
+		};
+		class Item35
+		{
+			position[]={1485.377563,43.158550,5446.252441};
+			name="HarbourCinemaRashiv";
+			type="Empty";
+		};
+		class Item36
+		{
+			position[]={1523.850220,10.117724,5341.206543};
+			name="HarbourCinemaLemontovAway";
+			type="Empty";
+		};
+		class Item37
+		{
+			position[]={1529.901978,7.769431,5327.326172};
+			name="HarbourCinemaRashivAway";
 			type="Empty";
 		};
 	};
@@ -5173,7 +5237,7 @@ class Mission
 		};
 		class Item26
 		{
-			position[]={1374.806885,67.815926,5920.441406};
+			position[]={1383.270264,66.754173,5915.372070};
 			a=200.000000;
 			b=20.000000;
 			angle=120.000000;
