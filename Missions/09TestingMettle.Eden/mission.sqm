@@ -2972,7 +2972,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=21;
+		items=22;
 		class Item0
 		{
 			position[]={2590.860107,83.204994,5449.783691};
@@ -3273,9 +3273,19 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			text="PLAYE RLEFT FARM AND WEST TOOK IT";
+			text="PLAYER LEFT FARM AND WEST TOOK IT";
 			expCond="farmResistanceGone and farmWestPresent";
-			expActiv="[] exec ""outro2.sqs""";
+			expActiv="[] exec ""outro3.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item21
+		{
+			position[]={2957.903564,112.184898,5694.938477};
+			age="UNKNOWN";
+			expCond="true";
+			expActiv="aP exec ""invincibility.sqs""";
 			class Effects
 			{
 			};
