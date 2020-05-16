@@ -1,6 +1,6 @@
 setacctime 1
 
-"6" objstatus "done"
+"5" objstatus "done"
 aP addrating 1000
 
 ~0.5
@@ -14,10 +14,9 @@ titletext [ localize "STRC_END_SUCCESS","plain"]
 titlecut ["","black out",3]
 ~4
 
-? sideQuests==3 : end=true ; goto "ex"
-? sideQuests==2 : end2=true ; goto "ex"
-? sideQuests==1 : end3=true ; goto "ex"
-? sideQuests==0 : end4=true ; goto "ex"
+? sideQuests==2 : end=true ; goto "ex"
+? sideQuests==1 : end2=true ; goto "ex"
+? sideQuests==0 : end3=true ; goto "ex"
 
 #ex
 
