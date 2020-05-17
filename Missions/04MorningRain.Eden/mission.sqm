@@ -4837,19 +4837,19 @@ class Mission
 		};
 		class Item28
 		{
-			position[]={1553.916748,81.323021,5851.015137};
+			position[]={1578.124390,82.916733,5831.188965};
 			name="Patrol1";
 			type="Empty";
 		};
 		class Item29
 		{
-			position[]={1569.695557,80.446960,5857.544434};
+			position[]={1593.903198,82.778229,5837.718262};
 			name="Patrol2";
 			type="Empty";
 		};
 		class Item30
 		{
-			position[]={1543.838623,81.258324,5836.338867};
+			position[]={1568.046265,82.843239,5816.512695};
 			name="Patrol3";
 			type="Empty";
 		};
@@ -4900,7 +4900,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=40;
+		items=42;
 		class Item0
 		{
 			position[]={1479.761230,43.818382,5449.723633};
@@ -5273,7 +5273,7 @@ class Mission
 		};
 		class Item26
 		{
-			position[]={1383.270264,66.754173,5915.372070};
+			position[]={1367.804199,65.966331,5921.320313};
 			a=200.000000;
 			b=20.000000;
 			angle=120.000000;
@@ -5433,12 +5433,12 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			repeating=1;
-			timeoutMin=70.000000;
-			timeoutMid=80.000000;
-			timeoutMax=100.000000;
+			timeoutMin=20.000000;
+			timeoutMid=25.000000;
+			timeoutMax=30.000000;
 			age="UNKNOWN";
 			expCond="playerAway and alive aP";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="end2=true";
 			class Effects
 			{
 			};
@@ -5473,6 +5473,43 @@ class Mission
 			text="ACCESS TO LAMENTIN";
 			expCond="this and alive aP and not toLamentin ";
 			expActiv="[] exec ""outofbounds.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item40
+		{
+			position[]={1507.320068,79.644501,5865.359863};
+			a=80.000000;
+			b=60.000000;
+			angle=20.000000;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			repeating=1;
+			timeoutMin=4.000000;
+			timeoutMid=10.000000;
+			timeoutMax=20.000000;
+			age="UNKNOWN";
+			idVehicle=26;
+			expCond="this and LamentinPhase1 and alive aP and not toLamentin";
+			expActiv="[] exec ""outofbounds_rashiv_lemontov.sqs""; playerAway2=true";
+			expDesactiv="playerAway2=false";
+			class Effects
+			{
+			};
+		};
+		class Item41
+		{
+			position[]={814.455139,1.793269,5327.184570};
+			a=0.000000;
+			b=0.000000;
+			repeating=1;
+			timeoutMin=20.000000;
+			timeoutMid=25.000000;
+			timeoutMax=30.000000;
+			age="UNKNOWN";
+			expCond="playerAway2 and alive aP";
+			expActiv="end2=true";
 			class Effects
 			{
 			};
