@@ -55,11 +55,15 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=7;
+				items=8;
 				class Item0
 				{
 					position[]={9177.099609,92.294998,9454.237305};
 					type="HOLD";
+					combatMode="RED";
+					formation="LINE";
+					speed="NORMAL";
+					combat="AWARE";
 					synchronizations[]={0};
 					class Effects
 					{
@@ -86,7 +90,8 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={4285.614258,112.553116,7643.376465};
+					position[]={4183.895996,129.378357,7562.614258};
+					type="SAD";
 					synchronizations[]={3};
 					class Effects
 					{
@@ -95,9 +100,9 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={6039.534180,415.934967,6217.088867};
-					type="SAD";
-					synchronizations[]={1};
+					position[]={5359.329590,457.420715,6685.546387};
+					combatMode="BLUE";
+					synchronizations[]={7};
 					class Effects
 					{
 					};
@@ -105,14 +110,26 @@ class Mission
 				};
 				class Item5
 				{
-					position[]={9167.875000,92.294998,9465.295898};
-					type="GETOUT";
+					position[]={6039.534180,415.934967,6217.088867};
+					type="SAD";
+					combatMode="RED";
+					synchronizations[]={1};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 				};
 				class Item6
+				{
+					position[]={9167.875000,92.294998,9465.295898};
+					type="GETOUT";
+					combatMode="BLUE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item7
 				{
 					position[]={9215.610352,92.294998,9443.138672};
 					class Effects
@@ -1367,7 +1384,7 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={4,5};
+			synchronizations[]={4,5,7};
 		};
 		class Item10
 		{

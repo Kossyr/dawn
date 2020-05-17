@@ -79,11 +79,15 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=8;
+				items=5;
 				class Item0
 				{
 					position[]={5389.265137,433.305939,5993.674316};
 					type="GETIN";
+					combatMode="RED";
+					formation="LINE";
+					speed="NORMAL";
+					combat="AWARE";
 					expActiv="[] exec ""start.sqs""";
 					class Effects
 					{
@@ -92,7 +96,9 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={5396.815918,54.381546,3243.364746};
+					position[]={5439.270020,14.630874,3080.623535};
+					type="SAD";
+					synchronizations[]={23};
 					class Effects
 					{
 					};
@@ -100,7 +106,10 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={4377.756836,47.935024,3327.204590};
+					position[]={5464.229004,0.120177,1031.299683};
+					type="HOLD";
+					combatMode="BLUE";
+					synchronizations[]={12};
 					class Effects
 					{
 					};
@@ -108,42 +117,15 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={5896.836426,22.225241,3229.593750};
+					position[]={5386.194336,434.919342,6002.634277};
+					type="GETOUT";
+					combatMode="BLUE";
 					class Effects
 					{
 					};
 					showWP="NEVER";
 				};
 				class Item4
-				{
-					position[]={5287.455566,11.380075,2990.111328};
-					synchronizations[]={23};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-				class Item5
-				{
-					position[]={5464.229004,0.120177,1031.299683};
-					type="HOLD";
-					combatMode="GREEN";
-					synchronizations[]={12};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-				class Item6
-				{
-					position[]={5386.194336,434.919342,6002.634277};
-					type="GETOUT";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-				class Item7
 				{
 					position[]={5378.005859,431.427155,5955.607422};
 					class Effects
@@ -693,6 +675,7 @@ class Mission
 				class Item1
 				{
 					position[]={6354.042969,28.767143,3762.260498};
+					combatMode="RED";
 					class Effects
 					{
 					};
@@ -782,6 +765,7 @@ class Mission
 				class Item1
 				{
 					position[]={4146.895508,35.349949,3760.936768};
+					combatMode="RED";
 					class Effects
 					{
 					};
@@ -1855,6 +1839,7 @@ class Mission
 				class Item1
 				{
 					position[]={4487.127930,39.849621,3426.117188};
+					combatMode="RED";
 					class Effects
 					{
 					};
@@ -1944,6 +1929,7 @@ class Mission
 				class Item1
 				{
 					position[]={6106.486328,11.450596,3221.592285};
+					combatMode="RED";
 					class Effects
 					{
 					};
@@ -1980,7 +1966,7 @@ class Mission
 					azimut=280.000000;
 					id=135;
 					side="WEST";
-					vehicle="M1Abrams";
+					vehicle="M60";
 					leader=1;
 					skill=0.600000;
 					text="W6";
@@ -2030,7 +2016,7 @@ class Mission
 					azimut=70.000000;
 					id=136;
 					side="WEST";
-					vehicle="M1Abrams";
+					vehicle="M60";
 					leader=1;
 					skill=0.600000;
 					text="E6";
