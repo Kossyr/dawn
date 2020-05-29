@@ -1,0 +1,51 @@
+
+
+? alreadyHappened : goto "ex" ;
+
+alreadyHappened = true
+
+
+~5
+
+setacctime 1
+
+leader roman sideradio "15r09"
+base sideradio "15r10"
+leader roman sideradio "15r11"
+
+
+~10
+
+frontalAttack2 = true
+
+"4" objstatus "active"
+
+unassignvehicle aP
+"unassignvehicle _x" foreach units group player
+
+~15
+
+"Heat120" camCreate getMarkerPos "bomb1"
+~2
+"Heat120" camCreate getMarkerPos "bomb2"
+~1.5
+"Heat120" camCreate getMarkerPos "bomb3"
+~0.5
+"Heat120" camCreate getMarkerPos "bomb4"
+~1
+"Heat120" camCreate getMarkerPos "bomb5"
+~0.2
+"Heat120" camCreate getMarkerPos "bomb6"
+~1
+"Heat120" camCreate getMarkerPos "bomb7"
+~0.2
+"Heat120" camCreate getMarkerPos "bomb8"
+~0.5
+"Heat120" camCreate getMarkerPos "bomb9"
+~0.2
+"Heat120" camCreate getMarkerPos "bomb10"
+aM setdammage 1
+
+#ex
+
+exit

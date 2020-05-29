@@ -3,17 +3,32 @@ titlecut ["","black in",4]
 baza = [East,"HQ"]
 playmusic "Track3"
 
+
+"2" objstatus "hidden"
 "3" objstatus "hidden"
+"4" objstatus "hidden"
+"5" objstatus "hidden"
+
+enableradio false
 
 0 fademusic 0.2
 
 "sipka" setmarkertype "empty"
 "sipka2" setmarkertype "empty"
-"dobyt" setmarkertype "empty"
+"base" setmarkertype "empty"
 
-4 fadesound 0.2
+toFront=false
+frontalAttack=false
+frontalAttack2=false
+romanReady=false
+borisReady=false
+convoyReady=false
 
-~4
+0 fadesound 0
+2 fadesound 0.6
+~2
+2 fadesound 0.1
+~2
 
 aP say "15v09"
 
@@ -34,6 +49,8 @@ aP say "15v12"
 Shaposhnikov say "15v13"
 
 ~6
+
+enableradio true
 
 6 fadesound 1
 6 fademusic 0.7
