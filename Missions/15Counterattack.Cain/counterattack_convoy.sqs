@@ -3,26 +3,29 @@ setacctime 1
 
 leader convoy sideradio "15r16"
 
+
+playmusic "Track1"
+
 ~3
 
 ? {alive _x} count units group player <= 4 : goto "skipDeleting" ;
 
-? {alive _x} count units group player <= 5 : R6 setpos getmarkerpos "away"; deletevehicle R6; goto "skipDeleting" ;
+? {alive _x} count units group player <= 5 : deletevehicle R6; goto "skipDeleting" ;
 
-? {alive _x} count units group player <= 6 ; R6 setpos getmarkerpos "away"; deletevehicle R6; R5 setpos getmarkerpos "away"; deletevehicle R5; goto "skipDeleting" ;
+? {alive _x} count units group player <= 6 ; deletevehicle R6; deletevehicle R5; goto "skipDeleting" ;
 
-? {alive _x} count units group player <= 7 ; R6 setpos getmarkerpos "away";  deletevehicle R6;  R5 setpos getmarkerpos "away"; deletevehicle R5;  R4 setpos getmarkerpos "away"; deletevehicle R4; goto "skipDeleting" ;
+? {alive _x} count units group player <= 7 ; deletevehicle R6; deletevehicle R5; deletevehicle R4; goto "skipDeleting" ;
 
-R3 setpos getmarkerpos "away"
-R4 setpos getmarkerpos "away"
-R5 setpos getmarkerpos "away"
-R6 setpos getmarkerpos "away"
 deletevehicle R3
 deletevehicle R4
 deletevehicle R5
 deletevehicle R6
 
 #skipDeleting
+
+"_x moveincargo auto" foreach units reinforcements
+
+"unassignvehicle _x" foreach units group player
 
 units group player allowgetin true
 

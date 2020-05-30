@@ -1,63 +1,46 @@
 version=11;
 class Mission
 {
+	addOns[]=
+	{
+		"Bradley"
+	};
+	addOnsAuto[]=
+	{
+		"Bradley"
+	};
 	randomSeed=9278467;
 	class Intel
 	{
 		startWeather=0.787644;
 		startFog=0.168834;
 		forecastWeather=0.725112;
-		forecastFog=0.506503;
 		month=11;
 		day=30;
-		hour=8;
+		hour=9;
 		minute=20;
 	};
 	class Groups
 	{
-		items=3;
+		items=4;
 		class Item0
 		{
-			side="WEST";
+			side="EAST";
 			class Vehicles
 			{
-				items=4;
+				items=1;
 				class Item0
 				{
-					position[]={7007.741211,36.963520,4422.631348};
-					azimut=50.000000;
+					position[]={6991.178711,40.678108,4447.545410};
+					azimut=215.000000;
 					id=0;
-					side="WEST";
-					vehicle="M1Abrams";
+					side="EAST";
+					vehicle="SoldierELAW";
+					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.600000;
-				};
-				class Item1
-				{
-					position[]={6988.262207,37.163246,4409.651855};
-					azimut=50.000000;
-					id=2;
-					side="WEST";
-					vehicle="M60";
-					skill=0.600000;
-				};
-				class Item2
-				{
-					position[]={6975.738281,36.750202,4396.023438};
-					azimut=50.000000;
-					id=3;
-					side="WEST";
-					vehicle="M60";
-					skill=0.600000;
-				};
-				class Item3
-				{
-					position[]={6963.810547,36.519718,4384.593750};
-					azimut=50.000000;
-					id=4;
-					side="WEST";
-					vehicle="M60";
-					skill=0.600000;
+					text="rashiv";
+					init="this setidentity ""rashiv""; this setunitpos ""up""; this removemagazine ""AK74"";this removemagazine ""AK74"";this removemagazine ""AK74"";this removemagazine ""AK74""";
 				};
 			};
 			class Waypoints
@@ -65,9 +48,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={7012.087891,36.934990,4425.603516};
-					combatMode="BLUE";
-					formation="COLUMN";
+					position[]={6990.868164,40.645279,4446.958008};
+					combatMode="GREEN";
 					class Effects
 					{
 					};
@@ -83,37 +65,218 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={6990.406738,40.756664,4447.735840};
-					azimut=145.000000;
-					id=1;
-					side="EAST";
-					vehicle="SoldierELAW";
-					leader=1;
-					skill=0.600000;
-					text="rashiv";
-					init="this setidentity ""rashiv""";
-				};
-			};
-		};
-		class Item2
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
 					position[]={6701.162109,92.313080,4557.952637};
 					azimut=50.000000;
-					id=5;
+					id=1;
 					side="EAST";
 					vehicle="SoldierEB";
-					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.600000;
 					init="this exec ""photo.sqs""";
 				};
 			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=5;
+				class Item0
+				{
+					position[]={6926.879395,37.166698,4355.802734};
+					azimut=47.698376;
+					id=2;
+					side="WEST";
+					vehicle="M1Abrams";
+					leader=1;
+					rank="MAJOR";
+					skill=0.600000;
+					text="T1";
+					init="group this allowfleeing 0";
+				};
+				class Item1
+				{
+					position[]={6914.875488,37.551762,4346.158691};
+					azimut=47.698399;
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="M60";
+					rank="LIEUTNANT";
+					skill=0.600000;
+					text="T2";
+				};
+				class Item2
+				{
+					position[]={6903.727051,37.878551,4336.422363};
+					azimut=44.904797;
+					special="NONE";
+					id=4;
+					side="WEST";
+					vehicle="Bradley";
+					rank="CORPORAL";
+					skill=0.600000;
+					text="T3";
+				};
+				class Item3
+				{
+					position[]={6892.965820,38.164879,4326.603027};
+					azimut=47.698399;
+					special="NONE";
+					id=5;
+					side="WEST";
+					vehicle="M113";
+					rank="CORPORAL";
+					skill=0.600000;
+					text="T4";
+				};
+				class Item4
+				{
+					position[]={6882.518555,38.294914,4315.331055};
+					azimut=47.698399;
+					special="NONE";
+					id=6;
+					side="WEST";
+					vehicle="Truck5tOpen";
+					skill=0.600000;
+					text="TRUCK";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7026.438965,36.988827,4437.056641};
+					combatMode="BLUE";
+					formation="COLUMN";
+					speed="LIMITED";
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=9;
+				class Item0
+				{
+					position[]={6881.405273,38.024506,4310.750000};
+					azimut=30.749960;
+					special="NONE";
+					id=7;
+					side="WEST";
+					vehicle="OfficerW";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.466667;
+					init="""_x moveincargo truck"" foreach units group this; group this allowfleeing 0; amInfantry = group this";
+				};
+				class Item1
+				{
+					position[]={6880.796875,37.649586,4305.452148};
+					azimut=30.749949;
+					special="NONE";
+					id=8;
+					side="WEST";
+					vehicle="SoldierWMG";
+					rank="CORPORAL";
+					skill=0.333333;
+				};
+				class Item2
+				{
+					position[]={6879.014160,37.964725,4307.063965};
+					azimut=30.749949;
+					special="NONE";
+					id=9;
+					side="WEST";
+					vehicle="SoldierWG";
+					rank="CORPORAL";
+					skill=0.333333;
+				};
+				class Item3
+				{
+					position[]={6883.582031,37.282150,4304.443359};
+					azimut=30.749949;
+					special="NONE";
+					id=10;
+					side="WEST";
+					vehicle="SoldierWG";
+					rank="CORPORAL";
+					skill=0.333333;
+				};
+				class Item4
+				{
+					position[]={6882.351074,37.621193,4307.030273};
+					azimut=30.749949;
+					special="NONE";
+					id=11;
+					side="WEST";
+					vehicle="SoldierWB";
+					rank="CORPORAL";
+					skill=0.333333;
+				};
+				class Item5
+				{
+					position[]={6878.968262,38.164059,4309.419434};
+					azimut=30.749949;
+					special="NONE";
+					id=12;
+					side="WEST";
+					vehicle="SoldierWMG";
+					skill=0.200000;
+				};
+				class Item6
+				{
+					position[]={6878.600098,37.781456,4304.341797};
+					azimut=30.749949;
+					special="NONE";
+					id=13;
+					side="WEST";
+					vehicle="SoldierWB";
+					skill=0.200000;
+				};
+				class Item7
+				{
+					position[]={6876.401855,38.240002,4307.174316};
+					azimut=30.749949;
+					special="NONE";
+					id=14;
+					side="WEST";
+					vehicle="SoldierWB";
+					skill=0.200000;
+				};
+				class Item8
+				{
+					position[]={6881.652832,37.339939,4302.765625};
+					azimut=30.749949;
+					special="NONE";
+					id=15;
+					side="WEST";
+					vehicle="SoldierWB";
+					skill=0.200000;
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=1;
+		class Item0
+		{
+			position[]={6883.362793,38.615242,4320.159668};
+			name="Tanks";
+			text="@STRM_MARKER_TANKS";
+			type="Flag";
+			colorName="ColorRed";
+			angle=29.904774;
 		};
 	};
 };

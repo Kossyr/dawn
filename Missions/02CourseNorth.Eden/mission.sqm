@@ -1880,11 +1880,14 @@ class Mission
 		class Item3
 		{
 			position[]={5485.834961,80.459999,6084.159668};
-			a=150.000000;
+			a=110.000000;
+			b=70.000000;
+			angle=20.000000;
 			activationBy="WEST";
+			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			text="PROVINS IS OURS";
-			expCond="{alive _x} count thislist <= 1 and done";
+			expCond="this and done";
 			expActiv="[] exec ""provins.sqs""";
 			class Effects
 			{
@@ -1907,8 +1910,8 @@ class Mission
 		class Item5
 		{
 			position[]={5481.155762,80.459999,6078.455566};
-			a=20.000000;
-			b=20.000000;
+			a=35.000000;
+			b=35.000000;
 			activationBy="LEADER";
 			age="UNKNOWN";
 			idVehicle=3;
