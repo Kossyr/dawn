@@ -1805,7 +1805,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="transportGetIn";
-			expActiv="""_x assignascargo auto"" foreach units group player";
+			expActiv="""_x assignascargo auto"" foreach units group player; ""_x setunitpos """"up"""""" foreach units group player";
 			class Effects
 			{
 			};
