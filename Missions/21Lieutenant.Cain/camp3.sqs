@@ -1,0 +1,32 @@
+setacctime 1
+
+"2" objstatus "done"
+aP addrating 1000
+
+aP sideradio "21r16"
+camp3Destroyed=true
+
+? camp1Destroyed and camp2Destroyed : goto "missionCompleted" ;
+
+baza sideradio "21r18"
+finishingUp=true
+
+1 SetRadioMsg localize "STRM_RADIO_TEXT"
+
+hint localize "STRM_RADIO_HINT"
+
+goto "ex"
+
+#missionCompleted
+
+baza sideradio "21r17"
+
+~2
+
+[] exec "outro.sqs"
+
+#ex
+
+afterMainCamp=true
+
+exit
