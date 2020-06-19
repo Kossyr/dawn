@@ -21,7 +21,7 @@ class Mission
 		forecastWeather=0.700000;
 		month=1;
 		day=2;
-		minute=55;
+		minute=50;
 	};
 	class Groups
 	{
@@ -58,7 +58,7 @@ class Mission
 					rank="MAJOR";
 					skill=1.000000;
 					text="Lemontov";
-					init="this setidentity ""Lemontov""";
+					init="this setidentity ""Lemontov""; this setgroupid [""delta"",""groupcolor0""]";
 				};
 			};
 			class Waypoints
@@ -187,6 +187,7 @@ class Mission
 				{
 					position[]={9381.867188,191.037659,1046.172363};
 					type="SENTRY";
+					combat="AWARE";
 					class Effects
 					{
 					};
@@ -274,6 +275,7 @@ class Mission
 				{
 					position[]={9300.542969,182.977310,1043.096191};
 					type="SENTRY";
+					combat="AWARE";
 					class Effects
 					{
 					};
@@ -315,8 +317,9 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={9371.354492,191.334885,1040.529663};
+					position[]={9371.743164,191.334854,1041.500977};
 					type="JOIN";
+					combat="AWARE";
 					synchronizations[]={42};
 					class Effects
 					{
@@ -360,6 +363,7 @@ class Mission
 				class Item1
 				{
 					position[]={9388.912109,190.833939,1049.638428};
+					combat="AWARE";
 					synchronizations[]={39,40};
 					class Effects
 					{
@@ -413,6 +417,7 @@ class Mission
 				{
 					position[]={9386.663086,190.898453,1048.495483};
 					type="JOIN";
+					combat="AWARE";
 					synchronizations[]={39};
 					class Effects
 					{
@@ -455,6 +460,7 @@ class Mission
 				class Item1
 				{
 					position[]={9362.624023,191.697342,1043.875122};
+					combat="AWARE";
 					synchronizations[]={37,38};
 					class Effects
 					{
@@ -507,6 +513,7 @@ class Mission
 				{
 					position[]={9360.243164,191.789673,1044.336670};
 					type="JOIN";
+					combat="AWARE";
 					synchronizations[]={37};
 					class Effects
 					{
@@ -549,8 +556,9 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={9371.216797,191.325226,1039.516479};
+					position[]={9372.922852,191.271210,1040.029907};
 					type="JOIN";
+					combat="AWARE";
 					synchronizations[]={41};
 					class Effects
 					{
@@ -653,6 +661,7 @@ class Mission
 				{
 					position[]={9361.372070,191.713150,1041.842651};
 					type="JOIN";
+					combat="AWARE";
 					synchronizations[]={38};
 					class Effects
 					{
@@ -697,6 +706,7 @@ class Mission
 				{
 					position[]={9335.517578,185.490509,1031.658203};
 					type="SENTRY";
+					combat="AWARE";
 					class Effects
 					{
 					};
@@ -776,6 +786,7 @@ class Mission
 				{
 					position[]={9368.297852,191.061401,1089.697998};
 					type="SENTRY";
+					combat="AWARE";
 					class Effects
 					{
 					};
@@ -1479,6 +1490,7 @@ class Mission
 				{
 					position[]={9368.612305,187.556442,1014.539307};
 					type="SENTRY";
+					combat="AWARE";
 					class Effects
 					{
 					};
@@ -1521,6 +1533,7 @@ class Mission
 				{
 					position[]={9322.139648,177.610901,987.069702};
 					type="SENTRY";
+					combat="AWARE";
 					class Effects
 					{
 					};
@@ -1563,6 +1576,7 @@ class Mission
 				{
 					position[]={9237.567383,193.505112,1109.783936};
 					type="SENTRY";
+					combat="AWARE";
 					class Effects
 					{
 					};
@@ -1606,6 +1620,7 @@ class Mission
 				{
 					position[]={9336.354492,190.452377,1089.855225};
 					type="SENTRY";
+					combat="AWARE";
 					class Effects
 					{
 					};
@@ -1648,6 +1663,7 @@ class Mission
 				{
 					position[]={9386.166016,189.214569,1083.952393};
 					type="SENTRY";
+					combat="AWARE";
 					class Effects
 					{
 					};
@@ -1690,6 +1706,7 @@ class Mission
 				{
 					position[]={9424.438477,184.823669,1063.037842};
 					type="SENTRY";
+					combat="AWARE";
 					class Effects
 					{
 					};
@@ -1733,6 +1750,7 @@ class Mission
 				{
 					position[]={9389.277344,189.692780,1008.169556};
 					type="SENTRY";
+					combat="AWARE";
 					class Effects
 					{
 					};
@@ -2637,6 +2655,7 @@ class Mission
 				{
 					position[]={9386.198242,190.931671,1049.638428};
 					type="JOIN";
+					combat="AWARE";
 					synchronizations[]={40};
 					class Effects
 					{
@@ -2647,7 +2666,7 @@ class Mission
 		};
 		class Item35
 		{
-			side="EAST";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -2656,8 +2675,8 @@ class Mission
 					position[]={9368.385742,191.464661,1042.121094};
 					azimut=170.000000;
 					id=147;
-					side="EAST";
-					vehicle="SoldierEB";
+					side="GUER";
+					vehicle="SoldierGB";
 					leader=1;
 					rank="LIEUTNANT";
 					skill=1.000000;
@@ -2680,7 +2699,8 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={9369.508789,191.392136,1039.892578};
+					position[]={9370.672852,191.410309,1044.064331};
+					combat="AWARE";
 					synchronizations[]={41,42};
 					class Effects
 					{
@@ -3147,7 +3167,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=12;
+		items=11;
 		class Item0
 		{
 			position[]={9207.866211,3.176639,465.304565};
@@ -3263,19 +3283,6 @@ class Mission
 		};
 		class Item8
 		{
-			position[]={9365.971680,191.128555,1032.650024};
-			a=85.000000;
-			b=85.000000;
-			activationBy="GUER";
-			age="UNKNOWN";
-			expCond="castleAware";
-			expActiv="""_x setbehaviour """"aware"""""" foreach units thislist";
-			class Effects
-			{
-			};
-		};
-		class Item9
-		{
 			position[]={9368.972656,197.685287,1057.438721};
 			a=0.000000;
 			b=0.000000;
@@ -3287,7 +3294,7 @@ class Mission
 			};
 			synchronizations[]={18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35};
 		};
-		class Item10
+		class Item9
 		{
 			position[]={9369.419922,191.464401,1044.689087};
 			a=0.000000;
@@ -3300,7 +3307,7 @@ class Mission
 			};
 			synchronizations[]={36};
 		};
-		class Item11
+		class Item10
 		{
 			position[]={9218.734375,22.547134,543.568420};
 			a=550.000000;

@@ -1,0 +1,120 @@
+version=11;
+class Mission
+{
+	randomSeed=12089859;
+	class Intel
+	{
+		briefingName="@STRCN_31";
+		resistanceWest=0.000000;
+		resistanceEast=1.000000;
+		startWeather=0.600000;
+		forecastWeather=0.700000;
+		month=1;
+		day=2;
+		minute=50;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9208.690430,2.877773,463.597107};
+					azimut=20.000000;
+					special="NONE";
+					id=1;
+					side="EAST";
+					vehicle="SoldierESaboteurPipe";
+					leader=1;
+					rank="MAJOR";
+					skill=1.000000;
+					text="Lemontov";
+					init="this setidentity ""Lemontov""; this setgroupid [""delta"",""groupcolor0""]";
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9210.202148,2.720128,462.713623};
+					azimut=315.000000;
+					special="NONE";
+					id=0;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					rank="LIEUTNANT";
+					skill=1.000000;
+					text="aP";
+					init="this setidentity ""Rashiv""; this setbehaviour ""combat""; this setunitpos ""up""";
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9249.782227,124.225197,768.051147};
+					azimut=20.000000;
+					special="NONE";
+					id=3;
+					side="EAST";
+					vehicle="SoldierESaboteurPipe";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="MAJOR";
+					skill=1.000000;
+					init="this exec ""photo.sqs""";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={9186.173828,0.227898,444.034576};
+			azimut=190.000000;
+			id=2;
+			side="EMPTY";
+			vehicle="BoatE";
+			skill=1.000000;
+		};
+	};
+};
+class Intro
+{
+	randomSeed=2768899;
+	class Intel
+	{
+	};
+};
+class OutroWin
+{
+	randomSeed=2707459;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=9574915;
+	class Intel
+	{
+	};
+};
