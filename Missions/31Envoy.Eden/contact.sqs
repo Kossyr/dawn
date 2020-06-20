@@ -3,8 +3,85 @@ setacctime 1
 "1" objstatus "done"
 aP addrating 1000
 
+titlecut["","black in",0.5]
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+Lemontov stop true
+Lemontov setpos getmarkerpos "LemontovAway"
+
+aP setpos getmarkerpos "RashivAway"
+aP action ["WEAPONONBACK"]
+
+Lemontov setbehaviour "careless"
+
+ContactLemontov setpos getmarkerpos "ContactLemontov"
+ContactRashiv setpos getmarkerpos "ContactRashiv"
+
+ContactLemontov dowatch [9312.98,620.76,1.80]
+ContactRashiv dowatch [9312.98,620.76,1.80]
+Poincare dowatch [9312.13,615.59,1.70]
+
+
+
+;=== 16:53:27
+_camera camSetTarget [8633.17,94802.62,33641.38]
+_camera camSetPos [9312.94,615.87,1.37]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Poincare say "31v11"
+Poincare setmimic "surprised"
+ContactRashiv setmimic "smile"
+ContactLemontov setmimic "normal"
+~1
+
+;=== 16:54:00
+_camera camSetTarget [-8379.81,97758.59,15895.11]
+_camera camSetPos [9313.17,619.75,1.72]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+;=== 16:55:18
+_camera camSetTarget [-31091.93,-87313.52,-25164.02]
+_camera camSetPos [9312.47,616.89,1.05]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+ContactRashiv say "31v12"
+~2
+ContactRashiv setmimic "normal"
+~2.5
+;=== 16:55:58
+_camera camSetTarget [27764.40,98230.17,11530.92]
+_camera camSetPos [9312.74,619.89,1.91]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Poincare say "31v13"
+~2
+deletevehicle ContactRashiv
+deletevehicle ContactLemontov
+
+Lemontov stop false
+Lemontov setpos getmarkerpos "ContactLemontov"
+aP setpos getmarkerpos "ContactRashiv"
+Lemontov setdir 5
+aP setdir 0
+~0.5
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
 toCastle=true
 
 GuardFire inflame false
+
+Poincare dowatch objnull
+
+~0.5
+aP action ["weaponinhand"]
 
 exit

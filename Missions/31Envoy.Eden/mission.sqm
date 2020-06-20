@@ -25,7 +25,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=37;
+		items=39;
 		class Item0
 		{
 			side="EAST";
@@ -88,6 +88,7 @@ class Mission
 				{
 					position[]={9370.894531,191.281128,1035.647827};
 					type="HOLD";
+					combat="AWARE";
 					synchronizations[]={2};
 					class Effects
 					{
@@ -2805,6 +2806,45 @@ class Mission
 				};
 			};
 		};
+		class Item37
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8053.555664,59.680920,1496.962891};
+					azimut=5.000000;
+					id=153;
+					side="EAST";
+					vehicle="SoldierESaboteurPipe";
+					leader=1;
+					skill=0.600000;
+					text="ContactLemontov";
+					init="this setidentity ""Lemontov""; this setbehaviour ""safe""";
+				};
+			};
+		};
+		class Item38
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8054.946289,60.246162,1498.131592};
+					id=154;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					skill=0.600000;
+					text="ContactRashiv";
+					init="this setidentity ""Rashiv""; this setbehaviour ""safe""";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -3130,7 +3170,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=4;
+		items=8;
 		class Item0
 		{
 			position[]={9203.901367,6.817354,486.270905};
@@ -3163,6 +3203,30 @@ class Mission
 			text="@STRM_MARKER_RETREAT";
 			type="End";
 			colorName="ColorBlue";
+		};
+		class Item4
+		{
+			position[]={9310.782227,50.628281,614.311218};
+			name="ContactLemontov";
+			type="Empty";
+		};
+		class Item5
+		{
+			position[]={9312.121094,51.656082,615.526550};
+			name="ContactRashiv";
+			type="Empty";
+		};
+		class Item6
+		{
+			position[]={8660.173828,92.162712,812.868530};
+			name="LemontovAway";
+			type="Empty";
+		};
+		class Item7
+		{
+			position[]={8689.817383,92.109756,797.740967};
+			name="RashivAway";
+			type="Empty";
 		};
 	};
 	class Sensors
