@@ -2,6 +2,11 @@ setacctime 1
 enableradio false
 "4" objstatus "done"
 aP addrating 1000
+
+? patrolDone == false : "2" objstatus "failed"
+
+? ammoDone == false : "3" objstatus "failed"
+
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 ;=== 19:57:09
@@ -19,7 +24,12 @@ _camera camCommit 8
 @camCommitted _camera
 titlecut ["","black out",3]
 ~4
-end=true
+? splneno==2 : end=true ; goto "ex" ;
+? splneno==1 : end2=true ; goto "ex" ;
+? splneno==0 : end3=true ; goto "ex" ;
+
+#ex
+
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 

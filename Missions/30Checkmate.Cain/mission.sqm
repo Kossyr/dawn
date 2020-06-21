@@ -702,7 +702,7 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={5701.171875,10.961534,3132.991455};
+					position[]={5606.252441,9.822567,3099.214111};
 					type="SAD";
 					class Effects
 					{
@@ -803,7 +803,7 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={4714.073730,39.599998,3353.826172};
+					position[]={5080.660645,27.297245,3189.766113};
 					type="SAD";
 					class Effects
 					{
@@ -1876,7 +1876,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={4460.371094,44.135242,3203.985840};
+					position[]={4478.823242,38.106712,3155.021240};
 					type="SAD";
 					class Effects
 					{
@@ -2994,7 +2994,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Mi24";
 			leader=1;
-			skill=0.600000;
+			skill=1.000000;
 			text="chopper1";
 		};
 		class Item4
@@ -3005,7 +3005,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Mi24";
 			leader=1;
-			skill=0.600000;
+			skill=1.000000;
 			text="chopper2";
 		};
 		class Item5
@@ -3784,7 +3784,7 @@ class Mission
 			b=0.000000;
 			type="SWITCH";
 			age="UNKNOWN";
-			expCond="not canmove W1 and not canmove W2 and not canmove W3 and not canmove W4 and not canmove W5 and not canmove W6";
+			expCond="not canmove W1 and not canmove W2 and not canmove W5";
 			expActiv="[] exec ""west.sqs""";
 			class Effects
 			{
@@ -3797,7 +3797,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="not canmove E1 and not canmove E2 and not canmove E3 and not canmove E4 and not canmove E5 and not canmove E6";
+			expCond="not canmove E1 and not canmove E2 and not canmove E5";
 			expActiv="[] exec ""east.sqs""";
 			class Effects
 			{
@@ -3810,7 +3810,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="centreClear and westClear and eastClear";
+			expCond="centreClear and westClear and eastClear and not canmove E3 and not canmove E4 and not canmove E5 and not canmove W6 and not canmove W3 and not canmove W4";
 			expActiv="[] exec ""destroyed.sqs""";
 			class Effects
 			{
