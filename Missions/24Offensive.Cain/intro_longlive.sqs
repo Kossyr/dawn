@@ -1,4 +1,7 @@
 
+_total = 5
+_i = 0
+
 #loop
 	c1 say "24v05a"
 	c2 say "24v05b"
@@ -11,7 +14,8 @@
 	c9 say "24v05d"
 	c10 say "24v05e"
 	? kukushkinLongLive : Kukushkin say "24v05"
-	~2.5
-	goto "loop"
+	~2
+	_i = _i + 1
+	? _i < _total : goto "loop"
 exit
 	
