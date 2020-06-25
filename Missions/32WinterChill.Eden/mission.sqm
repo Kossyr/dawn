@@ -45,11 +45,108 @@ class Intro
 	randomSeed=5824003;
 	class Intel
 	{
-		startWeather=0.600000;
+		startWeather=1.000000;
+		forecastWeather=1.000000;
 		month=2;
 		day=13;
-		hour=16;
+		hour=17;
 		minute=5;
+	};
+	class Groups
+	{
+		items=4;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8760.009766,179.261520,3809.359131};
+					id=0;
+					side="EAST";
+					vehicle="SoldierEB";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8926.053711,211.319321,3763.160156};
+					azimut=265.000000;
+					id=2;
+					side="EAST";
+					vehicle="SoldierESaboteurPipe";
+					leader=1;
+					rank="MAJOR";
+					skill=0.600000;
+					text="Lemontov";
+					init="this setidentity ""Lemontov""; this setbehaviour ""careless""; this removeweapon ""nvgoggles""";
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8922.939453,211.294006,3763.153076};
+					azimut=90.000000;
+					id=3;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					rank="COLONEL";
+					skill=0.600000;
+					text="Livanoch";
+					init="this setidentity ""Livanoch""; this setbehaviour ""careless""; removeallweapons this";
+				};
+			};
+		};
+		class Item3
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8923.479492,211.373199,3761.510498};
+					azimut=90.000000;
+					id=4;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.600000;
+					init="this exec ""camera.sqs""";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={8924.827148,211.333939,3762.810791};
+			id=1;
+			side="EMPTY";
+			vehicle="Fire";
+			skill=0.600000;
+			init="this inflame true";
+		};
 	};
 };
 class OutroWin
