@@ -5621,7 +5621,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=29;
+		items=31;
 		class Item0
 		{
 			position[]={8806.912109,123.102730,8685.665039};
@@ -6024,6 +6024,42 @@ class Mission
 			{
 			};
 			synchronizations[]={25,26,27,28,29,30,31,32,33};
+		};
+		class Item29
+		{
+			position[]={9688.831055,120.374481,9872.037109};
+			a=1200.000000;
+			b=2500.000000;
+			angle=50.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=2;
+			text="OUT OF BOUNDS - WARNING";
+			expCond="this and alive aP";
+			expActiv="[] exec ""outofbounds_rashiv.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item30
+		{
+			position[]={9692.291016,122.295044,9939.986328};
+			a=1300.000000;
+			b=2600.000000;
+			angle=50.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=2;
+			text="OUT OF BOUNDS - KILL";
+			expCond="this and alive aP";
+			expActiv="[] exec ""outofbounds.sqs""";
+			class Effects
+			{
+			};
 		};
 	};
 };

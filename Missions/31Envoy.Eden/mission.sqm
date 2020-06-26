@@ -3192,7 +3192,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=11;
+		items=13;
 		class Item0
 		{
 			position[]={9207.866211,3.176639,465.304565};
@@ -3344,6 +3344,42 @@ class Mission
 			text="RETURNED TO THE BOAT - EXIT THE MISSION";
 			expCond="this and toBoat";
 			expActiv="[] exec ""outro.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item11
+		{
+			position[]={9547.089844,141.809784,602.749023};
+			a=1200.000000;
+			b=700.000000;
+			angle=340.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=0;
+			text="OUT OF BOUNDS - WARNING";
+			expCond="this and alive aP";
+			expActiv="[] exec ""outofbounds_rashiv.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item12
+		{
+			position[]={9564.224609,139.620132,594.692871};
+			a=1200.000000;
+			b=850.000000;
+			angle=340.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=0;
+			text="OUT OF BOUNDS - KILL";
+			expCond="this and alive aP";
+			expActiv="[] exec ""outofbounds.sqs""";
 			class Effects
 			{
 			};
