@@ -84,6 +84,7 @@ class Mission
 				class Item2
 				{
 					position[]={6671.682617,1.025555,9457.188477};
+					synchronizations[]={8};
 					class Effects
 					{
 					};
@@ -91,7 +92,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={4183.895996,129.378357,7562.614258};
+					position[]={3924.815918,172.730621,7439.407227};
 					type="SAD";
 					synchronizations[]={3};
 					class Effects
@@ -228,15 +229,14 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
-					position[]={3411.186768,250.447739,6993.520020};
+					position[]={3412.532227,250.283981,6993.519531};
 					azimut=25.000000;
 					id=17;
 					side="WEST";
 					vehicle="Bradley";
-					leader=1;
 					rank="MAJOR";
 					skill=0.500000;
 					text="C1";
@@ -275,13 +275,25 @@ class Mission
 					skill=0.500000;
 					text="C4";
 				};
+				class Item4
+				{
+					position[]={3420.852295,247.508011,7007.899902};
+					azimut=25.000000;
+					id=65;
+					side="WEST";
+					vehicle="M60";
+					leader=1;
+					rank="COLONEL";
+					skill=0.500000;
+					text="C5";
+				};
 			};
 			class Waypoints
 			{
 				items=3;
 				class Item0
 				{
-					position[]={3416.312012,248.954712,7000.103516};
+					position[]={3427.743652,245.821777,7017.947266};
 					type="HOLD";
 					formation="COLUMN";
 					speed="LIMITED";
@@ -1246,7 +1258,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=13;
+		items=14;
 		class Item0
 		{
 			position[]={5566.379395,0.944388,9926.805664};
@@ -1336,7 +1348,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="CONVOY DESTROYED";
-			expCond="not canmove C1 and not canmove C2 and not canmove C4";
+			expCond="not canmove C1 and not canmove C2 and not canmove C4 and not canmove C5";
 			expActiv="[] exec ""convoy_done.sqs""";
 			class Effects
 			{
@@ -1433,6 +1445,20 @@ class Mission
 			class Effects
 			{
 			};
+		};
+		class Item13
+		{
+			position[]={6674.539063,0.371544,9439.165039};
+			a=120.000000;
+			b=120.000000;
+			activationBy="LEADER";
+			type="SWITCH";
+			age="UNKNOWN";
+			idVehicle=6;
+			class Effects
+			{
+			};
+			synchronizations[]={8};
 		};
 	};
 };
