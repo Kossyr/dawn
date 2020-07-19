@@ -3,35 +3,400 @@ setacctime 1
 "2" objstatus "done"
 aP addrating 1000
 
+titlecut["","black in",0.5]
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
 deletevehicle Poincare
 
+Lemontov stop true
+Lemontov setpos getmarkerpos "LemontovAway"
 
+aP setpos getmarkerpos "RashivAway"
+aP action ["WEAPONONBACK"]
 
+Lemontov setbehaviour "careless"
+
+CastleLemontov setpos getmarkerpos "LemontovCastle"
+CastleRashiv setpos getmarkerpos "RashivCastle"
+
+_AstierWatch = [9369.97,1041.31,1.64]
+_RashivWatch = [9369.71,1038.45,1.67]
+_LemontovWatch = [9368.42,1037.38,1.64]
+
+CastleLemontov dowatch _AstierWatch
+CastleRashiv dowatch _AstierWatch
+Astier dowatch _RashivWatch
+C1 dowatch _RashivWatch
+C2 dowatch _RashivWatch
+C3 dowatch _RashivWatch
+C4 dowatch _RashivWatch
+C5 dowatch _RashivWatch
+C6 dowatch _RashivWatch
+
+C5 setmimic "normal"
+CastleRashiv setmimic "normal"
+CastleLemontov setmimic "normal"
+
+;=== 9:36:25
+_camera camSetTarget [-10823.24,95918.62,24391.59]
+_camera camSetPos [9378.55,1016.84,1.83]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 9:36:53
+_camera camSetTarget [5994.10,97990.34,24392.14]
+_camera camSetPos [9371.98,1022.69,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+
+;=== 9:37:08
+_camera camSetTarget [19968.01,99491.49,-13679.53]
+_camera camSetPos [9368.14,1027.52,4.00]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~1
+
+;=== 9:37:33
+_camera camSetTarget [-44990.36,84827.13,5163.58]
+_camera camSetPos [9370.20,1040.40,1.36]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Astier setmimic "surprised"
+Astier say "31v14"
+
+;=== 9:37:38
+_camera camSetTarget [-59217.54,73765.80,-2393.63]
+_camera camSetPos [9370.70,1040.54,1.38]
+_camera camSetFOV 0.700
+_camera camCommit 10
+
+~2
+
+Astier setmimic "normal"
 
 ~3
 
-; CINEMATIC ENDING
+Astier setmimic "smile"
+
+@camCommitted _camera
+
+
+;=== 9:39:30
+_camera camSetTarget [-18387.11,-94781.58,-6728.46]
+_camera camSetPos [9369.93,1039.71,1.42]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+CastleRashiv setmimic "smile"
+CastleRashiv say "31v15"
+
+~5
+
+CastleRashiv setmimic "normal"
+
+~3
+
+;=== 9:41:01
+_camera camSetTarget [31578.85,98250.17,7752.22]
+_camera camSetPos [9369.87,1041.03,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Astier say "31v16"
+
+~2
+
+Astier setmimic "normal"
+Astier dowatch _LemontovWatch
+
+~1
+
+;=== 9:41:59
+_camera camSetTarget [-69377.88,62479.20,-4624.16]
+_camera camSetPos [9372.57,1036.79,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~2
+
+C1 dowatch _LemontovWatch
+C2 dowatch _LemontovWatch
+C3 dowatch _LemontovWatch
+C4 dowatch _LemontovWatch
+C5 dowatch _LemontovWatch
+C6 dowatch _LemontovWatch
+
+~2
+
+;=== 9:45:38
+_camera camSetTarget [108117.34,15856.48,-5176.25]
+_camera camSetPos [9367.24,1037.73,1.34]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+CastleLemontov setmimic "surprised"
+CastleLemontov say "31v17"
+
+~1.5
+
+CastleRashiv setmimic "normal"
+CastleRashiv dowatch _LemontovWatch
+
+~0.8
+
+CastleRashiv say "31v18"
+CastleLemontov setmimic "normal"
+~1
+
+CastleRashiv dowatch _AstierWatch
+
+;=== 9:47:09
+_camera camSetTarget [-42422.83,-84334.78,-5175.79]
+_camera camSetPos [9369.96,1039.08,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~1
+
+CastleRashiv say "31v19"
+
+Astier dowatch _RashivWatch
+C1 dowatch _RashivWatch
+C2 dowatch _RashivWatch
+C3 dowatch _RashivWatch
+C4 dowatch _RashivWatch
+C5 dowatch _RashivWatch
+C6 dowatch _RashivWatch
+
+~3
+
+;=== 9:57:21
+_camera camSetTarget [65732.70,83576.77,-3115.56]
+_camera camSetPos [9369.50,1040.44,1.39]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Astier setmimic "angry"
+
+Astier say "31v20"
+
+~2
+
+Astier setmimic "normal"
+
+~4
+
+Astier setmimic "sad"
+Astier say "31v21"
+
+~1
+
+;=== 10:00:32
+_camera camSetTarget [-32251.02,90537.63,-15835.06]
+_camera camSetPos [9371.38,1035.21,1.85]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 10:00:37
+_camera camSetTarget [-67340.64,63152.21,-15834.87]
+_camera camSetPos [9372.22,1037.51,1.99]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+
+Astier setmimic "angry"
+Astier say "31v22"
+
+;=== 10:01:07
+_camera camSetTarget [-34681.16,90814.44,572.90]
+_camera camSetPos [9370.08,1040.58,1.42]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~10
+
+Astier setmimic "normal"
+Astier say "31v23"
+
+~4
+
+;=== 10:04:42
+_camera camSetTarget [-23877.04,-93243.41,2532.10]
+_camera camSetPos [9369.89,1038.99,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+CastleRashiv setmimic "sad"
+CastleRashiv say "31v24"
+
+~10
+
+;=== 10:06:12
+_camera camSetTarget [3818.76,100514.34,-8377.01]
+_camera camSetPos [9370.17,1037.27,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Astier setmimic "angry"
+Astier say "31v25"
+
+;=== 10:06:31
+_camera camSetTarget [-41929.63,86864.29,-1387.66]
+_camera camSetPos [9370.54,1040.07,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 12
+~6
+Astier setmimic "sad"
+@camCommitted _camera
+
+Astier say "31v26"
+~7
+;=== 10:07:15
+_camera camSetTarget [-48182.64,-80705.84,2531.91]
+_camera camSetPos [9369.97,1039.04,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+RashivCastle say "31v27"
+RashivCastle setmimic "normal"
+
+~5
+
+LemontovCastle setmimic "smile"
+LemontovCastle say "31v28"
+
+~1.5
+
+RashivCastle setmimic "surprised"
+RashivCastle say "31v29"
+~2.5
+;=== 10:32:04
+_camera camSetTarget [24180.26,99910.13,2531.90]
+_camera camSetPos [9369.94,1040.73,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Astier setmimic "surprised"
+Astier say "31v30"
+~1
+Astier setmimic "sad"
+~1
+;=== 10:32:32
+_camera camSetTarget [2950.04,-98689.67,3792.85]
+_camera camSetPos [9369.76,1039.11,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+RashivCastle setmimic "hurt"
+RashivCastle say "31v31"
+~1.2
+;=== 10:33:09
+_camera camSetTarget [2527.52,100761.08,-2786.70]
+_camera camSetPos [9369.90,1039.94,1.51]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Astier setmimic "hurt"
+Astier say "31v32"
+
+;=== 10:33:23
+_camera camSetTarget [-53901.91,78388.34,3931.84]
+_camera camSetPos [9370.35,1040.84,1.51]
+_camera camSetFOV 0.700
+_camera camCommit 8
+~3
+Astier setmimic "sad"
+@camCommitted _camera
 
 explosionSound=true
 ATTACK=true
 
-; WHAT WAS THAT, CHECK THE PATROLS
+~0.5
 
-~2
+Astier setmimic "Angry"
+Astier say "31v33"
+~1
 
 partisansDefence=true
 
-; END OF THE CINEMATIC
-
-enableradio true
+C1 dowatch objnull
+C2 dowatch objnull
+C3 dowatch objnull
+C4 dowatch objnull
+C5 dowatch objnull
+C6 dowatch objnull
 
 ~3
 
+deletevehicle CastleRashiv
+deletevehicle CastleLemontov
+
+;=== 10:36:05
+_camera camSetTarget [12970.58,100891.48,-3879.07]
+_camera camSetPos [9369.88,1039.31,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Astier say "31v34"
+Astier setmimic "normal"
+
+~3
+
+Astier dowatch objnull
+
+Lemontov setpos getmarkerpos "LemontovCastle"
+aP setpos getmarkerpos "RashivCastle"
+
+Lemontov setdir 10
+aP setdir 5
+
+Lemontov stop false
+~0.5
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+savegame
+
+
+enableradio true
+
+Lemontov setbehaviour "aware"
+
+MainFire1 inflame false
+MainFire2 inflame false
+MainFire3 inflame false
+
 astierDefence=true
 
+~1
+
+titletext["","plain down"]
 Lemontov sideradio "31r02"
 
 ~1
+
+aP action ["WEAPONINHAND"]
+
+~2
 
 enableradio false
 
@@ -39,7 +404,6 @@ enableradio false
 
 "3" objstatus "active"
 "Retreat" setmarkertype "End"
-
 
 toBoat=true
 
