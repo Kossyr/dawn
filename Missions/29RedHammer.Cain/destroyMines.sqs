@@ -1,0 +1,12 @@
+
+_unit = _this
+
+#loop
+
+_obj = nearestObject [_unit, "Mine"]
+
+? (typeOf _obj == "Mine") : deletevehicle _obj ; goto "loop" ;
+
+deleteVehicle _unit
+
+exit

@@ -2,7 +2,7 @@ setacctime 1
 
 ivan sideradio "29r04"
 
-~40
+~55
 
 setacctime 1
 
@@ -18,12 +18,19 @@ engineersDone=true
 
 engineers setcombatmode "RED"
 
-#loop
-
-_obj = nearestObject [minefieldDestroyer, "Mine"]
-
-? (typeOf _obj == "Mine") : deletevehicle _obj ; goto "loop" ;
-
-deleteVehicle minefieldDestroyer
+Minefield exec "destroyMines.sqs"
+Minefield_1 exec "destroyMines.sqs"
+Minefield_2 exec "destroyMines.sqs"
+Minefield_3 exec "destroyMines.sqs"
+Minefield_4 exec "destroyMines.sqs"
+Minefield_5 exec "destroyMines.sqs"
+Minefield_6 exec "destroyMines.sqs"
+Minefield_7 exec "destroyMines.sqs"
+Minefield_8 exec "destroyMines.sqs"
+Minefield_9 exec "destroyMines.sqs"
+Minefield_10 exec "destroyMines.sqs"
+Minefield_11 exec "destroyMines.sqs"
+Minefield_12 exec "destroyMines.sqs"
+Minefield_13 exec "destroyMines.sqs"
 
 exit
