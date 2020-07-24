@@ -20,8 +20,8 @@ aP action ["WEAPONONBACK"]
 
 Lemontov setbehaviour "careless"
 
-CastleLemontov setpos getmarkerpos "LemontovCastle"
-CastleRashiv setpos getmarkerpos "RashivCastle"
+CastleLemontov setpos getmarkerpos "CastleLemontov"
+CastleRashiv setpos getmarkerpos "CastleRashiv"
 
 _AstierWatch = [9369.97,1041.31,1.64]
 _RashivWatch = [9369.71,1038.45,1.67]
@@ -276,18 +276,18 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-RashivCastle say "31v27"
-RashivCastle setmimic "normal"
+CastleRashiv say "31v27"
+CastleRashiv setmimic "normal"
 
 ~5
 
-LemontovCastle setmimic "smile"
-LemontovCastle say "31v28"
+CastleLemontov setmimic "smile"
+CastleLemontov say "31v28"
 
 ~1.5
 
-RashivCastle setmimic "surprised"
-RashivCastle say "31v29"
+CastleRashiv setmimic "surprised"
+CastleRashiv say "31v29"
 ~2.5
 ;=== 10:32:04
 _camera camSetTarget [24180.26,99910.13,2531.90]
@@ -306,8 +306,8 @@ _camera camSetPos [9369.76,1039.11,1.52]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-RashivCastle setmimic "hurt"
-RashivCastle say "31v31"
+CastleRashiv setmimic "hurt"
+CastleRashiv say "31v31"
 ~1.2
 ;=== 10:33:09
 _camera camSetTarget [2527.52,100761.08,-2786.70]
@@ -365,8 +365,8 @@ Astier setmimic "normal"
 
 Astier dowatch objnull
 
-Lemontov setpos getmarkerpos "LemontovCastle"
-aP setpos getmarkerpos "RashivCastle"
+Lemontov setpos getmarkerpos "CastleLemontov"
+aP setpos getmarkerpos "CastleRashiv"
 
 Lemontov setdir 10
 aP setdir 5
