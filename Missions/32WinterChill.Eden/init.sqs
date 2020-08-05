@@ -1,11 +1,39 @@
 titleCut ["","BLACK IN", 3]
 
-clearmagazinecargo StartingWeapons
-clearweaponcargo StartingWeapons
-
 ShipsDestroyed=0
 SuppliesDestroyed=0
 ChoppersDestroyed=0
+Distractions=0
+AirAlarm=0
 
+clearmagazinecargo StartingWeapons
+clearweaponcargo StartingWeapons
+
+StartingWeapons AddWeaponCargo ["AK74SU",2]
+StartingWeapons AddMagazineCargo ["AK74",16]
+StartingWeapons AddWeaponCargo ["SVDDragunov",1]
+StartingWeapons AddMagazineCargo ["SVDDragunov",12]
+StartingWeapons AddMagazineCargo ["Mine",3]
+StartingWeapons AddMagazineCargo ["PipeBomb",6]
+StartingWeapons AddWeaponCargo ["RPGLauncher",1]
+StartingWeapons AddMagazineCargo ["RPGLauncher",2]
+
+clearmagazinecargo WeaponsStash
+clearweaponcargo WeaponsStash
+
+WeaponsStash AddWeaponCargo ["Bizon",1]
+WeaponsStash AddMagazineCargo ["Bizon",4]
+WeaponsStash AddMagazineCargo ["PipeBomb",4]
+WeaponsStash AddMagazineCargo ["Mine",1]
+StartingWeapons AddWeaponCargo ["AK74SU",1]
+StartingWeapons AddMagazineCargo ["AK74",8]
+
+~1.5
+
+Poincare say "32v01"
+
+~0.5
+
+poincareGo=true
 
 exit
