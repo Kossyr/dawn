@@ -7190,7 +7190,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=68;
+		items=74;
 		class Item0
 		{
 			position[]={2159.826172,15.217095,6579.812012};
@@ -8106,6 +8106,105 @@ class Mission
 			text="SPECOPS REPELLED";
 			expCond="{alive _x} count thislist == 0 and canEnd";
 			expActiv="[] exec ""outro.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item68
+		{
+			position[]={4061.515381,55.671402,6034.029297};
+			activationBy="MEMBER";
+			age="UNKNOWN";
+			idVehicle=324;
+			expCond="this or (aP distance K1 <= 25 or aP distance K2 <= 25 or aP distance K3 <= 25 or aP distance K4 <= 25 or aP distance K5 <= 25) and alive aP ";
+			expActiv="[K1, K2, K3, K4, K5] join aP";
+			class Effects
+			{
+			};
+		};
+		class Item69
+		{
+			position[]={3200.101318,49.218250,6794.719238};
+			a=1400.000000;
+			b=1100.000000;
+			angle=20.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=0;
+			text="OUT OF BOUNDS - WARNING";
+			expCond="this and alive aP";
+			expActiv="[] exec ""outofbounds_lemontov.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item70
+		{
+			position[]={3187.351074,17.533642,6950.383301};
+			a=1400.000000;
+			b=1100.000000;
+			angle=20.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			text="OUT OF BOUNDS - WARNING";
+			expCond="this and alive aP";
+			expActiv="[] exec ""outofbounds_lemontov.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item71
+		{
+			position[]={3194.276367,48.153244,6794.105957};
+			a=1500.000000;
+			b=1200.000000;
+			angle=20.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=0;
+			text="OUT OF BOUNDS - KILL";
+			expCond="this and alive aP";
+			expActiv="[] exec ""outofbounds.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item72
+		{
+			position[]={4066.192139,60.276985,5967.495117};
+			a=250.000000;
+			b=250.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=0;
+			text="OUT OF BOUNDS - WARNING";
+			expCond="this and alive aP and ambush";
+			expActiv="[] exec ""outofbounds_lemontov.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item73
+		{
+			position[]={4062.266113,60.412842,5967.302246};
+			a=300.000000;
+			b=300.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=0;
+			text="OUT OF BOUNDS - KILL";
+			expCond="this and alive aP and ambush";
+			expActiv="[] exec ""outofbounds.sqs""";
 			class Effects
 			{
 			};
