@@ -3,6 +3,10 @@ setacctime 1
 "6" objstatus "done"
 aP addrating 1000
 
+? not joined : [K1, K2, K3, K4, K5] join aP ; joined=true ;
+
+~4
+
 Kaplinsky sideradio "32r07"
 aP sideradio "32r08"
 Kaplinsky sideradio "32r09"
@@ -12,6 +16,8 @@ aP sideradio "32r10"
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
+
+enableradio false
 
 ;=== 14:53:50
 _camera camSetTarget [-77344.15,64099.51,-897.15]
@@ -27,7 +33,7 @@ titletext [ localize "STRC_END_SUCCESS","plain"]
 
 ~8
 titlecut["","black out",2]
-
+~3
 end=true
 player cameraEffect ["terminate","back"]
 camDestroy _camera

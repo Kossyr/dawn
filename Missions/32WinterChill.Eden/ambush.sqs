@@ -8,30 +8,37 @@ aP addrating 1000
 "6" objstatus "active"
 
 "Spetsnaz" setmarkertype "Arrow"
+"EnemyEast" setmarkertype "Arrow"
+"EnemyWest" setmarkertype "Arrow"
+"EnemySouth" setmarkertype "Arrow"
 
 ambush=true
 
-K1 setpos getmarkerpos "K"
-K2 setpos getmarkerpos "K"
-K3 setpos getmarkerpos "K"
-K4 setpos getmarkerpos "K"
-K5 setpos getmarkerpos "K"
+K1 setpos getmarkerpos "AmbushSpetsnaz"
+K2 setpos getmarkerpos "AmbushSpetsnaz"
+K3 setpos getmarkerpos "AmbushSpetsnaz"
+K4 setpos getmarkerpos "AmbushSpetsnaz"
+K5 setpos getmarkerpos "AmbushSpetsnaz"
 
-B3 setpos getmarkerpos "B3"
-B4 setpos getmarkerpos "B3"
-B5 setpos getmarkerpos "B3"
+B3 setpos getmarkerpos "AmbushWest"
+B4 setpos getmarkerpos "AmbushWest"
 
-B6 setpos getmarkerpos "B6"
-B7 setpos getmarkerpos "B6"
-B8 setpos getmarkerpos "B6"
+B5 setpos getmarkerpos "AmbushEast"
+B6 setpos getmarkerpos "AmbushEast"
 
-B9 setpos getmarkerpos "B9"
-B10 setpos getmarkerpos "B9"
-B11 setpos getmarkerpos "B9"
-B12 setpos getmarkerpos "B9"
-
-~5
+B7 setpos getmarkerpos "AmbushSouth"
+B8 setpos getmarkerpos "AmbushSouth"
+B9 setpos getmarkerpos "AmbushSouth"
+B10 setpos getmarkerpos "AmbushSouth"
 
 canEnd=true
+
+~8
+
+aP say "32v13"
+
+~10
+
+savegame
 
 exit
