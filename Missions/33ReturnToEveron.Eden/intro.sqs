@@ -1,0 +1,386 @@
+titlecut["","black in",2]
+
+; SAINT PHILLIPPE CINEMA
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+bmpReady=false
+
+
+
+"_x stop true" foreach units GroupBeach1
+"_x stop true" foreach units GroupBeach2
+"_x stop true" foreach units GroupBeach3
+
+"_x stop true" foreach units SoldiersE
+"_x stop true" foreach units SoldiersW
+BMPE stop true
+BMPW stop true
+
+"_x stop true" foreach units RashivGroup
+
+C2 dowatch [4605.04,10733.47,1.70]
+C1 dowatch [4605.84,10733.20,1.70]
+
+;=== 19:09:54
+_camera camSetTarget [13211.24,110228.94,19.27]
+_camera camSetPos [4671.58,10594.50,1.14]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~1
+
+C1 playmove "EffectStandTalk"
+C2 switchmove "FXInHand"
+H2 switchmove "effectstandsitdown"
+H3 switchmove "FXToKneel"
+
+~3
+
+
+;=== 19:10:46
+_camera camSetTarget [11456.57,110428.81,895.49]
+_camera camSetPos [4602.32,10667.86,1.27]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:10:58
+_camera camSetTarget [65243.26,90184.74,895.55]
+_camera camSetPos [4599.73,10676.29,1.29]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+~2
+
+patrolsGo=true
+
+;=== 19:14:45
+_camera camSetTarget [-56315.86,89847.69,-5271.07]
+_camera camSetPos [4610.98,10727.03,1.88]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:14:59
+_camera camSetTarget [-28042.32,105102.55,-5271.46]
+_camera camSetPos [4605.76,10730.29,1.47]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+
+~1
+
+;=== 19:19:44
+_camera camSetTarget [-72927.83,73893.53,18.61]
+_camera camSetPos [4593.32,10723.35,2.73]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:20:13
+_camera camSetTarget [-93170.30,31762.29,18.34]
+_camera camSetPos [4592.16,10726.56,2.93]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~1
+
+;=== 19:24:31
+_camera camSetTarget [-3188.77,110385.44,9.84]
+_camera camSetPos [4391.41,10673.14,6.33]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+harbourGo=true
+;=== 19:24:52
+_camera camSetTarget [-5964.54,110323.16,9.78]
+_camera camSetPos [4379.70,10867.32,7.09]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+;=== 19:22:31
+_camera camSetTarget [-60063.00,87353.49,-686.19]
+_camera camSetPos [4380.96,10891.13,1.40]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:22:41
+_camera camSetTarget [42795.80,103193.88,-2085.87]
+_camera camSetPos [4376.37,10892.42,1.11]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~1.5
+
+titlecut["","white out",0.5]
+~0.5
+
+
+
+; BEACH CINEMA
+
+titlecut["","white in",0.5]
+
+beachGo=true
+
+;=== 20:43:27
+_camera camSetTarget [-95142.23,-1939.83,350.05]
+_camera camSetPos [4095.71,10377.93,5.27]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:43:52
+_camera camSetTarget [-90809.50,-18882.91,-13145.34]
+_camera camSetPos [3907.75,10374.30,5.37]
+_camera camSetFOV 0.700
+_camera camCommit 12
+@camCommitted _camera
+
+        _who = BMP1;
+
+		_dx = -5;
+		_dy = 0;
+		_dz = 4.15;
+
+
+		#LOOP
+
+		;=== 17:26:18
+		_camera camSetTarget _who
+		_camera camSetPos [(getpos _who select 0) + _dx * sin (getdir _who) - _dy * cos (getdir _who), (getpos _who select 1) + _dx * cos (getdir _who) + _dy * sin (getdir _who), (getpos _who select 2)+_dz]
+		_camera camSetFOV 0.700
+		_camera camCommit 0
+		@camCommitted _camera
+
+		? bmpReady : goto "goAway"
+		goto "LOOP"
+		#goAway
+
+
+;=== 20:37:14
+_camera camSetTarget [57740.00,94238.26,8335.09]
+_camera camSetPos [3931.31,10361.69,1.65]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~8
+
+;=== 20:37:41
+_camera camSetTarget [-29537.44,104476.24,-3787.30]
+_camera camSetPos [3941.17,10323.31,3.21]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:37:49
+_camera camSetTarget [-67195.03,80133.05,-8118.86]
+_camera camSetPos [3950.44,10331.63,3.43]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+
+;=== 20:54:29
+_camera camSetTarget [80494.95,-53725.97,3361.13]
+_camera camSetPos [3851.61,10418.43,0.82]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:54:42
+_camera camSetTarget [102674.70,-4561.73,3361.92]
+_camera camSetPos [3857.80,10398.45,2.20]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+
+
+;=== 20:57:33
+_camera camSetTarget [-43525.86,-76859.80,-11092.24]
+_camera camSetPos [3960.80,10442.12,4.11]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+~6
+
+titlecut["","white out",1]
+~1
+
+deleteVehicle driver BMP1
+deleteVehicle gunner BMP1
+deleteVehicle commander BMP1
+deleteVehicle BMP1
+
+deleteVehicle driver BMP2
+deleteVehicle gunner BMP2
+deleteVehicle commander BMP2
+deleteVehicle BMP2
+
+deleteVehicle driver BMP3
+deleteVehicle gunner BMP3
+deleteVehicle commander BMP3
+deleteVehicle BMP3
+
+"deleteVehicle _x" foreach units BeachGroup1
+"deleteVehicle _x" foreach units BeachGroup2
+"deleteVehicle _x" foreach units BeachGroup3
+
+; HARBOUR CINEMA
+
+titlecut["","white in",1]
+
+
+;=== 21:20:09
+_camera camSetTarget [55716.36,-74620.92,2354.25]
+_camera camSetPos [4239.70,11076.36,8.82]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 21:20:17
+_camera camSetTarget [66430.97,-67241.04,2354.81]
+_camera camSetPos [4248.85,11035.80,8.51]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~1
+
+"Shell105" camCreate getMarkerPos "Bomb"
+~0.5
+"Shell105" camCreate getMarkerPos "Bomb_1"
+~0.1
+"Shell105" camCreate getMarkerPos "Bomb_2"
+"Shell105" camCreate getMarkerPos "Bomb_3"
+~1
+"Shell105" camCreate getMarkerPos "Bomb_4"
+"Shell105" camCreate getMarkerPos "Bomb_5"
+~0.5
+
+harbourBombs=true
+
+Ship1 setdammage 1
+"Shell105" camCreate getMarkerPos "Bomb_6"
+~0.5
+Ship2 setdammage 1
+"Shell105" camCreate getMarkerPos "Bomb_7"
+~0.5
+H1 setpos getmarkerpos "Harbour"
+H1 setdir 165
+H1 switchmove "FXDismay"
+
+BMPE setpos getmarkerpos "BMPE"
+BMPW setpos getmarkerpos "BMPW"
+"_x setpos getmarkerpos ""SoldiersE""" foreach units SoldiersE
+"_x setpos getmarkerpos ""SoldiersW""" foreach units SoldiersW
+
+BMPE stop false
+BMPW stop false
+"_x stop false" foreach units SoldiersE
+"_x stop false" foreach units SoldiersW
+
+
+;=== 21:30:44
+_camera camSetTarget [-60168.28,87124.27,-4748.23]
+_camera camSetPos [4374.50,10890.10,1.71]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+harbourEscape=true
+alarm=true
+
+"Shell105" camCreate getMarkerPos "Bomb_8"
+~0.5
+H1 setdammage 1
+MachineGun setdammage 1
+"Shell105" camCreate getMarkerPos "Bomb_9"
+~0.2
+H2 setdammage 1
+H3 setdammage 1
+"Shell105" camCreate getMarkerPos "Bomb_10"
+
+
+
+goE=true
+
+;=== 21:52:15
+_camera camSetTarget [-14988.73,108874.35,-3422.40]
+_camera camSetPos [4386.70,10825.56,5.10]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~5
+;=== 21:52:44
+_camera camSetTarget [-72899.31,74269.22,-1323.38]
+_camera camSetPos [4386.70,10825.56,5.10]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+
+;=== 21:55:27
+_camera camSetTarget [70443.63,-64064.97,-555.51]
+_camera camSetPos [4274.39,10905.90,2.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 21:55:38
+_camera camSetTarget [83581.50,-50015.69,-555.41]
+_camera camSetPos [4281.56,10896.01,3.70]
+_camera camSetFOV 0.700
+_camera camCommit 4
+~1
+goW=true
+@camCommitted _camera
+
+;=== 21:57:12
+_camera camSetTarget [41527.19,103353.75,-2098.72]
+_camera camSetPos [4235.45,10591.31,5.78]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Yashin setpos getmarkerpos "yashin"
+Rashiv setpos getmarkerpos "Rashiv"
+
+"_x setpos getmarkerpos ""RashivGroup""" foreach units RashivGroup
+
+"_x stop false" foreach units RashivGroup
+
+
+;=== 21:57:21
+_camera camSetTarget [97700.24,46133.66,-1023.52]
+_camera camSetPos [4235.45,10591.31,5.78]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+
+rashivGo=true
+
+titlecut["","white in",0.5]
+
+;=== 22:11:32
+_camera camSetTarget [-49916.64,-73523.35,836.85]
+_camera camSetPos [4380.76,10447.56,1.28]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+;=== 22:11:16
+_camera camSetTarget [-42976.34,-77447.56,-5582.15]
+_camera camSetPos [4380.33,10450.20,1.34]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+
+Rashiv switchmove "CommandForward"
+
+titlecut ["","black out",3]
+4 fadesound 0
+~4
+end=true
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit
