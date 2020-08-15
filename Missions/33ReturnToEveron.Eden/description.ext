@@ -19,6 +19,24 @@ ShowGPS = 0
 
 ShowMap = 1
 
+class Weapons
+{
+	class AK74SU				{ count = 3; };
+	class SVDDragunov			{ count = 1; };
+	class PK					{ count = 2; };
+	class AK74GrenadeLauncher 	{ count = 3; };
+	class RPGLauncher			{ count = 2; };
+};
+
+class Magazines
+{
+	class AK74					{ count = 34; };
+	class SVDDragunov 			{ count = 8;  };
+	class PK					{ count = 10; };
+	class GrenadeLauncher		{ count = 9;  };
+	class RPGLauncher			{ count = 6;  };
+};
+
 
 class CfgRadio
 {
@@ -125,23 +143,5 @@ class CfgRadio
 		name = "33r17";
 		sound[] = {"33r17.ogg", db+10, 1.00};
 		title = $STRM_33r17;
-	};
-	class 33r18
-	{
-		name = "33r18";
-		sound[] = {"33r18.ogg", db+10, 1.00};
-		title = $STRM_33r18;
-	};
-	class 33r19
-	{
-		name = "33r19";
-		sound[] = {"33r19.ogg", db+10, 1.00};
-		title = $STRM_33r19;
-	};
-	class 33r20
-	{
-		name = "33r20";
-		sound[] = {"33r20.ogg", db+10, 1.00};
-		title = $STRM_33r20;
 	};
 };
