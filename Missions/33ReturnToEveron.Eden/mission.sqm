@@ -5120,7 +5120,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=18;
+		items=20;
 		class Item0
 		{
 			position[]={4743.493652,24.660000,10904.310547};
@@ -5192,6 +5192,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="AA DISCOVERED";
 			expCond="not alive FlyingDutchman";
 			expActiv="[] exec ""aa_discovered.sqs""";
 			class Effects
@@ -5291,6 +5292,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
+			text="AA GUN DESTROYED";
 			expCond="not canmove AntiAirGun";
 			expActiv="[] exec ""aa_destroyed.sqs""";
 			class Effects
@@ -5313,11 +5315,12 @@ class Mission
 		class Item14
 		{
 			position[]={4801.193359,24.660000,11856.914063};
-			a=150.000000;
-			b=200.000000;
+			a=200.000000;
+			b=250.000000;
 			rectangular=1;
 			activationBy="WEST";
 			age="UNKNOWN";
+			text="AIRPORT TAKEN";
 			expCond="{alive _x} count thislist <= 2 and not canmove T1 and not canmove T2 and not canmove T3 and not canmove T4 and not canmove T5 and not canmove T6 and not canmove AntiAirGun";
 			expActiv="[] exec ""outro.sqs""; ""_x setdammage 1"" foreach thislist";
 			class Effects
@@ -5332,6 +5335,7 @@ class Mission
 			activationBy="MEMBER";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="ATTACK ON AIRPORT READY";
 			expCond="this and toAirport";
 			expActiv="[] exec ""airport_close.sqs""";
 			class Effects
@@ -5360,11 +5364,42 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="TANKS FROM THE AIRPORT";
 			expCond="this and toAirport";
 			class Effects
 			{
 			};
 			synchronizations[]={28};
+		};
+		class Item18
+		{
+			position[]={4982.051270,24.548286,9963.372070};
+			a=1500.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			age="UNKNOWN";
+			idVehicle=0;
+			text="OUT OF BOUNDS - WARNING";
+			expCond="this and alive aP";
+			expActiv="[] exec ""outofbounds_rashiv.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item19
+		{
+			position[]={4982.050781,23.789219,9863.815430};
+			a=1500.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			age="UNKNOWN";
+			idVehicle=0;
+			text="OUT OF BOUNDS - KILL";
+			expCond="this and alive aP";
+			expActiv="[] exec ""outofbounds.sqs""";
+			class Effects
+			{
+			};
 		};
 	};
 };

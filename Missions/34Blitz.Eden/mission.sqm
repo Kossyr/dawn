@@ -1,0 +1,253 @@
+version=11;
+class Mission
+{
+	randomSeed=3268099;
+	class Intel
+	{
+		briefingName="@STRCN_34";
+		startWeather=0.600000;
+		forecastWeather=0.800000;
+		month=1;
+		day=28;
+		hour=10;
+		minute=5;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={4793.551270,24.660000,11761.323242};
+					azimut=180.000000;
+					id=0;
+					side="EAST";
+					vehicle="T80";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="LIEUTNANT";
+					skill=1.000000;
+					text="aP";
+					init="commander this setidentity ""Kukushkin""; this setgroupid [""yankee"",""groupcolor0""]";
+				};
+				class Item1
+				{
+					position[]={4780.104492,24.660000,11769.736328};
+					azimut=180.000000;
+					id=1;
+					side="EAST";
+					vehicle="T80";
+					rank="SERGEANT";
+					skill=1.000000;
+				};
+				class Item2
+				{
+					position[]={4805.656738,24.660000,11770.232422};
+					azimut=180.000000;
+					id=2;
+					side="EAST";
+					vehicle="T80";
+					rank="SERGEANT";
+					skill=0.800000;
+				};
+				class Item3
+				{
+					position[]={4770.017578,24.660000,11780.145508};
+					azimut=180.000000;
+					id=3;
+					side="EAST";
+					vehicle="T80";
+					rank="CORPORAL";
+					skill=0.700000;
+				};
+			};
+			class Waypoints
+			{
+				items=4;
+				class Item0
+				{
+					position[]={4795.924805,33.750095,10484.467773};
+					type="HOLD";
+					combatMode="YELLOW";
+					formation="LINE";
+					speed="NORMAL";
+					combat="COMBAT";
+					description="@STRM_wAYPOINT_DEFENCE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={4492.648438,15.164999,9522.404297};
+					type="HOLD";
+					description="@STRM_WAYPONT_MEAUX";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={4923.708496,30.911650,9093.252930};
+					type="HOLD";
+					description="@STRM_WAYPOINT_TYRONE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={4926.495605,159.029999,6927.597168};
+					type="HOLD";
+					description="@STRM_WAYPOINT_MONTIGNAC";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=13;
+		class Item0
+		{
+			position[]={4792.831055,24.660000,11774.080078};
+			name="Start";
+			text="@STRC_MARKER_START";
+			type="Start";
+			colorName="ColorGreen";
+			angle=180.000000;
+		};
+		class Item1
+		{
+			position[]={4807.255371,24.660000,11921.140625};
+			name="Airport";
+			text="@STRM_MARKER_AIRPORT";
+			type="Flag1";
+			colorName="ColorGreen";
+			a=2.000000;
+			b=2.000000;
+		};
+		class Item2
+		{
+			position[]={5134.750488,31.139999,10493.698242};
+			name="Base";
+			text="@STRM_MARKER_BASE";
+			type="Flag1";
+			colorName="ColorGreen";
+		};
+		class Item3
+		{
+			position[]={4637.933105,17.594999,10746.133789};
+			name="SaintPhillippe";
+			type="Flag1";
+			colorName="ColorGreen";
+		};
+		class Item4
+		{
+			position[]={4561.219727,15.943711,10237.125000};
+			name="EnemyAttack1";
+			type="Arrow";
+			colorName="ColorRed";
+			b=2.000000;
+		};
+		class Item5
+		{
+			position[]={4900.503418,20.522335,10241.789063};
+			name="EnemyAttack2";
+			type="Arrow";
+			colorName="ColorRed";
+			b=2.000000;
+			angle=326.000000;
+		};
+		class Item6
+		{
+			position[]={4940.636230,31.765450,9104.033203};
+			name="Tyrone";
+			text="@STRC_MARKER_SEIZE";
+			type="Flag";
+			colorName="ColorRed";
+		};
+		class Item7
+		{
+			position[]={4521.883789,15.164999,9498.211914};
+			name="Meaux";
+			text="@STRC_MARKER_SEIZE";
+			type="Flag";
+			colorName="ColorRed";
+		};
+		class Item8
+		{
+			position[]={4931.202637,159.029999,6919.961426};
+			name="Montignac";
+			text="@STRC_MARKER_SEIZE";
+			type="Flag";
+			colorName="ColorRed";
+		};
+		class Item9
+		{
+			position[]={4593.994141,81.835320,8401.306641};
+			name="Fortifications";
+			text="@STRM_MARKER_FORTIFICATIONS";
+			type="Warning";
+			colorName="ColorRed";
+		};
+		class Item10
+		{
+			position[]={4715.240723,61.061882,4763.472656};
+			name="Enemy";
+			markerType="ELLIPSE";
+			type="Flag";
+			colorName="ColorRed";
+			fillName="Horizontal";
+			a=4000.000000;
+			b=1400.000000;
+			angle=180.000000;
+		};
+		class Item11
+		{
+			position[]={3884.603271,23.283314,8343.162109};
+			name="West";
+			type="Unknown";
+			colorName="ColorRed";
+		};
+		class Item12
+		{
+			position[]={5470.327637,11.647223,8301.041992};
+			name="East";
+			type="Unknown";
+			colorName="ColorRed";
+		};
+	};
+};
+class Intro
+{
+	randomSeed=13785091;
+	class Intel
+	{
+	};
+};
+class OutroWin
+{
+	randomSeed=13016579;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=7999491;
+	class Intel
+	{
+	};
+};
