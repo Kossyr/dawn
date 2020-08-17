@@ -1,0 +1,43 @@
+setacctime 1
+
+"5" objstatus "done"
+aP addrating 1000
+
+aP sideradio "34r10"
+baza sideradio "34r11"
+
+~8
+
+enableradio false
+
+setacctime 1
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;=== 17:38:07
+_camera camSetTarget [43534.07,98435.16,-10236.65]
+_camera camSetPos [4814.52,6825.32,20.38]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+;=== 17:38:22
+_camera camSetTarget [42955.46,97066.18,-19848.68]
+_camera camSetPos [4814.52,6825.32,41.55]
+_camera camSetFOV 0.700
+_camera camCommit 14
+titletext [ localize "STRC_END_SUCCESS","plain"]
+~10
+titlecut["","black out",4]
+@camCommitted _camera
+
+
+end=true
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+
+exit

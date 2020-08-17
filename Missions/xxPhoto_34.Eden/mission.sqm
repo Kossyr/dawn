@@ -1,0 +1,121 @@
+version=11;
+class Mission
+{
+	randomSeed=1668099;
+	class Intel
+	{
+		startWeather=0.600000;
+		forecastWeather=0.800000;
+		month=1;
+		day=28;
+		hour=10;
+		minute=5;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4373.964844,89.194138,7249.291992};
+					id=0;
+					side="EAST";
+					vehicle="SoldierEB";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					init="this exec ""photo.sqs""";
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4863.204590,159.029999,7048.236816};
+					azimut=155.000000;
+					id=1;
+					side="EAST";
+					vehicle="T80";
+					leader=1;
+					skill=0.600000;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4883.913574,159.029999,7009.487793};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4889.230957,159.029999,6987.393066};
+					azimut=330.000000;
+					id=3;
+					side="WEST";
+					vehicle="M60";
+					leader=1;
+					skill=0.600000;
+					init="this setdammage 1";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={4912.437988,159.029999,6977.492676};
+			azimut=235.000000;
+			id=2;
+			side="EMPTY";
+			vehicle="Jeep";
+			lock="LOCKED";
+			skill=0.200000;
+		};
+	};
+};
+class Intro
+{
+	randomSeed=9590787;
+	class Intel
+	{
+	};
+};
+class OutroWin
+{
+	randomSeed=9495555;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=12932611;
+	class Intel
+	{
+	};
+};
