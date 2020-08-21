@@ -1,0 +1,214 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"bis_resistance",
+		"bmp2"
+	};
+	addOnsAuto[]=
+	{
+		"bis_resistance"
+	};
+	randomSeed=1978371;
+	class Intel
+	{
+		startWeather=0.700000;
+		forecastWeather=0.900000;
+		month=1;
+		day=26;
+		hour=14;
+		minute=10;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4870.009277,24.660000,11740.373047};
+					azimut=270.000000;
+					id=4;
+					side="EAST";
+					vehicle="SoldierEPilot";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="CAPTAIN";
+					skill=1.000000;
+					text="aP";
+					init="this setidentity ""Ablomov""; this setgroupid [""november"",""groupcolor0""]";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=5;
+		class Item0
+		{
+			position[]={4810.960938,24.660000,11833.436523};
+			azimut=270.000000;
+			id=0;
+			side="EMPTY";
+			vehicle="HeliH";
+			skill=0.600000;
+		};
+		class Item1
+		{
+			position[]={4811.402344,24.660000,11851.758789};
+			azimut=270.000000;
+			id=1;
+			side="EMPTY";
+			vehicle="HeliH";
+			skill=0.600000;
+		};
+		class Item2
+		{
+			position[]={4811.398926,24.660000,11867.313477};
+			azimut=270.000000;
+			id=2;
+			side="EMPTY";
+			vehicle="HeliH";
+			skill=0.600000;
+		};
+		class Item3
+		{
+			position[]={4811.398926,24.660000,11882.182617};
+			azimut=270.000000;
+			id=3;
+			side="EMPTY";
+			vehicle="HeliH";
+			skill=0.600000;
+		};
+		class Item4
+		{
+			position[]={4810.795410,24.660000,11832.912109};
+			azimut=85.000000;
+			id=5;
+			side="EMPTY";
+			vehicle="Kamov";
+			leader=1;
+			lock="LOCKED";
+			skill=1.000000;
+		};
+	};
+	class Markers
+	{
+		items=10;
+		class Item0
+		{
+			position[]={4874.071289,24.660000,11740.487305};
+			name="Start";
+			text="@STRC_MARKER_START";
+			type="Start";
+			colorName="ColorGreen";
+			angle=270.000000;
+		};
+		class Item1
+		{
+			position[]={4805.382324,24.660000,11947.611328};
+			name="Airport";
+			text="@STRM_MARKER_AIRPORT";
+			type="Flag1";
+			colorName="ColorGreen";
+		};
+		class Item2
+		{
+			position[]={2580.895264,83.567596,5453.040039};
+			name="LeMoule";
+			text="@STRM_MARKER_LE_MOULE";
+			type="Flag1";
+			colorName="ColorGreen";
+		};
+		class Item3
+		{
+			position[]={3661.596191,101.501869,5025.204590};
+			name="EnemyAttack";
+			text="@STRM_MARKER_ENEMY";
+			type="Destroy";
+			colorName="ColorRed";
+		};
+		class Item4
+		{
+			position[]={8609.880859,104.155128,3057.818115};
+			name="WarningEnemy";
+			markerType="ELLIPSE";
+			type="Flag";
+			colorName="ColorRed";
+			fillName="Horizontal";
+			a=3500.000000;
+			b=2500.000000;
+			angle=40.000000;
+		};
+		class Item5
+		{
+			position[]={4232.163574,60.427635,4532.932129};
+			name="Vulcan";
+			text="@STRM_MARKER_VULCAN";
+			type="Arrow";
+			colorName="ColorRed";
+			b=3.000000;
+			angle=310.000000;
+		};
+		class Item6
+		{
+			position[]={3115.881348,86.066841,4170.888184};
+			name="Air";
+			text="@STRM_MARKER_AIR";
+			type="Arrow";
+			colorName="ColorRed";
+			b=3.000000;
+			angle=340.000000;
+		};
+		class Item7
+		{
+			position[]={4848.798828,24.660000,12021.133789};
+			name="Postmaster";
+			text="@STRM_MARKER_POSTMASTER";
+			type="Marker";
+			colorName="ColorBlue";
+		};
+		class Item8
+		{
+			position[]={4885.708008,24.660000,11885.824219};
+			name="Logistics";
+			text="@STRM_MARKER_LOGISTICS";
+			type="Marker";
+			colorName="ColorBlue";
+		};
+		class Item9
+		{
+			position[]={4805.933594,24.660000,11832.919922};
+			name="Helicopter";
+			text="@STRM_MARKER_HELICOPTER";
+			type="Marker";
+			colorName="ColorBlue";
+		};
+	};
+};
+class Intro
+{
+	randomSeed=4992515;
+	class Intel
+	{
+	};
+};
+class OutroWin
+{
+	randomSeed=1349123;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=9742339;
+	class Intel
+	{
+	};
+};
