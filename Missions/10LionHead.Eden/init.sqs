@@ -1,11 +1,19 @@
 titlecut ["","black in",3]
 
+aa = aP loadStatus "09Rashiv"
+
 "_x moveincargo resTransport" foreach units group player
 
 "2" objstatus "hidden"
 "3" objstatus "hidden"
 "4" objstatus "hidden"
 "5" objstatus "hidden"
+
+resTransport addweaponcargo ["AK47",1]
+resTransport addmagazinecargo ["AK74",8]
+resTransport addweaponcargo ["PK",1]
+resTransport addmagazinecargo ["PK",6]
+resTransport addmagazinecargo ["HandGrenade",4]
 
 "Camp" setmarkertype "Empty"
 

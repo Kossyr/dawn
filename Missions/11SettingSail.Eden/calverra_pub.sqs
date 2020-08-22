@@ -7,9 +7,28 @@ aP addrating 1000
 
 cinema=true
 
+? (aP == vehicle aP) : goto "pub_cinema" ;
+
+vehicle aP setpos getmarkerpos "player_vehicle_away"
+vehicle aP setdir 0
+
+~1
+
+vehicle aP setpos getmarkerpos "pub_vehicle"
+vehicle aP setdir 325
+
+aP action ["EJECT"]
+
+#pub_cinema
+
+
+
 aP setpos getmarkerpos "player_away"
 Calverra setpos getmarkerpos "calverra_pub";
 RashivPub setpos getmarkerpos "rashiv_pub";
+
+aa = aP saveStatus "10Rashiv"
+aa = RashivPub loadStatus "10Rashiv"
 
 RashivPub dowatch [9526.09,1573.07,1.71]
 

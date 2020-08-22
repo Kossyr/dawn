@@ -10,8 +10,25 @@ cinema = true
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
+? (aP == vehicle aP) : goto "warehouse_cinema" ;
+
+vehicle aP setpos getmarkerpos "player_vehicle_away"
+vehicle aP setdir 0
+
+~1
+
+vehicle aP setpos getmarkerpos "warehouse_vehicle"
+vehicle aP setdir 60
+
+aP action ["EJECT"]
+
+#warehouse_cinema
+
 aP setpos getmarkerpos "player_away"
 aP action ["WEAPONONBACK"]
+
+aa = aP saveStatus "10Rashiv"
+aa = RashivWarehouse loadStatus "10Rashiv"
 
 WarehouseGuard1 setpos getmarkerpos "guard_warehouse1";
 RashivWarehouse setpos getmarkerpos "rashiv_warehouse";

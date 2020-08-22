@@ -6,30 +6,38 @@ aP addrating 1000
 titlecut["","black out",0.5]
 ~0.5
 
-
 cinema=true
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-FuelTruck setpos getmarkerpos "beach_truck"
-FuelTruck setdir 110
+? (aP == vehicle aP) : goto "beach_cinema" ;
 
-~2
+vehicle aP setpos getmarkerpos "player_vehicle_away"
+vehicle aP setdir 0
 
+~1
+
+vehicle aP setpos getmarkerpos "beach_vehicle"
+vehicle aP setdir 10
+
+aP action ["EJECT"]
+
+#beach_cinema
 
 FuelTruck setpos getmarkerpos "beach_truck"
 FuelTruck setdir 110
 
 goingToDurras=false
 
-? aP in FuelTruck : aP action ["EJECT"]
-
 aP action ["WEAPONONBACK"]
 
 aP setpos getmarkerpos "player_away"
 Calverra setpos getmarkerpos "calverra_beach";
 RashivBeach setpos getmarkerpos "rashiv_beach";
+
+aa = aP saveStatus "10Rashiv"
+aa = RashivBeach loadStatus "10Rashiv"
 
 RashivBeach dowatch [9693.00,1473.54,1.62]
 Calverra dowatch [9693.33,1475.69,1.58]

@@ -19,6 +19,9 @@ astierCareless=true
 
 setacctime 1
 
+aa = aP saveStatus "00Poincare"
+aa = actor loadStatus "00Poincare"
+
 Astier stop true
 res1 stop true
 res2 stop true
@@ -118,8 +121,7 @@ Astier say "00v28"
 
 res1 setpos getmarkerpos "trucks_res1"
 res2 setpos getmarkerpos "trucks_res2"
-actor dowatch objnull
-actor setpos getmarkerpos "away"
+deleteVehicle actor
 
 res1 setdir 205
 res2 setdir 25

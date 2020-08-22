@@ -13,7 +13,7 @@ _camera cameraeffect ["internal","back"]
 
 ? (aP == vehicle aP) : goto "durras_cinema" ;
 
-vehicle aP setpos getmarkerpos "durras_car"
+vehicle aP setpos getmarkerpos "player_vehicle_away"
 vehicle aP setdir 250
 
 ~1
@@ -24,6 +24,9 @@ vehicle aP setdir 250
 aP action ["EJECT"]
 
 #durras_cinema
+
+aa = aP saveStatus "10Rashiv"
+aa = RashivDurras loadStatus "10Rashiv"
 
 Tracer setpos getmarkerpos "tracer_durras";
 RashivDurras setpos getmarkerpos "rashiv_durras";

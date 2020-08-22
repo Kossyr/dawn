@@ -33,6 +33,9 @@ aP action ["WEAPONONBACK"]
 
 astier dowatch objnull
 
+aa = aP saveStatus "00Poincare"
+aa = actor2 loadStatus "00Poincare"
+
 unassignvehicle aP
 unassignvehicle Astier
 unassignvehicle res1
@@ -42,9 +45,9 @@ aP setpos getmarkerpos "chotain_uazg_clear"
 uazg setpos getmarkerpos "chotain_uazg2"
 uazg setdir 195
 
-actor setpos getmarkerpos "chotain_ap"
-actor setdir 185
-actor dowatch [7111.36,6051.14,1.73]
+actor2 setpos getmarkerpos "chotain_ap"
+actor2 setdir 185
+actor2 dowatch [7111.36,6051.14,1.73]
 
 res3 setpos getmarkerpos "chotain_res3"
 res4 setpos getmarkerpos "chotain_res4"
@@ -118,8 +121,8 @@ _camera camSetPos [7111.77,6051.75,1.51]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-actor setmimic "Normal"
-actor say "00v36"
+actor2 setmimic "Normal"
+actor2 say "00v36"
 ~3.5
 ;=== 19:54:09
 _camera camSetTarget [-49155.45,-76549.30,-3160.42]
@@ -141,7 +144,7 @@ _camera camSetPos [7110.27,6050.56,1.35]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-actor say "00v38"
+actor2 say "00v38"
 ~1.5
 ;=== 19:56:07
 _camera camSetTarget [-15582.86,-91330.41,-1166.11]
@@ -171,8 +174,8 @@ _camera camSetPos [7111.50,6051.32,1.40]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-actor switchmove "FXCivilHandMouth"
-actor say "00v40"
+actor2 switchmove "FXCivilHandMouth"
+actor2 say "00v40"
 ~8.5
 ;=== 19:58:17
 _camera camSetTarget [-47587.67,-77650.52,-1165.79]
@@ -206,8 +209,8 @@ _camera camSetPos [7110.41,6051.62,1.37]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-actor setmimic "Angry"
-actor say "00v42"
+actor2 setmimic "Angry"
+actor2 say "00v42"
 ;=== 20:00:43
 _camera camSetTarget [91098.15,59849.94,-7078.66]
 _camera camSetPos [7110.04,6050.75,1.32]
@@ -231,7 +234,7 @@ _camera camSetPos [7110.41,6051.62,1.37]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-actor say "00v44"
+actor2 say "00v44"
 ~1.2
 ;=== 19:58:17
 _camera camSetTarget [-47587.67,-77650.52,-1165.79]
@@ -258,9 +261,9 @@ _camera camCommit 0
 res3 dowatch [7091.50,6056.01,2.02]
 res4 dowatch [7091.50,6056.01,2.02]
 res5 dowatch [7091.50,6056.01,2.02]
-actor dowatch [7091.50,6056.01,2.02]
+actor2 dowatch [7091.50,6056.01,2.02]
 
-actor setmimic "Default"
+actor2 setmimic "Default"
 res3 setmimic "Default"
 res4 setmimic "Default"
 res5 setmimic "Default"
@@ -304,8 +307,7 @@ _camera camCommit 7
 @camCommitted _camera
 
 
-actor setpos getmarkerpos "away"
-actor dowatch objnull
+deleteVehicle actor2
 
 aP setpos getmarkerpos "chotain_ap"
 aP setdir 340
@@ -326,7 +328,7 @@ Astier assignasdriver ammo1
 res1 assignasdriver ammo2
 res2 assignasdriver ammo3
 
-actor dowatch objnull
+actor2 dowatch objnull
 res3 dowatch objnull
 res4 dowatch objnull
 res5 dowatch objnull

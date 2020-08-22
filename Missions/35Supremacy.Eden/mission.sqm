@@ -13,12 +13,13 @@ class Mission
 	randomSeed=1978371;
 	class Intel
 	{
+		briefingName="@STRCN_35";
 		startWeather=0.700000;
 		forecastWeather=0.900000;
 		month=1;
 		day=26;
-		hour=14;
-		minute=10;
+		hour=13;
+		minute=15;
 	};
 	class Groups
 	{
@@ -41,7 +42,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=1.000000;
 					text="aP";
-					init="this setidentity ""Ablomov""; this setgroupid [""november"",""groupcolor0""]";
+					init="this setidentity ""Ablomov""; this setgroupid [""november"",""groupcolor0""]; this setbehaviour ""safe""";
 				};
 			};
 		};
@@ -95,6 +96,7 @@ class Mission
 			leader=1;
 			lock="LOCKED";
 			skill=1.000000;
+			text="AblomovHelicopter";
 		};
 	};
 	class Markers
@@ -128,7 +130,7 @@ class Mission
 		class Item3
 		{
 			position[]={3661.596191,101.501869,5025.204590};
-			name="EnemyAttack";
+			name="EnemyAttackGround";
 			text="@STRM_MARKER_ENEMY";
 			type="Destroy";
 			colorName="ColorRed";
@@ -147,33 +149,23 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={4232.163574,60.427635,4532.932129};
-			name="Vulcan";
-			text="@STRM_MARKER_VULCAN";
-			type="Arrow";
-			colorName="ColorRed";
-			b=3.000000;
-			angle=310.000000;
-		};
-		class Item6
-		{
-			position[]={3115.881348,86.066841,4170.888184};
-			name="Air";
+			position[]={3493.462158,45.608959,3799.793701};
+			name="EnemyAttackAir";
 			text="@STRM_MARKER_AIR";
 			type="Arrow";
 			colorName="ColorRed";
 			b=3.000000;
 			angle=340.000000;
 		};
-		class Item7
+		class Item6
 		{
-			position[]={4848.798828,24.660000,12021.133789};
+			position[]={4912.829590,24.505953,12011.662109};
 			name="Postmaster";
 			text="@STRM_MARKER_POSTMASTER";
 			type="Marker";
 			colorName="ColorBlue";
 		};
-		class Item8
+		class Item7
 		{
 			position[]={4885.708008,24.660000,11885.824219};
 			name="Logistics";
@@ -181,11 +173,19 @@ class Mission
 			type="Marker";
 			colorName="ColorBlue";
 		};
-		class Item9
+		class Item8
 		{
-			position[]={4805.933594,24.660000,11832.919922};
+			position[]={4814.888184,24.660000,11833.308594};
 			name="Helicopter";
 			text="@STRM_MARKER_HELICOPTER";
+			type="Marker";
+			colorName="ColorBlue";
+		};
+		class Item9
+		{
+			position[]={5099.024414,22.477551,12335.280273};
+			name="Chapel";
+			text="@STRM_MARKER_CHAPEL";
 			type="Marker";
 			colorName="ColorBlue";
 		};
