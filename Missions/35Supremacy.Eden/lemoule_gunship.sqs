@@ -1,0 +1,32 @@
+setacctime 1
+
+Gunship=Gunship+1
+
+? Gunship == 1 : goto "one_down" ;
+? Gunship == 2 : goto "two_down" ;
+
+#one_down
+
+Rashiv sideradio "35r16"
+
+goto "ex"
+
+#two_down
+
+"6" objstatus "done"
+"8" objstatus "done"
+aP addrating 2000
+
+"9" objstatus "active"
+
+Rashiv sideradio "35r17"
+firefly sideradio "35r18"
+Rashiv sideradio "35r19"
+aP sideradio "35r20"
+Rashiv sideradio "35r21"
+
+airDone=true
+
+#ex
+
+exit
