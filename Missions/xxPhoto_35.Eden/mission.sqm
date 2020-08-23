@@ -22,7 +22,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=6;
+		items=5;
 		class Item0
 		{
 			side="EAST";
@@ -97,28 +97,11 @@ class Mission
 					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.600000;
+					init="this exec ""photo.sqs""";
 				};
 			};
 		};
 		class Item4
-		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4812.980469,24.660000,11819.292969};
-					id=51;
-					side="LOGIC";
-					vehicle="Logic";
-					leader=1;
-					skill=0.600000;
-					init="this exec ""camera.sqs""";
-				};
-			};
-		};
-		class Item5
 		{
 			side="EAST";
 			class Vehicles
@@ -126,13 +109,14 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4822.045898,24.660000,11822.108398};
-					azimut=325.000000;
-					id=52;
+					position[]={4813.711426,24.660000,11835.319336};
+					azimut=55.000000;
+					id=51;
 					side="EAST";
 					vehicle="SoldierEPilot";
 					leader=1;
 					skill=0.600000;
+					text="Ablomov";
 					init="this setidentity ""Ablomov""; this setbehaviour ""safe""";
 				};
 			};
