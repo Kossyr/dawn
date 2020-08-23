@@ -3,26 +3,174 @@ setacctime 1
 "5" objstatus "done"
 aP addrating 1000
 
-aP say "35v38"
-~5
+titlecut["","black out",0.5]
+~0.5
+
+cinema=true
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+? (aP == vehicle aP) : goto "cinema_chapel" ;
+
+vehicle aP setpos getmarkerpos "CinemaChapelVehicle"
+vehicle aP setdir 0
+
+~1
+
+vehicle aP setpos getmarkerpos "CinemaChapelVehicle"
+vehicle aP setdir 0
+
+aP action ["EJECT"]
+
+#cinema_chapel
+
+
+aP action ["WEAPONONBACK"]
+
+aP setpos getmarkerpos "Cinema"
+AblomovCinemaChapel setpos getmarkerpos "CinemaChapel";
+
+aa = aP saveStatus "35Ablomov"
+aa = AblomovCinemaChapel loadStatus "35Ablomov"
+
+AblomovCinemaChapel setmimic "normal"
+logisticsOfficer setmimic "normal"
+
+
+logisticsOfficer dowatch [5078.00,12359.19,1.79]
+AblomovCinemaChapel dowatch [5084.63,12355.76,1.64]
+
+
+~0.5
+
+setacctime 1
+
+titlecut["","black in",0.5]
+
+;=== 13:06:01
+_camera camSetTarget [68214.93,-65203.26,24.01]
+_camera camSetPos [5087.35,12353.10,3.34]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:06:13
+_camera camSetTarget [87740.61,-43926.50,23.35]
+_camera camSetPos [5082.97,12356.17,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+AblomovCinemaChapel say "35v38"
+~3
+logisticsOfficer dowatch [5085.64,12353.35,1.67]
+~0.5
 logisticsOfficer say "35v39"
-~5
-aP say "35v40"
-~5
+~0.5
+;=== 13:08:35
+_camera camSetTarget [13396.72,110984.66,-14207.57]
+_camera camSetPos [5084.90,12352.02,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+;=== 13:08:49
+_camera camSetTarget [70266.13,-63307.28,5201.62]
+_camera camSetPos [5085.25,12354.03,1.49]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AblomovCinemaChapel say "35v40"
+~1
+AblomovCinemaChapel setmimic "surprised"
+~2
+;=== 13:09:28
+_camera camSetTarget [-91262.45,39017.15,-2355.25]
+_camera camSetPos [5087.87,12353.38,1.19]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 logisticsOfficer say "35v41"
-~5
-aP say "35v42"
-~5
+logisticsOfficer setmimic "smile"
+;=== 13:09:44
+_camera camSetTarget [-63611.75,84980.27,-2355.37]
+_camera camSetPos [5087.33,12352.60,1.18]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+logisticsOfficer setmimic "normal"
+AblomovCinemaChapel say "35v42"
+;=== 13:10:03
+_camera camSetTarget [-18554.44,-84782.38,-2355.68]
+_camera camSetPos [5085.85,12354.01,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+;=== 13:10:24
+_camera camSetTarget [-43855.63,98876.45,-10873.83]
+_camera camSetPos [5085.28,12354.66,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 logisticsOfficer say "35v43"
+~2
+;=== 13:10:45
+_camera camSetTarget [83328.55,-49763.66,-4314.65]
+_camera camSetPos [5083.31,12356.11,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AblomovCinemaChapel say "35v44"
 ~5
-aP say "35v44"
-~5
+;=== 13:11:01
+_camera camSetTarget [76933.84,81772.13,-4314.71]
+_camera camSetPos [5084.06,12354.60,1.39]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 logisticsOfficer say "35v45"
 ~5
-aP say "35v46"
-~5
+AblomovCinemaChapel setmimic "surprised"
+AblomovCinemaChapel say "35v46"
+;=== 13:11:20
+_camera camSetTarget [65592.78,-67144.44,-4314.21]
+_camera camSetPos [5085.15,12354.04,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~4
+;=== 13:11:41
+_camera camSetTarget [-28770.65,106447.47,583.88]
+_camera camSetPos [5085.09,12354.57,1.39]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 logisticsOfficer say "35v47"
-~5
+logisticsOfficer setmimic "surprised"
+~2.5
+logisticsOfficer setmimic "smile"
+~1.5
+logisticsOfficer setmimic "normal"
+~1
+
+deletevehicle AblomovCinemaChapel
+aP setpos getmarkerpos "CinemaChapel"
+aP setdir 340
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+cinema=false
+
+~1
+
+logisticsOfficer dowatch [5078.00,12359.19,1.79]
+
+~3
+
+
+setacctime 1
+
 logisticsOfficer sideradio "35r01"
 logistics sideradio "35r02"
 logistics sideradio "35r03"

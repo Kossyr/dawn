@@ -3,26 +3,143 @@ setacctime 1
 "2" objstatus "done"
 aP addrating 1000
 
-aP say "35v14"
-~5
+
+titlecut["","black out",0.5]
+~0.5
+
+cinema=true
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+? (aP == vehicle aP) : goto "cinema_postmaster" ;
+
+vehicle aP setpos getmarkerpos "CinemaPostmasterVehicle"
+vehicle aP setdir 180
+
+~1
+
+vehicle aP setpos getmarkerpos "CinemaPostmasterVehicle"
+vehicle aP setdir 180
+
+aP action ["EJECT"]
+
+#cinema_postmaster
+
+aP action ["WEAPONONBACK"]
+
+aP setpos getmarkerpos "Cinema"
+AblomovCinemaPostmaster setpos getmarkerpos "CinemaPostmaster";
+
+aa = aP saveStatus "35Ablomov"
+aa = AblomovCinemaPostmaster loadStatus "35Ablomov"
+
+AblomovCinemaPostmaster dowatch [4881.02,12013.07,1.64]
+postmaster dowatch [4881.30,12011.54,1.64]
+
+AblomovCinemaPostmaster setmimic "normal"
+postmaster setmimic "normal"
+
+~0.5
+
+setacctime 1
+
+titlecut["","black in",0.5]
+
+;=== 12:24:55
+_camera camSetTarget [-80189.98,64530.80,-2072.64]
+_camera camSetPos [4882.29,12011.23,1.41]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AblomovCinemaPostmaster say "35v14"
+~4
 postmaster say "35v15"
-~5
-aP say "35v16"
+postmaster setmimic "smile"
+~2
+postmaster setmimic "normal"
+~1
+AblomovCinemaPostmaster say "35v16"
+;=== 12:25:36
+_camera camSetTarget [-13073.47,-86305.41,3386.15]
+_camera camSetPos [4881.42,12012.07,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 ~5
 postmaster say "35v17"
+;=== 12:25:53
+_camera camSetTarget [-17872.22,109381.16,-1232.50]
+_camera camSetPos [4881.27,12012.29,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 ~5
-aP say "35v18"
+;=== 12:26:09
+_camera camSetTarget [971.69,-87603.88,7859.48]
+_camera camSetPos [4881.35,12012.10,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AblomovCinemaPostmaster say "35v18"
+AblomovCinemaPostmaster setmimic "angry"
 ~5
 postmaster say "35v19"
-~5
-aP say "35v20"
-~5
+;=== 12:26:57
+_camera camSetTarget [83546.31,73495.39,-5566.16]
+_camera camSetPos [4879.77,12011.18,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+postmaster setmimic "surprised"
+postmaster switchmove "FXCivilArmsAkimboL"
+~4
+;=== 12:27:53
+_camera camSetTarget [36194.17,-82794.27,-5565.93]
+_camera camSetPos [4881.09,12012.09,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AblomovCinemaPostmaster setmimic "normal"
+AblomovCinemaPostmaster say "35v20"
+~3
+;=== 12:28:10
+_camera camSetTarget [-6120.86,111247.78,-5566.26]
+_camera camSetPos [4881.07,12012.38,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 postmaster say "35v21"
-~5
-aP say "35v22"
-~5
+postmaster setmimic "normal"
+~2
+AblomovCinemaPostmaster say "35v22"
+AblomovCinemaPostmaster setmimic "sad"
+;=== 12:28:49
+_camera camSetTarget [2346.71,-87777.41,-5938.22]
+_camera camSetPos [4881.33,12012.42,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
 postmaster say "35v23"
-~5
+;=== 12:29:04
+_camera camSetTarget [-13716.76,110085.90,-5938.20]
+_camera camSetPos [4881.29,12011.70,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+deletevehicle AblomovCinemaPostmaster
+aP setpos getmarkerpos "CinemaPostmaster"
+aP setdir 350
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+cinema=false
+
+
 
 postmasterCheck=true
 
