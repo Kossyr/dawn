@@ -1396,7 +1396,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=22;
+		items=23;
 		class Item0
 		{
 			position[]={5202.889648,24.989243,8193.361328};
@@ -1690,6 +1690,21 @@ class Mission
 			age="UNKNOWN";
 			expCond="getDammage ablomovHelicopter >= 0.75 and alive aP and (vehicle aP == ablomovHelicopter)";
 			expActiv="[] exec ""heli_severe.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item22
+		{
+			position[]={4838.312012,24.660000,11792.784180};
+			a=350.000000;
+			b=450.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			age="UNKNOWN";
+			idVehicle=4;
+			expCond="this and (vehicle aP == ablomovHelicopter) and canEnd";
+			expActiv="[] exec ""outro_welcome.sqs""";
 			class Effects
 			{
 			};
