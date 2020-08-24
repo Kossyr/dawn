@@ -4,13 +4,15 @@ class Mission
 	randomSeed=10123779;
 	class Intel
 	{
-		briefingName="STRCN_36";
+		briefingName="@STRCN_36";
+		resistanceWest=0.000000;
+		resistanceEast=1.000000;
 		startWeather=0.700000;
 		forecastWeather=0.800000;
 		month=1;
 		day=29;
-		hour=14;
-		minute=10;
+		hour=8;
+		minute=40;
 	};
 	class Groups
 	{
@@ -34,23 +36,243 @@ class Mission
 					rank="MAJOR";
 					skill=1.000000;
 					text="aP";
-					init="this setidentity ""Lemontov""; this setgroupid [""delta"",""groupcolor0""]; this addweapon ""binocular""";
+					init="this setbehaviour ""safe""; this setidentity ""Lemontov""; this setgroupid [""delta"",""groupcolor0""]; this addweapon ""binocular""";
 				};
 			};
+		};
+	};
+	class Markers
+	{
+		items=4;
+		class Item0
+		{
+			position[]={4855.731445,30.239998,8985.123047};
+			name="Start";
+			text="@STRC_MARKER_START";
+			type="Start";
+			colorName="ColorGreen";
+			angle=200.000000;
+		};
+		class Item1
+		{
+			position[]={4804.648926,159.029999,6985.587891};
+			name="Meeting";
+			text="@STRM_MARKER_MEETING";
+			type="Pickup";
+			colorName="ColorGreen";
+		};
+		class Item2
+		{
+			position[]={5682.782227,192.599991,7086.726563};
+			name="EntreDeux";
+			text="@STRM_MARKER_ENTRE_DEUX";
+			type="Flag";
+			colorName="ColorRed";
+		};
+		class Item3
+		{
+			position[]={7251.868652,30.374998,6783.946777};
+			name="Prisoners";
+			text="@STRM_MARKER_PRISONERS";
+			type="End";
+			colorName="ColorBlue";
 		};
 	};
 };
 class Intro
 {
+	addOns[]=
+	{
+		"bis_resistance"
+	};
+	addOnsAuto[]=
+	{
+		"bis_resistance"
+	};
 	randomSeed=6852611;
 	class Intel
 	{
 		startWeather=0.600000;
 		forecastWeather=0.700000;
 		month=1;
-		day=29;
+		day=28;
 		hour=14;
-		minute=0;
+		minute=35;
+	};
+	class Groups
+	{
+		items=4;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4129.392090,46.066216,7358.428711};
+					special="NONE";
+					id=0;
+					side="EAST";
+					vehicle="SoldierEB";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=1.000000;
+					init="this exec ""intro.sqs""";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4926.369629,163.110565,6904.528320};
+					special="NONE";
+					id=1;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=1.000000;
+					init="this exec ""camera.sqs""";
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4913.703613,159.029999,6908.594727};
+					azimut=335.000000;
+					special="NONE";
+					id=9;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					rank="COLONEL";
+					skill=1.000000;
+					text="Zubarev";
+					init="this setidentity ""Zubarev""; this setbehaviour ""Safe""; this removeweapon ""binocular""";
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4916.452637,159.029999,6909.799316};
+					azimut=250.000000;
+					special="NONE";
+					id=10;
+					side="EAST";
+					vehicle="SoldierESaboteurPipe";
+					leader=1;
+					rank="MAJOR";
+					skill=1.000000;
+					text="Lemontov";
+					init="this setidentity ""Lemontov""; this setbehaviour ""safe""";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=7;
+		class Item0
+		{
+			position[]={4915.451660,163.108673,6902.279785};
+			azimut=340.000000;
+			special="NONE";
+			id=2;
+			side="EMPTY";
+			vehicle="Tablemap";
+			leader=1;
+			skill=1.000000;
+			text="ZubarevTable";
+		};
+		class Item1
+		{
+			position[]={4914.602051,163.108673,6901.906738};
+			azimut=245.000000;
+			special="NONE";
+			id=3;
+			side="EMPTY";
+			vehicle="ChairX";
+			leader=1;
+			skill=1.000000;
+			text="ZubarevChair1";
+		};
+		class Item2
+		{
+			position[]={4916.377930,163.108673,6902.020508};
+			azimut=170.000000;
+			special="NONE";
+			id=4;
+			side="EMPTY";
+			vehicle="ChairX";
+			leader=1;
+			skill=1.000000;
+			text="ZubarevChair2";
+		};
+		class Item3
+		{
+			position[]={4917.402344,163.108673,6903.335449};
+			azimut=330.000000;
+			special="NONE";
+			id=5;
+			side="EMPTY";
+			vehicle="Table";
+			leader=1;
+			skill=1.000000;
+			text="ZubarevTableRadio1";
+		};
+		class Item4
+		{
+			position[]={4917.850586,163.108673,6902.583008};
+			azimut=330.000000;
+			special="NONE";
+			id=6;
+			side="EMPTY";
+			vehicle="Table";
+			leader=1;
+			skill=1.000000;
+			text="ZubarevTableRadio2";
+		};
+		class Item5
+		{
+			position[]={4917.880859,163.108673,6903.218262};
+			azimut=335.000000;
+			special="NONE";
+			id=7;
+			side="EMPTY";
+			vehicle="Computer";
+			leader=1;
+			skill=1.000000;
+			text="ZubarevComputer";
+		};
+		class Item6
+		{
+			position[]={4918.488770,163.108673,6902.722168};
+			azimut=335.000000;
+			special="NONE";
+			id=8;
+			side="EMPTY";
+			vehicle="Vysilacka";
+			leader=1;
+			skill=1.000000;
+			text="ZubarevRadio";
+		};
 	};
 };
 class OutroWin

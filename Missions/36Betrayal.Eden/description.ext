@@ -19,3 +19,119 @@ ShowNotepad = 1
 ShowGPS = 1
 
 ShowMap = 1
+
+
+class RscBackground
+{
+    access=3;
+    type=0;
+    idc=-1;
+    style=80;
+    x=0.15;
+    y=0.15;
+    w=0.7;
+    h=0.7;
+    text="";
+    colorBackground[]={1,1,1,1};
+    colorText[]={0,0,0,0};
+    font="tahomaB24";
+    sizeEx=0;
+};
+
+class RscButton
+{
+    access=3;
+    type=1;
+    style=2;
+    w=0.16;
+    h=0.06;
+    colorText[]={0.08,0.08,0.12,1};
+    font="tahomaB24";
+    sizeEx=0.02;
+    default=0;
+    soundPush[]={"ui\ui_ok",0.2,1};
+    soundClick[]={"",0.2,1};
+    soundEscape[]={"ui\ui_cc",0.2,1};
+};
+
+
+class SquadChoice {
+    idd = 0;
+    movingEnable = 0;
+    controls[] = {Window, Button1, Button2};
+
+    #define WINDOW_X    0
+    #define WINDOW_Y    0.75
+    #define WINDOW_W    1
+    #define WINDOW_H    0.15
+
+    #define SPACE_W     0.03
+    #define SPACE_H     0.02
+
+    class Window : RscBackground {
+        x = WINDOW_X;
+        y = WINDOW_Y;
+        w = WINDOW_W;
+        h = WINDOW_H;
+    };
+
+    class Button1 : RscButton {
+        idc = 1;
+        x = WINDOW_X + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = (WINDOW_W/2) - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_SQUAD_CHOICE_A";
+    };
+
+    class Button2 : RscButton {
+        idc = 2;
+        x = (WINDOW_W/2) + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = (WINDOW_W/2) - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_SQUAD_CHOICE_B";
+    };
+    
+};
+
+class EscapeChoice {
+    idd = 0;
+    movingEnable = 0;
+    controls[] = {Window, Button1, Button2};
+
+    #define WINDOW_X    0
+    #define WINDOW_Y    0.75
+    #define WINDOW_W    1
+    #define WINDOW_H    0.15
+
+    #define SPACE_W     0.03
+    #define SPACE_H     0.02
+
+    class Window : RscBackground {
+        x = WINDOW_X;
+        y = WINDOW_Y;
+        w = WINDOW_W;
+        h = WINDOW_H;
+    };
+
+    class Button1 : RscButton {
+        idc = 1;
+        x = WINDOW_X + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = (WINDOW_W/2) - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_ESCAPE_CHOICE_A";
+    };
+
+    class Button2 : RscButton {
+        idc = 2;
+        x = (WINDOW_W/2) + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = (WINDOW_W/2) - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_ESCAPE_CHOICE_B";
+    };
+    
+};
+
