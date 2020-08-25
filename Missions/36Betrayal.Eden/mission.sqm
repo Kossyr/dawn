@@ -25,8 +25,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4844.283691,29.972635,8993.650391};
-					azimut=200.000000;
+					position[]={4472.796875,15.168132,9550.089844};
+					azimut=100.000000;
 					special="NONE";
 					id=0;
 					side="EAST";
@@ -36,26 +36,26 @@ class Mission
 					rank="MAJOR";
 					skill=1.000000;
 					text="aP";
-					init="this setbehaviour ""safe""; this setidentity ""Lemontov""; this setgroupid [""delta"",""groupcolor0""]; this addweapon ""binocular""";
+					init="this setbehaviour ""safe""; this setidentity ""Lemontov""; this setgroupid [""delta"",""groupcolor0""]; removeallweapons this; this addweapon ""binocular""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addweapon ""SVDDragunov""";
 				};
 			};
 		};
 	};
 	class Markers
 	{
-		items=4;
+		items=12;
 		class Item0
 		{
-			position[]={4855.731445,30.239998,8985.123047};
+			position[]={4471.500000,15.289121,9553.536133};
 			name="Start";
 			text="@STRC_MARKER_START";
 			type="Start";
 			colorName="ColorGreen";
-			angle=200.000000;
+			angle=100.000000;
 		};
 		class Item1
 		{
-			position[]={4804.648926,159.029999,6985.587891};
+			position[]={4773.429199,159.029999,6966.759766};
 			name="Meeting";
 			text="@STRM_MARKER_MEETING";
 			type="Pickup";
@@ -75,6 +75,71 @@ class Mission
 			name="Prisoners";
 			text="@STRM_MARKER_PRISONERS";
 			type="End";
+			colorName="ColorBlue";
+		};
+		class Item4
+		{
+			position[]={6850.146484,74.156441,7356.611816};
+			name="Enemy";
+			markerType="ELLIPSE";
+			type="Flag";
+			colorName="ColorRed";
+			a=1400.000000;
+			b=1600.000000;
+		};
+		class Item5
+		{
+			position[]={6786.292480,101.249199,6491.073730};
+			name="WarningFarm1";
+			text="@STRM_MARKER_FARM";
+			type="Warning";
+			colorName="ColorRed";
+		};
+		class Item6
+		{
+			position[]={6527.492676,141.884995,7133.022949};
+			name="WarningFarm2";
+			text="@STRM_MARKER_FARM";
+			type="Warning";
+			colorName="ColorRed";
+		};
+		class Item7
+		{
+			position[]={7068.811035,108.044998,6027.203613};
+			name="Chotain";
+			type="Warning";
+			colorName="ColorRed";
+		};
+		class Item8
+		{
+			position[]={6333.768555,60.279861,8458.395508};
+			name="WarningCamp1";
+			text="@STRM_MARKER_CAMP";
+			type="Warning";
+			colorName="ColorRed";
+		};
+		class Item9
+		{
+			position[]={7112.155762,46.927383,8063.963867};
+			name="WarningCamp2";
+			text="@STRM_MARKER_CAMP";
+			type="Warning";
+			colorName="ColorRed";
+		};
+		class Item10
+		{
+			position[]={7130.828125,34.704632,7284.727539};
+			name="Roman";
+			text="@STRM_MARKER_ROMAN";
+			type="Marker";
+			colorName="ColorBlue";
+		};
+		class Item11
+		{
+			position[]={7130.757813,34.841286,7276.204102};
+			name="Sparrow";
+			text="@STRM_MARKER_SPARROW";
+			type="Marker";
 			colorName="ColorBlue";
 		};
 	};
