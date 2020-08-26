@@ -35,7 +35,7 @@ Syomin say "35v01"
 
 
 
-~4
+~2
 ;=== 20:19:21
 _camera camSetTarget [81206.59,-52684.01,25.97]
 _camera camSetPos [4826.08,11860.68,1.35]
@@ -100,11 +100,11 @@ _camera camCommit 0
 @camCommitted _camera
 ~0.5
 Koltsov say "35v03"
-~0.5
-Ablomov say "35v04"
 ~1
+Ablomov say "35v04"
+~1.5
 Koltsov say "35v05"
-~3
+~3.5
 ;=== 20:24:55
 _camera camSetTarget [-49372.75,95881.79,-1536.49]
 _camera camSetPos [4827.85,11859.13,1.37]
@@ -124,7 +124,7 @@ _camera camCommit 0
 _camera camSetTarget [-47596.98,97004.52,1123.23]
 _camera camSetPos [4829.76,11856.22,1.37]
 _camera camSetFOV 0.700
-_camera camCommit 3
+_camera camCommit 6
 @camCommitted _camera
 ;=== 20:33:12
 _camera camSetTarget [-50484.02,95140.41,-2113.22]
@@ -135,7 +135,7 @@ _camera camCommit 0
 ~4
 Syomin assignAsDriver SyominHeli
 [Syomin] orderGetIn true
-~2
+~3
 deleteVehicle Koltsov
 KoltsovDouble setpos getmarkerpos "KoltsovStart";
 KoltsovDouble setdir 295;
@@ -152,7 +152,7 @@ Ablomov dowatch [4828.89,11856.47,1.60]
 ~1
 Ablomov setmimic "surprised"
 KoltsovDouble domove getmarkerpos "KoltsovEnd";
-~1.5
+;~1.5
 ;=== 20:55:39
 _camera camSetTarget [-93640.96,-5554.09,26.46]
 _camera camSetPos [4831.49,11857.86,1.10]
@@ -168,6 +168,7 @@ KoltsovTriple setpos getmarkerpos "KoltsovEnd"
 KoltsovTriple setdir 270
 KoltsovTriple switchmove "FXdismay"
 KoltsovTriple setmimic "Sad"
+KoltsovTriple say "35v10"
 ;=== 21:04:02
 _camera camSetTarget [-85793.39,-30449.56,25.57]
 _camera camSetPos [4817.55,11855.50,1.10]
@@ -178,14 +179,14 @@ _camera camCommit 0
 KoltsovTriple dowatch [4829.73,11856.98,1.60]
 KoltsovTriple setpos getmarkerpos "KoltsovEnd"
 KoltsovTriple setdir 90
-KoltsovTriple say "35v10"
 KoltsovTriple switchmove "FXShow3"
-~2
+~3
 KoltsovTriple setmimic "Smile"
+~1
 KoltsovTriple assignasdriver KoltsovHeli
 [KoltsovTriple] orderGetIn true
 Syomin action ["ENGINE ON", SyominHeli]
-~0.5
+~2
 ;=== 20:51:35
 _camera camSetTarget [-95160.98,11516.08,1143.90]
 _camera camSetPos [4831.94,11858.29,1.36]
