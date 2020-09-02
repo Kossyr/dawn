@@ -130,7 +130,7 @@ class Mission
 					position[]={3279.024170,266.444977,6683.088867};
 					type="HOLD";
 					description="@STRM_WAYPOINT_DEFEND";
-					synchronizations[]={41};
+					synchronizations[]={46};
 					class Effects
 					{
 					};
@@ -141,7 +141,7 @@ class Mission
 					position[]={2655.280273,218.314804,6941.297363};
 					type="HOLD";
 					description="@STRM_WAYPOINT_CHECKPOINT";
-					synchronizations[]={43};
+					synchronizations[]={41};
 					class Effects
 					{
 					};
@@ -152,7 +152,7 @@ class Mission
 					position[]={2208.569336,124.604996,7356.062988};
 					type="HOLD";
 					description="@STRM_WAYPOINT_BASE";
-					synchronizations[]={47};
+					synchronizations[]={45};
 					class Effects
 					{
 					};
@@ -1853,6 +1853,7 @@ class Mission
 					vehicle="T80";
 					leader=1;
 					skill=0.600000;
+					text="TatyanaGroup";
 					init="tatyana = group this; this setgroupid [""hotel"",""groupcolor0""]; group this allowfleeing 0";
 				};
 				class Item1
@@ -1885,7 +1886,7 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=4;
+				items=7;
 				class Item0
 				{
 					position[]={4245.491211,404.243805,5877.567383};
@@ -1908,9 +1909,9 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={3321.429443,262.239624,6343.120117};
-					type="GUARD";
-					synchronizations[]={40};
+					position[]={3439.094482,278.103668,6222.729980};
+					type="SAD";
+					synchronizations[]={47};
 					class Effects
 					{
 					};
@@ -1918,7 +1919,35 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={3299.427002,266.444977,6710.415527};
+					position[]={3311.405273,263.302002,6453.047363};
+					type="SAD";
+					synchronizations[]={48};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item4
+				{
+					position[]={3257.854248,266.444977,6692.122559};
+					type="SAD";
+					synchronizations[]={49};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item5
+				{
+					position[]={3182.061768,266.444977,6900.260742};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item6
+				{
+					position[]={3178.524902,266.444977,6801.063965};
 					type="HOLD";
 					class Effects
 					{
@@ -3773,7 +3802,7 @@ class Mission
 				{
 					position[]={6273.423340,36.269997,8049.098145};
 					type="HOLD";
-					synchronizations[]={42};
+					synchronizations[]={40};
 					class Effects
 					{
 					};
@@ -3836,7 +3865,7 @@ class Mission
 				{
 					position[]={2036.181885,129.826202,7301.958008};
 					type="HOLD";
-					synchronizations[]={44};
+					synchronizations[]={42};
 					class Effects
 					{
 					};
@@ -3986,7 +4015,7 @@ class Mission
 				{
 					position[]={2203.419922,124.604996,7348.216309};
 					type="HOLD";
-					synchronizations[]={45};
+					synchronizations[]={43};
 					class Effects
 					{
 					};
@@ -4104,7 +4133,7 @@ class Mission
 				{
 					position[]={1890.091919,129.194992,7368.948242};
 					type="HOLD";
-					synchronizations[]={46};
+					synchronizations[]={44};
 					class Effects
 					{
 					};
@@ -7047,7 +7076,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=27;
+		items=33;
 		class Item0
 		{
 			position[]={4661.460938,-28.053722,8413.722656};
@@ -7278,7 +7307,7 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={36,37,42};
+			synchronizations[]={36,37,40};
 		};
 		class Item15
 		{
@@ -7311,7 +7340,7 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={3059.882813,228.683838,6388.643555};
+			position[]={3009.371094,231.041138,6484.385742};
 			a=0.000000;
 			b=0.000000;
 			type="SWITCH";
@@ -7322,7 +7351,7 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={40,41};
+			synchronizations[]={46};
 		};
 		class Item18
 		{
@@ -7355,7 +7384,7 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={43,44,45,46};
+			synchronizations[]={41,42,43,44};
 		};
 		class Item20
 		{
@@ -7401,7 +7430,7 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={47};
+			synchronizations[]={45};
 		};
 		class Item23
 		{
@@ -7463,6 +7492,81 @@ class Mission
 			class Effects
 			{
 			};
+		};
+		class Item27
+		{
+			position[]={3443.471191,278.382416,6217.297852};
+			activationBy="MEMBER";
+			age="UNKNOWN";
+			idVehicle=318;
+			expActiv="tatyanaJunction=true";
+			class Effects
+			{
+			};
+		};
+		class Item28
+		{
+			position[]={3304.778076,262.559448,6451.943848};
+			activationBy="MEMBER";
+			age="UNKNOWN";
+			idVehicle=318;
+			expActiv="tatyanaRoad=true";
+			class Effects
+			{
+			};
+		};
+		class Item29
+		{
+			position[]={3251.626709,266.444977,6685.938477};
+			activationBy="MEMBER";
+			age="UNKNOWN";
+			idVehicle=318;
+			expActiv="tatyanaBase=true";
+			class Effects
+			{
+			};
+		};
+		class Item30
+		{
+			position[]={3431.467041,275.444153,6200.302734};
+			a=150.000000;
+			b=150.000000;
+			activationBy="WEST";
+			type="SWITCH";
+			age="UNKNOWN";
+			expCond="""Tank"" counttype thislist < 1 and tatyanaJunction";
+			class Effects
+			{
+			};
+			synchronizations[]={47};
+		};
+		class Item31
+		{
+			position[]={3273.928711,256.760712,6444.542480};
+			a=150.000000;
+			b=150.000000;
+			activationBy="WEST";
+			type="SWITCH";
+			age="UNKNOWN";
+			expCond="""Tank"" counttype thislist < 1 and tatyanaRoad";
+			class Effects
+			{
+			};
+			synchronizations[]={48};
+		};
+		class Item32
+		{
+			position[]={3256.027588,266.444977,6672.510742};
+			a=150.000000;
+			b=150.000000;
+			activationBy="WEST";
+			type="SWITCH";
+			age="UNKNOWN";
+			expCond="""Tank"" counttype thislist < 1 and tatyanaBase";
+			class Effects
+			{
+			};
+			synchronizations[]={49};
 		};
 	};
 };
