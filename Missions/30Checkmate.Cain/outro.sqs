@@ -8,29 +8,11 @@ enableradio false
 
 ~1
 
-
-_camera = "camera" camcreate [0,0,0]
-_camera cameraeffect ["internal","back"]
-;=== 13:24:59
-_camera camSetTarget [51352.09,94364.09,-7790.44]
-_camera camSetPos [5366.41,5946.44,1.37]
-_camera camSetFOV 0.700
-_camera camCommit 0
-@camCommitted _camera
-
 titletext [ localize "STRC_END_SUCCESS","plain"]
 
-;=== 13:25:06
-_camera camSetTarget [51352.09,94364.09,-7790.12]
-_camera camSetPos [5366.41,5946.44,6.43]
-_camera camSetFOV 0.700
-_camera camCommit 10
 ~8
 titlecut["","black out",2]
-@camCommitted _camera
 
 end=true
-player cameraEffect ["terminate","back"]
-camDestroy _camera
 
 exit
