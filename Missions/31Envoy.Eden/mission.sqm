@@ -26,7 +26,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=41;
+		items=42;
 		class Item0
 		{
 			side="EAST";
@@ -2906,6 +2906,103 @@ class Mission
 				};
 			};
 		};
+		class Item41
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8980.084961,171.792938,1048.504883};
+					azimut=96.028999;
+					special="NONE";
+					id=151;
+					side="WEST";
+					vehicle="OfficerW";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.570278;
+					init="group this allowfleeing 0";
+				};
+				class Item1
+				{
+					position[]={8977.509766,172.060730,1052.228027};
+					azimut=96.028709;
+					special="NONE";
+					id=152;
+					side="WEST";
+					vehicle="SoldierWMG";
+					rank="CORPORAL";
+					skill=0.570278;
+				};
+				class Item2
+				{
+					position[]={8975.176758,170.631836,1049.408691};
+					azimut=96.028709;
+					special="NONE";
+					id=153;
+					side="WEST";
+					vehicle="SoldierWB";
+					rank="CORPORAL";
+					skill=0.570278;
+				};
+				class Item3
+				{
+					position[]={8975.503906,172.208710,1054.790039};
+					azimut=96.028709;
+					special="NONE";
+					id=154;
+					side="WEST";
+					vehicle="SoldierWB";
+					rank="CORPORAL";
+					skill=0.570278;
+				};
+			};
+			class Waypoints
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8986.568359,173.376343,1047.510498};
+					type="HOLD";
+					combatMode="GREEN";
+					synchronizations[]={45};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={9235.228516,138.880829,837.905884};
+					type="HOLD";
+					speed="FULL";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={9338.195313,141.575882,894.831055};
+					speed="NORMAL";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={9360.276367,186.166107,1014.730835};
+					type="SAD";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -3342,6 +3439,7 @@ class Mission
 			angle=30.000000;
 			rectangular=1;
 			activationBy="MEMBER";
+			type="SWITCH";
 			age="UNKNOWN";
 			idVehicle=1;
 			text="CASTLE CINEMATIC";
@@ -3349,6 +3447,7 @@ class Mission
 			class Effects
 			{
 			};
+			synchronizations[]={45};
 		};
 		class Item6
 		{

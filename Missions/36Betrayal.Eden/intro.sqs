@@ -11,8 +11,6 @@ ZubarevRadio2 setpos [4918.51,6903.56,5.07]
 ZubarevVideo setpos [4913.64,6901.89,4.10]
 ZubarevPallets setpos [4913.12,6903.18,4.10]
 
-
-
 LemontovHQ setpos [4928.85,6901.20,4.28]
 LemontovHQ disableai "autotarget"
 
@@ -23,6 +21,15 @@ Zubarev setspeedmode "limited"
 
 LemontovHQ setmimic "Angry"
 Zubarev setmimic "Normal"
+
+LemontovHospital setmimic "Angry"
+LemontovHospital disableai "autotarget"
+
+Lemontov setmimic "Normal"
+Lemontov disableai "autotarget"
+
+Rashiv setmimic "Normal"
+Rashiv disableai "autotarget"
 
 _window = [4915.55,6906.31,5.67]
 _zubarevWindow = [4916.23,6904.93,5.67]
@@ -51,8 +58,6 @@ Zubarev dowatch _window
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
-
-goto "skip"
 
 ;=== 19:25:22
 _camera camSetTarget [43939.87,-84982.57,-1528.99]
@@ -431,7 +436,6 @@ Zubarev move [4914.55,6902.83,4.23]
 Zubarev setspeedmode "limited"
 titlecut ["","black out",1]
 ~1
-#skip
 
 Zubarev setdir 50
 LemontovHQ setpos [4917.30,6902.27,4.30]
@@ -666,3 +670,396 @@ _camera camCommit 0
 titlecut["","black out",2]
 ~3
 
+Lemontov dowatch [4828.58,6918.19,1.49]
+LemontovToCar=true
+~0.5
+titlecut["","black in",1]
+;=== 19:16:35
+_camera camSetTarget [-40059.36,96256.07,-233.61]
+_camera camSetPos [4835.49,6901.72,1.33]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:16:50
+_camera camSetTarget [-68119.33,75290.89,-234.08]
+_camera camSetPos [4837.35,6901.06,1.33]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+@(unitReady Lemontov)
+~0.5
+Lemontov setpos getmarkerpos "LemontovCar"
+Lemontov switchmove "FXStandRotateTable"
+;=== 19:31:10
+_camera camSetTarget [50701.36,-81938.54,128.62]
+_camera camSetPos [4827.82,6918.96,1.43]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~0.5
+Lemontov say "36v39"
+lemontovFree=true
+~1
+;=== 19:33:09
+_camera camSetTarget [21982.02,-29920.99,91530.29]
+_camera camSetPos [4828.60,6917.53,0.84]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:33:16
+_camera camSetTarget [21982.02,-29920.99,91530.69]
+_camera camSetPos [4828.60,6917.53,0.98]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+Lemontov say "36v40"
+~1
+;=== 19:34:23
+_camera camSetTarget [-93539.66,-1717.45,-15616.43]
+_camera camSetPos [4829.76,6917.63,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov switchmove "FXStandEndTable"
+~0.5
+M1 playmove "EffectstandSalute"
+~0.5
+Rashiv move getmarkerpos "RashivHospital"
+Rashiv setspeedmode "full"
+~1
+medicAway=true
+@(unitReady Rashiv)
+Rashiv dowatch [4828.87,6917.15,1.48]
+~1
+Rashiv switchmove "FxShow3"
+Rashiv say "36v41"
+~1
+Lemontov switchmove ""
+Lemontov dowatch [4809.08,6921.39,1.60]
+Lemontov setmimic "normal"
+;=== 19:39:05
+_camera camSetTarget [-92648.74,28007.64,-7393.39]
+_camera camSetPos [4810.50,6921.16,1.37]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+;=== 19:40:12
+_camera camSetTarget [103716.70,-4942.02,-8793.56]
+_camera camSetPos [4826.89,6917.29,1.35]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov say "36v42"
+~2
+Lemontov move getmarkerpos "LemontovHospital"
+Lemontov setspeedmode "limited"
+~1.5
+;=== 19:45:02
+_camera camSetTarget [-92830.46,28082.23,-4137.55]
+_camera camSetPos [4810.39,6921.10,1.38]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Rashiv say "36v43"
+Rashiv switchmove "FXCivilArmsAkimboR"
+Rashiv dowatch [4810.53,6920.77,1.61]
+~1.5
+Lemontov setpos getmarkerpos "LemontovHospitalHelper"
+Lemontov move getmarkerpos "LemontovHospital"
+Lemontov setspeedmode "limited"
+~0.5
+;=== 19:52:57
+_camera camSetTarget [103854.78,3852.70,-13263.94]
+_camera camSetPos [4807.43,6920.92,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+Lemontov setpos getmarkerpos "LemontovHospitalTrue"
+;=== 19:53:10
+_camera camSetTarget [-84646.95,51326.74,-4902.66]
+_camera camSetPos [4809.77,6921.07,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+;=== 20:28:09
+_camera camSetTarget [104304.49,10032.27,-9365.87]
+_camera camSetPos [4807.95,6921.00,1.49]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov say "36v44"
+~1.5
+;=== 20:29:15
+_camera camSetTarget [95565.21,-34859.28,-4059.21]
+_camera camSetPos [4809.56,6921.22,1.49]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov switchmove "FXCivilLookaround2"
+~6
+;=== 20:29:49
+_camera camSetTarget [-75094.87,65896.30,11872.32]
+_camera camSetPos [4809.66,6920.96,1.46]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Rashiv say "36v45"
+~1.5
+;=== 20:30:25
+_camera camSetTarget [93998.71,-38014.19,-4945.16]
+_camera camSetPos [4809.39,6921.33,1.41]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov say "36v46"
+Lemontov switchmove "FxShow2"
+~2
+medicsAway=true
+~2
+;=== 20:31:29
+_camera camSetTarget [-43449.14,-80398.57,-6620.71]
+_camera camSetPos [4810.94,6922.58,1.31]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:31:43
+_camera camSetTarget [-7122.77,-92130.80,-6621.02]
+_camera camSetPos [4809.95,6922.88,1.31]
+_camera camSetFOV 0.700
+_camera camCommit 10
+Rashiv setmimic "surprised"
+Rashiv say "36v47"
+~1
+Lemontov say "36v48"
+@camCommitted _camera
+;=== 20:37:17
+_camera camSetTarget [-90738.10,36113.95,-4131.01]
+_camera camSetPos [4809.62,6921.20,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Rashiv say "36v49"
+~3
+;=== 20:38:57
+_camera camSetTarget [75920.22,-62745.13,-9293.72]
+_camera camSetPos [4808.02,6923.03,1.38]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:39:05
+_camera camSetTarget [58199.69,-77102.35,-9294.16]
+_camera camSetPos [4809.64,6922.20,1.38]
+_camera camSetFOV 0.700
+_camera camCommit 7
+Rashiv setmimic "normal"
+Lemontov say "36v50"
+Lemontov switchmove "FXStandhip"
+@camCommitted _camera
+Lemontov switchmove ""
+;=== 20:40:19
+_camera camSetTarget [-86145.92,47796.26,-7340.43]
+_camera camSetPos [4809.85,6921.04,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Rashiv setmimic "angry"
+Rashiv say "36v51"
+Rashiv switchmove "FxShow3"
+~3
+;=== 20:41:59
+_camera camSetTarget [84330.20,-53247.73,-7340.33]
+_camera camSetPos [4810.07,6921.09,1.63]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov setmimic "sad"
+Lemontov say "36v52"
+~3
+;=== 20:43:53
+_camera camSetTarget [-40271.49,95431.41,-11382.33]
+_camera camSetPos [4810.51,6919.38,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Rashiv setmimic "Angry"
+Rashiv switchmove "FXCivilArmsAkimboL"
+Rashiv say "36v53"
+~7
+;=== 20:44:26
+_camera camSetTarget [101564.23,-14704.02,-12911.98]
+_camera camSetPos [4809.74,6920.99,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov say "36v54"
+~2
+;=== 20:45:04
+_camera camSetTarget [-31293.43,-85983.23,-7900.76]
+_camera camSetPos [4810.42,6922.64,1.33]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Rashiv say "36v55"
+~2
+Lemontov setmimic "Angry"
+Lemontov say "36v56"
+~3
+Rashiv setmimic "nornaml"
+Rashiv say "36v57"
+~5
+;=== 20:46:31
+_camera camSetTarget [89204.30,-46112.47,-7901.30]
+_camera camSetPos [4809.74,6921.25,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov say "36v58"
+Lemontov setmimic "normal"
+~6
+;=== 20:47:40
+_camera camSetTarget [-71245.98,70933.87,-10685.86]
+_camera camSetPos [4810.67,6920.27,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Rashiv setmimic "Angry"
+Rashiv say "36v59"
+~3
+Rashiv switchmove "FxShow5"
+~5
+;=== 20:49:54
+_camera camSetTarget [102808.39,-12954.93,1260.96]
+_camera camSetPos [4809.73,6920.97,1.44]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov setmimic "normal"
+Lemontov say "36v60"
+~8
+;=== 20:51:07
+_camera camSetTarget [20783.73,104441.20,-15147.22]
+_camera camSetPos [4809.43,6919.36,1.44]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Rashiv say "36v61"
+Rashiv switchmove "FXCivilHandMouth"
+~3
+;=== 20:51:43
+_camera camSetTarget [-78796.41,61143.88,-8197.92]
+_camera camSetPos [4809.97,6920.81,1.44]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~7
+;=== 20:52:04
+_camera camSetTarget [103103.30,22607.38,-9430.32]
+_camera camSetPos [4808.01,6920.90,1.44]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov say "36v62"
+~4
+Lemontov setmimic "angry"
+~3
+;=== 20:55:31
+_camera camSetTarget [-88887.10,41862.57,74.82]
+_camera camSetPos [4809.71,6921.17,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Rashiv say "36v63"
+~6
+;=== 20:56:02
+_camera camSetTarget [97550.67,-29081.19,-9984.60]
+_camera camSetPos [4809.54,6921.18,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov say "36v64"
+~6
+;=== 20:57:00
+_camera camSetTarget [-92917.16,-10287.03,-12210.45]
+_camera camSetPos [4811.23,6921.34,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Rashiv setmimic "surprised"
+Rashiv say "36v65"
+~3
+Rashiv setmimic "sad"
+~4
+;=== 20:57:39
+_camera camSetTarget [73276.95,-65533.29,-7754.00]
+_camera camSetPos [4810.08,6921.19,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov say "36v66"
+~6
+Lemontov reveal Rashiv
+;=== 20:58:31
+_camera camSetTarget [-57760.59,81712.08,-21994.05]
+_camera camSetPos [4810.80,6919.41,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+titletext["","plain down"]
+Rashiv setmimic "sad"
+Rashiv switchmove "FxStandHip"
+Lemontov dowatch Rashiv
+;=== 20:59:06
+_camera camSetTarget [-77836.10,-44832.10,-21994.32]
+_camera camSetPos [4811.54,6922.56,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+;=== 20:59:53
+_camera camSetTarget [-88726.56,41784.06,-5797.54]
+_camera camSetPos [4809.91,6921.04,1.51]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Rashiv setmimic "Angry"
+Rashiv say "36v67"
+Rashiv switchmove "FXshow2"
+~4
+;=== 21:00:13
+_camera camSetTarget [7361.30,106464.85,-9008.14]
+_camera camSetPos [4809.65,6919.02,1.28]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+Rashiv move getmarkerpos "RashivAway"
+Rashiv setspeedmode "limited"
+Rashiv dowatch objnull
+~3
+;=== 21:01:39
+_camera camSetTarget [8588.57,106827.05,-1880.92]
+_camera camSetPos [4809.85,6919.31,1.28]
+_camera camSetFOV 0.700
+_camera camCommit 4
+Lemontov say "36v68"
+@camCommitted _camera
+~2
+;=== 21:02:06
+_camera camSetTarget [36183.25,-88007.66,-1880.63]
+_camera camSetPos [4810.23,6921.63,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~0.5
+Lemontov setmimic "sad"
+~1
+titlecut["","black out",3]
+3.5 fadesound 0
+~3.5
+end=true
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit
