@@ -75,6 +75,9 @@ C9 reveal T1
 C10 reveal T1
 
 ~3
+
+playmusic "Track13"
+
 ;=== 19:26:50
 _camera camSetTarget [28172.61,104213.88,-3568.78]
 _camera camSetPos [4857.27,7041.42,1.67]
@@ -185,6 +188,9 @@ _camera camSetPos [4936.24,6919.32,1.38]
 _camera camSetFOV 0.700
 _camera camCommit 5
 @camCommitted _camera
+
+playmusic "Track5"
+
 ;=== 19:41:35
 _camera camSetTarget [-60621.89,-68596.45,161.51]
 _camera camSetPos [4933.50,6918.39,2.14]
@@ -244,6 +250,7 @@ _camera camSetPos [4921.22,6907.61,5.91]
 _camera camSetFOV 0.700
 _camera camCommit 1.5
 @camCommitted _camera
+1 fademusic 0.3
 ~1
 ;=== 21:03:54
 _camera camSetTarget [102077.61,30031.90,-4798.92]
@@ -447,6 +454,7 @@ LemontovHQ setmimic "Angry"
 ~1
 titlecut ["","black in",1]
 Zubarev switchmove "effectstandtalk"
+playmusic "Track6"
 ;=== 21:18:57
 _camera camSetTarget [-29291.38,-85860.43,-14808.62]
 _camera camSetPos [4917.88,6905.63,5.59]
@@ -666,9 +674,13 @@ _camera camSetPos [4916.52,6901.81,5.56]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
+4 fademusic 0
 ~2.5
 titlecut["","black out",2]
 ~3
+
+playmusic "track7"
+0 fademusic 1
 
 Lemontov dowatch [4828.58,6918.19,1.49]
 LemontovToCar=true
@@ -687,6 +699,7 @@ _camera camSetFOV 0.700
 _camera camCommit 6
 @camCommitted _camera
 @(unitReady Lemontov)
+1 fademusic 0.3
 ~0.5
 Lemontov setpos getmarkerpos "LemontovCar"
 Lemontov switchmove "FXStandRotateTable"
@@ -1046,6 +1059,7 @@ _camera camCommit 4
 Lemontov say "36v68"
 @camCommitted _camera
 ~2
+1 fademusic 1
 ;=== 21:02:06
 _camera camSetTarget [36183.25,-88007.66,-1880.63]
 _camera camSetPos [4810.23,6921.63,1.57]
@@ -1057,6 +1071,7 @@ Lemontov setmimic "sad"
 ~1
 titlecut["","black out",3]
 3.5 fadesound 0
+3.5 fademusic 0
 ~3.5
 end=true
 player cameraEffect ["terminate","back"]

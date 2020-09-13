@@ -7,7 +7,7 @@ _camera cameraeffect ["internal","back"]
 
 bmpReady=false
 
-
+playmusic "Track8"
 
 "_x stop true" foreach units GroupBeach1
 "_x stop true" foreach units GroupBeach2
@@ -110,12 +110,14 @@ _camera camSetPos [4376.37,10892.42,1.11]
 _camera camSetFOV 0.700
 _camera camCommit 5
 @camCommitted _camera
+2 fademusic 0
 ~1.5
 
 titlecut["","white out",0.5]
 ~0.5
 
-
+playmusic "Track1"
+4 fademusic 1
 
 ; BEACH CINEMA
 
@@ -202,7 +204,7 @@ _camera camCommit 0
 
 
 ~6
-
+1 fademusic 0
 titlecut["","white out",1]
 ~1
 
@@ -284,10 +286,13 @@ _camera camSetPos [4374.50,10890.10,1.71]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
+
+playmusic ["Track1", 142]
+1.5 fademusic 0.2
 ~1.5
 harbourEscape=true
 alarm=true
-
+1 fademusic 1
 "Shell105" camCreate getMarkerPos "Bomb_8"
 ~0.5
 H1 setdammage 1
@@ -375,10 +380,12 @@ _camera camCommit 5
 @camCommitted _camera
 
 Rashiv switchmove "CommandForward"
+~1
 
 titlecut ["","black out",3]
-4 fadesound 0
-~4
+2.5 fadesound 0
+2.5 fademusic 0
+~2.5
 end=true
 player cameraEffect ["terminate","back"]
 camDestroy _camera
