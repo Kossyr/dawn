@@ -1,0 +1,27 @@
+setacctime 1
+
+? choiceSquadA : goto "rebelReinforcements" ;
+? choiceSquadB : goto "russianReinforcements" ;
+
+
+#rebelReinforcements
+
+aP sideradio "36r17"
+AstierRadio sideradio "36r18"
+
+reinforcementsGo=true
+choiceReinforcements=true
+
+goto "ex"
+
+#russianReinforcements
+
+aP sideradio "36r14"
+KaplinskyRadio sideradio "36r15"
+
+reinforcementsGo=true
+choiceReinforcements=true
+
+#ex
+
+exit

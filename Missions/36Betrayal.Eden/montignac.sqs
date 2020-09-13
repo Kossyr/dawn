@@ -1,0 +1,45 @@
+; CINEMATIC
+
+setacctime 1
+
+~2
+createDialog "ChoiceSquad"
+
+@choiceSquadMade
+
+
+? choiceSquadA : goto "choiceA" ;
+? choiceSquadB : goto "choiceB" ;
+
+
+#choiceA
+
+hint "Soviet Spetznaz were taken as a squad"
+
+
+[S1, S2, S3, S4, S5, S6, S7, S8, S9] join aP
+
+meetingDone=true
+
+sCar lock false
+
+goto "ex"
+
+#choiceB
+
+hint "Rebels were taken as a squad"
+
+[R1, R2, R3, R4, R5, R6, R7, R8, R9] join aP
+
+rCar lock false
+
+meetingDone=true
+
+#ex
+
+aP setbehaviour "aware"
+
+"1" objstatus "done"
+aP addrating 1000
+
+exit

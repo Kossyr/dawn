@@ -6,7 +6,7 @@ onLoadIntroTime = false;
 
 MinScore = 0
 AvgScore = 5000
-MaxScore = 8000
+MaxScore = 12000
 
 Debriefing = 1
 
@@ -19,6 +19,20 @@ ShowNotepad = 1
 ShowGPS = 1
 
 ShowMap = 1
+
+class Weapons
+{
+	class Bizon					{ count = 1; };
+	class AK74					{ count = 1; };
+	class AK74SU				{ count = 1; };
+};
+
+class Magazines
+{
+	class BizonMag				{ count = 9; };
+	class AK74					{ count = 9; };
+	class HandGrenade			{ count = 6; };
+};
 
 
 class RscBackground
@@ -55,7 +69,7 @@ class RscButton
 };
 
 
-class SquadChoice {
+class ChoiceSquad {
     idd = 0;
     movingEnable = 0;
     controls[] = {Window, Button1, Button2};
@@ -82,6 +96,7 @@ class SquadChoice {
         w = (WINDOW_W/2) - SPACE_W*2;
         h = WINDOW_H - SPACE_H*2;
         text = "$STRM_SQUAD_CHOICE_A";
+		action = "choiceSquadA=true; choiceSquadMade=true; closeDialog 0";
     };
 
     class Button2 : RscButton {
@@ -91,11 +106,12 @@ class SquadChoice {
         w = (WINDOW_W/2) - SPACE_W*2;
         h = WINDOW_H - SPACE_H*2;
         text = "$STRM_SQUAD_CHOICE_B";
+		action = "choiceSquadB=true; choiceSquadMade=true; closeDialog 0";
     };
     
 };
 
-class EscapeChoice {
+class ChoiceEscape {
     idd = 0;
     movingEnable = 0;
     controls[] = {Window, Button1, Button2};
@@ -122,6 +138,7 @@ class EscapeChoice {
         w = (WINDOW_W/2) - SPACE_W*2;
         h = WINDOW_H - SPACE_H*2;
         text = "$STRM_ESCAPE_CHOICE_A";
+		action = "choiceEscapeA=true; choiceEscapeMade=true; closeDialog 0";
     };
 
     class Button2 : RscButton {
@@ -131,6 +148,7 @@ class EscapeChoice {
         w = (WINDOW_W/2) - SPACE_W*2;
         h = WINDOW_H - SPACE_H*2;
         text = "$STRM_ESCAPE_CHOICE_B";
+		action = "choiceEscapeB=true; choiceEscapeMade=true; closeDialog 0";
     };
     
 };
@@ -925,11 +943,43 @@ class CfgSounds
 		sound[] = {"36v131.ogg", db+10, 1.00};
 		titles[] = {0,$STRM_36v131};
 	};
+	class 36v132
+	{
+		name = "36v132";
+		sound[] = {"36v132.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_36v132};
+	};
+	class 36v133
+	{
+		name = "36v133";
+		sound[] = {"36v133.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_36v133};
+	};
+	class 36v134
+	{
+		name = "36v134";
+		sound[] = {"36v134.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_36v134};
+	};
+	class 36v135
+	{
+		name = "36v135";
+		sound[] = {"36v135.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_36v135};
+	};
+	class 36v136
+	{
+		name = "36v136";
+		sound[] = {"36v136.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_36v136};
+	};
+	class 36v137
+	{
+		name = "36v137";
+		sound[] = {"36v137.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_36v137};
+	};
 };
-
-
-
-
 
 
 class CfgRadio
@@ -1025,5 +1075,29 @@ class CfgRadio
 		name = "36r15";
 		sound[] = {"36r15.ogg", db+10, 1.00};
 		title = $STRM_36r15;
+	};
+	class 36r16
+	{
+		name = "36r16";
+		sound[] = {"36r16.ogg", db+10, 1.00};
+		title = $STRM_36r16;
+	};
+	class 36r17
+	{
+		name = "36r17";
+		sound[] = {"36r17.ogg", db+10, 1.00};
+		title = $STRM_36r17;
+	};
+	class 36r18
+	{
+		name = "36r18";
+		sound[] = {"36r18.ogg", db+10, 1.00};
+		title = $STRM_36r18;
+	};
+	class 36r19
+	{
+		name = "36r19";
+		sound[] = {"36r19.ogg", db+10, 1.00};
+		title = $STRM_36r19;
 	};
 };

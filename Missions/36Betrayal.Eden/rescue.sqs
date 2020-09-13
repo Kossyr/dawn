@@ -1,0 +1,45 @@
+setacctime 1
+
+? not choiceReinforcements : 2 SetRadioMsg "null" ;
+
+? choiceSquadA : goto "withRussians" ;
+? choiceSquadB and not choiceReinforcements : goto "onlyRebels" ;
+
+#withRussians
+
+aP sideradio "36r19"
+
+~8
+
+Hint "No escape choice, rebels are executed"
+
+goto "ex"
+
+#onlyRebels
+
+KaplinskyRadio sideradio "36r13"
+aP sideradio "36r19"
+
+~12
+
+createDialog "ChoiceEscape"
+
+@choiceEscapeMade
+
+
+? choiceEscapeA : goto "choiceA" ;
+? choiceEscapeB : goto "choiceB" ;
+
+#choiceA
+
+Hint "Rebels are executed"
+
+goto "ex"
+
+#choiceB
+
+Hint "Rebels live"
+
+#ex
+
+exit
