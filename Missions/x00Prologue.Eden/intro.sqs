@@ -70,6 +70,7 @@ titlecut["", "black in", 5]
 
 fishermanCarGo=true
 ~5
+
 0 fadesound 1
 
 ;=== 16:21:34
@@ -511,7 +512,6 @@ radio say "x00v11"
 richman switchmove "FxToHand"
 fuelman switchmove "FXCivilArmsAkimboR"
 @camCommitted _camera
-
 ;=== 12:01:02
 _camera camSetTarget [-18892.38,-89299.05,-30686.67]
 _camera camSetPos [9649.59,1490.69,1.96]
@@ -527,13 +527,13 @@ radio say "x00v12"
 fuelman switchmove "FXStandhip"
 richman switchmove "FXNewcivil"
 @camCommitted _camera
+
 titlecut["","black in",0.5]
 lamentinGo=true
 rioting=true
 
 ; radio say "x00v13"
 playsound "x00v13"
-titletext [localize "STRM_x00v13a", "plain down"]
 
 ;=== 13:02:47
 _camera camSetTarget [-97863.13,-5926.30,-4857.89]
@@ -546,8 +546,6 @@ _camera camSetTarget [-92585.46,15099.63,-33146.71]
 _camera camSetPos [1294.40,5969.45,4.02]
 _camera camSetFOV 0.700
 _camera camCommit 13
-~11
-titletext [localize "STRM_x00v13b", "plain down"]
 @camCommitted _camera
 punchGo=true
 [[0,1.25,-0.5],0.1,30,punchCar] exec "fireEffect.sqs"
@@ -575,6 +573,10 @@ riotPunch2 switchmove "StandStrokeFist"
 riotPunch1 switchmove "StandStrokeFist"
 ~0.5
 riotPunch2 switchmove "StandStrokeFist"
+~0.5
+riotPunch1 switchmove "StandStrokeFist"
+~0.5
+riotPunch2 switchmove "StandStrokeFist"
 @camCommitted _camera
 [[0,-0.5,0.5],0.1,30,barrel] exec "fireEffect.sqs"
 ;=== 13:09:59
@@ -589,7 +591,6 @@ _camera camSetPos [1276.70,6019.60,2.00]
 _camera camSetFOV 0.700
 _camera camCommit 8
 ~1.5
-titletext [localize "STRM_x00v13c", "plain down"]
 riotMan setmimic "Agresive"
 riotMan switchmove "CombatStrokeGun"
 ~0.9
@@ -675,7 +676,7 @@ _camera camCommit 0
 	
 	#loop
 
-	_camera camSetTarget uazg
+	_camera camSetTarget _who
 	_camera camSetPos [(getpos _who select 0) + _dx * sin (getdir _who) - _dy * cos (getdir _who), (getpos _who select 1) + _dx * cos (getdir _who) + _dy * sin (getdir _who), (getpos _who select 2)+_dz]
 	_camera camSetFOV 0.900
 	_camera camCommit 0

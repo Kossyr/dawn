@@ -1,8 +1,347 @@
-; CINEMATIC
+
+2 fadesound 0.1
+2 fademusic 0.1
+
+~2
 
 setacctime 1
 
+playsound "36v70"
+~8
+playsound "36v71"
+~8
+playsound "36v72"
+~8
+playsound "36v73"
+~8
+playsound "36v74"
+~8
+playsound "36v75"
+~8
+playsound "36v76"
+~8
+playsound "36v77"
+~8
+
+playsound "36v78"
+
+setacctime 1
+
+6 fadesound 1
+6 fademusic 1
+
+playmusic ["RTrack8",10]
+
+~7
+
+cinema=true
+
+aa = aP saveStatus "36Lemontov"
+aa = LemontovMontignac loadStatus "36Lemontov"
+aa = LemontovMontignac2 loadStatus "36Lemontov"
+
+setacctime 1
+
+titlecut["","white out",0.2]
+~0.2
+
+setacctime 1
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+playerCar setpos getmarkerpos "playerAway"
+
+S1 stop true;
+R1 stop true;
+
+S1 setpos getmarkerpos "S1Away";
+R1 setpos getmarkerpos "R1Away";
+
+KaplinskyMontignac setpos getmarkerpos "KaplinskyMontignac";
+AstierMontignac setpos getmarkerpos "AstierMontignac";
+
+KaplinskyMontignac setmimic "normal"
+AstierMontignac setmimic "normal"
+LemontovMontignac setmimic "Angry"
+LemontovMontignac2 setmimic "Angry"
+
+titletext["","plain"]
+
+playsound "bum"
+
+~0.5
+montignacLemontovArrival=true
+titlecut["","white in",2]
+;=== 16:58:50
+_camera camSetTarget [49276.95,-82476.48,-3379.22]
+_camera camSetPos [4858.07,7046.89,1.68]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+deletevehicle playerCar
+unassignvehicle aP
+aP action ["WEAPONONBACK"]
+aP setpos getmarkerpos "playerAway"
+
+;=== 21:08:04
+_camera camSetTarget [-40508.37,96186.14,1910.62]
+_camera camSetPos [4842.00,7077.89,2.00]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 ~2
+	lemontovGlue=true
+	
+	_who = CarMontignac;
+	
+	_dx = 2;
+	_dy = 0;
+	_dz = 1.65;
+	
+	
+	#loop
+
+	_camera camSetTarget _who
+	_camera camSetPos [(getpos _who select 0) + _dx * sin (getdir _who) - _dy * cos (getdir _who), (getpos _who select 1) + _dx * cos (getdir _who) + _dy * sin (getdir _who), (getpos _who select 2)+_dz]
+	_camera camSetFOV 0.900
+	_camera camCommit 0
+	@camCommitted _camera
+	
+	? lemontovGlueEnd : goto "glueEnd"
+	goto "loop"
+	
+	#glueend
+
+;=== 15:58:50
+_camera camSetTarget [-3432.80,-92456.28,-4588.76]
+_camera camSetPos [4828.91,7088.64,1.72]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 15:59:04
+_camera camSetTarget [-7398.54,-90909.80,-15562.16]
+_camera camSetPos [4820.40,7086.66,8.02]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+;=== 16:01:19
+_camera camSetTarget [35268.62,102159.41,-4291.37]
+_camera camSetPos [4827.31,7009.89,1.21]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 16:01:37
+_camera camSetTarget [86383.48,64719.86,-4291.83]
+_camera camSetPos [4822.00,7033.16,1.21]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+;=== 16:02:10
+_camera camSetTarget [97096.46,45301.75,-3983.25]
+_camera camSetPos [4822.18,6983.44,1.19]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+LemontovMontignac setpos getmarkerpos "LemontovMontignacOut"
+;=== 16:02:22
+_camera camSetTarget [-83337.01,54022.90,-3983.42]
+_camera camSetPos [4811.02,6982.92,1.19]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+lemontovMontignacParade=true
+~3
+;=== 16:07:35
+_camera camSetTarget [21265.26,105685.89,-386.45]
+_camera camSetPos [4805.67,7051.29,1.17]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 16:07:44
+_camera camSetTarget [7900.50,107002.72,-386.18]
+_camera camSetPos [4806.37,7052.08,1.17]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+;=== 16:09:49
+_camera camSetTarget [-94673.23,16825.21,-2496.21]
+_camera camSetPos [4813.37,7059.59,1.22]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 16:09:56
+_camera camSetTarget [-94673.23,16825.21,-2496.06]
+_camera camSetPos [4812.46,7048.58,1.22]
+_camera camSetFOV 0.700
+_camera camCommit 8
+M1 say "36v79"
+M5 exec "salutation.sqs"
+~1
+M1 exec "salutation.sqs"
+~1.5
+M2 exec "salutation.sqs"
+M2 say "36v80"
+~1.5
+M3 exec "salutation.sqs"
+~2
+M4 say "36v81"
+M4 exec "salutation.sqs"
+@camCommitted _camera
+~1.5
+
+;=== 17:46:58
+_camera camSetTarget [20978.40,-91633.34,160.52]
+_camera camSetPos [4809.42,7049.25,1.42]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+playsound "36v82"
+;=== 17:47:12
+_camera camSetTarget [20978.40,-91633.34,161.01]
+_camera camSetPos [4809.06,7039.83,1.42]
+_camera camSetFOV 0.700
+_camera camCommit 8
+~5
+playsound "36v83"
+~1
+titlecut["","white in",0.2]
+;=== 17:54:25
+_camera camSetTarget [77628.55,-61527.05,-894.41]
+_camera camSetPos [4798.15,6990.25,1.14]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+titlecut["","white in",0.2]
+;=== 17:55:08
+_camera camSetTarget [-34838.60,-84795.54,-894.25]
+_camera camSetPos [4831.87,6993.05,1.14]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+titlecut["","white in",0.2]
+;=== 17:56:03
+_camera camSetTarget [49446.21,-82433.00,-2434.28]
+_camera camSetPos [4825.72,7021.98,1.14]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+titlecut["","white in",0.2]
+;=== 17:56:30
+_camera camSetTarget [-91348.45,-15834.22,-14943.77]
+_camera camSetPos [4830.86,6997.65,6.24]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+titlecut["","white in",0.2]
+;=== 17:58:24
+_camera camSetTarget [25680.73,-90578.92,-6513.03]
+_camera camSetPos [4816.36,6992.33,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 17:58:57
+_camera camSetTarget [41337.54,-85861.30,-6513.12]
+_camera camSetPos [4815.77,6991.15,1.39]
+_camera camSetFOV 0.700
+_camera camCommit 8
+~2
+KaplinskyMontignac dowatch [4806.05,7014.96,1.67]
+~1
+KaplinskyMontignac setmimic "smile"
+~2
+AstierMontignac dowatch [4806.05,7014.96,1.67]
+@camCommitted _camera
+playsound "36v84"
+;=== 18:00:38
+_camera camSetTarget [-11534.82,105635.63,967.67]
+_camera camSetPos [4815.22,6984.11,0.94]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:00:45
+_camera camSetTarget [-15593.98,104877.00,968.05]
+_camera camSetPos [4816.06,6985.68,0.94]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~2
+deletevehicle LemontovMontignac
+LemontovMontignac2 setpos getmarkerpos "LemontovMontignacMeeting"
+KaplinskyMontignac dowatch [4816.65,6990.85,1.61]
+AstierMontignac dowatch [4816.65,6990.85,1.61]
+LemontovMontignac2 dowatch [4816.78,6989.26,1.61]
+KaplinskyMontignac setmimic "normal"
+;=== 18:13:32
+_camera camSetTarget [22246.45,-91478.95,351.73]
+_camera camSetPos [4816.58,6990.15,1.46]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+KaplinskyMontignac say "36v85"
+KaplinskyMontignac playmove "EffectStandSalute"
+~1
+KaplinskyMontignac playmove "EffectStandSaluteEnd"
+~2
+KaplinskyMontignac switchmove "FxShow4"
+;=== 18:15:27
+_camera camSetTarget [-85314.80,-35796.61,-6570.29]
+_camera camSetPos [4818.21,6990.82,1.36]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+AstierMontignac setmimic "Smile"
+AstierMontignac say "36v86"
+~2
+;=== 18:16:45
+_camera camSetTarget [-85976.10,-34871.02,2244.22]
+_camera camSetPos [4816.56,6990.05,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovMontignac2 dowatch [4815.93,6989.69,1.62]
+~6
+;=== 18:17:35
+_camera camSetTarget [33027.45,102742.25,-5782.09]
+_camera camSetPos [4815.94,6988.36,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AstierMontignac setmimic "normal"
+LemontovMontignac2 say "36v87"
+~2
+LemontovMontignac2 dowatch [4816.78,6989.26,1.61]
+~1.5
+;=== 18:18:49
+_camera camSetTarget [-87651.07,-30689.11,-5290.96]
+_camera camSetPos [4818.19,6990.67,1.41]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+KaplinskyMontignac say "36v88"
+~5
+KaplinskyMontignac say "36v89"
+~5
+KaplinskyMontignac say "36v90"
+~5
+;=== 18:20:12
+_camera camSetTarget [3761.12,106907.42,4089.89]
+_camera camSetPos [4816.68,6990.23,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titletext["","plain down"]
+
 createDialog "ChoiceSquad"
 
 @choiceSquadMade
@@ -14,32 +353,208 @@ createDialog "ChoiceSquad"
 
 #choiceA
 
-hint "Soviet Spetznaz were taken as a squad"
+~0.5
 
+LemontovMontignac2 say "36v101"
+~1.5
+;=== 18:25:26
+_camera camSetTarget [-88911.39,41419.81,-5257.90]
+_camera camSetPos [4817.97,6989.34,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+LemontovMontignac2 dowatch [4815.93,6989.69,1.62]
+~7
+;=== 18:26:24
+_camera camSetTarget [95690.85,-34388.25,-5257.45]
+_camera camSetPos [4814.95,6990.75,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AstierMontignac say "36v102"
+~2
+AstierMontignac dowatch objnull
+AstierMontignac move getmarkerpos "AstierMontignacSquad"
+AstierMontignac setspeedmode "full"
+~2
+KaplinskyMontignac dowatch [4828.29,6987.61,1.52]
+~1.5
+;=== 18:28:58
+_camera camSetTarget [-91236.98,34431.29,-4330.03]
+_camera camSetPos [4819.09,6989.04,1.36]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+KaplinskyMontignac switchmove "FxShow3"
+KaplinskyMontignac say "36v103"
+~0.5
+LemontovMontignac2 dowatch [4828.29,6987.61,1.52]
+~2
+deletevehicle LemontovMontignac2
+aP setpos getmarkerpos "LemontovMontignacMeeting"
+aP setdir 100
+deletevehicle KaplinskyMontignac
+deletevehicle AstierMontignac
+
+S1 setpos getmarkerpos "KaplinskyMontignac"
+R1 setpos getmarkerpos "AstierMontignacSquad"
+S1 setdir 95
+R1 setdir 235
+
+
+S1 stop false
+R1 stop false
 
 [S1, S2, S3, S4, S5, S6, S7, S8, S9] join aP
-
-meetingDone=true
+[R2, R3, R4, R5, R6, R7, R8, R9] join R1
 
 sCar lock false
 
 goto "ex"
 
+
 #choiceB
 
-hint "Rebels were taken as a squad"
+~0.5
+LemontovMontignac2 say "36v91"
+~1.5
+;=== 18:35:21
+_camera camSetTarget [-84586.84,51674.81,-2998.99]
+_camera camSetPos [4817.92,6989.15,1.40]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+KaplinskyMontignac setmimic "surprised"
+~5
+;=== 18:35:44
+_camera camSetTarget [-41859.40,-81391.53,-2999.01]
+_camera camSetPos [4817.22,6990.27,1.40]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+KaplinskyMontignac switchmove "FxShow2"
+KaplinskyMontignac say "36v92"
+~4
+;=== 18:36:12
+_camera camSetTarget [-11195.81,105649.32,-2998.85]
+_camera camSetPos [4816.81,6989.99,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovMontignac2 say "36v93"
+~4
+;=== 18:36:47
+_camera camSetTarget [88774.58,-46267.23,-10534.67]
+_camera camSetPos [4815.13,6991.01,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+KaplinskyMontignac setmimic "normal"
+KaplinskyMontignac say "36v94"
+~4
+KaplinskyMontignac dowatch objnull
+KaplinskyMontignac move getmarkerpos "KaplinskyMontignacSquad"
+KaplinskyMontignac setspeedmode "full"
+~2
+;=== 18:38:00
+_camera camSetTarget [-91590.98,33225.52,-3973.90]
+_camera camSetPos [4817.55,6989.90,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AstierMontignac say "36v95"
+~1.5
+LemontovMontignac2 dowatch [4815.93,6989.69,1.62]
+~0.5
+LemontovMontignac2 say "36v96"
+~3.5
+;=== 18:39:30
+_camera camSetTarget [-79312.43,-47066.64,-244.70]
+_camera camSetPos [4816.45,6990.45,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AstierMontignac setmimic "surprised"
+AstierMontignac say "36v97"
+~3
+;=== 18:39:58
+_camera camSetTarget [21711.35,105368.54,-5841.13]
+_camera camSetPos [4816.00,6989.00,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovMontignac2 say "36v98"
+~9
+;=== 18:40:33
+_camera camSetTarget [-86053.47,-33874.34,-8354.41]
+_camera camSetPos [4817.59,6990.74,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AstierMontignac setmimic "sad"
+AstierMontignac say "36v99"
+~4
+AstierMontignac setmimic "normal"
+~3
+AstierMontignac dowatch [4804.51,6985.68,1.78]
+~1
+;=== 18:41:35
+_camera camSetTarget [100981.09,33437.93,-7077.68]
+_camera camSetPos [4814.05,6989.53,1.35]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AstierMontignac switchmove "FxShow3"
+AstierMontignac say "36v100"
+LemontovMontignac2 dowatch [4804.51,6985.68,1.78]
+~2
+
+deletevehicle LemontovMontignac2
+aP setpos getmarkerpos "LemontovMontignacMeeting"
+aP setdir 260
+
+deletevehicle KaplinskyMontignac
+deletevehicle AstierMontignac
+
+R1 setpos getmarkerpos "AstierMontignac"
+S1 setpos getmarkerpos "KaplinskyMontignacSquad"
+
+R1 setdir 245
+S1 setdir 110
+
+R1 stop false
+S1 stop false
 
 [R1, R2, R3, R4, R5, R6, R7, R8, R9] join aP
+[S2, S3, S4, S5, S6, S7, S8, S9] join S1
+
 
 rCar lock false
 
+#ex
+
 meetingDone=true
 
-#ex
+player cameraEffect ["terminate","back"]
+camDestroy _camera
 
 aP setbehaviour "aware"
 
 "1" objstatus "done"
 aP addrating 1000
+
+cinema=false
+
+"_x stop false" foreach units ivanInfantry1
+"_x stop false" foreach units ivanInfantry2
+"_x stop false" foreach units ivanBmpCrew
+
+deletevehicle M1
+deletevehicle M2
+deletevehicle M3
+deletevehicle M4
+deletevehicle M5
+
 
 exit
