@@ -34,6 +34,7 @@ playmusic ["RTrack8",10]
 
 ~7
 
+
 cinema=true
 
 aa = aP saveStatus "36Lemontov"
@@ -49,7 +50,6 @@ setacctime 1
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
-
 
 playerCar setpos getmarkerpos "playerAway"
 
@@ -342,10 +342,13 @@ _camera camCommit 0
 
 titletext["","plain down"]
 
+[] exec "choice_music.sqs"
+
 createDialog "ChoiceSquad"
 
 @choiceSquadMade
 
+choiceMusic=false
 
 ? choiceSquadA : goto "choiceA" ;
 ? choiceSquadB : goto "choiceB" ;
