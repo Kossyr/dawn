@@ -1689,8 +1689,18 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=4;
+				items=5;
 				class Item0
+				{
+					position[]={7182.754395,123.974998,2299.414795};
+					type="HOLD";
+					synchronizations[]={3};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={9647.103516,14.682570,1628.881104};
 					combatMode="BLUE";
@@ -1701,7 +1711,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={9629.407227,15.521976,1637.542725};
 					expActiv="this fire [""put"",""pipebomb""]";
@@ -1710,7 +1720,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={9614.820313,16.795681,1646.205078};
 					expActiv="this fire [""put"",""pipebomb""]";
@@ -1719,7 +1729,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item3
+				class Item4
 				{
 					position[]={9630.104492,45.566238,1762.157471};
 					type="HOLD";
@@ -4985,7 +4995,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=64;
+		items=65;
 		class Item0
 		{
 			position[]={9709.200195,12.647430,1429.110718};
@@ -5906,6 +5916,19 @@ class Mission
 			class Effects
 			{
 			};
+		};
+		class Item64
+		{
+			position[]={7184.229980,123.974998,2300.312012};
+			a=0.000000;
+			b=0.000000;
+			type="SWITCH";
+			age="UNKNOWN";
+			expCond="astierChargesFree";
+			class Effects
+			{
+			};
+			synchronizations[]={3};
 		};
 	};
 };

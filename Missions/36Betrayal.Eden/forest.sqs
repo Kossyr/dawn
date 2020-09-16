@@ -1,0 +1,405 @@
+
+F1 setpos getmarkerpos "F1";
+F2 setpos getmarkerpos "F2";
+F3 setpos getmarkerpos "F3";
+F4 setpos getmarkerpos "F4";
+
+F1 setmimic "angry"
+F2 setmimic "angry"
+F3 setmimic "angry"
+F4 setmimic "angry"
+
+
+aa = LemontovForest loadStatus "36Lemontov"
+aa = LemontovForestRunner loadStatus "36Lemontov"
+
+KaplinskyForest setmimic "normal"
+LemontovForest setmimic "angry"
+
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+; REBELS RUNNING CINEMA
+
+LemontovForestRunner setpos getmarkerpos "LemontovForestRunner"
+AstierForestRunner setpos getmarkerpos "AstierForestRunner"
+PoincareForestRunner setpos getmarkerpos "PoincareForestRunner"
+KaplinskyForest setpos getmarkerpos "LemontovForest"
+
+LemontovForestRunner move getmarkerpos "RunLemontov"
+LemontovForestRunner setspeedmode "limited"
+AstierForestRunner move getmarkerpos "RunAstier"
+AstierForestRunner setspeedmode "limited"
+PoincareForestRunner move getmarkerpos "RunPoincare"
+PoincareForestRunner setspeedmode "limited"
+
+LemontovForestRunner setmimic "angry"
+AstierForestRunner setmimic "normal"
+PoincareForestRunner setmimic "normal"
+
+KaplinskyForest dowatch [6309.40,7422.82,1.45]
+F1 dowatch [6309.40,7422.82,1.45]
+F2 dowatch [6309.40,7422.82,1.45]
+F3 dowatch [6309.40,7422.82,1.45]
+F4 dowatch [6309.40,7422.82,1.45]
+
+titlecut["","black in",1]
+
+;=== 18:08:01
+_camera camSetTarget [-89424.80,35388.85,-6705.71]
+_camera camSetPos [6337.25,7414.49,1.66]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:09:05
+_camera camSetTarget [-86665.34,44194.10,162.14]
+_camera camSetPos [6321.01,7418.91,2.96]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+;=== 18:09:19
+_camera camSetTarget [6731.67,107228.70,-5993.86]
+_camera camSetPos [6308.96,7416.88,2.94]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+KaplinskyForest say "36v128"
+~0.5
+KaplinskyForest switchmove "FxShow3"
+~0.5
+;=== 18:10:12
+_camera camSetTarget [39879.00,101453.37,-5995.85]
+_camera camSetPos [6308.11,7458.22,1.26]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+LemontovForestRunner move getmarkerpos "RunLemontov2"
+LemontovForestRunner setspeedmode "limited"
+AstierForestRunner move getmarkerpos "RunAstier2"
+AstierForestRunner setspeedmode "limited"
+PoincareForestRunner move getmarkerpos "RunPoincare2"
+PoincareForestRunner setspeedmode "limited"
+~0.5
+;=== 18:11:03
+_camera camSetTarget [12075.89,107174.61,-3775.47]
+_camera camSetPos [6306.34,7418.94,2.03]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:11:08
+_camera camSetTarget [12053.42,106786.10,-9500.87]
+_camera camSetPos [6306.56,7422.60,2.85]
+_camera camSetFOV 0.700
+_camera camCommit 5
+~3
+titlecut["","black out",2]
+@camCommitted _camera
+
+deletevehicle LemontovForestRunner
+deletevehicle AstierForestRunner
+deletevehicle PoincareForestRunner
+
+KaplinskyForest dowatch objnull
+F1 dowatch objnull
+F2 dowatch objnull
+F3 dowatch objnull
+F4 dowatch objnull
+
+; EXECUTION CINEMA
+
+KaplinskyForest setpos getmarkerpos "KaplinskyForest"
+LemontovForest setpos getmarkerpos "LemontovForest"
+
+AstierForest setpos getmarkerpos "AstierForest"
+PoincareForest setpos getmarkerpos "PoincareForest"
+F5 setpos getmarkerpos "F5"
+F6 setpos getmarkerpos "F6"
+F7 setpos getmarkerpos "F7"
+F8 setpos getmarkerpos "F8"
+F9 setpos getmarkerpos "F9"
+F10 setpos getmarkerpos "F10"
+
+LemontovForest dowatch [6308.94,7458.64,1.61]
+KaplinskyForest dowatch [6308.94,7458.64,1.61]
+AstierForest dowatch [6308.56,7460.40,1.60]
+PoincareForest dowatch [6308.56,7460.40,1.60]
+
+AstierForest setmimic "normal"
+PoincareForest setmimic "normal"
+F5 setmimic "normal"
+F6 setmimic "normal"
+F7 setmimic "normal"
+F8 setmimic "normal"
+F9 setmimic "normal"
+F10 setmimic "normal"
+
+F1 reveal F5
+F1 reveal F6
+F1 reveal F7
+F1 reveal F8
+F1 reveal F9
+F1 reveal F10
+
+F2 reveal F5
+F2 reveal F6
+F2 reveal F7
+F2 reveal F8
+F2 reveal F9
+F2 reveal F10
+
+F3 reveal F5
+F3 reveal F6
+F3 reveal F7
+F3 reveal F8
+F3 reveal F9
+F3 reveal F10
+
+F4 reveal F5
+F4 reveal F6
+F4 reveal F7
+F4 reveal F8
+F4 reveal F9
+F4 reveal F10
+
+
+titlecut["","black in",2]
+
+;=== 18:24:17
+_camera camSetTarget [30559.58,102050.61,-21337.51]
+_camera camSetPos [6306.03,7449.70,2.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AstierForest say "36v114"
+;=== 18:24:41
+_camera camSetTarget [55994.18,91527.20,-21337.75]
+_camera camSetPos [6304.87,7452.75,2.49]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+;=== 18:25:05
+_camera camSetTarget [73233.23,-66242.59,-9252.43]
+_camera camSetPos [6307.28,7460.92,1.41]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AstierForest setmimic "smile"
+~3
+titletext["","plain down"]
+;=== 18:27:41
+_camera camSetTarget [-91906.85,25849.54,-3762.27]
+_camera camSetPos [6309.20,7460.02,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+;=== 18:27:53
+_camera camSetTarget [34739.61,103106.78,-6416.58]
+_camera camSetPos [6308.57,7459.71,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+KaplinskyForest say "36v115"
+~1.5
+LemontovForest setmimic "sad"
+~2
+LemontovForest setmimic "angry"
+~0.5
+LemontovForest say "36v116"
+~1
+KaplinskyForest dowatch objnull
+~1
+;=== 18:29:14
+_camera camSetTarget [23753.11,-90787.05,-6416.60]
+_camera camSetPos [6308.87,7459.41,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AstierForest setmimic "surprised"
+PoincareForest setmimic "angry"
+~0.2
+F5 setmimic "surprised"
+F6 setmimic "surprised"
+~0.4
+F7 setmimic "surprised"
+F8 setmimic "surprised"
+F9 setmimic "surprised"
+~0.2
+F10 setmimic "surprised"
+~0.2
+~0.5
+;=== 18:30:19
+_camera camSetTarget [13935.88,106950.82,-6416.77]
+_camera camSetPos [6308.64,7459.64,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+playmusic "RTrack1a"
+LemontovForest say "36v117"
+[] exec "execution.sqs"
+~0.5
+KaplinskyForest setmimic "smile"
+KaplinskyForest switchmove "HandGunStand"
+playsound "tokarev"
+~0.5
+playsound "tokarev"
+AstierForest setdammage 1
+PoincareForest setdammage 1
+~0.5
+;=== 18:32:54
+_camera camSetTarget [-93668.69,7199.65,-1661.77]
+_camera camSetPos [6314.36,7459.79,1.09]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+titletext["","plain down"]
+;=== 18:53:59
+_camera camSetTarget [100567.74,-16753.42,-22809.04]
+_camera camSetPos [6302.78,7459.39,1.87]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:54:08
+_camera camSetTarget [103227.49,-5398.44,-20821.88]
+_camera camSetPos [6304.21,7458.06,1.89]
+_camera camSetFOV 0.700
+_camera camCommit 1
+@camCommitted _camera
+;=== 18:55:11
+_camera camSetTarget [-87912.03,40745.43,-3458.69]
+_camera camSetPos [6314.56,7455.56,0.79]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:55:26
+_camera camSetTarget [-91988.86,18479.48,-14484.86]
+_camera camSetPos [6316.28,7457.89,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 1
+@camCommitted _camera
+;=== 18:56:09
+_camera camSetTarget [22807.85,104947.76,-14737.36]
+_camera camSetPos [6307.50,7450.84,1.25]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:56:14
+_camera camSetTarget [-29874.57,99476.26,-14737.98]
+_camera camSetPos [6311.36,7451.98,1.24]
+_camera camSetFOV 0.700
+_camera camCommit 1
+@camCommitted _camera
+;=== 19:19:10
+_camera camSetTarget [100644.80,-17533.69,-21623.09]
+_camera camSetPos [6302.06,7459.41,1.28]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:19:20
+_camera camSetTarget [103669.20,745.27,-21623.66]
+_camera camSetPos [6303.14,7457.82,1.31]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+;=== 18:57:50
+_camera camSetTarget [97667.63,-25026.73,-24287.46]
+_camera camSetPos [6307.26,7459.18,0.77]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:57:57
+_camera camSetTarget [82351.99,67615.70,-24287.67]
+_camera camSetPos [6307.42,7455.20,0.77]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+F1 setbehaviour "careless"
+F2 setbehaviour "careless"
+F3 setbehaviour "careless"
+F4 setbehaviour "careless"
+F1 setunitpos "auto"
+F2 setunitpos "auto"
+F3 setunitpos "auto"
+F4 setunitpos "auto"
+;=== 18:58:08
+_camera camSetTarget [-78443.91,54551.62,-24288.50]
+_camera camSetPos [6314.18,7454.86,1.05]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:58:12
+_camera camSetTarget [-78443.91,54551.62,-24288.89]
+_camera camSetPos [6317.18,7453.20,2.04]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+;=== 18:58:34
+_camera camSetTarget [32196.80,-66773.14,-61633.62]
+_camera camSetPos [6308.96,7459.71,2.26]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:58:41
+_camera camSetTarget [32196.80,-66773.14,-61633.14]
+_camera camSetPos [6308.33,7461.51,2.25]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~1
+;=== 18:59:06
+_camera camSetTarget [12654.84,106892.34,-8369.41]
+_camera camSetPos [6308.66,7459.58,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+KaplinskyForest say "36v118"
+~2.5
+KaplinskyForest say "36v119"
+~1
+2 fademusic 1
+KaplinskyForest move getmarkerpos "LeavingForest"
+F1 move getmarkerpos "LeavingForest"
+F2 move getmarkerpos "LeavingForest"
+F3 move getmarkerpos "LeavingForest"
+F4 move getmarkerpos "LeavingForest"
+KaplinskyForest setspeedmode "limited"
+F1 setspeedmode "limited"
+F2 setspeedmode "limited"
+F3 setspeedmode "limited"
+F4 setspeedmode "limited"
+~1.5
+;=== 19:01:18
+_camera camSetTarget [34596.95,95648.29,-37521.68]
+_camera camSetPos [6305.79,7449.06,3.83]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:01:26
+_camera camSetTarget [34596.95,95648.29,-37521.37]
+_camera camSetPos [6300.58,7432.89,11.83]
+_camera camSetFOV 0.700
+_camera camCommit 35
+~8
+playsound "36v138"
+~6
+LemontovForest move getmarkerpos "LeavingForest"
+LemontovForest setspeedmode "limited"
+~6
+titletext [ localize "STRC_END_SUCCESS","plain"]
+~10
+titlecut["","black out",5]
+6 fademusic 0
+@camCommitted _camera
+
+~1
+end=true
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+
+exit
+

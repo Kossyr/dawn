@@ -31,6 +31,7 @@ aP action ["WEAPONONBACK"]
 aa = aP saveStatus "10Rashiv"
 aa = RashivCemetery loadStatus "10Rashiv"
 
+AstierCharges stop true
 AstierCharges setpos getmarkerpos "astier_charges"
 AstierCemetery setpos getmarkerpos "astier_cemetery";
 RashivCemetery setpos getmarkerpos "rashiv_cemetery";
@@ -136,6 +137,7 @@ deletevehicle AstierCemetery
 deletevehicle RashivCemetery
 aP setpos getmarkerpos "rashiv_cemetery"
 aP setdir 90
+astierChargesFree=true
 AstierCharges setpos getmarkerpos "astier_cemetery"
 removeallweapons AstierCharges
 AstierCharges addweapon "M16"

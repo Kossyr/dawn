@@ -1,47 +1,36 @@
+
 setacctime 1
 
-clearArea=true
+titlecut["","black out",4]
+~4
 
-? not choiceReinforcements : 2 SetRadioMsg "null" ;
+enableradio false
 
-? choiceSquadA : goto "withRussians" ;
-? choiceSquadB and not choiceReinforcements : goto "onlyRebels" ;
+? alive S1 : S1 setpos getmarkerpos "away"; S1 stop true ;
+? alive S2 : S2 setpos getmarkerpos "away"; S2 stop true ;
+? alive S3 : S3 setpos getmarkerpos "away"; S3 stop true ;
+? alive S4 : S4 setpos getmarkerpos "away"; S4 stop true ;
+? alive S5 : S5 setpos getmarkerpos "away"; S5 stop true ;
+? alive S6 : S6 setpos getmarkerpos "away"; S6 stop true ;
+? alive S7 : S7 setpos getmarkerpos "away"; S7 stop true ;
+? alive S8 : S8 setpos getmarkerpos "away"; S8 stop true ;
+? alive S9 : S9 setpos getmarkerpos "away"; S9 stop true ;
 
-#withRussians
+? alive R1 : R1 setpos getmarkerpos "away"; R1 stop true ;
+? alive R2 : R2 setpos getmarkerpos "away"; R2 stop true ;
+? alive R3 : R3 setpos getmarkerpos "away"; R3 stop true ;
+? alive R4 : R4 setpos getmarkerpos "away"; R4 stop true ;
+? alive R5 : R5 setpos getmarkerpos "away"; R5 stop true ;
+? alive R6 : R6 setpos getmarkerpos "away"; R6 stop true ;
+? alive R7 : R7 setpos getmarkerpos "away"; R7 stop true ;
+? alive R8 : R8 setpos getmarkerpos "away"; R8 stop true ;
+? alive R9 : R9 setpos getmarkerpos "away"; R9 stop true ;
 
-aP sideradio "36r19"
-
-~8
-
-Hint "No escape choice, rebels are executed"
-
-goto "ex"
-
-#onlyRebels
-
-KaplinskyRadio sideradio "36r13"
-aP sideradio "36r19"
-
-~12
-
-createDialog "ChoiceEscape"
-
-@choiceEscapeMade
+aP setpos getmarkerpos "playerAway"
 
 
-? choiceEscapeA : goto "choiceA" ;
-? choiceEscapeB : goto "choiceB" ;
 
-#choiceA
 
-Hint "Rebels are executed"
 
-goto "ex"
-
-#choiceB
-
-Hint "Rebels live"
-
-#ex
 
 exit
