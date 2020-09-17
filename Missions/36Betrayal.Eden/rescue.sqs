@@ -1,8 +1,12 @@
 
 setacctime 1
 
+
+
 titlecut["","black out",4]
 ~4
+
+setacctime 1
 
 enableradio false
 
@@ -28,8 +32,566 @@ enableradio false
 
 aP setpos getmarkerpos "playerAway"
 
+LemontovBase setmimic "angry"
+AstierBase setmimic "normal"
+PoincareBase setmimic "normal"
+
+B5 setpos getmarkerpos "B5"
+B6 setpos getmarkerpos "B6"
+B7 setpos getmarkerpos "B7"
+B8 setpos getmarkerpos "B4"
+B8 setdir 335
+B8 dowatch [7211.85,6854.00,2.04]
+B9 setpos getmarkerpos "B9"
+B10 setpos getmarkerpos "B10"
+
+B5 disableai "autotarget"
+B6 disableai "autotarget"
+B7 disableai "autotarget"
+B8 disableai "autotarget"
+B9 disableai "autotarget"
+B10 disableai "autotarget"
+
+LemontovBase setpos getmarkerpos "LemontovBase"
+AstierBase setpos getmarkerpos "AstierBase"
+PoincareBase setpos getmarkerpos "PoincareBase"
+
+PoincareBase dowatch [7254.22,6784.71,1.63]
+AstierBase dowatch [7256.00,6784.64,1.63]
 
 
+B5 setmimic "normal"
+B6 setmimic "normal"
+B7 setmimic "normal"
+B8 setmimic "normal"
+B9 setmimic "normal"
+B10 setmimic "normal"
+
+aa = LemontovBase loadStatus "36Lemontov"
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+; worst ending - russians are here
+? not worstEnding : goto "greetingCinema" ;
+
+B8 setpos getmarkerpos "B8"
+B8 setdir 125
+B8 dowatch objnull
+
+KaplinskyBase setpos getmarkerpos "KaplinskyBase"
+B1 setpos getmarkerpos "B1"
+B2 setpos getmarkerpos "B2"
+B3 setpos getmarkerpos "B3"
+B4 setpos getmarkerpos "B4"
+
+B1 disableai "autotarget"
+B2 disableai "autotarget"
+B3 disableai "autotarget"
+B4 disableai "autotarget"
+KaplinskyBase disableai "autotarget"
+
+KaplinskyBase setmimic "normal"
+B1 setmimic "angry"
+B2 setmimic "angry"
+B3 setmimic "angry"
+B4 setmimic "angry"
+
+; BASE GREETING CINEMA
+#greetingCinema
+~0.5
+titlecut["","black in",1]
+
+;=== 13:54:40
+_camera camSetTarget [46757.23,-84972.18,2267.56]
+_camera camSetPos [7217.68,6851.67,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:54:57
+_camera camSetTarget [57985.98,-79281.13,2267.69]
+_camera camSetPos [7218.48,6844.68,1.12]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+;=== 10:39:51
+_camera camSetTarget [-29609.35,99114.74,-10595.69]
+_camera camSetPos [7257.97,6768.88,6.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 10:40:03
+_camera camSetTarget [-52341.81,83889.52,-22328.03]
+_camera camSetPos [7265.25,6773.11,5.07]
+_camera camSetFOV 0.700
+_camera camCommit 8
+@camCommitted _camera
+;=== 10:40:34
+_camera camSetTarget [106758.19,10827.19,-9069.02]
+_camera camSetPos [7255.18,6784.57,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+PoincareBase setmimic "Smile"
+PoincareBase switchmove "FxShow2"
+PoincareBase say "36v104"
+~4
+;=== 10:41:23
+_camera camSetTarget [-90826.10,-10517.38,-8929.42]
+_camera camSetPos [7257.23,6785.25,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AstierBase setmimic "smile"
+PoincareBase setmimic "normal"
+AstierBase say "36v105"
+AstierBase switchmove "FXCivilHandMouth"
+~2
+;=== 10:43:15
+_camera camSetTarget [-91642.84,-5000.83,-8929.22]
+_camera camSetPos [7255.11,6784.88,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+;=== 10:44:07
+_camera camSetTarget [39135.59,100832.38,-11713.91]
+_camera camSetPos [7254.27,6781.07,1.46]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+PoincareBase setmimic "normal"
+AstierBase setmimic "normal"
+PoincareBase say "36v106"
+~4
+;=== 10:44:39
+_camera camSetTarget [-90279.80,26969.22,-8884.13]
+_camera camSetPos [7255.27,6784.47,1.46]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AstierBase say "36v107"
+~5
+;=== 10:45:13
+_camera camSetTarget [103353.05,34015.10,-4834.06]
+_camera camSetPos [7254.93,6784.23,1.46]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+PoincareBase setmimic "angry"
+PoincareBase switchmove "FXCivilLookaround"
+PoincareBase say "36v108"
+~3
+;=== 10:46:04
+_camera camSetTarget [-45286.55,91840.13,-2085.47]
+_camera camSetPos [7256.21,6782.65,1.46]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+? worstEnding : B4 setmimic "angry"; B4 setdir 165; B4 switchmove "FxShow3"; B4 say "36v110" ;
+? not worstEnding : B8 setmimic "angry"; B8 setdir 165; B8 switchmove "FxShow3"; B8 say "36v109" ;
+~0.5
+PoincareBase dowatch [7218.97,6842.81,1.53]
+AstierBase dowatch [7218.97,6842.81,1.53]
+~1
+
+LemontovBase dowatch [7254.13,6784.73,1.65]
+
+;=== 10:48:24
+_camera camSetTarget [-45562.52,91749.80,-2082.22]
+_camera camSetPos [7220.76,6839.70,1.19]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+;=== 12:25:15
+_camera camSetTarget [40483.37,-87260.16,-7103.08]
+_camera camSetPos [7253.99,6787.22,1.25]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AstierBase setmimic "angry"
+PoincareBase setmimic "angry"
+AstierBase say "36v111"
+~2.5
+
+? not worstEnding : goto "baseChoice" ;
+
+AstierBase dowatch [7255.10,6782.15,1.61]
+
+~1
+;=== 10:57:19
+_camera camSetTarget [-43081.72,93037.91,-5063.06]
+_camera camSetPos [7255.87,6781.45,1.47]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AstierBase say "36v114"
+~2
+;=== 10:58:04
+_camera camSetTarget [-13198.71,-91028.88,-3781.74]
+_camera camSetPos [7255.08,6782.94,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+
+titlecut["","black out",2]
+~2.5
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+[] exec "forest.sqs"
+ 
+exit
+
+; BASE CHOICE 
+#baseChoice
+
+;=== 11:08:40
+_camera camSetTarget [36575.44,-87563.69,15495.17]
+_camera camSetPos [7254.93,6782.43,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+titletext["","plain down"]
+
+[] exec "choice_music.sqs"
+
+createDialog "ChoiceEscape"
+
+@choiceEscapeMade
+
+choiceMusic=false
+
+? choiceEscapeA : goto "choiceA" ;
+? choiceEscapeB : goto "choiceB" ;
+
+
+; CHOICE FOREST
+#choiceA
+
+~0.5
+
+LemontovBase say "36v112"
+~1.5
+AstierBase dowatch [7255.10,6782.15,1.61]
+PoincareBase dowatch [7255.10,6782.15,1.61]
+;=== 11:17:40
+_camera camSetTarget [-39112.29,94993.18,-8250.75]
+_camera camSetPos [7256.29,6780.93,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2.5
+worstEnding=false
+goodEnding=false
+titlecut ["","black out",2]
+~2.5
+titletext["","plain down"]
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+[] exec "forest.sqs"
+ 
+exit
+
+
+; CHOICE BOATS
+#choiceB
+
+~0.5
+
+LemontovBase say "36v113"
+~1.5
+AstierBase dowatch [7255.10,6782.15,1.61]
+PoincareBase dowatch [7255.10,6782.15,1.61]
+AstierBase setmimic "surprised"
+PoincareBase setmimic "surprised"
+;=== 11:17:40
+_camera camSetTarget [-39112.29,94993.18,-8250.75]
+_camera camSetPos [7256.29,6780.93,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AstierBase say "36v121"
+~2.5
+;=== 12:11:49
+_camera camSetTarget [35145.32,-89188.88,-3359.12]
+_camera camSetPos [7254.60,6783.34,1.37]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovBase say "36v122"
+~6
+;=== 12:12:25
+_camera camSetTarget [76999.91,77908.80,-8706.57]
+_camera camSetPos [7252.93,6781.36,1.37]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AstierBase say "36v123"
+~1.5
+;=== 12:13:16
+_camera camSetTarget [35991.45,-88612.48,-8567.26]
+_camera camSetPos [7254.79,6782.88,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovBase say "36v124"
+~9
+;=== 12:13:52
+_camera camSetTarget [-55047.10,84478.22,-8982.45]
+_camera camSetPos [7256.98,6780.40,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 12:13:57
+_camera camSetTarget [-72577.94,66322.16,-8982.98]
+_camera camSetPos [7257.42,6781.43,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 4
+~0.5
+PoincareBase setmimic "angry"
+PoincareBase say "36v125"
+PoincareBase move getmarkerpos "toBoat"
+PoincareBase dowatch objnull
+~1
+B5 move getmarkerpos "toBoat"
+B6 move getmarkerpos "toBoat"
+B7 move getmarkerpos "toBoat"
+B8 move getmarkerpos "toBoat"
+B9 move getmarkerpos "toBoat"
+B10 move getmarkerpos "toBoat"
+B5 setspeedmode "limited"
+B6 setspeedmode "limited"
+B7 setspeedmode "limited"
+B8 setspeedmode "limited"
+B9 setspeedmode "limited"
+B10 setspeedmode "limited"
+@camCommitted _camera
+;=== 12:14:55
+_camera camSetTarget [42807.63,100217.37,-2415.13]
+_camera camSetPos [7253.90,6783.84,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AstierBase say "36v126"
+~3.5
+;=== 12:15:28
+_camera camSetTarget [44020.76,-86169.09,2905.58]
+_camera camSetPos [7254.86,6782.54,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovBase say "36v127"
+~3.5
+;=== 12:16:00
+_camera camSetTarget [-36200.30,96410.53,-8839.38]
+_camera camSetPos [7254.49,6783.93,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+AstierBase setmimic "normal"
+AstierBase say "36v128"
+~5
+AstierBase move getmarkerpos "toBoat"
+~0.5
+AstierBase dowatch objnull
+;=== 12:16:49
+_camera camSetTarget [39134.20,101147.09,-8839.22]
+_camera camSetPos [7253.86,6781.01,1.40]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+titlecut["","black out",1]
+~1
+
+; BOAT ESCAPE
+
+AstierBase moveincargo PortShip
+PoincareBase moveincargo PortShip
+B5 moveindriver PortShip
+B6 moveingunner PortShip
+B7 moveincargo PortShip
+B8 moveincargo PortShip
+B9 moveincargo PortShip
+B10 moveincargo PortShip
+
+deletevehicle LemontovBase
+
+LemontovPort setpos getmarkerpos "LemontovPort"
+LemontovPort setmimic "angry"
+LemontovPort disableai "autotarget"
+
+
+titlecut["","black in",1]
+
+titletext["","plain down"]
+
+;=== 12:50:25
+_camera camSetTarget [-88473.38,35280.63,2.08]
+_camera camSetPos [7395.92,6836.08,1.75]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 12:50:36
+_camera camSetTarget [-92243.23,-1622.55,2.79]
+_camera camSetPos [7400.67,6842.15,1.95]
+_camera camSetFOV 0.700
+_camera camCommit 8
+
+
+~3
+
+B5 move getmarkerpos "BoatMove"
+B5 setspeedmode "limited"
+
+
+@camCommitted _camera
+
+;=== 12:51:49
+_camera camSetTarget [90975.01,50913.63,-32554.90]
+_camera camSetPos [7343.63,6815.16,3.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+;=== 12:51:35
+_camera camSetTarget [92713.31,51830.20,-26130.57]
+_camera camSetPos [7335.65,6810.92,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~1
+;=== 12:52:17
+_camera camSetTarget [-82540.94,-34322.00,15169.37]
+_camera camSetPos [7338.98,6813.24,1.76]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 12:52:27
+_camera camSetTarget [-82740.91,-36258.16,5565.17]
+_camera camSetPos [7337.92,6812.75,1.81]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~1
+;=== 12:53:42
+_camera camSetTarget [-19354.79,103182.95,19.05]
+_camera camSetPos [7337.39,6811.13,1.26]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovPort setbehaviour "aware"
+~1
+;=== 12:54:12
+_camera camSetTarget [-80251.87,-41433.75,544.43]
+_camera camSetPos [7338.26,6812.98,1.92]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~1.3
+
+LemontovPort exec "lemontovGun.sqs"
+
+~1
+;=== 12:58:29
+_camera camSetTarget [5318.28,-93163.60,-746.51]
+_camera camSetPos [7337.53,6813.07,1.65]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+;=== 12:59:05
+_camera camSetTarget [92645.95,54465.25,-21223.02]
+_camera camSetPos [7335.85,6811.08,0.83]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 12:59:12
+_camera camSetTarget [92645.95,54465.25,-21222.61]
+_camera camSetPos [7335.85,6811.08,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 1.2
+@camCommitted _camera
+;=== 12:59:21
+_camera camSetTarget [-87063.14,39487.62,-4521.26]
+_camera camSetPos [7338.46,6811.79,1.65]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 12:59:28
+_camera camSetTarget [-75850.47,-47496.32,11428.44]
+_camera camSetPos [7338.30,6812.93,1.69]
+_camera camSetFOV 0.700
+_camera camCommit 1.5
+@camCommitted _camera
+;=== 12:59:43
+_camera camSetTarget [-85385.29,-29725.55,8223.87]
+_camera camSetPos [7338.33,6812.68,1.85]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 12:59:50
+_camera camSetTarget [-85385.29,-29725.55,8224.30]
+_camera camSetPos [7338.33,6812.68,1.85]
+_camera camSetFOV 0.341
+_camera camCommit 4
+@camCommitted _camera
+~1.5
+playsound "tokarev"
+~0.2
+titlecut["","black out",0.1]
+~0.4
+playsound "tokarev"
+~0.3
+playsound "tokarev"
+~0.2
+playsound "tokarev"
+~0.3
+playsound "tokarev"
+~0.2
+playsound "tokarev"
+~0.2
+playsound "tokarev"
+~0.4
+playsound "tokarev"
+~0.2
+playsound "tokarev"
+~0.2
+playsound "tokarev"
+~0.5
+playsound "tokarev"
+~0.4
+playsound "tokarev"
+~0.4
+playsound "tokarev"
+
+
+~4
+
+PortShip setpos getmarkerpos "BoatMove"
+PortShip setdir 60
+
+goodEnding=true
+worstEnding=false
+
+deletevehicle LemontovPort
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+[] exec "forest.sqs"
+ 
+exit
 
 
 

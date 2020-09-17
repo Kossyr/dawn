@@ -48,6 +48,9 @@ playsound "bum"
 ~0.5
 montignacLemontovArrival=true
 titlecut["","white in",2]
+
+; MONTIGNAC CINEMA
+
 ;=== 16:58:50
 _camera camSetTarget [49276.95,-82476.48,-3379.22]
 _camera camSetPos [4858.07,7046.89,1.68]
@@ -314,6 +317,8 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
+; MONTIGNAC CHOICE
+
 titletext["","plain down"]
 
 [] exec "choice_music.sqs"
@@ -328,6 +333,7 @@ choiceMusic=false
 ? choiceSquadB : goto "choiceB" ;
 
 
+; SOVIET SQUAD CINEMA
 #choiceA
 
 ~0.5
@@ -390,7 +396,7 @@ sCar lock false
 
 goto "ex"
 
-
+; REBEL SQUAD CINEMA
 #choiceB
 
 ~0.5

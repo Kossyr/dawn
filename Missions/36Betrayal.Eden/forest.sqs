@@ -20,29 +20,40 @@ LemontovForest setmimic "angry"
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
+; worst ending -> straight to execution
+; bad and good ending - we come running into the forest
+? worstEnding : goto "execution" ;
+
 ; REBELS RUNNING CINEMA
 
 LemontovForestRunner setpos getmarkerpos "LemontovForestRunner"
-AstierForestRunner setpos getmarkerpos "AstierForestRunner"
-PoincareForestRunner setpos getmarkerpos "PoincareForestRunner"
+
 KaplinskyForest setpos getmarkerpos "LemontovForest"
 
 LemontovForestRunner move getmarkerpos "RunLemontov"
 LemontovForestRunner setspeedmode "limited"
-AstierForestRunner move getmarkerpos "RunAstier"
-AstierForestRunner setspeedmode "limited"
-PoincareForestRunner move getmarkerpos "RunPoincare"
-PoincareForestRunner setspeedmode "limited"
 
 LemontovForestRunner setmimic "angry"
-AstierForestRunner setmimic "normal"
-PoincareForestRunner setmimic "normal"
 
 KaplinskyForest dowatch [6309.40,7422.82,1.45]
 F1 dowatch [6309.40,7422.82,1.45]
 F2 dowatch [6309.40,7422.82,1.45]
 F3 dowatch [6309.40,7422.82,1.45]
 F4 dowatch [6309.40,7422.82,1.45]
+
+; if we have good ending, Lemontov runs alone here
+? goodEnding : goto "lemontovRunsAlone" ;
+
+AstierForestRunner move getmarkerpos "RunAstier"
+AstierForestRunner setspeedmode "limited"
+PoincareForestRunner move getmarkerpos "RunPoincare"
+PoincareForestRunner setspeedmode "limited"
+AstierForestRunner setpos getmarkerpos "AstierForestRunner"
+PoincareForestRunner setpos getmarkerpos "PoincareForestRunner"
+AstierForestRunner setmimic "normal"
+PoincareForestRunner setmimic "normal"
+
+#lemontovRunsAlone
 
 titlecut["","black in",1]
 
@@ -64,7 +75,7 @@ _camera camSetPos [6308.96,7416.88,2.94]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-KaplinskyForest say "36v128"
+KaplinskyForest say "36v129"
 ~0.5
 KaplinskyForest switchmove "FxShow3"
 ~0.5
@@ -77,10 +88,17 @@ _camera camCommit 0
 ~1.5
 LemontovForestRunner move getmarkerpos "RunLemontov2"
 LemontovForestRunner setspeedmode "limited"
+
+; ignore rebels if Lemontov is alone
+? goodEnding : goto "lemontovRunsAlone2" ;
+
 AstierForestRunner move getmarkerpos "RunAstier2"
 AstierForestRunner setspeedmode "limited"
 PoincareForestRunner move getmarkerpos "RunPoincare2"
 PoincareForestRunner setspeedmode "limited"
+
+#lemontovRunsAlone2
+
 ~0.5
 ;=== 18:11:03
 _camera camSetTarget [12075.89,107174.61,-3775.47]
@@ -107,7 +125,13 @@ F2 dowatch objnull
 F3 dowatch objnull
 F4 dowatch objnull
 
+; if good ending, lemontov is alone and we are done
+; bad ending, we're having an execution
+? goodEnding : goto "lemontovFinal" ;
+
 ; EXECUTION CINEMA
+
+#execution
 
 KaplinskyForest setpos getmarkerpos "KaplinskyForest"
 LemontovForest setpos getmarkerpos "LemontovForest"
@@ -172,7 +196,7 @@ _camera camSetPos [6306.03,7449.70,2.55]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-AstierForest say "36v114"
+AstierForest say "36v115"
 ;=== 18:24:41
 _camera camSetTarget [55994.18,91527.20,-21337.75]
 _camera camSetPos [6304.87,7452.75,2.49]
@@ -201,13 +225,13 @@ _camera camSetPos [6308.57,7459.71,1.57]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-KaplinskyForest say "36v115"
+KaplinskyForest say "36v116"
 ~1.5
 LemontovForest setmimic "sad"
 ~2
 LemontovForest setmimic "angry"
 ~0.5
-LemontovForest say "36v116"
+LemontovForest say "36v117"
 ~1
 KaplinskyForest dowatch objnull
 ~1
@@ -237,11 +261,12 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~2
+0 fademusic 1
 playmusic "RTrack1a"
-LemontovForest say "36v117"
+LemontovForest say "36v118"
 [] exec "execution.sqs"
 ~0.5
-KaplinskyForest setmimic "smile"
+KaplinskyForest setmimic "angry"
 KaplinskyForest switchmove "HandGunStand"
 playsound "tokarev"
 ~0.5
@@ -249,6 +274,7 @@ playsound "tokarev"
 AstierForest setdammage 1
 PoincareForest setdammage 1
 ~0.5
+KaplinskyForest setmimic "normal"
 ;=== 18:32:54
 _camera camSetTarget [-93668.69,7199.65,-1661.77]
 _camera camSetPos [6314.36,7459.79,1.09]
@@ -325,6 +351,10 @@ F1 setunitpos "auto"
 F2 setunitpos "auto"
 F3 setunitpos "auto"
 F4 setunitpos "auto"
+F1 setmimic "normal"
+F2 setmimic "normal"
+F3 setmimic "normal"
+F4 setmimic "normal"
 ;=== 18:58:08
 _camera camSetTarget [-78443.91,54551.62,-24288.50]
 _camera camSetPos [6314.18,7454.86,1.05]
@@ -356,10 +386,13 @@ _camera camSetPos [6308.66,7459.58,1.61]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-KaplinskyForest say "36v118"
-~2.5
 KaplinskyForest say "36v119"
+KaplinskyForest setmimic "smnile"
+~2.5
+KaplinskyForest say "36v120"
+KaplinskyForest setmimic "angry"
 ~1
+KaplinskyForest dowatch objnull
 2 fademusic 1
 KaplinskyForest move getmarkerpos "LeavingForest"
 F1 move getmarkerpos "LeavingForest"
@@ -382,13 +415,15 @@ _camera camCommit 0
 _camera camSetTarget [34596.95,95648.29,-37521.37]
 _camera camSetPos [6300.58,7432.89,11.83]
 _camera camSetFOV 0.700
-_camera camCommit 35
+_camera camCommit 37
+titletext["","plain down"]
 ~8
-playsound "36v138"
+playsound "36v139"
 ~6
 LemontovForest move getmarkerpos "LeavingForest"
 LemontovForest setspeedmode "limited"
-~6
+LemontovForest dowatch objnull
+~8
 titletext [ localize "STRC_END_SUCCESS","plain"]
 ~10
 titlecut["","black out",5]
@@ -396,6 +431,11 @@ titlecut["","black out",5]
 @camCommitted _camera
 
 ~1
+
+; REBELS WERE EXECUTED
+
+aP addrating -5000
+
 end=true
 player cameraEffect ["terminate","back"]
 camDestroy _camera
@@ -403,3 +443,177 @@ camDestroy _camera
 
 exit
 
+#lemontovFinal
+
+KaplinskyForest setpos getmarkerpos "LemontovForest"
+LemontovForest setpos getmarkerpos "LemontovForest2"
+LemontovForest setdir 350
+LemontovForest setbehaviour "safe"
+LemontovForest action ["WEAPONONBACK"]
+
+LemontovForest dowatch [6308.61,7460.23,1.67]
+KaplinskyForest dowatch [6308.78,7459.11,1.67]
+F1 dowatch [6308.78,7459.11,1.67]
+F2 dowatch [6308.78,7459.11,1.67]
+F3 dowatch [6308.78,7459.11,1.67]
+F4 dowatch [6308.78,7459.11,1.67]
+
+titlecut["","black in",2]
+
+;=== 13:27:38
+_camera camSetTarget [86055.66,67136.91,-8706.57]
+_camera camSetPos [6307.44,7458.60,1.46]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+KaplinskyForest say "36v130"
+KaplinskyForest setmimic "angry"
+KaplinskyForest switchmove "Fxshow2"
+~3
+;=== 13:28:48
+_camera camSetTarget [22411.75,-91226.93,-1131.38]
+_camera camSetPos [6308.68,7459.47,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovForest say "36v131"
+~7
+;=== 13:29:18
+_camera camSetTarget [-88686.11,34493.56,-15482.47]
+_camera camSetPos [6309.97,7458.96,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+KaplinskyForest setmimic "normal"
+KaplinskyForest say "36v132"
+~4
+LemontovForest say "36v133"
+~2
+KaplinskyForest setmimic "surprised"
+KaplinskyForest say "36v134"
+~2
+;=== 13:30:53
+_camera camSetTarget [15368.37,-92063.70,-3444.45]
+_camera camSetPos [6308.72,7459.65,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+KaplinskyForest say "36v135"
+~7
+;=== 13:31:13
+_camera camSetTarget [-8332.54,106251.23,-4909.93]
+_camera camSetPos [6308.73,7459.19,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+KaplinskyForest setmimic "smile"
+KaplinskyForest say "36v136"
+KaplinskyForest switchmove "FXCivilArmsAkimboR"
+~1.5
+;=== 13:34:39
+_camera camSetTarget [-93433.82,11790.20,-5448.48]
+_camera camSetPos [6314.51,7460.00,1.33]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:34:51
+_camera camSetTarget [-72856.83,68294.30,-5448.88]
+_camera camSetPos [6310.42,7458.23,1.26]
+_camera camSetFOV 0.700
+_camera camCommit 6
+~0.5
+F1 setbehaviour "careless"
+F2 setbehaviour "careless"
+F3 setbehaviour "careless"
+F4 setbehaviour "careless"
+F1 setunitpos "auto"
+F2 setunitpos "auto"
+F3 setunitpos "auto"
+F4 setunitpos "auto"
+F1 setmimic "normal"
+F2 setmimic "normal"
+F3 setmimic "normal"
+F4 setmimic "normal"
+@camCommitted _camera
+;=== 13:35:08
+_camera camSetTarget [-4588.43,106860.92,970.52]
+_camera camSetPos [6308.66,7459.68,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+KaplinskyForest setmimic "normal"
+KaplinskyForest say "36v137"
+~2
+KaplinskyForest setmimic "angry"
+~1
+KaplinskyForest dowatch objnull
+KaplinskyForest move getmarkerpos "LeavingForest"
+F1 move getmarkerpos "LeavingForest"
+F2 move getmarkerpos "LeavingForest"
+F3 move getmarkerpos "LeavingForest"
+F4 move getmarkerpos "LeavingForest"
+KaplinskyForest setspeedmode "limited"
+F1 setspeedmode "limited"
+F2 setspeedmode "limited"
+F3 setspeedmode "limited"
+F4 setspeedmode "limited"
+F1 dowatch objnull
+F2 dowatch objnull
+F3 dowatch objnull
+F4 dowatch objnull
+~0.5
+;=== 13:37:00
+_camera camSetTarget [-38101.02,92540.11,-27904.11]
+_camera camSetPos [6311.53,7454.80,2.73]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:37:07
+_camera camSetTarget [-38101.02,92540.11,-27904.44]
+_camera camSetPos [6315.36,7447.46,5.24]
+_camera camSetFOV 0.700
+_camera camCommit 17
+titletext["","plain down"]
+~4
+playsound "36v138"
+~3
+LemontovForest move getmarkerpos "LeavingForest"
+LemontovForest setspeedmode "limited"
+LemontovForest dowatch objnull
+@camCommitted _camera
+
+PortShip setpos getmarkerpos "BoatIsland"
+PortShip setdir 65
+
+B5 move getmarkerpos "BoatMove2"
+B5 setspeedmode "limited"
+
+~1
+
+;=== 13:43:46
+_camera camSetTarget [89275.39,70287.45,1.85]
+_camera camSetPos [10665.08,8477.90,2.06]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:43:53
+_camera camSetTarget [89214.95,70239.95,-3916.65]
+_camera camSetPos [10665.08,8477.90,5.08]
+_camera camSetFOV 0.700
+_camera camCommit 17.5
+~2.5
+titletext [ localize "STRC_END_SUCCESS","plain"]
+~10
+titlecut["","black out",5]
+@camCommitted _camera
+~1
+
+; REBELS SURVIVED
+
+aP addrating 5000
+
+end2=true
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit

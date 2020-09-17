@@ -1,6 +1,7 @@
 setacctime 1
 
 clearArea=true
+cinema=true
 
 "4" objstatus "done"
 aP addrating 1000
@@ -12,6 +13,8 @@ aP addrating 1000
 ? choiceSquadB and not choiceReinforcements : goto "onlyRebels" ;
 
 aP sideradio "36r19"
+
+worstEnding=true
 
 ~8
 
@@ -26,7 +29,13 @@ aP sideradio "36r19"
 
 #ex
 
+enableradio false
+
+~5
+
 aa = aP saveStatus "36Lemontov"
+
+enableradio false
 
 [] exec "rescue.sqs"
 
