@@ -1,0 +1,104 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"bis_resistance"
+	};
+	randomSeed=8361987;
+	class Intel
+	{
+		resistanceWest=0.000000;
+		resistanceEast=1.000000;
+		startWeather=0.800000;
+		forecastWeather=0.987494;
+		month=1;
+		day=29;
+		hour=9;
+		minute=10;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6388.279297,137.521347,6844.227539};
+					id=0;
+					side="EAST";
+					vehicle="SoldierEB";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					init="this exec ""photo.sqs""";
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6977.845703,79.609634,6941.750488};
+					azimut=125.000000;
+					id=1;
+					side="EAST";
+					vehicle="SoldierESaboteurPipe";
+					leader=1;
+					skill=0.600000;
+					text="Lemontov";
+					init="this setidentity ""Lemontov""; this setgroupid [""delta"",""groupcolor0""]; removeallweapons this; this addweapon ""binocular""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addweapon ""SVDDragunov""; this addmagazine ""tokarevmag""; this addmagazine ""tokarevmag""; this addmagazine ""tokarevmag""; this addmagazine ""tokarevmag""; this addweapon ""tokarev""; this addweapon ""nvgoggles""";
+				};
+			};
+		};
+		class Item2
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6976.990234,79.843758,6941.418457};
+					azimut=140.000000;
+					id=2;
+					side="GUER";
+					vehicle="OfficerG";
+					leader=1;
+					skill=0.600000;
+					text="Astier";
+					init="this setidentity ""Astier""";
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	randomSeed=6304259;
+	class Intel
+	{
+	};
+};
+class OutroWin
+{
+	randomSeed=9223171;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=8972291;
+	class Intel
+	{
+	};
+};
