@@ -222,13 +222,17 @@ _camera camCommit 8
 playsound "36v83"
 ~1
 titlecut["","white in",0.2]
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+_camera = "camera" camcreate [4798.15,6990.25,1.14]
+_camera cameraeffect ["internal","back"]
 ;=== 17:54:25
 _camera camSetTarget [77628.55,-61527.05,-894.41]
 _camera camSetPos [4798.15,6990.25,1.14]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~1.5
+~1
 titlecut["","white in",0.2]
 ;=== 17:55:08
 _camera camSetTarget [-34838.60,-84795.54,-894.25]
@@ -236,7 +240,7 @@ _camera camSetPos [4831.87,6993.05,1.14]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~1.5
+~1
 titlecut["","white in",0.2]
 ;=== 17:56:03
 _camera camSetTarget [49446.21,-82433.00,-2434.28]
@@ -244,7 +248,7 @@ _camera camSetPos [4825.72,7021.98,1.14]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~1.5
+~1
 titlecut["","white in",0.2]
 ;=== 17:56:30
 _camera camSetTarget [-91348.45,-15834.22,-14943.77]
@@ -252,7 +256,7 @@ _camera camSetPos [4830.86,6997.65,6.24]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~1.5
+~1
 titlecut["","white in",0.2]
 ;=== 17:58:24
 _camera camSetTarget [25680.73,-90578.92,-6513.03]
