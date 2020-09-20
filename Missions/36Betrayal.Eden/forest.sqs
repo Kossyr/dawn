@@ -546,6 +546,8 @@ KaplinskyForest say "36v137"
 ~3
 KaplinskyForest setmimic "angry"
 ~1.5
+0 fademusic 0.3
+playmusic "RTrack1a"
 KaplinskyForest dowatch objnull
 KaplinskyForest move getmarkerpos "LeavingForest"
 F1 move getmarkerpos "LeavingForest"
@@ -562,6 +564,7 @@ F2 dowatch objnull
 F3 dowatch objnull
 F4 dowatch objnull
 ~0.5
+3 fademusic 1
 ;=== 13:37:00
 _camera camSetTarget [-38101.02,92540.11,-27904.11]
 _camera camSetPos [6311.53,7454.80,2.73]
@@ -605,6 +608,8 @@ _camera camCommit 17.5
 titletext [ localize "STRC_END_SUCCESS","plain"]
 ~10
 titlecut["","black out",5]
+6 fademusic 0
+6 fadesound 0
 @camCommitted _camera
 ~1
 

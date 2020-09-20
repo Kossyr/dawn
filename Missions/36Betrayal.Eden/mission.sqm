@@ -217,6 +217,7 @@ class Mission
 				{
 					position[]={7184.679199,35.706852,6894.453613};
 					combatMode="RED";
+					speed="FULL";
 					class Effects
 					{
 					};
@@ -358,6 +359,7 @@ class Mission
 				{
 					position[]={7189.958984,34.457890,6895.246094};
 					combatMode="RED";
+					speed="FULL";
 					class Effects
 					{
 					};
@@ -527,6 +529,7 @@ class Mission
 					position[]={5293.323730,130.397049,7393.908203};
 					type="GETOUT";
 					combat="AWARE";
+					expActiv="ivan2=true";
 					class Effects
 					{
 					};
@@ -733,6 +736,7 @@ class Mission
 					position[]={5265.507813,128.266876,7383.558594};
 					type="GETOUT";
 					combat="AWARE";
+					expActiv="ivan3=true";
 					class Effects
 					{
 					};
@@ -880,7 +884,7 @@ class Mission
 				{
 					position[]={5351.076172,154.334320,7260.855957};
 					combat="AWARE";
-					expActiv="[] exec ""ivan_ready.sqs""";
+					expActiv="ivan1=true";
 					class Effects
 					{
 					};
@@ -970,7 +974,7 @@ class Mission
 				{
 					position[]={5630.567383,191.656433,7095.162598};
 					type="HOLD";
-					synchronizations[]={44};
+					synchronizations[]={42};
 					class Effects
 					{
 					};
@@ -1768,7 +1772,7 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={7254.968262,30.374998,6774.430664};
+					position[]={7240.453613,30.100056,6777.211914};
 					type="HOLD";
 					combat="SAFE";
 					class Effects
@@ -1824,7 +1828,7 @@ class Mission
 				{
 					position[]={6998.028320,73.672272,6934.970703};
 					type="HOLD";
-					combat="COMBAT";
+					combat="AWARE";
 					synchronizations[]={30};
 					class Effects
 					{
@@ -1834,6 +1838,7 @@ class Mission
 				class Item2
 				{
 					position[]={7245.346191,30.240522,6820.530762};
+					speed="FULL";
 					class Effects
 					{
 					};
@@ -1935,6 +1940,7 @@ class Mission
 				class Item3
 				{
 					position[]={7241.189453,30.120390,6820.986816};
+					speed="FULL";
 					class Effects
 					{
 					};
@@ -1987,7 +1993,7 @@ class Mission
 				{
 					position[]={7101.375488,54.278961,7076.502930};
 					type="HOLD";
-					combat="COMBAT";
+					combat="AWARE";
 					synchronizations[]={40};
 					class Effects
 					{
@@ -1997,6 +2003,7 @@ class Mission
 				class Item2
 				{
 					position[]={7248.351074,30.346806,6821.577637};
+					speed="FULL";
 					class Effects
 					{
 					};
@@ -2816,6 +2823,7 @@ class Mission
 				class Item4
 				{
 					position[]={7250.416016,30.374998,6821.729980};
+					speed="FULL";
 					class Effects
 					{
 					};
@@ -2898,6 +2906,7 @@ class Mission
 				class Item3
 				{
 					position[]={7235.465820,30.126467,6820.105957};
+					speed="FULL";
 					class Effects
 					{
 					};
@@ -2967,7 +2976,7 @@ class Mission
 					position[]={7377.005859,11.822818,6778.996094};
 					type="HOLD";
 					combat="SAFE";
-					synchronizations[]={42,43};
+					synchronizations[]={45};
 					class Effects
 					{
 					};
@@ -2977,7 +2986,7 @@ class Mission
 				{
 					position[]={7230.926270,30.048828,6849.565430};
 					type="GUARD";
-					combat="COMBAT";
+					combat="AWARE";
 					class Effects
 					{
 					};
@@ -3169,7 +3178,7 @@ class Mission
 				{
 					position[]={5760.725098,212.317184,7218.559082};
 					type="HOLD";
-					synchronizations[]={45};
+					synchronizations[]={43};
 					class Effects
 					{
 					};
@@ -3264,7 +3273,7 @@ class Mission
 				{
 					position[]={5781.287109,192.599991,7004.283203};
 					type="HOLD";
-					synchronizations[]={46};
+					synchronizations[]={44};
 					class Effects
 					{
 					};
@@ -8250,7 +8259,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=28;
+		items=29;
 		class Item0
 		{
 			position[]={4816.354004,159.029999,7016.745117};
@@ -8275,7 +8284,7 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={6,7,8,9,10,44};
+			synchronizations[]={6,7,8,9,10,42};
 		};
 		class Item2
 		{
@@ -8601,7 +8610,7 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={27,28,29,32,33,34,43};
+			synchronizations[]={27,28,29,32,33,34};
 		};
 		class Item24
 		{
@@ -8616,7 +8625,7 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={30,31,35,36,37,38,39,40,41,42};
+			synchronizations[]={30,31,35,36,37,38,39,40,41,45};
 		};
 		class Item25
 		{
@@ -8655,7 +8664,19 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={45,46};
+			synchronizations[]={43,44};
+		};
+		class Item28
+		{
+			position[]={5425.908203,146.080276,7384.451172};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			expCond="ivan1 and ivan2 and ivan3";
+			expActiv="[] exec ""ivan_ready.sqs""";
+			class Effects
+			{
+			};
 		};
 	};
 };
