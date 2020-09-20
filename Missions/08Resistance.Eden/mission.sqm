@@ -40,24 +40,26 @@ class Mission
 				class Item1
 				{
 					position[]={7008.484375,81.252029,4205.364746};
-					azimut=140.008667;
+					azimut=140.009003;
 					special="NONE";
 					id=1;
 					side="GUER";
 					vehicle="SoldierGMG";
 					rank="SERGEANT";
 					skill=1.000000;
+					init="this setidentity ""Rozier""";
 				};
 				class Item2
 				{
 					position[]={7005.940430,78.763756,4198.560547};
-					azimut=79.247681;
+					azimut=79.247704;
 					special="NONE";
 					id=2;
 					side="GUER";
 					vehicle="SoldierGMG";
 					rank="SERGEANT";
 					skill=1.000000;
+					init="this setidentity ""Rochefort""";
 				};
 				class Item3
 				{
@@ -69,28 +71,31 @@ class Mission
 					vehicle="SoldierGMedic";
 					rank="SERGEANT";
 					skill=1.000000;
+					init="this setidentity ""Toussaint""";
 				};
 				class Item4
 				{
 					position[]={7005.420410,80.095413,4204.969727};
-					azimut=114.087631;
+					azimut=114.087997;
 					special="NONE";
 					id=4;
 					side="GUER";
 					vehicle="SoldierGG";
 					rank="CORPORAL";
 					skill=1.000000;
+					init="this setidentity ""Lebas""";
 				};
 				class Item5
 				{
 					position[]={7006.567383,79.473358,4201.463867};
-					azimut=100.670364;
+					azimut=100.669998;
 					special="NONE";
 					id=5;
 					side="GUER";
 					vehicle="SoldierGG";
 					rank="CORPORAL";
 					skill=1.000000;
+					init="this setidentity ""LaCroix""";
 				};
 				class Item6
 				{
@@ -108,13 +113,14 @@ class Mission
 				class Item7
 				{
 					position[]={7005.028320,78.592209,4200.551758};
-					azimut=92.528114;
+					azimut=92.528099;
 					special="NONE";
 					id=7;
 					side="GUER";
 					vehicle="SoldierGB";
 					rank="SERGEANT";
 					skill=1.000000;
+					init="this setidentity ""Saunier""";
 				};
 			};
 			class Waypoints
@@ -2417,6 +2423,7 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="part";
+					init="this setidentity ""Rozier""";
 				};
 			};
 		};
@@ -2456,7 +2463,7 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="res2";
-					init="this setbehaviour ""safe""";
+					init="this setbehaviour ""safe""; this setidentity ""Rocherfort""";
 				};
 			};
 		};
@@ -2476,7 +2483,7 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="res3";
-					init="this setbehaviour ""safe""";
+					init="this setbehaviour ""safe""; this setidentity ""Saunier""";
 				};
 			};
 		};
@@ -2560,7 +2567,7 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="res1";
-					init="this reveal Rashiv2; this dotarget Rashiv2";
+					init="this reveal Rashiv2; this dotarget Rashiv2; this setidentity ""Rozier""";
 				};
 			};
 			class Waypoints

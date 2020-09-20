@@ -45,6 +45,7 @@ class Mission
 					vehicle="SoldierGMG";
 					rank="SERGEANT";
 					skill=1.000000;
+					init="this setidentity ""Rozier""";
 				};
 				class Item2
 				{
@@ -55,6 +56,7 @@ class Mission
 					vehicle="SoldierGMG";
 					rank="SERGEANT";
 					skill=1.000000;
+					init="this setidentity ""Vaillancourt""";
 				};
 				class Item3
 				{
@@ -65,6 +67,7 @@ class Mission
 					vehicle="SoldierGG";
 					rank="CORPORAL";
 					skill=1.000000;
+					init="this setidentity ""Lebas""";
 				};
 				class Item4
 				{
@@ -75,6 +78,7 @@ class Mission
 					vehicle="SoldierGB";
 					rank="CORPORAL";
 					skill=1.000000;
+					init="this setidentity ""LaCroix""";
 				};
 				class Item5
 				{
@@ -85,6 +89,7 @@ class Mission
 					vehicle="SoldierGG";
 					rank="CORPORAL";
 					skill=1.000000;
+					init="this setidentity ""Saunier""";
 				};
 				class Item6
 				{
@@ -95,6 +100,7 @@ class Mission
 					vehicle="SoldierGMedic";
 					rank="CORPORAL";
 					skill=1.000000;
+					init="this setidentity ""Toussaint""";
 				};
 				class Item7
 				{
@@ -977,7 +983,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1.000000;
 					text="medic4";
-					init="this setbehaviour ""safe""";
+					init="this setbehaviour ""safe""; this setidentity ""LaCroix""";
 				};
 			};
 		};
@@ -998,7 +1004,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=1.000000;
 					text="medic1";
-					init="this setbehaviour ""safe""; medics = group this; group this allowfleeing 0; this setgroupid [""CHARLIE"",""GROUPCOLOR0""]";
+					init="this setbehaviour ""safe""; medics = group this; group this allowfleeing 0; this setgroupid [""CHARLIE"",""GROUPCOLOR0""]; this setidentity ""Rochefort""";
 				};
 			};
 			class Waypoints
@@ -1045,7 +1051,7 @@ class Mission
 					rank="CORPORAL";
 					skill=1.000000;
 					text="medic3";
-					init="this setbehaviour ""safe""";
+					init="this setbehaviour ""safe""; this setidentity ""Rozier""";
 				};
 			};
 		};
@@ -1066,7 +1072,7 @@ class Mission
 					rank="CORPORAL";
 					skill=1.000000;
 					text="medic2";
-					init="this setbehaviour ""safe""";
+					init="this setbehaviour ""safe""; this setidentity ""Toussaint""";
 				};
 			};
 		};
@@ -3313,7 +3319,7 @@ class Intro
 					vehicle="SoldierGB";
 					leader=1;
 					skill=0.600000;
-					init="this setbehaviour ""safe""";
+					init="this setbehaviour ""safe""; this setidentity ""Saunier""";
 				};
 			};
 		};
@@ -3351,7 +3357,7 @@ class Intro
 					vehicle="SoldierGB";
 					leader=1;
 					skill=0.600000;
-					init="this setbehaviour ""safe""";
+					init="this setbehaviour ""safe""; this setidentity ""Rochefort""";
 				};
 			};
 		};
@@ -3386,10 +3392,10 @@ class Intro
 					azimut=245.000000;
 					id=19;
 					side="GUER";
-					vehicle="SoldierGB";
+					vehicle="SoldierGMedic";
 					leader=1;
 					skill=0.600000;
-					init="this setbehaviour ""safe""";
+					init="this setbehaviour ""safe""; this setidentity ""Toussaint""";
 				};
 			};
 		};
@@ -3408,7 +3414,7 @@ class Intro
 					vehicle="SoldierGB";
 					leader=1;
 					skill=0.600000;
-					init="this setbehaviour ""safe""";
+					init="this setbehaviour ""safe""; this setidentity ""Vaillancourt""";
 				};
 			};
 		};
@@ -3427,7 +3433,7 @@ class Intro
 					vehicle="SoldierGB";
 					leader=1;
 					skill=0.600000;
-					init="this setbehaviour ""safe""";
+					init="this setbehaviour ""safe""; this setidentity ""Batteux""";
 				};
 			};
 		};
