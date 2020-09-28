@@ -21,8 +21,7 @@ class Mission
 		forecastWeather=0.700000;
 		month=1;
 		day=2;
-		hour=8;
-		minute=5;
+		minute=45;
 	};
 	class Groups
 	{
@@ -2923,7 +2922,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.570278;
-					init="group this allowfleeing 0";
+					init="group this allowfleeing 0; backdoor = group this";
 				};
 				class Item1
 				{
@@ -2975,7 +2974,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={9235.228516,138.880829,837.905884};
+					position[]={9280.771484,116.165710,778.502441};
 					type="HOLD";
 					speed="FULL";
 					synchronizations[]={46};
@@ -2986,7 +2985,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={9338.195313,141.575882,894.831055};
+					position[]={9365.916016,165.190033,942.353760};
 					speed="NORMAL";
 					class Effects
 					{
@@ -3281,7 +3280,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=11;
+		items=12;
 		class Item0
 		{
 			position[]={9203.901367,6.817354,486.270905};
@@ -3361,6 +3360,12 @@ class Mission
 		{
 			position[]={9368.444336,191.393860,1037.351196};
 			name="CastleLemontov";
+			type="Empty";
+		};
+		class Item11
+		{
+			position[]={9259.882813,117.576347,756.419617};
+			name="backdoor";
 			type="Empty";
 		};
 	};
