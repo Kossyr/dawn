@@ -1,0 +1,309 @@
+version=11;
+class Mission
+{
+	randomSeed=13505027;
+	class Intel
+	{
+		briefingName="@STRCN_37";
+		startWeather=0.700000;
+		forecastWeather=0.800000;
+		month=2;
+		day=1;
+		hour=11;
+		minute=15;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={3368.976807,101.520294,5093.629395};
+					azimut=110.000000;
+					id=0;
+					side="EAST";
+					vehicle="T80";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="CAPTAIN";
+					skill=1.000000;
+					text="aP";
+					init="commander this setidentity ""Kukushkin""; this setgroupid [""yankee"",""groupcolor0""]";
+				};
+				class Item1
+				{
+					position[]={3366.985596,101.749588,5108.364746};
+					azimut=110.000000;
+					id=1;
+					side="EAST";
+					vehicle="T80";
+					rank="LIEUTNANT";
+					skill=1.000000;
+				};
+				class Item2
+				{
+					position[]={3356.909424,102.856422,5086.788086};
+					azimut=110.000000;
+					id=2;
+					side="EAST";
+					vehicle="T80";
+					rank="LIEUTNANT";
+					skill=1.000000;
+				};
+				class Item3
+				{
+					position[]={3359.308838,102.626877,5120.391113};
+					azimut=110.000000;
+					id=3;
+					side="EAST";
+					vehicle="T80";
+					rank="SERGEANT";
+					skill=1.000000;
+				};
+			};
+			class Waypoints
+			{
+				items=3;
+				class Item0
+				{
+					position[]={5037.695313,16.334999,3978.422607};
+					type="HOLD";
+					combatMode="YELLOW";
+					formation="WEDGE";
+					speed="NORMAL";
+					combat="COMBAT";
+					description="@STRM_WAYPOINT_MORTON";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={6827.089844,57.296482,4838.194824};
+					type="HOLD";
+					description="@STRM_WAYPOINT_ENEMY_FORCES";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={7549.362305,117.809998,4739.594238};
+					type="HOLD";
+					description="@STRM_WAYPOINT_LEVIE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=10;
+		class Item0
+		{
+			position[]={5007.353027,16.472088,3997.244141};
+			name="Morton";
+			text="@STRC_MARKER_SEIZE";
+			type="Flag";
+			colorName="ColorRed";
+		};
+		class Item1
+		{
+			position[]={6358.320313,78.921036,4735.623535};
+			name="Enemy";
+			text="@STRM_MARKER_ENEMY_FORCES";
+			type="Unknown";
+			colorName="ColorRed";
+		};
+		class Item2
+		{
+			position[]={7533.159668,116.598015,4763.525391};
+			name="Levie";
+			text="@STRC_MARKER_SEIZE";
+			type="Flag";
+			colorName="ColorRed";
+		};
+		class Item3
+		{
+			position[]={3334.004639,103.499992,5113.862793};
+			name="Start";
+			text="@STRC_MARKER_START";
+			type="Start";
+			colorName="ColorGreen";
+			angle=110.000000;
+		};
+		class Item4
+		{
+			position[]={6319.947266,75.978966,4709.202637};
+			name="EnemyTanksHere";
+			markerType="ELLIPSE";
+			type="Flag";
+			colorName="ColorRed";
+			fillName="Cross";
+			a=600.000000;
+			b=350.000000;
+			angle=155.000000;
+		};
+		class Item5
+		{
+			position[]={5788.475098,100.552147,5954.953613};
+			name="Tatyana";
+			text="@STRM_MARKER_TATYANA";
+			type="Marker";
+			colorName="ColorGreen";
+		};
+		class Item6
+		{
+			position[]={5287.942871,60.704998,5344.503906};
+			name="Figari";
+			text="@STRM_MARKER_OUR_FORCES";
+			type="Flag1";
+			colorName="ColorGreen";
+		};
+		class Item7
+		{
+			position[]={5491.884766,80.459999,6086.591797};
+			name="Provins";
+			text="@STRM_MARKER_OUR_FORCES";
+			type="Flag1";
+			colorName="ColorGreen";
+		};
+		class Item8
+		{
+			position[]={9217.120117,65.658646,2142.682129};
+			name="enemyarea";
+			markerType="ELLIPSE";
+			type="Flag";
+			colorName="ColorRed";
+			fillName="Horizontal";
+			a=1900.000000;
+			b=2500.000000;
+			angle=100.000000;
+		};
+		class Item9
+		{
+			position[]={6565.235840,74.932968,5364.769531};
+			name="Minefield";
+			text="@STRM_MARKER_MINEFIELD";
+			type="Warning";
+			colorName="ColorRed";
+		};
+	};
+};
+class Intro
+{
+	randomSeed=9646595;
+	class Intel
+	{
+		startWeather=0.600000;
+		forecastWeather=0.400000;
+		month=1;
+		day=31;
+		hour=15;
+		minute=40;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4978.201660,19.238033,11810.748047};
+					id=0;
+					side="EAST";
+					vehicle="SoldierEB";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5090.081543,22.462898,12344.452148};
+					id=1;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.600000;
+					init="this exec ""camera.sqs""";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=4;
+		class Item0
+		{
+			position[]={5098.096191,22.622774,12353.659180};
+			azimut=10.000000;
+			id=2;
+			side="EMPTY";
+			vehicle="Barrels";
+			skill=0.600000;
+		};
+		class Item1
+		{
+			position[]={5097.921875,22.830400,12352.416992};
+			azimut=345.000000;
+			id=3;
+			side="EMPTY";
+			vehicle="Barrel2";
+			skill=0.600000;
+		};
+		class Item2
+		{
+			position[]={5097.678223,22.909864,12351.595703};
+			azimut=345.000000;
+			id=4;
+			side="EMPTY";
+			vehicle="Barrel2";
+			skill=0.600000;
+		};
+		class Item3
+		{
+			position[]={5099.383789,22.670031,12353.020508};
+			azimut=280.000000;
+			id=5;
+			side="EMPTY";
+			vehicle="Paleta1";
+			skill=0.600000;
+		};
+	};
+};
+class OutroWin
+{
+	randomSeed=12460035;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=7896067;
+	class Intel
+	{
+	};
+};
