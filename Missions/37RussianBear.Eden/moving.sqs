@@ -1,0 +1,12 @@
+; Moving tank groups
+
+#LOOP
+
+~5
+
+[tG1, 1] setWPPos [(getPos aP select 0)-15, (getPos aP select 1)+30];
+[tG2, 1] setWPPos [(getPos aP select 0)-45, (getPos aP select 1)+40];
+
+goto "LOOP"
+
+exit
