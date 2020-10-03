@@ -1,0 +1,423 @@
+titlecut["","black in",2]
+
+
+CastleFlag setpos [9374.02,1057.11,21.64]
+
+P1 switchmove "FXStandSur"
+P2 switchmove "FXStandSur"
+P3 switchmove "FXStandSur"
+P4 switchmove "FXStandSur"
+P5 switchmove "FXStandSur"
+P6 switchmove "FXStandSur"
+P7 switchmove "FXStandSur"
+P8 switchmove "FXStandSur"
+
+P1 disableai "autotarget"
+P2 disableai "autotarget"
+P3 disableai "autotarget"
+P4 disableai "autotarget"
+P5 disableai "autotarget"
+P6 disableai "autotarget"
+P7 disableai "autotarget"
+P8 disableai "autotarget"
+
+P1 setmimic "angry"
+P2 setmimic "sad"
+P3 setmimic "sad"
+P4 setmimic "sad"
+P5 setmimic "sad"
+P6 setmimic "sad"
+P7 setmimic "sad"
+P8 setmimic "sad"
+
+[[0,0,0],0.2,0,FireObject1] exec "fireEffect.sqs"
+[[0,0,0],0.1,0,FireObject2] exec "fireEffect.sqs"
+[[0,0,0],0.1,0,FireObject3] exec "fireEffect.sqs"
+
+PP1 disableai "autotarget"
+PP2 disableai "autotarget"
+PP3 disableai "autotarget"
+PO disableai "autotarget"
+
+PO switchmove "effectstandtalk"
+
+PT setpos [9375.49,1052.84,21.86]
+
+R1 switchmove "effectstandsitdown"
+R2 switchmove "FxToKneel"
+
+Astier setmimic "sad"
+Poincare setmimic "Angry"
+Lemontov setmimic "normal"
+
+R1 setmimic "sad"
+R2 setmimic "sad"
+R3 setmimic "normal"
+R4 setmimic "normal"
+R5 setmimic "normal"
+R6 setmimic "normal"
+R7 setmimic "normal"
+
+
+playmusic "Track16"
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 13:01:44
+_camera camSetTarget [606.64,-96307.95,21035.90]
+_camera camSetPos [9374.06,1101.78,2.16]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:01:51
+_camera camSetTarget [8125.37,-96696.02,21036.21]
+_camera camSetPos [9369.87,1098.01,1.40]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+;=== 13:02:38
+_camera camSetTarget [80403.00,67063.70,24431.56]
+_camera camSetPos [9341.09,1015.83,1.44]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+;=== 13:02:58
+_camera camSetTarget [-18295.62,96859.91,-6860.63]
+_camera camSetPos [9374.74,1023.41,1.91]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:03:13
+_camera camSetTarget [7822.73,100768.35,-6861.63]
+_camera camSetPos [9369.41,1029.55,1.91]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+;=== 13:04:00
+_camera camSetTarget [-89889.63,12521.85,-3719.21]
+_camera camSetPos [9372.09,1040.88,1.43]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:04:17
+_camera camSetTarget [-88230.56,22448.58,-3719.00]
+_camera camSetPos [9373.09,1042.30,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+;=== 13:05:11
+_camera camSetTarget [108965.94,-2234.35,-8099.67]
+_camera camSetPos [9364.40,1047.50,1.36]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+;=== 13:10:16
+_camera camSetTarget [59967.66,86161.38,-13694.82]
+_camera camSetPos [9362.80,1036.36,2.24]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:10:27
+_camera camSetTarget [59967.66,86161.38,-13695.23]
+_camera camSetPos [9362.80,1036.36,4.35]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+;=== 13:10:36
+_camera camSetTarget [56334.36,80049.66,39580.81]
+_camera camSetPos [9362.80,1036.36,13.47]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+~0.5
+;=== 13:11:36
+_camera camSetTarget [49619.87,92380.25,-6022.96]
+_camera camSetPos [9374.00,1049.39,22.79]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:11:42
+_camera camSetTarget [49619.87,92380.25,-6023.22]
+_camera camSetPos [9375.19,1052.07,22.81]
+_camera camSetFOV 0.700
+_camera camCommit 4
+~1
+PT move [9378.68,1058.61,21.82]
+PT setspeedmode "limited"
+@camCommitted _camera
+;=== 13:11:50
+_camera camSetTarget [-6834.31,79590.00,59955.09]
+_camera camSetPos [9375.19,1052.07,22.81]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+~1
+
+;=== 13:20:28
+_camera camSetTarget [-28666.28,-91396.30,-2006.21]
+_camera camSetPos [9375.36,1058.48,27.73]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+;=== 13:20:57
+_camera camSetTarget [25079.81,-69885.97,-68465.20]
+_camera camSetPos [9364.39,1070.96,34.94]
+_camera camSetFOV 0.700
+_camera camCommit 8
+~6
+3 fademusic 0
+@camCommitted _camera
+~1
+
+playmusic "RTrack9"
+0 fademusic 1
+
+; REBEL PART
+
+;=== 14:08:01
+_camera camSetTarget [104917.36,-27324.49,1339.74]
+_camera camSetPos [9059.51,1135.62,0.85]
+_camera camSetFOV 0.094
+_camera camCommit 0
+@camCommitted _camera
+~2
+;=== 14:07:44
+_camera camSetTarget [104901.00,-27319.63,2369.50]
+_camera camSetPos [9059.51,1135.62,0.85]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+
+;=== 14:10:17
+_camera camSetTarget [-80928.81,44692.02,2313.76]
+_camera camSetPos [9062.14,1135.59,1.46]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+0 fademusic 0.3
+Astier switchmove "BinocStand"
+Astier say "32v14"
+~6.5
+Poincare say "32v15"
+~6.5
+;=== 14:15:51
+_camera camSetTarget [-44942.58,-82821.96,-5674.95]
+_camera camSetPos [9061.62,1136.50,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Astier say "32v16"
+~5.5
+;=== 14:16:13
+_camera camSetTarget [-69544.13,62924.27,-1617.01]
+_camera camSetPos [9061.68,1135.73,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Poincare dowatch [9061.11,1135.91,1.58]
+Poincare say "32v17"
+~8.5
+Astier say "32v18"
+~2
+Astier setmimic "angry"
+Astier dowatch [9060.44,1137.06,1.53]
+~0.5
+;=== 14:17:40
+_camera camSetTarget [-27420.19,-91255.03,-11318.45]
+_camera camSetPos [9061.07,1137.77,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~7.5
+Astier dowatch [9058.30,1129.01,1.59]
+~0.5
+;=== 14:18:52
+_camera camSetTarget [19587.56,99982.08,-10545.97]
+_camera camSetPos [9058.21,1120.15,2.40]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:18:58
+_camera camSetTarget [42597.95,94714.23,-10545.71]
+_camera camSetPos [9056.32,1122.38,2.73]
+_camera camSetFOV 0.700
+_camera camCommit 7
+Poincare dowatch [9058.30,1129.01,1.59]
+~1
+Astier say "32v19"
+R4 dowatch [9060.97,1135.82,1.63]
+R5 dowatch [9060.97,1135.82,1.63]
+~1
+R6 dowatch [9060.97,1135.82,1.63]
+R7 dowatch [9060.97,1135.82,1.63]
+~0.5
+R3 dowatch [9060.97,1135.82,1.63]
+@camCommitted _camera
+;=== 14:45:34
+_camera camSetTarget [33922.40,97864.10,-4826.79]
+_camera camSetPos [9060.43,1134.37,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~4.5
+Astier say "32v20"
+Astier switchmove "FxShow3"
+~5
+[] exec "long_live.sqs"
+;=== 14:25:31
+_camera camSetTarget [-34197.78,-86727.77,-20028.38]
+_camera camSetPos [9060.51,1133.13,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+;=== 14:26:20
+_camera camSetTarget [-64459.55,-65174.06,-13899.23]
+_camera camSetPos [9060.55,1128.47,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+Lemontov setpos getmarkerpos "Lemontov";
+Lemontov move getmarkerpos "LemontovMove";
+Lemontov setspeedmode "limited";
+Lemontov dowatch [9059.87,1128.56,1.79]
+;=== 14:26:38
+_camera camSetTarget [40528.98,95643.70,-8475.39]
+_camera camSetPos [9055.97,1122.83,2.26]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:26:44
+_camera camSetTarget [13182.62,100660.84,-8475.60]
+_camera camSetPos [9057.69,1123.24,2.15]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+;=== 14:28:43
+_camera camSetTarget [43371.03,-91803.42,-13341.83]
+_camera camSetPos [9054.35,1142.54,2.37]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:28:50
+_camera camSetTarget [25674.15,-95552.72,-19140.31]
+_camera camSetPos [9057.01,1141.15,2.42]
+_camera camSetFOV 0.700
+_camera camCommit 4.5
+@camCommitted _camera
+;=== 14:29:40
+_camera camSetTarget [104027.54,28434.54,-15138.51]
+_camera camSetPos [9056.77,1135.58,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov setpos getmarkerpos "LemontovMove"
+Lemontov say "32v22"
+~0.5
+Poincare dowatch [9057.43,1136.05,1.68]
+Astier dowatch [9057.43,1136.05,1.68]
+Astier setmimic "normal"
+~4
+Poincare say "32v23"
+~1
+;=== 14:31:51
+_camera camSetTarget [93586.57,-48063.31,-20643.68]
+_camera camSetPos [9059.44,1137.21,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~4.5
+Lemontov dowatch [9060.46,1136.94,1.65]
+;=== 14:46:08
+_camera camSetTarget [-87817.75,-21279.12,-10410.92]
+_camera camSetPos [9058.16,1136.38,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov setmimic "angry"
+~2
+;=== 14:33:28
+_camera camSetTarget [98177.87,-43068.29,-9983.97]
+_camera camSetPos [9059.13,1137.20,1.37]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Astier say "32v24"
+~8.5
+;=== 14:34:33
+_camera camSetTarget [108650.84,2528.31,-8725.07]
+_camera camSetPos [9059.94,1135.92,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Astier say "32v25"
+~3.5
+;=== 14:47:06
+_camera camSetTarget [-86206.93,29629.16,-10410.84]
+_camera camSetPos [9058.67,1135.99,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov dowatch [9060.88,1135.83,1.67]
+Lemontov say "32v26"
+~3
+;=== 14:35:17
+_camera camSetTarget [-49380.53,81214.34,-12898.88]
+_camera camSetPos [9061.40,1133.48,1.80]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:35:23
+_camera camSetTarget [-66702.82,65073.11,-12899.36]
+_camera camSetPos [9061.59,1134.42,1.70]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+;=== 14:36:46
+_camera camSetTarget [107311.97,13406.76,-13795.08]
+_camera camSetPos [9059.76,1135.70,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Astier say "32v27"
+~1
+Astier dowatch [9058.31,1128.73,1.62]
+~0.5
+Lemontov dowatch [9058.31,1128.73,1.62]
+Poincare dowatch [9058.31,1128.73,1.62]
+~0.5
+;=== 14:37:24
+_camera camSetTarget [45929.14,93996.13,-3658.36]
+_camera camSetPos [9055.75,1122.72,2.38]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Astier switchmove "fxshow3"
+~2
+;=== 14:37:59
+_camera camSetTarget [39214.54,96402.27,-3658.91]
+_camera camSetPos [9060.78,1135.10,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2.5
+2 fademusic 1
+;=== 14:38:38
+_camera camSetTarget [104652.53,-26503.56,-9709.04]
+_camera camSetPos [9060.78,1135.10,19.50]
+_camera camSetFOV 0.700
+_camera camCommit 12
+~10
+2 fademusic 0
+titlecut["","black out",2]
+@camCommitted _camera
+end=true
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit

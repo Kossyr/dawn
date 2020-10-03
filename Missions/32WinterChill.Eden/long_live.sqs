@@ -1,0 +1,29 @@
+
+_i = 0
+_repeat = 3
+
+titletext [localize "STRM_32v21", "plain down"]
+
+
+#loop
+
+R3 say "32v21a"
+R4 say "32v21b"
+R5 say "32v21c"
+R6 say "32v21d"
+R7 say "32v21e"
+
+R7 switchmove "FxShow3"
+R6 switchmove "fxShow3"
+~0.5
+R5 switchmove "FxShow3"
+R4 switchmove "FxShow3"
+R5 switchmove "Fxshow3"
+~0.5
+~2.6
+
+_i = _i + 1
+
+? _i < _repeat : goto "loop"
+
+exit
