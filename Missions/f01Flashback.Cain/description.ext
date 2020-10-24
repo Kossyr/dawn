@@ -1,0 +1,74 @@
+onLoadMission="$STRM_ONLOAD_MISSION";
+onLoadMissionTime = true;
+onLoadIntro="$STRM_ONLOAD_INTRO";
+onLoadIntroTime = false;
+
+Debriefing = 0
+
+ShowWatch = 0
+
+ShowCompass = 0
+
+ShowNotepad = 0
+
+ShowGPS = 0
+
+ShowMap = 1
+
+class RscBackground
+{
+    access=3;
+    type=0;
+    idc=-1;
+    style=80;
+    x=0.15;
+    y=0.15;
+    w=0.7;
+    h=0.7;
+    text="";
+    colorBackground[]={1,1,1,1};
+    colorText[]={0,0,0,0};
+    font="tahomaB24";
+    sizeEx=0;
+};
+
+class RscButton
+{
+    access=3;
+    type=1;
+    style=2;
+    w=0.16;
+    h=0.06;
+    colorText[]={0.08,0.08,0.12,1};
+    font="tahomaB24";
+    sizeEx=0.02;
+    default=0;
+    soundPush[]={"ui\ui_ok",0.2,1};
+    soundClick[]={"",0.2,1};
+    soundEscape[]={"ui\ui_cc",0.2,1};
+};
+
+class CfgSounds
+{
+	sounds[] = { };
+
+	class f01v01
+	{
+		name = "f01v01";
+		sound[] = {"f01v01.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_f01v01};
+	};
+	class f01v02
+	{
+		name = "f01v02";
+		sound[] = {"f01v02.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_f01v02};
+	};
+    class f01v03
+	{
+		name = "f01v03";
+		sound[] = {"f01v03.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_f01v03};
+	};
+};
+
