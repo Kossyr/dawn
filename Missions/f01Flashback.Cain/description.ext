@@ -48,6 +48,126 @@ class RscButton
     soundEscape[]={"ui\ui_cc",0.2,1};
 };
 
+
+class TestDialogue {
+    idd = 0;
+    movingEnable = 0;
+    controls[] = {Window, Button1, Button2, Button3, Button4};
+
+    #define WINDOW_X    0
+    #define WINDOW_Y    0.75
+    #define WINDOW_W    1
+    #define WINDOW_H    0.20
+
+    #define SPACE_W     0.005
+    #define SPACE_H     0.005
+
+	#define BUTTON_H    0.05
+
+    class Window : RscBackground {
+        x = WINDOW_X;
+        y = WINDOW_Y;
+        w = WINDOW_W;
+        h = WINDOW_H;
+    };
+
+    class Button1 : RscButton {
+        idc = 1;
+        x = WINDOW_X + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = WINDOW_W - SPACE_W*2;
+        h = BUTTON_H - SPACE_H*2;
+        text = "Test Button 1";
+		action = "closeDialog 0";
+    };
+
+    class Button2 : RscButton {
+        idc = 2;
+        x = WINDOW_X + SPACE_W;
+        y = WINDOW_Y + SPACE_H + BUTTON_H;
+        w = WINDOW_W - SPACE_W*2;
+        h = BUTTON_H - SPACE_H*2;
+        text = "Test Button 2";
+		action = "closeDialog 0";
+    };
+
+	 class Button3 : RscButton {
+        idc = 3;
+        x = WINDOW_X + SPACE_W;
+        y = WINDOW_Y + SPACE_H + BUTTON_H*2;
+        w = WINDOW_W - SPACE_W*2;
+        h = BUTTON_H - SPACE_H*2;
+        text = "Test Button 3";
+		action = "closeDialog 0";
+    };
+
+	 class Button4 : RscButton {
+        idc = 4;
+        x = WINDOW_X + SPACE_W;
+        y = WINDOW_Y + SPACE_H + BUTTON_H*3;
+        w = WINDOW_W - SPACE_W*2;
+        h = BUTTON_H - SPACE_H*2;
+        text = "Test Button 4";
+		action = "closeDialog 0";
+    };
+    
+};
+
+
+class TestDialogue2 {
+    idd = 0;
+    movingEnable = 0;
+    controls[] = {Window, Button1, Button2, Button3};
+
+    #define WINDOW_X    0
+    #define WINDOW_Y    0.75
+    #define WINDOW_W    1
+    #define WINDOW_H    0.15
+
+    #define SPACE_W     0.005
+    #define SPACE_H     0.005
+
+	#define BUTTON_H    0.05
+
+    class Window : RscBackground {
+        x = WINDOW_X;
+        y = WINDOW_Y;
+        w = WINDOW_W;
+        h = WINDOW_H;
+    };
+
+    class Button1 : RscButton {
+        idc = 1;
+        x = WINDOW_X + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = WINDOW_W - SPACE_W*2;
+        h = BUTTON_H - SPACE_H*2;
+        text = "Test Button 1";
+		action = "closeDialog 0";
+    };
+
+    class Button2 : RscButton {
+        idc = 2;
+        x = WINDOW_X + SPACE_W;
+        y = WINDOW_Y + SPACE_H + BUTTON_H;
+        w = WINDOW_W - SPACE_W*2;
+        h = BUTTON_H - SPACE_H*2;
+        text = "Test Button 2";
+		action = "closeDialog 0";
+    };
+
+	 class Button3 : RscButton {
+        idc = 3;
+        x = WINDOW_X + SPACE_W;
+        y = WINDOW_Y + SPACE_H + BUTTON_H*2;
+        w = WINDOW_W - SPACE_W*2;
+        h = BUTTON_H - SPACE_H*2;
+        text = "Test Button 3";
+		action = "closeDialog 0";
+    };
+    
+};
+
 class CfgSounds
 {
 	sounds[] = { };
@@ -64,11 +184,61 @@ class CfgSounds
 		sound[] = {"f01v02.ogg", db+10, 1.00};
 		titles[] = {0,$STRM_f01v02};
 	};
-    class f01v03
+	class f01v03
 	{
 		name = "f01v03";
 		sound[] = {"f01v03.ogg", db+10, 1.00};
 		titles[] = {0,$STRM_f01v03};
 	};
+	class f01v04
+	{
+		name = "f01v04";
+		sound[] = {"f01v04.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_f01v04};
+	};
+	class f01v05
+	{
+		name = "f01v05";
+		sound[] = {"f01v05.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_f01v05};
+	};
+	class f01v06
+	{
+		name = "f01v06";
+		sound[] = {"f01v06.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_f01v06};
+	};
+	class f01v07
+	{
+		name = "f01v07";
+		sound[] = {"f01v07.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_f01v07};
+	};
+	class f01v08
+	{
+		name = "f01v08";
+		sound[] = {"f01v08.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_f01v08};
+	};
+	class f01v09
+	{
+		name = "f01v09";
+		sound[] = {"f01v09.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_f01v09};
+	};
+	class f01v10
+	{
+		name = "f01v10";
+		sound[] = {"f01v10.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_f01v10};
+	};
+	class f01v11
+	{
+		name = "f01v11";
+		sound[] = {"f01v11.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_f01v11};
+	};
 };
+
+
 

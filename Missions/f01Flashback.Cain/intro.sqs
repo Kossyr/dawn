@@ -14,7 +14,7 @@ Spy2 disableAI "autotarget"
 Spy3 disableAI "autotarget"
 
 Dyaconsen setmimic "normal"
-Shaposhnikov setmimic "normal"
+Shaposhnikov setmimic "angry"
 Lemontov setmimic "angry"
 
 RusIntro1 setmimic "angry"
@@ -37,8 +37,6 @@ AmIntro7 setmimic "angry"
 Spy1 setmimic "normal"
 Spy2 setmimic "normal"
 Spy3 setmimic "normal"
-
-AmIntro1 setmimic "normal"
 
 RusIntro1 dowatch [2194.89,7383.09,2.00]
 RusIntro2 dowatch [2194.89,7383.09,2.00]
@@ -303,7 +301,6 @@ AmIntro3 assignascargo Helicopter
 AmIntro4 assignascargo Helicopter
 AmIntro5 assignascargo Helicopter
 AmIntro6 assignascargo Helicopter
-AmIntro7 assignascargo Helicopter
 Spy1 assignascargo Helicopter
 Spy2 assignascargo Helicopter
 Spy3 assignascargo Helicopter
@@ -523,6 +520,7 @@ _camera camSetFOV 0.700
 _camera camCommit 3
 @camCommitted _camera
 spiesGetIn=true
+driver Helicopter action ["ENGINE ON",Helicopter]
 ;=== 21:36:47
 _camera camSetTarget [-85623.42,54949.80,-4626.79]
 _camera camSetPos [2203.38,7369.70,1.46]
@@ -534,7 +532,6 @@ AmIntro1 say "f01v03"
 ~2
 amGetIn=true
 deletevehicle AmIntro7
-driver Helicopter action ["ENGINE ON",Helicopter]
 ~1.5
 titletext["","plain"]
 ;=== 22:21:49
