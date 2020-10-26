@@ -15,6 +15,8 @@ ShowGPS = 0
 
 ShowMap = 1
 
+
+
 class RscBackground
 {
     access=3;
@@ -49,20 +51,20 @@ class RscButton
 };
 
 
-class TestDialogue {
+class Dialogue2 {
     idd = 0;
     movingEnable = 0;
-    controls[] = {Window, Button1, Button2, Button3, Button4};
+    controls[] = {Window, Button1, Button2};
 
     #define WINDOW_X    0
-    #define WINDOW_Y    0.75
+    #define WINDOW_Y    0.80
     #define WINDOW_W    1
-    #define WINDOW_H    0.20
+    #define WINDOW_H    0.10
 
-    #define SPACE_W     0.005
-    #define SPACE_H     0.005
+    #define SPACE_W     0.08
+    #define SPACE_H     0.02
 
-	#define BUTTON_H    0.05
+	#define BUTTON_W    0.5
 
     class Window : RscBackground {
         x = WINDOW_X;
@@ -75,59 +77,38 @@ class TestDialogue {
         idc = 1;
         x = WINDOW_X + SPACE_W;
         y = WINDOW_Y + SPACE_H;
-        w = WINDOW_W - SPACE_W*2;
-        h = BUTTON_H - SPACE_H*2;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
         text = "Test Button 1";
 		action = "closeDialog 0";
     };
 
     class Button2 : RscButton {
         idc = 2;
-        x = WINDOW_X + SPACE_W;
-        y = WINDOW_Y + SPACE_H + BUTTON_H;
-        w = WINDOW_W - SPACE_W*2;
-        h = BUTTON_H - SPACE_H*2;
+        x = BUTTON_W + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
         text = "Test Button 2";
-		action = "closeDialog 0";
-    };
-
-	 class Button3 : RscButton {
-        idc = 3;
-        x = WINDOW_X + SPACE_W;
-        y = WINDOW_Y + SPACE_H + BUTTON_H*2;
-        w = WINDOW_W - SPACE_W*2;
-        h = BUTTON_H - SPACE_H*2;
-        text = "Test Button 3";
-		action = "closeDialog 0";
-    };
-
-	 class Button4 : RscButton {
-        idc = 4;
-        x = WINDOW_X + SPACE_W;
-        y = WINDOW_Y + SPACE_H + BUTTON_H*3;
-        w = WINDOW_W - SPACE_W*2;
-        h = BUTTON_H - SPACE_H*2;
-        text = "Test Button 4";
 		action = "closeDialog 0";
     };
     
 };
 
-
-class TestDialogue2 {
+class Dialogue3 {
     idd = 0;
     movingEnable = 0;
     controls[] = {Window, Button1, Button2, Button3};
 
     #define WINDOW_X    0
-    #define WINDOW_Y    0.75
+    #define WINDOW_Y    0.80
     #define WINDOW_W    1
-    #define WINDOW_H    0.15
+    #define WINDOW_H    0.10
 
-    #define SPACE_W     0.005
-    #define SPACE_H     0.005
+    #define SPACE_W     0.05
+    #define SPACE_H     0.02
 
-	#define BUTTON_H    0.05
+	#define BUTTON_W    0.33
 
     class Window : RscBackground {
         x = WINDOW_X;
@@ -140,33 +121,99 @@ class TestDialogue2 {
         idc = 1;
         x = WINDOW_X + SPACE_W;
         y = WINDOW_Y + SPACE_H;
-        w = WINDOW_W - SPACE_W*2;
-        h = BUTTON_H - SPACE_H*2;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
         text = "Test Button 1";
 		action = "closeDialog 0";
     };
 
     class Button2 : RscButton {
         idc = 2;
-        x = WINDOW_X + SPACE_W;
-        y = WINDOW_Y + SPACE_H + BUTTON_H;
-        w = WINDOW_W - SPACE_W*2;
-        h = BUTTON_H - SPACE_H*2;
+        x = BUTTON_W + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
         text = "Test Button 2";
 		action = "closeDialog 0";
     };
 
-	 class Button3 : RscButton {
+    class Button3 : RscButton {
         idc = 3;
-        x = WINDOW_X + SPACE_W;
-        y = WINDOW_Y + SPACE_H + BUTTON_H*2;
-        w = WINDOW_W - SPACE_W*2;
-        h = BUTTON_H - SPACE_H*2;
+        x = BUTTON_W*2 + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
         text = "Test Button 3";
 		action = "closeDialog 0";
     };
     
 };
+
+
+class Dialogue4 {
+    idd = 0;
+    movingEnable = 0;
+    controls[] = {Window, Button1, Button2, Button3, Button4};
+
+    #define WINDOW_X    0
+    #define WINDOW_Y    0.80
+    #define WINDOW_W    1
+    #define WINDOW_H    0.10
+
+    #define SPACE_W     0.04
+    #define SPACE_H     0.02
+
+	#define BUTTON_W    0.25
+
+    class Window : RscBackground {
+        x = WINDOW_X;
+        y = WINDOW_Y;
+        w = WINDOW_W;
+        h = WINDOW_H;
+    };
+
+    class Button1 : RscButton {
+        idc = 1;
+        x = WINDOW_X + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "Test Button 1";
+		action = "closeDialog 0";
+    };
+
+    class Button2 : RscButton {
+        idc = 2;
+        x = BUTTON_W + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "Test Button 2";
+		action = "closeDialog 0";
+    };
+
+    class Button3 : RscButton {
+        idc = 3;
+        x = BUTTON_W*2 + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "Test Button 3";
+		action = "closeDialog 0";
+    };
+
+	class Button4 : RscButton {
+        idc = 4;
+        x = BUTTON_W*3 + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "Test Button 3";
+		action = "closeDialog 0";
+    };
+    
+};
+
 
 class CfgSounds
 {

@@ -68,19 +68,20 @@ class RscButton
     soundEscape[]={"ui\ui_cc",0.2,1};
 };
 
-
 class ChoiceSquad {
     idd = 0;
     movingEnable = 0;
     controls[] = {Window, Button1, Button2};
 
     #define WINDOW_X    0
-    #define WINDOW_Y    0.75
+    #define WINDOW_Y    0.80
     #define WINDOW_W    1
-    #define WINDOW_H    0.15
+    #define WINDOW_H    0.10
 
-    #define SPACE_W     0.03
+    #define SPACE_W     0.08
     #define SPACE_H     0.02
+
+	#define BUTTON_W    0.5
 
     class Window : RscBackground {
         x = WINDOW_X;
@@ -93,7 +94,7 @@ class ChoiceSquad {
         idc = 1;
         x = WINDOW_X + SPACE_W;
         y = WINDOW_Y + SPACE_H;
-        w = (WINDOW_W/2) - SPACE_W*2;
+        w = BUTTON_W - SPACE_W*2;
         h = WINDOW_H - SPACE_H*2;
         text = "$STRM_SQUAD_CHOICE_A";
 		action = "choiceSquadA=true; choiceSquadMade=true; closeDialog 0";
@@ -101,9 +102,9 @@ class ChoiceSquad {
 
     class Button2 : RscButton {
         idc = 2;
-        x = (WINDOW_W/2) + SPACE_W;
+        x = BUTTON_W + SPACE_W;
         y = WINDOW_Y + SPACE_H;
-        w = (WINDOW_W/2) - SPACE_W*2;
+        w = BUTTON_W - SPACE_W*2;
         h = WINDOW_H - SPACE_H*2;
         text = "$STRM_SQUAD_CHOICE_B";
 		action = "choiceSquadB=true; choiceSquadMade=true; closeDialog 0";
@@ -117,12 +118,14 @@ class ChoiceEscape {
     controls[] = {Window, Button1, Button2};
 
     #define WINDOW_X    0
-    #define WINDOW_Y    0.75
+    #define WINDOW_Y    0.80
     #define WINDOW_W    1
-    #define WINDOW_H    0.15
+    #define WINDOW_H    0.10
 
-    #define SPACE_W     0.03
+    #define SPACE_W     0.08
     #define SPACE_H     0.02
+
+	#define BUTTON_W    0.5
 
     class Window : RscBackground {
         x = WINDOW_X;
@@ -131,11 +134,11 @@ class ChoiceEscape {
         h = WINDOW_H;
     };
 
-    class Button1 : RscButton {
+	 class Button1 : RscButton {
         idc = 1;
         x = WINDOW_X + SPACE_W;
         y = WINDOW_Y + SPACE_H;
-        w = (WINDOW_W/2) - SPACE_W*2;
+        w = BUTTON_W - SPACE_W*2;
         h = WINDOW_H - SPACE_H*2;
         text = "$STRM_ESCAPE_CHOICE_A";
 		action = "choiceEscapeA=true; choiceEscapeMade=true; closeDialog 0";
@@ -143,9 +146,9 @@ class ChoiceEscape {
 
     class Button2 : RscButton {
         idc = 2;
-        x = (WINDOW_W/2) + SPACE_W;
+        x = BUTTON_W + SPACE_W;
         y = WINDOW_Y + SPACE_H;
-        w = (WINDOW_W/2) - SPACE_W*2;
+        w = BUTTON_W - SPACE_W*2;
         h = WINDOW_H - SPACE_H*2;
         text = "$STRM_ESCAPE_CHOICE_B";
 		action = "choiceEscapeB=true; choiceEscapeMade=true; closeDialog 0";
