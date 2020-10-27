@@ -1,0 +1,65 @@
+
+_text = ""
+_classicDialogueAmount = 2
+_eventsDialogueAmount = 3
+_amountZubarev = 0
+_amounKaplinsky = 0
+_amountSyomin = 0
+_amountFrolov = 0
+_amountChernikov = 0
+_amountKuznetsov = 0
+_amountBelsky = 0
+
+? metZubarevSelf : _amountZubarev = _amountZubarev + 1
+? metZubarevForce : _amountZubarev = _amountZubarev + 1
+
+? metKaplinskySelf : _amounKaplinsky = _amounKaplinsky + 1
+? metKaplinskyvForce : _amounKaplinsky = _amounKaplinsky + 1
+
+? metSyominSelf : _amounSyomin = _amounSyomin + 1
+? metSyominvForce : _amounSyomin = _amounSyomin + 1
+
+? metFrolovSelf : _amounFrolov = _amounFrolov + 1
+? metFrolovvForce : _amounFrolov = _amounFrolov + 1
+
+? metChernikovSelf : _amounChernikov = _amounChernikov + 1
+? metChernikovvForce : _amounChernikov = _amounChernikov + 1
+
+? metKuznetsovOne : _amountKuznetsov = _amountKuznetsov + 1
+? metKuznetsovTwo : _amountKuznetsov = _amountKuznetsov + 1
+? metKuznetsovThree : _amountKuznetsov = _amountKuznetsov + 1
+
+? metBelskyOne : _amountBelsky = _amountBelsky + 1
+? metBelskyTwo : _amountBelsky = _amountBelsky + 1
+? metBelskyThree : _amountBelsky = _amountBelsky + 1
+
+
+? metZubarev :          _text = _text + format ["Zubarev - met (%1/%2)\n", _amountZubarev, _classicDialogueAmount]
+? not metZubarev :      _text = _text + "Zubarev - not met\n"
+
+? metKaplinsky :        _text = _text + format ["Kaplinsky - met (%1/%2)\n", _amounKaplinsky, _classicDialogueAmount]
+? not metKaplinsky :    _text = _text + "Kaplinsky - not met\n"
+
+? metSyomin :           _text = _text + format ["Syomin - met (%1/%2)\n", _amountSyomin _classicDialogueAmount]
+? not metSyomin :       _text = _text + "Syomin - NOT met\n"
+
+? metFrolov :           _text = _text + format ["Frolov - met (%1/%2)\n", _amountFrolov, _classicDialogueAmount]
+? not metFrolov :       _text = _text + "Frolov - NOT met\n"
+
+? metChernikov :        _text = _text + format ["Chernikov - met (%1/%2)\n", _amountChernikov, _classicDialogueAmount]
+? not metChernikov :    _text = _text + "Chernikov - NOT met\n"
+
+_text = _text + "\n------ (Optional)------\n\n"
+
+? metKuznetsov :        _text = _text + format ["Kuznetsov - met (%1/%2)\n", _amountKuznetsov, _eventsDialogueAmount]
+? not metKuznetsov :    _text = _text + "Kuznetsov - NOT met\n"
+
+? metBelsky :           _text = _text + format ["Belsky - met (%1/%2)\n", _amountBelsky, _eventsDialogueAmount]
+? not metBelsky :       _text = _text + "Belsky - NOT met\n"
+
+
+hint format ["%1", _text]
+
+
+exit
+
