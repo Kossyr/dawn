@@ -41,21 +41,21 @@ _amountBelsky = 0
 ? not metKaplinsky :    _text = _text + "Kaplinsky - not met\n"
 
 ? metSyomin :           _text = _text + format ["Syomin - met (%1/%2)\n", _amountSyomin _classicDialogueAmount]
-? not metSyomin :       _text = _text + "Syomin - NOT met\n"
+? not metSyomin :       _text = _text + "Syomin - not met\n"
 
 ? metFrolov :           _text = _text + format ["Frolov - met (%1/%2)\n", _amountFrolov, _classicDialogueAmount]
-? not metFrolov :       _text = _text + "Frolov - NOT met\n"
+? not metFrolov :       _text = _text + "Frolov - not met\n"
 
 ? metChernikov :        _text = _text + format ["Chernikov - met (%1/%2)\n", _amountChernikov, _classicDialogueAmount]
-? not metChernikov :    _text = _text + "Chernikov - NOT met\n"
+? not metChernikov :    _text = _text + "Chernikov - not met\n"
 
 _text = _text + "\n------ (Optional)------\n\n"
 
 ? metKuznetsov :        _text = _text + format ["Kuznetsov - met (%1/%2)\n", _amountKuznetsov, _eventsDialogueAmount]
-? not metKuznetsov :    _text = _text + "Kuznetsov - NOT met\n"
+? not metKuznetsov :    _text = _text + "Kuznetsov - not met\n"
 
 ? metBelsky :           _text = _text + format ["Belsky - met (%1/%2)\n", _amountBelsky, _eventsDialogueAmount]
-? not metBelsky :       _text = _text + "Belsky - NOT met\n"
+? not metBelsky :       _text = _text + "Belsky - not met\n"
 
 
 hint format ["%1", _text]
