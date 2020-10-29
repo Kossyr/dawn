@@ -3,6 +3,46 @@ setacctime 1
 cinema=true
 canMeetKaplinsky=false
 
+titlecut["","black out",0.5]
+~0.5
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+? (aP == vehicle aP) : goto "kaplinskyCinema" ;
+
+vehicle aP setpos getmarkerpos "VehicleAway"
+vehicle aP setdir 0
+
+~0.5
+
+vehicle aP setpos getmarkerpos "CinemaKaplinskyVehicle"
+vehicle aP setdir 0
+
+aP action ["EJECT"]
+
+#kaplinskyCinema
+
+aP action ["WEAPONONBACK"]
+
+aP setpos getmarkerpos "PlayerAway"
+LemontovDouble setpos getmarkerpos "CinemaKaplinskyPlayer"
+Kaplinsky setpos getmarkerpos "CinemaKaplinsky"
+Kaplinsky dowatch [10469.54,9678.28,1.66]
+
+LemontovDouble setdir 215
+LemontovDouble dowatch [10468.25,9676.92,1.66]
+LemontovDouble setmimic "normal"
+Kaplinsky setmimic "normal"
+
+
+~0.5
+
+setacctime 1
+
+titlecut["","black in",0.5]
+
+
 ? metKaplinsky : goto "reenter" ;
 ? not metKaplinsky : goto "introduction"
 
@@ -10,22 +50,69 @@ canMeetKaplinsky=false
 ; FIRST TIME 
 #introduction
 
+;=== 18:51:43
+_camera camSetTarget [-58126.75,-61894.59,-13096.93]
+_camera camSetPos [10468.75,9677.47,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Kaplinsky say "f01v191"
-~5
-aP say "f01v192"
-~5
+~1.5
+Kaplinsky setmimic "smile"
+~1.5
+Kaplinsky setmimic "normal"
+~2
+;=== 18:52:40
+_camera camSetTarget [74969.04,85168.61,-11846.75]
+_camera camSetPos [10468.93,9677.61,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f01v192"
+~3
+;=== 18:53:27
+_camera camSetTarget [-27339.18,-82134.34,-11846.55]
+_camera camSetPos [10469.35,9678.85,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Kaplinsky say "f01v193"
-~5
-aP say "f01v194"
-~5
+~6
+;=== 18:53:44
+_camera camSetTarget [87823.73,72804.23,-5573.26]
+_camera camSetPos [10469.02,9677.80,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f01v194"
+~1.5
+;=== 18:54:04
+_camera camSetTarget [-33095.61,-79637.90,-11152.50]
+_camera camSetPos [10468.74,9677.80,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Kaplinsky switchmove "FXCivilHandMouth"
 Kaplinsky say "f01v195"
-~5
+~7
 Kaplinsky say "f01v196"
-~5
-aP say "f01v197"
-~5
+~11
+;=== 18:54:59
+_camera camSetTarget [48622.93,101194.98,-12959.18]
+_camera camSetPos [10468.14,9676.02,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f01v197"
+~2.2
+;=== 18:55:20
+_camera camSetTarget [-75207.04,-40730.22,-10874.23]
+_camera camSetPos [10468.88,9677.38,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Kaplinsky say "f01v198"
-~5
+~7
 
 goto "dialogue"
 
@@ -33,8 +120,14 @@ goto "dialogue"
 ; RE-ENTERING CONVERSATION
 #reenter
 
+;=== 18:51:43
+_camera camSetTarget [-58126.75,-61894.59,-13096.93]
+_camera camSetPos [10468.75,9677.47,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Kaplinsky say "f01v216"
-~5
+~2
 
 
 goto "dialogue"

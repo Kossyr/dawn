@@ -1,26 +1,58 @@
 
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 18:56:02
+_camera camSetTarget [11877.86,109129.67,-10317.48]
+_camera camSetPos [10468.65,9675.51,1.36]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
 ? metKaplinsky : goto "shortExit" ;
 ? not metKaplinsky : goto "longExit" ;
 
 
 #longExit
 
-aP say "f01v214"
-~5
+LemontovDouble say "f01v214"
+~9
+;=== 18:59:54
+_camera camSetTarget [-55183.07,-65001.68,-10595.81]
+_camera camSetPos [10469.01,9677.83,1.49]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Kaplinsky say "f01v215"
-~5
+~8
+
+Hint localize "STRM_HINT_KAPLINSKY"
 
 goto "exitDialogue"
 
 #shortExit
 
-aP say "f01v336"
-~5
+LemontovDouble say "f01v336"
+~4
 
 goto "exitDialogue"
 
-
 #exitDialogue
+
+LemontovDouble dowatch objNull
+LemontovDouble setdir 0
+LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
+Kaplinsky setmimic "normal"
+Kaplinsky dowatch objNull
+
+aP setpos getmarkerpos "CinemaKaplinskyPlayer"
+aP setdir 215
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+titletext ["","plain"]
 
 metKaplinsky=true
 cinema=false

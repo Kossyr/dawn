@@ -1,12 +1,21 @@
 
 metKaplinskyForces=true
 
-aP say "f01v211"
-~5
+LemontovDouble say "f01v211"
+~1.5
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+;=== 18:57:44
+_camera camSetTarget [-45162.89,-72738.14,-10595.85]
+_camera camSetPos [10468.86,9677.81,1.49]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Kaplinsky switchmove "FxShow2"
 Kaplinsky say "f01v212"
-~5
+~7
 Kaplinsky say "f01v213"
-~5
+~6
 
 
 [] exec "kaplinsky_dialogue.sqs"

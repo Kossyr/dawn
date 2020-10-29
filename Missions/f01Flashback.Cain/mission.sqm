@@ -21,7 +21,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=19;
+		items=21;
 		class Item0
 		{
 			side="EAST";
@@ -452,6 +452,45 @@ class Mission
 				};
 			};
 		};
+		class Item19
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5015.353516,13.430831,10115.390625};
+					id=119;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					lock="LOCKED";
+					skill=0.600000;
+					text="LemontovDouble";
+					init="this setidentity ""Lemontov""; this setbehaviour ""careless""; removeallweapons this";
+				};
+			};
+		};
+		class Item20
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8565.907227,94.863197,9288.153320};
+					id=120;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					lock="LOCKED";
+					skill=0.600000;
+					init="player addaction [""Status Check"",""status_check.sqs""]";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -778,6 +817,7 @@ class Mission
 			id=45;
 			side="EMPTY";
 			vehicle="Mi24";
+			lock="LOCKED";
 			skill=0.600000;
 		};
 		class Item34
@@ -787,6 +827,7 @@ class Mission
 			id=46;
 			side="EMPTY";
 			vehicle="Mi17";
+			lock="LOCKED";
 			skill=0.600000;
 		};
 		class Item35
@@ -1452,7 +1493,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=34;
+		items=49;
 		class Item0
 		{
 			position[]={9487.954102,20.474998,8602.314453};
@@ -1730,7 +1771,7 @@ class Mission
 		};
 		class Item29
 		{
-			position[]={9503.014648,20.035360,8611.352539};
+			position[]={9498.535156,20.474998,8610.401367};
 			name="Chernikov3";
 			text="@STRM_MARKER_CHERNIKOV";
 			type="Unknown";
@@ -1766,10 +1807,100 @@ class Mission
 			name="ShaposhnikovCarTeleport";
 			type="Empty";
 		};
+		class Item34
+		{
+			position[]={11890.593750,3.737135,10509.762695};
+			name="CinemaKuznetsov";
+			type="Empty";
+		};
+		class Item35
+		{
+			position[]={11888.961914,3.718567,10510.446289};
+			name="CinemaKuznetsovPlayer";
+			type="Empty";
+		};
+		class Item36
+		{
+			position[]={9381.628906,13.994999,12373.232422};
+			name="VehicleAway";
+			type="Empty";
+		};
+		class Item37
+		{
+			position[]={4992.277344,15.867202,10148.341797};
+			name="PlayerAway";
+			type="Empty";
+		};
+		class Item38
+		{
+			position[]={5015.163574,13.438403,10115.523438};
+			name="PlayerDoubleAway";
+			type="Empty";
+		};
+		class Item39
+		{
+			position[]={11876.835938,3.303041,10527.474609};
+			name="CinemaKuznetsovVehicle";
+			type="Empty";
+		};
+		class Item40
+		{
+			position[]={11828.266602,2.889501,10561.157227};
+			name="CinemaDockhandVehicle";
+			type="Empty";
+		};
+		class Item41
+		{
+			position[]={11831.937500,2.600382,10588.122070};
+			name="CinemaDockhand";
+			type="Empty";
+		};
+		class Item42
+		{
+			position[]={11831.799805,2.607854,10585.513672};
+			name="CinemaDockhandPlayer";
+			type="Empty";
+		};
+		class Item43
+		{
+			position[]={10468.206055,20.205000,9676.862305};
+			name="CinemaKaplinsky";
+			type="Empty";
+		};
+		class Item44
+		{
+			position[]={10469.459961,20.205000,9678.170898};
+			name="CinemaKaplinskyPlayer";
+			type="Empty";
+		};
+		class Item45
+		{
+			position[]={10469.121094,20.205000,9699.668945};
+			name="CinemaPlayerVehicle";
+			type="Empty";
+		};
+		class Item46
+		{
+			position[]={9725.053711,53.684998,9464.675781};
+			name="CinemaBelsky";
+			type="Empty";
+		};
+		class Item47
+		{
+			position[]={9726.835938,53.684998,9464.677734};
+			name="CinemaBelskyPlayer";
+			type="Empty";
+		};
+		class Item48
+		{
+			position[]={9736.903320,53.684998,9460.091797};
+			name="CinemaBelskyVehicle";
+			type="Empty";
+		};
 	};
 	class Sensors
 	{
-		items=21;
+		items=24;
 		class Item0
 		{
 			position[]={2202.633789,124.604996,7349.282715};
@@ -1826,7 +1957,7 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={11356.471680,106.757065,10495.676758};
+			position[]={11355.552734,106.717430,10494.999023};
 			a=8.000000;
 			b=8.000000;
 			rectangular=1;
@@ -2110,6 +2241,39 @@ class Mission
 			idVehicle=19;
 			expCond="this and not canMeetSyomin and not cinema";
 			expActiv="canMeetSyomin=true";
+			class Effects
+			{
+			};
+		};
+		class Item21
+		{
+			position[]={7872.000000,-50.039997,11431.911133};
+			activationBy="ALPHA";
+			age="UNKNOWN";
+			text="KUZNETSOV";
+			expActiv="player setpos getmarkerpos ""CinemaKuznetsovPlayer""";
+			class Effects
+			{
+			};
+		};
+		class Item22
+		{
+			position[]={8352.000000,0.254077,11455.498047};
+			activationBy="BRAVO";
+			age="UNKNOWN";
+			text="BELSKY";
+			expActiv="player setpos getmarkerpos ""CinemaBelskyPlayer""";
+			class Effects
+			{
+			};
+		};
+		class Item23
+		{
+			position[]={8735.237305,0.254077,11444.855469};
+			activationBy="CHARLIE";
+			age="UNKNOWN";
+			text="KAPLINSKY";
+			expActiv="player setpos getmarkerpos ""CinemaKaplinskyPlayer""";
 			class Effects
 			{
 			};

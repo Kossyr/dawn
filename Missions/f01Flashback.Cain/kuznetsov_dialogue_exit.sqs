@@ -1,28 +1,70 @@
 
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 18:27:24
+_camera camSetTarget [-26244.54,102168.20,-12001.57]
+_camera camSetPos [11890.68,10508.19,1.34]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
 ? metKuznetsov : goto "shortExit" ;
 ? not metKuznetsov : goto "longExit" ;
 
-
 #longExit
 
-aP say "f01v309"
-~5
+LemontovDouble say "f01v309"
+~3
+;=== 17:14:44
+_camera camSetTarget [106774.06,-18785.86,-11772.73]
+_camera camSetPos [11889.68,10510.01,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Kuznetsov say "f01v310"
-~5
-aP say "f01v311"
-~5
+~4
+Kuznetsov setmimic "smile"
+~4
+;=== 17:15:05
+_camera camSetTarget [64887.94,94280.57,-13161.13]
+_camera camSetPos [11888.74,10508.66,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f01v311"
+~2
+
+Hint localize "STRM_HINT_KUZNETSOV"
 
 goto "exitDialogue"
 
 #shortExit
 
-aP say "f01v336"
-~5
+LemontovDouble say "f01v336"
+~3
 
 goto "exitDialogue"
 
 
 #exitDialogue
+
+titlecut["","black in",0.5]
+
+
+LemontovDouble dowatch objNull
+LemontovDouble setdir 0
+LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
+Kuznetsov setmimic "normal"
+Kuznetsov dowatch objNull
+
+aP setpos getmarkerpos "CinemaKuznetsovPlayer"
+aP setdir 120
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+titletext ["","plain"]
 
 metKuznetsov=true
 cinema=false

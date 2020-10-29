@@ -1,34 +1,96 @@
 
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 20:19:16
+_camera camSetTarget [72377.12,87179.61,-5850.75]
+_camera camSetPos [9724.64,9463.49,1.42]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
 ? metBelsky : goto "shortExit" ;
 ? not metBelsky : goto "longExit" ;
 
 
 #longExit
 
-aP say "f01v280"
-~5
+LemontovDouble say "f01v280"
+~3
+;=== 20:44:31
+_camera camSetTarget [-89546.27,9200.75,-11985.91]
+_camera camSetPos [9726.01,9464.70,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Belsky say "f01v281"
-~5
-aP say "f01v282"
-~5
+~6
+;=== 20:44:49
+_camera camSetTarget [101368.68,49107.05,-5431.83]
+_camera camSetPos [9726.08,9464.53,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f01v282"
+~4
+;=== 20:45:29
+_camera camSetTarget [-88637.80,26625.08,-5432.27]
+_camera camSetPos [9725.80,9464.59,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Belsky setmimic "surprised"
 Belsky say "f01v283"
-~5
-aP say "f01v284"
-~5
+~7
+Belsky setmimic "smile"
+~3
+;=== 20:45:48
+_camera camSetTarget [109692.17,6894.31,-394.73]
+_camera camSetPos [9726.23,9464.72,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f01v284"
+~3
+;=== 20:46:10
+_camera camSetTarget [-89941.93,2666.33,-4407.96]
+_camera camSetPos [9726.84,9464.81,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Belsky setmimic "normal"
 Belsky say "f01v285"
-~5
+~2.5
+
+Hint localize "STRM_HINT_BELSKY"
 
 goto "exitDialogue"
 
 #shortExit
 
-aP say "f01v336"
-~5
+LemontovDouble say "f01v336"
+~4
 
 goto "exitDialogue"
 
 
 #exitDialogue
+
+
+LemontovDouble dowatch objNull
+LemontovDouble setdir 0
+LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
+Belsky setmimic "normal"
+Belsky dowatch objNull
+
+aP setpos getmarkerpos "CinemaBelskyPlayer"
+aP setdir 270
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+titletext ["","plain"]
 
 metBelsky=true
 cinema=false

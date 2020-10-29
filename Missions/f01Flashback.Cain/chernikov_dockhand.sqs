@@ -2,11 +2,73 @@ setacctime 1
 
 cinema=true
 
-aP say "f01v217"
-~5
-Dockhand say "f01v218"
-~5
+titlecut["","black out",0.5]
+~0.5
 
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+? (aP == vehicle aP) : goto "dockhandCinema" ;
+
+vehicle aP setpos getmarkerpos "VehicleAway"
+vehicle aP setdir 0
+
+~0.5
+
+vehicle aP setpos getmarkerpos "CinemaDockhandVehicle"
+vehicle aP setdir 25
+
+aP action ["EJECT"]
+
+#dockhandCinema
+
+aP action ["WEAPONONBACK"]
+
+aP setpos getmarkerpos "PlayerAway"
+LemontovDouble setpos getmarkerpos "CinemaDockhandPlayer"
+Dockhand setpos getmarkerpos "CinemaDockhand"
+
+LemontovDouble setdir 5
+LemontovDouble dowatch [11831.98,10588.20,1.63]
+LemontovDouble setmimic "normal"
+Dockhand setmimic "normal"
+
+
+~0.5
+
+setacctime 1
+
+titlecut["","black in",0.5]
+
+
+;=== 16:18:45
+_camera camSetTarget [-41036.64,-74291.16,-417.06]
+_camera camSetPos [11832.78,10589.07,1.42]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f01v217"
+~1.5
+Dockhand dowatch [11831.82,10585.51,1.63]
+~1
+;=== 16:19:15
+_camera camSetTarget [52003.92,101577.20,-10337.21]
+_camera camSetPos [11831.52,10586.80,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dockhand say "f01v218"
+~4
+
+titlecut["","black in",0.5]
+
+
+LemontovDouble dowatch objNull
+LemontovDouble setdir 0
+LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
+
+aP setpos getmarkerpos "CinemaDockhandPlayer"
+aP setdir 5
 
 
 "Chernikov1" setmarkertype "Empty"
@@ -14,7 +76,18 @@ Dockhand say "f01v218"
 
 chernikovDockhand=true
 
+Hint localize "STRM_HINT_DOCKHAND"
 
 cinema=false
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+titletext ["","plain"]
+
+~1
+
+Dockhand dowatch [11837.63,10592.12,1.36]
+
 
 exit

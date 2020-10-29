@@ -1,9 +1,21 @@
 
 metKuznetsovMalden=true
 
-aP say "f01v307"
-~5
+
+
+LemontovDouble say "f01v307"
+~2.5
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+;=== 18:30:03
+_camera camSetTarget [104555.98,-26661.43,-5586.96]
+_camera camSetPos [11889.82,10510.03,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Kuznetsov setmimic "sad"
 Kuznetsov say "f01v308"
+Kuznetsov switchmove "FxShow2"
 ~5
 
 [] exec "kuznetsov_dialogue.sqs"

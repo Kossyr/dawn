@@ -3,21 +3,87 @@ setacctime 1
 cinema=true
 canMeetBelsky=false
 
+
+titlecut["","black out",0.5]
+~0.5
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+? (aP == vehicle aP) : goto "belskyCinema" ;
+
+vehicle aP setpos getmarkerpos "VehicleAway"
+vehicle aP setdir 0
+
+~0.5
+
+vehicle aP setpos getmarkerpos "CinemaBelskyVehicle"
+vehicle aP setdir 35
+
+aP action ["EJECT"]
+
+#belskyCinema
+
+aP action ["WEAPONONBACK"]
+
+aP setpos getmarkerpos "PlayerAway"
+LemontovDouble setpos getmarkerpos "CinemaBelskyPlayer"
+Belsky setpos getmarkerpos "CinemaBelsky"
+Belsky dowatch [9726.95,9464.66,1.68]
+
+LemontovDouble setdir 270
+LemontovDouble dowatch [9725.03,9464.75,1.67]
+
+LemontovDouble setmimic "normal"
+Belsky setmimic "normal"
+
+~0.5
+
+setacctime 1
+
+titlecut["","black in",0.5]
+
 ? metBelsky : goto "reenter" ;
 ? not metBelsky : goto "introduction"
 
 
 ; FIRST TIME 
 #introduction
-
-aP say "f01v258"
-~5
+;=== 20:17:05
+_camera camSetTarget [102885.99,44917.32,-7945.70]
+_camera camSetPos [9724.48,9464.17,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f01v258"
+~2
 Belsky say "f01v259"
-~5
-aP say "f01v260"
+;=== 20:17:20
+_camera camSetTarget [-89464.69,-391.48,-7945.94]
+_camera camSetPos [9726.09,9464.80,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+LemontovDouble say "f01v260"
+;=== 20:17:38
+_camera camSetTarget [109396.36,10825.49,-7945.75]
+_camera camSetPos [9726.15,9464.70,1.65]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 ~5
 Belsky say "f01v261"
-~5
+;=== 20:17:52
+_camera camSetTarget [-89694.41,2279.22,-7945.76]
+_camera camSetPos [9725.72,9464.74,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Belsky setmimic "surprised"
+~3
+Belsky setmimic "normal"
+~2
 
 
 goto "dialogue"
@@ -25,9 +91,14 @@ goto "dialogue"
 
 ; RE-ENTERING CONVERSATION
 #reenter
-
+;=== 20:17:52
+_camera camSetTarget [-89694.41,2279.22,-7945.76]
+_camera camSetPos [9725.72,9464.74,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Belsky say "f01v286"
-~5
+~3
 
 goto "dialogue"
 
