@@ -1,0 +1,43 @@
+setacctime 1
+
+cinema=true
+canMeetChernikov=false
+
+"Chernikov3" setmarkertype "Marker"
+
+? metChernikov : goto "reenter" ;
+? not metChernikov : goto "introduction"
+
+; FIRST TIME 
+#introduction
+
+aP say "f01v233"
+~5
+Chernikov say "f01v234"
+~5
+aP say "f01v235"
+~5
+Chernikov say "f01v236"
+~5
+aP say "f01v237"
+~5
+Chernikov say "f01v238"
+~5
+
+goto "dialogue"
+
+
+; RE-ENTERING CONVERSATION
+#reenter
+
+Chernikov say "f01v257"
+~5
+
+goto "dialogue"
+
+#dialogue
+
+[] exec "chernikov_dialogue.sqs"
+
+
+exit

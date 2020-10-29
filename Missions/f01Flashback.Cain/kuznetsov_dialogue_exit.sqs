@@ -1,0 +1,30 @@
+
+? metKuznetsov : goto "shortExit" ;
+? not metKuznetsov : goto "longExit" ;
+
+
+#longExit
+
+aP say "f01v309"
+~5
+Kuznetsov say "f01v310"
+~5
+aP say "f01v311"
+~5
+
+goto "exitDialogue"
+
+#shortExit
+
+aP say "f01v336"
+~5
+
+goto "exitDialogue"
+
+
+#exitDialogue
+
+metKuznetsov=true
+cinema=false
+
+exit

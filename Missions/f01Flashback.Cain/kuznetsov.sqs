@@ -1,0 +1,45 @@
+setacctime 1
+
+cinema=true
+canMeetKuznetsov=false
+
+? metKuznetsov : goto "reenter" ;
+? not metKuznetsov : goto "introduction"
+
+
+; FIRST TIME 
+#introduction
+
+Kuznetsov say "f01v287"
+~5
+aP say "f01v288"
+~5
+Kuznetsov say "f01v289"
+~5
+aP say "f01v290"
+~5
+Kuznetsov say "f01v291"
+~5
+aP say "f01v292"
+~5
+Kuznetsov say "f01v293"
+~5
+
+goto "dialogue"
+
+
+; RE-ENTERING CONVERSATION
+#reenter
+
+Kuznetsov say "f01v312"
+~5
+
+
+goto "dialogue"
+
+#dialogue
+
+[] exec "kuznetsov_dialogue.sqs"
+
+
+exit

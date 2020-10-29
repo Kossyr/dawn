@@ -1,0 +1,36 @@
+
+? metBelsky : goto "shortExit" ;
+? not metBelsky : goto "longExit" ;
+
+
+#longExit
+
+aP say "f01v280"
+~5
+Belsky say "f01v281"
+~5
+aP say "f01v282"
+~5
+Belsky say "f01v283"
+~5
+aP say "f01v284"
+~5
+Belsky say "f01v285"
+~5
+
+goto "exitDialogue"
+
+#shortExit
+
+aP say "f01v336"
+~5
+
+goto "exitDialogue"
+
+
+#exitDialogue
+
+metBelsky=true
+cinema=false
+
+exit

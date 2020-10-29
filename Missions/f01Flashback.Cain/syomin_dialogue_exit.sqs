@@ -1,0 +1,41 @@
+
+? metSyomin : goto "shortExit" ;
+? not metSyomin : goto "longExit" ;
+
+
+#longExit
+
+aP say "f01v159"
+~5
+
+? metSyominSelf : goto "playerHeardFamilyStory" ;
+? not metSyominSelf : goto "playerDidNotHearFamilyStory" ;
+
+#playerHeardFamilyStory
+
+Syomin say "f01v160"
+~5
+
+goto "exitDialogue"
+
+#playerDidNotHearFamilyStory
+
+Syomin say "f01v161"
+~5
+
+goto "exitDialogue"
+
+#shortExit
+
+aP say "f01v336"
+~5
+
+goto "exitDialogue"
+
+
+#exitDialogue
+
+metSyomin=true
+cinema=false
+
+exit

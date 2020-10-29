@@ -21,7 +21,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=17;
+		items=19;
 		class Item0
 		{
 			side="EAST";
@@ -385,7 +385,7 @@ class Mission
 					vehicle="SoldierEB";
 					leader=1;
 					skill=0.600000;
-					text="DockHand";
+					text="Dockhand";
 					init="this setbehaviour ""safe""";
 				};
 			};
@@ -410,10 +410,52 @@ class Mission
 				};
 			};
 		};
+		class Item17
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9610.192383,128.474991,10073.239258};
+					azimut=165.000000;
+					id=115;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					skill=0.600000;
+					text="Zubarev";
+					init="this setidentity ""Zubarev""; this setbehaviour ""safe""; this removeweapon ""binocular""";
+				};
+			};
+		};
+		class Item18
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9499.582031,20.474998,8609.486328};
+					azimut=95.000000;
+					id=118;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					lock="LOCKED";
+					rank="MAJOR";
+					skill=0.600000;
+					text="Chernikov";
+					init="this setidentity ""Chernikov""; this setbehaviour ""safe""";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=93;
+		items=100;
 		class Item0
 		{
 			position[]={2157.138916,124.604996,7340.265625};
@@ -1340,6 +1382,73 @@ class Mission
 			leader=1;
 			skill=0.600000;
 		};
+		class Item93
+		{
+			position[]={9593.626953,128.474991,10074.316406};
+			azimut=70.000000;
+			id=110;
+			side="EMPTY";
+			vehicle="CampEastC";
+			skill=0.600000;
+		};
+		class Item94
+		{
+			position[]={9618.753906,128.474991,10082.844727};
+			azimut=70.000000;
+			id=111;
+			side="EMPTY";
+			vehicle="CampEastC";
+			skill=0.600000;
+		};
+		class Item95
+		{
+			position[]={9630.666016,128.474991,10086.459961};
+			azimut=70.000000;
+			id=112;
+			side="EMPTY";
+			vehicle="CampEastC";
+			skill=0.600000;
+		};
+		class Item96
+		{
+			position[]={9606.840820,128.474991,10078.539063};
+			azimut=70.000000;
+			id=113;
+			side="EMPTY";
+			vehicle="CampEast";
+			skill=0.600000;
+		};
+		class Item97
+		{
+			position[]={9621.214844,128.474991,10068.227539};
+			azimut=245.000000;
+			id=114;
+			side="EMPTY";
+			vehicle="UAZ";
+			skill=0.600000;
+		};
+		class Item98
+		{
+			position[]={9590.240234,0.575662,8564.980469};
+			azimut=310.000000;
+			id=116;
+			side="EMPTY";
+			vehicle="BoatE";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item99
+		{
+			position[]={9622.578125,0.300653,8589.282227};
+			azimut=285.000000;
+			id=117;
+			side="EMPTY";
+			vehicle="BoatE";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
 	};
 	class Markers
 	{
@@ -1556,7 +1665,7 @@ class Mission
 		};
 		class Item21
 		{
-			position[]={2200.050049,124.604996,7351.920898};
+			position[]={2203.495361,124.604996,7374.414551};
 			name="Start";
 			text="@STRC_MARKER_START";
 			type="Start";
@@ -1573,7 +1682,7 @@ class Mission
 		};
 		class Item23
 		{
-			position[]={11436.720703,106.778656,10511.341797};
+			position[]={11439.690430,106.819954,10507.838867};
 			name="Shaposhnikov";
 			text="@STRM_MARKER_SHAPOSHNIKOV";
 			type="Marker";
@@ -1589,7 +1698,7 @@ class Mission
 		};
 		class Item25
 		{
-			position[]={9606.649414,128.474991,10081.514648};
+			position[]={9609.258789,128.474991,10074.485352};
 			name="Zubarev";
 			text="@STRM_MARKER_ZUBAREV";
 			type="Marker";
@@ -1621,7 +1730,7 @@ class Mission
 		};
 		class Item29
 		{
-			position[]={9514.708008,19.138493,8639.237305};
+			position[]={9503.014648,20.035360,8611.352539};
 			name="Chernikov3";
 			text="@STRM_MARKER_CHERNIKOV";
 			type="Unknown";
@@ -1637,7 +1746,7 @@ class Mission
 		};
 		class Item31
 		{
-			position[]={11890.136719,3.701162,10511.035156};
+			position[]={11890.921875,3.710030,10510.529297};
 			name="Kuznetsov";
 			text="@STRM_MARKER_KUZNETSOV";
 			type="Marker";
@@ -1645,7 +1754,7 @@ class Mission
 		};
 		class Item32
 		{
-			position[]={9726.202148,53.684998,9467.864258};
+			position[]={9724.219727,53.684998,9466.051758};
 			name="Belsky";
 			text="@STRM_MARKER_BELSKY";
 			type="Marker";
@@ -1660,7 +1769,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=3;
+		items=21;
 		class Item0
 		{
 			position[]={2202.633789,124.604996,7349.282715};
@@ -1688,7 +1797,7 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={2491.304932,203.686844,7045.347168};
+			position[]={2543.558105,212.646881,6989.710938};
 			a=100.000000;
 			b=35.000000;
 			angle=125.000000;
@@ -1697,6 +1806,310 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=1;
 			expActiv="[] exec ""shaposhnikov_ride.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={11409.927734,107.010544,10537.440430};
+			a=7.000000;
+			b=7.000000;
+			rectangular=1;
+			activationBy="MEMBER";
+			age="UNKNOWN";
+			idVehicle=1;
+			expActiv="[] exec ""shaposhnikov.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={11356.471680,106.757065,10495.676758};
+			a=8.000000;
+			b=8.000000;
+			rectangular=1;
+			activationBy="MEMBER";
+			age="UNKNOWN";
+			idVehicle=1;
+			expActiv="[] exec ""shaposhnikov_arrival.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={11890.325195,3.734554,10509.921875};
+			a=3.000000;
+			b=3.000000;
+			angle=30.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			repeating=1;
+			age="UNKNOWN";
+			idVehicle=19;
+			expCond="this and canMeetKuznetsov";
+			expActiv="[] exec ""kuznetsov.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={11890.223633,3.743541,10509.476563};
+			a=4.000000;
+			b=4.000000;
+			angle=30.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			repeating=1;
+			age="UNKNOWN";
+			idVehicle=19;
+			expCond="this and not canMeetKuznetsov and not cinema";
+			expActiv="canMeetKuznetsov=true";
+			class Effects
+			{
+			};
+		};
+		class Item7
+		{
+			position[]={9724.613281,53.684998,9464.789063};
+			a=3.000000;
+			b=3.000000;
+			angle=30.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			repeating=1;
+			age="UNKNOWN";
+			idVehicle=19;
+			expCond="this and canMeetBelsky";
+			expActiv="[] exec ""belsky.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item8
+		{
+			position[]={9724.511719,53.684998,9464.343750};
+			a=4.000000;
+			b=4.000000;
+			angle=30.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			repeating=1;
+			age="UNKNOWN";
+			idVehicle=19;
+			expCond="this and not canMeetBelsky and not cinema";
+			expActiv="canMeetBelsky=true";
+			class Effects
+			{
+			};
+		};
+		class Item9
+		{
+			position[]={10468.207031,20.205000,9676.769531};
+			a=3.000000;
+			b=3.000000;
+			angle=30.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			repeating=1;
+			age="UNKNOWN";
+			idVehicle=19;
+			expCond="this and canMeetKaplinsky";
+			expActiv="[] exec ""kaplinsky.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item10
+		{
+			position[]={10468.456055,20.205000,9676.629883};
+			a=4.000000;
+			b=4.000000;
+			angle=30.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			repeating=1;
+			age="UNKNOWN";
+			idVehicle=19;
+			expCond="this and not canMeetKaplinsky and not cinema";
+			expActiv="canMeetKaplinsky=true";
+			class Effects
+			{
+			};
+		};
+		class Item11
+		{
+			position[]={8551.489258,94.994858,9292.718750};
+			a=3.000000;
+			b=3.000000;
+			angle=30.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			repeating=1;
+			age="UNKNOWN";
+			idVehicle=19;
+			expCond="this and canMeetFrolov";
+			expActiv="[] exec ""frolov.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item12
+		{
+			position[]={8551.387695,94.987762,9292.273438};
+			a=4.000000;
+			b=4.000000;
+			angle=30.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			repeating=1;
+			age="UNKNOWN";
+			idVehicle=19;
+			expCond="this and not canMeetFrolov and not cinema";
+			expActiv="canMeetFrolov=true";
+			class Effects
+			{
+			};
+		};
+		class Item13
+		{
+			position[]={9609.918945,128.474991,10073.433594};
+			a=3.000000;
+			b=3.000000;
+			angle=70.604797;
+			rectangular=1;
+			activationBy="VEHICLE";
+			repeating=1;
+			age="UNKNOWN";
+			idVehicle=19;
+			expCond="this and canMeetZubarev";
+			expActiv="[] exec ""zubarev.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item14
+		{
+			position[]={9609.553711,128.474991,10073.162109};
+			a=4.000000;
+			b=4.000000;
+			angle=70.604797;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			repeating=1;
+			age="UNKNOWN";
+			idVehicle=19;
+			expCond="this and not canMeetZubarev and not cinema";
+			expActiv="canMeetZubarev=true";
+			class Effects
+			{
+			};
+		};
+		class Item15
+		{
+			position[]={11826.663086,2.664737,10585.546875};
+			a=12.000000;
+			b=11.000000;
+			angle=136.250000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			age="UNKNOWN";
+			idVehicle=19;
+			expActiv="[] exec ""chernikov_dockhand.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item16
+		{
+			position[]={9739.559570,53.684998,9351.214844};
+			a=20.000000;
+			b=20.000000;
+			angle=-42.005501;
+			rectangular=1;
+			activationBy="VEHICLE";
+			age="UNKNOWN";
+			idVehicle=19;
+			expCond="this and chernikovDockhand";
+			expActiv="[] exec ""chernikov_dostoevsky.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item17
+		{
+			position[]={9499.301758,20.474998,8608.779297};
+			a=3.000000;
+			b=3.000000;
+			angle=-91.375198;
+			rectangular=1;
+			activationBy="VEHICLE";
+			repeating=1;
+			age="UNKNOWN";
+			idVehicle=19;
+			expCond="this and canMeetChernikov and chernikovDostoevsky";
+			expActiv="[] exec ""chernikov.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item18
+		{
+			position[]={9499.727539,20.474998,8608.931641};
+			a=4.000000;
+			b=4.000000;
+			angle=-91.375198;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			repeating=1;
+			age="UNKNOWN";
+			idVehicle=19;
+			expCond="this and not canMeetChernikov and not cinema";
+			expActiv="canMeetChernikov=true";
+			class Effects
+			{
+			};
+		};
+		class Item19
+		{
+			position[]={9190.209961,92.294998,9466.953125};
+			a=3.000000;
+			b=3.000000;
+			angle=6.501750;
+			rectangular=1;
+			activationBy="VEHICLE";
+			repeating=1;
+			age="UNKNOWN";
+			idVehicle=19;
+			expCond="this and canMeetSyomin";
+			expActiv="[] exec ""syomin.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item20
+		{
+			position[]={9190.293945,92.294998,9466.503906};
+			a=4.000000;
+			b=4.000000;
+			angle=6.501750;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			repeating=1;
+			age="UNKNOWN";
+			idVehicle=19;
+			expCond="this and not canMeetSyomin and not cinema";
+			expActiv="canMeetSyomin=true";
 			class Effects
 			{
 			};

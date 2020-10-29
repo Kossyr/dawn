@@ -1,0 +1,28 @@
+
+? metChernikov : goto "shortExit" ;
+? not metChernikov : goto "longExit" ;
+
+
+#longExit
+
+aP say "f01v255"
+~5
+Chernikov say "f01v256"
+~5
+
+goto "exitDialogue"
+
+#shortExit
+
+aP say "f01v336"
+~5
+
+goto "exitDialogue"
+
+
+#exitDialogue
+
+metChernikov=true
+cinema=false
+
+exit

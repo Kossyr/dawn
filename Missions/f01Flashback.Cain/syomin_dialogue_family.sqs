@@ -1,0 +1,103 @@
+
+syominFamily=syominFamily + 1
+
+? syominFamily==1 : goto "part1" ;
+? syominFamily==2 : goto "part2" ;
+? syominFamily==3 : goto "part3" ;
+? syominFamily==4 : goto "part4" ;
+? syominFamily==5 : goto "part5" ;
+
+#part1
+
+aP say "f01v125"
+~5
+Syomin say "f01v126"
+~5
+Syomin say "f01v127"
+~5
+Syomin say "f01v128"
+~5
+Syomin say "f01v129"
+~5
+Syomin say "f01v130"
+~5
+Syomin say "f01v131"
+~5
+goto "pauseStory"
+
+
+#part2
+
+
+Syomin say "f01v132"
+~5
+Syomin say "f01v133"
+~5
+Syomin say "f01v134"
+~5
+Syomin say "f01v135"
+~5
+Syomin say "f01v136"
+~5
+goto "pauseStory"
+
+#part3
+Syomin say "f01v137"
+~5
+Syomin say "f01v138"
+~5
+Syomin say "f01v139"
+~5
+Syomin say "f01v140"
+~5
+
+goto "pauseStory"
+
+#part4
+
+Syomin say "f01v141"
+~5
+Syomin say "f01v142"
+~5
+Syomin say "f01v143"
+~5
+Syomin say "f01v144"
+~5
+Syomin say "f01v145"
+~5
+
+goto "pauseStory"
+
+#part5
+
+Syomin say "f01v146"
+~5
+Syomin say "f01v147"
+~5
+Syomin say "f01v148"
+~5
+Syomin say "f01v149"
+~5
+aP say "f01v150"
+~5
+Syomin say "f01v151"
+~5
+
+goto "endStory"
+
+#pauseStory
+
+CreateDialog "SyominDialogueFamilyPause"
+
+goto "ex"
+
+#endStory
+
+syominFamily=0
+metSyominSelf=true
+
+[] exec "syomin_dialogue.sqs"
+
+#ex
+
+exit

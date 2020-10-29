@@ -1,0 +1,32 @@
+
+? metZubarev : goto "shortExit" ;
+? not metZubarev : goto "longExit" ;
+
+
+#longExit
+
+aP say "f01v107"
+~5
+Zubarev say "f01v108"
+~5
+aP say "f01v109"
+~5
+Zubarev say "f01v110"
+~5
+
+goto "exitDialogue"
+
+#shortExit
+
+aP say "f01v336"
+~5
+
+goto "exitDialogue"
+
+
+#exitDialogue
+
+metZubarev=true
+cinema=false
+
+exit

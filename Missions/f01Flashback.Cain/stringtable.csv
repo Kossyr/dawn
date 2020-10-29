@@ -62,8 +62,8 @@ STRM_f01v52,"Not good. A general political instability and corruption, seceding 
 STRM_f01v53,"This does sound serious. Can I count on you?","",Lemontov
 STRM_f01v54,"It is strange to hear you say that, Lemontov, but yes. I'll never forget what you did to Rashiv, but his is what he was fighting against. He would want us to finish the fight.","",Shaposhnikov
 STRM_f01v55,"Good, thank you, Stanislav. First and foremost, I need information. I have seven year long window I need to fill. I also need to meet the local commanders and get to know them to get a bigger picture of the situation.","",Lemontov
-STRM_f01v56,"Yes, you're right. Volkov is coming in tomorrow. He also ordered a uniform to be made for you, so he wants you back in the army. As long as he doesn't know the whole truth, he does not have a reason to go after you. ","",Shaposhnikov
-STRM_f01v57,"So I'm safe as long as I keep the truth secret. It might come out one day, so I must be ready for that. Until then, we can work with the time we have.","",Lemontov
+STRM_f01v56,"Yes, you're right. Volkov is coming in tomorrow. He also ordered a uniform to be made for you, so he wants you back in the army.He is nto aware of the truth, so he does not have a reason to go after you.","",Shaposhnikov
+STRM_f01v57,"Then I'm safe as long as I keep the truth secret. It might come out one day, so I must be ready for that. Until then, we can work with the time we have.","",Lemontov
 STRM_f01v58,"What do you think would happen were they to find out?","",Shaposhnikov
 STRM_f01v59,"Not sure, but if Volkov's anything like my old self, I'll get probably shot without much parade. It's better not to test it.","",Lemontov
 STRM_f01v60,"Absolutely. Now, let's see... there are five important people you should meet.","",Shaposhnikov
@@ -71,7 +71,7 @@ STRM_f01v61,"First, you need to meet Zubarev, the commander-in-chief. He is in c
 STRM_f01v62,"Second, there's Kaplinsky, the commander of spetsnaz. You'll probably have to spend a lot of time with him very soon. I don't know much about him.","",Shaposhnikov
 STRM_f01v63,"Third, Frolov, the tank commander, you are already familiar with him. He hasn't changed much since your time.","",Shaposhnikov
 STRM_f01v64,"Fourth, the newcomer, Syomin. From what I've heard, a brilliant ace pilot and the commander of the air force. Apparently, he has a family history of piloting. Don't let him start talking about that, you'll never hear the end of it.","",Shaposhnikov
-STRM_f01v65,"Lastly, the logistics officer, Chernikov. Sometimes, he's hard to find, just keep looking. He is in charge of all supplies.","",Shaposhnikov
+STRM_f01v65,"Lastly, the logistics officer, Chernikov. He can be hard to find, just keep looking. He is in charge of all supplies.","",Shaposhnikov
 STRM_f01v66,"Additionally, If you wish to hear more about the events you missed, I can recommend two other people.","",Shaposhnikov
 STRM_f01v67,"For domestic politics and the general world affairs, you can go to the postmaster, Boris Belsky. Every piece of paper, fax or telegram goes through him. He is also able to get his hands on some foreign journals, so he knows a lot about the wider world.","",Shaposhnikov
 STRM_f01v68,"Concerning the archipelago, you should go to Maksim Kuznetsov. Supposedly, he's been here from the very beginning. He's from logistics and knows everyone in the army. A good man to meet regardless.","",Shaposhnikov
@@ -290,7 +290,7 @@ STRM_f01v242,"It was actually a hard desicion, I very much enjoyed the nature an
 STRM_f01v243,"Did somebody get hurt?","",Lemontov
 STRM_f01v244,"I mean, we never fired any live ammunition, the police mostly deployed smoke and stun grenades. The protests were kept at bay through non-lethal means, but I didn't stay after that. I just couldn't continue doing my work and pretending nothing happened, because it did.","",Chernikov
 STRM_f01v245,"There was a palpable tension in the air. I did not want to wait around till it gets bloody, so I left.","",Chernikov
-STRM_f01v246,"Since then, there haven't been any demonstrations of the same scale, but I think it's just a matter of time. And I'd rather wait out the storm here.","",
+STRM_f01v246,"Since then, there haven't been any demonstrations of the same scale, but I think it's just a matter of time. And I'd rather wait out the storm here.","",Chernikov
 STRM_f01v247,"If you were ordered to shoot, would you?","",Lemontov
 STRM_f01v248,"That's a question I'd rather not know the answer to, comrade Lemontov.","",Chernikov
 -- Chernikov - Supplies
@@ -402,6 +402,10 @@ STRM_f01v333,"I don't like the officer's garb anyway.","",Lemontov
 STRM_f01v334,"Ha ha, have a good rest, Grigory.","",Shaposhnikov
 STRM_f01v335,"See you, Stanislav.","",Lemontov
 
+STRM_f01v336,"That'll be all, thank you, comrade. Take care.","",Lemontov
+
+
+
 -- Volkov
 Comrade Lemontov, comrade Volkov is waiting for you. Are you ready?
 Yes, take me to him.
@@ -411,7 +415,6 @@ Yes, take me to him.
 -- Other
 Welcome home, Grigory.
 
-That'll be all, thank you, comrade. Take care.
 
 I talked with everyone important. I can return to Shaposhnikov in Severovodsk.
 
@@ -421,6 +424,8 @@ STRM_HINT_FOLLOW,"Follow the officer.","",HINT
 STRM_HINT_MEETINGS,"There are five commanders you have to meet and two other optional meetings to learn about the situation.\n\nCheck your map to learn where you can find everyone.\n\nAdditionally, a new action appeared in the action menu - 'Status check'. This action reports on your current progress.","",HINT
 STRM_HINT_MEETINGS_DONE,"Return to Shaposhnikov's tent to discuss what you learned.","",HINT
 STRM_HINT_TENT,"Go have a rest in your tent to end the flashback.","",HINT
+
+STRM_ACTION,"Status check","",ACTION
 
 STRM_WAYPOINT_SEVEROVODSK,"SEVEROVODSK","",WAYPOINT
 
@@ -434,19 +439,19 @@ STRM_MARKER_KUZNETSOV,"Kuznetsov","",MARKER
 STRM_MARKER_BELSKY,"Belsky","",MARKER
 STRM_MARKER_KAPLINSKY,"Kaplinsky","",MARKER
 
-STRM_DIALOGUE_ZUBAREV,"Zinovy Zubarev","",DIALOGUE ZUBAREV
-STRM_DIALOGUE_ZUBAREV_FORCES,"Kolguyev land force","",DIALOGUE ZUBAREV LAND FORCES
-STRM_DIALOGUE_SYOMIN,"Valentin Syomin","",DIALOGUE SYOMIN
-STRM_DIALOGUE_SYOMIN_FORCES,"Kolguyev air force","",DIALOGUE SYOMIN FORCES
-STRM_DIALOGUE_FROLOV,"Bogdan Frolov","",DIALOGUE FROLOV
-STRM_DIALOGUE_FROLOV_FORCES,"Kolguyev tank force","",DIALOGUE FROLOV FORCES
-STRM_DIALOGUE_CHERNIKOV,"Tikhon Chernikov","",DIALOGUE CHERNIKOV
+STRM_DIALOGUE_ZUBAREV_SELF,"Zinovy Zubarev","",DIALOGUE ZUBAREV
+STRM_DIALOGUE_ZUBAREV_FORCES,"Kolguyev land forces","",DIALOGUE ZUBAREV LAND FORCES
+STRM_DIALOGUE_SYOMIN_SELF,"Valentin Syomin","",DIALOGUE SYOMIN
+STRM_DIALOGUE_SYOMIN_FORCES,"Kolguyev air forces","",DIALOGUE SYOMIN FORCES
+STRM_DIALOGUE_FROLOV_SELF,"Bogdan Frolov","",DIALOGUE FROLOV
+STRM_DIALOGUE_FROLOV_FORCES,"Kolguyev tank forces","",DIALOGUE FROLOV FORCES
+STRM_DIALOGUE_CHERNIKOV_SELF,"Tikhon Chernikov","",DIALOGUE CHERNIKOV
 STRM_DIALOGUE_CHERNIKOV_FORCES,"Kolguyev supplies","",DIALOGUE CHERNIKOV FORCES
-STRM_DIALOGUE_KAPLINSKY,"Josif Kaplinsky","",DIALOGUE KAPLINSKY
+STRM_DIALOGUE_KAPLINSKY_SELF,"Josif Kaplinsky","",DIALOGUE KAPLINSKY
 STRM_DIALOGUE_KAPLINSKY_FORCES,"Kolguyev spetsnaz","",DIALOGUE KAPLINSKY FORCES
-STRM_DIALOGUE_BELSKY_SU,"The Soviet Union","",DIALOGUE BELSKY SOVIET UNION
+STRM_DIALOGUE_BELSKY_USSR,"The Soviet Union","",DIALOGUE BELSKY SOVIET UNION
 STRM_DIALOGUE_BELSKY_USA,"The USA","",DIALOGUE BELSKY USA
-STRM_DIALOGUE_BELSKY_AFGH,"Afghanistan","",DIALOGUE BELSKY AFGHANISTAN
+STRM_DIALOGUE_BELSKY_AF,"Afghanistan","",DIALOGUE BELSKY AFGHANISTAN
 STRM_DIALOGUE_KUZNETSOV_KOLGUYEV,"Kolguyev","",DIALOGUE KUZNETSOV KOLGUYEV
 STRM_DIALOGUE_KUZNETSOV_EVERON,"Everon","",DIALOGUE KUZNETSOV EVERON
 STRM_DIALOGUE_KUZNETSOV_MALDEN,"Malden","",DIALOGUE KUZNETSOV MALDEN

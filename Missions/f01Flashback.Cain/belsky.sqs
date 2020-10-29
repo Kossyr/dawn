@@ -1,0 +1,39 @@
+setacctime 1
+
+cinema=true
+canMeetBelsky=false
+
+? metBelsky : goto "reenter" ;
+? not metBelsky : goto "introduction"
+
+
+; FIRST TIME 
+#introduction
+
+aP say "f01v258"
+~5
+Belsky say "f01v259"
+~5
+aP say "f01v260"
+~5
+Belsky say "f01v261"
+~5
+
+
+goto "dialogue"
+
+
+; RE-ENTERING CONVERSATION
+#reenter
+
+Belsky say "f01v286"
+~5
+
+goto "dialogue"
+
+#dialogue
+
+[] exec "belsky_dialogue.sqs"
+
+
+exit

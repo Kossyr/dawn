@@ -1,0 +1,28 @@
+
+? metKaplinsky : goto "shortExit" ;
+? not metKaplinsky : goto "longExit" ;
+
+
+#longExit
+
+aP say "f01v214"
+~5
+Kaplinsky say "f01v215"
+~5
+
+goto "exitDialogue"
+
+#shortExit
+
+aP say "f01v336"
+~5
+
+goto "exitDialogue"
+
+
+#exitDialogue
+
+metKaplinsky=true
+cinema=false
+
+exit

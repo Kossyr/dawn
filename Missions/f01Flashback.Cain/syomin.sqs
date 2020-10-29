@@ -1,0 +1,59 @@
+setacctime 1
+
+cinema=true
+canMeetSyomin=false
+
+? metSyomin : goto "reenter" ;
+? not metSyomin : goto "introduction"
+
+; FIRST TIME 
+#introduction
+
+Syomin say "f01v112"
+~5
+aP say "f01v113"
+~5
+Syomin say "f01v114"
+~5
+aP say "f01v115"
+~5
+Syomin say "f01v116"
+~5
+aP say "f01v117"
+~5
+Syomin say "f01v118"
+~5
+aP say "f01v119"
+~5
+Syomin say "f01v120"
+~5
+
+goto "dialogue"
+
+
+; RE-ENTERING CONVERSATION
+#reenter
+
+? metSyominSelf : goto "playerHeardFamilyStory" ;
+? not metSyominSelf : goto "playerDidNotHearFamilyStory" ;
+
+#playerHeardFamilyStory
+
+Syomin say "f01v162"
+~5
+
+goto "dialogue"
+
+#playerDidNotHearFamilyStory
+
+Syomin say "f01v163"
+~5
+
+goto "dialogue"
+
+#dialogue
+
+[] exec "syomin_dialogue.sqs"
+
+
+exit

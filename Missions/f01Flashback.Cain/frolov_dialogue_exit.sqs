@@ -1,0 +1,28 @@
+
+? metFrolov : goto "shortExit" ;
+? not metFrolov : goto "longExit" ;
+
+
+#longExit
+
+aP say "f01v188"
+~5
+Frolov say "f01v189"
+~5
+
+goto "exitDialogue"
+
+#shortExit
+
+aP say "f01v336"
+~5
+
+goto "exitDialogue"
+
+
+#exitDialogue
+
+metFrolov=true
+cinema=false
+
+exit

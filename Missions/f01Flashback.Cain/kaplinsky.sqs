@@ -1,0 +1,47 @@
+setacctime 1
+
+cinema=true
+canMeetKaplinsky=false
+
+? metKaplinsky : goto "reenter" ;
+? not metKaplinsky : goto "introduction"
+
+
+; FIRST TIME 
+#introduction
+
+Kaplinsky say "f01v191"
+~5
+aP say "f01v192"
+~5
+Kaplinsky say "f01v193"
+~5
+aP say "f01v194"
+~5
+Kaplinsky say "f01v195"
+~5
+Kaplinsky say "f01v196"
+~5
+aP say "f01v197"
+~5
+Kaplinsky say "f01v198"
+~5
+
+goto "dialogue"
+
+
+; RE-ENTERING CONVERSATION
+#reenter
+
+Kaplinsky say "f01v216"
+~5
+
+
+goto "dialogue"
+
+#dialogue
+
+[] exec "kaplinsky_dialogue.sqs"
+
+
+exit

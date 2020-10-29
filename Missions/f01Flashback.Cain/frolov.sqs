@@ -1,0 +1,51 @@
+setacctime 1
+
+cinema=true
+canMeetFrolov=false
+
+? metFrolov : goto "reenter" ;
+? not metFrolov : goto "introduction"
+
+
+; FIRST TIME 
+#introduction
+
+Frolov say "f01v164"
+~5
+aP say "f01v165"
+~5
+Frolov say "f01v166"
+~5
+Frolov say "f01v167"
+~5
+aP say "f01v168"
+~5
+Frolov say "f01v169"
+~5
+Frolov say "f01v170"
+~5
+Frolov say "f01v171"
+~5
+aP say "f01v172"
+~5
+Frolov say "f01v173"
+~5
+
+
+goto "dialogue"
+
+
+; RE-ENTERING CONVERSATION
+#reenter
+
+Frolov say "f01v290"
+~5
+
+goto "dialogue"
+
+#dialogue
+
+[] exec "frolov_dialogue.sqs"
+
+
+exit

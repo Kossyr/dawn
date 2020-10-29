@@ -50,106 +50,7 @@ class RscButton
 };
 
 
-class Dialogue2 {
-    idd = 0;
-    movingEnable = 0;
-    controls[] = {Window, Button1, Button2};
-
-    #define WINDOW_X    0
-    #define WINDOW_Y    0.80
-    #define WINDOW_W    1
-    #define WINDOW_H    0.10
-
-    #define SPACE_W     0.08
-    #define SPACE_H     0.02
-
-	#define BUTTON_W    0.5
-
-    class Window : RscBackground {
-        x = WINDOW_X;
-        y = WINDOW_Y;
-        w = WINDOW_W;
-        h = WINDOW_H;
-    };
-
-    class Button1 : RscButton {
-        idc = 1;
-        x = WINDOW_X + SPACE_W;
-        y = WINDOW_Y + SPACE_H;
-        w = BUTTON_W - SPACE_W*2;
-        h = WINDOW_H - SPACE_H*2;
-        text = "Test Button 1";
-		action = "closeDialog 0";
-    };
-
-    class Button2 : RscButton {
-        idc = 2;
-        x = BUTTON_W + SPACE_W;
-        y = WINDOW_Y + SPACE_H;
-        w = BUTTON_W - SPACE_W*2;
-        h = WINDOW_H - SPACE_H*2;
-        text = "Test Button 2";
-		action = "closeDialog 0";
-    };
-    
-};
-
-class Dialogue3 {
-    idd = 0;
-    movingEnable = 0;
-    controls[] = {Window, Button1, Button2, Button3};
-
-    #define WINDOW_X    0
-    #define WINDOW_Y    0.80
-    #define WINDOW_W    1
-    #define WINDOW_H    0.10
-
-    #define SPACE_W     0.05
-    #define SPACE_H     0.02
-
-	#define BUTTON_W    0.33
-
-    class Window : RscBackground {
-        x = WINDOW_X;
-        y = WINDOW_Y;
-        w = WINDOW_W;
-        h = WINDOW_H;
-    };
-
-    class Button1 : RscButton {
-        idc = 1;
-        x = WINDOW_X + SPACE_W;
-        y = WINDOW_Y + SPACE_H;
-        w = BUTTON_W - SPACE_W*2;
-        h = WINDOW_H - SPACE_H*2;
-        text = "Test Button 1";
-		action = "closeDialog 0";
-    };
-
-    class Button2 : RscButton {
-        idc = 2;
-        x = BUTTON_W + SPACE_W;
-        y = WINDOW_Y + SPACE_H;
-        w = BUTTON_W - SPACE_W*2;
-        h = WINDOW_H - SPACE_H*2;
-        text = "Test Button 2";
-		action = "closeDialog 0";
-    };
-
-    class Button3 : RscButton {
-        idc = 3;
-        x = BUTTON_W*2 + SPACE_W;
-        y = WINDOW_Y + SPACE_H;
-        w = BUTTON_W - SPACE_W*2;
-        h = WINDOW_H - SPACE_H*2;
-        text = "Test Button 3";
-		action = "closeDialog 0";
-    };
-    
-};
-
-
-class Dialogue4 {
+class KuznetsovDialogue {
     idd = 0;
     movingEnable = 0;
     controls[] = {Window, Button1, Button2, Button3, Button4};
@@ -177,8 +78,8 @@ class Dialogue4 {
         y = WINDOW_Y + SPACE_H;
         w = BUTTON_W - SPACE_W*2;
         h = WINDOW_H - SPACE_H*2;
-        text = "Test Button 1";
-		action = "closeDialog 0";
+        text = "$STRM_DIALOGUE_KUZNETSOV_KOLGUYEV";
+		action = "[] exec ""kuznetsov_dialogue_kolguyev.sqs""; closeDialog 0";
     };
 
     class Button2 : RscButton {
@@ -187,8 +88,8 @@ class Dialogue4 {
         y = WINDOW_Y + SPACE_H;
         w = BUTTON_W - SPACE_W*2;
         h = WINDOW_H - SPACE_H*2;
-        text = "Test Button 2";
-		action = "closeDialog 0";
+        text = "$STRM_DIALOGUE_KUZNETSOV_EVERON";
+		action = "[] exec ""kuznetsov_dialogue_everon.sqs""; closeDialog 0";
     };
 
     class Button3 : RscButton {
@@ -197,8 +98,8 @@ class Dialogue4 {
         y = WINDOW_Y + SPACE_H;
         w = BUTTON_W - SPACE_W*2;
         h = WINDOW_H - SPACE_H*2;
-        text = "Test Button 3";
-		action = "closeDialog 0";
+        text = "$STRM_DIALOGUE_KUZNETSOV_MALDEN";
+		action = "[] exec ""kuznetsov_dialogue_malden.sqs""; closeDialog 0";
     };
 
 	class Button4 : RscButton {
@@ -207,8 +108,431 @@ class Dialogue4 {
         y = WINDOW_Y + SPACE_H;
         w = BUTTON_W - SPACE_W*2;
         h = WINDOW_H - SPACE_H*2;
-        text = "Test Button 3";
-		action = "closeDialog 0";
+        text = "$STRM_DIALOGUE_EXIT_CONVERSATION";
+		action = "[] exec ""kuznetsov_dialogue_exit.sqs""; closeDialog 0";
+    };
+    
+};
+
+class BelskyDialogue {
+    idd = 0;
+    movingEnable = 0;
+    controls[] = {Window, Button1, Button2, Button3, Button4};
+
+    #define WINDOW_X    0
+    #define WINDOW_Y    0.80
+    #define WINDOW_W    1
+    #define WINDOW_H    0.10
+
+    #define SPACE_W     0.04
+    #define SPACE_H     0.02
+
+	#define BUTTON_W    0.25
+
+    class Window : RscBackground {
+        x = WINDOW_X;
+        y = WINDOW_Y;
+        w = WINDOW_W;
+        h = WINDOW_H;
+    };
+
+    class Button1 : RscButton {
+        idc = 1;
+        x = WINDOW_X + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_BELSKY_USSR";
+		action = "[] exec ""belsky_dialogue_ussr.sqs""; closeDialog 0";
+    };
+
+    class Button2 : RscButton {
+        idc = 2;
+        x = BUTTON_W + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_BELSKY_USA";
+		action = "[] exec ""belsky_dialogue_usa.sqs""; closeDialog 0";
+    };
+
+    class Button3 : RscButton {
+        idc = 3;
+        x = BUTTON_W*2 + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_BELSKY_AF";
+		action = "[] exec ""belsky_dialogue_af.sqs""; closeDialog 0";
+    };
+
+	class Button4 : RscButton {
+        idc = 4;
+        x = BUTTON_W*3 + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_EXIT_CONVERSATION";
+		action = "[] exec ""belsky_dialogue_exit.sqs""; closeDialog 0";
+    };
+    
+};
+
+class KaplinskyDialogue {
+    idd = 0;
+    movingEnable = 0;
+    controls[] = {Window, Button1, Button2, Button3};
+
+    #define WINDOW_X    0
+    #define WINDOW_Y    0.80
+    #define WINDOW_W    1
+    #define WINDOW_H    0.10
+
+    #define SPACE_W     0.05
+    #define SPACE_H     0.02
+
+	#define BUTTON_W    0.33
+
+    class Window : RscBackground {
+        x = WINDOW_X;
+        y = WINDOW_Y;
+        w = WINDOW_W;
+        h = WINDOW_H;
+    };
+
+    class Button1 : RscButton {
+        idc = 1;
+        x = WINDOW_X + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_KAPLINSKY_SELF";
+		action = "[] exec ""kaplinsky_dialogue_self.sqs""; closeDialog 0";
+    };
+
+    class Button2 : RscButton {
+        idc = 2;
+        x = BUTTON_W + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_KAPLINSKY_FORCES";
+		action = "[] exec ""kaplinsky_dialogue_forces.sqs""; closeDialog 0";
+    };
+
+    class Button3 : RscButton {
+        idc = 3;
+        x = BUTTON_W*2 + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_EXIT_CONVERSATION";
+		action = "[] exec ""kaplinsky_dialogue_exit.sqs""; closeDialog 0";
+    };
+    
+};
+
+
+class FrolovDialogue {
+    idd = 0;
+    movingEnable = 0;
+    controls[] = {Window, Button1, Button2, Button3};
+
+    #define WINDOW_X    0
+    #define WINDOW_Y    0.80
+    #define WINDOW_W    1
+    #define WINDOW_H    0.10
+
+    #define SPACE_W     0.05
+    #define SPACE_H     0.02
+
+	#define BUTTON_W    0.33
+
+    class Window : RscBackground {
+        x = WINDOW_X;
+        y = WINDOW_Y;
+        w = WINDOW_W;
+        h = WINDOW_H;
+    };
+
+    class Button1 : RscButton {
+        idc = 1;
+        x = WINDOW_X + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_FROLOV_SELF";
+		action = "[] exec ""frolov_dialogue_self.sqs""; closeDialog 0";
+    };
+
+    class Button2 : RscButton {
+        idc = 2;
+        x = BUTTON_W + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_FROLOV_FORCES";
+		action = "[] exec ""frolov_dialogue_forces.sqs""; closeDialog 0";
+    };
+
+    class Button3 : RscButton {
+        idc = 3;
+        x = BUTTON_W*2 + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_EXIT_CONVERSATION";
+		action = "[] exec ""frolov_dialogue_exit.sqs""; closeDialog 0";
+    };
+    
+};
+
+class ZubarevDialogue {
+    idd = 0;
+    movingEnable = 0;
+    controls[] = {Window, Button1, Button2, Button3};
+
+    #define WINDOW_X    0
+    #define WINDOW_Y    0.80
+    #define WINDOW_W    1
+    #define WINDOW_H    0.10
+
+    #define SPACE_W     0.05
+    #define SPACE_H     0.02
+
+	#define BUTTON_W    0.33
+
+    class Window : RscBackground {
+        x = WINDOW_X;
+        y = WINDOW_Y;
+        w = WINDOW_W;
+        h = WINDOW_H;
+    };
+
+    class Button1 : RscButton {
+        idc = 1;
+        x = WINDOW_X + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_ZUBAREV_SELF";
+		action = "[] exec ""zubarev_dialogue_self.sqs""; closeDialog 0";
+    };
+
+    class Button2 : RscButton {
+        idc = 2;
+        x = BUTTON_W + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_ZUBAREV_FORCES";
+		action = "[] exec ""zubarev_dialogue_forces.sqs""; closeDialog 0";
+    };
+
+    class Button3 : RscButton {
+        idc = 3;
+        x = BUTTON_W*2 + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_EXIT_CONVERSATION";
+		action = "[] exec ""zubarev_dialogue_exit.sqs""; closeDialog 0";
+    };
+    
+};
+
+class ChernikovDialogue {
+    idd = 0;
+    movingEnable = 0;
+    controls[] = {Window, Button1, Button2, Button3};
+
+    #define WINDOW_X    0
+    #define WINDOW_Y    0.80
+    #define WINDOW_W    1
+    #define WINDOW_H    0.10
+
+    #define SPACE_W     0.05
+    #define SPACE_H     0.02
+
+	#define BUTTON_W    0.33
+
+    class Window : RscBackground {
+        x = WINDOW_X;
+        y = WINDOW_Y;
+        w = WINDOW_W;
+        h = WINDOW_H;
+    };
+
+    class Button1 : RscButton {
+        idc = 1;
+        x = WINDOW_X + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_CHERNIKOV_SELF";
+		action = "[] exec ""chernikov_dialogue_self.sqs""; closeDialog 0";
+    };
+
+    class Button2 : RscButton {
+        idc = 2;
+        x = BUTTON_W + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_CHERNIKOV_FORCES";
+		action = "[] exec ""chernikov_dialogue_forces.sqs""; closeDialog 0";
+    };
+
+    class Button3 : RscButton {
+        idc = 3;
+        x = BUTTON_W*2 + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_EXIT_CONVERSATION";
+		action = "[] exec ""chernikov_dialogue_exit.sqs""; closeDialog 0";
+    };
+    
+};
+
+class SyominDialogue {
+    idd = 0;
+    movingEnable = 0;
+    controls[] = {Window, Button1, Button2, Button3};
+
+    #define WINDOW_X    0
+    #define WINDOW_Y    0.80
+    #define WINDOW_W    1
+    #define WINDOW_H    0.10
+
+    #define SPACE_W     0.05
+    #define SPACE_H     0.02
+
+	#define BUTTON_W    0.33
+
+    class Window : RscBackground {
+        x = WINDOW_X;
+        y = WINDOW_Y;
+        w = WINDOW_W;
+        h = WINDOW_H;
+    };
+
+    class Button1 : RscButton {
+        idc = 1;
+        x = WINDOW_X + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_SYOMIN_SELF";
+		action = "[] exec ""syomin_dialogue_self.sqs""; closeDialog 0";
+    };
+
+    class Button2 : RscButton {
+        idc = 2;
+        x = BUTTON_W + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_SYOMIN_FORCES";
+		action = "[] exec ""syomin_dialogue_forces.sqs""; closeDialog 0";
+    };
+
+    class Button3 : RscButton {
+        idc = 3;
+        x = BUTTON_W*2 + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_EXIT_CONVERSATION";
+		action = "[] exec ""syomin_dialogue_exit.sqs""; closeDialog 0";
+    };
+    
+};
+
+class SyominDialogueFamily {
+    idd = 0;
+    movingEnable = 0;
+    controls[] = {Window, Button1, Button2};
+
+    #define WINDOW_X    0
+    #define WINDOW_Y    0.80
+    #define WINDOW_W    1
+    #define WINDOW_H    0.10
+
+    #define SPACE_W     0.08
+    #define SPACE_H     0.02
+
+	#define BUTTON_W    0.5
+
+    class Window : RscBackground {
+        x = WINDOW_X;
+        y = WINDOW_Y;
+        w = WINDOW_W;
+        h = WINDOW_H;
+    };
+
+    class Button1 : RscButton {
+        idc = 1;
+        x = WINDOW_X + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_SYOMIN_FAMILY_YES";
+		action = "[] exec ""syomin_dialogue_family.sqs""; closeDialog 0";
+    };
+
+    class Button2 : RscButton {
+        idc = 2;
+        x = BUTTON_W + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_SYOMIN_FAMILY_NO";
+		action = "[] exec ""syomin_dialogue_family_no.sqs""; closeDialog 0";
+    };
+    
+};
+
+class SyominDialogueFamilyPause {
+    idd = 0;
+    movingEnable = 0;
+    controls[] = {Window, Button1, Button2};
+
+    #define WINDOW_X    0
+    #define WINDOW_Y    0.80
+    #define WINDOW_W    1
+    #define WINDOW_H    0.10
+
+    #define SPACE_W     0.08
+    #define SPACE_H     0.02
+
+	#define BUTTON_W    0.5
+
+    class Window : RscBackground {
+        x = WINDOW_X;
+        y = WINDOW_Y;
+        w = WINDOW_W;
+        h = WINDOW_H;
+    };
+
+    class Button1 : RscButton {
+        idc = 1;
+        x = WINDOW_X + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_SYOMIN_FAMILY_CONTINUE";
+		action = "[] exec ""syomin_dialogue_family.sqs""; closeDialog 0";
+    };
+
+    class Button2 : RscButton {
+        idc = 2;
+        x = BUTTON_W + SPACE_W;
+        y = WINDOW_Y + SPACE_H;
+        w = BUTTON_W - SPACE_W*2;
+        h = WINDOW_H - SPACE_H*2;
+        text = "$STRM_DIALOGUE_SYOMIN_FAMILY_STOP";
+		action = "[] exec ""syomin_dialogue_family_interrupt.sqs""; closeDialog 0";
     };
     
 };
@@ -2227,6 +2551,12 @@ class CfgSounds
 		name = "f01v335";
 		sound[] = {"f01v335.ogg", db+10, 1.00};
 		titles[] = {0,$STRM_f01v335};
+	};
+	class f01v336
+	{
+		name = "f01v336";
+		sound[] = {"f01v336.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_f01v336};
 	};
 };
 
