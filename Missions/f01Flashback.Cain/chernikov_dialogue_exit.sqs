@@ -1,28 +1,64 @@
 
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+;=== 21:16:13
+_camera camSetTarget [-85091.46,40645.95,-5164.63]
+_camera camSetPos [9495.82,8609.12,1.38]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
 ? metChernikov : goto "shortExit" ;
 ? not metChernikov : goto "longExit" ;
-
 
 #longExit
 
 LemontovDouble say "f01v255"
-~5
+~7
+;=== 21:20:06
+_camera camSetTarget [99520.64,51832.68,-5164.39]
+_camera camSetPos [9493.74,8609.47,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Chernikov say "f01v256"
-~5
+~4
+
+Hint localize "STRM_HINT_CHERNIKOV"
 
 goto "exitDialogue"
 
 #shortExit
 
 LemontovDouble say "f01v336"
-~5
+~4
 
 goto "exitDialogue"
 
 
 #exitDialogue
 
+
+LemontovDouble dowatch objNull
+LemontovDouble setdir 0
+LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
+Syomin setmimic "normal"
+Syomin dowatch objNull
+
+aP setpos getmarkerpos "CinemaChernikovPlayer"
+aP setdir 45
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+titletext ["","plain"]
+
 metChernikov=true
 cinema=false
+
+~1
+
+Chernikov dowatch [9497.82,8609.73,0.75]
 
 exit

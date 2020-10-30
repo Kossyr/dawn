@@ -5,24 +5,107 @@ canMeetChernikov=false
 
 "Chernikov3" setmarkertype "Marker"
 
+
+titlecut["","black out",0.5]
+~0.5
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+? (aP == vehicle aP) : goto "chernikovCinema" ;
+
+vehicle aP setpos getmarkerpos "VehicleAway"
+vehicle aP setdir 0
+
+~0.5
+
+vehicle aP setpos getmarkerpos "CinemaChernikovVehicle"
+vehicle aP setdir 220
+
+aP action ["EJECT"]
+
+#chernikovCinema
+
+aP action ["WEAPONONBACK"]
+
+aP setpos getmarkerpos "PlayerAway"
+LemontovDouble setpos getmarkerpos "CinemaChernikovPlayer"
+Chernikov setpos getmarkerpos "CinemaChernikov"
+Chernikov dowatch [9497.82,8609.73,0.75]
+
+
+LemontovDouble setdir 45
+LemontovDouble dowatch [9494.92,8610.03,1.66]
+
+
+LemontovDouble setmimic "angry"
+Chernikov setmimic "normal"
+
+
+~0.5
+
+setacctime 1
+
+titlecut["","black in",0.5]
+
 ? metChernikov : goto "reenter" ;
 ? not metChernikov : goto "introduction"
 
-; FIRST TIME 
+; FIRST TIME
 #introduction
 
+;=== 21:11:40
+_camera camSetTarget [-89201.35,-7278.09,-2498.53]
+_camera camSetPos [9496.43,8610.08,1.21]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v233"
-~5
+~2
+Chernikov dowatch [9492.95,8609.14,1.66]
+~1
+;=== 21:12:50
+_camera camSetTarget [99027.63,52240.80,-8923.45]
+_camera camSetPos [9493.88,8609.53,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Chernikov setmimic "smile"
 Chernikov say "f01v234"
-~5
+~3
+;=== 21:13:49
+_camera camSetTarget [-85348.97,-22726.71,-4765.25]
+_camera camSetPos [9493.69,8609.41,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v235"
-~5
+~2
+;=== 21:14:31
+_camera camSetTarget [88556.73,68315.04,-13543.28]
+_camera camSetPos [9492.64,8608.52,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Chernikov setmimic "normal"
 Chernikov say "f01v236"
 ~5
+;=== 21:14:44
+_camera camSetTarget [-81754.52,-32278.08,-1406.71]
+_camera camSetPos [9493.60,8609.43,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v237"
-~5
+~4
+;=== 21:14:57
+_camera camSetTarget [100990.73,47455.58,-10903.22]
+_camera camSetPos [9494.03,8609.66,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Chernikov say "f01v238"
-~5
+~2
 
 goto "dialogue"
 
@@ -30,8 +113,14 @@ goto "dialogue"
 ; RE-ENTERING CONVERSATION
 #reenter
 
+;=== 21:14:57
+_camera camSetTarget [100990.73,47455.58,-10903.22]
+_camera camSetPos [9494.03,8609.66,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Chernikov say "f01v257"
-~5
+~3
 
 goto "dialogue"
 
