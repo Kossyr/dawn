@@ -1,4 +1,14 @@
 
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 13:25:28
+_camera camSetTarget [90156.69,-49216.80,-518.50]
+_camera camSetPos [9188.62,9467.07,1.27]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
 ? metSyomin : goto "shortExit" ;
 ? not metSyomin : goto "longExit" ;
 
@@ -7,6 +17,12 @@
 
 LemontovDouble say "f01v159"
 ~5
+;=== 13:57:54
+_camera camSetTarget [17546.88,108488.27,-11074.43]
+_camera camSetPos [9189.90,9465.85,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 
 ? metSyominSelf : goto "playerHeardFamilyStory" ;
 ? not metSyominSelf : goto "playerDidNotHearFamilyStory" ;
@@ -14,14 +30,18 @@ LemontovDouble say "f01v159"
 #playerHeardFamilyStory
 
 Syomin say "f01v160"
-~5
+~8
+
+Hint localize "STRM_HINT_SYOMIN"
 
 goto "exitDialogue"
 
 #playerDidNotHearFamilyStory
 
 Syomin say "f01v161"
-~5
+~3
+
+Hint localize "STRM_HINT_SYOMIN"
 
 goto "exitDialogue"
 
@@ -34,6 +54,20 @@ goto "exitDialogue"
 
 
 #exitDialogue
+
+LemontovDouble dowatch objNull
+LemontovDouble setdir 0
+LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
+Syomin setmimic "normal"
+Syomin dowatch objNull
+
+aP setpos getmarkerpos "CinemaSyominPlayer"
+aP setdir 5
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+titletext ["","plain"]
 
 metSyomin=true
 cinema=false

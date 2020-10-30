@@ -3,36 +3,143 @@ setacctime 1
 cinema=true
 canMeetSyomin=false
 
+
+titlecut["","black out",0.5]
+~0.5
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+? (aP == vehicle aP) : goto "syominCinema" ;
+
+vehicle aP setpos getmarkerpos "VehicleAway"
+vehicle aP setdir 0
+
+~0.5
+
+vehicle aP setpos getmarkerpos "CinemaSyominVehicle"
+vehicle aP setdir 90
+
+aP action ["EJECT"]
+
+#syominCinema
+
+aP action ["WEAPONONBACK"]
+
+aP setpos getmarkerpos "PlayerAway"
+LemontovDouble setpos getmarkerpos "CinemaSyominPlayer"
+Syomin setpos getmarkerpos "CinemaSyomin"
+Syomin dowatch [9189.83,9464.85,1.69]
+
+
+LemontovDouble setdir 5
+LemontovDouble dowatch [9189.93,9466.53,1.69]
+LemontovDouble setmimic "angry"
+Syomin setmimic "normal"
+
+
+~0.5
+
+setacctime 1
+
+titlecut["","black in",0.5]
+
 ? metSyomin : goto "reenter" ;
 ? not metSyomin : goto "introduction"
 
 ; FIRST TIME 
 #introduction
-
+;=== 13:26:49
+_camera camSetTarget [19350.24,108577.52,-8488.27]
+_camera camSetPos [9189.87,9465.87,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Syomin setmimic "smile"
 Syomin say "f01v112"
-~5
+~7
+;=== 13:26:59
+_camera camSetTarget [9335.41,-90350.08,-5975.13]
+_camera camSetPos [9189.87,9465.51,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v113"
-~5
+~3
+;=== 13:27:34
+_camera camSetTarget [-15913.09,105713.98,-10194.62]
+_camera camSetPos [9190.22,9464.44,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Syomin setmimic "normal"
 Syomin say "f01v114"
-~5
+~8
+;=== 13:27:43
+_camera camSetTarget [5308.61,-90361.05,-4331.67]
+_camera camSetPos [9189.86,9465.57,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v115"
-~5
+~6
+;=== 13:27:54
+_camera camSetTarget [20878.41,108682.21,-4331.82]
+_camera camSetPos [9189.88,9466.04,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Syomin say "f01v116"
-~5
+~4
+;=== 13:28:03
+_camera camSetTarget [16629.64,-90159.17,-4331.39]
+_camera camSetPos [9189.79,9465.47,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble setmimic "surprised"
 LemontovDouble say "f01v117"
-~5
+~4
+;=== 13:28:33
+_camera camSetTarget [44819.48,102302.19,-10473.29]
+_camera camSetPos [9189.28,9464.35,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Syomin say "f01v118"
-~5
+~10
+;=== 13:28:46
+_camera camSetTarget [40438.31,-85293.01,-6568.14]
+_camera camSetPos [9189.71,9465.38,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble setmimic "angry"
 LemontovDouble say "f01v119"
-~5
+~4
+;=== 13:28:57
+_camera camSetTarget [31961.34,106610.67,-6567.78]
+_camera camSetPos [9189.77,9466.07,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Syomin setmimic "sad"
 Syomin say "f01v120"
-~5
+~4
+Syomin setmimic "smile"
+~4
 
 goto "dialogue"
 
 
 ; RE-ENTERING CONVERSATION
 #reenter
+;=== 13:29:56
+_camera camSetTarget [17347.66,108909.70,-6567.80]
+_camera camSetPos [9189.88,9465.73,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 
 ? metSyominSelf : goto "playerHeardFamilyStory" ;
 ? not metSyominSelf : goto "playerDidNotHearFamilyStory" ;
@@ -40,14 +147,14 @@ goto "dialogue"
 #playerHeardFamilyStory
 
 Syomin say "f01v162"
-~5
+~4
 
 goto "dialogue"
 
 #playerDidNotHearFamilyStory
 
 Syomin say "f01v163"
-~5
+~4
 
 goto "dialogue"
 

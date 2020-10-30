@@ -480,7 +480,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={9613.579102,128.474991,10066.291992};
+					position[]={9188.154297,92.294998,9458.444336};
 					id=120;
 					side="LOGIC";
 					vehicle="Logic";
@@ -1818,7 +1818,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=55;
+		items=58;
 		class Item0
 		{
 			position[]={9487.954102,20.474998,8602.314453};
@@ -2056,7 +2056,7 @@ class Mission
 		};
 		class Item24
 		{
-			position[]={9191.719727,92.289063,9440.073242};
+			position[]={9181.161133,92.294998,9468.958984};
 			name="Syomin";
 			text="@STRM_MARKER_SYOMIN";
 			type="Marker";
@@ -2258,10 +2258,28 @@ class Mission
 			name="CinemaZubarevVehicle";
 			type="Empty";
 		};
+		class Item55
+		{
+			position[]={9189.932617,92.294998,9466.754883};
+			name="CinemaSyomin";
+			type="Empty";
+		};
+		class Item56
+		{
+			position[]={9189.824219,92.294998,9464.812500};
+			name="CinemaSyominPlayer";
+			type="Empty";
+		};
+		class Item57
+		{
+			position[]={9169.897461,92.294998,9453.845703};
+			name="CinemaSyominVehicle";
+			type="Empty";
+		};
 	};
 	class Sensors
 	{
-		items=26;
+		items=27;
 		class Item0
 		{
 			position[]={2202.633789,124.604996,7349.282715};
@@ -2657,6 +2675,17 @@ class Mission
 			age="UNKNOWN";
 			text="ZUBAREV";
 			expActiv="player setpos getmarkerpos ""CinemaZubarevPlayer""";
+			class Effects
+			{
+			};
+		};
+		class Item26
+		{
+			position[]={9282.370117,0.194683,11463.902344};
+			activationBy="FOXTROT";
+			age="UNKNOWN";
+			text="SYOMIN";
+			expActiv="player setpos getmarkerpos ""CinemaSyominPlayer""";
 			class Effects
 			{
 			};
