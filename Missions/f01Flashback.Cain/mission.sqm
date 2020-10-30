@@ -21,7 +21,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=23;
+		items=25;
 		class Item0
 		{
 			side="EAST";
@@ -480,7 +480,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={9188.154297,92.294998,9458.444336};
+					position[]={9758.369141,53.684998,9366.354492};
 					id=120;
 					side="LOGIC";
 					vehicle="Logic";
@@ -532,10 +532,83 @@ class Mission
 				};
 			};
 		};
+		class Item23
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5078.029785,12.464999,10085.773438};
+					azimut=310.000000;
+					id=156;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					lock="LOCKED";
+					rank="LIEUTNANT";
+					skill=0.600000;
+					text="Dostoevsky";
+					init="this setidentity ""Dostoevsky""; this setbehaviour ""safe""; this removeweapon ""binocular""";
+				};
+			};
+		};
+		class Item24
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9750.615234,53.684998,9351.492188};
+					azimut=100.000000;
+					id=168;
+					side="EAST";
+					vehicle="SoldierEB";
+					leader=1;
+					lock="LOCKED";
+					skill=0.600000;
+					init="this setbehaviour ""safe""";
+				};
+			};
+			class Waypoints
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9754.678711,53.684998,9351.000977};
+					speed="FULL";
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={9738.579102,53.684998,9360.240234};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={9754.487305,53.684998,9350.448242};
+					type="CYCLE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=129;
+		items=154;
 		class Item0
 		{
 			position[]={2157.138916,124.604996,7340.265625};
@@ -1411,7 +1484,7 @@ class Mission
 			azimut=40.000000;
 			id=103;
 			side="EMPTY";
-			vehicle="CampEastC";
+			vehicle="MASH";
 			leader=1;
 			skill=0.600000;
 		};
@@ -1815,10 +1888,285 @@ class Mission
 			leader=1;
 			skill=0.600000;
 		};
+		class Item129
+		{
+			position[]={9472.060547,20.492140,8599.749023};
+			id=152;
+			side="EMPTY";
+			vehicle="FlagCarrier";
+			leader=1;
+			skill=0.600000;
+			init="this setflagtexture ""rus_vlajka.pac""";
+		};
+		class Item130
+		{
+			position[]={9817.934570,53.378319,9426.119141};
+			azimut=310.000000;
+			id=153;
+			side="EMPTY";
+			vehicle="BMP";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item131
+		{
+			position[]={9815.498047,53.456398,9416.865234};
+			azimut=285.000000;
+			id=154;
+			side="EMPTY";
+			vehicle="BMP";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item132
+		{
+			position[]={9743.007813,53.684998,9362.161133};
+			azimut=50.000000;
+			id=155;
+			side="EMPTY";
+			vehicle="UralReammo";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item133
+		{
+			position[]={9756.676758,53.684998,9350.913086};
+			azimut=135.000000;
+			id=157;
+			side="EMPTY";
+			vehicle="Shed";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item134
+		{
+			position[]={9756.431641,53.684853,9349.984375};
+			azimut=345.000000;
+			id=158;
+			side="EMPTY";
+			vehicle="ReammoBoxEast";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+			init="clearmagazinecargo this; clearweaponcargo this";
+		};
+		class Item135
+		{
+			position[]={9754.611328,53.675232,9348.915039};
+			azimut=50.000000;
+			id=159;
+			side="EMPTY";
+			vehicle="ReammoBoxEast";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+			init="clearmagazinecargo this; clearweaponcargo this";
+		};
+		class Item136
+		{
+			position[]={9758.286133,53.684998,9352.830078};
+			azimut=20.000000;
+			id=160;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item137
+		{
+			position[]={9759.289063,53.684998,9351.289063};
+			azimut=20.000000;
+			id=161;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item138
+		{
+			position[]={9756.040039,53.656288,9346.810547};
+			azimut=345.000000;
+			id=162;
+			side="EMPTY";
+			vehicle="Barrel1";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item139
+		{
+			position[]={9757.302734,53.666855,9347.984375};
+			azimut=305.000000;
+			id=163;
+			side="EMPTY";
+			vehicle="Barrel2";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item140
+		{
+			position[]={9759.183594,53.673229,9348.692383};
+			azimut=15.000000;
+			id=164;
+			side="EMPTY";
+			vehicle="Paleta1";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item141
+		{
+			position[]={9758.492188,53.651634,9346.292969};
+			azimut=325.000000;
+			id=165;
+			side="EMPTY";
+			vehicle="Paleta1";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item142
+		{
+			position[]={9757.118164,53.645859,9345.651367};
+			azimut=20.000000;
+			id=166;
+			side="EMPTY";
+			vehicle="Paleta2";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item143
+		{
+			position[]={9747.457031,53.684998,9347.386719};
+			azimut=330.000000;
+			id=167;
+			side="EMPTY";
+			vehicle="UAZ";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item144
+		{
+			position[]={9500.524414,20.374685,8611.377930};
+			azimut=330.000000;
+			id=169;
+			side="EMPTY";
+			vehicle="ReammoBoxEast";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+			init="clearweaponcargo this; clearmagazinecargo this";
+		};
+		class Item145
+		{
+			position[]={9503.294922,20.048302,8611.977539};
+			azimut=41.856606;
+			id=170;
+			side="EMPTY";
+			vehicle="Barrel1";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item146
+		{
+			position[]={9503.241211,20.188017,8610.352539};
+			azimut=376.856537;
+			id=171;
+			side="EMPTY";
+			vehicle="Barrel1";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item147
+		{
+			position[]={9501.973633,20.097256,8609.871094};
+			azimut=56.856602;
+			id=172;
+			side="EMPTY";
+			vehicle="Paleta2";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item148
+		{
+			position[]={9501.177734,20.249695,8608.374023};
+			azimut=356.856537;
+			id=173;
+			side="EMPTY";
+			vehicle="Paleta2";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item149
+		{
+			position[]={9502.724609,20.013861,8608.545898};
+			azimut=36.856606;
+			id=174;
+			side="EMPTY";
+			vehicle="Paleta1";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item150
+		{
+			position[]={9505.073242,19.622503,8609.037109};
+			azimut=86.856613;
+			id=175;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item151
+		{
+			position[]={9461.939453,20.474998,8619.092773};
+			azimut=220.000000;
+			id=176;
+			side="EMPTY";
+			vehicle="UralReammo";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item152
+		{
+			position[]={9471.372070,20.474998,8615.616211};
+			azimut=215.000000;
+			id=177;
+			side="EMPTY";
+			vehicle="UralRepair";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item153
+		{
+			position[]={9431.600586,20.410576,8598.369141};
+			azimut=160.000000;
+			id=178;
+			side="EMPTY";
+			vehicle="UAZ";
+			leader=1;
+			skill=0.600000;
+		};
 	};
 	class Markers
 	{
-		items=58;
+		items=67;
 		class Item0
 		{
 			position[]={9487.954102,20.474998,8602.314453};
@@ -2088,7 +2436,7 @@ class Mission
 		};
 		class Item28
 		{
-			position[]={9735.586914,53.684998,9350.588867};
+			position[]={9750.415039,53.684998,9364.908203};
 			name="Chernikov2";
 			text="@STRM_MARKER_CHERNIKOV";
 			type="Unknown";
@@ -2276,10 +2624,64 @@ class Mission
 			name="CinemaSyominVehicle";
 			type="Empty";
 		};
+		class Item58
+		{
+			position[]={9755.010742,53.684998,9361.220703};
+			name="CinemaDostoevskyPlayer";
+			type="Empty";
+		};
+		class Item59
+		{
+			position[]={9756.503906,53.684998,9359.825195};
+			name="CinemaDostoevsky";
+			type="Empty";
+		};
+		class Item60
+		{
+			position[]={9756.121094,53.684998,9351.942383};
+			name="CinemaDostoevskyFinal";
+			type="Empty";
+		};
+		class Item61
+		{
+			position[]={5063.347168,12.464999,10076.079102};
+			name="CinemaChernikovAway";
+			type="Empty";
+		};
+		class Item62
+		{
+			position[]={9755.968750,53.684998,9378.320313};
+			name="CinemaDostoevskyVehicle";
+			type="Empty";
+		};
+		class Item63
+		{
+			position[]={9497.654297,20.474998,8608.884766};
+			name="CinemaChernikovPlayer";
+			type="Empty";
+		};
+		class Item64
+		{
+			position[]={9499.579102,20.474998,8609.505859};
+			name="CinemaChernikov";
+			type="Empty";
+		};
+		class Item65
+		{
+			position[]={9454.059570,20.474998,8609.596680};
+			name="CinemaChernikovVehicle";
+			type="Empty";
+		};
+		class Item66
+		{
+			position[]={9869.039063,47.000286,9363.875977};
+			name="CinemaDostoevskyPlayer_1";
+			type="Empty";
+		};
 	};
 	class Sensors
 	{
-		items=27;
+		items=29;
 		class Item0
 		{
 			position[]={2202.633789,124.604996,7349.282715};
@@ -2540,7 +2942,7 @@ class Mission
 		};
 		class Item16
 		{
-			position[]={9739.559570,53.684998,9351.214844};
+			position[]={9750.696289,53.684998,9361.181641};
 			a=20.000000;
 			b=20.000000;
 			angle=-42.005501;
@@ -2626,8 +3028,9 @@ class Mission
 		};
 		class Item21
 		{
-			position[]={7904.000488,0.189874,11455.499023};
+			position[]={8407.264648,0.206695,11426.057617};
 			activationBy="ALPHA";
+			repeating=1;
 			age="UNKNOWN";
 			text="KUZNETSOV";
 			expActiv="player setpos getmarkerpos ""CinemaKuznetsovPlayer""";
@@ -2637,8 +3040,9 @@ class Mission
 		};
 		class Item22
 		{
-			position[]={8352.000000,0.254077,11455.498047};
+			position[]={8534.891602,0.206695,11437.280273};
 			activationBy="BRAVO";
+			repeating=1;
 			age="UNKNOWN";
 			text="BELSKY";
 			expActiv="player setpos getmarkerpos ""CinemaBelskyPlayer""";
@@ -2648,8 +3052,9 @@ class Mission
 		};
 		class Item23
 		{
-			position[]={8735.237305,0.254077,11444.855469};
+			position[]={8671.332031,0.206695,11433.079102};
 			activationBy="CHARLIE";
+			repeating=1;
 			age="UNKNOWN";
 			text="KAPLINSKY";
 			expActiv="player setpos getmarkerpos ""CinemaKaplinskyPlayer""";
@@ -2659,8 +3064,9 @@ class Mission
 		};
 		class Item24
 		{
-			position[]={8985.178711,0.401207,11452.866211};
+			position[]={8793.458008,0.206695,11441.089844};
 			activationBy="DELTA";
+			repeating=1;
 			age="UNKNOWN";
 			text="FROLOV";
 			expActiv="player setpos getmarkerpos ""CinemaFrolovPlayer""";
@@ -2670,8 +3076,9 @@ class Mission
 		};
 		class Item25
 		{
-			position[]={9154.840820,0.378973,11448.234375};
+			position[]={8923.179688,0.206695,11436.458008};
 			activationBy="ECHO";
+			repeating=1;
 			age="UNKNOWN";
 			text="ZUBAREV";
 			expActiv="player setpos getmarkerpos ""CinemaZubarevPlayer""";
@@ -2681,11 +3088,36 @@ class Mission
 		};
 		class Item26
 		{
-			position[]={9282.370117,0.194683,11463.902344};
+			position[]={9058.697266,0.206695,11440.348633};
 			activationBy="FOXTROT";
+			repeating=1;
 			age="UNKNOWN";
 			text="SYOMIN";
 			expActiv="player setpos getmarkerpos ""CinemaSyominPlayer""";
+			class Effects
+			{
+			};
+		};
+		class Item27
+		{
+			position[]={9183.194336,0.206695,11438.645508};
+			activationBy="GOLF";
+			repeating=1;
+			age="UNKNOWN";
+			text="CHERNIKOV - DOCKHAND";
+			expActiv="player setpos getmarkerpos ""CinemaDockhandPlayer""";
+			class Effects
+			{
+			};
+		};
+		class Item28
+		{
+			position[]={9297.223633,0.206695,11435.413086};
+			activationBy="HOTEL";
+			repeating=1;
+			age="UNKNOWN";
+			text="CHERNIKOV - DOSTOEVSKY";
+			expActiv="player setpos getmarkerpos ""CinemaDostoevskyPlayer""";
 			class Effects
 			{
 			};
