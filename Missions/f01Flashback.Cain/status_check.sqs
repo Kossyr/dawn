@@ -3,7 +3,7 @@ _text = ""
 _classicDialogueAmount = 2
 _eventsDialogueAmount = 3
 _amountZubarev = 0
-_amounKaplinsky = 0
+_amountKaplinsky = 0
 _amountSyomin = 0
 _amountFrolov = 0
 _amountChernikov = 0
@@ -13,17 +13,17 @@ _amountBelsky = 0
 ? metZubarevSelf : _amountZubarev = _amountZubarev + 1
 ? metZubarevForces : _amountZubarev = _amountZubarev + 1
 
-? metKaplinskySelf : _amounKaplinsky = _amounKaplinsky + 1
-? metKaplinskyForces : _amounKaplinsky = _amounKaplinsky + 1
+? metKaplinskySelf : _amountKaplinsky = _amountKaplinsky + 1
+? metKaplinskyForces : _amountKaplinsky = _amountKaplinsky + 1
 
-? metSyominSelf : _amounSyomin = _amounSyomin + 1
-? metSyominForces : _amounSyomin = _amounSyomin + 1
+? metSyominSelf : _amountSyomin = _amountSyomin + 1
+? metSyominForces : _amountSyomin = _amountSyomin + 1
 
-? metFrolovSelf : _amounFrolov = _amounFrolov + 1
-? metFrolovForces : _amounFrolov = _amounFrolov + 1
+? metFrolovSelf : _amountFrolov = _amountFrolov + 1
+? metFrolovForces : _amountFrolov = _amountFrolov + 1
 
-? metChernikovSelf : _amounChernikov = _amounChernikov + 1
-? metChernikovForces : _amounChernikov = _amounChernikov + 1
+? metChernikovSelf : _amountChernikov = _amountChernikov + 1
+? metChernikovForces : _amountChernikov = _amountChernikov + 1
 
 ? metKuznetsovEveron : _amountKuznetsov = _amountKuznetsov + 1
 ? metKuznetsovKolguyev : _amountKuznetsov = _amountKuznetsov + 1
@@ -37,10 +37,10 @@ _amountBelsky = 0
 ? metZubarev :          _text = _text + format ["Zubarev - met (%1/%2)\n", _amountZubarev, _classicDialogueAmount]
 ? not metZubarev :      _text = _text + "Zubarev - not met\n"
 
-? metKaplinsky :        _text = _text + format ["Kaplinsky - met (%1/%2)\n", _amounKaplinsky, _classicDialogueAmount]
+? metKaplinsky :        _text = _text + format ["Kaplinsky - met (%1/%2)\n", _amountKaplinsky, _classicDialogueAmount]
 ? not metKaplinsky :    _text = _text + "Kaplinsky - not met\n"
 
-? metSyomin :           _text = _text + format ["Syomin - met (%1/%2)\n", _amountSyomin _classicDialogueAmount]
+? metSyomin :           _text = _text + format ["Syomin - met (%1/%2)\n", _amountSyomin, _classicDialogueAmount]
 ? not metSyomin :       _text = _text + "Syomin - not met\n"
 
 ? metFrolov :           _text = _text + format ["Frolov - met (%1/%2)\n", _amountFrolov, _classicDialogueAmount]

@@ -3,52 +3,208 @@ setacctime 1
 cinema=true
 canMeetZubarev=false
 
+titlecut["","black out",0.5]
+~0.5
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+? (aP == vehicle aP) : goto "zubarevCinema" ;
+
+vehicle aP setpos getmarkerpos "VehicleAway"
+vehicle aP setdir 0
+
+~0.5
+
+vehicle aP setpos getmarkerpos "CinemaZubarevVehicle"
+vehicle aP setdir 150
+
+aP action ["EJECT"]
+
+#zubarevCinema
+
+aP action ["WEAPONONBACK"]
+
+aP setpos getmarkerpos "PlayerAway"
+LemontovDouble setpos getmarkerpos "CinemaZubarevPlayer"
+Zubarev setpos getmarkerpos "CinemaZubarev"
+Zubarev dowatch [9611.96,10072.84,1.66]
+
+LemontovDouble setdir 340
+LemontovDouble dowatch [9611.54,10074.33,1.66]
+LemontovDouble setmimic "angry"
+Zubarev setmimic "normal"
+
+
+~0.5
+
+setacctime 1
+
+titlecut["","black in",0.5]
+
 ? metZubarev : goto "reenter" ;
 ? not metZubarev : goto "introduction"
 
 
 ; FIRST TIME 
 #introduction
-
+;=== 11:40:33
+_camera camSetTarget [-25326.20,103671.20,-4209.71]
+_camera camSetPos [9611.85,10073.41,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Zubarev say "f01v71"
-~5
+~2
+Zubarev setmimic "surprised"
+~2
+;=== 11:43:31
+_camera camSetTarget [40323.35,-84994.29,-4209.71]
+_camera camSetPos [9611.72,10073.71,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble setmimic "normal"
 LemontovDouble say "f01v72"
-~5
+~2
+;=== 11:43:52
+_camera camSetTarget [-16391.07,105537.72,-14376.35]
+_camera camSetPos [9611.73,10073.49,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Zubarev say "f01v73"
+Zubarev setmimic "angry"
+Zubarev switchmove "FXCivilHandMouth"
 ~5
+;=== 11:50:16
+_camera camSetTarget [41133.33,-84431.84,-8537.10]
+_camera camSetPos [9611.72,10073.59,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v74"
-~5
+LemontovDouble setmimic "angry"
+~2
+;=== 11:51:06
+_camera camSetTarget [-27886.33,102258.90,-9652.28]
+_camera camSetPos [9611.87,10073.48,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Zubarev switchmove "FxShow2"
 Zubarev say "f01v75"
-~5
+~10
+;=== 11:51:18
+_camera camSetTarget [67786.52,-70670.69,-9652.49]
+_camera camSetPos [9610.79,10074.84,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v76"
-~5
+~4
+;=== 11:52:06
+_camera camSetTarget [-22435.37,104388.92,-8676.66]
+_camera camSetPos [9611.84,10073.36,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Zubarev switchmove "FXCivilLookaround2"
+Zubarev setmimic "normal"
 Zubarev say "f01v77"
 ~5
+;=== 11:52:16
+_camera camSetTarget [3583.94,-89355.39,-8676.18]
+_camera camSetPos [9611.96,10073.57,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble setmimic "sad"
 LemontovDouble say "f01v78"
-~5
+~4
+;=== 11:52:37
+_camera camSetTarget [-38624.85,97611.75,-3087.39]
+_camera camSetPos [9611.77,10073.88,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Zubarev setmimic "angry"
 Zubarev say "f01v79"
-~5
+~3
+;=== 11:52:52
+_camera camSetTarget [54408.68,-79089.26,-6443.34]
+_camera camSetPos [9611.67,10073.50,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble setmimic "angry"
 LemontovDouble say "f01v80"
-~5
+~2
+;=== 11:53:19
+_camera camSetTarget [26631.42,108395.28,-6443.11]
+_camera camSetPos [9611.43,10073.77,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Zubarev say "f01v81"
-~5
+~3
+;=== 11:53:35
+_camera camSetTarget [48341.63,-81586.63,-9791.56]
+_camera camSetPos [9611.74,10073.44,1.66]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v82"
-~5
+~3
+;=== 11:53:50
+_camera camSetTarget [-23310.71,104100.16,-8536.94]
+_camera camSetPos [9611.79,10073.54,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Zubarev switchmove "FXCivilArmsAkimboR"
 Zubarev say "f01v83"
-~5
+~3
+Zubarev setmimic "normal"
+~2
 
 ? metKaplinsky : goto "playerHasMetKaplinsky" ;
 ? not metKaplinsky : goto "playerHasNotMetKaplinsky" ;
 
 
 #playerHasMetKaplinsky
-
+;=== 11:57:53
+_camera camSetTarget [-12852.46,-87274.02,-4205.86]
+_camera camSetPos [9612.11,10073.52,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v84"
-~5
+~2
+;=== 11:57:38
+_camera camSetTarget [-53353.86,87209.99,-9094.17]
+_camera camSetPos [9612.70,10072.52,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Zubarev say "f01v85"
-~5
+~4
+;=== 11:58:08
+_camera camSetTarget [47995.04,-82042.52,-6303.00]
+_camera camSetPos [9611.71,10073.45,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v86"
-~5
+~4
+;=== 11:58:26
+_camera camSetTarget [-30026.52,101604.74,-7000.98]
+_camera camSetPos [9611.84,10073.55,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Zubarev setmimic "angry"
+Zubarev switchmove "FxShow2"
 Zubarev say "f01v87"
 ~5
 
@@ -57,35 +213,84 @@ goto "continueDialogue"
 #playerHasNotMetKaplinsky
 
 LemontovDouble say "f01v88"
-~5
+;=== 11:57:53
+_camera camSetTarget [-12852.46,-87274.02,-4205.86]
+_camera camSetPos [9612.11,10073.52,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+;=== 11:57:38
+_camera camSetTarget [-53353.86,87209.99,-9094.17]
+_camera camSetPos [9612.70,10072.52,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Zubarev say "f01v89"
 ~5
+;=== 11:59:45
+_camera camSetTarget [-2938.83,-88917.34,6708.14]
+_camera camSetPos [9612.03,10073.55,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v90"
-~5
+~6
 
 goto "continueDialogue"
 
 #continueDialogue
-
+;=== 11:58:26
+_camera camSetTarget [-30026.52,101604.74,-7000.98]
+_camera camSetPos [9611.84,10073.55,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Zubarev setmimic "angry"
+Zubarev switchmove "FXCivilArmsAkimboR"
 Zubarev say "f01v91"
-~5
+~7
 Zubarev say "f01v92"
-~5
+~8
+;=== 12:01:03
+_camera camSetTarget [77324.65,-62593.05,-11455.53]
+_camera camSetPos [9610.76,10074.78,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v93"
-~5
+~4
+;=== 12:01:18
+_camera camSetTarget [-43896.93,94419.84,-4619.82]
+_camera camSetPos [9611.76,10073.74,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Zubarev setmimic "normal"
 Zubarev say "f01v94"
-~5
+~6
+;=== 12:01:36
+_camera camSetTarget [-11919.26,-87465.28,-4619.86]
+_camera camSetPos [9612.07,10073.66,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v95"
-~5
+~3
 
 goto "dialogue"
 
 
 ; RE-ENTERING CONVERSATION
 #reenter
-
+;=== 12:01:54
+_camera camSetTarget [-23296.43,104384.27,-4619.69]
+_camera camSetPos [9611.78,10073.65,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Zubarev say "f01v111"
-~5
+~3
 
 goto "dialogue"
 

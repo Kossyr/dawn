@@ -1,4 +1,15 @@
 
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 11:40:17
+_camera camSetTarget [-36683.73,-78263.79,-7144.29]
+_camera camSetPos [9612.43,10075.09,1.42]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
 ? metZubarev : goto "shortExit" ;
 ? not metZubarev : goto "longExit" ;
 
@@ -6,25 +17,59 @@
 #longExit
 
 LemontovDouble say "f01v107"
-~5
+~4
+;=== 12:12:19
+_camera camSetTarget [-24435.00,103434.21,-11035.97]
+_camera camSetPos [9611.75,10073.66,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Zubarev say "f01v108"
-~5
-aP say "f01v109"
-~5
+~7
+;=== 12:12:30
+_camera camSetTarget [44903.03,-83231.05,-6853.43]
+_camera camSetPos [9611.71,10073.54,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f01v109"
+~4
+;=== 12:12:43
+_camera camSetTarget [-21464.71,104865.24,-6853.34]
+_camera camSetPos [9611.76,10073.66,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Zubarev setmimic "angry"
 Zubarev say "f01v110"
-~5
+~3
+
+Hint localize "STRM_HINT_ZUBAREV"
 
 goto "exitDialogue"
 
 #shortExit
 
 LemontovDouble say "f01v336"
-~5
+~4
 
 goto "exitDialogue"
 
-
 #exitDialogue
+
+LemontovDouble dowatch objNull
+LemontovDouble setdir 0
+LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
+Zubarev setmimic "normal"
+Zubarev dowatch objNull
+
+aP setpos getmarkerpos "CinemaZubarevPlayer"
+aP setdir 340
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+titletext ["","plain"]
 
 metZubarev=true
 cinema=false

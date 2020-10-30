@@ -3,33 +3,131 @@ setacctime 1
 cinema=true
 canMeetFrolov=false
 
+
+titlecut["","black out",0.5]
+~0.5
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+? (aP == vehicle aP) : goto "frolovCinema" ;
+
+vehicle aP setpos getmarkerpos "VehicleAway"
+vehicle aP setdir 0
+
+~0.5
+
+vehicle aP setpos getmarkerpos "CinemaFrolovVehicle"
+vehicle aP setdir 35
+
+aP action ["EJECT"]
+
+#frolovCinema
+
+aP action ["WEAPONONBACK"]
+
+aP setpos getmarkerpos "PlayerAway"
+LemontovDouble setpos getmarkerpos "CinemaFrolovPlayer"
+Frolov setpos getmarkerpos "CinemaFrolov"
+Frolov dowatch [8553.84,9292.20,1.69]
+
+LemontovDouble setdir 290
+LemontovDouble dowatch [8551.83,9292.44,1.62]
+LemontovDouble setmimic "angry"
+Frolov setmimic "normal"
+
+
+~0.5
+
+setacctime 1
+
+titlecut["","black in",0.5]
+
+
 ? metFrolov : goto "reenter" ;
 ? not metFrolov : goto "introduction"
 
 
 ; FIRST TIME 
 #introduction
-
+;=== 10:35:43
+_camera camSetTarget [-89969.17,25936.18,-3954.51]
+_camera camSetPos [8552.77,9292.24,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Frolov say "f01v164"
-~5
-aP say "f01v165"
-~5
+Frolov setmimic "surprised"
+~4
+Frolov setmimic "smile"
+~2
+;=== 10:36:02
+_camera camSetTarget [108173.79,13102.60,-7726.25]
+_camera camSetPos [8553.06,9292.22,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f01v165"
+~4
+;=== 10:36:19
+_camera camSetTarget [-87841.97,-14589.32,-11626.47]
+_camera camSetPos [8554.29,9292.61,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Frolov setmimic "normal"
 Frolov say "f01v166"
-~5
+Frolov switchmove "FXCivilArmsAkimboL"
+~6
+;=== 10:36:36
+_camera camSetTarget [-89903.97,25215.68,-7167.09]
+_camera camSetPos [8552.35,9292.32,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Frolov setmimic "sad"
 Frolov say "f01v167"
-~5
-aP say "f01v168"
-~5
+~7
+;=== 10:36:50
+_camera camSetTarget [105484.91,30161.96,-12876.81]
+_camera camSetPos [8551.20,9291.96,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f01v168"
+~3
+;=== 10:37:14
+_camera camSetTarget [-89716.59,22511.75,-12876.86]
+_camera camSetPos [8552.73,9292.29,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Frolov setmimic "normal"
+Frolov switchmove "FXCivilLookaround2"
 Frolov say "f01v169"
 ~5
+Frolov switchmove "FxShow2"
 Frolov say "f01v170"
 ~5
 Frolov say "f01v171"
 ~5
-aP say "f01v172"
-~5
+;=== 10:37:26
+_camera camSetTarget [108268.34,9221.52,-7446.54]
+_camera camSetPos [8553.06,9292.21,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f01v172"
+~2
+;=== 10:39:57
+_camera camSetTarget [-90254.67,21628.30,-9118.34]
+_camera camSetPos [8552.62,9292.30,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Frolov setmimic "smile"
 Frolov say "f01v173"
-~5
+~3
 
 
 goto "dialogue"
@@ -37,9 +135,14 @@ goto "dialogue"
 
 ; RE-ENTERING CONVERSATION
 #reenter
-
+;=== 10:42:13
+_camera camSetTarget [-90254.67,21628.30,-9118.15]
+_camera camSetPos [8552.62,9292.30,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Frolov say "f01v290"
-~5
+~3
 
 goto "dialogue"
 

@@ -1,4 +1,14 @@
 
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 10:42:47
+_camera camSetTarget [81850.04,77159.28,-4510.27]
+_camera camSetPos [8551.20,9291.27,1.43]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
 ? metFrolov : goto "shortExit" ;
 ? not metFrolov : goto "longExit" ;
 
@@ -7,20 +17,42 @@
 
 LemontovDouble say "f01v188"
 ~5
+;=== 10:46:18
+_camera camSetTarget [-90192.75,18088.47,-13013.62]
+_camera camSetPos [8553.15,9292.27,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Frolov say "f01v189"
-~5
+~4
+
+Hint localize "STRM_HINT_FROLOV"
 
 goto "exitDialogue"
 
 #shortExit
 
 LemontovDouble say "f01v336"
-~5
+~4
 
 goto "exitDialogue"
 
 
 #exitDialogue
+
+LemontovDouble dowatch objNull
+LemontovDouble setdir 0
+LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
+Frolov setmimic "normal"
+Frolov dowatch objNull
+
+aP setpos getmarkerpos "CinemaFrolovPlayer"
+aP setdir 290
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+titletext ["","plain"]
 
 metFrolov=true
 cinema=false
