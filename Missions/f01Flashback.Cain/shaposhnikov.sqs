@@ -1,3 +1,6 @@
+
+~1
+
 setacctime 1
 
 [aP] join grpnull
@@ -93,6 +96,32 @@ Shaposhnikov say "f01v69"
 LemontovDouble say "f01v70"
 ~5
 
+; END
+
+deletevehicle Shaposhnikov
+LemontovDouble dowatch objNull
+LemontovDouble setdir 0
+LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
+
+Shaposhnikov2 setpos getmarkerpos "CinemaShaposhnikov2"
+Shaposhnikov2 setspeedmode "full"
+Shaposhnikov2 move getmarkerpos "CinemaShaposhnikov3"
+
+aP setpos getmarkerpos "CinemaShaposhnikovPlayer2"
+aP setdir 180
+
+~0.5
+
+savegame
+
+~1
+
+playsound "f01v362"
+
+~1.5
+
+Hint localize "STRM_HINT_MEETINGS"
+
 player addaction [localize "STRM_ACTION", "status_check.sqs"]
 "Chernikov1" setmarkertype "Unknown"
 "Shaposhnikov" setmarkertype "Marker"
@@ -102,5 +131,7 @@ player addaction [localize "STRM_ACTION", "status_check.sqs"]
 "Belsky" setmarkertype "Marker"
 "Kuznetsov" setmarkertype "Marker"
 "Syomin" setmarkertype "Marker"
+
+
 
 exit

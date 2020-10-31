@@ -1,0 +1,77 @@
+~1
+
+setacctime 1
+
+Shaposhnikov2 say "f01v313"
+~5
+
+_enoughInformation = metChernikovForces and metSyominForces and metFrolovForces and metZubarevForces
+
+? _enoughInformation : goto "enoughInformation" ;
+? not _enoughInformation : goto "notEnoughInformation" ;
+
+#enoughInformation
+LemontovDouble say "f01v314"
+~5
+LemontovDouble say "f01v315"
+~5
+LemontovDouble say "f01v316"
+~5
+LemontovDouble say "f01v317"
+~5
+LemontovDouble say "f01v318"
+~5
+LemontovDouble say "f01v319"
+~5
+Shaposhnikov2 say "f01v320"
+~5
+
+goto "continueConversation"
+
+#notEnoughInformation
+LemontovDouble say "f01v321"
+~5
+Shaposhnikov2 say "f01v322"
+~5
+LemontovDouble say "f01v323"
+~5
+LemontovDouble say "f01v324"
+~5
+Shaposhnikov2 say "f01v325"
+~5
+LemontovDouble say "f01v326"
+~5
+Shaposhnikov2 say "f01v327"
+~5
+
+goto "continueConversation"
+
+#continueConversation
+
+LemontovDouble say "f01v328"
+~5
+Shaposhnikov2 say "f01v329"
+~5
+LemontovDouble say "f01v330"
+~5
+Shaposhnikov2 say "f01v331"
+~5
+LemontovDouble say "f01v332"
+~5
+Shaposhnikov2 say "f01v333"
+~5
+Shaposhnikov2 say "f01v334"
+~5
+LemontovDouble say "f01v335"
+~5
+Shaposhnikov2 say "f01v336"
+~5
+LemontovDouble say "f01v337"
+~5
+
+LemontovGarb setpos getmarkerpos "LemontovGarb"
+dayDone=true
+
+Hint localize "STRM_HINT_TENT"
+
+exit

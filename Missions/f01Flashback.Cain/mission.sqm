@@ -21,7 +21,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=24;
+		items=26;
 		class Item0
 		{
 			side="EAST";
@@ -68,7 +68,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={11356.511719,106.690880,10494.544922};
+					position[]={11360.847656,106.715767,10494.970703};
 					type="GETOUT";
 					description="@STRM_WAYPOINT_SEVEROVODSK";
 					class Effects
@@ -586,10 +586,52 @@ class Mission
 				};
 			};
 		};
+		class Item24
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5009.041992,12.464999,10092.196289};
+					azimut=105.000000;
+					id=190;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.600000;
+					text="Shaposhnikov2";
+					init="this setidentity ""Shaposhnikov""; this setbehaviour ""safe""; this removeweapon ""binocular""";
+				};
+			};
+		};
+		class Item25
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4954.136719,12.576683,10101.624023};
+					azimut=180.000000;
+					id=191;
+					side="EAST";
+					vehicle="SoldierESaboteurPipe";
+					leader=1;
+					rank="MAJOR";
+					skill=0.600000;
+					text="LemontovDouble2";
+					init="this setidentity ""Lemontov""; this setbehaviour ""safe""; removeallweapons this; this addweapon ""svddragunov""";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=154;
+		items=181;
 		class Item0
 		{
 			position[]={2157.138916,124.604996,7340.265625};
@@ -2144,10 +2186,282 @@ class Mission
 			leader=1;
 			skill=0.600000;
 		};
+		class Item154
+		{
+			position[]={11346.840820,106.850761,10544.575195};
+			azimut=255.000000;
+			id=178;
+			side="EMPTY";
+			vehicle="Ural";
+			skill=0.600000;
+		};
+		class Item155
+		{
+			position[]={11348.289063,106.923752,10538.339844};
+			azimut=215.000000;
+			id=179;
+			side="EMPTY";
+			vehicle="Ural";
+			skill=0.600000;
+		};
+		class Item156
+		{
+			position[]={11348.188477,106.918678,10509.786133};
+			azimut=75.000000;
+			id=180;
+			side="EMPTY";
+			vehicle="UAZ";
+			skill=0.600000;
+		};
+		class Item157
+		{
+			position[]={11351.613281,107.009995,10503.389648};
+			azimut=60.000000;
+			id=181;
+			side="EMPTY";
+			vehicle="UAZ";
+			skill=0.600000;
+		};
+		class Item158
+		{
+			position[]={11353.893555,107.009995,10531.364258};
+			azimut=90.748161;
+			id=182;
+			side="EMPTY";
+			vehicle="Shed";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item159
+		{
+			position[]={11355.958984,107.009995,10532.022461};
+			azimut=138.214798;
+			id=183;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item160
+		{
+			position[]={11357.089844,107.009995,10527.968750};
+			azimut=39.572571;
+			id=184;
+			side="EMPTY";
+			vehicle="Barrel1";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item161
+		{
+			position[]={11355.779297,107.009995,10528.036133};
+			azimut=34.572784;
+			id=185;
+			side="EMPTY";
+			vehicle="Barrel2";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item162
+		{
+			position[]={11354.038086,107.009995,10530.757813};
+			azimut=162.225998;
+			id=186;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item163
+		{
+			position[]={11356.641602,107.009995,10530.335938};
+			azimut=126.387871;
+			id=187;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item164
+		{
+			position[]={11353.733398,107.009995,10528.432617};
+			azimut=280.000000;
+			id=188;
+			side="EMPTY";
+			vehicle="ReammoBoxEast";
+			leader=1;
+			skill=0.600000;
+			init="clearmagazinecargo this; clearweaponcargo this";
+		};
+		class Item165
+		{
+			position[]={11352.637695,107.009995,10530.909180};
+			azimut=100.000000;
+			id=189;
+			side="EMPTY";
+			vehicle="Paleta2";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item166
+		{
+			position[]={11407.348633,107.026711,10541.658203};
+			azimut=0.737095;
+			id=192;
+			side="EMPTY";
+			vehicle="Table";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item167
+		{
+			position[]={11407.510742,107.026016,10541.632813};
+			azimut=180.737015;
+			id=193;
+			side="EMPTY";
+			vehicle="Vysilacka";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+1]";
+		};
+		class Item168
+		{
+			position[]={11408.319336,107.022537,10541.472656};
+			azimut=180.000000;
+			id=194;
+			side="EMPTY";
+			vehicle="Chair";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item169
+		{
+			position[]={11441.166016,106.818977,10509.913086};
+			azimut=10.000000;
+			id=195;
+			side="EMPTY";
+			vehicle="Table";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item170
+		{
+			position[]={11439.891602,106.823700,10509.996094};
+			azimut=340.000000;
+			id=196;
+			side="EMPTY";
+			vehicle="Chair";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item171
+		{
+			position[]={11441.274414,106.813309,10509.013672};
+			azimut=205.000000;
+			id=197;
+			side="EMPTY";
+			vehicle="Chair";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item172
+		{
+			position[]={11439.635742,106.821823,10505.541016};
+			azimut=15.609053;
+			id=198;
+			side="EMPTY";
+			vehicle="Chair";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item173
+		{
+			position[]={11440.451172,106.816681,10505.321289};
+			azimut=-164.390884;
+			id=199;
+			side="EMPTY";
+			vehicle="Table";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item174
+		{
+			position[]={11440.384766,106.817101,10505.439453};
+			azimut=15.609100;
+			id=200;
+			side="EMPTY";
+			vehicle="Vysilacka";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+1]";
+		};
+		class Item175
+		{
+			position[]={11437.078125,106.837936,10506.238281};
+			azimut=15.272002;
+			id=201;
+			side="EMPTY";
+			vehicle="Table";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item176
+		{
+			position[]={11437.226563,106.836998,10506.170898};
+			azimut=195.271973;
+			id=202;
+			side="EMPTY";
+			vehicle="Vysilacka";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+1]";
+		};
+		class Item177
+		{
+			position[]={11438.069336,106.831688,10505.955078};
+			azimut=195.000000;
+			id=203;
+			side="EMPTY";
+			vehicle="Chair";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item178
+		{
+			position[]={11412.094727,107.020470,10541.895508};
+			azimut=15.000000;
+			id=204;
+			side="EMPTY";
+			vehicle="Barrel2";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item179
+		{
+			position[]={11412.198242,107.015221,10541.062500};
+			azimut=355.000000;
+			id=205;
+			side="EMPTY";
+			vehicle="Barrel2";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item180
+		{
+			position[]={4923.220215,15.974999,10184.177734};
+			azimut=90.000000;
+			id=206;
+			side="EMPTY";
+			vehicle="HeavyReammoBoxEast";
+			leader=1;
+			skill=0.600000;
+			text="LemontovGarb";
+			init="clearweaponcargo this; clearmagazinecargo this";
+		};
 	};
 	class Markers
 	{
-		items=66;
+		items=73;
 		class Item0
 		{
 			position[]={9487.954102,20.474998,8602.314453};
@@ -2653,10 +2967,52 @@ class Mission
 			name="CinemaChernikovVehicle";
 			type="Empty";
 		};
+		class Item66
+		{
+			position[]={11409.857422,106.947891,10529.189453};
+			name="CinemaShaposhnikov2";
+			type="Empty";
+		};
+		class Item67
+		{
+			position[]={11410.458984,107.019264,10540.687500};
+			name="CinemaShaposhnikov";
+			type="Empty";
+		};
+		class Item68
+		{
+			position[]={11409.069336,107.333260,10539.110352};
+			name="CinemaShaposhnikovPlayer";
+			type="Empty";
+		};
+		class Item69
+		{
+			position[]={11409.855469,106.947906,10533.786133};
+			name="CinemaShaposhnikovPlayer2";
+			type="Empty";
+		};
+		class Item70
+		{
+			position[]={11440.617188,106.754105,10507.632813};
+			name="CinemaShaposhnikov3";
+			type="Empty";
+		};
+		class Item71
+		{
+			position[]={11438.238281,106.769096,10508.106445};
+			name="CinemaShaposhnikovPlayer3";
+			type="Empty";
+		};
+		class Item72
+		{
+			position[]={11410.238281,107.327507,10539.810547};
+			name="LemontovGarb";
+			type="Empty";
+		};
 	};
 	class Sensors
 	{
-		items=30;
+		items=34;
 		class Item0
 		{
 			position[]={2202.633789,124.604996,7349.282715};
@@ -2713,7 +3069,7 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={11355.552734,106.717430,10494.999023};
+			position[]={11357.287109,106.686234,10494.465820};
 			a=8.000000;
 			b=8.000000;
 			rectangular=1;
@@ -3105,6 +3461,61 @@ class Mission
 			age="UNKNOWN";
 			text="CHERNIKOV";
 			expActiv="player setpos getmarkerpos ""CinemaChernikovPlayer""";
+			class Effects
+			{
+			};
+		};
+		class Item30
+		{
+			position[]={7833.859863,1.793269,10516.965820};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			expCond="metZubarev and metKaplinsky and metSyomin and metChernikov and metFrolov";
+			expActiv="[] exec ""meetings.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item31
+		{
+			position[]={11439.614258,106.820198,10507.751953};
+			a=3.000000;
+			b=3.000000;
+			angle=-75.413300;
+			rectangular=1;
+			activationBy="VEHICLE";
+			age="UNKNOWN";
+			idVehicle=19;
+			expCond="this and meetingsDone";
+			expActiv="[] exec ""shaposhnikov_final.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item32
+		{
+			position[]={11409.854492,107.327034,10539.694336};
+			a=3.000000;
+			b=3.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			age="UNKNOWN";
+			idVehicle=19;
+			expCond="this and dayDone";
+			expActiv="[] exec ""volkov.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item33
+		{
+			position[]={7849.394531,-49.955761,10255.798828};
+			a=0.000000;
+			b=0.000000;
+			type="END1";
+			age="UNKNOWN";
+			expCond="end";
 			class Effects
 			{
 			};
