@@ -1,9 +1,59 @@
 ~1
 
+titlecut["","black out",0.5]
+~0.5
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+? (aP == vehicle aP) : goto "shaposhnikovFinalCinema" ;
+
+vehicle aP setpos getmarkerpos "VehicleAway"
+vehicle aP setdir 0
+
+~0.5
+
+vehicle aP setpos getmarkerpos "CinemaShaposhnikovVehicle"
+vehicle aP setdir 180
+
+aP action ["EJECT"]
+
+#shaposhnikovFinalCinema
+
+aP action ["WEAPONONBACK"]
+
+aP setpos getmarkerpos "PlayerAway"
+LemontovDouble setpos getmarkerpos "CinemaShaposhnikovPlayer3"
+Shaposhnikov setpos getmarkerpos "CinemaShaposhnikov3"
+Shaposhnikov setdir 285
+Shaposhnikov dowatch [11438.82,10508.04,1.70]
+
+
+
+LemontovDouble setdir 100
+LemontovDouble dowatch [11440.66,10507.57,1.64]
+
+
+
+LemontovDouble setmimic "angry"
+Shaposhnikov setmimic "normal"
+
+~0.5
+
 setacctime 1
 
-Shaposhnikov2 say "f01v313"
-~5
+titlecut["","black in",0.5]
+
+
+;=== 9:59:41
+_camera camSetTarget [108635.73,-9367.17,-12458.23]
+_camera camSetPos [11439.65,10507.78,1.65]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Shaposhnikov switchmove "FxShow2"
+Shaposhnikov say "f01v313"
+~4
 
 _enoughInformation = metChernikovForces and metSyominForces and metFrolovForces and metZubarevForces
 
@@ -11,67 +61,237 @@ _enoughInformation = metChernikovForces and metSyominForces and metFrolovForces 
 ? not _enoughInformation : goto "notEnoughInformation" ;
 
 #enoughInformation
+
+;=== 10:01:45
+_camera camSetTarget [-85665.11,34386.54,-589.81]
+_camera camSetPos [11439.62,10507.83,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble playmove "effectstandtalk"
 LemontovDouble say "f01v314"
-~5
+~3
 LemontovDouble say "f01v315"
-~5
+~8
+;=== 10:02:13
+_camera camSetTarget [-88069.97,6636.84,-8977.51]
+_camera camSetPos [11441.19,10507.94,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v316"
-~5
+~8
+;=== 10:02:48
+_camera camSetTarget [-85665.20,34386.29,-590.18]
+_camera camSetPos [11439.54,10507.84,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v317"
-~5
+~8
 LemontovDouble say "f01v318"
-~5
+~8
+;=== 10:03:32
+_camera camSetTarget [-67617.15,71418.75,-6185.86]
+_camera camSetPos [11440.77,10507.08,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble switchmove "FxShow2"
 LemontovDouble say "f01v319"
-~5
-Shaposhnikov2 say "f01v320"
-~5
+~8
+;=== 10:04:19
+_camera camSetTarget [108602.41,-13051.33,-1989.73]
+_camera camSetPos [11439.83,10507.78,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Shaposhnikov say "f01v320"
+~6
 
 goto "continueConversation"
 
 #notEnoughInformation
+
+;=== 10:05:34
+_camera camSetTarget [-85299.22,35211.61,5706.95]
+_camera camSetPos [11439.34,10507.90,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble setmimic "sad"
 LemontovDouble say "f01v321"
+~3
+;=== 10:08:48
+_camera camSetTarget [108032.41,-14879.30,5147.96]
+_camera camSetPos [11439.98,10507.76,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Shaposhnikov setmimic "surprised"
+Shaposhnikov say "f01v322"
 ~5
-Shaposhnikov2 say "f01v322"
-~5
+;=== 10:09:05
+_camera camSetTarget [-88489.05,8860.58,-3247.98]
+_camera camSetPos [11441.04,10507.85,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble setmimic "angry"
 LemontovDouble say "f01v323"
-~5
+~9
 LemontovDouble say "f01v324"
-~5
-Shaposhnikov2 say "f01v325"
-~5
+~8
+;=== 10:09:17
+_camera camSetTarget [109085.16,-10479.13,5104.27]
+_camera camSetPos [11439.93,10507.74,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Shaposhnikov setmimic "normal"
+Shaposhnikov say "f01v325"
+~9
+;=== 10:09:37
+_camera camSetTarget [-85858.47,32986.13,5385.40]
+_camera camSetPos [11439.44,10507.89,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v326"
-~5
-Shaposhnikov2 say "f01v327"
-~5
+~7
+;=== 10:09:50
+_camera camSetTarget [107376.14,-17537.09,-3008.30]
+_camera camSetPos [11439.85,10507.81,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Shaposhnikov say "f01v327"
+~2.5
 
 goto "continueConversation"
 
 #continueConversation
 
+;=== 10:38:22
+_camera camSetTarget [-84708.16,37721.54,3991.05]
+_camera camSetPos [11439.32,10507.88,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v328"
+~10
+;=== 10:38:45
+_camera camSetTarget [111162.85,11767.91,-7198.70]
+_camera camSetPos [11438.10,10507.76,1.63]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Shaposhnikov setmimic "surprised"
+Shaposhnikov say "f01v329"
 ~5
-Shaposhnikov2 say "f01v329"
-~5
+;=== 10:39:01
+_camera camSetTarget [-85727.20,34075.92,1894.64]
+_camera camSetPos [11439.44,10507.89,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v330"
+~7
+;=== 10:39:18
+_camera camSetTarget [108639.50,-12923.51,1894.64]
+_camera camSetPos [11439.92,10507.77,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Shaposhnikov setmimic "sad"
+Shaposhnikov say "f01v331"
 ~5
-Shaposhnikov2 say "f01v331"
-~5
+;=== 10:39:47
+_camera camSetTarget [-66996.64,71998.99,-8035.40]
+_camera camSetPos [11440.88,10506.98,1.65]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v332"
-~5
-Shaposhnikov2 say "f01v333"
-~5
-Shaposhnikov2 say "f01v334"
-~5
+~6
+;=== 10:40:02
+_camera camSetTarget [108234.58,-13250.74,-8035.49]
+_camera camSetPos [11439.77,10507.81,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Shaposhnikov switchmove "FXCivilArmsAkimboR"
+Shaposhnikov setmimic "normal"
+Shaposhnikov say "f01v333"
+~8
+;=== 10:40:47
+_camera camSetTarget [92306.64,-47749.71,-8035.45]
+_camera camSetPos [11438.50,10508.62,1.63]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Shaposhnikov switchmove "FxShow2"
+Shaposhnikov say "f01v334"
+~9
+;=== 10:41:00
+_camera camSetTarget [-86551.80,30096.35,3854.94]
+_camera camSetPos [11439.29,10507.92,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v335"
-~5
-Shaposhnikov2 say "f01v336"
-~5
+~3
+;=== 10:41:10
+_camera camSetTarget [107352.02,-17789.17,495.74]
+_camera camSetPos [11439.91,10507.79,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Shaposhnikov setmimic "smile"
+Shaposhnikov say "f01v336"
+~2
+Shaposhnikov setmimic "normal"
+~2
+;=== 10:41:35
+_camera camSetTarget [-85838.39,33224.29,4692.57]
+_camera camSetPos [11439.32,10507.91,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 LemontovDouble say "f01v337"
-~5
+~3
+
+titlecut["","black out",0.5]
+~0.5
+titletext["","plain"]
+
+LemontovDouble dowatch objNull
+LemontovDouble setdir 0
+LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
+
+Shaposhnikov switchmove ""
+
+aP setpos getmarkerpos "CinemaShaposhnikovPlayer3"
+aP setdir 100
 
 LemontovGarb setpos getmarkerpos "LemontovGarb"
 dayDone=true
 
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+titlecut["","black in",0.5]
+
+~0.5
+
 Hint localize "STRM_HINT_TENT"
+
+~1
+
+Shaposhnikov dowatch [11440.37,10505.48,1.28]
+
+~3
+
+savegame
 
 exit

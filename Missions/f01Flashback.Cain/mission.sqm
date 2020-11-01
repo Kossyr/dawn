@@ -23,7 +23,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=28;
+		items=29;
 		class Item0
 		{
 			side="EAST";
@@ -670,6 +670,24 @@ class Mission
 					skill=0.600000;
 					text="Spetsnaz1";
 					init="this setbehaviour ""safe""";
+				};
+			};
+		};
+		class Item28
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11430.992188,106.814743,10508.070313};
+					id=222;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.600000;
+					init=" cheat=true; [] exec ""shaposhnikov_final.sqs""";
 				};
 			};
 		};
@@ -2626,7 +2644,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=74;
+		items=75;
 		class Item0
 		{
 			position[]={9487.954102,20.474998,8602.314453};
@@ -3164,7 +3182,7 @@ class Mission
 		};
 		class Item71
 		{
-			position[]={11438.238281,106.769096,10508.106445};
+			position[]={11438.750000,106.827385,10508.059570};
 			name="CinemaShaposhnikovPlayer3";
 			type="Empty";
 		};
@@ -3178,6 +3196,12 @@ class Mission
 		{
 			position[]={11837.962891,2.140161,10592.505859};
 			name="CinemaChernikov2";
+			type="Empty";
+		};
+		class Item74
+		{
+			position[]={11397.617188,107.009995,10522.681641};
+			name="CinemaShaposhnikovVehicle";
 			type="Empty";
 		};
 	};
@@ -3720,7 +3744,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="cheat";
-			expActiv="unassignvehicle Shaposhnikov; Shaposhnikov setpos getmarkerpos ""CinemaShaposhnikov""";
+			expActiv="unassignvehicle Shaposhnikov";
 			class Effects
 			{
 			};
