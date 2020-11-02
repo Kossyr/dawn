@@ -1,3 +1,5 @@
+goto "skip"
+
 ~1
 
 setacctime 1
@@ -8,6 +10,8 @@ playsound "f01v364"
 
 titlecut["","black out",3]
 ~3
+
+#skip
 
 ; _camera = "camera" camcreate [0,0,0]
 ; _camera cameraeffect ["internal","back"]
@@ -21,18 +25,54 @@ LemontovDouble2 setmimic "angry"
 
 titlecut["","black in",0.5]
 
+exit
+
+;=== 22:05:25
+_camera camSetTarget [50965.88,-78979.95,20744.09]
+_camera camSetPos [11418.77,10518.74,5.35]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
 ~2
+
 
 _i = 0
 
-#hod
+#daySkip
 
 ~0.03
+skipTime 0.054
+_i = _i + 1
+
+? _i < 140 : goto "daySkip"
+
+_i = 0
+
+skipTime 12.5
+
+_i = 0
+
+#nightSkip
+~0.03
+skipTime 0.036
+_i = _i + 1
+
+? _i < 35 : goto "nightSkip"
+
+
+_i = 0
+
+#morningSkip
+~0.03
 skipTime 0.018
-_i = _i + 1 
+_i = _i + 1
 
-? _i < 90 : goto "hod"
+? _i < 90 : goto "morningSkip"
 
-end=true
+~2
+
+
+
 
 exit
