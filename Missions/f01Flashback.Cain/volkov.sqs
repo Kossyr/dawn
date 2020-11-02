@@ -6,6 +6,33 @@ playsound "f01v364"
 
 ~4
 
-; TODO
+titlecut["","black out",3]
+~3
+
+; _camera = "camera" camcreate [0,0,0]
+; _camera cameraeffect ["internal","back"]
+
+aP setpos getmarkerpos "PlayerAway"
+
+LemontovDouble2 setpos getmarkerpos "CinemaVolkovPlayer"
+LemontovDouble2 setmimic "angry"
+
+
+
+titlecut["","black in",0.5]
+
+~2
+
+_i = 0
+
+#hod
+
+~0.03
+skipTime 0.018
+_i = _i + 1 
+
+? _i < 90 : goto "hod"
+
+end=true
 
 exit
