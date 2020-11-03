@@ -23,7 +23,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=29;
+		items=31;
 		class Item0
 		{
 			side="EAST";
@@ -52,7 +52,7 @@ class Mission
 					type="HOLD";
 					speed="FULL";
 					combat="SAFE";
-					synchronizations[]={0,4};
+					synchronizations[]={0};
 					class Effects
 					{
 					};
@@ -63,7 +63,6 @@ class Mission
 					position[]={2157.138916,124.604996,7340.265625};
 					id=0;
 					type="GETIN";
-					synchronizations[]={3};
 					class Effects
 					{
 					};
@@ -74,7 +73,6 @@ class Mission
 					position[]={11360.847656,106.715767,10494.970703};
 					type="GETOUT";
 					description="@STRM_WAYPOINT_SEVEROVODSK";
-					synchronizations[]={2};
 					class Effects
 					{
 					};
@@ -84,7 +82,7 @@ class Mission
 				{
 					position[]={11409.948242,106.947319,10535.827148};
 					type="HOLD";
-					synchronizations[]={1,5};
+					synchronizations[]={1};
 					class Effects
 					{
 					};
@@ -661,13 +659,13 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11416.028320,106.909019,10523.573242};
+					position[]={11463.052734,106.920349,10688.822266};
 					id=221;
 					side="LOGIC";
 					vehicle="Logic";
 					leader=1;
 					skill=0.600000;
-					init="this exec ""camera.sqs""; [] exec ""volkov.sqs""";
+					init="[] exec  ""volkov.sqs""";
 				};
 			};
 		};
@@ -691,10 +689,52 @@ class Mission
 				};
 			};
 		};
+		class Item29
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4930.300293,15.974999,10159.222656};
+					azimut=90.000000;
+					id=232;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					rank="COLONEL";
+					skill=0.600000;
+					text="Volkov";
+					init="this setidentity ""Volkov""; this setbehaviour ""safe""; removeallweapons this";
+				};
+			};
+		};
+		class Item30
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4931.494629,15.974999,10159.186523};
+					azimut=270.000000;
+					id=233;
+					side="EAST";
+					vehicle="SoldierEMG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.600000;
+					text="VolkovFriend";
+					init="this setbehaviour ""safE""";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=203;
+		items=210;
 		class Item0
 		{
 			position[]={2157.138916,124.604996,7340.265625};
@@ -2542,7 +2582,7 @@ class Mission
 		};
 		class Item183
 		{
-			position[]={11463.724609,106.843224,10686.658203};
+			position[]={11455.393555,106.968239,10687.224609};
 			id=208;
 			side="EMPTY";
 			vehicle="FlagCarrier";
@@ -2730,10 +2770,71 @@ class Mission
 			leader=1;
 			skill=0.600000;
 		};
+		class Item203
+		{
+			position[]={11455.248047,107.165558,10702.809570};
+			id=234;
+			side="EMPTY";
+			vehicle="Barrels";
+			skill=0.600000;
+		};
+		class Item204
+		{
+			position[]={11453.840820,107.109062,10701.553711};
+			id=235;
+			side="EMPTY";
+			vehicle="Barrels";
+			skill=0.600000;
+		};
+		class Item205
+		{
+			position[]={11455.825195,107.509323,10700.330078};
+			azimut=270.000000;
+			id=236;
+			side="EMPTY";
+			vehicle="Paleta2";
+			skill=0.600000;
+		};
+		class Item206
+		{
+			position[]={11400.864258,107.009995,10600.287109};
+			azimut=270.000000;
+			id=237;
+			side="EMPTY";
+			vehicle="Shed";
+			skill=0.600000;
+		};
+		class Item207
+		{
+			position[]={11401.666016,107.009995,10603.389648};
+			azimut=95.000000;
+			id=238;
+			side="EMPTY";
+			vehicle="UAZ";
+			skill=0.600000;
+		};
+		class Item208
+		{
+			position[]={11397.546875,107.009995,10599.932617};
+			azimut=350.000000;
+			id=239;
+			side="EMPTY";
+			vehicle="Barrels";
+			skill=0.600000;
+		};
+		class Item209
+		{
+			position[]={11399.719727,107.591415,10598.884766};
+			azimut=255.000000;
+			id=240;
+			side="EMPTY";
+			vehicle="Paleta2";
+			skill=0.600000;
+		};
 	};
 	class Markers
 	{
-		items=77;
+		items=83;
 		class Item0
 		{
 			position[]={9487.954102,20.474998,8602.314453};
@@ -3301,14 +3402,50 @@ class Mission
 		};
 		class Item76
 		{
-			position[]={11401.465820,107.000763,10534.236328};
+			position[]={11401.303711,107.001785,10533.938477};
 			name="CinemaVolkovAide";
+			type="Empty";
+		};
+		class Item77
+		{
+			position[]={11407.570313,106.962303,10533.718750};
+			name="CinemaVolkovAide2";
+			type="Empty";
+		};
+		class Item78
+		{
+			position[]={11464.169922,106.966995,10692.209961};
+			name="CinemaVolkov";
+			type="Empty";
+		};
+		class Item79
+		{
+			position[]={11465.402344,106.935188,10692.210938};
+			name="CinemaVolkovFriend";
+			type="Empty";
+		};
+		class Item80
+		{
+			position[]={11464.655273,106.506348,10670.585938};
+			name="CinemaVolkovFriend2";
+			type="Empty";
+		};
+		class Item81
+		{
+			position[]={11462.875977,106.969376,10690.817383};
+			name="CinemaVolkovPlayer3";
+			type="Empty";
+		};
+		class Item82
+		{
+			position[]={11460.847656,106.725105,10678.882813};
+			name="CinemaVolkovPlayer2";
 			type="Empty";
 		};
 	};
 	class Sensors
 	{
-		items=36;
+		items=35;
 		class Item0
 		{
 			position[]={2202.633789,124.604996,7349.282715};
@@ -3838,18 +3975,6 @@ class Mission
 			{
 			};
 			synchronizations[]={1};
-		};
-		class Item35
-		{
-			position[]={9876.417969,0.579965,10881.607422};
-			type="SWITCH";
-			age="UNKNOWN";
-			expCond="cheat";
-			expActiv="unassignvehicle Shaposhnikov";
-			class Effects
-			{
-			};
-			synchronizations[]={2,3,4,5};
 		};
 	};
 };
