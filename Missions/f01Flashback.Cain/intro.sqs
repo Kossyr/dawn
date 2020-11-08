@@ -7,7 +7,7 @@ _camera cameraeffect ["internal","back"]
 
 playmusic "Track8"
 
-Helicopter flyinheight 30
+; Helicopter flyinheight 30
 
 Spy1 disableAI "autotarget"
 Spy2 disableAI "autotarget"
@@ -177,7 +177,7 @@ _camera camSetFOV 0.700
 _camera camCommit 4
 @camCommitted _camera
 [_camera,Helicopter,[0,0,-1.5],Shaposhnikov,[0,5,-1.5],0.7] exec "logiccam.sqs"
-~5
+~4
 startglcam=false
 player cameraEffect ["terminate","back"]
 camDestroy _camera
@@ -193,15 +193,16 @@ _camera camCommit 0
 _camera camSetTarget Helicopter
 _camera camSetPos [2199.75,7339.53,1.23]
 _camera camSetFOV 0.700
-_camera camCommit 7
+_camera camCommit 5
 @camCommitted _camera
 [_camera,Helicopter,[0,3,1.7],Helicopter,[180,0,1.7],0.7] exec "logiccam.sqs"
-~5
+~4
 startglcam=false
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 _camera = "camera" camcreate [2193.60,7413.17,7.45]
 _camera cameraeffect ["internal","back"]
+goto "skipThisCamera"
 ;=== 19:34:54
 _camera camSetTarget Helicopter
 _camera camSetPos [2211.81,7408.62,5.59]
@@ -214,7 +215,9 @@ _camera camSetPos [2222.49,7383.16,3.45]
 _camera camSetFOV 0.700
 _camera camCommit 5
 @camCommitted _camera
+#skipThisCamera
 Helicopter setpos [2203.96,7385.65,2.04]
+goto "skipThisOneToo"
 ;=== 19:35:54
 _camera camSetTarget Helicopter
 _camera camSetPos [2204.21,7393.71,2.00]
@@ -228,6 +231,7 @@ _camera camSetFOV 0.700
 _camera camCommit 6
 @camCommitted _camera
 ~3
+#skipThisOneToo
 ;=== 19:38:10
 _camera camSetTarget Helicopter
 _camera camSetPos [2213.90,7364.13,1.56]
@@ -529,7 +533,7 @@ _camera camCommit 0
 @camCommitted _camera
 ~1.5
 AmIntro1 say "f01v03"
-~2
+~1.5
 amGetIn=true
 deletevehicle AmIntro7
 ~1.5
