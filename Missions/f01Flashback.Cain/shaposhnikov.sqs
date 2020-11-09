@@ -49,10 +49,13 @@ _camera camSetPos [11403.24,10529.77,5.32]
 _camera camSetFOV 0.700
 _camera camCommit 5
 ~4.5
+Shaposhnikov setdir 200
+Shaposhnikov setpos getmarkerpos "CinemaShaposhnikov"
 titlecut["","black out",0.5]
 @camCommitted _camera
 
 titlecut["","black in",0.5]
+0 fademusic 0.3
 ;=== 18:12:46
 _camera camSetTarget [14388.15,109817.31,-11485.29]
 _camera camSetPos [11409.88,10536.48,1.58]
@@ -567,6 +570,10 @@ _camera camCommit 0
 LemontovDouble say "f01v70"
 
 ~3
+
+playmusic "Track1"
+7 fademusic 0.5
+
 titlecut["","black out",0.5]
 ~0.5
 titletext["","plain"]

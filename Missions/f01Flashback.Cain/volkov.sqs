@@ -4,7 +4,7 @@ setacctime 1
 
 playsound "f01v364"
 
-~4
+~6
 
 titlecut["","black out",3]
 ~3
@@ -24,6 +24,23 @@ titlecut["","black in",0.5]
 titletext["","plain"]
 
 setacctime 1
+
+playmusic "RTrack9"
+0 fademusic 1
+
+
+deleteVehicle Medic1
+deleteVehicle Medic2
+deleteVehicle S1
+deleteVehicle S2
+deleteVehicle S3
+deleteVehicle S4
+deleteVehicle S5
+deleteVehicle S6
+deleteVehicle S7
+deleteVehicle S8
+
+
 
 
 ;=== 22:05:25
@@ -169,6 +186,7 @@ _camera camSetPos [11410.02,10534.88,1.50]
 _camera camSetFOV 0.283
 _camera camCommit 5
 @camCommitted _camera
+1 fademusic 0.3
 VolkovAide setmimic "normal"
 VolkovAide setpos getmarkerpos "CinemaVolkovAide"
 VolkovAide dowatch [11410.10,10535.95,1.67]
@@ -434,8 +452,8 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 titletext["","plain"]
-~1
-titlecut["","white out",3]
+~3
+titlecut["","black out",3]
 ~3
 player cameraEffect ["terminate","back"]
 camDestroy _camera
