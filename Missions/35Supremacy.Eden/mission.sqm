@@ -2003,7 +2003,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="not canmove T1 and not canmove T2 and not canmove T3 and not canmove T4";
+			expCond="(not canmove T1 or not canfire T1) and (not canmove T2 or not canfire T2) and (not canmove T3 or not canfire T3) and (not canmove T4 or not canfire T4)";
 			expActiv="tanksDestroyed=true";
 			class Effects
 			{
@@ -2015,7 +2015,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="not canmove V1 and not canmove V2";
+			expCond="(not canmove V1 or not canfire V1) and (not canmove V2 or not canfire V2)";
 			expActiv="vulcansDestroyed=true";
 			class Effects
 			{
@@ -2145,7 +2145,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="not canmove A1 and not canmove A2";
+			expCond="(not canmove A1 or not canfire A1) and (not canmove A2 or not canfire A2)";
 			expActiv="lightDestroyed=true";
 			class Effects
 			{
