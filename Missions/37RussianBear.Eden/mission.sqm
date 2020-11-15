@@ -2420,7 +2420,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=18;
+		items=20;
 		class Item0
 		{
 			position[]={5031.794434,16.334999,3964.245605};
@@ -2668,6 +2668,42 @@ class Mission
 			type="END1";
 			age="UNKNOWN";
 			expCond="end";
+			class Effects
+			{
+			};
+		};
+		class Item18
+		{
+			position[]={5935.319824,82.848015,4784.375488};
+			a=2300.000000;
+			b=1200.000000;
+			angle=-20.021999;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=0;
+			text="OUT OF BOUNDS - WARNING";
+			expCond="this and alive aP";
+			expActiv="[] exec ""outofbounds_kukushkin.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item19
+		{
+			position[]={5974.765137,79.598473,4721.377930};
+			a=2500.000000;
+			b=1400.000000;
+			angle=-20.021999;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=0;
+			text="OUT OF BOUNDS - KILL";
+			expCond="this and alive aP";
+			expActiv="[] exec ""outofbounds.sqs""";
 			class Effects
 			{
 			};

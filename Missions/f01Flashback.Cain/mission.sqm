@@ -4882,7 +4882,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=36;
+		items=40;
 		class Item0
 		{
 			position[]={2202.633789,124.604996,7349.282715};
@@ -4903,7 +4903,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			expCond="aP in ShaposhnikovCar";
-			expActiv="ShaposhnikovCar lock true";
+			expActiv="ShaposhnikovCar lock true; starting=false";
 			class Effects
 			{
 			};
@@ -5443,6 +5443,72 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=19;
 			expActiv="[] exec ""lemontov_map.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item36
+		{
+			position[]={2206.351563,124.604996,7349.416992};
+			a=70.000000;
+			b=70.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=19;
+			text="OUT OF BOUNDS - WARNING";
+			expCond="this and starting";
+			expActiv="[] exec ""outofbounds_lemontov.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item37
+		{
+			position[]={2207.195801,124.604996,7349.468262};
+			a=85.000000;
+			b=85.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			idVehicle=19;
+			text="OUT OF BOUNDS - KILL";
+			expCond="this and starting";
+			expActiv="[] exec ""outofbounds.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item38
+		{
+			position[]={8177.269043,266.469635,8449.327148};
+			a=1200.000000;
+			b=80.000000;
+			angle=36.394402;
+			rectangular=1;
+			activationBy="VEHICLE";
+			age="UNKNOWN";
+			idVehicle=19;
+			text="OUT OF BOUNDS - WARNING";
+			expActiv="[] exec ""outofbounds_lemontov.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item39
+		{
+			position[]={8071.321777,249.411835,8329.462891};
+			a=1200.000000;
+			b=80.000000;
+			angle=36.394402;
+			rectangular=1;
+			activationBy="VEHICLE";
+			age="UNKNOWN";
+			idVehicle=19;
+			text="OUT OF BOUNDS - KILL";
+			expActiv="[] exec ""outofbounds.sqs""";
 			class Effects
 			{
 			};

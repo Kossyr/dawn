@@ -18,6 +18,8 @@ playmusic "RTrack6"
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
+goto "skip"
+
 ;=== 11:45:48
 _camera camSetTarget [62469.73,-68795.75,11156.12]
 _camera camSetPos [5099.95,12351.09,1.65]
@@ -58,7 +60,9 @@ _camera camCommit 0
 @camCommitted _camera
 Koltsov say "37v02"
 Koltsov switchmove "FxShow2"
-~5
+~8
+Koltsov setmimic "surprised"
+~3
 ;=== 11:48:23
 _camera camSetTarget [102306.07,-5587.45,-15082.31]
 _camera camSetPos [5094.80,12348.46,1.58]
@@ -69,9 +73,10 @@ _camera camCommit 0
 _camera camSetTarget [102516.33,29105.96,-15082.03]
 _camera camSetPos [5094.76,12347.69,1.61]
 _camera camSetFOV 0.700
-_camera camCommit 7
+_camera camCommit 6
 Yashin say "37v03"
-~4
+Koltsov setmimic "smile"
+~5
 Koltsov say "37v04"
 @camCommitted _camera
 ;=== 11:49:26
@@ -80,7 +85,8 @@ _camera camSetPos [5096.35,12348.49,1.64]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~1
+~2
+titletext["","plain"]
 ;=== 11:49:39
 _camera camSetTarget [17201.02,-76616.51,44054.77]
 _camera camSetPos [5096.35,12348.49,1.64]
@@ -96,7 +102,7 @@ _camera camCommit 1
 @camCommitted _camera
 ~1
 Yashin say "37v05"
-~5
+~7
 ;=== 11:51:47
 _camera camSetTarget [18087.99,-86435.86,-8519.60]
 _camera camSetPos [5096.45,12347.75,1.62]
@@ -104,7 +110,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Koltsov say "37v06"
-~5
+~11
 ;=== 11:52:06
 _camera camSetTarget [-8449.52,111057.27,-8519.43]
 _camera camSetPos [5096.42,12348.00,1.62]
@@ -113,7 +119,7 @@ _camera camCommit 0
 @camCommitted _camera
 Yashin say "37v07"
 Yashin switchmove "FxShow2"
-~5
+~9
 ;=== 11:52:38
 _camera camSetTarget [56634.65,-73145.25,-5868.50]
 _camera camSetPos [5096.17,12347.81,1.57]
@@ -121,7 +127,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Koltsov say "37v08"
-~3
+~6
 ;=== 11:52:56
 _camera camSetTarget [55255.49,98252.92,-10193.92]
 _camera camSetPos [5096.08,12348.20,1.67]
@@ -154,18 +160,18 @@ _camera camCommit 0
 _camera camSetTarget [-93286.07,28595.13,-7668.60]
 _camera camSetPos [5085.27,12349.75,1.43]
 _camera camSetFOV 0.700
-_camera camCommit 1
+_camera camCommit 2
 Ablomov say "37v10"
-~2
-Rashiv say "37v11"
 @camCommitted _camera
 ~1
+Rashiv say "37v11"
+~2
 Ablomov dowatch [5058.34,12355.51,2.52]
 Ablomov setmimic "normal"
 ~1
 Rashiv setmimic "normal"
 Rashiv dowatch [5058.34,12355.51,2.52]
-~1
+~2
 ;=== 12:14:04
 _camera camSetTarget [102655.30,-9431.78,-2229.05]
 _camera camSetPos [5082.23,12350.31,1.42]
@@ -174,7 +180,7 @@ _camera camCommit 0
 @camCommitted _camera
 Ablomov setmimic "sad"
 Ablomov say "37v12"
-~2
+~4
 Rashiv setmimic "smile"
 Rashiv say "37v13"
 ~2
@@ -186,7 +192,7 @@ _camera camCommit 0
 @camCommitted _camera
 Ablomov setmimic "smile"
 Ablomov say "37v14"
-~5
+~10
 ;=== 12:28:07
 _camera camSetTarget [103079.22,-4682.37,10351.65]
 _camera camSetPos [5083.07,12349.53,1.55]
@@ -196,7 +202,7 @@ _camera camCommit 0
 Rashiv setmimic "normal"
 Ablomov setmimic "sad"
 Ablomov say "37v15"
-~5
+~13
 ;=== 12:53:31
 _camera camSetTarget [39326.81,-81361.00,-6716.50]
 _camera camSetPos [5083.40,12351.13,1.59]
@@ -218,9 +224,9 @@ _camera camSetPos [5082.11,12350.25,1.63]
 _camera camSetFOV 0.700
 _camera camCommit 6
 Ablomov say "37v17"
-~5
-Rashiv say "37v18"
 @camCommitted _camera
+~2
+Rashiv say "37v18"
 ~3
 ;=== 12:55:17
 _camera camSetTarget [61093.20,94916.95,-6716.24]
@@ -229,11 +235,11 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Ablomov say "37v19"
-~5
+~8
 Rashiv dowatch [5083.54,12349.41,1.71]
 Rashiv setmimic "normal"
 Rashiv say "37v20"
-~5
+~6
 ;=== 12:56:47
 _camera camSetTarget [55866.80,-73063.19,-11177.70]
 _camera camSetPos [5083.06,12351.08,1.67]
@@ -243,10 +249,10 @@ _camera camCommit 0
 Ablomov setmimic "smile"
 Ablomov say "37v21"
 Rashiv dowatch [5058.34,12355.51,2.52]
-~4
+~3
 Ablomov setmimic "normal"
 Rashiv say "37v22"
-~0.5
+~1
 ;=== 12:57:50
 _camera camSetTarget [-88380.15,-23130.12,-2381.04]
 _camera camSetPos [5083.18,12349.82,1.65]
@@ -270,7 +276,7 @@ _camera camCommit 0
 Rashiv setmimic "sad"
 Rashiv say "37v24"
 Ablomov setmimic "smile"
-~3
+~2
 Ablomov say "37v25"
 ~2
 Yashin say "37v26"
@@ -291,6 +297,7 @@ _camera camCommit 2
 ~1
 Koltsov say "37v27"
 @camCommitted _camera
+~2
 ;=== 13:01:51
 _camera camSetTarget [-81499.71,61667.37,-8391.30]
 _camera camSetPos [5084.88,12349.02,1.53]
@@ -317,11 +324,11 @@ _camera camCommit 6
 Ablomov dowatch [5058.34,12355.51,2.52]
 @camCommitted _camera
 playsound "37v29"
-~5
+~11
 Ablomov dowatch [5083.85,12350.64,1.68]
 Rashiv setmimic "angry"
 playsound "37v30"
-~5
+~12
 ;=== 13:06:07
 _camera camSetTarget [29483.46,-84024.89,-10760.77]
 _camera camSetPos [5083.51,12351.16,1.68]
@@ -335,7 +342,7 @@ Rashiv setmimic "normal"
 ~3
 Ablomov setmimic "normal"
 Rashiv say "37v32"
-~5
+~7
 ;=== 13:07:09
 _camera camSetTarget [69917.92,88482.05,-421.50]
 _camera camSetPos [5083.05,12349.13,1.56]
@@ -345,13 +352,14 @@ _camera camCommit 0
 Ablomov dowatch [5058.34,12355.51,2.52]
 Ablomov setmimic "smile"
 Ablomov say "37v33"
-~5
+~7
 Rashiv setmimic "smile"
 Rashiv say "37v34"
-~3
+~2
 Ablomov dowatch [5083.85,12350.64,1.68]
 Ablomov say "37v35"
 ~0.5
+#skip
 Rashiv dowatch [5083.54,12349.41,1.71]
 ;=== 13:10:48
 _camera camSetTarget [-92594.42,31317.82,-9923.19]
@@ -359,9 +367,10 @@ _camera camSetPos [5085.00,12349.65,1.45]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~1.5
+
+~2.5
 Rashiv say "37v36"
-~2
+~1
 Ablomov dowatch [5058.34,12355.51,2.52]
 Rashiv dowatch [5058.34,12355.51,2.52]
 ~2
@@ -370,27 +379,27 @@ Rashiv dowatch [5058.34,12355.51,2.52]
 _camera camSetTarget [-93656.96,24576.26,-9922.69]
 _camera camSetPos [5092.80,12348.68,1.77]
 _camera camSetFOV 0.700
-_camera camCommit 10
+_camera camCommit 12
 @camCommitted _camera
 ;=== 13:12:31
 _camera camSetTarget [-93474.16,24553.63,-11592.70]
 _camera camSetPos [5103.95,12347.22,3.65]
 _camera camSetFOV 0.700
-_camera camCommit 7
+_camera camCommit 11
 @camCommitted _camera
 ;=== 13:13:05
 _camera camSetTarget [-93965.13,24614.45,-5874.91]
 _camera camSetPos [5103.95,12347.22,8.55]
 _camera camSetFOV 0.700
-_camera camCommit 10
+_camera camCommit 11
 @camCommitted _camera
 ;=== 13:13:20
 _camera camSetTarget [-77013.81,-37822.23,27234.70]
 _camera camSetPos [5103.95,12347.22,14.68]
 _camera camSetFOV 0.700
-_camera camCommit 7
-~4
+_camera camCommit 6
 titletext["","plain"]
+~3
 titlecut["","black out",3]
 @camCommitted _camera
 end=true
