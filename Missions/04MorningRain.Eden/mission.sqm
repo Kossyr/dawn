@@ -2418,7 +2418,7 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={1467.321289,75.837379,5886.219727};
+					position[]={1468.285156,75.922340,5885.508789};
 					speed="NORMAL";
 					combat="AWARE";
 					class Effects
@@ -5346,9 +5346,10 @@ class Mission
 			timeoutMin=4.000000;
 			timeoutMid=10.000000;
 			timeoutMax=20.000000;
+			interruptable=1;
 			age="UNKNOWN";
 			text="OUT OF BOUNDS - WARNING";
-			expCond="aP distance Lemontov > 80 and alive aP";
+			expCond="aP distance Lemontov > 100 and alive aP";
 			expActiv="[] exec ""outofbounds_rashiv_lemontov.sqs""; playerAway=true";
 			expDesactiv="playerAway=false";
 			class Effects
@@ -5360,13 +5361,13 @@ class Mission
 			position[]={830.727112,2.176272,5252.220215};
 			a=0.000000;
 			b=0.000000;
-			repeating=1;
-			timeoutMin=20.000000;
-			timeoutMid=25.000000;
-			timeoutMax=30.000000;
+			timeoutMin=80.000000;
+			timeoutMid=80.000000;
+			timeoutMax=80.000000;
+			interruptable=1;
 			age="UNKNOWN";
 			expCond="playerAway and alive aP";
-			expActiv="end2=true";
+			expActiv="[] exec ""outro2.sqs""";
 			class Effects
 			{
 			};
@@ -5417,6 +5418,7 @@ class Mission
 			timeoutMin=4.000000;
 			timeoutMid=10.000000;
 			timeoutMax=20.000000;
+			interruptable=1;
 			age="UNKNOWN";
 			idVehicle=26;
 			expCond="this and LamentinPhase1 and alive aP and not toLamentin";
@@ -5431,13 +5433,13 @@ class Mission
 			position[]={814.455139,1.793269,5327.184570};
 			a=0.000000;
 			b=0.000000;
-			repeating=1;
-			timeoutMin=20.000000;
-			timeoutMid=25.000000;
-			timeoutMax=30.000000;
+			timeoutMin=80.000000;
+			timeoutMid=80.000000;
+			timeoutMax=80.000000;
+			interruptable=1;
 			age="UNKNOWN";
 			expCond="playerAway2 and alive aP";
-			expActiv="end2=true";
+			expActiv="[] exec ""outro2.sqs""";
 			class Effects
 			{
 			};
