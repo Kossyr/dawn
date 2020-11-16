@@ -1,5 +1,4 @@
 titlecut ["","black out",2]
-tankisti=true
 setacctime 1
 ~2
 setacctime 1
@@ -14,6 +13,7 @@ tankaP setpos getmarkerpos "tankaP"
 aP setpos getmarkerpos "aP"
 aP setdir 185
 tankaP setdir 185
+tankisti=true
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 ~1
@@ -50,6 +50,8 @@ p4 assignasgunner tank2
 p5 assignasdriver tank2
 p6 assignasgunner tankaP
 p7 assignasdriver tankaP
+
+Frolov setgroupid ["YANKEE","GROUPCOLOR0"]
 
 ~1
 aP action ["WEAPONINHAND"]
