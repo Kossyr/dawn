@@ -6304,7 +6304,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="DEFENCE SUCCESSFUL";
-			expCond="not canmove C1 and not canmove C2 and not canmove C3 and not canmove C4 and not canmove C5";
+			expCond="(not canmove C1 or not canfire C1) and (not canmove C2 or not canfire C2) and (not canmove C3 or not canfire C3) and (not canmove C4 or not canfire C4) and (not canmove C5 or not canfire C5)";
 			expActiv="[] exec ""defence.sqs""";
 			class Effects
 			{
@@ -6319,7 +6319,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="MEAUX TAKEN";
-			expCond="{alive _x} count thislist <= 3 and not canmove M1 and not canmove M2 and not canmove M3";
+			expCond="{alive _x} count thislist <= 3 and (not canmove M1 or not canfire M1) and (not canmove M2 or not canfire M2) and (not canmove M3 or not canfire M3)";
 			expActiv="[] exec ""meaux.sqs""";
 			class Effects
 			{
@@ -6334,7 +6334,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="TYRONE TAKEN";
-			expCond="{alive _x} count thislist <= 3 and not canmove T1 and not canmove T2 and not canmove T3";
+			expCond="{alive _x} count thislist <= 3 and (not canmove T1 or not canfire T1) and (not canmove T2 or not canfire T2) and (not canmove T3 or not canfire T3)";
 			expActiv="[] exec ""tyrone.sqs""";
 			class Effects
 			{
@@ -6364,7 +6364,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="MONTIGNAC TAKEN";
-			expCond="{alive _x} count thislist <= 4 and not canmove A1 and not canmove A2 and not canmove A3 and not canmove A4 and not canmove A5 and not canmove A6 and not canmove A7 and not canmove A8 and not canmove A9";
+			expCond="{alive _x} count thislist <= 4 and (not canmove A1 or not canfire A1) and (not canmove A2 or not canfire A2) and (not canmove A3 or not canfire A3) and (not canmove A4 or not canfire A4) and (not canmove A5 or not canfire A5) and (not canmove A6 or not canfire A6) and (not canmove A7 or not canfire A7) and (not canmove A8 or not canfire A8) and (not canmove A9 or not canfire A9)";
 			expActiv="[] exec ""outro.sqs""; ""_x setdammage 1"" foreach thislist";
 			class Effects
 			{

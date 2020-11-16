@@ -2286,6 +2286,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
+					init="this allowfleeing 0";
 				};
 			};
 			class Waypoints
@@ -2328,6 +2329,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
+					init="this allowfleeing 0";
 				};
 			};
 			class Waypoints
@@ -4231,7 +4233,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="COUNTERATTACK REPELLED";
-			expCond="not canmove C1 and not canmove C2 and not canmove C3 and not canmove C4";
+			expCond="(not canmove C1 or not canfire C1) and (not canmove C2 or not canfire C2) and (not canmove C3 or not canfire C3) and (not canmove C4 or not canfire C4)";
 			expActiv="[] exec ""outro.sqs""";
 			class Effects
 			{

@@ -5408,7 +5408,7 @@ class Mission
 			b=270.000000;
 			activationBy="WEST";
 			age="UNKNOWN";
-			expCond="not canmove T1 and not canmove T2 and {alive _x} count thislist <= 2";
+			expCond="(not canmove T1 or not canfire T1) and (not canmove T2 or not canfire T2) and {alive _x} count thislist <= 2";
 			expActiv="[] exec ""base_secured2.sqs""; ""_x setdammage 1"" foreach thislist";
 			class Effects
 			{

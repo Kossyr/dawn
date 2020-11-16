@@ -6977,7 +6977,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="AA DESTROYED";
-			expCond="not canmove aa1";
+			expCond="not canmove aa1 or not canfire aa1";
 			expActiv="[] exec ""aa1Destroyed.sqs""";
 			class Effects
 			{
@@ -6990,7 +6990,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="AA DESTROYED";
-			expCond="not canmove aa2";
+			expCond="not canmove aa2 or not canfire aa2";
 			expActiv="[] exec ""aa2Destroyed.sqs""";
 			class Effects
 			{
@@ -7003,7 +7003,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="AA DESTROYED";
-			expCond="not canmove aa3";
+			expCond="not canmove aa3 or not canfire aa3";
 			expActiv="[] exec ""aa3Destroyed.sqs""";
 			class Effects
 			{
@@ -7119,7 +7119,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="not canmove yuriTank1 and not canmove yuriTank2 and not canmove yuriTank3 and not canmove yuriTank4";
+			expCond="(not canmove yuriTank1 or not canfire yuriTank1) and (not canmove yuriTank2 or not canfire yuriTank2) and (not canmove yuriTank3 or not canfire yuriTank3) and (not canmove yuriTank4 or not canfire yuriTank4)";
 			expActiv="[] exec ""outYuri.sqs""";
 			class Effects
 			{

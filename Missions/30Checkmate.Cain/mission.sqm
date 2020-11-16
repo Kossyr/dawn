@@ -4025,7 +4025,7 @@ class Mission
 			b=0.000000;
 			type="SWITCH";
 			age="UNKNOWN";
-			expCond="not canmove W1 and not canmove W2 and not canmove W5";
+			expCond="(not canmove W1 or not canfire W1) and (not canmove W2 or not canfire W2) and (not canmove W5 or not canfire W5)";
 			expActiv="[] exec ""west.sqs""";
 			class Effects
 			{
@@ -4038,7 +4038,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="not canmove E1 and not canmove E2 and not canmove E5";
+			expCond="(not canmove E1 or not canfire E1) and (not canmove E2 or not canfire E2) and (not canmove E5 or not canfire E5)";
 			expActiv="[] exec ""east.sqs""";
 			class Effects
 			{
@@ -4051,7 +4051,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="centreClear and westClear and eastClear and not canmove E3 and not canmove E4 and not canmove E5 and not canmove W6 and not canmove W3 and not canmove W4";
+			expCond="centreClear and westClear and eastClear and (not canmove E3 or not canfire E3) and (not canmove E4 or not canfire E4) and (not canmove E5 or not canfire E5) and (not canmove W6 or not canfire W6) and (not canmove W3 or not canfire W3) and (not canmove W4 or not canfire W4)";
 			expActiv="[] exec ""destroyed.sqs""";
 			class Effects
 			{

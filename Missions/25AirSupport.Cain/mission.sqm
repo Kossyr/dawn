@@ -1488,7 +1488,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="TANKS DESTROYED - GO HOME";
-			expCond="not canmove T1 and not canmove T2";
+			expCond="(not canmove T1 or not canfire T1) and (not canmove T2 or not canfire T2)";
 			expActiv="[] exec ""tanks.sqs""";
 			class Effects
 			{

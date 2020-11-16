@@ -4808,7 +4808,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=0;
 			text="TATYANA POSITION SECURED";
-			expCond="this and not canmove position1 and not canmove position2 and not canmove position3";
+			expCond="this and (not canmove position1 or not canfire position1) and (not canmove position2 or not canfire position2) and (not canmove position3 or not canfire position3)";
 			expActiv="[] exec ""position.sqs""";
 			class Effects
 			{

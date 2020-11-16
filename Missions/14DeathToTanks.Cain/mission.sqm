@@ -2009,7 +2009,7 @@ class Mission
 			b=200.000000;
 			activationBy="WEST";
 			age="UNKNOWN";
-			expCond="{alive _x} count thislist <= 1 and not canmove T1 and not canmove T2 and not canmove T3 and not canmove T4";
+			expCond="{alive _x} count thislist <= 1 and (not canmove T1 or not canfire T1) and (not canmove T2 or not canfire T2) and (not canmove T3 or not canfire T3) and (not canmove T4 or not canfire T4)";
 			expActiv="[] exec ""outro.sqs""; ""_x setdammage 1"" foreach thislist";
 			class Effects
 			{

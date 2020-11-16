@@ -240,7 +240,6 @@ class Mission
 					rank="MAJOR";
 					skill=0.500000;
 					text="C1";
-					init="group this allowfleeing 0";
 				};
 				class Item1
 				{
@@ -286,6 +285,7 @@ class Mission
 					rank="COLONEL";
 					skill=0.500000;
 					text="C5";
+					init="group this allowfleeing 0";
 				};
 			};
 			class Waypoints
@@ -1558,7 +1558,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="CONVOY DESTROYED";
-			expCond="not canmove C1 and not canmove C2 and not canmove C4 and not canmove C5";
+			expCond="(not canmove C1 or not canfire C1) and not canmove C2 and (not canmove C4 or not canfire C4) and (not canmove C5 or not canfire C5)";
 			expActiv="[] exec ""convoy_done.sqs""";
 			class Effects
 			{
@@ -1571,7 +1571,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="BASE SECURED";
-			expCond="not canmove B1 and not canmove B2 and not canmove B3 and not canmove B4";
+			expCond="(not canmove B1 or not canfire B1) and (not canmove B2 or not canfire B2) and (not canmove B3 or not canfire B3) and (not canmove B4 or not canfire B4)";
 			expActiv="[] exec ""base.sqs""";
 			class Effects
 			{
@@ -1616,7 +1616,7 @@ class Mission
 			b=0.000000;
 			type="SWITCH";
 			age="UNKNOWN";
-			expCond="not canmove bmp";
+			expCond="not canmove bmp or not canfire bmp";
 			class Effects
 			{
 			};

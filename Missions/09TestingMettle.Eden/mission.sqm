@@ -3171,7 +3171,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="ATTACK REPELLED";
-			expCond="{alive _x} count thislist <= 2 and not canmove tank and {alive _x} count units att1 <= 1 and {alive _x} count units att2 <= 1";
+			expCond="{alive _x} count thislist <= 2 and (not canmove tank or not canfire tank) and {alive _x} count units att1 <= 1 and {alive _x} count units att2 <= 1";
 			expActiv="[] exec ""outro.sqs""; ""_x setdammage 1"" foreach thislist";
 			class Effects
 			{

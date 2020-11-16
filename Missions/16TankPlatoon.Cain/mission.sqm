@@ -1462,7 +1462,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="NORTHERN TANKS DESTROYED";
-			expCond="not canmove utok1 and not canmove utok2 and not canmove utok3";
+			expCond="(not canmove utok1 or not canfire utok1) and (not canmove utok2 or not canfire utok2) and (not canmove utok3 or not canfire utok3)";
 			expActiv="aP exec ""outro.sqs""";
 			class Effects
 			{
@@ -1477,7 +1477,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="SOUTHERN TANKS DESTROYED";
-			expCond="not canmove enemy1 and not canmove enemy2 and not canmove enemy3 and not canmove enemy4";
+			expCond="(not canmove enemy1 or not canfire enemy1) and (not canmove enemy2 or not canfire enemy2) and (not canmove enemy3 or not canfire enemy3) and (not canmove enemy4 or not canfire enemy4)";
 			expActiv="[] exec ""tanks_south_done.sqs""";
 			class Effects
 			{

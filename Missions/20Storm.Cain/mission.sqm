@@ -2986,7 +2986,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="THE BASE IS SECURED";
-			expCond="{alive _x} count thislist <= 5 and (not canmove B1 and not canmove B2 and not canmove B3 and not canmove B4)";
+			expCond="{alive _x} count thislist <= 5 and ((not canmove B1 or not canfire B1) and (not canmove B2 or not canfire B2) and (not canmove B3 or not canfire B3) and (not canmove B4 or not canfire B4))";
 			expActiv="[] exec ""base.sqs""";
 			class Effects
 			{
@@ -3013,7 +3013,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="COUNTERATTACK REPELLED";
-			expCond="not canmove T1 and not canmove T2 and not canmove T3 and not canmove T4 and not canmove T5 and not canmove T6 and not canmove T7 and not canmove T8";
+			expCond="(not canmove T1 or not canfire T1) and (not canmove T2 or not canfire T2) and (not canmove T3 or not canfire T3) and (not canmove T4 or not canfire T4) and (not canmove T5 or not canfire T5) and (not canmove T6 or not canfire T6) and (not canmove T7 or not canfire T7) and (not canmove T8 or not canfire T8)";
 			expActiv="[] exec ""outro.sqs""";
 			class Effects
 			{

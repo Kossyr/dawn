@@ -7181,7 +7181,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=0;
 			text="ENGINEERS TAKE OUT THE MINEFIELD";
-			expCond="not canmove APC1 and not canmove APC2 or this";
+			expCond="(not canmove APC1 or not canfire APC1) and (not canmove APC2 or not canfire APC2) or this";
 			expActiv="[] exec ""engineers.sqs""";
 			class Effects
 			{
@@ -7226,7 +7226,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="FORTIFICATIONS SEIZED";
-			expCond="playerFront and {alive _x} count thislist <= 5 and not canmove F1 and not canmove F2 and not canmove F3 and not canmove F4";
+			expCond="playerFront and {alive _x} count thislist <= 5 and (not canmove F1 or not canfire F1) and (not canmove F2 or not canfire F2) and (not canmove F3 or not canfire F3) and (not canmove F4 or not canfire F4)";
 			expActiv="[] exec ""front_done.sqs""";
 			class Effects
 			{
@@ -7336,7 +7336,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="REINFORCEMENTS REPELLED";
-			expCond="not canmove T1 and not canmove T2 and not canmove T3 and not canmove T4 and not canmove T5 and not canmove T6";
+			expCond="(not canmove T1 or not canfire T1) and (not canmove T2 or not canfire T2) and (not canmove T3 or not canfire T3) and (not canmove T4 or not canfire T4) and (not canmove T5 or not canfire T5) and (not canmove T6 or not canfire T6)";
 			expActiv="[] exec ""reinforcements.sqs""";
 			class Effects
 			{
@@ -7415,7 +7415,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="LAST BASE TAKEN";
-			expCond="{alive _x} count thislist <= 3 and not canmove H1 and not canmove H2 and not canmove H3";
+			expCond="{alive _x} count thislist <= 3 and (not canmove H1 or not canfire H1) and (not canmove H2 or not canfire H2) and (not canmove H3 or not canfire H3)";
 			expActiv="[] exec ""base2.sqs""";
 			class Effects
 			{
