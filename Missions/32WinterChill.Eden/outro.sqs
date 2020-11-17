@@ -3,7 +3,7 @@ setacctime 1
 "6" objstatus "done"
 aP addrating 1000
 
-? not joined : [K1, K2, K3, K4, K5] join aP ; joined=true ;
+? not joined : [K1, K2, K3, K4, K5] join aP ; joined=true ; ~ 8;
 
 ~6
 
@@ -31,9 +31,9 @@ enableradio false
 
 titletext [ localize "STRC_END_SUCCESS","plain"]
 
-~8
+~10
 titlecut["","black out",2]
-~3
+~2
 end=true
 player cameraEffect ["terminate","back"]
 camDestroy _camera

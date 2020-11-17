@@ -6,7 +6,7 @@ aP action ["EJECT"]
 UnassignVehicle aP
 aP setpos getmarkerpos "aP"
 tankaP setpos getmarkerpos "tankaP"
-~1
+~0.5
 setacctime 1
 aP action ["WEAPONONBACK"]
 tankaP setpos getmarkerpos "tankaP"
@@ -16,8 +16,8 @@ tankaP setdir 185
 tankisti=true
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
-~1
-titlecut ["","black in",3]
+~0.5
+titlecut ["","black in",2]
 ;=== 18:08:07
 _camera camSetTarget aP
 _camera camSetPos [6896.02,6764.26,1.55]
@@ -58,8 +58,7 @@ aP action ["WEAPONINHAND"]
 "1" objstatus "done"
 aP addrating 1000
 nastupovat=true
-set="aware"
-"_x setbehaviour set" forEach units yankee
+"_x setbehaviour ""aware""" forEach units yankee
 ~5
 
 savegame
