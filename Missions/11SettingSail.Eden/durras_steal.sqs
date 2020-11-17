@@ -21,7 +21,7 @@ _i = _i + 1
 setacctime 1
 
 titlecut["","black in",0.5]
-? aP in FuelTruck : aP action ["EJECT"] ;
+? aP in FuelTruck : aP action ["EJECT"] ; UnassignVehicle aP ;
 aP setpos getmarkerpos "rashiv_durras_front"
 aP setdir 250
 FuelTruck setpos getmarkerpos "durras_truck"
