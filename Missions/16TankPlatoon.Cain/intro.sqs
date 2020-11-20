@@ -1,120 +1,153 @@
 
 titlecut["","black in", 3]
 
+Frolov setmimic "normal"
+Kukushkin setmimic "normal"
+playMusic "track5"
+
+
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-playMusic "track5"
-off setmimic "normal"
-kukushkin setmimic "normal"
-setacctime 1
 
-off setpos getmarkerpos "off"
-off dowatch [7757.28,8106.28,1.60]
-kukushkin dowatch [7754.86,8106.66,1.69]
-
-
-;=== 15:31:22
-_camera camSetTarget [-47838.65,88728.28,-19844.90]
-_camera camSetPos [7757.20,8090.03,11.16]
+;=== 15:36:26
+_camera camSetTarget [-55145.75,84207.73,-15503.43]
+_camera camSetPos [7748.59,8089.14,6.52]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-;=== 15:32:11
-_camera camSetTarget [-88341.75,-8920.58,-21488.30]
-_camera camSetPos [7757.07,8097.87,7.63]
+
+
+;=== 15:36:47
+_camera camSetTarget [-87784.86,-5270.99,-26035.08]
+_camera camSetPos [7750.25,8091.42,7.04]
 _camera camSetFOV 0.700
-_camera camCommit 10
-~1
+_camera camCommit 6
+~0.5
 crewer1 switchmove "FxToKneel"
 crewer2 switchmove "FxToHand"
 @camCommitted _camera
-~1
-;=== 15:34:23
-_camera camSetTarget tanky
-_camera camSetPos [7753.67,8107.98,1.20]
+titlecut["","black in",0.5]
+;=== 15:37:24
+_camera camSetTarget [107289.85,10741.92,-8569.86]
+_camera camSetPos [7720.26,8096.11,1.51]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
+;=== 15:37:31
+_camera camSetTarget [107232.06,3770.99,-8570.10]
+_camera camSetPos [7721.21,8095.05,1.12]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+;=== 15:38:41
+_camera camSetTarget [-9987.04,105333.23,-14764.01]
+_camera camSetPos [7770.25,8084.18,2.14]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+
+;=== 15:40:48
+_camera camSetTarget [92897.95,-42699.72,-12710.35]
+_camera camSetPos [7752.87,8101.10,1.51]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 15:40:55
+_camera camSetTarget [101617.49,-23834.64,-12710.67]
+_camera camSetPos [7751.94,8100.26,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+
+0 fademusic 0.2
+Kukushkin stop true;
+Kukushkin setpos getmarkerpos "Kukushkin";
+Kukushkin setdir 305;
+Kukushkin dowatch [7754.27,8100.61,1.67];
+Kukushkin stop false;
+Frolov dowatch [7756.32,8099.30,1.64];
+
+;=== 15:43:15
+_camera camSetTarget [89066.30,-48436.92,-13548.68]
+_camera camSetPos [7755.40,8099.88,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Kukushkin say "16v01"
+Kukushkin playmove "EffectStandSalute"
+~3
+Kukushkin playmove "EffectStandSaluteEnd"
+~2
+;=== 15:44:39
+_camera camSetTarget [-63971.50,76896.18,-10728.15]
+_camera camSetPos [7756.89,8098.27,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Kukushkin setpos getmarkerpos "Kukushkin";
+Frolov say "16v02"
+~3
+;=== 15:45:15
+_camera camSetTarget [-77698.25,60040.07,449.51]
+_camera camSetPos [7754.92,8100.19,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+Frolov say "16v03"
 ~5
-;=== 18:26:25
-_camera camSetTarget [14648.93,107858.03,-1201.02]
-_camera camSetPos [7772.00,8106.23,1.51]
+;=== 15:45:49
+_camera camSetTarget [90005.69,-46895.34,-14196.56]
+_camera camSetPos [7755.70,8099.70,1.60]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-@vylozil
-~1
-;=== 18:26:46
-_camera camSetTarget [-39943.05,-79767.41,602.11]
-_camera camSetPos [7770.12,8115.29,1.11]
-_camera camSetFOV 0.700
-_camera camCommit 0
-@camCommitted _camera
-;=== 18:26:54
-_camera camSetTarget [-72963.60,-50345.96,8332.40]
-_camera camSetPos [7770.12,8115.29,1.11]
-_camera camSetFOV 0.700
-_camera camCommit 8
-@camCommitted _camera
-~1
-kukushkin stop true
-kukushkin setpos getmarkerpos "kukushkin"
-kukushkin setdir 275
-;=== 18:34:00
-_camera camSetTarget [106691.65,17431.74,-10855.37]
-_camera camSetPos [7755.57,8106.74,1.31]
-_camera camSetFOV 0.700
-_camera camCommit 0
-@camCommitted _camera
-1 fademusic 0.2
-kukushkin say "16v01"
-kukushkin playmove "effectstandsalute"
-~3
-kukushkin playmove "effectstandsaluteend"
-~1.8
-;=== 18:27:47
-_camera camSetTarget [-92030.14,5542.83,-5705.05]
-_camera camSetPos [7755.73,8106.69,1.64]
-_camera camSetFOV 0.700
-_camera camCommit 0
-@camCommitted _camera
-off say "16v02"
-kukushkin setpos getmarkerpos "kukushkin"
-kukushkin setdir 275
+Kukushkin say "16v04"
+Kukushkin setmimic "surprised"
 ~4
-off say "16v03"
-~5.5
-;=== 18:34:19
-_camera camSetTarget [105462.17,26240.56,-10855.39]
-_camera camSetPos [7756.23,8106.58,1.49]
+Frolov setmimic "angry"
+Frolov say "16v05"
+;=== 15:46:28
+_camera camSetTarget [-85034.32,42704.42,-13548.58]
+_camera camSetPos [7757.75,8099.32,1.72]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-kukushkin say "16v04"
-~3.5
-;=== 18:28:39
-_camera camSetTarget [-77584.73,60162.27,-2375.43]
-_camera camSetPos [7755.58,8106.44,1.56]
+;=== 15:47:00
+_camera camSetTarget [-82699.48,50171.31,-6588.05]
+_camera camSetPos [7756.79,8099.37,1.66]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+;=== 15:48:38
+_camera camSetTarget [-52876.46,87048.08,-9228.64]
+_camera camSetPos [7754.69,8100.15,1.63]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-off say "16v05"
-~5.5
-;=== 18:34:40
-_camera camSetTarget [107575.27,7747.91,-5695.06]
-_camera camSetPos [7756.42,8106.64,1.57]
+Frolov setmimic "normal"
+Frolov say "16v06"
+~5
+Frolov setmimic "angry"
+Frolov say "16v07"
+~4
+;=== 15:49:20
+_camera camSetTarget [91409.60,-46363.74,-5669.58]
+_camera camSetPos [7755.77,8099.61,1.58]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-kukushkin setmimic "normal"
-kukushkin say "16v06"
-kukushkin playmove "effectstandsalute"
-titlecut ["","black out",3]
-~1
-kukushkin playmove "effectstandsaluteend"
-3 fademusic 0
-~3
+Kukushkin say "16v08"
+Kukushkin setmimic "normal"
+Kukushkin playmove "EffectStandSalute"
+~1.5
+Kukushkin playmove "EffectStandSaluteEnd"
+~0.5
+titlecut["","black out",2]
+2 fademusic 0
+~2
 end=true
 
 player cameraEffect ["terminate","back"]

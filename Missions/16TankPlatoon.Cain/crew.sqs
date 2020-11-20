@@ -1,0 +1,137 @@
+setacctime 1
+Frolov groupradio "16r11"
+~2
+enableradio false
+
+titlecut["","black out",1]
+~1
+Frolov action ["EJECT"]
+UnassignVehicle Frolov
+aP action ["EJECT"]
+UnassignVehicle aP
+ourTank setpos getmarkerpos "ourTank"
+ourTank setdir 185
+
+Frolov stop true
+p1 stop true
+p2 stop true
+p3 stop true
+p4 stop true
+p5 stop true
+p6 stop true
+p7 stop true
+[p1, p2, p3, p4, p5, p6, p7] join Frolov
+
+p2 setpos getmarkerpos "p2"
+p2 setdir 315
+p3 setpos getmarkerpos "p3"
+p3 setdir 20
+p4 setpos getmarkerpos "p4"
+p4 setdir 355
+p5 setpos getmarkerpos "p5"
+p5 setdir 345
+p6 setpos getmarkerpos "p6"
+p6 setdir 10
+p7 setpos getmarkerpos "p7"
+p7 setdir 45
+
+aP setpos getmarkerpos "AwayPlayer"
+Frolov setpos getmarkerpos "AwayFrolov"
+
+CinemaFrolov setpos getmarkerpos "CinemaFrolov";
+CinemaKukushkin setpos getmarkerpos "CinemaKukushkin";
+
+~0.5
+aP action ["WEAPONONBACK"]
+Frolov action ["WEAPONONBACK"]
+ourTank setpos getmarkerpos "ourTank"
+ourTank setdir 185
+
+joinedPlatoon=true
+
+
+CinemaFrolov setmimic "normal"
+CinemaKukushkin setmimic "normal"
+
+setacctime 1
+titlecut ["","black in",1]
+
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 16:21:49
+_camera camSetTarget [8262.79,-93105.29,-4553.77]
+_camera camSetPos [6893.90,6760.70,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+p1 setmimic "normal"
+p1 playmove "effectstandsalute"
+p1 say "16v10"
+~2
+p1 playmove "EffectStandSaluteEnd"
+~1
+;=== 16:23:09
+_camera camSetTarget [29559.56,103602.56,-9950.88]
+_camera camSetPos [6893.95,6760.68,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaFrolov say "16v11"
+~5
+;=== 16:25:10
+_camera camSetTarget [-83100.76,-36284.44,-6462.87]
+_camera camSetPos [6895.83,6761.99,1.75]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaFrolov say "16v12"
+;=== 16:25:36
+_camera camSetTarget [-40639.11,-80942.24,-6462.77]
+_camera camSetPos [6897.97,6765.01,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+deletevehicle CinemaFrolov
+deletevehicle CinemaKukushkin
+aP setpos getmarkerpos "CinemaKukushkin"
+Frolov setpos getmarkerpos "CinemaFrolov"
+aP setdir 180
+Frolov setdir 180
+titlecut["","black in",0.5]
+enableradio true
+Frolov stop false
+p1 stop false
+p2 stop false
+p3 stop false
+p4 stop false
+p5 stop false
+p6 stop false
+p7 stop false
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+Frolov AssignAsCommander tank1
+p1 AssignAsCommander tank2
+aP assignascommander ourTank
+p2 assignasgunner tank1
+p3 assignasdriver tank1
+p4 assignasgunner tank2
+p5 assignasdriver tank2
+p6 assignasgunner ourTank
+p7 assignasdriver ourTank
+
+"1" objstatus "done"
+aP addrating 1000
+platoonGetIn=true
+
+~1
+
+aP action ["WEAPONINHAND"]
+
+~5
+
+savegame
+
+exit
