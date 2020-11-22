@@ -24,6 +24,14 @@ class CfgIdentities
     speaker = "Rich";
     pitch = 1.031744;
   };
+  class KukushkinGlasses
+  {
+    name = "Dmitry Kukushkin";
+    face = "Face40";
+    glasses = "Sunglasses";
+    speaker = "Rich";
+    pitch = 1.031744;
+  };
   class Ablomov
   {
     name = "Nikolay Ablomov";
@@ -403,23 +411,23 @@ class MissionDefault
 class Campaign
 {
 	name = "Red Dawn";
-	firstBattle = Part1;
+	firstBattle = Prologue;
 	
 
-	class Part1
+	class Prologue
 	{
-		name = "Prologue";
+		name = "PROLOGUE";
 
 		cutscene = ;
 
 		firstMission = x00Prologue;
-		lost = Part2;
-		end1 = Part2;
-		end2 = Part2;
-		end3 = Part2;
-		end4 = Part2;
-		end5 = Part2;
-		end6 = Part2;
+		lost = ChapterI;
+		end1 = ChapterI;
+		end2 = ChapterI;
+		end3 = ChapterI;
+		end4 = ChapterI;
+		end5 = ChapterI;
+		end6 = ChapterI;
 
 		class x00Prologue: MissionDefault
 		{
@@ -448,20 +456,20 @@ class Campaign
 		};
 	}
 	
-	class Part2
+	class ChapterI
 	{
 		name = "FLASHPOINT";
 
 		cutscene = ;
 
 		firstMission = x01Chapter;
-		lost = Part3;
-		end1 = Part3;
-		end2 = Part3;
-		end3 = Part3;
-		end4 = Part3;
-		end5 = Part3;
-		end6 = Part3;
+		lost = ChapterII;
+		end1 = ChapterII;
+		end2 = ChapterII;
+		end3 = ChapterII;
+		end4 = ChapterII;
+		end5 = ChapterII;
+		end6 = ChapterII;
 		
 
 		class x01Chapter: MissionDefault
@@ -633,20 +641,20 @@ class Campaign
 		};
 	};
 
-	class Part3
+	class ChapterII
 	{
 		name = "BATTLE FOR KOLGUYEV";
 
 		cutscene = ;
 
 		firstMission = x02Chapter;
-		lost = Part4;
-		end1 = Part4;
-		end2 = Part4;
-		end3 = Part4;
-		end4 = Part4;
-		end5 = Part4;
-		end6 = Part4;
+		lost = ChapterIII;
+		end1 = ChapterIII;
+		end2 = ChapterIII;
+		end3 = ChapterIII;
+		end4 = ChapterIII;
+		end5 = ChapterIII;
+		end6 = ChapterIII;
 
 
 		class x02Chapter: MissionDefault
@@ -838,7 +846,7 @@ class Campaign
 			template = 30Checkmate.Cain;
 		};
 	};
-	class Part4
+	class ChapterIII
 	{
 		name = "RECLAMATION";
 
