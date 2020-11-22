@@ -725,7 +725,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={6864.399414,69.230461,4928.369141};
+					position[]={6735.664063,62.877121,4907.127930};
 					type="SAD";
 					speed="NORMAL";
 					class Effects
@@ -819,7 +819,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={6901.196777,66.455383,4806.879883};
+					position[]={6769.886719,52.653442,4777.914551};
 					type="SAD";
 					speed="NORMAL";
 					class Effects
@@ -890,7 +890,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={6903.741699,64.046326,4855.190918};
+					position[]={6756.983398,59.280964,4864.846191};
 					type="SAD";
 					class Effects
 					{
@@ -960,7 +960,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={6790.973633,74.498840,4989.714355};
+					position[]={6680.261230,60.368538,4962.679688};
 					type="SAD";
 					class Effects
 					{
@@ -1534,7 +1534,7 @@ class Mission
 					vehicle="Bradley";
 					leader=1;
 					skill=1.000000;
-					text="L3";
+					text="L2";
 					init="this allowfleeing 0";
 				};
 			};
@@ -1557,7 +1557,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=1;
 				class Item0
 				{
 					position[]={7657.122070,116.182816,4722.390137};
@@ -1570,16 +1570,6 @@ class Mission
 					skill=0.800000;
 					text="L1";
 					init="group this allowfleeing 0";
-				};
-				class Item1
-				{
-					position[]={7671.166992,117.074997,4717.369629};
-					azimut=335.000000;
-					id=148;
-					side="WEST";
-					vehicle="Bradley";
-					skill=0.700000;
-					text="L2";
 				};
 			};
 			class Waypoints
@@ -1624,7 +1614,7 @@ class Mission
 				{
 					position[]={5076.852051,16.334999,3923.908936};
 					azimut=265.728241;
-					id=149;
+					id=148;
 					side="WEST";
 					vehicle="OfficerW";
 					leader=1;
@@ -1635,7 +1625,7 @@ class Mission
 				{
 					position[]={5078.933105,16.334999,3922.411621};
 					azimut=265.728241;
-					id=150;
+					id=149;
 					side="WEST";
 					vehicle="SoldierWMG";
 					skill=0.800000;
@@ -1644,7 +1634,7 @@ class Mission
 				{
 					position[]={5080.133301,16.334999,3926.739746};
 					azimut=265.728241;
-					id=151;
+					id=150;
 					side="WEST";
 					vehicle="SoldierWB";
 					skill=0.800000;
@@ -1653,7 +1643,7 @@ class Mission
 				{
 					position[]={5085.787598,16.334999,3924.294922};
 					azimut=265.728241;
-					id=152;
+					id=151;
 					side="WEST";
 					vehicle="SoldierWB";
 					skill=0.800000;
@@ -1662,7 +1652,7 @@ class Mission
 				{
 					position[]={5083.791992,16.334999,3921.187988};
 					azimut=265.728241;
-					id=153;
+					id=152;
 					side="WEST";
 					vehicle="SoldierWB";
 					skill=0.800000;
@@ -2614,7 +2604,7 @@ class Mission
 			activationBy="EAST";
 			age="UNKNOWN";
 			text="LEVIE REACHED BY SOVIETS";
-			expActiv="leavieReached=true";
+			expActiv="levieReached=true";
 			class Effects
 			{
 			};
@@ -2629,7 +2619,7 @@ class Mission
 			age="UNKNOWN";
 			text="LEAVIE CLEAR OF TROOPS";
 			expCond="{alive _x} count thislist <= 3";
-			expActiv="leavieCleared=true";
+			expActiv="levieCleared=true";
 			class Effects
 			{
 			};
@@ -2641,8 +2631,8 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="LEVIE TANKS DESTROYED";
-			expCond="(not canmove L1 or not canfire L1) and (not canmove L2 or not canfire L2) and (not canmove L3 or not canfire L3)";
-			expActiv="leavieTanks=true";
+			expCond="(not canmove L1 or not canfire L1) and (not canmove L2 or not canfire L2)";
+			expActiv="levieTanks=true";
 			class Effects
 			{
 			};
