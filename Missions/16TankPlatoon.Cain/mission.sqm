@@ -393,7 +393,7 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					position[]={6643.729492,361.222229,5999.298828};
@@ -428,6 +428,15 @@ class Mission
 				{
 					position[]={6602.807617,420.986969,6263.143555};
 					type="SAD";
+					synchronizations[]={9};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item4
+				{
+					position[]={6632.974121,206.351028,5430.028320};
 					class Effects
 					{
 					};
@@ -466,7 +475,7 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=3;
+				items=4;
 				class Item0
 				{
 					position[]={6866.709473,297.123230,5934.848633};
@@ -492,6 +501,15 @@ class Mission
 				{
 					position[]={6574.668457,417.878357,6237.346191};
 					type="SAD";
+					synchronizations[]={10};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={6656.200195,200.618225,5437.061523};
 					class Effects
 					{
 					};
@@ -2638,7 +2656,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="NORTHERN TANKS DESTROYED";
-			expCond="(not canmove utok1 or not canfire utok1) and (not canmove utok2 or not canfire utok2) and (not canmove utok3 or not canfire utok3)";
+			expCond="not canmove utok1 and not canmove utok2 and not canmove utok3";
 			expActiv="aP exec ""outro.sqs""";
 			class Effects
 			{
@@ -2658,7 +2676,7 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={1};
+			synchronizations[]={1,9,10};
 		};
 		class Item6
 		{

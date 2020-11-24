@@ -699,7 +699,7 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=3;
+				items=4;
 				class Item0
 				{
 					position[]={7255.165527,113.219574,5266.675781};
@@ -728,6 +728,15 @@ class Mission
 					position[]={6735.664063,62.877121,4907.127930};
 					type="SAD";
 					speed="NORMAL";
+					synchronizations[]={17};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={8231.253906,153.184113,3848.092773};
 					class Effects
 					{
 					};
@@ -790,7 +799,7 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=3;
+				items=4;
 				class Item0
 				{
 					position[]={7406.778809,113.353058,4813.110352};
@@ -822,6 +831,15 @@ class Mission
 					position[]={6769.886719,52.653442,4777.914551};
 					type="SAD";
 					speed="NORMAL";
+					synchronizations[]={19};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={8286.464844,142.440155,3777.346680};
 					class Effects
 					{
 					};
@@ -862,7 +880,7 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=3;
+				items=4;
 				class Item0
 				{
 					position[]={7748.580078,117.208794,4886.543945};
@@ -892,6 +910,15 @@ class Mission
 				{
 					position[]={6756.983398,59.280964,4864.846191};
 					type="SAD";
+					synchronizations[]={18};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={8265.861328,147.561813,3810.599609};
 					class Effects
 					{
 					};
@@ -932,7 +959,7 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=3;
+				items=4;
 				class Item0
 				{
 					position[]={7481.926270,77.677643,5431.741699};
@@ -962,6 +989,15 @@ class Mission
 				{
 					position[]={6680.261230,60.368538,4962.679688};
 					type="SAD";
+					synchronizations[]={16};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={8204.186523,165.666092,3915.595947};
 					class Effects
 					{
 					};
@@ -2435,7 +2471,7 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={1};
+			synchronizations[]={1,16,17,18,19};
 		};
 		class Item2
 		{
@@ -2612,8 +2648,8 @@ class Mission
 		class Item14
 		{
 			position[]={7549.549805,117.855324,4698.880859};
-			a=100.000000;
-			b=100.000000;
+			a=120.000000;
+			b=120.000000;
 			rectangular=1;
 			activationBy="WEST";
 			age="UNKNOWN";
@@ -2631,7 +2667,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="LEVIE TANKS DESTROYED";
-			expCond="(not canmove L1 or not canfire L1) and (not canmove L2 or not canfire L2)";
+			expCond="not canmove L1 and not canmove L2";
 			expActiv="levieTanks=true";
 			class Effects
 			{
