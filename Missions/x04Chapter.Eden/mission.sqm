@@ -20,7 +20,7 @@ class Intro
 	};
 	class Groups
 	{
-		items=2;
+		items=6;
 		class Item0
 		{
 			side="EAST";
@@ -48,7 +48,7 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={9637.966797,14.984538,1534.088379};
+					position[]={9582.329102,24.639778,1562.844971};
 					id=1;
 					side="LOGIC";
 					vehicle="Logic";
@@ -57,6 +57,148 @@ class Intro
 					init="this exec ""camera.sqs""";
 				};
 			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9570.592773,25.104536,1560.144165};
+					azimut=40.000000;
+					id=2;
+					side="EAST";
+					vehicle="SoldierESaboteurPipe";
+					leader=1;
+					rank="MAJOR";
+					skill=0.600000;
+					text="Lemontov";
+					init="this setidentity ""Lemontov""; this setbehaviour ""safe""; removeallweapons this; this addweapon ""svddragunov""";
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9572.570313,25.026224,1561.615112};
+					azimut=195.000000;
+					id=3;
+					side="EAST";
+					vehicle="SoldierECrew";
+					leader=1;
+					rank="MAJOR";
+					skill=0.600000;
+					text="Kukushkin";
+					init="this setidentity ""KukushkinGlasses""; this setbehaviour ""safe""";
+				};
+			};
+		};
+		class Item4
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9574.679688,24.942688,1559.877930};
+					azimut=260.000000;
+					id=4;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					rank="MAJOR";
+					skill=0.600000;
+					text="Zubarev";
+					init="this setidentity ""Zubarev""; this setbehaviour ""safe""; this removeweapon ""binocular""";
+				};
+			};
+		};
+		class Item5
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9568.062500,25.204720,1554.173462};
+					azimut=20.000000;
+					id=5;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					rank="MAJOR";
+					skill=0.600000;
+					text="Volkov";
+					init="this setidentity ""Volkov""; this setbehaviour ""safe""; removeallweapons this";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=6;
+		class Item0
+		{
+			position[]={9585.770508,24.216829,1568.983521};
+			azimut=330.653839;
+			id=6;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.600000;
+		};
+		class Item1
+		{
+			position[]={9587.042969,24.229555,1566.664185};
+			azimut=330.653992;
+			id=7;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.600000;
+		};
+		class Item2
+		{
+			position[]={9579.578125,24.748724,1550.057251};
+			azimut=205.000000;
+			id=8;
+			side="EMPTY";
+			vehicle="CampEastC";
+			skill=0.600000;
+		};
+		class Item3
+		{
+			position[]={9579.150391,24.765642,1568.267822};
+			id=9;
+			side="EMPTY";
+			vehicle="FlagCarrier";
+			skill=0.600000;
+			init="this setflagtexture ""rus_vlajka.pac""";
+		};
+		class Item4
+		{
+			position[]={9582.443359,24.635246,1556.910767};
+			azimut=300.000000;
+			id=10;
+			side="EMPTY";
+			vehicle="Wire";
+			skill=0.600000;
+		};
+		class Item5
+		{
+			position[]={9588.334961,24.401945,1560.974976};
+			azimut=345.000000;
+			id=11;
+			side="EMPTY";
+			vehicle="Wire";
+			skill=0.600000;
 		};
 	};
 };
