@@ -421,13 +421,13 @@ class Campaign
 		cutscene = ;
 
 		firstMission = x00Prologue;
-		lost = ChapterI;
+		lost = ;
 		end1 = ChapterI;
-		end2 = ChapterI;
-		end3 = ChapterI;
-		end4 = ChapterI;
-		end5 = ChapterI;
-		end6 = ChapterI;
+		end2 = ;
+		end3 = ;
+		end4 = ;
+		end5 = ;
+		end6 = ;
 
 		class x00Prologue: MissionDefault
 		{
@@ -463,13 +463,13 @@ class Campaign
 		cutscene = ;
 
 		firstMission = x01Chapter;
-		lost = ChapterII;
+		lost = ;
 		end1 = ChapterII;
-		end2 = ChapterII;
-		end3 = ChapterII;
-		end4 = ChapterII;
-		end5 = ChapterII;
-		end6 = ChapterII;
+		end2 = ;
+		end3 = ;
+		end4 = ;
+		end5 = ;
+		end6 = ;
 		
 
 		class x01Chapter: MissionDefault
@@ -648,13 +648,13 @@ class Campaign
 		cutscene = ;
 
 		firstMission = x02Chapter;
-		lost = ChapterIII;
+		lost = ;
 		end1 = ChapterIII;
-		end2 = ChapterIII;
-		end3 = ChapterIII;
-		end4 = ChapterIII;
-		end5 = ChapterIII;
-		end6 = ChapterIII;
+		end2 = ;
+		end3 = ;
+		end4 = ;
+		end5 = ;
+		end6 = ;
 
 
 		class x02Chapter: MissionDefault
@@ -854,7 +854,7 @@ class Campaign
 
 		firstMission = x03Chapter;
 		lost = ;
-		end1 = ;
+		end1 = ChapterIV;
 		end2 = ;
 		end3 = ;
 		end4 = ;
@@ -972,6 +972,35 @@ class Campaign
 			end6 = ;
 			lost = 38RedSkies;
 			template = 38RedSkies.Eden;
+		};
+	};
+
+	class ChapterIV
+	{
+		name = "HOMECOMING";
+
+		cutscene = ;
+
+		firstMission = x04Chapter;
+		lost = ;
+		end1 = ;
+		end2 = ;
+		end3 = ;
+		end4 = ;
+		end5 = ;
+		end6 = ;
+
+		class x04Chapter: MissionDefault
+		{
+			noAward=true;
+			end1 = ;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = ;
+			template = x04Chapter.Eden;
 		};
 	};
 };
