@@ -1388,7 +1388,7 @@ class Intro
 		};
 		class Item3
 		{
-			position[]={9579.886719,24.736488,1568.672974};
+			position[]={9570.917969,25.091665,1566.960938};
 			id=9;
 			side="EMPTY";
 			vehicle="FlagCarrier";
@@ -2253,7 +2253,7 @@ class Intro
 	};
 	class Markers
 	{
-		items=8;
+		items=12;
 		class Item0
 		{
 			position[]={9642.351563,13.862472,1587.975220};
@@ -2302,10 +2302,34 @@ class Intro
 			name="AnnouncerAway";
 			type="Flag";
 		};
+		class Item8
+		{
+			position[]={9592.930664,23.196514,1574.041748};
+			name="VolkovSpeech";
+			type="Flag";
+		};
+		class Item9
+		{
+			position[]={9594.698242,23.332195,1568.863037};
+			name="KukushkinSpeech";
+			type="Flag";
+		};
+		class Item10
+		{
+			position[]={9592.922852,23.376329,1571.072388};
+			name="ZubarevSpeech";
+			type="Flag";
+		};
+		class Item11
+		{
+			position[]={9589.669922,23.434633,1575.495117};
+			name="LemontovSpeech";
+			type="Flag";
+		};
 	};
 	class Sensors
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			position[]={9541.530273,24.579327,1535.395752};
@@ -2315,6 +2339,19 @@ class Intro
 			age="UNKNOWN";
 			expCond="true";
 			expActiv="Volkov stop true;  Volkov setpos getmarkerpos ""VolkovGroup"";  Volkov setdir 305;  Volkov dowatch [9572.72,1562.58,1.65];  Volkov stop false;  Lemontov switchmove """";  Zubarev switchmove """";  Kukushkin switchmove """";  Lemontov dowatch [9574.40,1561.04,1.69];  Kukushkin dowatch [9574.40,1561.04,1.69];  Zubarev dowatch [9574.40,1561.04,1.69];  Kukushkin setmimic ""normal"";  Zubarev setmimic ""normal"";";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={9537.170898,22.968910,1511.971313};
+			timeoutMin=3.000000;
+			timeoutMid=3.000000;
+			timeoutMax=3.000000;
+			age="UNKNOWN";
+			expCond="true";
+			expActiv="Volkov setspeedmode ""limited""; Volkov move getmarkerpos ""VolkovSpeech""";
 			class Effects
 			{
 			};
