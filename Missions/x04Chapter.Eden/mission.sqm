@@ -48,7 +48,7 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={9570.153320,25.121939,1558.219482};
+					position[]={9605.608398,21.481144,1574.492065};
 					id=1;
 					side="LOGIC";
 					vehicle="Logic";
@@ -1370,7 +1370,7 @@ class Intro
 		};
 		class Item1
 		{
-			position[]={9596.045898,22.889130,1573.978516};
+			position[]={9595.917969,22.884912,1574.260864};
 			azimut=330.653992;
 			id=7;
 			side="EMPTY";
@@ -2253,7 +2253,7 @@ class Intro
 	};
 	class Markers
 	{
-		items=12;
+		items=16;
 		class Item0
 		{
 			position[]={9642.351563,13.862472,1587.975220};
@@ -2310,20 +2310,44 @@ class Intro
 		};
 		class Item9
 		{
-			position[]={9594.698242,23.332195,1568.863037};
+			position[]={9594.388672,23.349339,1569.091919};
 			name="KukushkinSpeech";
 			type="Flag";
 		};
 		class Item10
 		{
-			position[]={9592.922852,23.376329,1571.072388};
+			position[]={9592.820313,23.372868,1571.300415};
 			name="ZubarevSpeech";
 			type="Flag";
 		};
 		class Item11
 		{
-			position[]={9589.669922,23.434633,1575.495117};
+			position[]={9590.791016,23.376623,1574.600342};
 			name="LemontovSpeech";
+			type="Flag";
+		};
+		class Item12
+		{
+			position[]={9594.435547,22.986498,1575.032104};
+			name="VolkovSpeechActual";
+			type="Flag";
+		};
+		class Item13
+		{
+			position[]={9592.125977,23.182348,1575.610229};
+			name="LemontovSpeechActual";
+			type="Flag";
+		};
+		class Item14
+		{
+			position[]={9593.367188,23.195707,1573.332153};
+			name="ZubarevSpeechActual";
+			type="Flag";
+		};
+		class Item15
+		{
+			position[]={9594.007813,23.192396,1572.325317};
+			name="KukushkinSpeechActual";
 			type="Flag";
 		};
 	};
@@ -2332,26 +2356,22 @@ class Intro
 		items=2;
 		class Item0
 		{
-			position[]={9541.530273,24.579327,1535.395752};
-			timeoutMin=1.000000;
-			timeoutMid=1.000000;
-			timeoutMax=1.000000;
+			position[]={9541.652344,22.524832,1499.306396};
 			age="UNKNOWN";
 			expCond="true";
-			expActiv="Volkov stop true;  Volkov setpos getmarkerpos ""VolkovGroup"";  Volkov setdir 305;  Volkov dowatch [9572.72,1562.58,1.65];  Volkov stop false;  Lemontov switchmove """";  Zubarev switchmove """";  Kukushkin switchmove """";  Lemontov dowatch [9574.40,1561.04,1.69];  Kukushkin dowatch [9574.40,1561.04,1.69];  Zubarev dowatch [9574.40,1561.04,1.69];  Kukushkin setmimic ""normal"";  Zubarev setmimic ""normal"";";
+			expActiv="Volkov stop true;  Lemontov stop true;  Kukushkin stop true;  Zubarev stop true;  Volkov setpos getmarkerpos ""VolkovSpeechActual"";  Lemontov setpos getmarkerpos ""LemontovSpeechActual"";  Kukushkin setpos getmarkerpos ""KukushkinSpeechActual"";  Zubarev setpos getmarkerpos ""ZubarevSpeechActual"";  Volkov dowatch [9598.95,1577.10,2.06];  Lemontov dowatch [9598.17,1578.69,2.08];  Zubarev dowatch [9600.09,1576.69,2.16];  Kukushkin dowatch [9600.67,1575.54,2.19];  Volkov stop false;  Lemontov stop false;  Zubarev stop false;  Kukushkin stop false;";
 			class Effects
 			{
 			};
 		};
 		class Item1
 		{
-			position[]={9537.170898,22.968910,1511.971313};
-			timeoutMin=3.000000;
-			timeoutMid=3.000000;
-			timeoutMax=3.000000;
+			position[]={10496.843750,265.564056,2495.278076};
+			a=0.000000;
+			b=0.000000;
+			type="END1";
 			age="UNKNOWN";
-			expCond="true";
-			expActiv="Volkov setspeedmode ""limited""; Volkov move getmarkerpos ""VolkovSpeech""";
+			expCond="end";
 			class Effects
 			{
 			};
