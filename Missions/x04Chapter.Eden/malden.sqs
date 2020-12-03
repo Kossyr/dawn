@@ -1,0 +1,40 @@
+_repeating = _this select 0
+_i = 0
+
+#loop
+
+(audience1 select 1) say "x04v75a"
+(audience1 select 3) say "x04v75b"
+(audience1 select 5) say "x04v75c"
+(audience1 select 7) say "x04v75a"
+(audience1 select 9) say "x04v75b"
+(audience1 select 10) say "x04v75c"
+~0.1
+(audience2 select 1) say "x04v75a"
+(audience2 select 3) say "x04v75b"
+(audience2 select 5) say "x04v75c"
+(audience2 select 7) say "x04v75a"
+(audience2 select 9) say "x04v75b"
+(audience2 select 10) say "x04v75c"
+~0.1
+(audience3 select 1) say "x04v75a"
+(audience3 select 3) say "x04v75b"
+(audience3 select 5) say "x04v75c"
+(audience3 select 7) say "x04v75a"
+(audience3 select 9) say "x04v75b"
+(audience3 select 10) say "x04v75c"
+(audience4 select 1) say "x04v75a"
+(audience4 select 3) say "x04v75b"
+(audience4 select 5) say "x04v75c"
+(audience4 select 7) say "x04v75a"
+(audience4 select 9) say "x04v75b"
+(audience4 select 10) say "x04v75c"
+
+
+~3
+
+_i = _i + 1
+
+? _i < _repeating : goto "loop" ;
+
+exit

@@ -1,0 +1,22 @@
+
+_repeating = _this select 0
+_i = 0
+
+#loop
+
+"_x switchmove ""FxShow3""" foreach audience1
+~0.4
+"_x switchmove ""FxShow3""" foreach audience2
+~0.4
+"_x switchmove ""FxShow3""" foreach audience3
+~0.2
+"_x switchmove ""FxShow3""" foreach audience4
+
+~2
+
+_i = _i + 1
+
+? _i < _repeating : goto "loop" ;
+
+
+exit

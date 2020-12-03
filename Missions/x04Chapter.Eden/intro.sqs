@@ -18,6 +18,8 @@ audience4 = [SOL_4, SOL_8, SOL_12, SOL_16, SOL_20, SOL_24, SOL_28, SOL_32, SOL_3
 "_x dowatch [9594.42,1575.02,1.69]" foreach audience
 
 
+playmusic "RTrack9"
+
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
@@ -55,6 +57,7 @@ _camera camCommit 4
 Ablomov setspeedmode "limited"
 Ablomov move getmarkerpos "Ablomov"
 @camCommitted _camera
+2 fademusic 0.3
 ~2
 Ablomov say "x04v01"
 ~0.5
@@ -80,7 +83,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Ablomov say "x04v03"
-~3
+~4
 ;=== 14:44:37
 _camera camSetTarget [91045.59,-53133.36,-19446.49]
 _camera camSetPos [9640.30,1588.24,1.49]
@@ -88,7 +91,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Belsky say "x04v04"
-~5
+~6
 Ablomov say "x04v05"
 ~3
 ;=== 14:45:07
@@ -99,7 +102,7 @@ _camera camCommit 0
 @camCommitted _camera
 Belsky setmimic "normal"
 Belsky say "x04v06"
-~5
+~6
 ;=== 14:45:51
 _camera camSetTarget [102811.72,33120.21,-18003.38]
 _camera camSetPos [9640.09,1586.50,1.52]
@@ -116,7 +119,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Belsky say "x04v08"
-~5
+~6
 ;=== 14:48:31
 _camera camSetTarget [66614.55,82816.87,-12470.05]
 _camera camSetPos [9641.95,1587.36,1.63]
@@ -124,9 +127,9 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Ablomov say "x04v09"
-~5
+~6
 Ablomov say "x04v10"
-~4
+~11
 ;=== 14:49:33
 _camera camSetTarget [96326.77,48347.85,-17273.61]
 _camera camSetPos [9640.53,1586.42,1.55]
@@ -135,7 +138,7 @@ _camera camCommit 0
 @camCommitted _camera
 Ablomov switchmove "FXCivilHandMouth"
 Ablomov say "x04v11"
-~5
+~8
 ;=== 14:50:08
 _camera camSetTarget [-49146.76,-78912.08,-7972.61]
 _camera camSetPos [9641.70,1586.91,1.61]
@@ -144,7 +147,7 @@ _camera camCommit 0
 @camCommitted _camera
 Belsky setmimic "Angry"
 Belsky say "x04v12"
-~3
+~5
 ;=== 14:52:34
 _camera camSetTarget [61322.53,84875.06,-19788.57]
 _camera camSetPos [9641.75,1586.95,1.62]
@@ -153,7 +156,7 @@ _camera camCommit 0
 @camCommitted _camera
 Ablomov switchmove "FXCivilArmsAkimboR"
 Ablomov say "x04v13"
-~5
+~10
 ;=== 14:53:08
 _camera camSetTarget [-12936.38,-94692.30,-14825.34]
 _camera camSetPos [9642.23,1588.46,1.58]
@@ -163,7 +166,7 @@ _camera camCommit 0
 Belsky setmimic "sad"
 Belsky say "x04v14"
 Belsky switchmove "FXCivilLookaround"
-~4
+~5
 ;=== 14:55:46
 _camera camSetTarget [59500.88,87431.02,-12024.16]
 _camera camSetPos [9641.97,1587.28,1.58]
@@ -172,9 +175,9 @@ _camera camCommit 0
 @camCommitted _camera
 Ablomov say "x04v15"
 Ablomov setmimic "smile"
-~1
-Ablomov setmimic "normal"
 ~2
+Ablomov setmimic "normal"
+~3
 ;=== 14:56:47
 _camera camSetTarget [-45018.59,-81815.69,-7485.56]
 _camera camSetPos [9641.66,1586.92,1.61]
@@ -183,7 +186,7 @@ _camera camCommit 0
 @camCommitted _camera
 Belsky setmimic "angry"
 Belsky say "x04v16"
-~5
+~9
 ;=== 14:58:48
 _camera camSetTarget [89666.81,59917.80,-13887.70]
 _camera camSetPos [9640.84,1586.36,1.56]
@@ -192,7 +195,7 @@ _camera camCommit 0
 @camCommitted _camera
 Ablomov setmimic "angry"
 Ablomov say "x04v17"
-~3
+~4
 ;=== 14:59:48
 _camera camSetTarget [-13920.98,-94596.20,-13887.74]
 _camera camSetPos [9642.21,1588.33,1.59]
@@ -200,7 +203,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Belsky say "x04v18"
-~5
+~7
 ;=== 15:00:21
 _camera camSetTarget [66902.77,83299.14,-6647.96]
 _camera camSetPos [9641.99,1587.39,1.63]
@@ -218,7 +221,7 @@ _camera camCommit 0
 Belsky setmimic "sad"
 Belsky say "x04v20"
 Belsky switchmove "FXCivilLookaround2"
-~6
+~14
 ;=== 15:01:40
 _camera camSetTarget [-16960.98,-94482.13,-7904.45]
 _camera camSetPos [9642.23,1588.42,1.58]
@@ -226,7 +229,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Belsky say "x04v21"
-~4
+~8
 ;=== 15:02:03
 _camera camSetTarget [63765.80,85300.66,-7904.68]
 _camera camSetPos [9642.08,1587.44,1.63]
@@ -244,13 +247,14 @@ _camera camCommit 0
 @camCommitted _camera
 Belsky setmimic "angry"
 Belsky say "x04v23"
-~6
+~9
 ;=== 15:05:40
 _camera camSetTarget [62396.59,86464.79,3590.68]
 _camera camSetPos [9642.03,1587.39,1.55]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
+titletext["","plain"]
 Ablomov setmimic "sad"
 ~1.5
 Ablomov setmimic "surprised"
@@ -302,16 +306,17 @@ Zubarev say "x04v24"
 _camera camSetTarget [-20254.23,95140.86,-18760.49]
 _camera camSetPos [9573.54,1560.03,1.65]
 _camera camSetFOV 0.700
-_camera camCommit 3
+_camera camCommit 4
 @camCommitted _camera
-Zubarev switchmove "FxShow4"
 ;=== 16:21:06
 _camera camSetTarget [90844.68,56714.21,-18760.43]
 _camera camSetPos [9571.94,1561.65,1.59]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~4
+~2
+Zubarev switchmove "FxShow4"
+~6
 ;=== 16:21:22
 _camera camSetTarget [84326.13,66704.71,-12956.15]
 _camera camSetPos [9573.87,1562.49,1.62]
@@ -321,7 +326,7 @@ _camera camCommit 0
 Kukushkin say "x04v25"
 Kukushkin setmimic "smile"
 Lemontov dowatch [9574.40,1562.95,1.64]
-~3
+~4
 ;=== 16:22:06
 _camera camSetTarget [-41093.48,-83535.53,-13790.15]
 _camera camSetPos [9574.39,1563.65,1.64]
@@ -329,7 +334,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Lemontov say "x04v26"
-~3
+~4
 ;=== 16:22:51
 _camera camSetTarget [86459.59,63993.76,-13790.55]
 _camera camSetPos [9573.74,1562.43,1.61]
@@ -339,7 +344,7 @@ _camera camCommit 0
 Kukushkin setmimic "sad"
 Kukushkin say "x04v27"
 Kukushkin switchmove "FxShow2"
-~3
+~7
 ;=== 16:22:40
 _camera camSetTarget [15380.27,100432.48,-13790.29]
 _camera camSetPos [9572.88,1559.84,1.58]
@@ -347,15 +352,15 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Kukushkin setmimic "normal"
-~4
-;=== 16:23:10
-_camera camSetTarget [-59800.04,-70130.91,-6829.11]
-_camera camSetPos [9573.02,1561.52,1.58]
+~5
+;=== 18:49:59
+_camera camSetTarget [-62578.98,-67161.02,-8418.10]
+_camera camSetPos [9572.92,1561.55,1.61]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Lemontov say "x04v28"
-~2
+~3
 ;=== 16:23:25
 _camera camSetTarget [79893.34,72407.17,-5989.29]
 _camera camSetPos [9573.83,1562.42,1.61]
@@ -384,7 +389,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Announcer say "x04v30"
-~0.3
+~0.5
 Zubarev dowatch [9574.92,1555.04,1.66];
 Kukushkin dowatch [9574.92,1555.04,1.66];
 Lemontov dowatch [9574.92,1555.04,1.66];
@@ -395,13 +400,14 @@ _camera camSetPos [9574.60,1556.56,1.64]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~2
+~3
 ;=== 16:10:37
 _camera camSetTarget [-6787.83,98884.94,-16061.76]
 _camera camSetPos [9574.75,1553.59,1.65]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
+titletext["","plain"]
 Announcer dowatch [9574.95,1555.01,1.65]
 ~1
 Announcer playmove "effectstandsalute"
@@ -494,6 +500,7 @@ _camera camSetPos [9573.90,1561.76,1.67]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
+Volkov dowatch [9574.43,1562.94,1.72]
 Volkov say "x04v31"
 ;=== 16:46:12
 _camera camSetTarget [96975.80,-45294.12,-12836.19]
@@ -514,7 +521,7 @@ _camera camSetPos [9576.08,1562.73,1.70]
 _camera camSetFOV 0.700
 _camera camCommit 5
 @camCommitted _camera
-~1
+~11
 ;=== 17:02:28
 _camera camSetTarget [11526.73,100900.68,-11288.66]
 _camera camSetPos [9574.39,1562.33,1.63]
@@ -549,9 +556,9 @@ _camera camSetPos [9573.55,1561.15,1.57]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~3
+~10
 Volkov say "x04v35"
-~7
+~12
 ;=== 19:15:08
 _camera camSetTarget [22269.25,100430.32,-7931.28]
 _camera camSetPos [9573.04,1559.26,1.39]
@@ -559,7 +566,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Lemontov say "x04v36"
-~4
+~5
 ;=== 19:16:26
 _camera camSetTarget [108233.45,3038.19,-16222.45]
 _camera camSetPos [9573.41,1560.98,1.61]
@@ -567,10 +574,10 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Volkov setmimic "smile"
-~0.8
+~0.7
 Volkov setmimic "angry"
 Volkov say "x04v37"
-~5
+~7
 Volkov dowatch [9591.20,1552.28,3.36]
 ~1
 ;=== 19:20:03
@@ -579,11 +586,11 @@ _camera camSetPos [9575.70,1560.14,1.54]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~1
+~2
 Lemontov say "x04v38"
 ~1
 Volkov say "x04v39"
-~2
+~5
 Volkov switchmove "Fxshow3"
 ~0.5
 ;=== 19:21:38
@@ -604,7 +611,7 @@ _camera camSetPos [9575.28,1560.35,1.64]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~2
+~4
 Volkov say "x04v40"
 ~0.5
 Volkov dowatch [9572.38,1561.08,1.72]
@@ -621,6 +628,7 @@ _camera camSetPos [9572.93,1559.30,1.54]
 _camera camSetFOV 0.700
 _camera camCommit 3
 @camCommitted _camera
+~3
 ;=== 19:23:48
 _camera camSetTarget [-90254.13,3576.24,5544.40]
 _camera camSetPos [9573.16,1561.06,1.54]
@@ -628,7 +636,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Lemontov say "x04v41"
-~3
+~6
 ;=== 19:45:57
 _camera camSetTarget [102434.79,35523.00,-14908.82]
 _camera camSetPos [9572.02,1560.54,1.59]
@@ -636,7 +644,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Volkov say "x04v42"
-~5
+~9
 ;=== 19:46:12
 _camera camSetTarget [108445.55,416.42,-14909.31]
 _camera camSetPos [9573.79,1561.05,1.66]
@@ -644,7 +652,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Volkov say "x04v43"
-~5
+~7
 Kukushkin setmimic "smile"
 Zubarev setmimic "smile"
 ;=== 19:47:13
@@ -654,7 +662,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Lemontov say "x04v44"
-~2
+~3
 ;=== 19:49:27
 _camera camSetTarget [108843.14,5919.36,-11225.08]
 _camera camSetPos [9573.77,1561.03,1.65]
@@ -662,7 +670,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Volkov say "x04v45"
-~2
+~5
 Volkov dowatch [9572.85,1562.51,1.65]
 ;=== 19:53:01
 _camera camSetTarget [-61730.68,69040.84,-18995.16]
@@ -670,7 +678,7 @@ _camera camSetPos [9575.32,1560.23,2.06]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~3
+~5
 Volkov dowatch [9574.43,1562.94,1.72]
 ;=== 19:53:21
 _camera camSetTarget [-37918.19,87481.98,-18994.93]
@@ -678,7 +686,7 @@ _camera camSetPos [9575.32,1560.23,2.06]
 _camera camSetFOV 0.700
 _camera camCommit 3
 @camCommitted _camera
-~3
+~4
 ;=== 19:54:04
 _camera camSetTarget [12735.28,-96561.44,-18995.70]
 _camera camSetPos [9574.44,1561.89,1.72]
@@ -687,9 +695,9 @@ _camera camCommit 0
 @camCommitted _camera
 Volkov say "x04v46"
 Volkov setmimic "sad"
-~2
+~3
 Volkov setmimic "angry"
-~4
+~12
 Volkov say "x04v47"
 ;=== 19:53:21
 _camera camSetTarget [-37918.19,87481.98,-18994.93]
@@ -704,7 +712,7 @@ _camera camSetPos [9575.32,1560.23,2.06]
 _camera camSetFOV 0.700
 _camera camCommit 3
 @camCommitted _camera
-~3
+~8
 ;=== 19:55:45
 _camera camSetTarget [108385.11,-2278.62,-14855.79]
 _camera camSetPos [9573.76,1561.07,1.65]
@@ -712,7 +720,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Volkov say "x04v48"
-~5
+~14
 ;=== 19:56:17
 _camera camSetTarget [14656.63,100316.03,-14855.75]
 _camera camSetPos [9572.78,1560.19,1.61]
@@ -720,7 +728,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Lemontov say "x04v49"
-~2
+~4
 ;=== 19:57:59
 _camera camSetTarget [106986.37,-15447.31,-14855.99]
 _camera camSetPos [9573.65,1561.13,1.64]
@@ -728,9 +736,9 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Volkov say "x04v50"
-~6
+~11
 Volkov say "x04v51"
-~5
+~16
 ;=== 20:04:01
 _camera camSetTarget [-89635.17,10940.43,-8322.23]
 _camera camSetPos [9573.34,1560.95,1.63]
@@ -739,7 +747,7 @@ _camera camCommit 0
 @camCommitted _camera
 Lemontov setmimic "surprised"
 Lemontov say "x04v52"
-~2
+~4
 ;=== 20:04:29
 _camera camSetTarget [53758.18,90878.95,-8322.40]
 _camera camSetPos [9572.47,1559.71,1.59]
@@ -747,7 +755,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Volkov say "x04v53"
-~4
+~10
 ;=== 20:04:52
 _camera camSetTarget [108795.63,5805.48,-11677.61]
 _camera camSetPos [9573.67,1561.02,1.64]
@@ -755,7 +763,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Volkov say "x04v54"
-~4
+~6
 ;=== 20:06:23
 _camera camSetTarget [-90396.54,2812.98,2153.06]
 _camera camSetPos [9573.00,1561.04,1.60]
@@ -763,11 +771,11 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 playsound "x04v55"
-~5
+~9
 playsound "x04v56"
-~3
+~4
 Lemontov setmimic "angry"
-~2
+~3
 ;=== 20:08:28
 _camera camSetTarget [97540.41,-44480.91,-11865.47]
 _camera camSetPos [9571.35,1562.85,1.52]
@@ -779,7 +787,7 @@ Volkov say "x04v57"
 _camera camSetTarget [104359.80,-27997.71,-11865.61]
 _camera camSetPos [9571.61,1561.86,1.53]
 _camera camSetFOV 0.700
-_camera camCommit 3
+_camera camCommit 4
 @camCommitted _camera
 ;=== 20:08:49
 _camera camSetTarget [109332.06,-203.34,-6695.32]
@@ -789,7 +797,7 @@ _camera camCommit 0
 @camCommitted _camera
 ~4
 Volkov say "x04v58"
-~5
+~11
 ;=== 20:11:17
 _camera camSetTarget [-89369.91,-9990.75,-8722.26]
 _camera camSetPos [9574.60,1561.29,1.65]
@@ -797,7 +805,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Lemontov say "x04v59"
-~3
+~4
 ;=== 20:11:58
 _camera camSetTarget [104187.54,30819.82,-13834.78]
 _camera camSetPos [9573.68,1560.94,1.61]
@@ -805,13 +813,14 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Volkov say "x04v60"
-~5
+~8
 Volkov say "x04v61"
-~2
+~4
 Volkov dowatch [9598.55,1576.76,1.89]
 Volkov setspeedmode "limited"
 Volkov move getmarkerpos "VolkovSpeech"
 ~1
+titletext["","plain"]
 ;=== 17:27:28
 _camera camSetTarget [-79254.83,-44359.43,24.24]
 _camera camSetPos [9576.96,1563.44,1.17]
@@ -972,7 +981,7 @@ _camera camCommit 4
 Volkov switchmove "FxShow3"
 @camCommitted _camera
 Volkov say "x04v62"
-~3
+~4
 Volkov say "x04v63"
 ~2
 ;=== 18:32:50
@@ -985,7 +994,7 @@ _camera camCommit 0
 _camera camSetTarget [99349.06,43890.22,-12556.24]
 _camera camSetPos [9611.84,1592.82,1.29]
 _camera camSetFOV 0.700
-_camera camCommit 3
+_camera camCommit 6
 @camCommitted _camera
 ;=== 18:34:06
 _camera camSetTarget [34350.73,94477.46,-27521.58]
@@ -997,7 +1006,7 @@ _camera camCommit 0
 _camera camSetTarget [38425.83,94722.73,-22234.70]
 _camera camSetPos [9626.70,1580.96,1.89]
 _camera camSetFOV 0.700
-_camera camCommit 3
+_camera camCommit 6
 @camCommitted _camera
 ;=== 18:34:43
 _camera camSetTarget [-75973.99,-49003.91,-10908.54]
@@ -1006,7 +1015,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Volkov say "x04v64"
-~1.5
+~5
 ;=== 18:34:59
 _camera camSetTarget [100170.52,37205.49,-22900.72]
 _camera camSetPos [9590.00,1573.93,2.12]
@@ -1017,7 +1026,7 @@ _camera camCommit 0
 _camera camSetTarget [88264.95,58885.41,-22900.29]
 _camera camSetPos [9591.63,1571.23,2.24]
 _camera camSetFOV 0.700
-_camera camCommit 5
+_camera camCommit 10
 @camCommitted _camera
 ;=== 18:35:50
 _camera camSetTarget [-81641.05,-38870.33,-6307.09]
@@ -1026,7 +1035,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Volkov say "x04v65"
-~1.5
+~4
 ;=== 18:36:16
 _camera camSetTarget [-75746.18,-46825.81,-19087.36]
 _camera camSetPos [9635.84,1596.84,8.64]
@@ -1037,11 +1046,11 @@ _camera camCommit 0
 _camera camSetTarget [-67903.52,-61523.85,-247.17]
 _camera camSetPos [9645.07,1612.68,4.23]
 _camera camSetFOV 0.700
-_camera camCommit 4
+_camera camCommit 8
 @camCommitted _camera
 
-ura_short=true
-[2] exec "ura.sqs"
+[3] exec "ura.sqs"
+[2] exec "hail.sqs"
 ~1
 ;=== 18:50:33
 _camera camSetTarget [105734.09,19332.02,-21087.07]
@@ -1073,10 +1082,10 @@ Volkov say "x04v66"
 _camera camSetTarget [-80824.35,-41128.66,-716.84]
 _camera camSetPos [9595.77,1575.63,1.65]
 _camera camSetFOV 0.452
-_camera camCommit 4
+_camera camCommit 6
 @camCommitted _camera
 Volkov say "x04v67"
-~1
+~2
 ;=== 18:53:04
 _camera camSetTarget [93074.91,52465.45,-20959.96]
 _camera camSetPos [9590.65,1573.22,1.79]
@@ -1087,7 +1096,7 @@ _camera camCommit 0
 _camera camSetTarget [93074.91,52465.45,-20959.97]
 _camera camSetPos [9590.65,1573.22,2.73]
 _camera camSetFOV 0.700
-_camera camCommit 3
+_camera camCommit 7
 @camCommitted _camera
 ;=== 18:53:37
 _camera camSetTarget [-89688.84,-6790.59,8550.61]
@@ -1097,28 +1106,28 @@ _camera camCommit 0
 @camCommitted _camera
 ~2
 Volkov say "x04v68"
-~1
+~3
 ;=== 18:54:07
 _camera camSetTarget [108088.19,9822.54,-15336.95]
 _camera camSetPos [9616.96,1600.56,1.34]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~2
+~4
 ;=== 18:54:30
 _camera camSetTarget [70726.14,79281.02,-15139.00]
 _camera camSetPos [9619.32,1588.23,1.47]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~2
+~4
 ;=== 18:55:24
 _camera camSetTarget [107536.72,-15129.86,-11497.91]
 _camera camSetPos [9618.74,1585.72,1.42]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~2
+~4
 ;=== 18:57:44
 _camera camSetTarget [-80790.83,-41173.70,1726.04]
 _camera camSetPos [9595.11,1575.39,1.62]
@@ -1126,7 +1135,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Volkov say "x04v69"
-~4
+~10
 Ablomov setmimic "angry"
 Belsky setmimic "angry"
 ;=== 19:01:04
@@ -1136,7 +1145,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Belsky say "x04v70"
-~4
+~5
 Ablomov say "x04v71"
 ~2
 ;=== 19:01:33
@@ -1146,7 +1155,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Belsky say "x04v72"
-~4
+~8
 ;=== 19:02:08
 _camera camSetTarget [-85521.30,-28097.89,-8459.61]
 _camera camSetPos [9597.32,1575.63,1.79]
@@ -1158,7 +1167,7 @@ Volkov say "x04v73"
 _camera camSetTarget [-68263.84,-60598.85,-8459.71]
 _camera camSetPos [9596.40,1576.74,1.77]
 _camera camSetFOV 0.700
-_camera camCommit 3
+_camera camCommit 6
 @camCommitted _camera
 ;=== 19:02:50
 _camera camSetTarget [108154.82,8900.61,-15324.57]
@@ -1170,7 +1179,7 @@ _camera camCommit 0
 _camera camSetTarget [103002.74,22613.59,-28891.77]
 _camera camSetPos [9610.03,1593.39,2.16]
 _camera camSetFOV 0.700
-_camera camCommit 3
+_camera camCommit 7
 @camCommitted _camera
 Volkov say "x04v74"
 ;=== 19:03:11
@@ -1194,15 +1203,15 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Volkov switchmove "FxShow3"
-~2
+~4
 Rashiv setpos getmarkerpos "Rashiv";
 Shaposhnikov setpos getmarkerpos "Shaposhnikov";
 Rashiv dowatch [9594.42,1575.02,1.69];
 Shaposhnikov dowatch [9594.42,1575.02,1.69];
 Rashiv setmimic "Angry"
 Shaposhnikov setmimic "normal"
-
-[5] exec "ura.sqs"
+[4] exec "malden.sqs"
+[8] exec "hail.sqs"
 
 titletext[localize "STRM_x04v75", "plain down"]
 
@@ -1219,7 +1228,6 @@ _camera camSetPos [9624.20,1586.31,1.51]
 _camera camSetFOV 0.700
 _camera camCommit 3
 @camCommitted _camera
-ura_long=true
 ;=== 19:07:29
 _camera camSetTarget [107649.02,-3722.17,-18987.25]
 _camera camSetPos [9616.27,1600.48,1.22]
@@ -1262,7 +1270,6 @@ _camera camCommit 0
 ~0.5
 Volkov setmimic "smile"
 ~1.5
-[2] exec "ura.sqs"
 ;=== 19:17:54
 _camera camSetTarget [-68977.02,-59038.11,11855.07]
 _camera camSetPos [9643.77,1613.61,2.66]
@@ -1271,7 +1278,7 @@ _camera camCommit 0
 @camCommitted _camera
 ~1.5
 Rashiv say "x04v76"
-~2
+~7
 ;=== 19:19:02
 _camera camSetTarget [87246.44,64330.63,-6622.45]
 _camera camSetPos [9642.50,1612.51,1.59]
@@ -1282,13 +1289,13 @@ _camera camCommit 0
 Shaposhnikov say "x04v77"
 ~3
 Rashiv say "x04v78"
-~3
+~5
 Shaposhnikov say "x04v79"
-~4
+~5
 Rashiv say "x04v80"
-~1.5
+~2.5
 Rashiv setmimic "surprised"
-~1.5
+~2.5
 ;=== 19:45:20
 _camera camSetTarget [89455.18,61622.52,-5365.08]
 _camera camSetPos [9643.53,1612.93,1.61]
@@ -1297,7 +1304,7 @@ _camera camCommit 0
 @camCommitted _camera
 Shaposhnikov setmimic "sad"
 Shaposhnikov say "x04v81"
-~5
+~11
 ;=== 19:19:02
 _camera camSetTarget [87246.44,64330.63,-6622.45]
 _camera camSetPos [9642.50,1612.51,1.59]
@@ -1306,13 +1313,12 @@ _camera camCommit 0
 @camCommitted _camera
 Rashiv setmimic "angry"
 Rashiv say "x04v82"
-~4
+~5
 Shaposhnikov setmimic "normal"
 Shaposhnikov say "x04v83"
-~5
+~11
 Rashiv say "x04v84"
-~3
-[2] exec "ura.sqs"
+~4
 ;=== 19:17:54
 _camera camSetTarget [-68977.02,-59038.11,11855.07]
 _camera camSetPos [9643.77,1613.61,2.66]
@@ -1320,7 +1326,7 @@ _camera camSetFOV 0.094
 _camera camCommit 0
 @camCommitted _camera
 Shaposhnikov say "x04v85"
-~5
+~11
 Rashiv setmimic "surprised"
 Rashiv say "x04v86"
 ;=== 19:19:02
@@ -1329,7 +1335,7 @@ _camera camSetPos [9642.50,1612.51,1.59]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~4
+~8
 ;=== 19:45:20
 _camera camSetTarget [89455.18,61622.52,-5365.08]
 _camera camSetPos [9643.53,1612.93,1.61]
@@ -1337,7 +1343,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Shaposhnikov say "x04v87"
-~4
+~11
 ;=== 19:19:02
 _camera camSetTarget [87246.44,64330.63,-6622.45]
 _camera camSetPos [9642.50,1612.51,1.59]
@@ -1349,7 +1355,6 @@ Rashiv say "x04v88"
 ~2
 Shaposhnikov say "x04v89"
 ~2
-[5] exec "ura.sqs"
 ;=== 19:49:54
 _camera camSetTarget [-65901.33,-63487.45,-7376.47]
 _camera camSetPos [9644.31,1613.96,1.61]
@@ -1359,7 +1364,7 @@ _camera camCommit 0
 Rashiv say "x04v90"
 Rashiv dowatch [9644.13,1613.34,1.60]
 Shaposhnikov dowatch [9642.92,1612.95,1.60]
-~5
+~10
 ;=== 19:51:42
 _camera camSetTarget [-89565.87,453.41,-12471.05]
 _camera camSetPos [9644.71,1613.06,1.73]
@@ -1374,7 +1379,7 @@ _camera camSetPos [9644.34,1612.69,1.70]
 _camera camSetFOV 0.700
 _camera camCommit 5
 @camCommitted _camera
-~2
+~10
 ;=== 19:52:24
 _camera camSetTarget [99551.66,43572.81,-12471.19]
 _camera camSetPos [9643.51,1613.08,1.64]
@@ -1391,19 +1396,23 @@ _camera camCommit 0
 @camCommitted _camera
 Rashiv setmimic "angry"
 Rashiv say "x04v93"
-[20] exec "ura.sqs"
 Shaposhnikov reveal Rashiv
-~5
+~11
 Rashiv say "x04v94"
 Shaposhnikov reveal Rashiv
-~5
+~8
 Shaposhnikov reveal Rashiv
 Rashiv say "x04v95"
-~3
+0 fademusic 0.1
+playmusic "RTrack1a"
+~2
+2 fademusic 0.5
+~2
 Shaposhnikov dowatch Rashiv
 Rashiv dowatch objNull
 Rashiv setspeedmode "limited"
 Rashiv move getmarkerpos "RashivAway"
+2 fademusic 1
 ;=== 19:54:33
 _camera camSetTarget [-72254.89,58737.88,-5366.14]
 _camera camSetPos [9645.29,1611.72,1.56]
@@ -1416,7 +1425,7 @@ _camera camSetPos [9644.69,1612.49,1.48]
 _camera camSetFOV 0.700
 _camera camCommit 4
 @camCommitted _camera
-~1
+titletext["","plain"]
 Lemontov dowatch [9595.70,1579.17,1.95]
 ;=== 19:55:05
 _camera camSetTarget [85472.59,64690.02,-16068.59]
