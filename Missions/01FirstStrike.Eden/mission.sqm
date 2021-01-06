@@ -1299,7 +1299,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=8;
+		items=9;
 		class Item0
 		{
 			position[]={3468.811279,51.267502,3832.002930};
@@ -1412,6 +1412,20 @@ class Mission
 			text="OUT OF BOUNDS - KILL";
 			expCond="this and alive aP and not (aP in heli)";
 			expActiv="[] exec ""outofbounds.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item8
+		{
+			position[]={4804.547363,16.334999,4004.523682};
+			a=70.000000;
+			b=100.000000;
+			angle=28.701799;
+			activationBy="WEST";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			expActiv="[] exec ""outside2.sqs""";
 			class Effects
 			{
 			};
