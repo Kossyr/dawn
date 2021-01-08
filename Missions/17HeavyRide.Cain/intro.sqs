@@ -1,0 +1,109 @@
+titlecut["","black in", 3]
+
+Frolov setmimic "normal"
+Zubarev setmimic "normal"
+
+Frolov dowatch [6097.15,6177.67,1.63]
+Zubarev dowatch [6096.40,6176.48,1.63]
+
+playmusic "Track5"
+
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;=== 15:22:04
+_camera camSetTarget [-51963.68,-74984.91,-6018.21]
+_camera camSetPos [6098.20,6177.81,4.13]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 15:21:53
+_camera camSetTarget [-80571.91,-43288.09,-6018.75]
+_camera camSetPos [6098.20,6177.81,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 7
+~5
+1 fademusic 0.3
+~1
+Zubarev say "17v01"
+@camCommitted _camera
+~1
+;=== 15:23:34
+_camera camSetTarget [12736.00,105748.54,-6018.63]
+_camera camSetPos [6096.96,6176.89,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 15:23:43
+_camera camSetTarget [25918.14,104170.46,-1682.95]
+_camera camSetPos [6096.94,6177.03,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+Zubarev switchmove "FxShow3"
+~1
+Frolov dowatch [6096.75,6177.02,0.5]
+;=== 15:24:58
+_camera camSetTarget [-62520.14,-66288.05,-5948.75]
+_camera camSetPos [6096.88,6177.01,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~0.5
+Frolov say "17v02"
+~3
+Frolov dowatch [6097.15,6177.67,1.63]
+~0.5
+;=== 15:25:34
+_camera camSetTarget [9766.25,105177.78,-13188.79]
+_camera camSetPos [6096.62,6175.62,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Zubarev say "17v03"
+Zubarev switchmove "angry"
+;=== 15:26:03
+_camera camSetTarget [-1277.87,104971.44,-13188.89]
+_camera camSetPos [6097.05,6176.17,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+;=== 15:26:30
+_camera camSetTarget [63915.34,87685.65,-3240.76]
+_camera camSetPos [6096.75,6177.16,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Zubarev setmimic "normal"
+~2
+;=== 15:26:56
+_camera camSetTarget [-68812.57,-59196.43,-10290.64]
+_camera camSetPos [6097.79,6177.77,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Frolov setmimic "cynic"
+Frolov say "17v04"
+~1.5
+;=== 15:27:48
+_camera camSetTarget [19464.10,105219.69,-3030.57]
+_camera camSetPos [6096.98,6177.09,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Zubarev setmimic "smile"
+Zubarev say "17v05"
+~1
+titlecut["","black out",3]
+3 fademusic 0
+~3
+end=true
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit
+
+exit

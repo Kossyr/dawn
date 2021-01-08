@@ -1,5 +1,7 @@
 onLoadMission="$STRM_ONLOAD_MISSION";
 onLoadMissionTime = true;
+onLoadIntro="$STRM_ONLOAD_INTRO";
+onLoadIntroTime = false;
 
 MinScore = 0
 AvgScore = 6000
@@ -16,6 +18,43 @@ ShowNotepad = 1
 ShowGPS = 0
 
 ShowMap = 1
+
+
+class CfgSounds
+{
+	sounds[] = { };
+
+	class 17v01
+	{
+		name = "17v01";
+		sound[] = {"17v01.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_17v01};
+	};
+	class 17v02
+	{
+		name = "17v02";
+		sound[] = {"17v02.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_17v02};
+	};
+	class 17v03
+	{
+		name = "17v03";
+		sound[] = {"17v03.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_17v03};
+	};
+	class 17v04
+	{
+		name = "17v04";
+		sound[] = {"17v04.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_17v04};
+	};
+	class 17v05
+	{
+		name = "17v05";
+		sound[] = {"17v05.ogg", db+10, 1.00};
+		titles[] = {0,$STRM_17v05};
+	};
+};
 
 
 class CfgRadio
