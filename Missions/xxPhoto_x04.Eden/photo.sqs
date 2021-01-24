@@ -12,55 +12,36 @@ audience4 = [SOL_4, SOL_8, SOL_12, SOL_16, SOL_20, SOL_24, SOL_28, SOL_32, SOL_3
 
 "_x dowatch [9594.42,1575.02,1.69]" foreach audience
 
-Volkov stop true;
-Lemontov stop true;
-Kukushkin stop true;
-Zubarev stop true;
-Volkov setpos getmarkerpos "VolkovSpeechActual";
-Lemontov setpos getmarkerpos "LemontovSpeechActual";
-Kukushkin setpos getmarkerpos "KukushkinSpeechActual";
-Zubarev setpos getmarkerpos "ZubarevSpeechActual";
-Volkov dowatch [9598.95,1577.10,2.06];
-Lemontov dowatch [9598.17,1578.69,2.08];
-Zubarev dowatch [9600.09,1576.69,2.16];
-Kukushkin dowatch [9600.67,1575.54,2.19];
-Volkov stop false;
-Lemontov stop false;
-Zubarev stop false;
-Kukushkin stop false;
-
 Lemontov setmimic "angry"
 Volkov setmimic "angry"
 Zubarev setmimic "normal"
 Kukushkin setmimic "normal"
 
-exit
+
+Volkov stop true;
+Volkov setpos getmarkerpos "VolkovGroup";
+Volkov setdir 305;
+Volkov dowatch [9572.72,1562.58,1.65];
+Volkov stop false;
+Lemontov switchmove "";
+Zubarev switchmove "";
+Kukushkin switchmove "";
+Lemontov dowatch [9574.40,1561.04,1.69];
+Kukushkin dowatch [9574.40,1561.04,1.69];
+Zubarev dowatch [9574.40,1561.04,1.69];
+Kukushkin setmimic "normal";
+Zubarev setmimic "normal";
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-;=== 21:08:10
-_camera camSetTarget [86874.38,51065.73,-39693.05]
-_camera camSetPos [9590.34,1572.21,2.38]
+
+;=== 11:40:54
+_camera camSetTarget [98429.99,-39512.05,-20394.20]
+_camera camSetPos [9571.23,1562.67,1.59]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-
-;=== 21:11:45
-_camera camSetTarget [98858.73,-39764.30,-18022.27]
-_camera camSetPos [9616.75,1592.34,1.18]
-_camera camSetFOV 0.700
-_camera camCommit 0
-@camCommitted _camera
-
-;=== 23:29:40
-_camera camSetTarget [67190.65,-79286.26,-11959.73]
-_camera camSetPos [9591.94,1576.42,1.60]
-_camera camSetFOV 0.700
-_camera camCommit 0
-@camCommitted _camera
-
-
 
 
 exit
