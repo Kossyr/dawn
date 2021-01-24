@@ -1,0 +1,45 @@
+showcinemaborder false
+
+~2
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+boatAway=true
+
+Lemontov setbehaviour "combat"
+Lemontov switchmove "crouch"
+Lemontov setunitpos "up"
+
+s3 setbehaviour "combat"
+s3 switchmove "crouch"
+s3 setunitpos "up"
+
+s4 setbehaviour "combat"
+s4 switchmove "crouch"
+s4 setunitpos "up"
+
+Esc addweapon "nvgoggles"
+
+Kaplinsky setbehaviour "combat"
+Kaplinsky setunitpos "up"
+Kaplinsky setspeedmode "limited"
+Kaplinsky move getmarkerpos "kaplinsky"
+
+s1 setunitpos "up"
+s2 setunitpos "up"
+s1 setbehaviour "combat"
+s2 setbehaviour "combat"
+s1 setspeedmode "limited"
+s2 setspeedmode "limited"
+s1 move getmarkerpos "s1"
+s2 move getmarkerpos "s2"
+
+;=== 17:08:08
+_camera camSetTarget [-53314.70,-79289.38,-3212.88]
+_camera camSetPos [4750.30,2062.28,0.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+exit
