@@ -23,7 +23,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
 			side="EAST";
@@ -41,8 +41,9 @@ class Mission
 					leader=1;
 					rank="MAJOR";
 					skill=1.000000;
+					fuel=0.900000;
 					text="Lemontov";
-					init="this setidentity ""Lemontov""; this addweapon ""binocular""";
+					init="this setidentity ""Lemontov""; this addweapon ""binocular""; this setgroupid [""delta"",""groupcolor0""]";
 				};
 				class Item1
 				{
@@ -79,7 +80,7 @@ class Mission
 				class Item4
 				{
 					position[]={4755.536621,7.737142,2061.891602};
-					azimut=10.223507;
+					azimut=10.223500;
 					id=47;
 					side="EAST";
 					vehicle="SoldierESaboteurBizon";
@@ -325,10 +326,51 @@ class Mission
 				};
 			};
 		};
+		class Item5
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4694.043945,1.478660,1980.758545};
+					azimut=210.000000;
+					id=168;
+					side="EAST";
+					vehicle="BoatE";
+					leader=1;
+					skill=0.600000;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={4009.185059,-72.180000,1041.106689};
+					combatMode="BLUE";
+					speed="FULL";
+					combat="STEALTH";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={4034.994385,-72.193832,134.632553};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=158;
+		items=163;
 		class Item0
 		{
 			position[]={5452.502930,43.210960,2784.717285};
@@ -1898,13 +1940,63 @@ class Mission
 			leader=1;
 			skill=0.600000;
 		};
+		class Item158
+		{
+			position[]={7107.029785,82.560738,3012.318848};
+			azimut=206.305649;
+			id=169;
+			side="EMPTY";
+			vehicle="Fortress1";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item159
+		{
+			position[]={7097.043457,81.359749,3013.883301};
+			azimut=271.305725;
+			id=170;
+			side="EMPTY";
+			vehicle="Wire";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item160
+		{
+			position[]={7100.616699,81.461258,3004.456299};
+			azimut=216.305649;
+			id=171;
+			side="EMPTY";
+			vehicle="Wire";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item161
+		{
+			position[]={7107.093262,81.133934,3001.506348};
+			azimut=216.305649;
+			id=172;
+			side="EMPTY";
+			vehicle="Wire";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item162
+		{
+			position[]={7114.901855,81.196136,3004.130371};
+			azimut=161.305649;
+			id=173;
+			side="EMPTY";
+			vehicle="Wire";
+			leader=1;
+			skill=0.600000;
+		};
 	};
 	class Markers
 	{
 		items=23;
 		class Item0
 		{
-			position[]={4756.386230,9.478714,2071.711914};
+			position[]={4750.701172,7.303197,2059.973633};
 			name="Start";
 			text="@STRC_MARKER_START";
 			type="Start";
