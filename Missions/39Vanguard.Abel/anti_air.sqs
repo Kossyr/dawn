@@ -1,0 +1,43 @@
+aaDestroyed=aaDestroyed+1
+
+setacctime 1
+
+aP addrating 1000
+
+? aaDestroyed == 1 ? goto "OneDestroyed" ;
+? aaDestroyed == 2 ? goto "TwoDestroyed" ;
+? aaDestroyed == 3 ? goto "ThreeDestroyed" ;
+? aaDestroyed == 4 ? goto "FourDestroyed" ;
+
+
+#OneDestroyed
+
+aP sideradio "39r04"
+
+goto "exitMe"
+
+#TwoDestroyed
+
+aP sideradio "39r05"
+
+goto "exitMe"
+
+#ThreeDestroyed
+
+aP sideradio "39r06"
+
+goto "exitMe"
+
+#FourDestroyed
+
+aP sideradio "39r07"
+
+goto "exitMe"
+
+#exitMe
+
+~7
+
+savegame
+
+exit
