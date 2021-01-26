@@ -1,6 +1,14 @@
 version=11;
 class Mission
 {
+	addOns[]=
+	{
+		"Su25"
+	};
+	addOnsAuto[]=
+	{
+		"Su25"
+	};
 	randomSeed=4843523;
 	class Intel
 	{
@@ -10,6 +18,62 @@ class Mission
 		month=2;
 		hour=8;
 		minute=5;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={11711.996094,-32.084999,2957.899414};
+					azimut=225.000000;
+					special="FLY";
+					id=0;
+					side="EAST";
+					vehicle="Su25";
+					leader=1;
+					rank="COLONEL";
+					skill=1.000000;
+					fuel=0.800000;
+					text="Syomin";
+					init="driver this setidentity ""Syomin""";
+				};
+				class Item1
+				{
+					position[]={11857.585938,0.333844,3289.327393};
+					azimut=225.000000;
+					special="FLY";
+					id=1;
+					side="EAST";
+					vehicle="Su25";
+					rank="CAPTAIN";
+					skill=1.000000;
+					fuel=0.800000;
+					text="Koltsov";
+					init="driver this setidentity ""Koltsov""";
+				};
+				class Item2
+				{
+					position[]={12152.825195,0.333844,3043.192871};
+					azimut=225.000000;
+					special="FLY";
+					id=2;
+					side="EAST";
+					vehicle="Su25";
+					player="PLAYER COMMANDER";
+					rank="CAPTAIN";
+					skill=1.000000;
+					fuel=0.812366;
+					text="aP";
+					init="driver this setidentity ""Ablomov""";
+				};
+			};
+		};
 	};
 };
 class Intro
