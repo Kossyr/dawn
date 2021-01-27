@@ -267,6 +267,7 @@ class Mission
 				{
 					position[]={3764.715088,18.404999,3202.717529};
 					type="HOLD";
+					synchronizations[]={2};
 					class Effects
 					{
 					};
@@ -306,6 +307,7 @@ class Mission
 				{
 					position[]={3756.393066,18.404999,3294.801270};
 					type="HOLD";
+					synchronizations[]={1};
 					class Effects
 					{
 					};
@@ -454,6 +456,7 @@ class Mission
 				{
 					position[]={5713.375000,57.396366,3532.677490};
 					type="HOLD";
+					synchronizations[]={3};
 					class Effects
 					{
 					};
@@ -519,6 +522,7 @@ class Mission
 				{
 					position[]={5335.460449,42.714458,2819.738770};
 					type="HOLD";
+					synchronizations[]={0};
 					class Effects
 					{
 					};
@@ -550,21 +554,39 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={2635.451172,208.599503,3744.129883};
-					azimut=60.000000;
+					position[]={2347.356934,152.573288,5077.699707};
+					azimut=15.000000;
 					id=22;
 					side="WEST";
 					vehicle="Vulcan";
 					leader=1;
 					skill=0.600000;
+					text="AA1";
 				};
 			};
 			class Waypoints
 			{
-				items=1;
+				items=3;
 				class Item0
 				{
-					position[]={3754.352539,58.465385,4023.119385};
+					position[]={3069.005371,219.596039,5561.623535};
+					speed="FULL";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={3799.322998,55.009571,4029.816406};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={3796.666260,44.081802,3728.403564};
 					type="GUARD";
 					class Effects
 					{
@@ -581,13 +603,14 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3006.814941,209.788391,5985.906250};
+					position[]={3092.154297,225.179993,6331.910645};
 					azimut=160.000000;
 					id=23;
 					side="WEST";
 					vehicle="Vulcan";
 					leader=1;
 					skill=0.600000;
+					text="AA2";
 				};
 			};
 			class Waypoints
@@ -645,6 +668,160 @@ class Mission
 			text="@STRM_MARKER_RAID";
 			type="Destroy";
 			colorName="ColorRed";
+		};
+	};
+	class Sensors
+	{
+		items=11;
+		class Item0
+		{
+			position[]={8273.669922,21.806156,2981.306152};
+			a=240.000000;
+			b=240.000000;
+			rectangular=1;
+			activationBy="WEST";
+			age="UNKNOWN";
+			expCond="""Tank"" counttype thislist == 0";
+			expActiv="[] exec ""port.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={2698.244141,196.377625,5675.092773};
+			a=1400.000000;
+			b=1200.000000;
+			rectangular=1;
+			activationBy="MEMBER";
+			activationType="EAST D";
+			age="UNKNOWN";
+			idVehicle=22;
+			expActiv="aaDiscovered=true";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={1516.183716,2.176272,6392.605469};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			expCond="aaDiscovered or not canmove AA1 or not canmove AA2";
+			expActiv="[] exec ""anti_air.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={2784.390869,214.051285,5661.528809};
+			a=1400.000000;
+			b=1200.000000;
+			rectangular=1;
+			activationBy="MEMBER";
+			activationType="EAST D";
+			age="UNKNOWN";
+			idVehicle=23;
+			expActiv="aaDiscovered=true";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={3820.806641,20.276628,3211.396240};
+			a=300.000000;
+			b=300.000000;
+			repeating=1;
+			age="UNKNOWN";
+			text="SIREN";
+			expCond="true";
+			class Effects
+			{
+				voice="siren";
+			};
+		};
+		class Item5
+		{
+			position[]={5409.566406,43.244999,2763.623047};
+			a=300.000000;
+			b=300.000000;
+			repeating=1;
+			age="UNKNOWN";
+			text="SIREN";
+			expCond="true";
+			class Effects
+			{
+				voice="siren";
+			};
+		};
+		class Item6
+		{
+			position[]={5861.272461,54.044998,3486.948486};
+			a=300.000000;
+			b=300.000000;
+			repeating=1;
+			age="UNKNOWN";
+			text="SIREN";
+			expCond="true";
+			class Effects
+			{
+				voice="siren";
+			};
+		};
+		class Item7
+		{
+			position[]={8197.682617,21.150000,3131.025635};
+			a=300.000000;
+			b=300.000000;
+			repeating=1;
+			age="UNKNOWN";
+			text="SIREN";
+			expCond="true";
+			class Effects
+			{
+				voice="siren";
+			};
+		};
+		class Item8
+		{
+			position[]={4622.696777,80.114174,3539.124268};
+			a=1500.000000;
+			b=1700.000000;
+			age="UNKNOWN";
+			expCond="""Tank"" counttype thislist == 0";
+			expActiv="[] exec ""outro.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item9
+		{
+			position[]={3687.277588,44.234997,3591.894043};
+			a=500.000000;
+			b=2500.000000;
+			angle=205.522995;
+			activationBy="EAST";
+			type="SWITCH";
+			age="UNKNOWN";
+			class Effects
+			{
+			};
+			synchronizations[]={0,1,2,3};
+		};
+		class Item10
+		{
+			position[]={9248.000000,-32.084999,5273.303223};
+			a=0.000000;
+			b=0.000000;
+			type="END1";
+			age="UNKNOWN";
+			expCond="end";
+			class Effects
+			{
+			};
 		};
 	};
 };
