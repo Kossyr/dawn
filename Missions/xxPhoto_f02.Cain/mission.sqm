@@ -1,0 +1,149 @@
+version=11;
+class Mission
+{
+	randomSeed=8868355;
+	class Intel
+	{
+		briefingName="STRCN_FLASHBACK";
+	};
+};
+class Intro
+{
+	randomSeed=3217411;
+	class Intel
+	{
+		startWeather=0.600000;
+		forecastWeather=0.600000;
+		month=9;
+		day=19;
+		hour=13;
+		minute=5;
+	};
+	class Groups
+	{
+		items=4;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2853.288818,160.524185,7273.533203};
+					id=0;
+					side="EAST";
+					vehicle="SoldierEB";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					init="this exec ""photo.sqs""";
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1903.392578,129.194992,7376.399414};
+					azimut=250.000000;
+					id=4;
+					side="EAST";
+					vehicle="SoldierEB";
+					leader=1;
+					skill=0.600000;
+					init="this setbehaviour ""safe""";
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1895.309937,129.194992,7383.531250};
+					azimut=210.000000;
+					id=5;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					skill=0.600000;
+					text="Volkov";
+					init="this setidentity ""Volkov""; this setbehaviour ""safe""; removeallweapons this";
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1895.722534,129.194992,7384.849121};
+					azimut=200.000000;
+					id=6;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					skill=0.600000;
+					text="Zubarev";
+					init="this setidentity ""Zubarev""; this setbehaviour ""Safe""; this removeweapon ""binocular""";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=3;
+		class Item0
+		{
+			position[]={1891.528931,129.194992,7382.964355};
+			id=1;
+			side="EMPTY";
+			vehicle="FlagCarrier";
+			skill=0.600000;
+			init="this setflagtexture ""\flags\ussr.jpg""";
+		};
+		class Item1
+		{
+			position[]={1905.236450,129.194992,7378.770996};
+			azimut=285.000000;
+			id=2;
+			side="EMPTY";
+			vehicle="UAZ";
+			skill=0.600000;
+		};
+		class Item2
+		{
+			position[]={1906.897827,129.194016,7374.902832};
+			azimut=250.000000;
+			id=3;
+			side="EMPTY";
+			vehicle="UAZ";
+			skill=0.600000;
+		};
+	};
+};
+class OutroWin
+{
+	randomSeed=12652547;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=6030339;
+	class Intel
+	{
+	};
+};
