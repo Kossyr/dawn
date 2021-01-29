@@ -4,11 +4,15 @@ class Mission
 	randomSeed=8868355;
 	class Intel
 	{
-		briefingName="STRCN_FLASHBACK";
+		briefingName="@STRCN_Flashback";
 	};
 };
 class Intro
 {
+	addOns[]=
+	{
+		"bis_resistance"
+	};
 	randomSeed=3217411;
 	class Intel
 	{
@@ -21,7 +25,7 @@ class Intro
 	};
 	class Groups
 	{
-		items=4;
+		items=9;
 		class Item0
 		{
 			side="EAST";
@@ -100,6 +104,118 @@ class Intro
 				};
 			};
 		};
+		class Item4
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1891.159180,129.194992,7392.588379};
+					azimut=80.000000;
+					id=7;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					skill=0.600000;
+					text="LivanokhChair";
+					init="this setidentity ""Livanokh""; this setbehaviour ""Safe""; removeallweapons this";
+				};
+			};
+		};
+		class Item5
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1890.094604,129.194992,7390.562988};
+					azimut=160.000000;
+					id=8;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					skill=0.600000;
+					text="LivanokhBalcony";
+					init="this setIdentity ""Livanokh""; this setbehaviour ""Safe""; removeallweapons this";
+				};
+			};
+		};
+		class Item6
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1890.830078,129.194992,7396.422852};
+					azimut=115.000000;
+					id=9;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					skill=0.600000;
+					text="LivanokhBody";
+					init="this setidentity ""Livanokh""; this setbehaviour ""safe""; removeallweapons this";
+				};
+			};
+		};
+		class Item7
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1891.998657,129.194992,7397.745117};
+					azimut=145.000000;
+					id=10;
+					side="EAST";
+					vehicle="SoldierESaboteurPipe";
+					leader=1;
+					skill=0.600000;
+					text="Lemontov";
+					init="this setidentity ""Lemontov""; removeallweapons this; this addmagazine ""tokarev""; this addweapon ""tokarev""; this addweapon ""bizon""";
+				};
+			};
+		};
+		class Item8
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={1894.524292,129.194992,7396.529785};
+					azimut=255.000000;
+					special="NONE";
+					id=11;
+					side="WEST";
+					vehicle="SoldierWSaboteurDay";
+					skill=0.600000;
+					text="Dyaconsen";
+					init="this setidentity ""Dyaconsen""; ";
+				};
+				class Item1
+				{
+					presence=0.000000;
+					position[]={1894.930054,129.194992,7397.820313};
+					azimut=265.000000;
+					id=12;
+					side="EAST";
+					vehicle="SoldierEB";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.600000;
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -130,6 +246,22 @@ class Intro
 			side="EMPTY";
 			vehicle="UAZ";
 			skill=0.600000;
+		};
+	};
+	class Markers
+	{
+		items=2;
+		class Item0
+		{
+			position[]={1897.125732,129.194992,7383.862305};
+			name="VolkovHide";
+			type="Flag";
+		};
+		class Item1
+		{
+			position[]={1895.400757,129.194992,7384.878418};
+			name="ZubarevHide";
+			type="Flag";
 		};
 	};
 	class Sensors
