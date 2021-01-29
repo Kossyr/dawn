@@ -17,8 +17,18 @@ audience4 = [SOL_4, SOL_8, SOL_12, SOL_16, SOL_20, SOL_24, SOL_28, SOL_32, SOL_3
 
 "_x dowatch [9594.42,1575.02,1.69]" foreach audience
 
+Lemontov setmimic "angry"
+Zubarev setmimic "normal"
+Kukushkin setmimic "normal"
+
+Lemontov dowatch [9572.76,1562.54,1.58]
+Zubarev dowatch [9572.38,1561.07,1.66]
+Kukushkin dowatch [9572.38,1561.07,1.66]
+
 
 playmusic "RTrack9"
+
+exit
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -94,6 +104,23 @@ Belsky say "x04v04"
 ~6
 Ablomov say "x04v05"
 ~3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ;=== 14:45:07
 _camera camSetTarget [-45316.75,-81207.63,-11148.39]
 _camera camSetPos [9641.73,1586.97,1.61]
@@ -109,7 +136,6 @@ _camera camSetPos [9640.09,1586.50,1.52]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Ablomov switchmove "Fxshow5"
 Ablomov say "x04v07"
 ~5
 ;=== 14:48:06
@@ -119,26 +145,17 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Belsky say "x04v08"
-~6
+~8
+Belsky say "x04v09"
+~3
 ;=== 14:48:31
 _camera camSetTarget [66614.55,82816.87,-12470.05]
 _camera camSetPos [9641.95,1587.36,1.63]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Ablomov say "x04v09"
-~6
 Ablomov say "x04v10"
-~11
-;=== 14:49:33
-_camera camSetTarget [96326.77,48347.85,-17273.61]
-_camera camSetPos [9640.53,1586.42,1.55]
-_camera camSetFOV 0.700
-_camera camCommit 0
-@camCommitted _camera
-Ablomov switchmove "FXCivilHandMouth"
-Ablomov say "x04v11"
-~8
+~6
 ;=== 14:50:08
 _camera camSetTarget [-49146.76,-78912.08,-7972.61]
 _camera camSetPos [9641.70,1586.91,1.61]
@@ -146,7 +163,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Belsky setmimic "Angry"
-Belsky say "x04v12"
+Belsky say "x04v11"
 ~5
 ;=== 14:52:34
 _camera camSetTarget [61322.53,84875.06,-19788.57]
@@ -155,8 +172,10 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Ablomov switchmove "FXCivilArmsAkimboR"
+Ablomov say "x04v12"
+~5
 Ablomov say "x04v13"
-~10
+~5
 ;=== 14:53:08
 _camera camSetTarget [-12936.38,-94692.30,-14825.34]
 _camera camSetPos [9642.23,1588.46,1.58]
@@ -165,7 +184,6 @@ _camera camCommit 0
 @camCommitted _camera
 Belsky setmimic "sad"
 Belsky say "x04v14"
-Belsky switchmove "FXCivilLookaround"
 ~5
 ;=== 14:55:46
 _camera camSetTarget [59500.88,87431.02,-12024.16]
@@ -174,10 +192,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Ablomov say "x04v15"
-Ablomov setmimic "smile"
-~2
-Ablomov setmimic "normal"
-~3
+~5
 ;=== 14:56:47
 _camera camSetTarget [-45018.59,-81815.69,-7485.56]
 _camera camSetPos [9641.66,1586.92,1.61]
@@ -186,16 +201,16 @@ _camera camCommit 0
 @camCommitted _camera
 Belsky setmimic "angry"
 Belsky say "x04v16"
-~9
+~6
 ;=== 14:58:48
 _camera camSetTarget [89666.81,59917.80,-13887.70]
 _camera camSetPos [9640.84,1586.36,1.56]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Ablomov setmimic "angry"
+Ablomov setmimic "sad"
 Ablomov say "x04v17"
-~4
+~7
 ;=== 14:59:48
 _camera camSetTarget [-13920.98,-94596.20,-13887.74]
 _camera camSetPos [9642.21,1588.33,1.59]
@@ -204,59 +219,47 @@ _camera camCommit 0
 @camCommitted _camera
 Belsky say "x04v18"
 ~7
-;=== 15:00:21
-_camera camSetTarget [66902.77,83299.14,-6647.96]
-_camera camSetPos [9641.99,1587.39,1.63]
-_camera camSetFOV 0.700
-_camera camCommit 0
-@camCommitted _camera
-Ablomov say "x04v19"
-~3
 ;=== 15:00:55
 _camera camSetTarget [-48660.54,-79573.29,-3711.76]
 _camera camSetPos [9641.65,1586.83,1.61]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
+Belsky say "x04v19"
+~6
 Belsky setmimic "sad"
-Belsky say "x04v20"
-Belsky switchmove "FXCivilLookaround2"
-~14
+~2
+Belsky setspeedmode "limited"
+Belsky move getmarkerpos "BelskyAway"
+~1
 ;=== 15:01:40
 _camera camSetTarget [-16960.98,-94482.13,-7904.45]
 _camera camSetPos [9642.23,1588.42,1.58]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Belsky say "x04v21"
-~8
-;=== 15:02:03
-_camera camSetTarget [63765.80,85300.66,-7904.68]
-_camera camSetPos [9642.08,1587.44,1.63]
-_camera camSetFOV 0.700
-_camera camCommit 0
-@camCommitted _camera
-Ablomov setmimic "surprised"
-Ablomov say "x04v22"
+~2
+playsound "x04v20"
 ~3
-;=== 15:04:40
-_camera camSetTarget [-7951.99,-94611.34,-20866.80]
-_camera camSetPos [9642.20,1588.45,1.58]
-_camera camSetFOV 0.700
-_camera camCommit 0
-@camCommitted _camera
-Belsky setmimic "angry"
-Belsky say "x04v23"
-~9
 ;=== 15:05:40
 _camera camSetTarget [62396.59,86464.79,3590.68]
 _camera camSetPos [9642.03,1587.39,1.55]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-titletext["","plain"]
+deletevehicle Belsky
+Ablomov setmimic "surprised"
+playsound "x04v21"
+~3
+Ablomov setmimic "sad"
+playsound "x04v22"
+~6
+Ablomov setmimic "sad"
+playsound "x04v23"
+~5
 Ablomov setmimic "sad"
 ~1.5
+titletext["","plain"]
 Ablomov setmimic "surprised"
 ~2
 Ablomov setmimic "angry"
@@ -284,14 +287,6 @@ _camera camCommit 5
 ~2
 titlecut["","black out",2]
 @camCommitted _camera
-
-Lemontov setmimic "angry"
-Zubarev setmimic "normal"
-Kukushkin setmimic "normal"
-
-Lemontov dowatch [9572.76,1562.54,1.58]
-Zubarev dowatch [9572.38,1561.07,1.66]
-Kukushkin dowatch [9572.38,1561.07,1.66]
 
 titlecut["","black in",2]
 
@@ -946,9 +941,9 @@ _camera camSetPos [9632.74,1584.64,1.24]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-;=== 17:24:02
-_camera camSetTarget [107295.76,18270.78,-13584.71]
-_camera camSetPos [9639.86,1586.54,1.47]
+;=== 19:19:05
+_camera camSetTarget [106459.44,23861.32,-11378.99]
+_camera camSetPos [9639.87,1586.89,1.49]
 _camera camSetFOV 0.700
 _camera camCommit 4
 @camCommitted _camera
@@ -1136,26 +1131,38 @@ _camera camCommit 0
 @camCommitted _camera
 Volkov say "x04v69"
 ~10
+;=== 19:21:02
+_camera camSetTarget [107154.50,23710.06,-1237.79]
+_camera camSetPos [9640.40,1587.00,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Ablomov setmimic "angry"
-Belsky setmimic "angry"
-;=== 19:01:04
-_camera camSetTarget [108595.37,14184.01,-6997.08]
-_camera camSetPos [9640.17,1586.61,1.52]
+playsound "x04v70"
+~7
+[5] exec "hail.sqs"
+;=== 19:22:20
+_camera camSetTarget [-51857.69,79825.62,9829.96]
+_camera camSetPos [9640.84,1584.97,1.33]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Belsky say "x04v70"
-~5
-Ablomov say "x04v71"
-~2
-;=== 19:01:33
-_camera camSetTarget [42784.27,-92378.70,-8461.35]
-_camera camSetPos [9640.71,1587.70,1.54]
+playsound "x04v71"
+;=== 19:22:32
+_camera camSetTarget [-3899.40,100176.71,9829.48]
+_camera camSetPos [9640.84,1584.97,1.33]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~1
+;=== 19:22:47
+_camera camSetTarget [99297.57,-42141.68,-7013.49]
+_camera camSetPos [9640.62,1587.37,1.60]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Belsky say "x04v72"
-~8
+playsound "x04v72"
+~6
 ;=== 19:02:08
 _camera camSetTarget [-85521.30,-28097.89,-8459.61]
 _camera camSetPos [9597.32,1575.63,1.79]
