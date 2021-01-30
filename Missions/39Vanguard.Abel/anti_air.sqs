@@ -4,11 +4,10 @@ setacctime 1
 
 aP addrating 1000
 
-? aaDestroyed == 1 ? goto "OneDestroyed" ;
-? aaDestroyed == 2 ? goto "TwoDestroyed" ;
-? aaDestroyed == 3 ? goto "ThreeDestroyed" ;
-? aaDestroyed == 4 ? goto "FourDestroyed" ;
-
+? aaDestroyed == 1 : goto "OneDestroyed" ;
+? aaDestroyed == 2 : goto "TwoDestroyed" ;
+? aaDestroyed == 3 : goto "ThreeDestroyed" ;
+? aaDestroyed == 4 : goto "FourDestroyed" ;
 
 #OneDestroyed
 

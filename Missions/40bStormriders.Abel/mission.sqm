@@ -25,7 +25,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=18;
+		items=19;
 		class Item0
 		{
 			side="EAST";
@@ -45,7 +45,7 @@ class Mission
 					skill=1.000000;
 					fuel=0.600000;
 					text="Syomin";
-					init="driver this setidentity ""Syomin""";
+					init="driver this setidentity ""Syomin""; this setgroupid [""november"", ""groupcolor0""]";
 				};
 				class Item1
 				{
@@ -423,8 +423,8 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={5269.917969,66.043297,3594.992188};
-					azimut=125.000000;
+					position[]={5598.615234,65.002136,3512.752197};
+					azimut=87.613380;
 					id=18;
 					side="WEST";
 					vehicle="M60";
@@ -433,8 +433,8 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={5257.768066,65.309250,3608.250488};
-					azimut=125.000000;
+					position[]={5580.912598,65.933311,3515.909424};
+					azimut=87.613380;
 					id=19;
 					side="WEST";
 					vehicle="M60";
@@ -636,6 +636,86 @@ class Mission
 				};
 			};
 		};
+		class Item18
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={5464.450195,69.902710,3527.802979};
+					azimut=285.000000;
+					id=24;
+					side="WEST";
+					vehicle="M1Abrams";
+					leader=1;
+					rank="COLONEL";
+					skill=0.600000;
+				};
+				class Item1
+				{
+					position[]={5476.235352,69.818665,3524.302734};
+					azimut=285.000000;
+					id=25;
+					side="WEST";
+					vehicle="M1Abrams";
+					rank="COLONEL";
+					skill=0.600000;
+				};
+				class Item2
+				{
+					position[]={5488.138184,69.655212,3521.112305};
+					azimut=285.000000;
+					id=26;
+					side="WEST";
+					vehicle="M60";
+					rank="COLONEL";
+					skill=0.600000;
+				};
+				class Item3
+				{
+					position[]={5498.958984,69.501244,3518.320557};
+					azimut=285.000000;
+					id=27;
+					side="WEST";
+					vehicle="Bradley";
+					rank="COLONEL";
+					skill=0.600000;
+				};
+			};
+			class Waypoints
+			{
+				items=3;
+				class Item0
+				{
+					position[]={5436.185059,70.295486,3532.408203};
+					type="HOLD";
+					formation="COLUMN";
+					synchronizations[]={4};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={4165.649414,48.447914,4339.713867};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={3718.229248,18.404999,3287.864990};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
 	};
 	class Markers
 	{
@@ -680,12 +760,14 @@ class Mission
 			b=240.000000;
 			rectangular=1;
 			activationBy="WEST";
+			type="SWITCH";
 			age="UNKNOWN";
 			expCond="""Tank"" counttype thislist == 0";
 			expActiv="[] exec ""port.sqs""";
 			class Effects
 			{
 			};
+			synchronizations[]={4};
 		};
 		class Item1
 		{
