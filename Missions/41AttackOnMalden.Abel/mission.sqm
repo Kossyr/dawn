@@ -1,6 +1,14 @@
 version=11;
 class Mission
 {
+	addOns[]=
+	{
+		"Su25"
+	};
+	addOnsAuto[]=
+	{
+		"Su25"
+	};
 	randomSeed=14379011;
 	class Intel
 	{
@@ -22,7 +30,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5987.257324,51.874340,3474.702393};
+					position[]={6408.149902,83.248863,3881.587158};
 					id=0;
 					side="EAST";
 					vehicle="OfficerE";
@@ -38,7 +46,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=55;
+		items=56;
 		class Item0
 		{
 			position[]={5770.671875,54.044998,3497.291748};
@@ -577,10 +585,20 @@ class Mission
 			leader=1;
 			skill=0.600000;
 		};
+		class Item55
+		{
+			position[]={6364.887207,81.839607,3857.540527};
+			azimut=325.000000;
+			id=56;
+			side="EMPTY";
+			vehicle="Su25";
+			skill=1.000000;
+			text="su25";
+		};
 	};
 	class Markers
 	{
-		items=20;
+		items=28;
 		class Item0
 		{
 			position[]={5411.014160,43.244999,2801.642090};
@@ -736,17 +754,88 @@ class Mission
 		};
 		class Item18
 		{
-			position[]={6543.758789,25.189236,2329.800537};
+			position[]={6104.709473,30.305311,2290.964844};
 			name="EnemyPoint_2";
 			type="Marker";
 			colorName="ColorRed";
 		};
 		class Item19
 		{
-			position[]={6751.899902,22.447994,2971.315186};
-			name="EnemyPoint_4";
+			position[]={4994.977539,69.504921,3928.187744};
+			name="DropZoneWest";
+			markerType="ELLIPSE";
+			type="Start";
+			colorName="ColorGreenAlpha";
+			fillName="DiagGrid";
+			a=800.000000;
+			b=300.000000;
+		};
+		class Item20
+		{
+			position[]={6752.107422,78.359573,3946.758545};
+			name="DropZoneEast";
+			markerType="ELLIPSE";
+			type="Start";
+			colorName="ColorGreenAlpha";
+			fillName="DiagGrid";
+			a=800.000000;
+			b=300.000000;
+		};
+		class Item21
+		{
+			position[]={6304.289063,79.696915,3829.254395};
+			name="CrashSite";
+			text="@STRM_MARKER_CRASH_SITE";
+			type="Unknown";
+			colorName="ColorBlue";
+		};
+		class Item22
+		{
+			position[]={7921.609375,36.292068,4087.073730};
+			name="EasternCrossroad";
+			type="Marker";
+			colorName="ColorBlue";
+		};
+		class Item23
+		{
+			position[]={7247.906738,18.630913,2917.346436};
+			name="EnemyPoint_4_1";
 			type="Marker";
 			colorName="ColorRed";
+		};
+		class Item24
+		{
+			position[]={3967.748047,64.218231,4546.080078};
+			name="WesternCrossroad";
+			type="Marker";
+			colorName="ColorBlue";
+		};
+		class Item25
+		{
+			position[]={6740.187012,30.188406,2464.077148};
+			name="EnemyPoint_2_1";
+			type="Marker";
+			colorName="ColorRed";
+		};
+		class Item26
+		{
+			position[]={4702.783203,47.343857,3932.896973};
+			name="DropZoneDot";
+			text="@STRM_MARKER_DROP_ZONE_WEST";
+			type="Dot";
+			colorName="ColorGreen";
+			a=0.010000;
+			b=0.010000;
+		};
+		class Item27
+		{
+			position[]={6552.653809,92.475761,3936.738770};
+			name="DropZoneDot_1";
+			text="@STRM_MARKER_DROP_ZONE_EAST";
+			type="Dot";
+			colorName="ColorGreen";
+			a=0.010000;
+			b=0.010000;
 		};
 	};
 	class Sensors
