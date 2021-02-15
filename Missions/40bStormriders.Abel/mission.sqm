@@ -326,7 +326,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=3;
+				items=4;
 				class Item0
 				{
 					position[]={3485.957764,92.403557,5093.290527};
@@ -351,6 +351,15 @@ class Mission
 					position[]={3459.836670,96.133858,5115.866699};
 					azimut=130.000000;
 					id=15;
+					side="WEST";
+					vehicle="M60";
+					skill=0.600000;
+				};
+				class Item3
+				{
+					position[]={3448.304688,98.322548,5124.119629};
+					azimut=130.000000;
+					id=22;
 					side="WEST";
 					vehicle="M60";
 					skill=0.600000;
@@ -413,7 +422,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5598.615234,65.002136,3512.752197};
+					position[]={5875.265137,54.044998,3525.741943};
 					azimut=87.613380;
 					id=17;
 					side="WEST";
@@ -424,10 +433,12 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=3;
+				items=4;
 				class Item0
 				{
-					position[]={6334.839844,79.516869,3527.209229};
+					position[]={5890.958984,54.044998,3524.365234};
+					type="HOLD";
+					synchronizations[]={4};
 					class Effects
 					{
 					};
@@ -435,13 +446,21 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={7911.569824,36.304005,4070.408691};
+					position[]={6334.839844,79.516869,3527.209229};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 				};
 				class Item2
+				{
+					position[]={7911.569824,36.304005,4070.408691};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
 				{
 					position[]={7104.631836,64.343040,5773.650391};
 					class Effects
@@ -507,8 +526,8 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={5464.450195,69.902710,3527.802979};
-					azimut=285.000000;
+					position[]={5760.584961,54.044998,3539.106201};
+					azimut=266.136658;
 					id=19;
 					side="WEST";
 					vehicle="M1Abrams";
@@ -518,8 +537,8 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={5476.235352,69.818665,3524.302734};
-					azimut=285.000000;
+					position[]={5772.869629,54.044998,3539.603760};
+					azimut=266.136658;
 					id=20;
 					side="WEST";
 					vehicle="M1Abrams";
@@ -528,8 +547,8 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={5488.138184,69.655212,3521.112305};
-					azimut=285.000000;
+					position[]={5785.164063,54.044998,3540.433105};
+					azimut=266.136658;
 					id=21;
 					side="WEST";
 					vehicle="M60";
@@ -542,7 +561,7 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={5436.185059,70.295486,3532.408203};
+					position[]={5732.349121,55.601818,3534.325684};
 					type="HOLD";
 					formation="COLUMN";
 					synchronizations[]={3};
@@ -620,7 +639,7 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={3};
+			synchronizations[]={3,4};
 		};
 		class Item1
 		{
