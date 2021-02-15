@@ -7,19 +7,15 @@ sirens=true
 _playerGroup = units group player
 _playerChopper = PlayerChopper
 
-_playerGroup select 12 moveincargo _playerChopper
-_playerGroup select 11 moveincargo _playerChopper
-_playerGroup select 10 moveincargo _playerChopper
-_playerGroup select 9 moveincargo _playerChopper
-_playerGroup select 8 moveincargo _playerChopper
-_playerGroup select 7 moveincargo _playerChopper
-_playerGroup select 6 moveincargo _playerChopper
-_playerGroup select 5 moveincargo _playerChopper
-_playerGroup select 4 moveincargo _playerChopper
-_playerGroup select 3 moveincargo _playerChopper
-_playerGroup select 2 moveincargo _playerChopper
-_playerGroup select 1 moveincargo _playerChopper
-_playerGroup select 0 moveincargo _playerChopper
+_i = 12
+
+#moveinLoop
+
+_playerGroup select _i moveincargo _playerChopper
+
+_i = _i - 1
+
+? _i >= 0 : goto "moveinLoop"
 
 
 exit
