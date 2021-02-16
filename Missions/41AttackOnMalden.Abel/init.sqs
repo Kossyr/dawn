@@ -4,6 +4,8 @@ baza = [East,"HQ"]
 
 sirens=true
 
+enableradio false
+
 _playerGroup = units group player
 _playerChopper = PlayerChopper
 
@@ -16,6 +18,5 @@ _playerGroup select _i moveincargo _playerChopper
 _i = _i - 1
 
 ? _i >= 0 : goto "moveinLoop"
-
 
 exit
