@@ -6,8 +6,26 @@ sirens=true
 
 enableradio false
 
+
+[[0,0,0.5],0.5,0,su25] exec "fireEffect.sqs"
+[[0,0,0],0.4,0,CrashFire1] exec "fireEffect.sqs"
+[[0,0,0],0.4,0,CrashFire2] exec "fireEffect.sqs"
+[[0,0,0],0.4,0,CrashFire3] exec "fireEffect.sqs"
+[[0,0,0],0.2,0,CrashFire4] exec "fireEffect.sqs"
+[[0,0,0],0.2,0,CrashFire5] exec "fireEffect.sqs"
+[[0,0,0],0.2,0,CrashFire6] exec "fireEffect.sqs"
+
+
+[[0,-1,-0.5],0.3,0,TankFire1] exec "fireEffect.sqs"
+[[0,-1,-0.5],0.3,0,TankFire2] exec "fireEffect.sqs"
+[[0,-1,-0.5],0.3,0,TankFire3] exec "fireEffect.sqs"
+[[0,-1,-0.5],0.3,0,TankFire4] exec "fireEffect.sqs"
+
+
 _playerGroup = units group player
 _playerChopper = PlayerChopper
+
+_playerChopper lock true
 
 _i = 12
 
