@@ -1,5 +1,3 @@
-titlecut ["","black in",2]
-
 baza = [East,"HQ"]
 
 sirens=true
@@ -23,15 +21,14 @@ enableradio false
 
 
 _playerGroup = units group player
-_playerChopper = PlayerChopper
 
-_playerChopper lock true
+PlayerChopper lock true
 
 _i = 12
 
 #moveinLoop
 
-_playerGroup select _i moveincargo _playerChopper
+_playerGroup select _i moveincargo PlayerChopper
 
 _i = _i - 1
 
@@ -41,13 +38,12 @@ _i = _i - 1
 "_x moveincargo LeonidGreenChopper" foreach units group LeonidGreenGroup
 "_x moveincargo LeonidBlackChopper" foreach units group LeonidBlackGroup
 
-_height = 130
+_height = 200
 PlayerChopper flyinheight _height
 LeonidRedChopper flyinheight _height
 LeonidBlackChopper flyinheight _height
 LeonidGreenChopper flyinheight _height
 
-
-
+[] exec "aircraft_briefing.sqs"
 
 exit
