@@ -1,0 +1,44 @@
+
+savegame
+
+~1
+
+_playerGroup = units group player
+_y = count _playerGroup
+
+
+#loop
+_x = random _y
+
+? _x == 0 : goto "loop"
+
+_actor = _playerGroup select _x
+
+setacctime 1
+_actor sideradio "41r13"
+
+~1
+
+
+"SmokeShellRed" camCreate getMarkerPos "RedSmoke"
+
+~4
+
+#loop2
+_x = random _y
+
+? _x == 0 : goto "loop2"
+
+_actor = _playerGroup select _x
+
+setacctime 1
+_actor sideradio "41r14"
+aP sideradio "41r15"
+
+~2
+switchCrashSite=true
+crashReinf=true
+"_x setpos getmarkerpos ""crashReinf1""" foreach units CrashReinf1
+"_x setpos getmarkerpos ""crashReinf2""" foreach units CrashReinf2
+
+exit

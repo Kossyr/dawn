@@ -1,0 +1,74 @@
+"2" objstatus "done"
+aP addrating 1000
+
+Hint "Cinema"
+
+cinema=true
+enableradio false
+clearCrashSite=true
+
+"_x stop true" foreach units group player
+
+
+
+
+
+
+titletext [localize "STRM_41v14","plain down"]
+~5
+titletext [localize "STRM_41v15","plain down"]
+~5
+titletext [localize "STRM_41v16","plain down"]
+~5
+titletext [localize "STRM_41v17","plain down"]
+~5
+titletext [localize "STRM_41v18","plain down"]
+~5
+titletext [localize "STRM_41v19","plain down"]
+~5
+titletext [localize "STRM_41v20","plain down"]
+~5
+titletext [localize "STRM_41v21","plain down"]
+~5
+titletext [localize "STRM_41v22","plain down"]
+~5
+titletext [localize "STRM_41v23","plain down"]
+~5
+enableradio true
+~0.5
+aP sideradio "41r16"
+baza sideradio "41r17"
+~10
+enableradio false
+titletext [localize "STRM_41v24","plain down"]
+~5
+titletext [localize "STRM_41v25","plain down"]
+~5
+titletext [localize "STRM_41v26","plain down"]
+~5
+
+
+
+
+
+
+
+
+
+
+switchAblomov=true
+enableradio true
+cinema=false
+
+"_x stop false" foreach units group player
+
+~1
+
+setacctime 1
+
+aP sideradio "41r18"
+~4
+
+savegame
+
+exit
