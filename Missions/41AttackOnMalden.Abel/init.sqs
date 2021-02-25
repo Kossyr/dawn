@@ -22,13 +22,13 @@ enableradio false
 
 _playerGroup = units group player
 
-PlayerChopper lock true
+LeonidChopper lock true
 
 _i = 12
 
 #moveinLoop
 
-_playerGroup select _i moveincargo PlayerChopper
+_playerGroup select _i moveincargo LeonidChopper
 
 _i = _i - 1
 
@@ -37,13 +37,43 @@ _i = _i - 1
 "_x moveincargo LeonidRedChopper" foreach units group LeonidRedGroup
 "_x moveincargo LeonidGreenChopper" foreach units group LeonidGreenGroup
 "_x moveincargo LeonidBlackChopper" foreach units group LeonidBlackGroup
+"_x moveincargo LeonidChopper2" foreach units group LeonidGroup2
+"_x moveincargo LeonidRedChoppe2r" foreach units group LeonidRedGroup2
+"_x moveincargo LeonidGreenChopper2" foreach units group LeonidGreenGroup2
+"_x moveincargo LeonidBlackChopper2" foreach units group LeonidBlackGroup2
 
 _height = 200
-PlayerChopper flyinheight _height
+LeonidChopper flyinheight _height
 LeonidRedChopper flyinheight _height
 LeonidBlackChopper flyinheight _height
 LeonidGreenChopper flyinheight _height
+LeonidChopper2 flyinheight _height
+LeonidRedChopper2 flyinheight _height
+LeonidBlackChopper2 flyinheight _height
+LeonidGreenChopper2 flyinheight _height
+
+LeonidBlackChopper setspeedmode "limited"
+LeonidBlackChopper2 setspeedmode "limited"
+LeonidGreenChopper setspeedmode "limited"
+LeonidGreenChopper2 setspeedmode "limited"
 
 [] exec "aircraft_briefing.sqs"
+
+~30
+
+LeonidChopper setspeedmode "full"
+LeonidGreenChopper setspeedmode "full"
+LeonidRedChopper setspeedmode "full"
+
+~4
+LeonidBlackChopper setspeedmode "full"
+~4
+
+LeonidChopper2 setspeedmode "full"
+LeonidGreenChopper2 setspeedmode "full"
+LeonidRedChopper2 setspeedmode "full"
+
+~4
+LeonidBlackChopper2 setspeedmode "full"
 
 exit
