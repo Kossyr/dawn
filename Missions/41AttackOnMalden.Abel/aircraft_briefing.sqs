@@ -2,11 +2,11 @@ titleCut ["","BLACK IN",10000]
 
 0 fadesound 0
 
-~0.5
+~1
 
 5 fadesound 0.01
 
-~2
+~3
 
 20 fadesound 0.4
 
@@ -14,31 +14,53 @@ driver LeonidChopper say "41v01"
 
 ~4
 
-Yashin say "41v04"
+Yashin say "41v05"
 ~1.5
 titlecut["","black in",5]
-~1.5
-aP say "41v05"
+~2.5
+aP say "41v06"
 ~4
-Yashin say "41v06"
-~5
 Yashin say "41v07"
+~9
+setacctime 1
+BriefingScared say "41v08"
+~2
+BriefingNeutral say "41v09"
+~2
+BriefingScared say "41v10"
+~4
+BriefingBrave say "41v11"
+~1.5
+BriefingScared say "41v12"
+~5
+BriefingNeutral say "41v13"
 ~3
-aP say "41v08"
-~9
-aP say "41v09"
-~9
+BriefingBrave say "41v14"
+~2
 driver LeonidChopper say "41v02"
 ~2
-aP say "41v10"
-~9
-aP say "41v11"
-~4
+Yashin say "41v15"
+~3
+aP say "41v16"
+~2
+aP say "41v17"
+~10
+aP say "41v18"
+~10
+driver LeonidChopper say "41v03"
+[] exec "aircraft_full.sqs"
+_bombs = [Bombs, Bombs_1, Bombs_2, Bombs_3, Bombs_4, Bombs_5, Bombs_6, Bombs_7, Bombs_8, Bombs_9, Bombs_10, Bombs_11, Bombs_12, Bombs_13, Bombs_14, Bombs_15, Bombs_16, Bombs_17, Bombs_18, Bombs_19Bombs_10, Bombs_20, Bombs_21, Bombs_22, Bombs_23]
+"_x exec ""bombs.sqs""" foreach _bombs
+~2
+aP say "41v19"
+~10
+aP say "41v20"
+~7
 3 fadesound 0.7
 ~4
-driver LeonidChopper say "41v03"
+driver LeonidChopper say "41v04"
 ~4
-aP say "41v12"
+aP say "41v21"
 5 fadesound 1
 
 exit

@@ -1,0 +1,27 @@
+;*************** Settings ************************
+_bombAmount = 20
+_rangeX = 100
+_rangeY = 100
+_bombInterval = (random 1) + 5
+_target = _this
+_bombPosition0 = getpos _target
+; Heat73,Heat105,Heat120,Heat125,Shell73,Shell105,Shell120,Shell125, (AT3,RPG,LAW,CarlGustav,Hellfire)
+_shellType = "Shell105"
+
+;*************************************************
+
+#bombLoop
+_x = random _rangeX
+_y = random _rangeY
+_a = random 2
+?(_a>=1): _x = -_x
+_a = random 2
+?(_a>=1): _y = -_y
+_bombPosition = [(_bombPosition0 select 0)+_x,(_bombPosition0 select 1)+_y,1]
+
+_shellType CamCreate _bombPosition
+_bombAmount = _bombAmount - 1
+~_bombInterval
+?(_bombAmount>0): goto "bombLoop"
+
+exit
