@@ -6585,6 +6585,7 @@ class Intro
 				class Item1
 				{
 					position[]={5389.629395,-40.326412,1722.722900};
+					speed="LIMITED";
 					class Effects
 					{
 					};
@@ -6625,6 +6626,7 @@ class Intro
 				class Item1
 				{
 					position[]={5475.112305,-50.396339,1867.648560};
+					speed="LIMITED";
 					class Effects
 					{
 					};
@@ -6809,7 +6811,8 @@ class Intro
 				};
 				class Item1
 				{
-					position[]={5173.744141,12.984965,1993.663086};
+					position[]={4902.640137,41.275967,2212.530273};
+					speed="LIMITED";
 					class Effects
 					{
 					};
@@ -6850,7 +6853,8 @@ class Intro
 				};
 				class Item1
 				{
-					position[]={5412.084961,35.773708,2308.887939};
+					position[]={5140.980957,44.882561,2224.163574};
+					speed="LIMITED";
 					class Effects
 					{
 					};
@@ -6891,7 +6895,8 @@ class Intro
 				};
 				class Item1
 				{
-					position[]={5882.998047,13.597401,2318.643799};
+					position[]={5611.894043,0.871148,2233.919434};
+					speed="LIMITED";
 					class Effects
 					{
 					};
@@ -6932,7 +6937,8 @@ class Intro
 				};
 				class Item1
 				{
-					position[]={5566.416992,6.322158,2267.088379};
+					position[]={5295.312988,28.423512,2182.364014};
+					speed="LIMITED";
 					class Effects
 					{
 					};
@@ -6973,7 +6979,8 @@ class Intro
 				};
 				class Item1
 				{
-					position[]={6160.994629,38.378151,2434.022217};
+					position[]={5889.890625,17.755810,2349.297852};
+					speed="LIMITED";
 					class Effects
 					{
 					};
@@ -7045,6 +7052,7 @@ class Intro
 				{
 					position[]={5112.591309,26.788202,1251.230591};
 					type="HOLD";
+					speed="LIMITED";
 					synchronizations[]={14};
 					class Effects
 					{
@@ -7134,8 +7142,8 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={5154.945313,25.236828,1223.842163};
-					azimut=165.000000;
+					position[]={5157.375977,25.217382,1224.783569};
+					azimut=175.000000;
 					id=129;
 					side="WEST";
 					vehicle="SoldierWB";
@@ -7466,20 +7474,19 @@ class Intro
 		};
 		class Item32
 		{
-			side="LOGIC";
+			side="WEST";
 			class Vehicles
 			{
 				items=1;
 				class Item0
 				{
-					position[]={5132.082031,26.454912,1241.354614};
-					azimut=125.000000;
+					position[]={5163.899902,24.518036,1217.037964};
+					azimut=150.000000;
 					id=145;
-					side="LOGIC";
-					vehicle="Logic";
+					side="WEST";
+					vehicle="SoldierWMG";
 					leader=1;
 					skill=0.600000;
-					init="this exec ""camera.sqs""";
 				};
 			};
 		};
@@ -8556,7 +8563,6 @@ class Intro
 			vehicle="ReammoBoxWest";
 			leader=1;
 			skill=0.600000;
-			text="AmmoToTake";
 		};
 		class Item110
 		{
@@ -8591,7 +8597,7 @@ class Intro
 	};
 	class Sensors
 	{
-		items=7;
+		items=9;
 		class Item0
 		{
 			position[]={5848.777344,54.044998,3529.553223};
@@ -8674,13 +8680,37 @@ class Intro
 		};
 		class Item6
 		{
-			position[]={5136.625000,26.317013,1237.529541};
-			timeoutMin=2.000000;
-			timeoutMid=2.000000;
-			timeoutMax=2.000000;
+			position[]={4711.327637,0.558692,1515.116943};
+			a=0.000000;
+			b=0.000000;
+			type="END1";
+			age="UNKNOWN";
+			expCond="end";
+			class Effects
+			{
+			};
+		};
+		class Item7
+		{
+			position[]={5158.210938,26.549150,1240.673706};
+			a=10.000000;
+			b=10.000000;
+			age="UNKNOWN";
+			expCond="OffTalk";
+			class Effects
+			{
+				sound="Eng37";
+			};
+		};
+		class Item8
+		{
+			position[]={5139.321289,26.618332,1242.558838};
+			a=200.000000;
+			b=200.000000;
+			activationBy="WEST";
 			age="UNKNOWN";
 			expCond="true";
-			expActiv="AmmoTaker switchmove ""CombatReloadMagazine""";
+			expActiv="""_x setcombatmode """"green"""""" foreach thislist";
 			class Effects
 			{
 			};

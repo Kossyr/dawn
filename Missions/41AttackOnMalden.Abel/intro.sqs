@@ -21,12 +21,14 @@ Crouch3 setunitpos "up"
 Lie setbehaviour "combat"
 Lie setunitpos "down"
 
-0 fadesound 0
+Walker setbehaviour "combat"
+Walker setunitpos "up"
 
-exit
+0 fadesound 0
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
+
 
 setacctime 0.5
 1 fadesound 0.4
@@ -91,6 +93,8 @@ _camera camCommit 7
 titlecut["","black out",2]
 2 fadesound 0
 ~2
+
+
 0 fadesound 0.5
 
 sirens=false
@@ -99,5 +103,127 @@ beachSirens=true
 
 
 titlecut["","black in",1]
+
+beachMove1=true
+
+;=== 17:52:58
+_camera camSetTarget [95811.34,42948.64,-5844.08]
+_camera camSetPos [5109.12,1251.75,1.35]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 17:53:11
+_camera camSetTarget [104781.46,-6047.91,-3463.90]
+_camera camSetPos [5109.30,1250.86,1.36]
+_camera camSetFOV 0.700
+_camera camCommit 1
+@camCommitted _camera
+
+
+
+
+;=== 17:53:26
+_camera camSetTarget [95656.79,-41056.89,-3463.80]
+_camera camSetPos [5113.37,1247.94,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+
+
+;=== 17:54:01
+_camera camSetTarget [98318.17,-30588.01,-17377.46]
+_camera camSetPos [5129.88,1240.03,1.47]
+_camera camSetFOV 0.700
+_camera camCommit 4
+~1
+beachMove2=true
+~1
+AmmoTaker switchmove "CombatToTakeFlag"
+~1.5
+AmmoTaker switchmove "TakeFlagToCombat"
+@camCommitted _camera
+;=== 17:54:09
+_camera camSetTarget [80189.36,64982.54,-17377.26]
+_camera camSetPos [5132.58,1236.48,1.65]
+_camera camSetFOV 0.700
+_camera camCommit 4
+~1
+AmmoTaker switchmove "CombatReloadMagazine"
+~2
+beachMove3=true
+@camCommitted _camera
+
+;=== 17:54:32
+_camera camSetTarget [103303.04,20305.17,-248.79]
+_camera camSetPos [5138.20,1237.21,1.51]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+
+;=== 17:54:41
+_camera camSetTarget [82280.92,63848.23,-11424.88]
+_camera camSetPos [5152.47,1237.94,1.41]
+_camera camSetFOV 0.700
+_camera camCommit 3
+~2
+OffTalk=true
+@camCommitted _camera
+;=== 17:54:55
+_camera camSetTarget [48508.71,90618.52,-11424.97]
+_camera camSetPos [5154.01,1236.07,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+
+;=== 17:55:10
+_camera camSetTarget [87118.23,-56039.67,1148.31]
+_camera camSetPos [5152.62,1234.95,1.70]
+_camera camSetFOV 0.700
+_camera camCommit 1.5
+@camCommitted _camera
+;=== 17:55:22
+_camera camSetTarget [24812.49,-96807.04,1148.25]
+_camera camSetPos [5152.62,1234.95,1.70]
+_camera camSetFOV 0.700
+_camera camCommit 5
+~3
+invasionMove=true
+@camCommitted _camera
+
+Walker switchmove "CombatWalkF"
+Walker switchmove "CombatWalkF"
+Walker switchmove "CombatWalkF"
+Walker switchmove "CombatWalkF"
+Walker switchmove "CombatWalkF"
+
+;=== 17:56:37
+_camera camSetTarget [27280.74,-96232.28,-3471.27]
+_camera camSetPos [5156.24,1226.67,1.38]
+_camera camSetFOV 0.700
+_camera camCommit 1
+@camCommitted _camera
+
+;=== 17:56:53
+_camera camSetTarget [27280.74,-96232.28,-3470.94]
+_camera camSetPos [5156.58,1218.68,1.47]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+Walker switchmove "CombatToCrouch"
+;=== 17:56:53
+_camera camSetTarget [27280.74,-96232.28,-3470.94]
+_camera camSetPos [5156.58,1218.68,1.47-0.3]
+_camera camSetFOV 0.700
+_camera camCommit 1
+@camCommitted _camera
+~2
+Walker switchmove "Crouch"
+
+titlecut["","black out",1]
+1 fadesound 0
+~1
+end=true
+player cameraEffect ["terminate","back"]
+camDestroy _camera
 
 exit
