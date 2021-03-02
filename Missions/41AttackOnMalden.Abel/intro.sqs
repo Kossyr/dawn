@@ -4,6 +4,10 @@ sirens=true
 
 Ablomov setmimic "sad"
 
+playmusic "Track8"
+
+0 fademusic 0.5
+
 para setpos [6182.98,3758.30,92.17-4]
 
 Crouch1 setbehaviour "combat"
@@ -29,6 +33,7 @@ Walker setunitpos "up"
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
+goto "skip"
 
 setacctime 0.5
 1 fadesound 0.4
@@ -60,23 +65,13 @@ _camera camCommit 1
 @camCommitted _camera
 setacctime 1
 ~2
-
-;=== 17:19:23
-_camera camSetTarget [-546.84,103422.19,4131.55]
-_camera camSetPos [6174.36,3727.94,74.65]
-_camera camSetFOV 0.700
-_camera camCommit 0
-@camCommitted _camera
-;=== 17:19:31
-_camera camSetTarget [-546.84,103422.19,4131.55]
-_camera camSetPos [6166.69,3726.42,66.92]
-_camera camSetFOV 0.700
-_camera camCommit 2.5
-@camCommitted _camera
-
-
-
-
+[[_camera,Ablomov,[0,-8,1.6],su25,[0,0,0],0.7] exec "logiccam.sqs"]
+~3
+startglcam = false
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+_camera = "camera" camcreate [5839.29,3525.21,12.52]
+_camera cameraeffect ["internal","back"]
 
 ;=== 15:50:32
 _camera camSetTarget [74228.84,75164.04,13877.30]
@@ -90,10 +85,14 @@ _camera camSetPos [5861.74,3531.62,12.06]
 _camera camSetFOV 0.700
 _camera camCommit 7
 @camCommitted _camera
-titlecut["","black out",2]
+titlecut["","white out",2]
 2 fadesound 0
+2 fademusic 0
 ~2
+#skip
 
+playmusic "Track10"
+1 fademusic 1
 
 0 fadesound 0.5
 
@@ -102,7 +101,7 @@ beachSirens=true
 
 
 
-titlecut["","black in",1]
+titlecut["","white in",1]
 
 beachMove1=true
 
@@ -147,9 +146,9 @@ _camera camSetTarget [80189.36,64982.54,-17377.26]
 _camera camSetPos [5132.58,1236.48,1.65]
 _camera camSetFOV 0.700
 _camera camCommit 4
-~1
+~0.8
 AmmoTaker switchmove "CombatReloadMagazine"
-~2
+~1.5
 beachMove3=true
 @camCommitted _camera
 
@@ -216,6 +215,7 @@ _camera camSetPos [5156.58,1218.68,1.47-0.3]
 _camera camSetFOV 0.700
 _camera camCommit 1
 @camCommitted _camera
+3 fademusic 0
 ~2
 Walker switchmove "Crouch"
 
