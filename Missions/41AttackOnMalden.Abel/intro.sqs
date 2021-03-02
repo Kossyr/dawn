@@ -1,4 +1,103 @@
-;titlecut["","black in",2]
+titlecut["","black in",0.2]
 
+sirens=true
+
+Ablomov setmimic "sad"
+
+para setpos [6182.98,3758.30,92.17-4]
+
+Crouch1 setbehaviour "combat"
+Crouch1 switchmove "crouch"
+Crouch1 setunitpos "up"
+
+Crouch2 setbehaviour "combat"
+Crouch2 switchmove "crouch"
+Crouch2 setunitpos "up"
+
+Crouch3 setbehaviour "combat"
+Crouch3 switchmove "crouch"
+Crouch3 setunitpos "up"
+
+Lie setbehaviour "combat"
+Lie setunitpos "down"
+
+0 fadesound 0
+
+exit
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+setacctime 0.5
+1 fadesound 0.4
+
+;=== 15:39:26
+_camera camSetTarget su25
+_camera camSetPos [6179.15,3744.82,84.95]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 15:39:36
+_camera camSetTarget su25
+_camera camSetPos [6170.39,3739.09,85.97]
+_camera camSetFOV 0.700
+_camera camCommit 1.5
+@camCommitted _camera
+1 fadesound 1
+;=== 15:54:44
+_camera camSetTarget su25
+_camera camSetPos [6154.59,4116.62,3.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 15:55:01
+_camera camSetTarget [10965.94,-95388.65,8783.17]
+_camera camSetPos [6154.33,4121.87,0.65]
+_camera camSetFOV 0.700
+_camera camCommit 1
+@camCommitted _camera
+setacctime 1
+~2
+
+;=== 17:19:23
+_camera camSetTarget [-546.84,103422.19,4131.55]
+_camera camSetPos [6174.36,3727.94,74.65]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 17:19:31
+_camera camSetTarget [-546.84,103422.19,4131.55]
+_camera camSetPos [6166.69,3726.42,66.92]
+_camera camSetFOV 0.700
+_camera camCommit 2.5
+@camCommitted _camera
+
+
+
+
+
+;=== 15:50:32
+_camera camSetTarget [74228.84,75164.04,13877.30]
+_camera camSetPos [5839.29,3525.21,12.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 15:50:41
+_camera camSetTarget [82176.99,66659.62,13880.08]
+_camera camSetPos [5861.74,3531.62,12.06]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+titlecut["","black out",2]
+2 fadesound 0
+~2
+0 fadesound 0.5
+
+sirens=false
+beachSirens=true
+
+
+
+titlecut["","black in",1]
 
 exit
