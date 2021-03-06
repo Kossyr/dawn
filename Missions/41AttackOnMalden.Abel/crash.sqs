@@ -1,59 +1,307 @@
 "2" objstatus "done"
 aP addrating 1000
 
-Hint "Cinema"
+setacctime 1
+
+titlecut["","black out",0.5]
 
 cinema=true
 enableradio false
 clearCrashSite=true
 
+redSmoking=false
+
+~1
+setacctime 1
+
+deletevehicle Ablomov
+
 "_x stop true" foreach units group player
 
+_posP1 = getpos P1
+_posP2 = getpos P2
+_posP3 = getpos P3
+_posP4 = getpos P4
+_posP5 = getpos P5
+_posP6 = getpos P6
+_posP7 = getpos P7
+_posP8 = getpos P8
+_posP9 = getpos P9
+_posP10 = getpos P10
+_posYashin = getpos Yashin
+
+? alive P1 : P1 setpos getmarkerpos "CinemaAwayP1" ;
+? alive P2 : P2 setpos getmarkerpos "CinemaAwayP2" ;
+? alive P3 : P3 setpos getmarkerpos "CinemaAwayP3" ;
+? alive P4 : P4 setpos getmarkerpos "CinemaAwayP4" ;
+? alive P5 : P5 setpos getmarkerpos "CinemaAwayP5" ;
+? alive P6 : P6 setpos getmarkerpos "CinemaAwayP6" ;
+? alive P7 : P7 setpos getmarkerpos "CinemaAwayP7" ;
+? alive P8 : P8 setpos getmarkerpos "CinemaAwayP8" ;
+? alive P9 : P9 setpos getmarkerpos "CinemaAwayP9" ;
+? alive P10 : P10 setpos getmarkerpos "CinemaAwayP10" ;
+? alive Yashin : Yashin setpos getmarkerpos "CinemaAwayYashin" ;
+aP setpos getmarkerpos "CinemaAwayRashiv"
+aP action ["WEAPONONBACK"]
 
 
+CinemaAblomov setpos getmarkerpos "CinemaAblomov"
+CinemaRashiv setpos getmarkerpos "CinemaRashiv"
+
+CinemaRashiv dowatch [5977.41,4060.53,1.47]
+CinemaAblomov dowatch [5981.76,4060.90,1.48]
+
+CinemaRashiv setmimic "normal"
+CinemaAblomov setmimic "cynical"
 
 
+titlecut["","black in",0.5]
 
-titletext [localize "STRM_41v23","plain down"]
+
+setacctime 1
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;=== 21:51:19
+_camera camSetTarget [-93962.52,7333.94,1199.66]
+_camera camSetPos [5978.48,4060.76,1.39]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+CinemaAblomov setunitpos "auto"
+
+~1.5
+CinemaAblomov say "41v23"
+~3
+
+;=== 21:51:58
+_camera camSetTarget [100610.53,33897.52,-12249.60]
+_camera camSetPos [5975.64,4059.94,1.46]
+_camera camSetFOV 0.676
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv say "41v24"
+CinemaRashiv setmimic "surprised"
+~1.5
+;=== 21:52:23
+_camera camSetTarget [104594.63,18956.20,-7149.69]
+_camera camSetPos [5980.72,4060.80,1.30]
+_camera camSetFOV 0.676
+_camera camCommit 0
+@camCommitted _camera
+~2
+;=== 21:53:41
+_camera camSetTarget [-91554.38,15228.16,19205.45]
+_camera camSetPos [5977.86,4060.69,1.39]
+_camera camSetFOV 0.676
+_camera camCommit 0
+@camCommitted _camera
+CinemaAblomov setmimic "smile"
+CinemaAblomov say "41v25"
+~2
+CinemaAblomov setmimic "sad"
+~1
+;=== 21:54:06
+_camera camSetTarget [85624.69,62957.91,-13519.72]
+_camera camSetPos [5976.18,4059.76,1.60]
+_camera camSetFOV 0.676
+_camera camCommit 0
+@camCommitted _camera
+;=== 21:54:13
+_camera camSetTarget [93474.17,50503.05,-13519.27]
+_camera camSetPos [5976.18,4059.76,1.60]
+_camera camSetFOV 0.676
+_camera camCommit 2
+@camCommitted _camera
+
+;=== 21:55:02
+_camera camSetTarget [-93810.05,9250.24,4085.67]
+_camera camSetPos [5977.96,4060.74,1.44]
+_camera camSetFOV 0.676
+_camera camCommit 0
+@camCommitted _camera
+CinemaAblomov setmimic "normal"
+CinemaAblomov say "41v26"
+~3
+;=== 21:55:48
+_camera camSetTarget [96368.43,-37363.32,-10520.63]
+_camera camSetPos [5980.74,4061.29,1.17]
+_camera camSetFOV 0.676
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv say "41v27"
+CinemaRashiv setmimic "smile"
+~1
+CinemaRashiv setmimic "sad"
+~4
+CinemaAblomov setbehaviour "careless"
+~1
+;=== 21:56:32
+_camera camSetTarget [-88968.35,-26828.94,-5330.69]
+_camera camSetPos [5982.37,4061.46,1.36]
+_camera camSetFOV 0.676
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv say "41v28"
+CinemaRashiv setmimic "normal"
+~4
+;=== 22:00:34
+_camera camSetTarget [-79823.77,55151.07,-5099.48]
+_camera camSetPos [5978.92,4060.28,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaAblomov setmimic "sad"
+~0.5
+CinemaAblomov dowatch [5978.77,4060.88,0.36]
+~0.5
+CinemaAblomov say "41v29"
+~2
+;=== 22:01:20
+_camera camSetTarget [100594.31,34875.84,-9726.85]
+_camera camSetPos [5976.28,4059.81,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaAblomov switchmove "FxToKneel"
+CinemaRashiv say "41v30"
+CinemaRashiv setmimic "surprised"
+~1.5
+;=== 22:30:10
+_camera camSetTarget [-92811.40,8423.63,15042.03]
+_camera camSetPos [5978.63,4060.76,0.80]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaAblomov say "41v31"
 ~5
-titletext [localize "STRM_41v24","plain down"]
-~5
-titletext [localize "STRM_41v25","plain down"]
-~5
-titletext [localize "STRM_41v26","plain down"]
-~5
-titletext [localize "STRM_41v27","plain down"]
-~5
-titletext [localize "STRM_41v28","plain down"]
-~5
-titletext [localize "STRM_41v29","plain down"]
-~5
-titletext [localize "STRM_41v30","plain down"]
-~5
-titletext [localize "STRM_41v31","plain down"]
-~5
-titletext [localize "STRM_41v32","plain down"]
-~5
+;=== 22:06:23
+_camera camSetTarget [102919.55,24486.22,-13460.33]
+_camera camSetPos [5979.93,4060.58,1.42]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv setbehaviour "careless"
+CinemaRashiv setmimic "angry"
+CinemaRashiv say "41v32"
+~2
+CinemaRashiv setmimic "normal"
+~2
+CinemaRashiv dowatch [5991.88,4066.22,0.74]
+~1.5
+;=== 22:09:10
+_camera camSetTarget [-88254.35,-28628.17,-6957.74]
+_camera camSetPos [5983.24,4061.67,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 22:09:10
+_camera camSetTarget [-88254.35,-28628.17,-6957.74]
+_camera camSetPos [5983.24,4061.67,1.48]
+_camera camSetFOV 0.500
+_camera camCommit 4
 enableradio true
 ~0.5
+titletext ["","plain down"]
 aP sideradio "41r16"
+CinemaRashiv say "41r36_lip"
+@camCommitted _camera
+~2
 baza sideradio "41r17"
-~10
+;=== 22:10:41
+_camera camSetTarget [101051.52,33264.25,-10194.35]
+_camera camSetPos [5973.66,4058.38,2.12]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 22:10:49
+_camera camSetTarget [102793.35,24911.00,-13669.01]
+_camera camSetPos [5973.89,4060.41,2.14]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+;=== 22:11:40
+_camera camSetTarget [89169.96,-27274.49,-45856.13]
+_camera camSetPos [6132.67,4135.99,5.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 22:11:47
+_camera camSetTarget [95576.51,-16955.33,-39265.60]
+_camera camSetPos [6129.98,4129.29,7.25]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+;=== 22:12:16
+_camera camSetTarget [-88479.45,-27379.52,-9234.82]
+_camera camSetPos [5983.23,4061.64,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
 enableradio false
-titletext [localize "STRM_41v33","plain down"]
-~5
-titletext [localize "STRM_41v34","plain down"]
-~5
-titletext [localize "STRM_41v35","plain down"]
-~5
+~0.5
+CinemaRashiv dowatch [5977.35,4060.78,0.98]
+~1
+;=== 22:13:17
+_camera camSetTarget [100766.27,33775.59,-11323.72]
+_camera camSetPos [5976.35,4060.07,1.04]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv setmimic "sad"
+CinemaRashiv say "41v33"
+~4
+;=== 22:30:10
+_camera camSetTarget [-92811.40,8423.63,15042.03]
+_camera camSetPos [5978.63,4060.76,0.80]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaAblomov say "41v34"
+~3
+;=== 22:16:48
+_camera camSetTarget [105809.60,7030.53,-4872.99]
+_camera camSetPos [5980.39,4060.82,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv setmimic "cynical"
+~1
+CinemaRashiv setmimic "sad"
+~0.5
+CinemaRashiv setmimic "normal"
+CinemaRashiv say "41v35"
+~2
+CinemaRashiv setmimic "sad"
+~1
+
+? alive P1 : P1 setpos _posP1 ;
+? alive P2 : P2 setpos _posP2 ;
+? alive P3 : P3 setpos _posP3 ;
+? alive P4 : P4 setpos _posP4 ;
+? alive P5 : P5 setpos _posP5 ;
+? alive P6 : P6 setpos _posP6 ;
+? alive P7 : P7 setpos _posP7 ;
+? alive P8 : P8 setpos _posP8 ;
+? alive P9 : P9 setpos _posP9 ;
+? alive P10 : P10 setpos _posP10 ;
+? alive Yashin : Yashin setpos _posYashin ;
 
 
 
+deletevehicle CinemaRashiv
+aP setpos getmarkerpos "CinemaRashiv"
+aP setdir 260
 
+player cameraEffect ["terminate","back"]
+camDestroy _camera
 
-
-
-
+titlecut["","black in",0.5]
 
 
 switchAblomov=true
@@ -65,10 +313,15 @@ ChapoiInitPhase=true
 
 "_x stop false" foreach units group player
 
-~1
+~0.5
+
+aP action ["WEAPONINHAND"]
+
+~0.5
 
 setacctime 1
 
+titletext["","plain down"]
 aP sideradio "41r18"
 ~4
 
