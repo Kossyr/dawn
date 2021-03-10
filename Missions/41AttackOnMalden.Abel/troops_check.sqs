@@ -10,7 +10,7 @@ _count1 = {alive _x} count units supportGroup1
 _count2 = {alive _x} count units supportGroup2
 _count3 = {alive _x} count units supportGroup3
 
-? _count1 + _count2 + count3 <= 14 : goto "dying" ;
+? (_count1 + _count2 + _count3 <= 14) : goto "dying" ;
 
 goto "loop"
 
