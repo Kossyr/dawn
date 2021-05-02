@@ -1,0 +1,152 @@
+
+titlecut ["","black in",3]
+
+c1 switchmove "FxInHand"
+c2 switchmove "EffectStandTalk"
+
+playmusic "Track3"
+0 fademusic 1
+
+rus1 switchmove "FXStandAtt"
+rus2 switchmove "FXStandAtt"
+ivan switchmove "FXStandAtt"
+rus4 switchmove "FXStandAtt"
+rashiv switchmove "FXStandAtt"
+
+rus1 setmimic "normal"
+rus2 setmimic "normal"
+ivan setmimic "normal"
+rus4 setmimic "normal"
+rashiv setmimic "normal"
+
+Dostoevsky switchmove "effectstandtalk"
+Dostoevsky setmimic "normal"
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 18:54:46
+_camera camSetTarget [107401.63,3081.23,-2233.39]
+_camera camSetPos [7443.52,4766.15,6.20]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+;=== 18:54:56
+_camera camSetTarget [107401.63,3081.23,-2233.76]
+_camera camSetPos [7441.02,4766.19,1.35]
+_camera camSetFOV 0.700
+_camera camCommit 6
+~5
+Dostoevsky say "x01v12"
+@camCommitted _camera
+~0.5
+;=== 18:56:14
+_camera camSetTarget [37901.57,-89984.20,-9637.11]
+_camera camSetPos [7440.00,4772.42,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:56:36
+_camera camSetTarget [13906.00,-94963.54,-3353.72]
+_camera camSetPos [7439.67,4770.09,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+;=== 18:56:43
+_camera camSetTarget [13906.00,-94963.54,-3353.65]
+_camera camSetPos [7440.11,4763.28,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+
+;=== 18:57:16
+_camera camSetTarget [107431.20,6163.27,-163.84]
+_camera camSetPos [7441.13,4766.29,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dostoevsky say "x01v13"
+
+;=== 18:57:33
+_camera camSetTarget [107335.22,9241.40,1096.22]
+_camera camSetPos [7441.19,4765.96,1.41]
+_camera camSetFOV 0.700
+_camera camCommit 8.5
+@camCommitted _camera
+
+;=== 18:58:35
+_camera camSetTarget [-92489.57,7817.51,-2129.56]
+_camera camSetPos [7440.71,4766.01,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+ivan setmimic "Surprised"
+ivan say "x01v14"
+;=== 18:58:48
+_camera camSetTarget [-83208.12,-37370.94,-2676.03]
+_camera camSetPos [7440.36,4766.69,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 11.2
+@camCommitted _camera
+
+;=== 19:00:09
+_camera camSetTarget [27737.86,102258.36,-9066.82]
+_camera camSetPos [7439.82,4762.56,1.49]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dostoevsky say "x01v15"
+~3
+;=== 19:00:56
+_camera camSetTarget [107379.46,1483.04,-1240.85]
+_camera camSetPos [7441.31,4766.18,1.49]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:01:32
+_camera camSetTarget [107365.52,8210.37,1800.94]
+_camera camSetPos [7440.76,4765.99,1.37]
+_camera camSetFOV 0.700
+_camera camCommit 13.5
+@camCommitted _camera
+Dostoevsky say "x01v16"
+~3
+3 fademusic 0
+Dostoevsky playmove "effectstand"
+~5.5
+Dostoevsky setmimic "smile"
+~2.5
+titletext["","plain"]
+;=== 19:04:18
+_camera camSetTarget [-92400.48,5594.03,-5562.41]
+_camera camSetPos [7442.51,4763.68,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:04:28
+_camera camSetTarget [-92400.48,5594.03,-5562.89]
+_camera camSetPos [7440.11,4763.70,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 3
+~2
+playmusic "Track9"
+@camCommitted _camera
+
+titlecut ["","black out",1]
+
+0.5 fademusic 1
+
+~2
+
+titletext [localize "STRM_CHAPTER_TEXT","PLAIN"]
+~3
+3 fademusic 0
+~3
+
+end=true
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit
