@@ -1,0 +1,110 @@
+version=11;
+class Mission
+{
+	randomSeed=12287491;
+	class Intel
+	{
+		briefingName="@STRCN_Flashback";
+		startWeather=0.800000;
+		forecastWeather=0.700000;
+		month=7;
+		day=20;
+		hour=8;
+		minute=35;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2716.300049,223.264511,6935.059570};
+					azimut=270.000000;
+					id=0;
+					side="EAST";
+					vehicle="SoldierESaboteurPipe";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="MAJOR";
+					skill=1.000000;
+					text="aP";
+					init="this setidentity ""Lemontov""; this setbehaviour ""safe""; this removeweapon ""nvgoggles""; this moveindriver LemontovCar";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={2714.521973,222.616455,6943.417480};
+			azimut=270.000000;
+			id=1;
+			side="EMPTY";
+			vehicle="UAZ";
+			skill=1.000000;
+			text="LemontovCar";
+		};
+	};
+	class Markers
+	{
+		items=3;
+		class Item0
+		{
+			position[]={1901.079590,132.244568,7389.956543};
+			name="Livanokh";
+			text="@STRM_MARKER_LIVANOKH";
+			type="End";
+			colorName="ColorBlue";
+		};
+		class Item1
+		{
+			position[]={2225.747559,124.604996,7362.948730};
+			name="Kuznetsov";
+			text="@STRM_MARKER_KUZNETSOV";
+			type="Marker";
+			colorName="ColorGreen";
+		};
+		class Item2
+		{
+			position[]={2175.936279,132.034546,7009.095703};
+			name="Rashiv";
+			text="@STRM_MARKER_RASHIV";
+			type="Marker";
+			colorName="ColorGreen";
+		};
+	};
+};
+class Intro
+{
+	randomSeed=6766595;
+	class Intel
+	{
+		startWeather=0.700000;
+		forecastWeather=0.800000;
+		month=7;
+		day=20;
+		hour=8;
+		minute=10;
+	};
+};
+class OutroWin
+{
+	randomSeed=9362947;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=7724035;
+	class Intel
+	{
+	};
+};
