@@ -9,12 +9,12 @@ class Mission
 		forecastWeather=0.700000;
 		month=7;
 		day=20;
-		hour=8;
+		hour=6;
 		minute=35;
 	};
 	class Groups
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			side="EAST";
@@ -33,14 +33,33 @@ class Mission
 					rank="MAJOR";
 					skill=1.000000;
 					text="aP";
-					init="this setidentity ""Lemontov""; this setbehaviour ""safe""; this removeweapon ""nvgoggles""; this moveindriver LemontovCar";
+					init="this setidentity ""Lemontov""; this setbehaviour ""safe""; this removeweapon ""nvgoggles""; this moveindriver LemontovCar; this removemagazine ""pipebomb""; this removemagazine ""pipebomb""; this removemagazine ""pipebomb""";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2199.954590,124.604996,7345.237793};
+					azimut=180.000000;
+					id=12;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=1.000000;
+					init="this exec ""camera.sqs""";
 				};
 			};
 		};
 	};
 	class Vehicles
 	{
-		items=1;
+		items=11;
 		class Item0
 		{
 			position[]={2714.521973,222.616455,6943.417480};
@@ -50,6 +69,106 @@ class Mission
 			vehicle="UAZ";
 			skill=1.000000;
 			text="LemontovCar";
+		};
+		class Item1
+		{
+			position[]={1623.415405,0.588945,6887.311035};
+			azimut=25.000000;
+			id=2;
+			side="EMPTY";
+			vehicle="CarrierW";
+			leader=1;
+			skill=1.000000;
+		};
+		class Item2
+		{
+			position[]={1740.079468,0.645083,6737.390137};
+			azimut=45.000000;
+			id=3;
+			side="EMPTY";
+			vehicle="CarrierW";
+			leader=1;
+			skill=1.000000;
+		};
+		class Item3
+		{
+			position[]={2181.206299,124.604996,7380.146973};
+			azimut=180.000000;
+			id=4;
+			side="EMPTY";
+			vehicle="HeliH";
+			leader=1;
+			skill=1.000000;
+		};
+		class Item4
+		{
+			position[]={2210.293213,124.604996,7379.101563};
+			azimut=180.000000;
+			id=5;
+			side="EMPTY";
+			vehicle="HeliH";
+			leader=1;
+			skill=1.000000;
+		};
+		class Item5
+		{
+			position[]={2190.589111,124.604996,7360.983887};
+			azimut=180.000000;
+			id=6;
+			side="EMPTY";
+			vehicle="HeliH";
+			leader=1;
+			skill=1.000000;
+		};
+		class Item6
+		{
+			position[]={2222.959961,124.604996,7360.982910};
+			azimut=180.000000;
+			id=7;
+			side="EMPTY";
+			vehicle="HeliH";
+			leader=1;
+			skill=1.000000;
+		};
+		class Item7
+		{
+			position[]={2181.141357,124.604996,7378.358398};
+			azimut=180.000000;
+			id=8;
+			side="EMPTY";
+			vehicle="Mi17";
+			leader=1;
+			skill=1.000000;
+		};
+		class Item8
+		{
+			position[]={2210.599365,124.604996,7378.114258};
+			azimut=180.000000;
+			id=9;
+			side="EMPTY";
+			vehicle="Mi17";
+			leader=1;
+			skill=1.000000;
+		};
+		class Item9
+		{
+			position[]={2190.633545,124.604996,7360.369629};
+			azimut=180.000000;
+			id=10;
+			side="EMPTY";
+			vehicle="Mi24";
+			leader=1;
+			skill=1.000000;
+		};
+		class Item10
+		{
+			position[]={2223.037354,124.604996,7359.640625};
+			azimut=180.000000;
+			id=11;
+			side="EMPTY";
+			vehicle="Mi24";
+			leader=1;
+			skill=1.000000;
 		};
 	};
 	class Markers
@@ -65,7 +184,7 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={2225.747559,124.604996,7362.948730};
+			position[]={2237.628174,124.604996,7317.359863};
 			name="Kuznetsov";
 			text="@STRM_MARKER_KUZNETSOV";
 			type="Marker";
@@ -90,8 +209,48 @@ class Intro
 		forecastWeather=0.800000;
 		month=7;
 		day=20;
-		hour=8;
+		hour=6;
 		minute=10;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2935.885742,105.314720,5859.022461};
+					id=0;
+					side="EAST";
+					vehicle="SoldierEB";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=1.000000;
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2719.787598,16.559999,5553.291504};
+					id=1;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=1.000000;
+					init="this exec ""camera.sqs""";
+				};
+			};
+		};
 	};
 };
 class OutroWin

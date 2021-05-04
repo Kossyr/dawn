@@ -88,6 +88,14 @@ class CfgIdentities
     speaker = "Rob";
     pitch = 1.171655;
   };
+  class FrolovPlain
+  {
+    name = "Bogdan Frolov";
+    face = "Face46";
+    glasses = "None";
+    speaker = "Rob";
+    pitch = 1.171655;
+  };
   class Dyaconsen
  {
     name = "George Dyaconsen";
@@ -271,6 +279,22 @@ class CfgIdentities
 	glasses="Spectacles";
 	speaker = "Adam";
 	pitch = 1.000000;
+  };
+  class Blonksy
+  {
+    name = "Nikolay Blonksy";
+    face = "Face35";
+    glasses = "Not";
+    speaker = "Adam";
+    pitch = 1.00;
+  };
+  class RashivSenior
+  {
+    name = "Vadim Rashiv";
+    face = "Face52";
+    glasses = "Spectacles";
+    speaker = "Adam";
+    pitch = 1.00;
   };
 };
 
@@ -1073,6 +1097,17 @@ class Campaign
 		};
 		class f03Flashback: MissionDefault
 		{
+			end1 = f04Flashback;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = f03Flashback;
+			template = f03Flashback.Cain;
+		};
+		class f04Flashback: MissionDefault
+		{
 			end1 = 42SecretIntensions;
 			end2 = ;
 			end3 = ;
@@ -1080,7 +1115,7 @@ class Campaign
 			end5 = ;
 			end6 = ;
 			lost = 42SecretIntensions;
-			template = f03Flashback.Abel;
+			template = f04Flashback.Abel;
 		};
 		class 42SecretIntensions: MissionDefault
 		{
