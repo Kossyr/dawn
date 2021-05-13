@@ -2,20 +2,30 @@ titlecut["","black in",1]
 
 "Rashiv1" setmarkertype "Empty"
 "Rashiv2" setmarkertype "Empty"
-"Kuznetsov" setmarkertype "Empty"
 "Officers" setmarkertype "Empty"
 
 Livanokh setpos [1896.82,7391.35,3.29]
 
+enableradio false
 
+cinema=false
+talkedToKuznetsov=false
+talkedToDostoevsky=false
+talkedToRashiv=false
+talkedToOfficers=false
+lookingForRashiv=false
 
-
-
-
+Kuznetsov dowatch [2225.22,7319.53,1.66]
 
 
 ~1
 
+Hint localize "STRM_HINT_QUEST1"
+
 VillaGuard switchmove "FXStandAtt"
+C1 switchmove "FxInHand"
+C2 switchmove "effectstandtalk"
+C3 switchmove "FxInKneel"
+C4 switchmove "EffectStand"
 
 exit

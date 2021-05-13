@@ -1,0 +1,241 @@
+setacctime 1
+
+cinema=true
+
+
+titlecut["","black out",0.5]
+~0.5
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+? (aP == vehicle aP) : goto "cinemaKuznetsov" ;
+
+vehicle aP setpos getmarkerpos "VehicleAway"
+vehicle aP setdir 0
+
+~0.5
+
+vehicle aP setpos getmarkerpos "CinemaKuznetsovVehicle"
+vehicle aP setdir 220
+
+aP action ["EJECT"]
+UnassignVehicle aP
+
+#cinemaKuznetsov
+
+aP action ["WEAPONONBACK"]
+
+aP setpos getmarkerpos "PlayerAway"
+Kuznetsov setpos getmarkerpos "CinemaKuznetsov"
+Kuznetsov dowatch [2225.22,7319.53,1.66]
+Kuznetsov setmimic "angry"
+
+LemontovDouble setpos getmarkerpos "CinemaKuznetsovLemontov"
+LemontovDouble setdir 100
+LemontovDouble dowatch [2231.83,7328.02,1.61]
+LemontovDouble setmimic "angry"
+LemontovDouble setspeedmode "limited"
+
+~0.5
+
+setacctime 1
+
+titlecut["","black in",0.5]
+
+
+;=== 18:57:58
+_camera camSetTarget [34371.50,101952.38,-2848.98]
+_camera camSetPos [2221.97,7308.00,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:58:09
+_camera camSetTarget [29698.26,103415.74,-2848.97]
+_camera camSetPos [2224.65,7309.81,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 4
+~3
+LemontovDouble move getmarkerpos "CinemaKuznetsovLemontovFinal"
+@camCommitted _camera
+;=== 19:02:29
+_camera camSetTarget [-95616.64,-12316.81,-6155.34]
+_camera camSetPos [2233.79,7327.59,1.40]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Kuznetsov say "f03v11"
+;=== 19:02:40
+_camera camSetTarget [-83139.09,59115.49,-5316.67]
+_camera camSetPos [2232.62,7326.97,1.40]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+LemontovDouble say "f03v12"
+~0.2
+Kuznetsov setmimic "surprised"
+Kuznetsov dowatch [2230.61,7328.97,1.63]
+~1.2
+;=== 19:05:38
+_camera camSetTarget [81202.06,-53517.78,-7703.02]
+_camera camSetPos [2231.03,7328.65,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Kuznetsov say "f03v13"
+~0.4
+Kuznetsov playmove "effectstandsalute"
+~1.5
+Kuznetsov setmimic "normal"
+Kuznetsov playmove "effectstandsaluteend"
+~1.5
+LemontovDouble setpos getmarkerpos "CinemaKuznetsovLemontovFinal"
+~0.5
+;=== 19:07:26
+_camera camSetTarget [-61459.85,-68709.84,-12575.50]
+_camera camSetPos [2232.17,7329.66,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f03v14"
+LemontovDouble switchmove "fxshow1"
+~2
+Kuznetsov say "f03v15"
+Kuznetsov switchmove "fxshow2"
+~4
+;=== 19:58:00
+_camera camSetTarget [-89224.42,47259.32,-6305.48]
+_camera camSetPos [2231.38,7328.47,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f03v16"
+~3
+;=== 19:58:24
+_camera camSetTarget [18895.69,-90520.91,-12019.21]
+_camera camSetPos [2230.91,7329.89,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Kuznetsov say "f03v17"
+Kuznetsov setmimic "sad"
+~2.5
+Kuznetsov setmimic "normal"
+~2
+LemontovDouble say "f03v18"
+~2
+Kuznetsov say "f03v19"
+~1.5
+;=== 20:00:02
+_camera camSetTarget [-89219.95,47047.23,-7560.96]
+_camera camSetPos [2231.35,7328.53,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f03v20"
+~3
+;=== 20:00:33
+_camera camSetTarget [-45941.14,-78824.35,-15899.60]
+_camera camSetPos [2231.95,7329.86,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Kuznetsov setmimic "surprised"
+Kuznetsov say "f03v21"
+~3
+LemontovDouble say "f03v22"
+~4
+;=== 20:01:48
+_camera camSetTarget [100455.70,-8570.96,-9829.25]
+_camera camSetPos [2230.92,7328.37,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Kuznetsov say "f03v23"
+Kuznetsov setmimic "sad"
+~2
+;=== 20:02:53
+_camera camSetTarget [-97109.80,12983.71,-9829.42]
+_camera camSetPos [2232.58,7328.37,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f03v24"
+~4
+;=== 20:03:53
+_camera camSetTarget [83670.93,-50255.46,-7057.80]
+_camera camSetPos [2230.99,7328.67,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Kuznetsov say "f03v25"
+Kuznetsov setmimic "smile"
+~3
+;=== 20:04:32
+_camera camSetTarget [-41021.34,96787.80,-11099.79]
+_camera camSetPos [2231.75,7327.40,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f03v26"
+~3
+? not talkedToRashiv : goto "askAboutRashiv" ;
+? talkedToRashiv : goto "cinemaEnd" ;
+
+#askAboutRashiv
+
+LemontovDouble say "f03v27"
+~3
+;=== 20:06:27
+_camera camSetTarget [68213.72,-67808.08,-763.29]
+_camera camSetPos [2231.26,7328.63,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Kuznetsov setmimic "normal"
+Kuznetsov say "f03v28"
+~5
+;=== 20:04:32
+_camera camSetTarget [-41021.34,96787.80,-11099.79]
+_camera camSetPos [2231.75,7327.40,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f03v29"
+~3
+
+#cinemaEnd
+LemontovDouble say "f03v30"
+~2
+;=== 20:08:01
+_camera camSetTarget [87032.09,-44612.29,-10402.24]
+_camera camSetPos [2230.64,7328.80,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Kuznetsov setmimic "smile"
+Kuznetsov say "f03v31"
+Kuznetsov playmove "effectstandsalute"
+~1.5
+Kuznetsov playmove "effectstandsaluteend"
+~1
+
+LemontovDouble dowatch objNull
+LemontovDouble setdir 0
+LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
+
+Kuznetsov dowatch [2225.22,7319.53,1.66]
+Kuznetsov setmimic "normal"
+
+aP setpos getmarkerpos "CinemaKuznetsovLemontovFinal"
+aP setdir 135
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+titletext ["","plain"]
+
+talkedToKuznetsov=true
+cinema=false
+
+exit
