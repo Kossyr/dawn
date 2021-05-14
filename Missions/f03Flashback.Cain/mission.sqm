@@ -14,7 +14,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=25;
+		items=26;
 		class Item0
 		{
 			side="EAST";
@@ -146,6 +146,55 @@ class Mission
 					init="this setidentity ""RashivSenior""; this setbehaviour ""safe""; this removeweapon ""binocular""";
 				};
 			};
+			class Waypoints
+			{
+				items=5;
+				class Item0
+				{
+					position[]={2302.807129,172.144730,6984.641113};
+					type="HOLD";
+					speed="NORMAL";
+					synchronizations[]={6};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={2316.120361,172.337570,6987.182129};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={2319.517334,172.457840,6988.861816};
+					id=78;
+					type="GETIN";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={3320.585938,267.406342,6865.942871};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item4
+				{
+					position[]={3031.326416,22.835978,4904.327148};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
 		};
 		class Item3
 		{
@@ -164,6 +213,19 @@ class Mission
 					skill=0.600000;
 					text="Shaposhnikov";
 					init="this setbehaviour ""safe""; this setidentity ""Shaposhnikov""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2316.914063,172.376160,6987.568359};
+					type="HOLD";
+					class Effects
+					{
+					};
+					showWP="NEVER";
 				};
 			};
 		};
@@ -916,6 +978,27 @@ class Mission
 					{
 					};
 					showWP="NEVER";
+				};
+			};
+		};
+		class Item25
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4907.837891,15.126040,10137.622070};
+					azimut=210.000000;
+					id=125;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					rank="LIEUTNANT";
+					skill=1.000000;
+					text="CinemaRashiv";
+					init="this setidentity ""RashivSenior""; this setbehaviour ""safe""; this removeweapon ""binocular""";
 				};
 			};
 		};
@@ -1676,6 +1759,7 @@ class Mission
 			vehicle="UAZ";
 			lock="LOCKED";
 			skill=0.600000;
+			text="RashivCar";
 		};
 		class Item76
 		{
@@ -1905,7 +1989,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=36;
+		items=40;
 		class Item0
 		{
 			position[]={1901.079590,132.244568,7389.956543};
@@ -2182,7 +2266,7 @@ class Mission
 		};
 		class Item30
 		{
-			position[]={5018.174316,14.580774,10126.051758};
+			position[]={5052.416992,12.464999,10089.563477};
 			name="VehicleAway";
 			type="Empty";
 		};
@@ -2216,10 +2300,34 @@ class Mission
 			name="CinemaDostoevskyVehicle";
 			type="Empty";
 		};
+		class Item36
+		{
+			position[]={2301.597656,171.874008,6997.050293};
+			name="CinemaRashivVehicle";
+			type="Empty";
+		};
+		class Item37
+		{
+			position[]={2303.052979,172.160843,6984.873047};
+			name="CinemaRashiv";
+			type="Empty";
+		};
+		class Item38
+		{
+			position[]={2304.108643,172.199295,6986.264648};
+			name="CinemaRashivLemontov";
+			type="Empty";
+		};
+		class Item39
+		{
+			position[]={4920.384766,15.898232,10148.956055};
+			name="RashivAway";
+			type="Empty";
+		};
 	};
 	class Sensors
 	{
-		items=6;
+		items=8;
 		class Item0
 		{
 			position[]={2392.466553,185.219833,7105.884766};
@@ -2300,6 +2408,32 @@ class Mission
 			{
 			};
 			synchronizations[]={5};
+		};
+		class Item6
+		{
+			position[]={2300.113037,171.373077,6983.450195};
+			a=0.000000;
+			b=0.000000;
+			type="SWITCH";
+			age="UNKNOWN";
+			expCond="RashivLeave";
+			class Effects
+			{
+			};
+			synchronizations[]={6};
+		};
+		class Item7
+		{
+			position[]={2318.670410,172.444336,6987.456055};
+			a=7.000000;
+			b=7.000000;
+			activationBy="VEHICLE";
+			age="UNKNOWN";
+			idVehicle=76;
+			expActiv="[Shaposhnikov] join Rashiv; Rashiv assignascargo RashivCar; Shaposhnikov assignasdriver RashivCar";
+			class Effects
+			{
+			};
 		};
 	};
 };

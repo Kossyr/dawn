@@ -1,0 +1,395 @@
+setacctime 1
+
+cinema=true
+
+
+titlecut["","black out",0.5]
+~0.5
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+? (aP == vehicle aP) : goto "cinemaRashiv" ;
+
+vehicle aP setpos getmarkerpos "VehicleAway"
+vehicle aP setdir 0
+
+~0.5
+
+vehicle aP setpos getmarkerpos "CinemaRashivVehicle"
+vehicle aP setdir 145
+
+aP action ["EJECT"]
+UnassignVehicle aP
+
+#cinemaRashiv
+
+aa = aP saveStatus "f03Lemontov"
+aa = LemontovDouble loadStatus "f03Lemontov"
+
+aP setpos getmarkerpos "PlayerAway"
+CinemaRashiv setpos getmarkerpos "CinemaRashiv"
+CinemaRashiv setmimic "normal"
+
+Rashiv stop true
+Rashiv setpos getmarkerpos "RashivAway"
+
+
+LemontovDouble setmimic "angry"
+
+~0.5
+
+setacctime 1
+
+titlecut["","black in",0.5]
+
+CinemaRashiv switchmove "FXCivilHandMouth"
+;=== 16:30:08
+_camera camSetTarget [-71355.66,-57566.78,-19987.87]
+_camera camSetPos [2307.99,6987.13,1.63]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 16:30:20
+_camera camSetTarget [-53274.43,-73664.63,-19988.56]
+_camera camSetPos [2303.99,6986.11,1.65]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+~1
+; CinemaRashiv dowatch [2304.04,6986.14,1.68]
+CinemaRashiv dowatch [2304.17,6986.35,1.55]
+~1.5
+CinemaRashiv setmimic "smile"
+CinemaRashiv say "f03v40"
+~3
+LemontovDouble setpos getmarkerpos "CinemaRashivLemontov";
+LemontovDouble setdir 215;
+LemontovDouble dowatch [2303.10,6984.84,1.66];
+;=== 16:36:55
+_camera camSetTarget [99991.89,27407.54,-6125.27]
+_camera camSetPos [2302.08,6985.18,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f03v41"
+~3
+;=== 16:38:07
+_camera camSetTarget [-67113.04,-64668.70,-6682.85]
+_camera camSetPos [2303.61,6985.46,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv say "f03v42"
+CinemaRashiv setmimic "Normal"
+~5
+;=== 17:19:39
+_camera camSetTarget [84588.37,-49214.48,-8218.29]
+_camera camSetPos [2302.02,6986.70,1.42]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv say "f03v43"
+CinemaRashiv setmimic "cynic"
+~1.5
+LemontovDouble say "f03v44"
+~1
+;=== 16:39:59
+_camera camSetTarget [-58714.44,-72052.74,-5285.29]
+_camera camSetPos [2303.48,6985.51,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv say "f03v45"
+CinemaRashiv setmimic "sad"
+~3
+;=== 16:41:02
+_camera camSetTarget [60706.68,88057.16,-3886.66]
+_camera camSetPos [2303.66,6985.56,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f03v46"
+~3
+;=== 16:42:09
+_camera camSetTarget [59525.86,-73857.96,-13596.72]
+_camera camSetPos [2302.76,6986.99,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv say "f03v47"
+~3
+LemontovDouble say "f03v48"
+~3
+;=== 16:42:42
+_camera camSetTarget [-64530.26,-66114.31,-13596.67]
+_camera camSetPos [2303.73,6985.54,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv say "f03v49"
+CinemaRashiv setmimic "normal"
+~3
+;=== 16:44:18
+_camera camSetTarget [59287.14,88682.69,-8683.68]
+_camera camSetPos [2303.61,6985.51,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+? talkedToKuznetsov : LemontovDouble say "f03v50" ;
+? not talkedToKuznetsov : LemontovDouble say "f03v51" ;
+~3
+;=== 16:46:54
+_camera camSetTarget [-88998.25,-32383.08,-10493.33]
+_camera camSetPos [2305.00,6986.20,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv say "f03v52"
+~5
+CinemaRashiv say "f03v53"
+;=== 16:47:40
+_camera camSetTarget [-64187.37,-66941.23,-10493.19]
+_camera camSetPos [2303.60,6985.58,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+CinemaRashiv setmimic "sad"
+~1.5
+;=== 16:47:59
+_camera camSetTarget [99524.25,27820.38,-10493.06]
+_camera camSetPos [2302.24,6985.18,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f03v54"
+~2
+;=== 16:49:53
+_camera camSetTarget [-65837.51,-65204.30,-11884.27]
+_camera camSetPos [2303.69,6985.65,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv setmimic "normal"
+CinemaRashiv say "f03v55"
+~4
+;=== 16:51:35
+_camera camSetTarget [97867.39,33395.18,-12856.60]
+_camera camSetPos [2302.08,6985.10,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+LemontovDouble say "f03v56"
+~5
+;=== 16:51:59
+_camera camSetTarget [58320.95,89649.21,-5191.55]
+_camera camSetPos [2303.71,6985.57,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f03v57"
+~4
+LemontovDouble dowatch [2301.19,6990.73,1.63]
+~0.5
+;=== 17:22:17
+_camera camSetTarget [-19060.14,-90580.47,-4724.43]
+_camera camSetPos [2303.90,6987.93,1.36]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+CinemaRashiv say "f03v58"
+~2
+LemontovDouble say "f03v59"
+~1
+;=== 16:55:29
+_camera camSetTarget [18162.82,105125.30,-10633.12]
+_camera camSetPos [2303.27,6984.11,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble dowatch [2303.10,6984.84,1.66]
+~2.5
+;=== 16:58:10
+_camera camSetTarget [-96452.02,-5601.61,-9239.95]
+_camera camSetPos [2304.95,6985.89,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv setmimic "smile"
+CinemaRashiv say "f03v60"
+~5
+CinemaRashiv setmimic "sad"
+CinemaRashiv say "f03v61"
+LemontovDouble setmimic "angry"
+~5
+;=== 16:59:13
+_camera camSetTarget [54667.05,91658.20,-9240.01]
+_camera camSetPos [2303.68,6985.52,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f03v62"
+~1.5
+;=== 16:59:42
+_camera camSetTarget [81991.11,-52687.98,-9240.02]
+_camera camSetPos [2302.17,6986.66,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv setmimic "normal"
+CinemaRashiv say "f03v63"
+~3
+LemontovDouble say "f03v64"
+~2
+;=== 17:01:36
+_camera camSetTarget [-61524.34,-69417.17,-9240.29]
+_camera camSetPos [2303.61,6985.58,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv setmimic "sad"
+CinemaRashiv say "f03v65"
+~3
+;=== 17:02:04
+_camera camSetTarget [16349.18,105544.48,-9240.31]
+_camera camSetPos [2303.23,6984.14,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f03v66"
+~5
+;=== 17:05:45
+_camera camSetTarget [-80347.56,-49187.34,-3479.20]
+_camera camSetPos [2303.94,6985.50,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv say "f03v67"
+;=== 17:05:53
+_camera camSetTarget [-32701.29,-86616.32,-3478.74]
+_camera camSetPos [2303.32,6985.71,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+;=== 17:06:02
+_camera camSetTarget [-80655.96,-48551.12,-5576.80]
+_camera camSetPos [2304.99,6986.42,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+CinemaRashiv say "f03v68"
+~1
+;=== 17:07:22
+_camera camSetTarget [60775.32,87905.41,-5576.58]
+_camera camSetPos [2303.61,6985.48,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+;=== 17:07:35
+_camera camSetTarget [-60604.81,-70535.30,-5576.40]
+_camera camSetPos [2303.52,6985.54,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv setmimic "smile"
+~3
+;=== 17:08:16
+_camera camSetTarget [91257.48,52109.85,-6946.61]
+_camera camSetPos [2302.27,6984.90,1.63]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f03v69"
+~3
+;=== 17:09:57
+_camera camSetTarget [-28423.66,-87908.27,-6946.55]
+_camera camSetPos [2303.99,6987.06,1.51]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv say "f03v70"
+~3
+;=== 17:10:27
+_camera camSetTarget [-66496.99,-65234.49,-6946.93]
+_camera camSetPos [2303.60,6985.51,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+CinemaRashiv setmimic "sad"
+CinemaRashiv say "f03v71"
+~2
+;=== 17:11:12
+_camera camSetTarget [81752.98,-51914.31,-14598.29]
+_camera camSetPos [2302.08,6986.67,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+;=== 17:11:27
+_camera camSetTarget [72456.20,78245.41,-653.09]
+_camera camSetPos [2303.72,6985.69,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f03v72"
+~4
+;=== 17:12:08
+_camera camSetTarget [-90619.63,-28527.39,-10013.22]
+_camera camSetPos [2305.16,6986.19,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv setmimic "smile"
+CinemaRashiv say "f03v73"
+~2
+;=== 17:12:08
+_camera camSetTarget [-90619.63,-28527.39,-10013.22]
+_camera camSetPos [2305.16,6986.19,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+CinemaRashiv setmimic "normal"
+~2
+;=== 17:12:52
+_camera camSetTarget [56160.51,91242.88,-231.26]
+_camera camSetPos [2303.75,6985.62,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f03v74"
+~2
+
+LemontovDouble dowatch objNull
+LemontovDouble setdir 0
+LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
+
+deletevehicle CinemaRashiv
+Rashiv setpos getmarkerpos "CinemaRashiv"
+Rashiv dowatch [2304.17,6986.35,1.55]
+Rashiv setdir 30
+Rashiv setmimic "normal"
+
+aP setpos getmarkerpos "CinemaRashivLemontov"
+aP setdir 210
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+titletext ["","plain"]
+
+talkedToRashiv=true
+cinema=false
+
+~2
+
+Rashiv stop false
+RashivLeave=true
+Rashiv dowatch objnull
+
+exit
