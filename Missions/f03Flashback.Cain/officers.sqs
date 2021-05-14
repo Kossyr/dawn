@@ -1,0 +1,177 @@
+setacctime 1
+
+cinema=true
+
+
+titlecut["","black out",0.5]
+~0.5
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+? (aP == vehicle aP) : goto "cinemaOfficers" ;
+
+vehicle aP setpos getmarkerpos "VehicleAway"
+vehicle aP setdir 0
+
+~0.5
+
+vehicle aP setpos getmarkerpos "CinemaOfficersVehicle"
+vehicle aP setdir 205
+
+aP action ["EJECT"]
+UnassignVehicle aP
+
+#cinemaOfficers
+
+aa = aP saveStatus "f03Lemontov"
+aa = LemontovDouble loadStatus "f03Lemontov"
+
+aP setpos getmarkerpos "PlayerAway"
+
+Blonsky setpos getmarkerpos "CinemaOfficersBlonsky"
+Volkov setpos getmarkerpos "CinemaOfficersVolkov"
+Frolov setpos getmarkerpos "CinemaOfficersFrolov"
+
+_volkov = [1898.99,7355.26,1.64]
+_frolov = [1898.81,7356.74,1.68]
+_blonsky = [1898.07,7356.10,1.61]
+_lemy = [1899.81,7356.24,1.61]
+
+Volkov dowatch _frolov
+Frolov dowatch _volkov
+Blonsky dowatch _volkov
+
+Volkov setmimic "angry"
+Blonsky setmimic "angry"
+Frolov setmimic "normal"
+
+LemontovDouble setpos getmarkerpos "CinemaOfficersLemontov"
+LemontovDouble setdir 230
+LemontovDouble dowatch _volkov
+
+LemontovDouble setmimic "angry"
+
+~0.5
+
+setacctime 1
+
+titlecut["","black in",0.5]
+
+;=== 18:19:37
+_camera camSetTarget [-78728.95,65913.44,-8227.36]
+_camera camSetPos [1900.36,7355.18,1.49]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f03v75"
+~0.3
+Volkov dowatch _lemy
+Blonsky dowatch _lemy
+Frolov dowatch _lemy
+Volkov setmimic "normal"
+Blonsky setmimic "normal"
+~0.7
+LemontovDouble dowatch _blonsky
+~1.5
+LemontovDouble dowatch _frolov
+~1.5
+LemontovDouble dowatch _blonsky
+~1.5
+;=== 18:21:09
+_camera camSetTarget [-62984.20,-67151.30,-15314.26]
+_camera camSetPos [1900.07,7357.31,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Volkov say "f03v76"
+LemontovDouble dowatch _volkov
+~6
+Blonsky say "f03v77"
+LemontovDouble dowatch _blonsky
+~5
+Frolov say "f03v78"
+LemontovDouble dowatch _frolov
+~4
+;=== 18:23:05
+_camera camSetTarget [85467.70,-46475.57,-10748.51]
+_camera camSetPos [1899.01,7356.77,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f03v79"
+~4
+;=== 18:23:34
+_camera camSetTarget [-97307.79,1065.77,-10748.54]
+_camera camSetPos [1899.47,7356.68,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Frolov say "f03v80"
+~4
+Blonsky say "f03v81"
+LemontovDouble dowatch _blonsky
+~4
+;=== 18:24:28
+_camera camSetTarget [-87769.20,50262.58,-10748.17]
+_camera camSetPos [1900.36,7355.44,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble dowatch _volkov
+Volkov say "f03v82"
+~6
+;=== 18:25:13
+_camera camSetTarget [19534.97,105667.45,-4747.69]
+_camera camSetPos [1899.65,7355.71,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f03v83"
+~4
+;=== 18:25:48
+_camera camSetTarget [-82392.61,59674.35,-12416.62]
+_camera camSetPos [1900.42,7355.31,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2.5
+Blonsky setmimic "angry"
+Volkov setmimic "angry"
+Volkov say "f03v84"
+~2
+Blonsky say "f03v85"
+LemontovDouble dowatch _blonsky
+~2
+Frolov say "f03v86"
+~2
+;=== 18:27:39
+_camera camSetTarget [79701.45,68280.25,-15189.04]
+_camera camSetPos [1897.57,7355.14,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovDouble say "f03v87"
+~4
+LemontovDouble dowatch objNull
+LemontovDouble setdir 0
+LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
+
+aP setpos getmarkerpos "CinemaOfficersLemontov"
+aP setdir 240
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+titletext ["","plain"]
+
+talkedToOfficers=true
+cinema=false
+
+~1
+
+Volkov dowatch _frolov
+Frolov dowatch _volkov
+Blonsky dowatch _volkov
+
+exit
