@@ -14,7 +14,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=22;
+		items=25;
 		class Item0
 		{
 			side="EAST";
@@ -236,7 +236,7 @@ class Mission
 				class Item0
 				{
 					position[]={2184.318115,134.118500,7024.033691};
-					azimut=10.000000;
+					azimut=355.000000;
 					id=104;
 					side="EAST";
 					vehicle="OfficerE";
@@ -799,6 +799,119 @@ class Mission
 					position[]={4935.282227,15.974999,10196.078125};
 					id=121;
 					speed="LIMITED";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item22
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2202.848145,138.179230,7052.691895};
+					azimut=265.000000;
+					id=122;
+					side="EAST";
+					vehicle="SoldierEB";
+					leader=1;
+					skill=1.000000;
+					text="C5";
+					init="this setbehaviour ""safe""";
+				};
+			};
+		};
+		class Item23
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2202.042969,138.060349,7051.282227};
+					azimut=335.000000;
+					id=123;
+					side="EAST";
+					vehicle="SoldierEB";
+					leader=1;
+					skill=1.000000;
+					text="C6";
+					init="this setbehaviour ""safe""";
+				};
+			};
+		};
+		class Item24
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2197.507568,136.816254,7026.048828};
+					azimut=325.000000;
+					id=124;
+					side="EAST";
+					vehicle="SoldierEMG";
+					leader=1;
+					skill=1.000000;
+				};
+			};
+			class Waypoints
+			{
+				items=6;
+				class Item0
+				{
+					position[]={2188.863525,135.283325,7032.869629};
+					speed="LIMITED";
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={2195.777100,137.266739,7080.585938};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={2205.162842,138.631256,7060.139648};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={2193.900391,136.650955,7050.845703};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item4
+				{
+					position[]={2203.598877,138.583710,7033.884766};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item5
+				{
+					position[]={2197.967529,136.523834,7016.458496};
+					type="CYCLE";
 					class Effects
 					{
 					};
@@ -1792,7 +1905,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=33;
+		items=36;
 		class Item0
 		{
 			position[]={1901.079590,132.244568,7389.956543};
@@ -2085,10 +2198,28 @@ class Mission
 			name="PlayerDoubleAway";
 			type="Empty";
 		};
+		class Item33
+		{
+			position[]={2184.292969,133.632767,7024.051758};
+			name="CinemaDostoevsky";
+			type="Empty";
+		};
+		class Item34
+		{
+			position[]={2184.101318,134.156906,7026.082031};
+			name="CinemaDostoevskyLemontov";
+			type="Empty";
+		};
+		class Item35
+		{
+			position[]={2177.594727,132.813965,7039.486816};
+			name="CinemaDostoevskyVehicle";
+			type="Empty";
+		};
 	};
 	class Sensors
 	{
-		items=7;
+		items=6;
 		class Item0
 		{
 			position[]={2392.466553,185.219833,7105.884766};
@@ -2169,16 +2300,6 @@ class Mission
 			{
 			};
 			synchronizations[]={5};
-		};
-		class Item6
-		{
-			position[]={2247.668945,81.520096,7556.805176};
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="this exec ""kuznetsov.sqs""";
-			class Effects
-			{
-			};
 		};
 	};
 };
