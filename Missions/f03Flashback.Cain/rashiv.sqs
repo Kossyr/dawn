@@ -386,7 +386,19 @@ titletext ["","plain"]
 talkedToRashiv=true
 cinema=false
 
-~2
+~1
+
+"Rashiv1" setmarkertype "Empty"
+"Rashiv2" setmarkertype "Marker"
+
+? talkedToKuznetsov and not officersVilla and not talkedToOfficers : RashivSwitch=true ; Hint localize "STRM_HINT_QUEST4" ; goto "exitRashiv" ;
+? talkedToKuznetsov and officersVilla and not talkedToOfficers : VillaSwitch=true ; Hint localize "STRM_HINT_QUEST3" ; goto "exitRashiv" ;
+? talkedToKuznetsov and officersVilla and talkedToOfficers : OfficersSwitch=true ; Hint localize "STRM_HINT_QUEST4" ; goto "exitRashiv" ;
+? not talkedToKuznetsov : Hint localize "STRM_HINT_QUEST1" ; goto "exitRashiv" ; 
+
+#exitRashiv
+
+~1
 
 Rashiv stop false
 RashivLeave=true

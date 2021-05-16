@@ -33,7 +33,7 @@ Blonsky setpos getmarkerpos "CinemaOfficersBlonsky"
 Volkov setpos getmarkerpos "CinemaOfficersVolkov"
 Frolov setpos getmarkerpos "CinemaOfficersFrolov"
 
-_volkov = [1898.99,7355.26,1.64]
+_volkov = [1899.05,7355.32,1.58]
 _frolov = [1898.81,7356.74,1.68]
 _blonsky = [1898.07,7356.10,1.61]
 _lemy = [1899.81,7356.24,1.61]
@@ -169,6 +169,12 @@ talkedToOfficers=true
 cinema=false
 
 ~1
+
+? talkedToKuznetsov and talkedToRashiv : OfficersSwitch=true ; Hint localize "STRM_HINT_QUEST4" ; goto "exitOfficers" ;
+? not talkedToKuznetsov : Hint localize "STRM_HINT_QUEST1" ; goto "exitOfficers" ;
+? not talkedToRashiv : Hint localize "STRM_HINT_QUEST2" ; goto "exitOfficers" ;
+
+#exitOfficers
 
 Volkov dowatch _frolov
 Frolov dowatch _volkov

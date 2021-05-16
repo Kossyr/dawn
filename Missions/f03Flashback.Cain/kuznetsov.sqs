@@ -241,4 +241,12 @@ titletext ["","plain"]
 talkedToKuznetsov=true
 cinema=false
 
+~1
+
+? not talkedToRashiv : KuznetsovSwitch=true ; Hint localize "STRM_HINT_QUEST2" ; "Rashiv1" setmarkertype "Marker" ; goto "exitKuznetsov" ;
+? talkedToRashiv and officersVilla and not talkedToOfficers : VillaSwitch=true ; Hint localize "STRM_HINT_QUEST3"; goto "exitKuznetsov" ;
+? talkedToRashiv and officersVilla and talkedToOfficers : OfficersSwitch=true ; Hint localize "STRM_HINT_QUEST4" ; goto "exitKuznetsov" ;
+
+#exitKuznetsov
+
 exit
