@@ -28,7 +28,7 @@ class Intro
 	};
 	class Groups
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			side="EAST";
@@ -58,6 +58,24 @@ class Intro
 				{
 					position[]={9658.781250,39.513870,3969.309326};
 					id=62;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.600000;
+					init="this exec ""camera.sqs""";
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9691.911133,39.329998,3969.050049};
+					id=63;
 					side="LOGIC";
 					vehicle="Logic";
 					leader=1;
@@ -694,7 +712,7 @@ class Intro
 			timeoutMax=1.000000;
 			age="UNKNOWN";
 			expCond="true";
-			expActiv="[] exec ""test.sqs""; Dum04 animate [""dvere1"", 1]; Dum04 animate [""dvere2"", 1]";
+			expActiv="Dum04 animate [""dvere1"", 1]; Dum04 animate [""dvere2"", 1]";
 			class Effects
 			{
 			};
