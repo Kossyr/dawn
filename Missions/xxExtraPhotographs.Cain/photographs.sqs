@@ -1,19 +1,36 @@
 
 showcinemaborder false
 
-;_camera = "camera" camcreate [0,0,0]
-;_camera cameraeffect ["internal","back"]
+nextPhotography=false
 
 # Villa inside
 # Villa outside
-# Soldiers around campfire
-# Frolov with Blonsky? at a tank
-# Ships
-# Camp
-# Rashiv with Shaposhnikov in the background?
-# Livanokh with Spetsnats in line
 # Lemontov with sniper rifle
-# Livanokh and SCUD
+
+[] exec "photograph01.sqs"
+@nextPhotography
+nextPhotography=false
+[] exec "photograph02.sqs"
+@nextPhotography
+nextPhotography=false
+[] exec "photograph03.sqs"
+@nextPhotography
+nextPhotography=false
+[] exec "photograph04.sqs"
+@nextPhotography
+nextPhotography=false
+[] exec "photograph05.sqs"
+@nextPhotography
+nextPhotography=false
+[] exec "photograph06.sqs"
+@nextPhotography
+nextPhotography=false
+[] exec "photograph07.sqs"
+@nextPhotography
+nextPhotography=false
+[] exec "photograph08.sqs"
+@nextPhotography
+nextPhotography=false
 
 
 

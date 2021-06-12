@@ -1,0 +1,27 @@
+showcinemaborder false
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+CP1 setmimic "smile"
+CP2 setmimic "smile"
+CP3 setmimic "smile"
+
+CP3 switchmove "effectstandsitdown"
+CP2 switchmove "FxInKneel"
+
+;=== 17:41:24
+_camera camSetTarget [89371.43,-40158.69,-9045.57]
+_camera camSetPos [1866.68,7367.98,1.17]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~8
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+nextPhotography=true
+
+exit

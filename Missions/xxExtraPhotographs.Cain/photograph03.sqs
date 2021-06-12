@@ -1,0 +1,35 @@
+
+showcinemaborder false
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;LivanokhVilla setpos [1895.88,7390.96,3.29]
+LivanokhVilla setpos [1898.12,7392.00,3.17]
+
+LivanokhVilla setmimic "smile"
+LivanokhVilla disableai "autotarget"
+
+; LemontovVilla setpos [1897.72,7390.90,3.18]
+LemontovVilla setpos [1898.73,7391.78,3.16]
+
+
+LemontovVilla setmimic "normal"
+LemontovVilla disableai "autotarget"
+
+;=== 17:17:39
+_camera camSetTarget [42355.64,96303.17,-21264.85]
+_camera camSetPos [1897.98,7390.74,4.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~8
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+nextPhotography=true
+
+exit

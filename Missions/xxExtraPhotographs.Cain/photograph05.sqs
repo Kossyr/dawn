@@ -1,0 +1,26 @@
+showcinemaborder false
+
+pilot1 setmimic "smile"
+pilot2 setmimic "smile"
+pilot1 disableai "autotarget"
+pilot2 disableai "autotarget"
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 11:16:10
+_camera camSetTarget [-73978.52,71318.52,-9990.48]
+_camera camSetPos [2218.50,7351.73,1.42]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+~8
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+nextPhotography=true
+
+exit

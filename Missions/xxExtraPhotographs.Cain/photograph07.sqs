@@ -1,0 +1,25 @@
+showcinemaborder false
+
+
+
+Shipper switchmove "FxInKneel"
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 11:54:09
+_camera camSetTarget [-65693.80,-62187.82,-24222.55]
+_camera camSetPos [2299.21,6966.02,0.49]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+~8
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+nextPhotography=true
+
+exit

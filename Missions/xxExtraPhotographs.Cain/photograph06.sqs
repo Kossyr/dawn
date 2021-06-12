@@ -1,0 +1,39 @@
+showcinemaborder false
+
+
+Blonsky disableai "autotarget"
+Frolov disableai "autotarget"
+Frolov setmimic "angry"
+Blonsky setmimic "normal"
+
+Frolov dowatch [5282.37,3333.46,1.60]
+Blonsky dowatch [5282.94,3335.09,1.50]
+
+
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 11:31:22
+_camera camSetTarget [16321.88,-95829.38,-6646.47]
+_camera camSetPos [5281.79,3332.72,1.44]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+
+
+~1
+
+Frolov switchmove "FxShow3"
+Blonsky playmove "effectstand"
+
+~8
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+nextPhotography=true
+
+exit
