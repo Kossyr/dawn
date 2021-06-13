@@ -3,6 +3,8 @@ titlecut["","black in",1]
 Lemontov1 setmimic "angry"
 Lemontov1 setspeedmode "limited"
 
+nextYear=false
+
 [] exec "year1.sqs"
 
 exit
@@ -11,22 +13,10 @@ exit
 playsound "door_open"
 ~0.4
 VisitingBooth animate ["dvere2", 1]
-
-
 ~1.5
-
 VisitingBooth animate ["dvere2", 0]
 ~0.6
 playsound "door_close1"
-
-~1.5
-playsound "door_open"
-~0.4
-VisitingBooth animate ["dvere2", 1]
-~2
-VisitingBooth animate ["dvere2", 0]
-~0.4
-playsound "door_close2"
 
 ~1.5
 playsound "door_open"

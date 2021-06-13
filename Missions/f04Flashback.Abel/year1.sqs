@@ -2,7 +2,10 @@
 ; ## YEAR 1
 ; ############
 
-
+PrisonDriverGlue=false
+PrisonDriverGlueEnd=false
+PrisonDriverDriveGlue=false
+PrisonDriverDriveGlueEnd=false
 
 Lemontov1 setdir 240
 Lemontov1 setpos [9613.43,3287.51,0.27]
@@ -17,8 +20,7 @@ VisitingBoothGuard switchmove "fxstandatt"
 BeachGuy1 playmove "effectstandtalk"
 BeachGuy2 switchmove "FxInHand"
 
-
-;Lemontov1 moveincargo PrisonJeep2
+PrisonDriver setmimic "angry"
 
 ;Lemontov1 setpos [9646.14,3975.32,0.34]
 ;Lemontov1 dowatch [9649.77,3974.63,1.24]
@@ -30,5 +32,369 @@ BeachGuy2 switchmove "FxInHand"
 ;Dyaconsen1 setdir 270
 ;Dyaconsen1 dowatch [9645.71,3974.56,1.57]
 ;Dyaconsen1 switchmove "FXToTable"
+
+
+
+exit
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;goto "debug"
+
+;=== 16:54:41
+_camera camSetTarget [45552.16,96249.11,971.00]
+_camera camSetPos [9575.14,2952.97,21.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+BeachGuyGo=true
+;=== 16:54:49
+_camera camSetTarget [18349.73,102381.23,-6305.34]
+_camera camSetPos [9565.42,2973.29,16.73]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+
+;=== 16:55:10
+_camera camSetTarget [-42889.51,86539.88,-16596.64]
+_camera camSetPos [9580.32,3047.75,2.13]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 16:55:16
+_camera camSetTarget [-61744.39,68849.18,-24132.47]
+_camera camSetPos [9582.32,3051.83,2.74]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+BeachPeopleGo=true
+;=== 16:55:41
+_camera camSetTarget [-31058.19,88598.64,-32784.92]
+_camera camSetPos [9512.37,3299.14,14.10]
+_camera camSetFOV 0.700
+_camera camCommit 18
+~8.5
+PrisonDriverDriving=true
+@camCommitted _camera
+~0.5
+
+PrisonDriverGlue=true
+	
+	_who = PrisonJeep;
+	
+	_dx = 2;
+	_dy = 0;
+	_dz = 1.65;
+	
+	
+	#loop
+
+	_camera camSetTarget _who
+	_camera camSetPos [(getpos _who select 0) + _dx * sin (getdir _who) - _dy * cos (getdir _who), (getpos _who select 1) + _dx * cos (getdir _who) + _dy * sin (getdir _who), (getpos _who select 2)+_dz]
+	_camera camSetFOV 0.900
+	_camera camCommit 0
+	@camCommitted _camera
+	
+	? PrisonDriverGlueEnd : goto "PrisonDriverGlueEndLabel"
+	goto "loop"
+	
+	#PrisonDriverGlueEndLabel
+
+;=== 17:37:04
+_camera camSetTarget [108119.69,18457.38,-6677.95]
+_camera camSetPos [9504.36,3294.18,5.02]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 17:04:19
+_camera camSetTarget [107315.60,7028.75,-20533.48]
+_camera camSetPos [9527.66,3302.09,13.18]
+_camera camSetFOV 0.700
+_camera camCommit 6.5
+@camCommitted _camera
+;=== 17:04:51
+_camera camSetTarget [-78885.55,-36987.76,-23143.83]
+_camera camSetPos [9646.49,3313.98,5.93]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 17:04:56
+_camera camSetTarget [-87018.06,-8925.75,-22462.53]
+_camera camSetPos [9643.32,3314.71,5.89]
+_camera camSetFOV 0.700
+_camera camCommit 5.5
+@camCommitted _camera
+;=== 17:05:12
+_camera camSetTarget [69975.66,-74820.95,-15735.88]
+_camera camSetPos [9607.82,3323.42,8.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~4
+PrisonSniper dowatch [9602.80,3311.69,1.36]
+~0.5
+;=== 17:06:01
+_camera camSetTarget [-20545.18,-80594.80,-45209.65]
+_camera camSetPos [9608.66,3323.58,8.80]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 17:06:06
+_camera camSetTarget [-18514.87,-74944.47,-55476.00]
+_camera camSetPos [9608.66,3323.58,9.19]
+_camera camSetFOV 0.700
+_camera camCommit 5.5
+@camCommitted _camera
+PrisonDriver setpos getmarkerpos "PrisonDriverEntrance";
+PrisonDriver setdir 85;
+PrisonDriver dowatch [9606.41,3311.65,1.60];
+PrisonJailor dowatch [9604.89,3311.74,1.62];
+PrisonDriver setmimic "normal"
+PrisonJailor setmimic "normal"
+;=== 17:17:22
+_camera camSetTarget [-53027.43,79596.34,-15994.15]
+_camera camSetPos [9607.14,3309.29,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 17:17:30
+_camera camSetTarget [-65921.98,67283.98,-14195.69]
+_camera camSetPos [9607.12,3310.39,1.46]
+_camera camSetFOV 0.700
+_camera camCommit 3
+~0.5
+PrisonDriver playmove "Effectstandsalute"
+~1.5
+PrisonDriver playmove "Effectstandsaluteend"
+@camCommitted _camera
+;=== 17:18:06
+_camera camSetTarget [107014.45,-14259.13,-14195.14]
+_camera camSetPos [9605.38,3311.82,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+PrisonJailor setmimic "surprised"
+~2
+PrisonJailor setmimic "normal"
+~0.5
+PrisonJailor dowatch [9614.92,3293.43,1.57]
+~1
+;=== 17:19:03
+_camera camSetTarget [47184.00,-88460.63,-12809.73]
+_camera camSetPos [9604.65,3314.03,1.63]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~0.5
+PrisonJailor switchmove "fxshow3"
+~0.5
+PrisonDriver dowatch [9614.92,3293.43,1.57]
+~2.5
+;=== 17:20:48
+_camera camSetTarget [31089.33,100230.85,-11977.27]
+_camera camSetPos [9604.71,3308.62,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+PrisonJailor switchmove "FxToHand"
+~1
+PrisonDriverGoingForLemontov=true
+PrisonDriver dowatch [9618.34,3290.28,1.66]
+;=== 17:20:57
+_camera camSetTarget [13381.50,102622.69,-11002.63]
+_camera camSetPos [9605.87,3306.38,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+;=== 17:24:34
+_camera camSetTarget [42480.66,-90714.84,-8768.04]
+_camera camSetPos [9604.62,3314.56,1.87]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 17:24:46
+_camera camSetTarget [34102.05,-93347.58,-7512.47]
+_camera camSetPos [9608.89,3311.51,2.84]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+;=== 17:25:03
+_camera camSetTarget [-60651.61,-66296.66,-14746.46]
+_camera camSetPos [9626.90,3289.18,1.79]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 17:25:10
+_camera camSetTarget [-85520.93,-23703.78,-14747.08]
+_camera camSetPos [9623.88,3290.98,1.75]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+;=== 17:25:25
+_camera camSetTarget [67418.38,84833.28,-2902.88]
+_camera camSetPos [9610.64,3288.29,1.49]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 17:25:34
+_camera camSetTarget [103259.34,29850.86,-22857.73]
+_camera camSetPos [9611.51,3286.96,1.49]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+;=== 17:26:05
+_camera camSetTarget [97614.21,50756.48,1576.58]
+_camera camSetPos [9612.55,3286.97,1.27]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 17:26:29
+_camera camSetTarget [94680.79,55771.36,-2934.23]
+_camera camSetPos [9612.93,3287.12,1.41]
+_camera camSetFOV 0.582
+_camera camCommit 3
+@camCommitted _camera
+~1
+PrisonDriverCellEntrance=true
+PrisonDriver setpos getmarkerpos "PrisonDriverLemontov"
+PrisonDriver dowatch [9613.29,3287.41,1.43]
+PrisonDriver setdir 230
+~0.5
+PrisonDriver setmimic "cynic"
+PrisonDriver say "f04v01"
+;=== 18:04:00
+_camera camSetTarget [103560.09,36037.01,-10019.84]
+_camera camSetPos [9612.20,3287.31,1.31]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+;=== 18:09:01
+_camera camSetTarget [102462.86,38620.56,-11407.51]
+_camera camSetPos [9615.84,3288.85,1.81]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+;=== 18:09:18
+_camera camSetTarget [103549.67,37536.32,-1631.85]
+_camera camSetPos [9612.45,3287.35,1.25]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov1 setmimic "surprised"
+~1
+Lemontov1 setmimic "angry"
+~1.5
+;=== 18:09:45
+_camera camSetTarget [99746.49,46562.25,2007.83]
+_camera camSetPos [9615.79,3288.75,1.69]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+PrisonDriver setmimic "surprised"
+~1
+PrisonDriver setmimic "angry"
+~0.2
+PrisonDriver say "f04v02"
+~1
+;=== 18:10:26
+_camera camSetTarget [-83209.56,-27513.48,-20796.70]
+_camera camSetPos [9617.60,3289.13,1.90]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+;=== 18:10:50
+_camera camSetTarget [90415.04,60490.97,-14045.11]
+_camera camSetPos [9611.99,3286.21,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov1 switchmove "FXStandFromTable"
+~3
+;=== 18:11:25
+_camera camSetTarget [94688.03,55647.57,-4571.36]
+_camera camSetPos [9615.98,3288.72,1.78]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+#debug
+titletext["","plain down"]
+PrisonDriver setmimic "smile"
+Lemontov1 switchmove ""
+~2
+titlecut["","black out",0.1]
+~0.1
+PrisonJeep setpos getmarkerpos "PrisonJeep"
+PrisonJeep setdir 300
+PrisonDriverFollowToCar=true
+PrisonDriver setmimic "normal"
+PrisonJailor dowatch objnull
+PrisonJailor switchmove ""
+PrisonDriver dowatch objnull
+PrisonDriver assignAsDriver PrisonJeep
+PrisonDriver action ["GETIN DRIVER",PrisonJeep]
+Lemontov1 moveincargo PrisonJeep
+~1.5
+titlecut["","black in",0.5]
+;=== 18:36:27
+_camera camSetTarget PrisonJeep
+_camera camSetPos [9615.37,3313.01,2.75]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:36:46
+_camera camSetTarget PrisonJeep
+_camera camSetPos [9612.97,3313.83,3.54]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+~1
+PrisonDriverDriveGlue=true
+	
+	_who = PrisonJeep;
+	
+	_dx = 2;
+	_dy = 0;
+	_dz = 1.65;
+	
+	
+	#loop2
+
+	_camera camSetTarget _who
+	_camera camSetPos [(getpos _who select 0) + _dx * sin (getdir _who) - _dy * cos (getdir _who), (getpos _who select 1) + _dx * cos (getdir _who) + _dy * sin (getdir _who), (getpos _who select 2)+_dz]
+	_camera camSetFOV 0.900
+	_camera camCommit 0
+	@camCommitted _camera
+	
+	? PrisonDriverDriveGlueEnd : goto "PrisonDriverDriveGlueLabel"
+	goto "loop2"
+	
+	#PrisonDriverDriveGlueLabel
+
+
+;=== 20:40:59
+_camera camSetTarget [101994.94,33122.39,-23433.29]
+_camera camSetPos [9484.48,3283.29,19.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:41:24
+_camera camSetTarget [39060.36,98494.73,-7683.78]
+_camera camSetPos [9484.48,3283.29,34.46]
+_camera camSetFOV 0.700
+_camera camCommit 8
+@camCommitted _camera
+titlecut["","black in",0.5]
+
+exit
+
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+nextYear=true
 
 exit
