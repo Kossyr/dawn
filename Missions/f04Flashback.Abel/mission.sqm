@@ -58,7 +58,7 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={9694.942383,39.329998,3919.438232};
+					position[]={9659.505859,39.329998,3973.527100};
 					id=61;
 					side="LOGIC";
 					vehicle="Logic";
@@ -700,6 +700,7 @@ class Intro
 					type="HOLD";
 					speed="FULL";
 					combat="SAFE";
+					synchronizations[]={11};
 					class Effects
 					{
 					};
@@ -2195,21 +2196,21 @@ class Intro
 			vehicle="TableX";
 			leader=1;
 			skill=0.600000;
-			init="this setPos [getpos this select 0, getpos this select 1, (getpos this select 2)+0.5]";
+			init="this setPos [getpos this select 0, getpos this select 1, (getpos this select 2)+0.53]";
 		};
 		class Item101
 		{
-			position[]={9646.065430,39.535030,3974.431152};
+			position[]={9646.034180,39.535030,3974.431152};
 			id=109;
 			side="EMPTY";
 			vehicle="ChairX";
 			leader=1;
 			skill=0.600000;
-			init="this setPos [getpos this select 0, getpos this select 1, (getpos this select 2)+0.58]";
+			init="this setPos [getpos this select 0, getpos this select 1, (getpos this select 2)+0.56]";
 		};
 		class Item102
 		{
-			position[]={9647.679688,39.535030,3974.453613};
+			position[]={9647.710938,39.535030,3974.453613};
 			azimut=180.000000;
 			id=110;
 			side="EMPTY";
@@ -2281,7 +2282,7 @@ class Intro
 	};
 	class Markers
 	{
-		items=6;
+		items=7;
 		class Item0
 		{
 			position[]={9655.366211,39.329998,3950.755859};
@@ -2318,10 +2319,16 @@ class Intro
 			name="PrisonDriverJumpFence";
 			type="Flag";
 		};
+		class Item6
+		{
+			position[]={9671.419922,39.329998,3946.114990};
+			name="VisitingBoothGuardsAway";
+			type="Flag";
+		};
 	};
 	class Sensors
 	{
-		items=10;
+		items=11;
 		class Item0
 		{
 			position[]={9525.157227,36.384800,3451.817383};
@@ -2455,6 +2462,19 @@ class Intro
 			{
 			};
 			synchronizations[]={8,9,10};
+		};
+		class Item10
+		{
+			position[]={9665.236328,39.329998,3964.817383};
+			a=0.000000;
+			b=0.000000;
+			type="SWITCH";
+			age="UNKNOWN";
+			expCond="VisitingBoothGuardsRunning";
+			class Effects
+			{
+			};
+			synchronizations[]={11};
 		};
 	};
 };

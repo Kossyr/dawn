@@ -5,12 +5,13 @@
 PrisonDriverGlue=false
 PrisonDriverGlueEnd=false
 
+;goto "skipLemontovSetup"
 Lemontov1 setdir 240
 Lemontov1 setpos [9613.43,3287.51,0.27]
 Lemontov1 switchmove "FXStandUnivTable"
 Lemontov1 dowatch [9611.19,3286.27,1.63]
 
-;Lemontov1 switchmove "FXStandFromTable"
+#skipLemontovSetup
 
 PrisonSniper setpos [9608.80,3322.54,7.13]
 VisitingBoothGuard switchmove "fxstandatt"
@@ -28,20 +29,9 @@ PrisonGuard1 playmove "effectstand"
 
 PrisonDriver setmimic "angry"
 
-;Lemontov1 setpos [9646.14,3975.32,0.34]
-;Lemontov1 dowatch [9649.77,3974.63,1.24]
-;Lemontov1 setdir 90
-
-;Lemontov1 switchmove "FXToTable"
-
-;Dyaconsen1 setpos [9647.49,3973.60,0.37]
-;Dyaconsen1 setdir 270
-;Dyaconsen1 dowatch [9645.71,3974.56,1.57]
-;Dyaconsen1 switchmove "FXToTable"
 
 
-
-exit
+;exit
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -140,10 +130,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 PrisonSniper setmimic "angry"
-_sniperTime = time
-#binocLoop
 PrisonSniper switchmove "BinocStand"
-? _sniperTime + 0.15 > time : goto "binocLoop" ;
 ~2
 PrisonSniper setmimic "normal"
 ~1.5
@@ -371,8 +358,6 @@ _camera camCommit 6
 ~3
 titlecut["","black out",3]
 @camCommitted _camera
-
-#debug
 BaseAlive=true
 titlecut["","black in",1]
 
@@ -630,7 +615,159 @@ _camera camSetFOV 0.700
 _camera camCommit 2
 @camCommitted _camera
 ~1
-
+#debug
+Lemontov1 setpos [9646.0,3975.38,0.40]
+Lemontov1 dowatch[9648.28,3975.36,1.91]
+Lemontov1 setdir 90
+;=== 20:14:48
+_camera camSetTarget [-57900.43,76592.91,-12757.74]
+_camera camSetPos [9647.44,3973.58,1.66]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:15:35
+_camera camSetTarget [-82363.44,37823.21,-19663.22]
+_camera camSetPos [9648.05,3974.00,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 3
+~0.5
+Lemontov1 setpos [9646.0,3975.38,0.40]
+Lemontov1 setdir 90
+Lemontov1 switchmove "FXToTable"
+Lemontov1 dowatch [9647.62,3974.46,1.54]
+@camCommitted _camera
+;=== 20:18:35
+_camera camSetTarget [-43588.98,-78719.88,-18058.42]
+_camera camSetPos [9646.89,3975.22,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+VisitingBoothGuard1 dowatch objnull
+VisitingBoothGuard2 dowatch objnull
+VisitingBoothGuard1 move getmarkerpos "VisitingBoothGuardsAway"
+VisitingBoothGuard2 move getmarkerpos "VisitingBoothGuardsAway"
+[] exec "visiting_booth_close_side_door.sqs"
+~3.5
+;=== 20:36:24
+_camera camSetTarget [83396.44,64803.27,29376.84]
+_camera camSetPos [9646.31,3974.50,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:36:36
+_camera camSetTarget [98029.38,48249.59,-15067.11]
+_camera camSetPos [9646.31,3974.50,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+;=== 20:36:45
+_camera camSetTarget [97722.44,-42876.48,-6860.31]
+_camera camSetPos [9646.31,3974.50,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 3
+~1
+VisitingBoothGuardsRunning=true
+@camCommitted _camera
+~1
+;=== 20:37:02
+_camera camSetTarget [-89470.53,8068.01,-12570.56]
+_camera camSetPos [9646.98,3974.43,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:37:10
+_camera camSetTarget [-90171.15,8096.94,-4360.92]
+_camera camSetPos [9646.98,3974.43,1.50]
+_camera camSetFOV 0.460
+_camera camCommit 2
+@camCommitted _camera
+;=== 20:37:41
+_camera camSetTarget [109533.83,5558.55,-4434.62]
+_camera camSetPos [9646.46,3974.44,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~4
+;=== 20:38:49
+_camera camSetTarget [-90093.36,7934.45,-5977.27]
+_camera camSetPos [9646.98,3974.40,1.46]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2.5
+;=== 20:39:10
+_camera camSetTarget [-90284.59,3323.27,-3460.37]
+_camera camSetPos [9652.35,3974.49,1.38]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+[] exec "visiting_booth_open_main_door.sqs"
+~2
+;=== 20:39:29
+_camera camSetTarget [-90284.59,3323.27,-3460.04]
+_camera camSetPos [9651.08,3974.49,1.38]
+_camera camSetFOV 0.700
+_camera camCommit 1
+@camCommitted _camera
+;=== 20:39:36
+_camera camSetTarget [-90284.59,3323.27,-3460.40]
+_camera camSetPos [9650.16,3974.48,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 1
+@camCommitted _camera
+;=== 20:40:31
+_camera camSetTarget [-83296.75,38401.55,-13221.25]
+_camera camSetPos [9648.92,3973.40,1.69]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+;=== 20:40:41
+_camera camSetTarget [-80209.53,46754.39,-9745.07]
+_camera camSetPos [9646.72,3974.14,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov1 setmimic "surprised"
+~1.5
+;=== 20:41:52
+_camera camSetTarget [106010.40,-22717.42,-1176.87]
+_camera camSetPos [9646.10,3974.26,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+[] exec "visiting_booth_close_main_door.sqs"
+Dyaconsen1 setpos [9647.69,3973.52,0.30]
+Dyaconsen1 setdir 295
+Dyaconsen1 dowatch [9645.99,3974.47,1.58]
+Dyaconsen1 setmimic "normal"
+Dyaconsen1 say "f04v04"
+~1
+;=== 20:42:37
+_camera camSetTarget [109612.57,1385.35,491.34]
+_camera camSetPos [9647.09,3973.69,1.85]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dyaconsen1 setmimic "smile"
+~1.5
+Dyaconsen1 setpos [9647.69,3973.52,0.30]
+Dyaconsen1 setdir 270
+Dyaconsen1 switchmove "FXToTable"
+Dyaconsen1 setmimic "normal"
+Dyaconsen1 say "f04v05"
+;=== 21:05:15
+_camera camSetTarget [94982.51,-46060.95,-14585.02]
+_camera camSetPos [9644.97,3975.80,1.67]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 21:05:21
+_camera camSetTarget [101140.34,-30998.62,-20099.54]
+_camera camSetPos [9645.31,3975.09,1.66]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+~2
 
 
 exit
