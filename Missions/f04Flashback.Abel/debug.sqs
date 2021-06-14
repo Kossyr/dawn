@@ -1,0 +1,82 @@
+
+~1
+
+debug=true;
+
+
+PrisonJeep setpos [9590.21,3305.83,0.41]
+PrisonJeep setdir 50
+
+# prison entrance
+;unassignVehicle PrisonDriver;
+
+
+;PrisonDriver setpos getmarkerpos "PrisonDriverEntrance";
+;PrisonDriver setdir 85;
+;PrisonDriver dowatch [9606.41,3311.65,1.60];
+;PrisonJailor dowatch [9604.89,3311.74,1.62];
+;PrisonDriver setmimic "normal"
+;PrisonJailor setmimic "normal"
+
+# prison cell
+
+;PrisonJailorGo=true
+;PrisonDriver setpos getmarkerpos "PrisonDriverLemontov"
+;PrisonDriver dowatch [9613.29,3287.41,1.43]
+;PrisonDriver setdir 230
+
+# prison ride
+
+PrisonDriver setpos [0,0,0]
+deleteVehicle PrisonDriver
+PrisonDriverLeaving=true
+PrisonDriver2 moveindriver PrisonJeep
+Lemontov1 moveincargo PrisonJeep
+
+~1
+
+;Lemontov1 switchmove ""
+
+
+;PrisonDriverJumpFence=true
+;PrisonJeep setpos getmarkerpos "PrisonDriverJumpFence"
+;PrisonJeep setdir 0
+
+;@PrisonDriverOut
+;~0.5
+;unassignvehicle Lemontov1
+;Lemontov1 action ["EJECT"]
+
+# Visiting Booth entrance
+
+;Lemontov1 setpos getmarkerpos "VisitingBoothLemontov1"
+;Lemontov1 setdir 270
+;Lemontov1 dowatch [9652.69,3950.74,1.59]
+
+# Visiting Booth
+
+exit
+
+Lemontov1 setpos [9646.0,3975.38,0.40]
+Lemontov1 dowatch [9649.77,3974.63,1.24]
+Lemontov1 setdir 90
+Lemontov1 switchmove "FXToTable"
+
+Dyaconsen1 setpos [9647.69,3973.52,0.38]
+
+Dyaconsen1 setdir 270
+Dyaconsen1 dowatch [9645.71,3974.56,1.57]
+Dyaconsen1 switchmove "FXToTable"
+
+
+~5
+Lemontov1 switchmove "FXSitHandsOnTable"
+~5
+Lemontov1 switchmove "FXSitLeftHandDown"
+~5
+Lemontov1 switchmove "FXSitRightHandDown"
+~5
+Lemontov1 switchmove "FXFromTable"
+
+
+exit
