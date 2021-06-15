@@ -1,10 +1,14 @@
 onLoadIntro="";
 onLoadIntroTime = false;
 
-#define PHOTOGRAPH_X 0.2
-#define PHOTOGRAPH_Y 0.2
-#define PHOTOGRAPH_W 0.6
-#define PHOTOGRAPH_H 0.6
+#define PHOTOGRAPH_FADEIN 0.5
+#define PHOTOGRAPH_DURATION 5
+#define PHOTOGRAPH_SIZE 1
+
+#define PHOTOGRAPH_X 0.25
+#define PHOTOGRAPH_Y 0.25
+#define PHOTOGRAPH_W 0.5
+#define PHOTOGRAPH_H 0.5
 
 class RscTitles
 {
@@ -15,8 +19,8 @@ class RscTitles
    {
     idd = -1;
     movingEnable = 0;
-    duration = 6;
-    fadein = 1;
+    duration = PHOTOGRAPH_DURATION;
+    fadein = PHOTOGRAPH_FADEIN;
     name = "photograph01";
     controls[] = {"photograph01"};
 
@@ -29,7 +33,32 @@ class RscTitles
        text = "photograph01.paa";
        colorText[] = {1,1,1,1};
        font = "AudreysHandI48";
-       size = 1;
+       size = PHOTOGRAPH_SIZE;
+       x = PHOTOGRAPH_X;
+       y = PHOTOGRAPH_Y;
+       w = PHOTOGRAPH_W;
+       h = PHOTOGRAPH_H;
+      };
+   };
+   class Photograph01_short
+   {
+    idd = -1;
+    movingEnable = 0;
+    duration = 3;
+    fadein = 0;
+    name = "photograph01";
+    controls[] = {"photograph01"};
+
+     class photograph01
+      {
+       type = 0;
+       idc = -1;
+       style = 48;
+       colorBackground[] = {1,1,1,1};
+       text = "photograph01.paa";
+       colorText[] = {1,1,1,1};
+       font = "AudreysHandI48";
+       size = PHOTOGRAPH_SIZE;
        x = PHOTOGRAPH_X;
        y = PHOTOGRAPH_Y;
        w = PHOTOGRAPH_W;
@@ -40,8 +69,8 @@ class RscTitles
    {
     idd = -1;
     movingEnable = 0;
-    duration = 6;
-    fadein = 1;
+    duration = PHOTOGRAPH_DURATION;
+    fadein = PHOTOGRAPH_FADEIN;
     name = "photograph02";
     controls[] = {"photograph02"};
 
@@ -54,7 +83,7 @@ class RscTitles
        text = "photograph02.paa";
        colorText[] = {1,1,1,1};
        font = "AudreysHandI48";
-       size = 1;
+       size = PHOTOGRAPH_SIZE;
        x = PHOTOGRAPH_X;
        y = PHOTOGRAPH_Y;
        w = PHOTOGRAPH_W;
@@ -65,8 +94,8 @@ class RscTitles
    {
     idd = -1;
     movingEnable = 0;
-    duration = 6;
-    fadein = 1;
+    duration = PHOTOGRAPH_DURATION;
+    fadein = PHOTOGRAPH_FADEIN;
     name = "photograph03";
     controls[] = {"photograph03"};
 
@@ -79,7 +108,32 @@ class RscTitles
        text = "photograph03.paa";
        colorText[] = {1,1,1,1};
        font = "AudreysHandI48";
-       size = 1;
+       size = PHOTOGRAPH_SIZE;
+       x = PHOTOGRAPH_X;
+       y = PHOTOGRAPH_Y;
+       w = PHOTOGRAPH_W;
+       h = PHOTOGRAPH_H;
+      };
+   };
+  class Photograph03_short
+   {
+    idd = -1;
+    movingEnable = 0;
+    duration = 2;
+    fadein = 0;
+    name = "photograph03";
+    controls[] = {"photograph03"};
+
+     class photograph03
+      {
+       type = 0;
+       idc = -1;
+       style = 48;
+       colorBackground[] = {1,1,1,1};
+       text = "photograph03.paa";
+       colorText[] = {1,1,1,1};
+       font = "AudreysHandI48";
+       size = PHOTOGRAPH_SIZE;
        x = PHOTOGRAPH_X;
        y = PHOTOGRAPH_Y;
        w = PHOTOGRAPH_W;
@@ -90,8 +144,8 @@ class RscTitles
    {
     idd = -1;
     movingEnable = 0;
-    duration = 6;
-    fadein = 1;
+    duration = PHOTOGRAPH_DURATION;
+    fadein = PHOTOGRAPH_FADEIN;
     name = "photograph04";
     controls[] = {"photograph04"};
 
@@ -104,7 +158,7 @@ class RscTitles
        text = "photograph04.paa";
        colorText[] = {1,1,1,1};
        font = "AudreysHandI48";
-       size = 1;
+       size = PHOTOGRAPH_SIZE;
        x = PHOTOGRAPH_X;
        y = PHOTOGRAPH_Y;
        w = PHOTOGRAPH_W;
@@ -115,8 +169,8 @@ class RscTitles
    {
     idd = -1;
     movingEnable = 0;
-    duration = 6;
-    fadein = 1;
+    duration = PHOTOGRAPH_DURATION;
+    fadein = PHOTOGRAPH_FADEIN;
     name = "photograph05";
     controls[] = {"photograph05"};
 
@@ -129,7 +183,7 @@ class RscTitles
        text = "photograph05.paa";
        colorText[] = {1,1,1,1};
        font = "AudreysHandI48";
-       size = 1;
+       size = PHOTOGRAPH_SIZE;
        x = PHOTOGRAPH_X;
        y = PHOTOGRAPH_Y;
        w = PHOTOGRAPH_W;
@@ -140,8 +194,8 @@ class RscTitles
    {
     idd = -1;
     movingEnable = 0;
-    duration = 6;
-    fadein = 1;
+    duration = PHOTOGRAPH_DURATION;
+    fadein = PHOTOGRAPH_FADEIN;
     name = "photograph06";
     controls[] = {"photograph06"};
 
@@ -154,7 +208,7 @@ class RscTitles
        text = "photograph06.paa";
        colorText[] = {1,1,1,1};
        font = "AudreysHandI48";
-       size = 1;
+       size = PHOTOGRAPH_SIZE;
        x = PHOTOGRAPH_X;
        y = PHOTOGRAPH_Y;
        w = PHOTOGRAPH_W;
@@ -165,8 +219,8 @@ class RscTitles
    {
     idd = -1;
     movingEnable = 0;
-    duration = 6;
-    fadein = 1;
+    duration = PHOTOGRAPH_DURATION;
+    fadein = PHOTOGRAPH_FADEIN;
     name = "photograph07";
     controls[] = {"photograph07"};
 
@@ -179,7 +233,7 @@ class RscTitles
        text = "photograph07.paa";
        colorText[] = {1,1,1,1};
        font = "AudreysHandI48";
-       size = 1;
+       size = PHOTOGRAPH_SIZE;
        x = PHOTOGRAPH_X;
        y = PHOTOGRAPH_Y;
        w = PHOTOGRAPH_W;
@@ -190,8 +244,8 @@ class RscTitles
    {
     idd = -1;
     movingEnable = 0;
-    duration = 6;
-    fadein = 1;
+    duration = PHOTOGRAPH_DURATION;
+    fadein = PHOTOGRAPH_FADEIN;
     name = "photograph08";
     controls[] = {"photograph08"};
 
@@ -204,7 +258,7 @@ class RscTitles
        text = "photograph08.paa";
        colorText[] = {1,1,1,1};
        font = "AudreysHandI48";
-       size = 1;
+       size = PHOTOGRAPH_SIZE;
        x = PHOTOGRAPH_X;
        y = PHOTOGRAPH_Y;
        w = PHOTOGRAPH_W;

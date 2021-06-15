@@ -78,24 +78,48 @@ PrisonJeep setdir 50
 ;Dyaconsen1 dowatch [9645.18,3973.55,1.90]
 
 
+#year2 booth
+
+Dyaconsen2 setpos [9647.69,3973.52,0.30]
+Dyaconsen2 setdir 270
+Dyaconsen2 switchmove "FXToTable"
+Dyaconsen2 dowatch [9645.99,3974.47,1.58]
+
 # photographs
 
+
+~1
+
+exit
+
+playsound "photo_slam"
+
+~1.5
+Lemontov2 dowatch [9646.81,3974.51,1.31]
 _interval = 6
-cutrsc ["Photograph01", "plain"]
-~_interval
-cutrsc ["Photograph02", "plain"]
-~_interval
-cutrsc ["Photograph03", "plain"]
-~_interval
+playsound "photo_flip"
 cutrsc ["Photograph04", "plain"]
 ~_interval
+playsound "photo_flip"
 cutrsc ["Photograph05", "plain"]
 ~_interval
-cutrsc ["Photograph06", "plain"]
+playsound "photo_flip"
+cutrsc ["Photograph02", "plain"]
 ~_interval
+playsound "photo_flip"
 cutrsc ["Photograph07", "plain"]
 ~_interval
+playsound "photo_flip"
+cutrsc ["Photograph06", "plain"]
+~_interval
+playsound "photo_flip"
 cutrsc ["Photograph08", "plain"]
+~_interval
+playsound "photo_flip"
+cutrsc ["Photograph01", "plain"]
+~_interval
+playsound "photo_flip"
+cutrsc ["Photograph03", "plain"]
 ~_interval
 
 

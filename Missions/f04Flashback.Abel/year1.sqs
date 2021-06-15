@@ -370,9 +370,10 @@ _camera camSetTarget [21250.63,101830.33,-12518.30]
 _camera camSetPos [9616.39,3309.14,26.30]
 _camera camSetFOV 0.700
 _camera camCommit 6
-~3
-titlecut["","black out",3]
 @camCommitted _camera
+~1
+titlecut["","black out",1]
+~1
 BaseAlive=true
 titlecut["","black in",1]
 
@@ -569,7 +570,7 @@ _camera camSetPos [9645.67,3970.45,1.58]
 _camera camSetFOV 0.700
 _camera camCommit 4
 @camCommitted _camera
-[] exec "visiting_booth_open_side_door.sqs"
+[] exec "booth_open_side_door.sqs"
 Lemontov1 setpos getmarkerpos "VisitingBoothLemontov2"
 VisitingBoothGuard say "f04v03"
 ~4
@@ -661,7 +662,7 @@ VisitingBoothGuard1 dowatch objnull
 VisitingBoothGuard2 dowatch objnull
 VisitingBoothGuard1 move getmarkerpos "VisitingBoothGuardsAway"
 VisitingBoothGuard2 move getmarkerpos "VisitingBoothGuardsAway"
-[] exec "visiting_booth_close_side_door.sqs"
+[] exec "booth_close_side_door.sqs"
 ~3.5
 ;=== 20:36:24
 _camera camSetTarget [83396.44,64803.27,29376.84]
@@ -716,7 +717,7 @@ _camera camSetPos [9652.35,3974.49,1.38]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-[] exec "visiting_booth_open_main_door.sqs"
+[] exec "booth_open_main_door.sqs"
 ~2
 ;=== 20:39:29
 _camera camSetTarget [-90284.59,3323.27,-3460.04]
@@ -751,7 +752,7 @@ _camera camSetPos [9646.10,3974.26,1.56]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-[] exec "visiting_booth_close_main_door.sqs"
+[] exec "booth_close_main_door.sqs"
 Dyaconsen1 setpos [9647.69,3973.52,0.30]
 Dyaconsen1 setdir 295
 Dyaconsen1 dowatch [9645.99,3974.47,1.58]
@@ -963,9 +964,9 @@ _camera camSetPos [9644.24,3975.85,2.32]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-[] exec "visiting_booth_open_side_door.sqs"
+[] exec "booth_open_side_door.sqs"
 ~0.2
-[] exec "visiting_booth_open_main_door.sqs"
+[] exec "booth_open_main_door.sqs"
 ~4
 ;=== 15:57:43
 _camera camSetTarget [108223.66,1696.36,-16615.88]
@@ -990,6 +991,7 @@ Lemontov1 move getmarkerpos "VisitingBoothLemontov1"
 Lemontov1 dowatch objnull
 Dyaconsen1 setmimic "sad"
 ~2
+titletext["","plain down"]
 titlecut["","black out",2]
 ~2
 
