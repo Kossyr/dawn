@@ -1,5 +1,11 @@
+; ########################
 ; ############
 ; ## YEAR 1
+; ############
+; ########################
+
+; ############
+; ## Setup
 ; ############
 
 PrisonDriverGlue=false
@@ -20,6 +26,12 @@ VisitingBoothAtt3 switchmove "fxstandatt"
 VisitingBoothAtt4 switchmove "fxstandatt"
 VisitingBoothAtt5 switchmove "fxstandatt"
 VisitingBoothAtt6 switchmove "fxstandatt"
+VisitingBoothAtt1 setmimic "angry"
+VisitingBoothAtt2 setmimic "angry"
+VisitingBoothAtt3 setmimic "angry"
+VisitingBoothAtt4 setmimic "angry"
+VisitingBoothAtt5 setmimic "angry"
+VisitingBoothAtt6 setmimic "angry"
 
 BeachGuy1 playmove "effectstandtalk"
 BeachGuy2 switchmove "FxInHand"
@@ -30,7 +42,13 @@ PrisonDriver setmimic "angry"
 
 
 
-;exit
+
+; ############
+; ## Cinematic
+; ############
+
+
+
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -975,10 +993,27 @@ Dyaconsen1 setmimic "sad"
 titlecut["","black out",2]
 ~2
 
-
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
 nextYear=true
+
+; ############
+; ## Cleanup
+; ############
+
+deleteVehicle Lemontov1
+deleteVehicle Dyaconsen1
+deleteVehicle VisitingBoothGuard1
+deleteVehicle VisitingBoothGuard2
+deleteVehicle VisitingBoothGuard3
+deleteVehicle VisitingBoothGuard4
+deleteVehicle driver BaseTruck
+deleteVehicle BaseTruck
+deleteVehicle VisitingBoothWelcome1
+deleteVehicle VisitingBoothWelcome2
+deleteVehicle VisitingBoothWelcome3
+deleteVehicle PrisonDriver2
+deleteVehicle PrisonJeep
 
 exit
