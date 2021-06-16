@@ -987,18 +987,16 @@ _camera camCommit 0
 @camCommitted _camera
 Lemontov1 say "f04v25"
 Lemontov1 move getmarkerpos "VisitingBoothLemontov1"
-~2
+~1
 Lemontov1 dowatch objnull
 Dyaconsen1 setmimic "sad"
-~2
+~1.5
 titletext["","plain down"]
-titlecut["","black out",2]
-~2
+titlecut["","black out",1.5]
+~1.5
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
-
-nextYear=true
 
 ; ############
 ; ## Cleanup
@@ -1010,6 +1008,15 @@ deleteVehicle VisitingBoothGuard1
 deleteVehicle VisitingBoothGuard2
 deleteVehicle VisitingBoothGuard3
 deleteVehicle VisitingBoothGuard4
+deleteVehicle VisitingBoothGuard5
+deleteVehicle VisitingBoothGuard6
+deleteVehicle VisitingBoothGuard7
+deleteVehicle VisitingBoothAtt1
+deleteVehicle VisitingBoothAtt2
+deleteVehicle VisitingBoothAtt3
+deleteVehicle VisitingBoothAtt4
+deleteVehicle VisitingBoothAtt5
+deleteVehicle VisitingBoothAtt6
 deleteVehicle driver BaseTruck
 deleteVehicle BaseTruck
 deleteVehicle VisitingBoothWelcome1
@@ -1017,5 +1024,16 @@ deleteVehicle VisitingBoothWelcome2
 deleteVehicle VisitingBoothWelcome3
 deleteVehicle PrisonDriver2
 deleteVehicle PrisonJeep
+deleteVehicle VisitingBoothOfficer1
+deleteVehicle VisitingBoothOfficer2
+"deleteVehicle _x" foreach units group BaseOfficer
+deleteVehicle Year1Truck1
+deleteVehicle Year1Truck2
+deleteVehicle Year1Truck3
+deleteVehicle Year1Truck4
+deleteVehicle Year1Truck5
+deleteVehicle Year1Truck6
+deleteVehicle Year1Truck7
+deleteVehicle Year1Truck8
 
 exit

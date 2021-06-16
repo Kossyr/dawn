@@ -1,0 +1,52 @@
+; ########################
+; ############
+; ## YEAR 3
+; ############
+; ########################
+
+; ############
+; ## Setup
+; ############
+
+Lemontov3 setpos [9646.0,3975.38,0.40]
+Lemontov3 setdir 90
+Lemontov3 switchmove "FXToTable"
+Lemontov3 dowatch [9647.62,3974.46,1.54]
+
+
+
+
+; ############
+; ## Cinematic
+; ############
+
+exit
+
+titletext["","black in",1]
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+
+
+
+
+
+
+
+
+
+exit
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+; ############
+; ## Cleanup
+; ############
+
+deleteVehicle Lemontov3
+deleteVehicle Dyaconsen3
+
+exit

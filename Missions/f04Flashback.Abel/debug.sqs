@@ -1,4 +1,24 @@
 
+
+~1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+exit
+
 ~1
 
 debug=true;
@@ -78,17 +98,22 @@ PrisonJeep setdir 50
 ;Dyaconsen1 dowatch [9645.18,3973.55,1.90]
 
 
-#year2 booth
+;year2 booth
 
-Dyaconsen2 setpos [9647.69,3973.52,0.30]
-Dyaconsen2 setdir 270
-Dyaconsen2 switchmove "FXToTable"
-Dyaconsen2 dowatch [9645.99,3974.47,1.58]
+;Dyaconsen2 setpos [9647.69,3973.52,0.30]
+;Dyaconsen2 setdir 270
+;Dyaconsen2 switchmove "FXToTable"
+;Dyaconsen2 dowatch [9645.99,3974.47,1.58]
 
 # photographs
 
+~5
 
-~1
+;Dyaconsen2 switchmove "FXFromTable"
+;[] exec "booth_open_main_door.sqs"
+;~10
+;Dyaconsen2 move getmarkerpos "VisitingBoothDyaconsenAway"
+;~1
 
 exit
 
