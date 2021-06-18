@@ -1,0 +1,160 @@
+version=11;
+class Mission
+{
+	randomSeed=11513347;
+	class Intel
+	{
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"bis_resistance"
+	};
+	addOnsAuto[]=
+	{
+		"bis_resistance"
+	};
+	randomSeed=13022723;
+	class Intel
+	{
+		startWeather=0.700000;
+		forecastWeather=0.400000;
+		day=15;
+		hour=9;
+		minute=10;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7804.511230,202.704483,7535.926758};
+					id=0;
+					side="EAST";
+					vehicle="SoldierEB";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					init="this exec ""photo.sqs""";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					presence=0.000000;
+					position[]={11594.304688,15.494205,4447.217285};
+					id=2;
+					side="WEST";
+					vehicle="OfficerW";
+					leader=1;
+					rank="COLONEL";
+					skill=0.600000;
+				};
+				class Item1
+				{
+					position[]={11594.211914,15.582533,4440.754883};
+					id=3;
+					side="EAST";
+					vehicle="SoldierESaboteurPipe";
+					rank="MAJOR";
+					skill=0.600000;
+					text="Lemontov";
+					init="removeallweapons this; this setbehaviour ""safe""; this setidentity ""Lemontov""";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11650.540039,14.940866,4452.945313};
+					id=7;
+					side="WEST";
+					vehicle="OfficerW";
+					leader=1;
+					rank="COLONEL";
+					skill=0.600000;
+					text="Dyaconsen";
+					init="this setidentity ""Dyaconsen""; removeallweapons this;";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=4;
+		class Item0
+		{
+			position[]={9647.053711,39.250443,3974.429932};
+			id=1;
+			side="EMPTY";
+			vehicle="Dum04";
+			skill=0.600000;
+			text="VisitingBooth";
+		};
+		class Item1
+		{
+			position[]={9646.872070,39.535030,3974.525391};
+			azimut=90.000000;
+			id=4;
+			side="EMPTY";
+			vehicle="TableX";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getpos this select 0, getpos this select 1, (getpos this select 2)+0.53]";
+		};
+		class Item2
+		{
+			position[]={9646.034180,39.535030,3974.431152};
+			id=5;
+			side="EMPTY";
+			vehicle="ChairX";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getpos this select 0, getpos this select 1, (getpos this select 2)+0.56]";
+		};
+		class Item3
+		{
+			position[]={9647.710938,39.535030,3974.453613};
+			azimut=180.000000;
+			id=6;
+			side="EMPTY";
+			vehicle="ChairX";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getpos this select 0, getpos this select 1, (getpos this select 2)+0.42]";
+		};
+	};
+};
+class OutroWin
+{
+	randomSeed=4548611;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=7509507;
+	class Intel
+	{
+	};
+};
