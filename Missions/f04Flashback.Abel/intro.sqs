@@ -6,27 +6,33 @@ titlecut["","black in",1]
 
 Lemontov1 setmimic "angry"
 Lemontov1 setspeedmode "limited"
-
 Lemontov2 setmimic "angry"
 Lemontov2 setspeedmode "limited"
-
 Lemontov3 setmimic "angry"
 Lemontov3 setspeedmode "limited"
-
 Lemontov4 setmimic "angry"
 Lemontov4 setspeedmode "limited"
+Lemontov5 setmimic "angry"
+Lemontov5 setspeedmode "limited"
+Lemontov6 setmimic "angry"
+Lemontov6 setspeedmode "limited"
+Lemontov7 setmimic "angry"
+Lemontov7 setspeedmode "limited"
 
 Dyaconsen1 setmimic "normal"
 Dyaconsen1 setspeedmode "limited"
-
 Dyaconsen2 setmimic "normal"
 Dyaconsen2 setspeedmode "limited"
-
 Dyaconsen3 setmimic "normal"
 Dyaconsen3 setspeedmode "limited"
-
 Dyaconsen4 setmimic "normal"
 Dyaconsen4 setspeedmode "limited"
+Dyaconsen5 setmimic "normal"
+Dyaconsen5 setspeedmode "limited"
+Dyaconsen6 setmimic "normal"
+Dyaconsen6 setspeedmode "limited"
+Dyaconsen7 setmimic "normal"
+Dyaconsen7 setspeedmode "limited"
 
 VisitingBoothAtt1 stop true
 VisitingBoothAtt2 stop true
@@ -1095,6 +1101,9 @@ deleteVehicle Year1Truck5
 deleteVehicle Year1Truck6
 deleteVehicle Year1Truck7
 deleteVehicle Year1Truck8
+deleteVehicle Year1Truck9
+deleteVehicle Year1Truck10
+deleteVehicle PrisonGuard3
 
 ; ########################
 ; ############
@@ -1893,6 +1902,506 @@ deleteVehicle Dyaconsen3
 deleteVehicle Year3Truck1
 deleteVehicle Year3Truck2
 
+; ########################
+; ############
+; ## YEAR 4
+; ############
+; ########################
 
+; ############
+; ## Setup
+; ############
+
+Lemontov4 setpos getmarkerpos "PrisonLemontov"
+Dyaconsen4 setpos getmarkerpos "PrisonDyaconsen"
+PrisonGuard1 setpos getmarkerpos "PrisonGuard1"
+PrisonGuard2 setpos getmarkerpos "PrisonGuard2"
+PrisonGuard4 setpos getmarkerpos "PrisonGuard4"
+PrisonGuard5 setpos getmarkerpos "PrisonGuard5"
+PrisonJailor setpos getmarkerpos "PrisonJailor"
+
+PrisonJailor setdir 275
+PrisonGuard1 setdir 205
+PrisonGuard2 setdir 205
+PrisonGuard4 setdir 205
+PrisonGuard5 setdir 205
+Dyaconsen4 setdir 205
+
+Lemontov4 dowatch [9626.09,3302.81,1.62]
+PrisonJailor dowatch [9624.80,3302.83,1.66]
+Dyaconsen4 dowatch [9620.00,3292.15,1.63]
+PrisonGuard1 dowatch [9620.00,3292.15,1.63]
+PrisonGuard2 dowatch [9620.00,3292.15,1.63]
+PrisonGuard4 dowatch [9620.00,3292.15,1.63]
+PrisonGuard5 dowatch [9620.00,3292.15,1.63]
+PrisonSniper dowatch [9625.19,3301.51,1.64]
+
+
+
+Year4Truck1 setpos getmarkerpos "Year4Truck1"
+Year4Truck2 setpos getmarkerpos "Year4Truck2"
+Year4Truck3 setpos getmarkerpos "Year4Truck3"
+
+
+; ############
+; ## Cinematic
+; ############
+
+~1
+
+
+titletext[localize "STRM_YEAR_4", "plain"]
+
+~_yearTitleInterval
+titletext["","plain"]
+
+titleCut["","black in",3]
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;=== 13:02:33
+_camera camSetTarget [-88790.96,18876.59,-8343.20]
+_camera camSetPos [9633.85,3315.73,6.86]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:02:55
+_camera camSetTarget [-34238.61,-82147.68,-27721.14]
+_camera camSetPos [9632.06,3316.79,6.13]
+_camera camSetFOV 0.700
+_camera camCommit 7
+~2
+Lemontov4 move getmarkerpos "PrisonLemontov2"
+~4
+Dyaconsen4 dowatch [9622.81,3297.29,1.30]
+PrisonGuard1 dowatch [9622.81,3297.29,1.30]
+PrisonGuard2 dowatch [9622.81,3297.29,1.30]
+PrisonGuard4 dowatch [9622.81,3297.29,1.30]
+PrisonGuard5 dowatch [9622.81,3297.29,1.30]
+PrisonSniper dowatch [9622.81,3297.29,1.30]
+@camCommitted _camera
+;=== 13:04:06
+_camera camSetTarget [9896.73,103065.94,-6676.88]
+_camera camSetPos [9623.87,3292.35,1.69]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:04:14
+_camera camSetTarget [-8199.93,101677.63,1717.23]
+_camera camSetPos [9626.19,3294.24,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+
+Dyaconsen4 dowatch [9625.19,3301.51,1.64]
+PrisonGuard1 dowatch [9625.19,3301.51,1.64]
+PrisonGuard2 dowatch [9625.19,3301.51,1.64]
+PrisonGuard4 dowatch [9625.19,3301.51,1.64]
+PrisonGuard5 dowatch [9625.19,3301.51,1.64]
+PrisonSniper dowatch [9625.19,3301.51,1.64]
+
+Lemontov4 setpos getmarkerpos "PrisonLemontov2"
+;=== 13:13:28
+_camera camSetTarget [-41810.06,-81312.28,-13910.29]
+_camera camSetPos [9625.77,3302.45,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov4 say "f04v80"
+~2
+;=== 13:06:24
+_camera camSetTarget [82480.86,70217.20,-14601.52]
+_camera camSetPos [9625.52,3302.12,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dyaconsen4 setmimic "smile"
+Dyaconsen4 say "f04v81"
+~5
+;=== 13:06:56
+_camera camSetTarget [-62091.79,-65594.95,-10435.16]
+_camera camSetPos [9625.74,3302.06,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov4 setmimic "surprised"
+Lemontov4 say "f04v82"
+~1.5
+Lemontov4 setmimic "angry"
+;=== 13:07:34
+_camera camSetTarget [6802.67,101479.50,-18741.11]
+_camera camSetPos [9625.56,3300.11,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dyaconsen4 setmimic "normal"
+Dyaconsen4 say "f04v83"
+Dyaconsen4 switchmove "FXCivilArmsAkimboR"
+;=== 13:07:53
+_camera camSetTarget [4675.44,101394.66,-18740.67]
+_camera camSetPos [9626.29,3299.53,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+;=== 13:08:08
+_camera camSetTarget [64522.30,86872.47,-1494.74]
+_camera camSetPos [9625.71,3302.28,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+Dyaconsen4 say "f04v84"
+~5
+;=== 13:10:08
+_camera camSetTarget [97020.61,-43209.06,-14047.28]
+_camera camSetPos [9624.34,3302.80,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+PrisonJailor setmimic "angry"
+PrisonJailor playmove "Effectstandsalute"
+PrisonJailor say "f04v85"
+~1.5
+PrisonJailor playmove "Effectstandsaluteend"
+~0.5
+Dyaconsen4 say "f04v86"
+~2
+titlecut["","black out",2]
+titletext["","plain"]
+~3
+Dyaconsen4 setpos getmarkerpos "ForestDyaconsen"
+Lemontov4 setpos getmarkerpos "ForestLemontov"
+Dyaconsen4 setdir 270
+Lemontov4 setdir 270
+Dyaconsen4 dowatch [9282.19,3505.92,9.00]
+Lemontov4 dowatch [9282.19,3505.92,9.00]
+
+
+titleCut["","black in",2]
+
+;=== 14:21:00
+_camera camSetTarget [57028.65,91372.70,-2170.67]
+_camera camSetPos [9347.16,3499.81,13.44]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:21:08
+_camera camSetTarget [105588.95,17969.57,-22963.45]
+_camera camSetPos [9347.16,3499.81,2.72]
+_camera camSetFOV 0.700
+_camera camCommit 7
+Dyaconsen4 say "f04v87"
+@camCommitted _camera
+;=== 14:21:40
+_camera camSetTarget [102958.06,-28876.11,-13749.28]
+_camera camSetPos [9351.68,3501.70,1.79]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov4 say "f04v88"
+;=== 14:22:20
+_camera camSetTarget [107812.55,-7274.76,-13749.67]
+_camera camSetPos [9352.70,3501.01,1.66]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+;=== 14:22:36
+_camera camSetTarget [-40116.93,-83306.37,-4133.25]
+_camera camSetPos [9353.26,3500.74,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:22:40
+_camera camSetTarget [-90295.82,-3767.92,-4132.83]
+_camera camSetPos [9353.26,3500.74,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 7
+~3
+Dyaconsen4 say "f04v89"
+@camCommitted _camera
+;=== 14:33:42
+_camera camSetTarget [105792.30,-18785.36,-14221.85]
+_camera camSetPos [9352.85,3501.17,1.73]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dyaconsen4 dowatch [9353.97,3500.38,1.66]
+~0.6
+Dyaconsen4 say "f04v90"
+~0.4
+Lemontov4 dowatch [9354.23,3501.30,1.67]
+~3
+;=== 14:34:26
+_camera camSetTarget [22325.48,102437.02,-6566.74]
+_camera camSetPos [9354.12,3500.71,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dyaconsen4 say "f04v91"
+~5
+;=== 16:25:38
+_camera camSetTarget [-81174.89,-30889.41,-24914.57]
+_camera camSetPos [9355.07,3501.29,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov4 setmimic "surprised"
+Lemontov4 say "f04v92"
+;=== 16:25:58
+_camera camSetTarget [-57111.22,73931.90,-24914.83]
+_camera camSetPos [9354.81,3499.97,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 7
+~1.5
+Dyaconsen4 say "f04v93"
+@camCommitted _camera
+;=== 14:38:52
+_camera camSetTarget [-5935.16,-94877.57,-9357.39]
+_camera camSetPos [9354.05,3501.03,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov4 say "f04v94"
+~1
+;=== 14:39:10
+_camera camSetTarget [32782.81,100666.90,-3114.33]
+_camera camSetPos [9354.08,3500.84,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dyaconsen4 say "f04v95"
+~2
+;=== 15:02:57
+_camera camSetTarget [38452.57,-91785.37,-8561.93]
+_camera camSetPos [9353.79,3501.86,1.67]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov4 setmimic "angry"
+Lemontov4 say "f04v96"
+~4
+;=== 15:04:17
+_camera camSetTarget [33539.42,100295.27,-6756.37]
+_camera camSetPos [9354.04,3500.74,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dyaconsen4 say "f04v97"
+~6
+;=== 15:04:58
+_camera camSetTarget [104977.26,-18321.83,-19469.65]
+_camera camSetPos [9352.91,3501.12,1.83]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dyaconsen4 say "f04v98"
+;=== 15:05:08
+_camera camSetTarget [106377.34,-18641.36,-9779.00]
+_camera camSetPos [9352.91,3501.12,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+~2
+;=== 15:05:35
+_camera camSetTarget [28497.90,100443.23,-15333.78]
+_camera camSetPos [9354.07,3500.73,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dyaconsen4 say "f04v99"
+Dyaconsen4 setmimic "angry"
+~6
+Dyaconsen4 say "f04v100"
+~2
+;=== 15:06:54
+_camera camSetTarget [85847.70,65765.23,-16464.89]
+_camera camSetPos [9353.29,3500.10,1.69]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~4
+;=== 16:28:53
+_camera camSetTarget [-17879.58,-92067.77,-11159.23]
+_camera camSetPos [9354.17,3501.05,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov4 say "f04v101"
+~3
+;=== 15:07:30
+_camera camSetTarget [27710.16,101191.54,-10918.31]
+_camera camSetPos [9354.11,3500.88,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dyaconsen4 setmimic "normal"
+Dyaconsen4 say "f04v102"
+~6
+;=== 15:08:57
+_camera camSetTarget [104201.48,-19187.88,-22095.34]
+_camera camSetPos [9352.79,3501.14,1.78]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov4 say "f04v103"
+~4
+Dyaconsen4 say "f04v104"
+~3
+;=== 15:09:26
+_camera camSetTarget [104972.41,22665.21,-22092.79]
+_camera camSetPos [9352.79,3501.14,19.10]
+_camera camSetFOV 0.700
+_camera camCommit 7
+~4
+titleCut["","black out",3]
+@camCommitted _camera
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+; ############
+; ## Cleanup
+; ############
+
+deleteVehicle Lemontov4
+deleteVehicle Dyaconsen4
+deleteVehicle PrisonJailor
+deleteVehicle PrisonGuard1
+deleteVehicle PrisonGuard2
+deleteVehicle PrisonGuard4
+deleteVehicle PrisonGuard5
+deleteVehicle PrisonSniper
+deleteVehicle Year4Truck1
+deleteVehicle Year4Truck2
+deleteVehicle Year4Truck3
+
+
+
+; ########################
+; ############
+; ## YEAR 5
+; ############
+; ########################
+
+; ############
+; ## Setup
+; ############
+
+; ############
+; ## Cinematic
+; ############
+
+~1
+
+exit
+
+
+titletext[localize "STRM_YEAR_5", "plain"]
+
+~_yearTitleInterval
+titletext["","plain"]
+
+titleCut["","black in",3]
+
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+
+
+
+exit
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+; ############
+; ## Cleanup
+; ############
+
+; ########################
+; ############
+; ## YEAR 6
+; ############
+; ########################
+
+; ############
+; ## Setup
+; ############
+
+; ############
+; ## Cinematic
+; ############
+
+~1
+
+exit
+
+
+titletext[localize "STRM_YEAR_6", "plain"]
+
+~_yearTitleInterval
+titletext["","plain"]
+
+titleCut["","black in",3]
+
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+
+
+
+exit
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+; ############
+; ## Cleanup
+; ############
+
+
+; ########################
+; ############
+; ## YEAR 7
+; ############
+; ########################
+
+; ############
+; ## Setup
+; ############
+
+; ############
+; ## Cinematic
+; ############
+
+~1
+
+exit
+
+
+titletext[localize "STRM_YEAR_7", "plain"]
+
+~_yearTitleInterval
+titletext["","plain"]
+
+titleCut["","black in",3]
+
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+
+
+
+exit
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
 
 exit
