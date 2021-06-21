@@ -15,7 +15,7 @@ Lemontov4 setspeedmode "limited"
 Lemontov5 setmimic "angry"
 Lemontov5 setspeedmode "limited"
 Lemontov6 setmimic "angry"
-Lemontov6 setspeedmode "limited"
+Lemontov6 setspeedmode "full"
 Lemontov7 setmimic "angry"
 Lemontov7 setspeedmode "limited"
 
@@ -61,7 +61,7 @@ _DyaconsenChairDoWatch = [9645.99,3974.47,1.58]
 _yearTitleInterval = 6
 
 
-goto "year5"
+goto "year6"
 
 ; ########################
 ; ############
@@ -2280,7 +2280,6 @@ deleteVehicle Year4Truck2
 deleteVehicle Year4Truck3
 
 
-#year5
 ; ########################
 ; ############
 ; ## YEAR 5
@@ -2577,6 +2576,8 @@ deleteVehicle Dyaconsen5
 deleteVehicle ForestSoldier
 deleteVehicle Year5Truck
 
+
+#year6
 ; ########################
 ; ############
 ; ## YEAR 6
@@ -2593,14 +2594,16 @@ deleteVehicle Year5Truck
 
 ~1
 
-exit
+? debug : exit ;
 
-
+goto "skipTitle"
 titletext[localize "STRM_YEAR_6", "plain"]
 
 ~_yearTitleInterval
 titletext["","plain"]
 
+
+#skipTitle
 titleCut["","black in",3]
 
 
@@ -2608,7 +2611,292 @@ _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
 
+;=== 18:00:44
+_camera camSetTarget [86484.82,67505.91,7441.73]
+_camera camSetPos [9419.22,4212.23,12.39]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:01:04
+_camera camSetTarget [106182.68,-14551.69,-16829.63]
+_camera camSetPos [9419.21,4211.89,17.21]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+TraingGroundsLemontov=true
+;=== 18:01:12
+_camera camSetTarget [90326.55,-50681.02,-20950.44]
+_camera camSetPos [9419.21,4211.89,17.21]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+~0.5
+;=== 17:58:09
+_camera camSetTarget [-89985.17,-4675.90,-5714.51]
+_camera camSetPos [9456.77,4167.53,1.75]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 17:58:17
+_camera camSetTarget [-87641.29,27385.39,-5714.60]
+_camera camSetPos [9456.54,4168.88,1.75]
+_camera camSetFOV 0.700
+_camera camCommit 1.5
+@camCommitted _camera
+[_camera,Lemontov6,[0,0.3,1.7],Lemontov6,[0,0.5,1.7],0.7] exec "logiccam.sqs"
+~3
+startglcam = false
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+_camera = "camera" camcreate [101264.48,43643.83,3884.07]
+_camera cameraeffect ["internal","back"]
+;=== 17:55:19
+_camera camSetTarget [101264.48,43643.83,3884.07]
+_camera camSetPos [9465.14,4171.97,1.69]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+Dyaconsen6 setpos getmarkerpos "TrainingGroundsDyaconsen1"
+Dyaconsen6 dowatch [9518.51,4175.99,1.56]
+Dyaconsen6 setdir 270
+;=== 18:19:46
+_camera camSetTarget [-89491.17,7454.95,-13786.06]
+_camera camSetPos [9496.23,4175.65,2.00]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:17:44
+_camera camSetTarget [-90259.37,4721.02,-6544.33]
+_camera camSetPos [9522.80,4175.47,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 6.5
+Dyaconsen6 move getmarkerpos "TrainingGroundsDyaconsen2"
+@camCommitted _camera
+~0.5
+;=== 18:07:06
+_camera camSetTarget [108862.09,-3602.67,-8360.72]
+_camera camSetPos [9518.81,4176.20,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:07:15
+_camera camSetTarget [109016.06,9639.18,-8360.59]
+_camera camSetPos [9518.59,4175.41,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 3
+~2
+TrainingGroundsSoldier1 dowatch [9520.86,4176.81,1.46]
+@camCommitted _camera
+;=== 18:20:46
+_camera camSetTarget [-44709.63,-77986.43,-17517.59]
+_camera camSetPos [9522.63,4177.71,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dyaconsen6 setpos getmarkerpos "TrainingGroundsDyaconsen2"
+TrainingGroundsSoldier1 dowatch [9522.38,4175.88,1.65]
+~0.5
+TrainingGroundsSoldier2 dowatch [9522.38,4175.88,1.65]
+~0.5
+TrainingGroundsSoldier1 playmove "effectstandsalute"
+TrainingGroundsSoldier1 say "f04v125"
+~1.5
+TrainingGroundsSoldier2 playmove "Effectstandsalute"
+~0.5
+TrainingGroundsSoldier1 playmove "Effectstandsaluteend"
+TrainingGroundsSoldier2 playmove "Effectstandsaluteend"
+~0.5
+;=== 18:15:53
+_camera camSetTarget [107884.64,-2509.04,-16703.60]
+_camera camSetPos [9521.61,4175.90,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dyaconsen6 say "f04v126"
+~2.5
+Lemontov6 setunitpos "down"
+;=== 18:16:25
+_camera camSetTarget [-83847.27,35827.59,-16703.24]
+_camera camSetPos [9523.41,4174.91,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+TrainingGroundsSoldier2 say "f04v127"
+~4
+;=== 18:15:53
+_camera camSetTarget [107884.64,-2509.04,-16703.60]
+_camera camSetPos [9521.61,4175.90,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~0.5
+Dyaconsen6 setmimic "smile"
+Dyaconsen6 say "f04v128"
+~1.5
+Lemontov6 setpos [9473.21,4190.85,0.05]
+Lemontov6 setdir 90
+TraingGroundsLemontovCrawl=true
+~0.5
+titletext["","plain down"]
+;=== 18:33:29
+_camera camSetTarget [84392.59,70262.30,-4587.00]
+_camera camSetPos [9472.75,4188.76,0.31]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~4
+;=== 18:33:41
+_camera camSetTarget [-90406.10,5270.09,-4586.27]
+_camera camSetPos [9481.81,4190.06,0.95]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:33:45
+_camera camSetTarget [-90406.10,5270.09,-4586.65]
+_camera camSetPos [9487.06,4190.00,0.95]
+_camera camSetFOV 0.700
+_camera camCommit 4.5
+@camCommitted _camera
+;=== 18:34:01
+_camera camSetTarget [83891.51,69111.55,-15718.12]
+_camera camSetPos [9482.33,4183.57,1.85]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:34:09
+_camera camSetTarget [81478.18,70600.36,-20125.36]
+_camera camSetPos [9488.61,4184.21,1.97]
+_camera camSetFOV 0.700
+_camera camCommit 2.5
+@camCommitted _camera
+TrainingGroundsMaster dowatch [9493.92,4191.39,1.66]
+Lemontov6 setpos getmarkerpos "TrainingGroundsLemontovEnd"
+Lemontov6 dowatch [9493.94,4193.45,1.67]
+Lemontov6 say "f04v129"
+TrainingGroundsMaster setmimic "angry"
+Lemontov6 setspeedmode "limited"
 
+;=== 19:28:40
+_camera camSetTarget [-74315.63,56070.67,-16826.71]
+_camera camSetPos [9495.67,4190.92,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+TrainingGroundsMaster switchmove "FXCivilLookaround"
+TrainingGroundsSoldier1 dowatch [9493.93,4192.58,1.60]
+TrainingGroundsSoldier2 dowatch [9493.93,4192.58,1.60]
+
+;=== 19:29:05
+_camera camSetTarget [-88926.72,9558.57,-16826.89]
+_camera camSetPos [9496.07,4192.44,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 2.5
+
+~1
+
+removeallweapons Lemontov6
+TrainingGroundsMaster addweapon "m16"
+@camCommitted _camera
+;=== 19:03:43
+_camera camSetTarget [10049.88,103433.02,-12259.31]
+_camera camSetPos [9493.93,4192.58,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+TrainingGroundsMaster say "f04v130"
+Dyaconsen6 dowatch [9493.92,4191.39,1.66]
+Dyaconsen6 setpos getmarkerpos "TrainingGroundsDyaconsen3"
+~1
+Dyaconsen6 move getmarkerpos "TrainingGroundsDyaconsen4"
+~1
+;=== 19:11:05
+_camera camSetTarget [106233.87,-15173.34,-16275.19]
+_camera camSetPos [9491.67,4192.96,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov6 say "f04v131"
+;=== 19:11:19
+_camera camSetTarget [107862.72,11765.32,-16275.26]
+_camera camSetPos [9492.10,4192.19,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+Dyaconsen6 say "f04v132"
+Dyaconsen6 setmimic "normal"
+~0.5
+Lemontov6 dowatch [9495.73,4192.38,1.66]
+TrainingGroundsMaster dowatch [9495.73,4192.38,1.66]
+~3
+;=== 19:14:35
+_camera camSetTarget [-75212.27,53905.17,-18756.72]
+_camera camSetPos [9496.44,4191.09,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov6 say "f04v133"
+TrainingGroundsMaster playmove "effectstandsalute"
+;=== 19:14:43
+_camera camSetTarget [-29031.10,94538.18,-18756.46]
+_camera camSetPos [9495.44,4190.08,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 2.5
+~1.5
+TrainingGroundsMaster playmove "Effectstandsaluteend"
+@camCommitted _camera
+Lemontov6 setmimic "normal"
+;=== 19:14:55
+_camera camSetTarget [-90088.51,3389.35,-9057.90]
+_camera camSetPos [9494.61,4191.53,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+Dyaconsen6 setpos getmarkerpos "TrainingGroundsDyaconsen4"
+Lemontov6 setmimic "angry"
+;=== 19:17:15
+_camera camSetTarget [100855.16,-35023.75,-10697.31]
+_camera camSetPos [9493.08,4192.33,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dyaconsen6 say "f04v134"
+~2
+Dyaconsen6 setmimic "smile"
+~2
+;=== 19:19:25
+_camera camSetTarget [-70833.35,-54234.93,-11533.40]
+_camera camSetPos [9494.60,4191.98,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov6 say "f04v135"
+~5
+;=== 19:19:50
+_camera camSetTarget [97311.80,51214.90,-8748.54]
+_camera camSetPos [9495.04,4191.98,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dyaconsen6 say "f04v136"
+~1
+Dyaconsen6 setmimic "normal"
+~3
+;=== 19:20:56
+_camera camSetTarget [-28137.71,94075.89,-22425.99]
+_camera camSetPos [9495.48,4190.10,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov6 say "f04v137"
+~2
+Dyaconsen6 say "f04v138"
+~3.5
+titlecut["","black out",1.5]
+~1.5
+titletext["","plain down"]
 
 
 exit
@@ -2620,6 +2908,13 @@ camDestroy _camera
 ; ## Cleanup
 ; ############
 
+deleteVehicle Lemontov6
+deleteVehicle Dyaconsen6
+deleteVehicle TrainingGroundsMaster
+deleteVehicle TrainingGroundsSoldier1
+deleteVehicle TrainingGroundsSoldier2
+deleteVehicle Year6Truck1
+deleteVehicle Year6Truck2
 
 ; ########################
 ; ############
