@@ -62,6 +62,8 @@ _DyaconsenChairDoWatch = [9645.99,3974.47,1.58]
 
 _yearTitleInterval = 6
 
+goto "year7"
+
 ; ########################
 ; ############
 ; ## YEAR 1
@@ -1105,7 +1107,14 @@ deleteVehicle Year1Truck7
 deleteVehicle Year1Truck8
 deleteVehicle Year1Truck9
 deleteVehicle Year1Truck10
+deleteVehicle Year1Truck11
+deleteVehicle Year1Truck12
 deleteVehicle PrisonGuard3
+deleteVehicle BeachGuy1
+deleteVehicle BeachGuy2
+deleteVehicle BeachGuy3
+deleteVehicle BeachGuy4
+deleteVehicle BeachGuy5
 
 ; ########################
 ; ############
@@ -3267,6 +3276,7 @@ deleteVehicle Year6Truck2
 deleteVehicle driver BeachJeep
 deleteVehicle BeachJeep
 
+#year7
 ; ########################
 ; ############
 ; ## YEAR 7
@@ -3277,25 +3287,282 @@ deleteVehicle BeachJeep
 ; ## Setup
 ; ############
 
+Year7Truck setpos getmarkerpos "Year7Truck"
+
+Lemontov7 setpos getmarkerpos "BeachLemontov2"
+Dyaconsen7 setpos getmarkerpos "BeachDyaconsen2"
+Lemontov7 setdir 305
+Dyaconsen7 setdir 145
+Dyaconsen7 dowatch [9564.84,3013.02,1.62]
+Lemontov7 dowatch [9563.71,3013.83,1.67]
+
+
 ; ############
 ; ## Cinematic
 ; ############
 
 ~1
 
-exit
+? debug : exit ;
 
-
+goto "skipTitle"
 titletext[localize "STRM_YEAR_7", "plain"]
 
 ~_yearTitleInterval
 titletext["","plain"]
 
+#skipTitle
 titleCut["","black in",3]
 
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
+
+;=== 19:01:13
+_camera camSetTarget [-49913.00,-66603.82,-39993.88]
+_camera camSetPos [9591.17,3093.42,3.83]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:01:26
+_camera camSetTarget [-33057.25,-76130.88,-43692.16]
+_camera camSetPos [9578.55,3061.70,3.77]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+;=== 19:01:41
+_camera camSetTarget [-51992.68,-69309.20,-31264.30]
+_camera camSetPos [9570.77,3021.48,3.58]
+_camera camSetFOV 0.700
+_camera camCommit 6.5
+~3
+Dyaconsen7 say "f04v161"
+@camCommitted _camera
+;=== 19:02:44
+_camera camSetTarget [62244.75,-79128.43,-21822.01]
+_camera camSetPos [9562.64,3017.85,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov7 say "f04v162"
+;=== 19:03:00
+_camera camSetTarget [19563.50,-94059.16,-21822.52]
+_camera camSetPos [9564.01,3015.05,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+;=== 19:03:27
+_camera camSetTarget [-69232.14,62810.96,-14667.06]
+_camera camSetPos [9564.17,3013.46,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dyaconsen7 say "f04v163"
+~2
+Dyaconsen7 setmimic "smile"
+~2
+;=== 19:03:57
+_camera camSetTarget [89517.73,-56097.31,-10640.43]
+_camera camSetPos [9564.36,3013.39,1.63]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov7 setmimic "surprised"
+Lemontov7 say "f04v164"
+~1.5
+;=== 19:04:56
+_camera camSetTarget [-86437.06,27939.11,-12725.59]
+_camera camSetPos [9565.71,3013.13,1.51]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dyaconsen7 setmimic "normal"
+Dyaconsen7 say "f04v165"
+~4
+;=== 19:05:58
+_camera camSetTarget [64152.73,86082.13,-10918.53]
+_camera camSetPos [9563.42,3012.20,1.63]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov7 say "f04v166"
+~3
+Dyaconsen7 say "f04v167"
+~5
+;=== 19:05:58
+_camera camSetTarget [64152.73,86082.13,-10918.53]
+_camera camSetPos [9563.42,3012.20,1.63]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dyaconsen7 setmimic "smile"
+Dyaconsen7 say "f04v168"
+~3
+;=== 19:07:19
+_camera camSetTarget [92014.41,-52152.47,-12588.26]
+_camera camSetPos [9564.21,3013.47,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+Lemontov7 dowatch [9550.08,2987.64,7.26]
+~0.5
+;=== 19:07:53
+_camera camSetTarget [-2376.24,101493.55,-12587.63]
+_camera camSetPos [9564.40,3011.27,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:09:23
+_camera camSetTarget [-33919.14,92920.76,5045.77]
+_camera camSetPos [9565.27,3011.22,0.83]
+_camera camSetFOV 0.700
+_camera camCommit 4
+~1
+Lemontov7 switchmove "FxToKneel"
+Lemontov7 say "f04v169"
+~1.5
+Dyaconsen7 dowatch [9564.83,3012.76,0.96]
+@camCommitted _camera
+~2
+Dyaconsen7 say "f04v170"
+~2
+Dyaconsen7 dowatch [9549.74,2985.94,7.39]
+~1.5
+Dyaconsen7 switchmove "FxToKneel"
+;=== 19:11:35
+_camera camSetTarget [108833.35,-5501.03,-8519.83]
+_camera camSetPos [9562.13,3013.76,0.78]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+Dyaconsen7 say "f04v171"
+~4
+Lemontov7 say "f04v172"
+~1
+Lemontov7 setmimic "smile"
+;=== 19:49:18
+_camera camSetTarget [62350.90,87944.59,-269.59]
+_camera camSetPos [9564.33,3012.25,0.92]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+titletext["","plain down"]
+;=== 19:49:51
+_camera camSetTarget [-48851.30,-75708.98,-19735.93]
+_camera camSetPos [9566.06,3016.02,0.79]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:50:09
+_camera camSetTarget [-46212.76,-77925.48,-18362.05]
+_camera camSetPos [9565.29,3014.93,0.87]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~3
+;=== 20:18:36
+_camera camSetTarget [-38477.88,90352.61,-7960.06]
+_camera camSetPos [9565.01,3011.98,0.96]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov7 setmimic "sad"
+Lemontov7 say "f04v173"
+~5
+Dyaconsen7 switchmove "FxFromKneel"
+Dyaconsen7 say "f04v174"
+~1.5
+Dyaconsen7 dowatch [9564.84,3013.02,1.62]
+;=== 20:20:25
+_camera camSetTarget [-64861.89,68318.99,14005.51]
+_camera camSetPos [9564.24,3013.35,1.42]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2.5
+Lemontov7 switchmove "FxFromKneel"
+;=== 20:21:10
+_camera camSetTarget [107279.74,-6988.10,-18731.91]
+_camera camSetPos [9561.96,3013.63,1.76]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:21:22
+_camera camSetTarget [106856.60,25333.13,-5960.16]
+_camera camSetPos [9562.25,3013.01,1.46]
+_camera camSetFOV 0.700
+_camera camCommit 2
+~1
+Dyaconsen7 dowatch [9564.84,3013.02,1.62]
+Lemontov7 dowatch [9563.71,3013.83,1.67]
+@camCommitted _camera
+;=== 20:22:15
+_camera camSetTarget [92174.91,-49966.72,-19189.31]
+_camera camSetPos [9564.20,3013.47,1.68]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov7 say "f04v175"
+Lemontov7 setmimic "normal"
+~4
+;=== 20:22:48
+_camera camSetTarget [-64938.62,67994.27,-15051.55]
+_camera camSetPos [9564.10,3013.45,1.65]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Dyaconsen7 setmimic "normal"
+Dyaconsen7 say "f04v176"
+~1
+Dyaconsen7 setmimic "smile"
+~1
+;=== 20:23:35
+_camera camSetTarget [65786.59,84792.30,-12278.96]
+_camera camSetPos [9563.46,3012.25,1.65]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov7 say "f04v177"
+Lemontov7 setmimic "smile"
+~5
+Dyaconsen7 say "f04v178"
+~5
+;=== 20:24:25
+_camera camSetTarget [90429.04,-52050.94,-20698.51]
+_camera camSetPos [9564.16,3013.49,1.68]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Lemontov7 say "f04v179"
+~2.5
+Dyaconsen7 move getmarkerpos "BeachDyaconsen3"
+;=== 20:26:13
+_camera camSetTarget [-37460.16,-83214.34,-18776.65]
+_camera camSetPos [9565.45,3016.22,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+titletext["","plain down"]
+~0.8
+Lemontov7 move getmarkerpos "BeachLemontov3"
+~1.5
+;=== 20:26:23
+_camera camSetTarget [-14735.46,-92677.53,15905.26]
+_camera camSetPos [9565.45,3016.22,20.05]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+;=== 20:26:32
+_camera camSetTarget [-5070.54,-85049.97,45090.68]
+_camera camSetPos [9565.45,3016.22,28.49]
+_camera camSetFOV 0.700
+_camera camCommit 5
+~3
+titlecut["","black out",2]
+@camCommitted _camera
 
 
 
@@ -3305,5 +3572,7 @@ exit
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
+
+end=true
 
 exit

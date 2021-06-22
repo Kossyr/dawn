@@ -32,7 +32,7 @@ class Intro
 	};
 	class Groups
 	{
-		items=46;
+		items=47;
 		class Item0
 		{
 			side="EAST";
@@ -551,6 +551,7 @@ class Intro
 					vehicle="SoldierWG";
 					leader=1;
 					skill=0.600000;
+					text="BeachGuy3";
 				};
 			};
 			class Waypoints
@@ -809,6 +810,7 @@ class Intro
 					vehicle="SoldierWB";
 					leader=1;
 					skill=0.600000;
+					text="BeachGuy4";
 				};
 				class Item1
 				{
@@ -818,6 +820,7 @@ class Intro
 					side="WEST";
 					vehicle="SoldierWB";
 					skill=0.600000;
+					text="BeachGuy5";
 				};
 			};
 			class Waypoints
@@ -1519,13 +1522,13 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={9663.993164,3.182369,4539.394043};
+					position[]={8505.422852,32.037937,3590.509033};
 					id=184;
 					side="LOGIC";
 					vehicle="Logic";
 					leader=1;
 					skill=0.600000;
-					init="this exec ""camera.sqs""";
+					init="this exec ""camera.sqs"";this exec ""debug.sqs""";
 				};
 			};
 		};
@@ -1726,10 +1729,29 @@ class Intro
 				};
 			};
 		};
+		class Item46
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8381.761719,6.165000,3726.495605};
+					azimut=185.000000;
+					id=310;
+					side="WEST";
+					vehicle="UH60";
+					leader=1;
+					skill=0.600000;
+					text="FinalChopper";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=237;
+		items=241;
 		class Item0
 		{
 			position[]={9613.731445,44.302307,3288.188721};
@@ -2779,6 +2801,7 @@ class Intro
 			vehicle="HMMWV";
 			leader=1;
 			skill=0.600000;
+			text="Year1Truck11";
 		};
 		class Item105
 		{
@@ -2789,6 +2812,7 @@ class Intro
 			vehicle="M113";
 			leader=1;
 			skill=0.600000;
+			text="Year1Truck12";
 		};
 		class Item106
 		{
@@ -4092,10 +4116,47 @@ class Intro
 			leader=1;
 			skill=0.600000;
 		};
+		class Item237
+		{
+			position[]={7322.662109,30.798918,3905.145752};
+			azimut=170.000000;
+			id=306;
+			side="EMPTY";
+			vehicle="Jeep";
+			skill=0.600000;
+			text="Year7Truck";
+		};
+		class Item238
+		{
+			position[]={9721.883789,39.329998,3939.207275};
+			id=307;
+			side="EMPTY";
+			vehicle="FlagCarrier";
+			skill=0.600000;
+			init="this setflagtexture ""\flags\usa.jpg""";
+		};
+		class Item239
+		{
+			position[]={8434.608398,6.424663,3753.518555};
+			id=308;
+			side="EMPTY";
+			vehicle="FlagCarrier";
+			skill=0.600000;
+			init="this setflagtexture ""\flags\usa.jpg""";
+		};
+		class Item240
+		{
+			position[]={8381.875977,6.165000,3726.578857};
+			id=309;
+			side="EMPTY";
+			vehicle="HeliH";
+			leader=1;
+			skill=0.600000;
+		};
 	};
 	class Markers
 	{
-		items=40;
+		items=45;
 		class Item0
 		{
 			position[]={9655.366211,39.329998,3950.755859};
@@ -4336,10 +4397,40 @@ class Intro
 			name="BeachJeep2";
 			type="Flag";
 		};
+		class Item40
+		{
+			position[]={9576.761719,18.271265,3056.979736};
+			name="Year7Truck";
+			type="Flag";
+		};
+		class Item41
+		{
+			position[]={9563.635742,10.135328,3013.885254};
+			name="BeachDyaconsen2";
+			type="Flag";
+		};
+		class Item42
+		{
+			position[]={9564.848633,10.143428,3013.028809};
+			name="BeachLemontov2";
+			type="Flag";
+		};
+		class Item43
+		{
+			position[]={9572.076172,17.625492,3055.421875};
+			name="BeachDyaconsen3";
+			type="Flag";
+		};
+		class Item44
+		{
+			position[]={9580.785156,17.696819,3051.300537};
+			name="BeachLemontov3";
+			type="Flag";
+		};
 	};
 	class Sensors
 	{
-		items=18;
+		items=19;
 		class Item0
 		{
 			position[]={9525.157227,36.384800,3451.817383};
@@ -4577,6 +4668,18 @@ class Intro
 			age="UNKNOWN";
 			idVehicle=300;
 			expActiv="BeachJeepArrived=true";
+			class Effects
+			{
+			};
+		};
+		class Item18
+		{
+			position[]={10660.371094,-85.986626,5160.337402};
+			a=0.000000;
+			b=0.000000;
+			type="END1";
+			age="UNKNOWN";
+			expCond="end";
 			class Effects
 			{
 			};
