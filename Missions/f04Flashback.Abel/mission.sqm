@@ -32,7 +32,7 @@ class Intro
 	};
 	class Groups
 	{
-		items=45;
+		items=46;
 		class Item0
 		{
 			side="EAST";
@@ -1519,13 +1519,13 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={9559.984375,14.713895,4470.532227};
+					position[]={9663.993164,3.182369,4539.394043};
 					id=184;
 					side="LOGIC";
 					vehicle="Logic";
 					leader=1;
 					skill=0.600000;
-					init="this exec ""camera.sqs""; debug=true; [] exec ""debug.sqs""";
+					init="this exec ""camera.sqs""";
 				};
 			};
 		};
@@ -1666,10 +1666,70 @@ class Intro
 				};
 			};
 		};
+		class Item45
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10421.427734,9.469671,4020.615234};
+					azimut=-16.336763;
+					id=300;
+					side="WEST";
+					vehicle="Jeep";
+					leader=1;
+					skill=0.600000;
+					text="BeachJeep";
+				};
+			};
+			class Waypoints
+			{
+				items=4;
+				class Item0
+				{
+					position[]={10420.730469,9.546852,4023.504395};
+					type="HOLD";
+					speed="FULL";
+					synchronizations[]={16};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={9547.295898,16.615124,4460.844238};
+					type="HOLD";
+					synchronizations[]={17};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={9759.938477,21.597673,4250.363770};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={10005.868164,8.431389,4183.754883};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=232;
+		items=237;
 		class Item0
 		{
 			position[]={9613.731445,44.302307,3288.188721};
@@ -3982,10 +4042,60 @@ class Intro
 			skill=0.600000;
 			text="Year6Truck2";
 		};
+		class Item232
+		{
+			position[]={9969.559570,3.280091,4319.969238};
+			azimut=217.419342;
+			id=301;
+			side="EMPTY";
+			vehicle="BoatW";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item233
+		{
+			position[]={9992.790039,3.280091,4300.730957};
+			azimut=222.419342;
+			id=302;
+			side="EMPTY";
+			vehicle="BoatW";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item234
+		{
+			position[]={10013.304688,3.280091,4270.874512};
+			azimut=235.000000;
+			id=303;
+			side="EMPTY";
+			vehicle="BoatW";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item235
+		{
+			position[]={10002.252930,3.280091,4283.969238};
+			azimut=267.419373;
+			id=304;
+			side="EMPTY";
+			vehicle="BoatW";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item236
+		{
+			position[]={9943.449219,6.975000,4297.832520};
+			azimut=10.000000;
+			id=305;
+			side="EMPTY";
+			vehicle="M1Abrams";
+			leader=1;
+			skill=0.600000;
+		};
 	};
 	class Markers
 	{
-		items=38;
+		items=40;
 		class Item0
 		{
 			position[]={9655.366211,39.329998,3950.755859};
@@ -4204,20 +4314,32 @@ class Intro
 		};
 		class Item36
 		{
-			position[]={9551.346680,15.659613,4473.132813};
+			position[]={9550.386719,15.737777,4473.251953};
 			name="BeachDyaconsen";
 			type="Flag";
 		};
 		class Item37
 		{
-			position[]={9549.439453,15.659170,4475.068359};
+			position[]={9549.983398,15.716367,4474.592773};
 			name="BeachLemontov";
+			type="Flag";
+		};
+		class Item38
+		{
+			position[]={9532.464844,25.768742,4380.751465};
+			name="BeachJeep";
+			type="Flag";
+		};
+		class Item39
+		{
+			position[]={9565.387695,17.150986,4448.427734};
+			name="BeachJeep2";
 			type="Flag";
 		};
 	};
 	class Sensors
 	{
-		items=15;
+		items=18;
 		class Item0
 		{
 			position[]={9525.157227,36.384800,3451.817383};
@@ -4417,6 +4539,47 @@ class Intro
 			{
 			};
 			synchronizations[]={15};
+		};
+		class Item15
+		{
+			position[]={10424.926758,10.046987,4024.957520};
+			a=0.000000;
+			b=0.000000;
+			angle=-21.336763;
+			type="SWITCH";
+			age="UNKNOWN";
+			expCond="BeachJeepGo";
+			class Effects
+			{
+			};
+			synchronizations[]={16};
+		};
+		class Item16
+		{
+			position[]={9540.010742,17.353821,4459.697754};
+			a=0.000000;
+			b=0.000000;
+			type="SWITCH";
+			age="UNKNOWN";
+			expCond="(Dyaconsen6 in BeachJeep)";
+			class Effects
+			{
+			};
+			synchronizations[]={17};
+		};
+		class Item17
+		{
+			position[]={9547.084961,16.774822,4459.534180};
+			a=7.000000;
+			b=7.000000;
+			rectangular=1;
+			activationBy="VEHICLE";
+			age="UNKNOWN";
+			idVehicle=300;
+			expActiv="BeachJeepArrived=true";
+			class Effects
+			{
+			};
 		};
 	};
 };

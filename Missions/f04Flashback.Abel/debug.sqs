@@ -13,8 +13,8 @@ TrainingGroundsLemontovDone=true
 Lemontov6 setpos getmarkerpos "TrainingGroundsLemontovEnd"
 ~1
 
-Dyaconsen6 dowatch [9706.82,4489.31,3.01]
-Lemontov6 dowatch [9706.82,4489.31,3.01]
+Lemontov6 dowatch [9569.40,4477.84,3.88]
+Dyaconsen6 dowatch [9575.58,4477.70,4.51]
 Lemontov6 setpos getmarkerpos "BeachLemontov"
 Dyaconsen6 setpos getmarkerpos "BeachDyaconsen"
 Dyaconsen6 setdir 90
@@ -22,8 +22,38 @@ Lemontov6 setdir 90
 
 ~1
 
+~2
 
+Lemontov6 dowatch [9550.10,4480.47,2.19]
+~1.5
+[] exec "beach_lemontov_walk.sqs"
+Dyaconsen6 dowatch [9550.13,4478.09,1.73]
+~3
+Lemontov6 dowatch [9550.40,4473.22,1.70]
+~3
+[] exec "beach_lemontov_walk.sqs"
 
+~2
+
+BeachJeepGo=true
+~1
+BeachJeep setpos getmarkerpos "BeachJeep"
+BeachJeep setdir 0
+~1
+~8
+@BeachJeepArrived
+~1
+
+Dyaconsen6 dowatch [9549.04,4456.81,1.24]
+~2
+Dyaconsen6 assignAsCargo BeachJeep
+[Dyaconsen6] orderGetIn true
+~2
+Dyaconsen6 action ["GETIN CARGO",BeachJeep]
+~4
+BeachJeep setpos getmarkerpos "BeachJeep2"
+BeachJeep setdir 110
+Lemontov6 dowatch [9574.48,4444.03,0.77]
 
 exit
 
@@ -102,8 +132,6 @@ Lemontov4 setpos getmarkerpos "ForestLemontov"
 
 Dyaconsen4 dowatch [9353.97,3500.38,1.66]
 Lemontov4 dowatch [9354.23,3501.30,1.67]
-
-
 
 
 
