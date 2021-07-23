@@ -2076,7 +2076,7 @@ class Intro
 	};
 	class Groups
 	{
-		items=24;
+		items=23;
 		class Item0
 		{
 			side="EAST";
@@ -2156,6 +2156,20 @@ class Intro
 					init="this setidentity ""Volkov""; this setbehaviour ""safe""; removeallweapons this";
 				};
 			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8238.068359,21.150000,3079.458984};
+					id=25;
+					speed="LIMITED";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
 		};
 		class Item4
 		{
@@ -2174,6 +2188,20 @@ class Intro
 					skill=0.600000;
 					text="LemontovVolkov";
 					init="this setidentity ""Lemontov""; this setbehaviour ""safe""; this removeweapon ""nvgoggles""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8237.931641,21.150000,3082.883301};
+					id=26;
+					speed="LIMITED";
+					class Effects
+					{
+					};
+					showWP="NEVER";
 				};
 			};
 		};
@@ -2196,6 +2224,20 @@ class Intro
 					init="this setidentity ""Zubarev""; this setbehaviour ""safe""; this removeweapon ""binocular""";
 				};
 			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8236.769531,21.150000,3082.649170};
+					id=27;
+					speed="LIMITED";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
 		};
 		class Item6
 		{
@@ -2214,6 +2256,20 @@ class Intro
 					skill=0.600000;
 					text="Kukushkin";
 					init="this setidentity ""Kukushkin""; this setbehaviour ""safe""; this removeweapon ""nvgoggles""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8239.190430,21.150000,3082.259766};
+					id=28;
+					speed="LIMITED";
+					class Effects
+					{
+					};
+					showWP="NEVER";
 				};
 			};
 		};
@@ -2236,6 +2292,20 @@ class Intro
 					init="this setidentity ""Syomin""; this setbehaviour ""safe""";
 				};
 			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8236.004883,21.150000,3081.664063};
+					id=29;
+					speed="LIMITED";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
 		};
 		class Item8
 		{
@@ -2256,6 +2326,20 @@ class Intro
 					init="this setidentity ""Chernikov""; this setbehaviour ""safe""; this removeweapon ""binocular""";
 				};
 			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8240.080078,21.150000,3081.188232};
+					id=30;
+					speed="LIMITED";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
 		};
 		class Item9
 		{
@@ -2274,6 +2358,20 @@ class Intro
 					skill=0.600000;
 					text="Kaplinsky";
 					init="this setbehaviour ""safe""; this setidentity ""Kaplinsky""; this removeweapon ""nvgoggles""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8235.608398,21.150000,3080.567139};
+					id=31;
+					speed="LIMITED";
+					class Effects
+					{
+					};
+					showWP="NEVER";
 				};
 			};
 		};
@@ -2562,24 +2660,6 @@ class Intro
 					{
 					};
 					showWP="NEVER";
-				};
-			};
-		};
-		class Item23
-		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={8240.118164,21.150000,3089.776855};
-					id=201;
-					side="LOGIC";
-					vehicle="Logic";
-					leader=1;
-					skill=0.600000;
-					init="debug=true; this exec ""debug.sqs""";
 				};
 			};
 		};
@@ -3768,7 +3848,7 @@ class Intro
 		};
 		class Item118
 		{
-			position[]={8217.343750,21.150000,3073.991699};
+			position[]={8217.309570,21.150000,3073.406982};
 			azimut=240.000000;
 			id=134;
 			side="EMPTY";
@@ -4337,7 +4417,7 @@ class Intro
 	};
 	class Markers
 	{
-		items=13;
+		items=9;
 		class Item0
 		{
 			position[]={3569.693359,4.995000,3257.149414};
@@ -4376,50 +4456,26 @@ class Intro
 		};
 		class Item6
 		{
-			position[]={8237.785156,21.150000,3085.004639};
-			name="Zubarev";
+			position[]={8238.625000,21.211536,3070.199951};
+			name="Volkov";
 			type="Flag";
 		};
 		class Item7
-		{
-			position[]={8238.981445,21.150000,3084.746582};
-			name="LemontovVolkov";
-			type="Flag";
-		};
-		class Item8
-		{
-			position[]={8238.625000,21.211536,3070.199951};
-			name="Volkov2";
-			type="Flag";
-		};
-		class Item9
 		{
 			position[]={8260.018555,20.575666,3078.256592};
 			name="Chernikov";
 			type="Flag";
 		};
-		class Item10
+		class Item8
 		{
-			position[]={8235.823242,21.150000,3079.948975};
-			name="Kaplinsky";
-			type="Flag";
-		};
-		class Item11
-		{
-			position[]={8236.271484,21.150000,3080.899414};
-			name="Syomin";
-			type="Flag";
-		};
-		class Item12
-		{
-			position[]={8238.520508,21.150000,3078.575928};
-			name="Volkov";
+			position[]={8226.717773,21.150000,3104.546875};
+			name="Zubarev";
 			type="Flag";
 		};
 	};
 	class Sensors
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			position[]={8251.170898,21.080460,3102.650635};
@@ -4432,6 +4488,16 @@ class Intro
 			{
 			};
 			synchronizations[]={0};
+		};
+		class Item1
+		{
+			position[]={8138.525391,-17.600126,2774.720215};
+			age="UNKNOWN";
+			expCond="debug";
+			expActiv="[] exec ""debug.sqs""";
+			class Effects
+			{
+			};
 		};
 	};
 };

@@ -20,11 +20,14 @@ Chernikov setmimic "normal"
 Volkov setmimic "angry"
 
 _whiteningInterval=1
+_VolkovZoom=0.640
 
 ? debug : exit
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
+
+goto "debugging"
 
 ; ########################
 ; ############
@@ -95,8 +98,6 @@ titletext["","plain down"]
 ; ## Shaposhnikov
 ; ############
 ; ########################
-
-#debugging
 
 LemontovShaposhnikov dowatch [5509.77,4232.23,1.61]
 Shaposhnikov dowatch [5510.91,4231.63,1.61]
@@ -368,6 +369,8 @@ titlecut["","white out",_whiteningInterval]
 ; ############
 ; ########################
 
+#debugging
+
 _VolkovPos = [8238.08,3079.42,1.69]
 
 Volkov dowatch [8237.14,3084.00,1.68]
@@ -570,7 +573,7 @@ _camera camCommit 0
 ;=== 16:47:25
 _camera camSetTarget [-84065.66,39384.29,-12721.60]
 _camera camSetPos [8236.22,3080.32,1.66]
-_camera camSetFOV 0.640
+_camera camSetFOV _VolkovZoom
 _camera camCommit 1
 @camCommitted _camera
 ;=== 16:47:43
@@ -582,7 +585,7 @@ _camera camCommit 0
 ;=== 16:47:43
 _camera camSetTarget [-59231.09,75784.17,-12721.31]
 _camera camSetPos [8236.48,3081.15,1.66]
-_camera camSetFOV 0.640
+_camera camSetFOV _VolkovZoom
 _camera camCommit 1
 @camCommitted _camera
 ;=== 16:48:05
@@ -594,7 +597,7 @@ _camera camCommit 0
 ;=== 16:48:05
 _camera camSetTarget [-28065.77,95384.39,-12721.57]
 _camera camSetPos [8236.98,3082.11,1.66]
-_camera camSetFOV 0.640
+_camera camSetFOV _VolkovZoom
 _camera camCommit 1
 @camCommitted _camera
 ;=== 16:48:28
@@ -606,7 +609,7 @@ _camera camCommit 0
 ;=== 16:48:28
 _camera camSetTarget [191.28,101939.97,-12721.33]
 _camera camSetPos [8237.99,3082.23,1.66]
-_camera camSetFOV 0.640
+_camera camSetFOV _VolkovZoom
 _camera camCommit 1
 @camCommitted _camera
 ;=== 16:48:39
@@ -618,7 +621,7 @@ _camera camCommit 0
 ;=== 16:48:39
 _camera camSetTarget [42638.45,96110.08,-12721.62]
 _camera camSetPos [8238.98,3081.70,1.66]
-_camera camSetFOV 0.640
+_camera camSetFOV _VolkovZoom
 _camera camCommit 1
 @camCommitted _camera
 ;=== 16:48:52
@@ -643,7 +646,7 @@ _camera camCommit 0
 _camera camSetTarget [23812.16,-85319.77,-44038.17]
 _camera camSetPos [8236.46,3087.86,3.81]
 _camera camSetFOV 0.700
-_camera camCommit 6
+_camera camCommit 4
 Volkov switchmove "FxShow3"
 ~0.8
 LemontovVolkov playmove "effectstandsaluteend"
@@ -655,8 +658,6 @@ Kaplinsky playmove "effectstandsaluteend"
 ~0.6
 Kukushkin playmove "effectstandsaluteend"
 Zubarev playmove "effectstandsaluteend"
-~3.5
-titlecut["","black out",0.5]
 @camCommitted _camera
 
 
@@ -667,6 +668,193 @@ titlecut["","black out",0.5]
 ; ########################
 
 
+;=== 18:19:17
+_camera camSetTarget [33390.21,-93517.34,-5995.77]
+_camera camSetPos [8237.89,3080.18,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:19:25
+_camera camSetTarget [33390.21,-93517.34,-5995.73]
+_camera camSetPos [8237.89,3080.18,1.62]
+_camera camSetFOV 0.472
+_camera camCommit 2
+Volkov setmimic "smile"
+@camCommitted _camera
+~0.5
+[] exec "intro_meetup.sqs"
+~0.5
+Volkov setmimic "normal"
+;=== 18:22:25
+_camera camSetTarget [-4827.69,101790.01,-9204.34]
+_camera camSetPos [8238.43,3077.13,1.51]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:22:30
+_camera camSetTarget [-4827.69,101790.01,-9204.54]
+_camera camSetPos [8238.64,3075.57,1.51]
+_camera camSetFOV 0.700
+_camera camCommit 2.5
+@camCommitted _camera
+;=== 21:04:56
+_camera camSetTarget [-44803.74,86603.58,-14486.29]
+_camera camSetPos [8236.61,3079.71,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+;=== 21:19:31
+_camera camSetTarget [-31373.99,92773.93,-19604.33]
+_camera camSetPos [8239.76,3076.91,1.68]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 21:19:44
+_camera camSetTarget [-52487.64,80064.10,-19604.63]
+_camera camSetPos [8240.86,3078.06,1.68]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+Volkov setpos getmarkerpos "Volkov"
+;=== 16:21:57
+_camera camSetTarget [-90779.67,6384.96,-13522.91]
+_camera camSetPos [8243.67,3081.01,1.40]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 16:22:13
+_camera camSetTarget [-89945.95,16332.79,-13523.36]
+_camera camSetPos [8242.23,3080.62,1.40]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+;=== 21:06:46
+_camera camSetTarget [45622.30,93024.98,-22600.75]
+_camera camSetPos [8235.38,3077.77,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 21:06:59
+_camera camSetTarget [-2355.45,101019.67,-17157.92]
+_camera camSetPos [8237.72,3077.43,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+;=== 16:23:08
+_camera camSetTarget [102154.55,-29036.15,-12132.18]
+_camera camSetPos [8236.03,3082.17,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 16:23:14
+_camera camSetTarget [105604.09,22362.61,-12132.49]
+_camera camSetPos [8236.03,3082.17,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 4
+~1
+Zubarev say "42v36"
+@camCommitted _camera
+LemontovVolkov say "42v37"
+~2
+;=== 16:35:17
+_camera camSetTarget [-26285.35,96921.09,1589.37]
+_camera camSetPos [8237.01,3082.11,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Zubarev setmimic "angry"
+Zubarev say "42v38"
+~5
+;=== 16:35:58
+_camera camSetTarget [-82626.82,44043.32,-8082.48]
+_camera camSetPos [8238.60,3082.40,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Zubarev say "42v39"
+Zubarev setmimic "normal"
+Zubarev dowatch [8237.97,3082.84,1.58]
+~4
+LemontovVolkov say "42v40"
+~1.5
+;=== 16:38:18
+_camera camSetTarget [-91213.34,-2201.29,-9013.10]
+_camera camSetPos [8237.37,3082.75,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Zubarev say "42v41"
+~2
+;=== 16:38:55
+_camera camSetTarget [71620.16,78903.51,-15262.66]
+_camera camSetPos [8236.61,3082.03,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovVolkov dowatch [8236.87,3082.65,1.58]
+LemontovVolkov say "42v42"
+~2
+;=== 16:39:38
+_camera camSetTarget [6029.62,-95483.50,-16699.80]
+_camera camSetPos [8237.43,3083.75,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 16:39:48
+_camera camSetTarget [20490.53,-94743.82,-16700.23]
+_camera camSetPos [8237.23,3083.74,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 4
+Zubarev say "42v43"
+@camCommitted _camera
+~1
+;=== 16:40:24
+_camera camSetTarget [-90830.45,-7647.02,-8369.16]
+_camera camSetPos [8237.46,3082.78,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Zubarev say "42v44"
+~3
+;=== 16:41:31
+_camera camSetTarget [-33738.67,-85994.17,-17388.03]
+_camera camSetPos [8237.87,3083.73,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Zubarev say "42v45"
+~3
+;=== 16:40:24
+_camera camSetTarget [-90830.45,-7647.02,-8369.16]
+_camera camSetPos [8237.46,3082.78,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Zubarev setmimic "smile"
+~2
+Zubarev setmimic "normal"
+Zubarev setspeedmode "limited"
+Zubarev move getmarkerpos "Zubarev"
+~0.5
+Zubarev dowatch objnull
+~0.5
+LemontovVolkov dowatch [8235.85,3086.48,1.60]
+titletext["","plain down"]
+;=== 16:44:31
+_camera camSetTarget [11737.73,-96310.46,-10360.32]
+_camera camSetPos [8236.95,3087.52,1.26]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 16:44:44
+_camera camSetTarget [14295.27,-94691.98,-20041.83]
+_camera camSetPos [8236.96,3087.08,1.94]
+_camera camSetFOV 0.700
+_camera camCommit 6
+~5
+titlecut["","white out",_whiteningInterval]
+@camCommitted _camera
 
 
 ; ########################

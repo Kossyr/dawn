@@ -1,0 +1,42 @@
+
+_VolkovPos2=[8238.72,3076.36,1.70]
+_guysWalkingSteps=7
+
+Volkov dowatch [8238.24,3067.51,1.12]
+Volkov setspeedmode "limited"
+Volkov move getmarkerpos "Volkov"
+~1
+Kaplinsky dowatch _VolkovPos2
+LemontovVolkov dowatch _VolkovPos2
+Syomin dowatch _VolkovPos2
+Chernikov dowatch _VolkovPos2
+Kukushkin dowatch _VolkovPos2
+Zubarev dowatch _VolkovPos2
+~2.5
+Syomin dowatch [8235.53,3080.53,1.62]
+~0.5
+Kaplinsky dowatch [8235.98,3081.47,1.62]
+~1
+Kukushkin dowatch [8241.10,3079.99,1.71]
+~1
+Kaplinsky switchmove "fxtohand"
+Syomin playmove "Effectstandtalk"
+Chernikov dowatch [8266.50,3077.35,1.85]
+~0.5
+Chernikov setspeedmode "limited"
+Chernikov move getmarkerpos "Chernikov"
+~1
+Kukushkin dowatch [8243.80,3081.34,1.71]
+~1.5
+Kukushkin dowatch [8235.01,3079.41,1.84]
+~1.8
+[Kukushkin, 2] exec "intro_walk.sqs"
+~3.5
+Kukushkin dowatch [8235.98,3081.47,1.62]
+~1.5
+Kukushkin switchmove "FXCivilHandMouth"
+
+Volkov dowatch [8240.47,3069.32,1.27]
+
+
+exit
