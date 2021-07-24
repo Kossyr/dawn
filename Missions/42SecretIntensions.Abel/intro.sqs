@@ -18,6 +18,11 @@ Kukushkin setmimic "angry"
 Chernikov setmimic "normal"
 Volkov setmimic "angry"
 
+SergeyRashiv setmimic "normal"
+Ablomov setmimic "sad"
+Belsky setmimic "angry"
+LemontovRashiv setmimic "normal"
+
 
 Levitsky setmimic "normal"
 Levitsky setspeedmode "limited"
@@ -365,6 +370,12 @@ _camera camCommit 4
 titletext["","plain down"]
 titlecut["","white out",_whiteningInterval]
 ~_whiteningInterval
+
+
+deleteVehicle Shaposhnikov
+deleteVehicle ShaposhnikovCar
+deleteVehicle LemontovShaposhnikov
+
 
 ; ########################
 ; ############
@@ -858,14 +869,24 @@ _camera camCommit 6
 titlecut["","white out",_whiteningInterval]
 @camCommitted _camera
 
+deleteVehicle Zubarev
+deleteVehicle Kukushkin
+deleteVehicle LemontovVolkov
+deleteVehicle Volkov
+deleteVehicle Syomin
+deleteVehicle Chernikov
+deleteVehicle Kaplinsky
+deleteVehicle VolkovV1
+deleteVehicle VolkovV2
+deleteVehicle VolkovV3
+deleteVehicle VolkovV4
+
 
 ; ########################
 ; ############
 ; ## Lemontov, part 3
 ; ############
 ; ########################
-
-#debugging
 
 titlecut["","white in", _whiteningInterval]
 
@@ -928,6 +949,7 @@ _camera camCommit 2
 playsound "42v49"
 @camCommitted _camera
 ~2
+titletext["","plain down"]
 titlecut["","white out", _whiteningInterval]
 ~_whiteningInterval
 
@@ -938,6 +960,424 @@ titlecut["","white out", _whiteningInterval]
 ; ############
 ; ########################
 
+#debugging
+
+
+SergeyRashiv dowatch [3771.30,3249.97,1.59]
+Ablomov dowatch [3771.39,3248.96,1.59]
+Belsky dowatch [3787.30,3235.22,1.63]
+RashivV dowatch [3787.89,3236.20,1.63]
+
+RashivV1 playmove "EffectStandTalk"
+RashivV2 switchmove "FxInHand"
+RashivV3 playmove "Effectstand"
+
+titlecut["","white in", _whiteningInterval]
+
+;=== 16:16:33
+_camera camSetTarget [1833.14,103225.66,724.49]
+_camera camSetPos [3775.40,3246.98,6.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 16:16:48
+_camera camSetTarget [-54721.72,83988.87,-7667.52]
+_camera camSetPos [3773.46,3247.15,1.70]
+_camera camSetFOV 0.700
+_camera camCommit 7
+~4
+SergeyRashiv say "42v50"
+@camCommitted _camera
+~0.5
+;=== 16:17:19
+_camera camSetTarget [15200.96,102177.84,-9062.78]
+_camera camSetPos [3771.23,3249.19,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 16:17:26
+_camera camSetTarget [-22160.64,99575.30,-6969.63]
+_camera camSetPos [3771.49,3249.39,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 4
+Ablomov say "42v51"
+~1.5
+[] exec "intro_ablomov_watch.sqs"
+@camCommitted _camera
+;=== 16:18:24
+_camera camSetTarget [-75381.09,-57183.82,-9061.41]
+_camera camSetPos [3772.20,3250.27,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+SergeyRashiv setmimic "sad"
+SergeyRashiv say "42v52"
+~4
+;=== 16:19:12
+_camera camSetTarget [-55586.23,82846.63,-11844.83]
+_camera camSetPos [3772.04,3248.55,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Ablomov say "42v53"
+~1.5
+[] exec "intro_ablomov_watch.sqs"
+~1.5
+;=== 16:19:51
+_camera camSetTarget [-1361.90,103107.74,-1372.79]
+_camera camSetPos [3771.33,3249.28,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+[] exec "intro_ablomov_watch.sqs"
+~1.5
+;=== 16:20:43
+_camera camSetTarget [71131.22,-69853.33,-10860.97]
+_camera camSetPos [3770.69,3250.34,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+SergeyRashiv setmimic "normal"
+SergeyRashiv say "42v54"
+~5
+;=== 16:21:29
+_camera camSetTarget [-9314.13,101790.40,-10861.17]
+_camera camSetPos [3771.44,3249.08,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Ablomov say "42v55"
+[] exec "intro_ablomov_watch.sqs"
+~4
+;=== 16:22:07
+_camera camSetTarget [14231.61,-95963.02,-6865.50]
+_camera camSetPos [3771.32,3249.82,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+SergeyRashiv setmimic "angry"
+titletext["","plain down"]
+~1
+SergeyRashiv dowatch [3787.70,3236.47,1.56]
+;=== 16:22:22
+_camera camSetTarget [60269.84,-78972.58,-6865.04]
+_camera camSetPos [3771.32,3249.82,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+~0.5
+;=== 16:23:01
+_camera camSetTarget [-69295.80,70984.56,-8262.28]
+_camera camSetPos [3788.70,3234.51,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 16:23:43
+_camera camSetTarget [-28705.25,97445.59,-8262.38]
+_camera camSetPos [3787.83,3235.12,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 2.5
+@camCommitted _camera
+SergeyRashiv dowatch [3771.30,3249.97,1.59]
+;=== 16:24:00
+_camera camSetTarget [78835.53,-62298.59,-8262.75]
+_camera camSetPos [3770.62,3250.21,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+SergeyRashiv setmimic "normal"
+SergeyRashiv say "42v56"
+~6
+;=== 16:26:03
+_camera camSetTarget [404.24,102848.93,-8263.00]
+_camera camSetPos [3771.34,3249.18,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Ablomov say "42v57"
+~3
+;=== 16:26:35
+_camera camSetTarget [-69954.94,-63799.96,-8263.02]
+_camera camSetPos [3772.12,3250.24,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+SergeyRashiv say "42v58"
+~5
+;=== 16:27:31
+_camera camSetTarget [-8865.18,102167.82,-7425.15]
+_camera camSetPos [3771.42,3249.16,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 16:27:36
+_camera camSetTarget [-8865.18,102167.82,-7425.07]
+_camera camSetPos [3771.42,3249.16,1.56]
+_camera camSetFOV 0.536
+_camera camCommit 4
+Ablomov say "42v59"
+~1.5
+[] exec "intro_ablomov_watch.sqs"
+@camCommitted _camera
+~1
+;=== 17:18:35
+_camera camSetTarget [103318.35,6434.96,-8927.36]
+_camera camSetPos [3770.29,3249.46,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+SergeyRashiv setmimic "surprised"
+SergeyRashiv say "42v60"
+~3
+Ablomov say "42v61"
+~5
+;=== 18:00:22
+_camera camSetTarget [12086.57,-96356.51,-3059.37]
+_camera camSetPos [3771.35,3249.61,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+SergeyRashiv setmimic "angry"
+SergeyRashiv say "42v62"
+~4
+;=== 18:00:58
+_camera camSetTarget [-69664.67,69760.58,-13516.47]
+_camera camSetPos [3772.06,3248.72,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Ablomov say "42v63"
+~6
+;=== 18:01:38
+_camera camSetTarget [-4141.09,102830.88,4595.11]
+_camera camSetPos [3771.34,3249.47,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Ablomov say "42v64"
+~5
+Ablomov say "42v65"
+SergeyRashiv setmimic "normal"
+~1
+;=== 18:02:05
+_camera camSetTarget [48948.50,91197.07,-14946.57]
+_camera camSetPos [3770.58,3248.29,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:02:21
+_camera camSetTarget [83846.11,63025.83,-3801.74]
+_camera camSetPos [3770.48,3248.81,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+~1
+;=== 18:02:42
+_camera camSetTarget [88540.41,-48871.91,-9848.23]
+_camera camSetPos [3770.55,3250.10,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+SergeyRashiv say "42v66"
+~6
+;=== 18:03:19
+_camera camSetTarget [-2401.73,102865.32,6229.46]
+_camera camSetPos [3771.33,3249.43,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Ablomov say "42v67"
+~5
+;=== 18:03:47
+_camera camSetTarget [-69174.72,70335.91,-13326.04]
+_camera camSetPos [3772.13,3248.73,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Ablomov say "42v68"
+~3
+;=== 18:04:08
+_camera camSetTarget [-643.22,103144.93,1193.79]
+_camera camSetPos [3771.36,3249.33,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+;=== 18:04:48
+_camera camSetTarget [-60403.19,-73078.11,-7443.45]
+_camera camSetPos [3771.77,3249.68,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+SergeyRashiv setmimic "sad"
+SergeyRashiv say "42v69"
+~5
+;=== 20:24:35
+_camera camSetTarget [-68581.17,71375.11,-11098.14]
+_camera camSetPos [3772.73,3248.12,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+SergeyRashiv dowatch [3787.70,3236.47,1.56]
+Ablomov setmimic "surprised"
+Ablomov say "42v70"
+LemontovRashiv setpos getmarkerpos "LemontovRashiv"
+LemontovRashiv setdir 305
+LemontovRashiv dowatch [3771.39,3248.96,1.59]
+~1
+Ablomov dowatch [3787.70,3236.47,1.56]
+SergeyRashiv setmimic "surprised"
+~1.5
+SergeyRashiv dowatch [3773.02,3247.84,1.59]
+Ablomov dowatch [3773.02,3247.84,1.59]
+;=== 20:25:34
+_camera camSetTarget [64994.73,-75325.15,-8792.01]
+_camera camSetPos [3771.23,3249.96,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovRashiv say "42v71"
+~1.5
+;=== 20:26:14
+_camera camSetTarget [79340.59,-61662.75,-8699.69]
+_camera camSetPos [3772.47,3248.29,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+;=== 20:26:30
+_camera camSetTarget [-53675.92,84634.66,-8699.85]
+_camera camSetPos [3772.04,3248.47,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+SergeyRashiv setmimic "angry"
+Ablomov setmimic "normal"
+~0.5
+Ablomov say "42v72"
+Ablomov playmove "effectstandsalute"
+~2
+;=== 20:27:27
+_camera camSetTarget [-17669.79,-92616.44,-18677.67]
+_camera camSetPos [3772.34,3251.55,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovRashiv say "42v73"
+LemontovRashiv dowatch [3771.30,3249.97,1.59]
+~1
+Ablomov playmove "effectstandsaluteend"
+~1.5
+LemontovRashiv dowatch [3771.39,3248.96,1.59]
+;=== 20:29:45
+_camera camSetTarget [86598.14,-51892.23,-9951.46]
+_camera camSetPos [3772.34,3248.27,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+;=== 20:30:22
+_camera camSetTarget [-92490.44,26421.84,-13981.65]
+_camera camSetPos [3774.62,3248.35,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:30:30
+_camera camSetTarget [-87832.62,40826.91,-13981.98]
+_camera camSetPos [3774.07,3247.85,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 4
+Ablomov say "42v74"
+~2
+Ablomov setspeedmode "full"
+Ablomov move getmarkerpos "Ablomov"
+Ablomov dowatch objnull
+@camCommitted _camera
+;=== 20:32:56
+_camera camSetTarget [-74386.71,65061.34,-8369.29]
+_camera camSetPos [3772.13,3248.49,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+SergeyRashiv say "42v75"
+deleteVehicle Ablomov
+~3
+;=== 20:38:01
+_camera camSetTarget [43412.07,-86997.31,-16835.01]
+_camera camSetPos [3771.55,3249.85,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovRashiv say "42v76"
+~3
+;=== 20:39:13
+_camera camSetTarget [-25858.56,98340.62,-8898.10]
+_camera camSetPos [3771.88,3248.32,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+SergeyRashiv say "42v77"
+~4
+;=== 20:39:36
+_camera camSetTarget [85083.73,-54275.42,-8897.78]
+_camera camSetPos [3772.45,3248.21,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovRashiv say "42v78"
+~5
+;=== 20:40:11
+_camera camSetTarget [-92522.70,26502.80,-13626.88]
+_camera camSetPos [3773.93,3247.99,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+SergeyRashiv say "42v79"
+~4
+;=== 20:40:49
+_camera camSetTarget [27190.59,-92642.79,-15980.06]
+_camera camSetPos [3771.71,3250.84,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovRashiv say "42v80"
+;=== 20:40:54
+_camera camSetTarget [53968.43,-82041.63,-14320.85]
+_camera camSetPos [3771.56,3249.83,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+;=== 20:41:19
+_camera camSetTarget [82679.09,-57802.48,-6805.64]
+_camera camSetPos [3772.47,3248.22,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+LemontovRashiv say "42v81"
+~4
+;=== 20:41:43
+_camera camSetTarget [-72306.84,67513.34,-9037.28]
+_camera camSetPos [3772.09,3248.49,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+titletext["","plain down"]
+~1.2
+SergeyRashiv setmimic "normal"
+~0.2
+SergeyRashiv say "42v82"
+~3
+titletext["","plain down"]
+titlecut["","black out",1]
+~1
+
+
+deleteVehicle RashivV1
+deleteVehicle RashivV2
+deleteVehicle RashivV3
+deleteVehicle Belsky
 
 ; ########################
 ; ############
