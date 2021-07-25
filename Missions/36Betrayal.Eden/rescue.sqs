@@ -77,7 +77,7 @@ _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
 ; worst ending - russians are here
-? not worstEnding : goto "greetingCinema" ;
+? not badEnding : goto "greetingCinema" ;
 
 B8 setpos getmarkerpos "B8"
 B8 setdir 125
@@ -194,8 +194,8 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-? worstEnding : B4 setmimic "angry"; B4 setdir 165; B4 switchmove "FxShow3"; B4 say "36v110" ;
-? not worstEnding : B8 setmimic "angry"; B8 setdir 165; B8 switchmove "FxShow3"; B8 say "36v109" ;
+? badEnding : B4 setmimic "angry"; B4 setdir 165; B4 switchmove "FxShow3"; B4 say "36v110" ;
+? not badEnding : B8 setmimic "angry"; B8 setdir 165; B8 switchmove "FxShow3"; B8 say "36v109" ;
 ~0.5
 PoincareBase dowatch [7218.97,6842.81,1.53]
 AstierBase dowatch [7218.97,6842.81,1.53]
@@ -221,7 +221,7 @@ PoincareBase setmimic "angry"
 AstierBase say "36v111"
 ~2
 
-? not worstEnding : goto "baseChoice" ;
+? not badEnding : goto "baseChoice" ;
 
 AstierBase dowatch [7255.10,6782.15,1.61]
 
@@ -293,7 +293,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~2.5
-worstEnding=false
+badEnding=false
 goodEnding=false
 titlecut ["","black out",2]
 ~2.5
@@ -587,7 +587,7 @@ PortShip setpos getmarkerpos "BoatMove"
 PortShip setdir 60
 
 goodEnding=true
-worstEnding=false
+badEnding=false
 
 deletevehicle LemontovPort
 

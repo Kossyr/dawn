@@ -2076,7 +2076,7 @@ class Intro
 	};
 	class Groups
 	{
-		items=28;
+		items=30;
 		class Item0
 		{
 			side="EAST";
@@ -2777,10 +2777,47 @@ class Intro
 				};
 			};
 		};
+		class Item28
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5985.847168,250.643845,7973.237793};
+					id=412;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					skill=0.600000;
+					text="VadimRashiv";
+					init="this setidentity ""VadimRashiv""; this setbehaviour ""safe""; this removeweapon ""binocular""";
+				};
+			};
+		};
+		class Item29
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6015.846191,250.146790,7966.007813};
+					id=413;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.600000;
+					init="this exec ""camera.sqs""; debug=true";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=380;
+		items=384;
 		class Item0
 		{
 			position[]={8488.659180,0.961859,3724.044678};
@@ -6527,10 +6564,46 @@ class Intro
 			leader=1;
 			skill=0.600000;
 		};
+		class Item380
+		{
+			position[]={2456.135986,210.477478,3180.615967};
+			azimut=150.000000;
+			id=408;
+			side="EMPTY";
+			vehicle="UAZ";
+			skill=0.600000;
+		};
+		class Item381
+		{
+			position[]={2461.620605,210.583603,3188.119873};
+			azimut=100.000000;
+			id=409;
+			side="EMPTY";
+			vehicle="UAZ";
+			skill=0.600000;
+		};
+		class Item382
+		{
+			position[]={5972.155762,250.622452,7984.422852};
+			azimut=115.000000;
+			id=410;
+			side="EMPTY";
+			vehicle="UAZ";
+			skill=0.600000;
+		};
+		class Item383
+		{
+			position[]={5965.729004,250.921753,7979.569336};
+			azimut=165.000000;
+			id=411;
+			side="EMPTY";
+			vehicle="UAZ";
+			skill=0.600000;
+		};
 	};
 	class Markers
 	{
-		items=12;
+		items=16;
 		class Item0
 		{
 			position[]={3569.693359,4.995000,3257.149414};
@@ -6601,6 +6674,30 @@ class Intro
 		{
 			position[]={3758.412109,18.404999,3291.492432};
 			name="Ablomov";
+			type="Flag";
+		};
+		class Item12
+		{
+			position[]={2488.118896,209.809906,3187.659912};
+			name="SergeySolitudeRashiv";
+			type="Flag";
+		};
+		class Item13
+		{
+			position[]={2487.927002,209.828979,3188.966797};
+			name="SergeySolutideLemontov";
+			type="Flag";
+		};
+		class Item14
+		{
+			position[]={6008.749023,250.459579,7973.969727};
+			name="VadimSolitudeRashiv";
+			type="Flag";
+		};
+		class Item15
+		{
+			position[]={6009.644531,250.476242,7974.943848};
+			name="VadimSolitudeLemontov";
 			type="Flag";
 		};
 	};

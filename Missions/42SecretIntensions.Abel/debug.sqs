@@ -1,39 +1,46 @@
 
+~1
+
+goto "debugVadim"
+
+
 
 ~1
 
+#debugVadim
 
-SergeyRashiv dowatch [3771.30,3249.97,1.59]
-Ablomov dowatch [3771.39,3248.96,1.59]
-Belsky dowatch [3787.30,3235.22,1.63]
-RashivV dowatch [3787.89,3236.20,1.63]
+LemontovRashiv setpos getmarkerpos "VadimSolitudeLemontov"
+VadimRashiv setpos getmarkerpos "VadimSolitudeRashiv"
 
-RashivV1 playmove "EffectStandTalk"
+LemontovRashiv setdir 221
+VadimRashiv setdir 30
 
-RashivV2 switchmove "FxInHand"
-RashivV3 playmove "Effectstand"
+LemontovRashiv dowatch [6008.84,7974.07,1.60]
+VadimRashiv dowatch [6009.66,7974.88,1.66]
 
-LemontovRashiv setpos getmarkerpos "LemontovRashiv"
-LemontovRashiv setdir 305
-LemontovRashiv dowatch [3771.39,3248.96,1.59]
+
+
+goto "exitDebug"
 
 ~1
 
-SergeyRashiv dowatch [3787.70,3236.47,1.56]
-Ablomov setmimic "surprised"
-Ablomov say "42v70"
-~1
-Ablomov dowatch [3787.70,3236.47,1.56]
-SergeyRashiv setmimic "surprised"
+#debugSergey
 
-~2
-Ablomov setspeedmode "full"
-Ablomov move getmarkerpos "Ablomov"
-Ablomov dowatch objnull
 
-SergeyRashiv dowatch [3773.02,3247.84,1.59]
-SergeyRashiv setmimic "angry"
+LemontovRashiv setpos getmarkerpos "SergeySolutideLemontov"
+SergeyRashiv setpos getmarkerpos "SergeySolitudeRashiv"
 
+LemontovRashiv setdir 175
+SergeyRashiv setdir 350
+
+LemontovRashiv dowatch [2488.12,3187.82,1.61]
+SergeyRashiv dowatch [2487.98,3189.02,1.64]
+
+
+goto "exitDebug"
+
+
+#exitDebug
 
 exit
 

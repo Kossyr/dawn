@@ -1,0 +1,23 @@
+
+
+? goodEnding : goto "gootEnding" ; 
+? badEnding : goto "badEnding" ;
+
+
+#goodEnding
+
+GLB_36_RebelsFate=true
+saveVar "GLB_36_RebelsFate"
+
+goto "scriptExit"
+
+#badEnding
+
+GLB_36_RebelsFate=false
+saveVar "GLB_36_RebelsFate"
+
+goto "scriptExit"
+
+#scriptExit
+
+exit
