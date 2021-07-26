@@ -1,6 +1,39 @@
 
 ~1
 
+
+
+
+Levitsky setpos getmarkerpos "Levitsky2"
+Levitsky dowatch [8500.62,3597.81,0.97]
+
+
+~3
+Lemontov dowatch [8495.43,3598.44,1.60]
+Lemontov say "42v193"
+
+Levitsky dowatch [8500.60,3597.79,1.67]
+
+~5
+Levitsky setspeedmode "full"
+Levitsky move getmarkerpos "Levitsky"
+Levitsky dowatch objnull
+
+~0.5
+PortReady=true
+PortU1 setpos getmarkerpos "PortU1"
+PortU2 setpos getmarkerpos "PortU2"
+PortU3 setpos getmarkerpos "PortU3"
+PortB1 setpos getmarkerpos "PortB1"
+PortB2 setpos getmarkerpos "PortB2"
+PortB3 setpos getmarkerpos "PortB3"
+
+~0.5
+Lemontov dowatch [8447.59,3668.20,7.18]
+
+
+exit
+
 goto "debugSergey"
 
 
@@ -33,6 +66,20 @@ SergeyRashiv setdir 350
 
 LemontovRashiv dowatch [2488.12,3187.82,1.61]
 SergeyRashiv dowatch [2487.98,3189.02,1.64]
+
+SergeyRashiv say "42v190"
+~2
+SergeyRashiv setmimic "angry"
+SergeyRashiv dowatch objnull
+SergeyRashiv setspeedmode "limited"
+SergeyRashiv move getmarkerpos "SergeySolitudeRashiv2"
+~0.5
+
+LemontovRashiv dowatch [2486.30,3185.25,1.61]
+~3
+LemontovRashiv dowatch [2484.80,3183.84,1.52]
+~5
+LemontovRashiv dowatch [2471.58,3170.14,1.98]
 
 
 goto "exitDebug"
