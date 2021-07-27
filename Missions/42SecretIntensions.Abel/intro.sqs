@@ -29,6 +29,18 @@ VadimRashiv setmimic "normal"
 Levitsky setmimic "normal"
 Levitsky setspeedmode "limited"
 
+BelskyCentre setmimic "normal"
+CentreV2 setmimic "normal"
+LevitskyCentre setmimic "normal"
+LevitskyChapoi setmimic "normal"
+LevitskyDubow setmimic "normal"
+LevitskyFrolov setmimic "normal"
+LevitskyKuznetsov setmimic "normal"
+Kuznetsov setmimic "normal"
+Dubow setmimic "normal"
+ShaposhnikovChapoi setmimic "normal"
+Frolov setmimic "normal"
+
 LemontovRashiv disableai "autotarget"
 SergeyRashiv disableai "autotarget"
 VadimRashiv disableai "autotarget"
@@ -41,7 +53,23 @@ Kukushkin disableai "autotarget"
 Syomin disableai "autotarget"
 Chernikov disableai "autotarget"
 
+BelskyCentre disableai "autotarget"
+Levitsky disableai "autotarget"
+LevitskyCentre disableai "autotarget"
+LevitskyChapoi disableai "autotarget"
+LevitskyFrolov disableai "autotarget"
+LevitskyKuznetsov disableai "autotarget"
+LevitskyDubow disableai "autotarget"
+ShaposhnikovChapoi disableai "autotarget"
+Dubow disableai "autotarget"
+Kuznetsov disableai "autotarget"
+Frolov disableai "autotarget"
+
+
+CentreV1 switchmove "FXSitHandsOnTable"
+
 _whiteningInterval=1
+_blackeningInterval=1
 _VolkovZoom=0.640
 
 
@@ -394,7 +422,6 @@ _camera camCommit 4
 titletext["","plain down"]
 titlecut["","white out",_whiteningInterval]
 ~_whiteningInterval
-
 
 deleteVehicle Shaposhnikov
 deleteVehicle ShaposhnikovCar
@@ -2849,6 +2876,7 @@ PortB1 setpos getmarkerpos "PortB1"
 PortB2 setpos getmarkerpos "PortB2"
 PortB3 setpos getmarkerpos "PortB3"
 ~0.5
+titletext["","plain down"]
 ;=== 21:14:31
 _camera camSetTarget [-88928.92,-5017.24,-20772.04]
 _camera camSetPos [8502.55,3598.75,2.10]
@@ -2891,9 +2919,10 @@ _camera camCommit 3
 ~0.5
 Lemontov dowatch [8520.32,3595.55,6.02]
 ~1
-titlecut["","black out",_whiteningInterval]
-~_whiteningInterval
+titlecut["","black out",_blackeningInterval]
+~_blackeningInterval
 
+deleteVehicle Levitsky
 
 ; ########################
 ; ############
@@ -2901,16 +2930,387 @@ titlecut["","black out",_whiteningInterval]
 ; ############
 ; ########################
 
+LevitskyChapoi dowatch [5872.78,3560.18,1.63]
+ShaposhnikovChapoi dowatch [5873.64,3560.39,1.63]
+
+LevitskyKuznetsov dowatch [5197.20,3681.52,1.60]
+Kuznetsov dowatch [5196.73,3680.67,1.61]
+
+LevitskyDubow dowatch [3775.68,3310.53,1.65]
+Dubow dowatch [3776.49,3310.87,1.65]
+
+CentreV2 dowatch [8243.88,3142.42,1.60]
+BelskyCentre dowatch [8244.12,3136.41,1.62]
+
+LevitskyCentre dowatch [8242.14,3142.10,1.58]
+
+Frolov dowatch [3569.35,3252.60,1.82]
+LevitskyFrolov dowatch [3569.64,3259.07,1.79]
+
+
 ; Shaposhnikov
+
+titlecut["","black in",_blackeningInterval]
+
+;=== 19:34:08
+_camera camSetTarget [-67582.41,70350.98,-11817.13]
+_camera camSetPos [5892.03,3563.90,1.73]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:34:18
+_camera camSetTarget [-78272.07,56984.34,-7917.41]
+_camera camSetPos [5885.88,3562.61,1.73]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+;=== 19:38:54
+_camera camSetTarget [-90130.91,30481.88,-7524.74]
+_camera camSetPos [5878.08,3559.35,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+;=== 19:35:18
+_camera camSetTarget [105599.97,5918.97,-6940.86]
+_camera camSetPos [5872.83,3560.30,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LevitskyChapoi playmove "effectstandsalute"
+~1
+LevitskyChapoi playmove "Effectstandsaluteend"
+~0.5
+LevitskyChapoi dowatch objnull
+LevitskyChapoi setspeedmode "limited"
+LevitskyChapoi move getmarkerpos "LevitskyChapoi"
+~0.5
+;=== 19:36:29
+_camera camSetTarget [-64528.50,-66405.51,-12094.56]
+_camera camSetPos [5875.94,3562.48,1.40]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:36:39
+_camera camSetTarget [-65352.33,-65849.70,-10372.26]
+_camera camSetPos [5874.74,3561.97,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+;=== 19:36:48
+_camera camSetTarget [-88147.74,-30131.67,-4929.71]
+_camera camSetPos [5873.50,3560.47,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:36:56
+_camera camSetTarget [-87903.57,-30044.17,-8700.16]
+_camera camSetPos [5873.12,3560.34,1.63]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+"_x stop false" foreach units group KuznetsovBackgroundGroupenheim
+KuznetsovBackground=true
+titlecut["","black out",_blackeningInterval]
+~_blackeningInterval
+
+deleteVehicle ShaposhnikovChapoi
+deleteVehicle LevitskyChapoi
+
 ; Kuznetsov
+
+
+titlecut["","black in",_blackeningInterval]
+
+;=== 19:45:33
+_camera camSetTarget [42514.88,96196.88,-6649.25]
+_camera camSetPos [5197.68,3663.84,1.68]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:45:57
+_camera camSetTarget [5745.86,103039.57,-11111.07]
+_camera camSetPos [5196.89,3667.61,2.24]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+;=== 19:46:10
+_camera camSetTarget [20019.95,101940.01,-11112.13]
+_camera camSetPos [5196.57,3678.22,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:46:22
+_camera camSetTarget [-16069.64,100750.37,-11112.15]
+_camera camSetPos [5197.49,3679.18,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 6
+~2
+LevitskyKuznetsov dowatch objnull
+LevitskyKuznetsov setspeedmode "limited"
+LevitskyKuznetsov move getmarkerpos "LevitskyKuznetsov"
+@camCommitted _camera
+;=== 19:48:02
+_camera camSetTarget [68627.77,80684.01,-6792.92]
+_camera camSetPos [5196.60,3680.85,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:48:10
+_camera camSetTarget [56279.56,89589.34,3281.34]
+_camera camSetPos [5196.99,3681.19,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+titlecut["","black out",_blackeningInterval]
+~_blackeningInterval
+
+deleteVehicle LevitskyKuznetsov
+deleteVehicle Kuznetsov
+
 ; Dubow
+
+titlecut["","black in",_blackeningInterval]
+
+;=== 19:57:08
+_camera camSetTarget [95301.63,43251.30,-5087.55]
+_camera camSetPos [3764.87,3314.67,2.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:57:18
+_camera camSetTarget [99072.88,-26441.03,-5646.86]
+_camera camSetPos [3770.30,3312.98,1.72]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+;=== 19:59:02
+_camera camSetTarget [-72352.58,-61527.78,-46.80]
+_camera camSetPos [3777.54,3312.27,3.25]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:59:16
+_camera camSetTarget [-72305.72,-61487.88,-3406.12]
+_camera camSetPos [3779.63,3314.05,1.43]
+_camera camSetFOV 0.700
+_camera camCommit 5
+~3
+LevitskyDubow dowatch objnull
+LevitskyDubow setspeedmode "limited"
+LevitskyDubow move getmarkerpos "LevitskyDubow"
+@camCommitted _camera
+~1
+;=== 20:00:14
+_camera camSetTarget [-76027.41,-56597.56,-6484.31]
+_camera camSetPos [3776.35,3311.27,1.42]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:00:24
+_camera camSetTarget [-88239.99,-35835.68,-748.83]
+_camera camSetPos [3776.13,3310.73,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+titlecut["","black out",_blackeningInterval]
+~_blackeningInterval
+
+deleteVehicle Dubow
+deleteVehicle LevitskyDubow
+
 ; Belsky
+
+CentreV2 switchmove "FxInHand"
+
+titlecut["","black in",_blackeningInterval]
+
+;=== 20:08:05
+_camera camSetTarget [-82668.74,44680.75,-2918.03]
+_camera camSetPos [8246.19,3137.58,1.32]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:08:17
+_camera camSetTarget [-80495.38,47651.03,-11988.72]
+_camera camSetPos [8243.83,3141.02,1.44]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+;=== 20:08:39
+_camera camSetTarget [-32594.22,93591.73,-12266.68]
+_camera camSetPos [8242.17,3140.73,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+;=== 20:09:00
+_camera camSetTarget [98393.40,-38348.78,-12266.81]
+_camera camSetPos [8240.83,3142.28,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+BelskyCentre dowatch [8256.99,3135.05,1.58]
+~0.5
+;=== 20:10:16
+_camera camSetTarget [-81636.70,46655.06,-5296.40]
+_camera camSetPos [8242.73,3141.84,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+;=== 20:10:34
+_camera camSetTarget [93260.40,-49309.11,-4859.70]
+_camera camSetPos [8256.13,3135.59,1.46]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:10:45
+_camera camSetTarget [99324.05,-36901.20,-10164.25]
+_camera camSetPos [8256.31,3135.28,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+~1
+LevitskyCentre dowatch objnull
+LevitskyCentre setspeedmode "limited"
+LevitskyCentre move getmarkerpos "LevitskyCentre"
+~1
+;=== 20:12:04
+_camera camSetTarget [95662.49,-44330.47,-10163.91]
+_camera camSetPos [8240.66,3142.44,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+BelskyCentre dowatch [8244.12,3136.41,1.62]
+~0.5
+;=== 20:13:07
+_camera camSetTarget [-39085.63,90965.23,-6831.60]
+_camera camSetPos [8242.45,3140.80,1.44]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:13:21
+_camera camSetTarget [-27233.41,96630.91,1142.60]
+_camera camSetPos [8242.19,3141.67,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+titlecut["","black out",_blackeningInterval]
+~_blackeningInterval
+
+deleteVehicle BelskyCentre
+deleteVehicle CentreV1
+deleteVehicle CentreV2
+deleteVehicle LevitskyCentre
+
 ; Frolov
+
+titlecut["","black in",_blackeningInterval]
+
+;=== 20:19:37
+_camera camSetTarget [-88102.63,-29278.39,-23163.72]
+_camera camSetPos [3571.85,3263.42,1.70]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:19:48
+_camera camSetTarget [5667.48,-95465.72,-15751.26]
+_camera camSetPos [3569.76,3262.76,1.88]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+~1
+;=== 20:21:05
+_camera camSetTarget [-19557.43,97440.06,-24385.60]
+_camera camSetPos [3570.12,3258.47,1.66]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Frolov say "42v197"
+~2
+LevitskyFrolov say "42v198"
+~1
+;=== 20:21:43
+_camera camSetTarget [49119.32,92125.59,-5311.99]
+_camera camSetPos [3569.79,3260.76,1.71]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+;=== 20:21:05
+_camera camSetTarget [-19557.43,97440.06,-24385.60]
+_camera camSetPos [3570.12,3258.47,1.66]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Frolov say "42v199"
+~2.5
+Frolov setmimic "smile"
+~2.5
+titletext["","plain down"]
+titlecut["","black out",_blackeningInterval]
+~_blackeningInterval
+
+deleteVehicle Frolov
+deleteVehicle LevitskyFrolov
 
 ; ########################
 ; ############
 ; ## Lemontov, part 5
 ; ############
 ; ########################
+
+titlecut["","black in",_blackeningInterval]
+
+;=== 20:28:41
+_camera camSetTarget [-90573.43,14037.74,-8635.92]
+_camera camSetPos [8501.50,3597.83,1.73]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+playsound "42v200"
+;=== 20:28:54
+_camera camSetTarget [-90945.71,14076.97,696.84]
+_camera camSetPos [8501.50,3597.83,1.73]
+_camera camSetFOV 0.427
+_camera camCommit 4
+@camCommitted _camera
+~1
+;=== 20:29:23
+_camera camSetTarget [107734.76,13754.37,-6958.41]
+_camera camSetPos [8497.94,3597.34,1.97]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+playsound "42v201"
+;=== 20:29:27
+_camera camSetTarget [107047.96,-11862.39,-6958.34]
+_camera camSetPos [8497.94,3597.34,1.97]
+_camera camSetFOV 0.700
+_camera camCommit 4
+~3
+playsound "42v202"
+@camCommitted _camera
+;=== 20:30:07
+_camera camSetTarget [-88050.17,29268.88,-4301.63]
+_camera camSetPos [8501.34,3597.72,1.76]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:30:17
+_camera camSetTarget [-88114.59,29286.01,-2305.49]
+_camera camSetPos [8501.34,3597.72,1.76]
+_camera camSetFOV 0.419
+_camera camCommit 3
+@camCommitted _camera
+~3
+titletext["","plain down"]
+titlecut["","black out",3]
+~4
+end=true
+player cameraEffect ["terminate","back"]
+camDestroy _camera
 
 exit
