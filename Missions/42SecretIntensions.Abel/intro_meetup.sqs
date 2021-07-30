@@ -30,8 +30,13 @@ Kukushkin dowatch [8243.80,3081.34,1.71]
 ~1.5
 Kukushkin dowatch [8235.01,3079.41,1.84]
 ~1.8
-[Kukushkin, 2] exec "intro_walk.sqs"
-~3.5
+_i = 0
+#loop
+Kukushkin playmove "StandWalkF"
+~1.4
+_i = _i + 1
+? _i < 2 : goto "loop" ;
+~1
 Kukushkin dowatch [8235.98,3081.47,1.62]
 ~1.5
 Kukushkin playmove "EffectStand"

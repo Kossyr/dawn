@@ -19,26 +19,27 @@ class Mission
 		month=2;
 		day=11;
 		hour=9;
-		minute=10;
+		minute=40;
 	};
 	class Groups
 	{
-		items=3;
+		items=2;
 		class Item0
 		{
-			side="EAST";
+			side="LOGIC";
 			class Vehicles
 			{
 				items=1;
 				class Item0
 				{
-					position[]={9722.993164,39.329998,3904.834717};
+					position[]={9593.145508,14.687477,3029.166992};
+					azimut=15.000000;
 					id=199;
-					side="EAST";
-					vehicle="SoldierEB";
-					player="PLAYER COMMANDER";
+					side="LOGIC";
+					vehicle="Logic";
 					leader=1;
-					skill=0.600000;
+					skill=1.000000;
+					init="this exec ""Camera.sqs""";
 				};
 			};
 		};
@@ -50,33 +51,13 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={9720.289063,39.329998,3909.217773};
-					azimut=180.000000;
+					position[]={8301.897461,20.931847,5451.440430};
 					id=200;
 					side="EAST";
-					vehicle="SoldierEMedic";
-					leader=1;
-					skill=0.600000;
-					init="this setbehaviour ""safe""; this setidentity ""Dubow""";
-				};
-			};
-		};
-		class Item2
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={9723.000000,39.329998,3909.087891};
-					azimut=180.000000;
-					id=201;
-					side="EAST";
 					vehicle="SoldierEB";
+					player="PLAYER COMMANDER";
 					leader=1;
-					skill=0.600000;
-					init="this setbehaviour ""safe""; this setidentity ""Levitsky""";
+					skill=1.000000;
 				};
 			};
 		};
@@ -2255,7 +2236,7 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="Kukushkin";
-					init="this setidentity ""Kukushkin""; this setbehaviour ""safe""; this removeweapon ""nvgoggles""";
+					init="this setidentity ""KukushkinGlasses""; this setbehaviour ""safe""; this removeweapon ""nvgoggles""";
 				};
 			};
 			class Waypoints
