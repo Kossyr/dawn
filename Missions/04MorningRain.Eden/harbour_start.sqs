@@ -1,46 +1,46 @@
-setacctime 1
+setAccTime 1
 
-LemontovDab setgroupid ["DELTA","GROUPCOLOR0"]
+LemontovDab setGroupId ["DELTA","GROUPCOLOR0"]
 
-enableradio true
+enableRadio true
 ~0.01
-Lemontov groupradio "04r02"
-enableradio false
+Lemontov groupRadio "04r02"
+enableRadio false
 ~0.5
-"_x setunitpos ""down""" foreach units group player
+"_x setunitpos ""down""" forEach units group player
 ~10
 
 harbourStart=true
-"_x stop false" foreach units ivan
+"_x stop false" forEach units ivan
 
-enableradio true
+enableRadio true
 ~0.01
-LemontovDab sideradio "04r03"
-enableradio false
+LemontovDab sideRadio "04r03"
+enableRadio false
 ~5
-enableradio true
+enableRadio true
 ~0.01
-leader ivan sideradio "04r04"
-enableradio false
+leader ivan sideRadio "04r04"
+enableRadio false
 ~8
-enableradio true
+enableRadio true
 ~0.01
-LemontovDab sideradio "04r05"
-enableradio false
+LemontovDab sideRadio "04r05"
+enableRadio false
 
 @harbourAttack
 
 
-enableradio true
+enableRadio true
 ~0.01
-LemontovDab sideradio "04r06"
-enableradio false
+LemontovDab sideRadio "04r06"
+enableRadio false
 ~1
-playmusic "Track10"
+playMusic "Track10"
 group player setcombatmode "yellow"
 
 ~2
 
-Lemontov setgroupid ["DELTA","GROUPCOLOR0"]
+Lemontov setGroupId ["DELTA","GROUPCOLOR0"]
 
 exit

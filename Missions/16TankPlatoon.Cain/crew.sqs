@@ -1,16 +1,16 @@
-setacctime 1
-Frolov groupradio "16r11"
+setAccTime 1
+Frolov groupRadio "16r11"
 ~2
-enableradio false
+enableRadio false
 
-titlecut["","black out",1]
+titleCut["","BLACK OUT",1]
 ~1
 Frolov action ["EJECT"]
-UnassignVehicle Frolov
+unassignVehicle Frolov
 aP action ["EJECT"]
-UnassignVehicle aP
-ourTank setpos getmarkerpos "ourTank"
-ourTank setdir 185
+unassignVehicle aP
+ourTank setPos getMarkerPos "ourTank"
+ourTank setDir 185
 
 Frolov stop true
 p1 stop true
@@ -22,39 +22,39 @@ p6 stop true
 p7 stop true
 [p1, p2, p3, p4, p5, p6, p7] join Frolov
 
-p2 setpos getmarkerpos "p2"
-p2 setdir 315
-p3 setpos getmarkerpos "p3"
-p3 setdir 20
-p4 setpos getmarkerpos "p4"
-p4 setdir 355
-p5 setpos getmarkerpos "p5"
-p5 setdir 345
-p6 setpos getmarkerpos "p6"
-p6 setdir 10
-p7 setpos getmarkerpos "p7"
-p7 setdir 45
+p2 setPos getMarkerPos "p2"
+p2 setDir 315
+p3 setPos getMarkerPos "p3"
+p3 setDir 20
+p4 setPos getMarkerPos "p4"
+p4 setDir 355
+p5 setPos getMarkerPos "p5"
+p5 setDir 345
+p6 setPos getMarkerPos "p6"
+p6 setDir 10
+p7 setPos getMarkerPos "p7"
+p7 setDir 45
 
-aP setpos getmarkerpos "AwayPlayer"
-Frolov setpos getmarkerpos "AwayFrolov"
+aP setPos getMarkerPos "AwayPlayer"
+Frolov setPos getMarkerPos "AwayFrolov"
 
-CinemaFrolov setpos getmarkerpos "CinemaFrolov";
-CinemaKukushkin setpos getmarkerpos "CinemaKukushkin";
+CinemaFrolov setPos getMarkerPos "CinemaFrolov";
+CinemaKukushkin setPos getMarkerPos "CinemaKukushkin";
 
 ~0.5
 aP action ["WEAPONONBACK"]
 Frolov action ["WEAPONONBACK"]
-ourTank setpos getmarkerpos "ourTank"
-ourTank setdir 185
+ourTank setPos getMarkerPos "ourTank"
+ourTank setDir 185
 
 joinedPlatoon=true
 
 
-CinemaFrolov setmimic "normal"
-CinemaKukushkin setmimic "normal"
+CinemaFrolov setMimic "normal"
+CinemaKukushkin setMimic "normal"
 
-setacctime 1
-titlecut ["","black in",1]
+setAccTime 1
+titleCut ["","BLACK IN",1]
 
 
 _camera = "camera" camcreate [0,0,0]
@@ -66,11 +66,11 @@ _camera camSetPos [6893.90,6760.70,1.50]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-p1 setmimic "normal"
-p1 playmove "effectstandsalute"
+p1 setMimic "normal"
+p1 playMove "effectstandsalute"
 p1 say "16v10"
 ~2
-p1 playmove "EffectStandSaluteEnd"
+p1 playMove "EffectStandSaluteEnd"
 ~1
 ;=== 16:23:09
 _camera camSetTarget [29559.56,103602.56,-9950.88]
@@ -94,15 +94,15 @@ _camera camSetFOV 0.700
 _camera camCommit 8
 @camCommitted _camera
 ~1
-titletext["","plain"]
-deletevehicle CinemaFrolov
-deletevehicle CinemaKukushkin
-aP setpos getmarkerpos "CinemaKukushkin"
-Frolov setpos getmarkerpos "CinemaFrolov"
-aP setdir 180
-Frolov setdir 180
-titlecut["","black in",0.5]
-enableradio true
+titleText["","PLAIN"]
+deleteVehicle CinemaFrolov
+deleteVehicle CinemaKukushkin
+aP setPos getMarkerPos "CinemaKukushkin"
+Frolov setPos getMarkerPos "CinemaFrolov"
+aP setDir 180
+Frolov setDir 180
+titleCut["","BLACK IN",0.5]
+enableRadio true
 Frolov stop false
 p1 stop false
 p2 stop false
@@ -117,15 +117,15 @@ camDestroy _camera
 Frolov AssignAsCommander tank1
 p1 AssignAsCommander tank2
 aP assignascommander ourTank
-p2 assignasgunner tank1
-p3 assignasdriver tank1
-p4 assignasgunner tank2
-p5 assignasdriver tank2
-p6 assignasgunner ourTank
-p7 assignasdriver ourTank
+p2 assignAsGunner tank1
+p3 assignAsDriver tank1
+p4 assignAsGunner tank2
+p5 assignAsDriver tank2
+p6 assignAsGunner ourTank
+p7 assignAsDriver ourTank
 
-"1" objstatus "done"
-aP addrating 1000
+"1" objStatus "DONE"
+aP addRating 1000
 platoonGetIn=true
 
 ~1
@@ -134,6 +134,6 @@ aP action ["WEAPONINHAND"]
 
 ~5
 
-savegame
+saveGame
 
 exit

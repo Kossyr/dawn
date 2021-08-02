@@ -1,5 +1,5 @@
 
-setacctime 1
+setAccTime 1
 
 Hlidka=Hlidka+1
 
@@ -7,11 +7,11 @@ Hlidka=Hlidka+1
 
 ? Hlidka == 2  : goto "second_hlidka"
 
-aP groupradio "19r04"
+aP groupRadio "19r04"
 
-"2" objstatus "done"
+"2" objStatus "DONE"
 
-aP addrating 340
+aP addRating 340
 
 Splneno=Splneno+1
 
@@ -21,22 +21,22 @@ goto "end"
 
 #first_hlidka
 
-aP groupradio "19r02"
+aP groupRadio "19r02"
 
-aP addrating 330
+aP addRating 330
 
 goto "end"
 
 #second_hlidka
 
-aP groupradio "19r03"
+aP groupRadio "19r03"
 
-aP addrating 330
+aP addRating 330
 
 #end
 
 ~4
 
-savegame
+saveGame
 
 exit

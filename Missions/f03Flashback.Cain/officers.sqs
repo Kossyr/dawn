@@ -1,9 +1,9 @@
-setacctime 1
+setAccTime 1
 
 cinema=true
 
 
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 ~0.5
 
 _camera = "camera" camcreate [0,0,0]
@@ -11,16 +11,16 @@ _camera cameraeffect ["internal","back"]
 
 ? (aP == vehicle aP) : goto "cinemaOfficers" ;
 
-vehicle aP setpos getmarkerpos "VehicleAway"
-vehicle aP setdir 0
+vehicle aP setPos getMarkerPos "VehicleAway"
+vehicle aP setDir 0
 
 ~0.5
 
-vehicle aP setpos getmarkerpos "CinemaOfficersVehicle"
-vehicle aP setdir 205
+vehicle aP setPos getMarkerPos "CinemaOfficersVehicle"
+vehicle aP setDir 205
 
 aP action ["EJECT"]
-UnassignVehicle aP
+unassignVehicle aP
 
 #cinemaOfficers
 
@@ -29,36 +29,36 @@ aa = LemontovDouble loadStatus "f03Lemontov"
 
 aP action ["WEAPONONBACK"]
 
-aP setpos getmarkerpos "PlayerAway"
+aP setPos getMarkerPos "PlayerAway"
 
-Blonsky setpos getmarkerpos "CinemaOfficersBlonsky"
-Volkov setpos getmarkerpos "CinemaOfficersVolkov"
-Frolov setpos getmarkerpos "CinemaOfficersFrolov"
+Blonsky setPos getMarkerPos "CinemaOfficersBlonsky"
+Volkov setPos getMarkerPos "CinemaOfficersVolkov"
+Frolov setPos getMarkerPos "CinemaOfficersFrolov"
 
 _volkov = [1899.05,7355.32,1.58]
 _frolov = [1898.81,7356.74,1.68]
 _blonsky = [1898.07,7356.10,1.61]
 _lemy = [1899.81,7356.24,1.61]
 
-Volkov dowatch _frolov
-Frolov dowatch _volkov
-Blonsky dowatch _volkov
+Volkov doWatch _frolov
+Frolov doWatch _volkov
+Blonsky doWatch _volkov
 
-Volkov setmimic "angry"
-Blonsky setmimic "angry"
-Frolov setmimic "normal"
+Volkov setMimic "angry"
+Blonsky setMimic "angry"
+Frolov setMimic "normal"
 
-LemontovDouble setpos getmarkerpos "CinemaOfficersLemontov"
-LemontovDouble setdir 230
-LemontovDouble dowatch _volkov
+LemontovDouble setPos getMarkerPos "CinemaOfficersLemontov"
+LemontovDouble setDir 230
+LemontovDouble doWatch _volkov
 
-LemontovDouble setmimic "angry"
+LemontovDouble setMimic "angry"
 
 ~0.5
 
-setacctime 1
+setAccTime 1
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 ;=== 18:19:37
 _camera camSetTarget [-78728.95,65913.44,-8227.36]
@@ -68,17 +68,17 @@ _camera camCommit 0
 @camCommitted _camera
 LemontovDouble say "f03v75"
 ~0.3
-Volkov dowatch _lemy
-Blonsky dowatch _lemy
-Frolov dowatch _lemy
-Volkov setmimic "normal"
-Blonsky setmimic "normal"
+Volkov doWatch _lemy
+Blonsky doWatch _lemy
+Frolov doWatch _lemy
+Volkov setMimic "normal"
+Blonsky setMimic "normal"
 ~0.7
-LemontovDouble dowatch _blonsky
+LemontovDouble doWatch _blonsky
 ~1.5
-LemontovDouble dowatch _frolov
+LemontovDouble doWatch _frolov
 ~1.5
-LemontovDouble dowatch _blonsky
+LemontovDouble doWatch _blonsky
 ~2.5
 ;=== 18:21:09
 _camera camSetTarget [-62984.20,-67151.30,-15314.26]
@@ -87,13 +87,13 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Volkov say "f03v76"
-LemontovDouble dowatch _volkov
+LemontovDouble doWatch _volkov
 ~4.5
 Blonsky say "f03v77"
-LemontovDouble dowatch _blonsky
+LemontovDouble doWatch _blonsky
 ~3.5
 Frolov say "f03v78"
-LemontovDouble dowatch _frolov
+LemontovDouble doWatch _frolov
 ~3.5
 ;=== 18:23:05
 _camera camSetTarget [85467.70,-46475.57,-10748.51]
@@ -112,7 +112,7 @@ _camera camCommit 0
 Frolov say "f03v80"
 ~3
 Blonsky say "f03v81"
-LemontovDouble dowatch _blonsky
+LemontovDouble doWatch _blonsky
 ~4.5
 ;=== 18:24:28
 _camera camSetTarget [-87769.20,50262.58,-10748.17]
@@ -120,7 +120,7 @@ _camera camSetPos [1900.36,7355.44,1.61]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-LemontovDouble dowatch _volkov
+LemontovDouble doWatch _volkov
 Volkov say "f03v82"
 ~6.5
 ;=== 18:25:13
@@ -138,12 +138,12 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~3.5
-Blonsky setmimic "angry"
-Volkov setmimic "angry"
+Blonsky setMimic "angry"
+Volkov setMimic "angry"
 Volkov say "f03v84"
 ~1.5
 Blonsky say "f03v85"
-LemontovDouble dowatch _blonsky
+LemontovDouble doWatch _blonsky
 ~1.5
 Frolov say "f03v86"
 ~2.5
@@ -155,17 +155,17 @@ _camera camCommit 0
 @camCommitted _camera
 LemontovDouble say "f03v87"
 ~4
-LemontovDouble dowatch objNull
-LemontovDouble setdir 0
-LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
+LemontovDouble doWatch objNull
+LemontovDouble setDir 0
+LemontovDouble setPos getMarkerPos "PlayerDoubleAway"
 
-aP setpos getmarkerpos "CinemaOfficersLemontov"
-aP setdir 240
+aP setPos getMarkerPos "CinemaOfficersLemontov"
+aP setDir 240
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
-titletext ["","plain"]
+titleText ["","PLAIN"]
 
 talkedToOfficers=true
 cinema=false
@@ -178,8 +178,8 @@ cinema=false
 
 #exitOfficers
 
-Volkov dowatch _frolov
-Frolov dowatch _volkov
-Blonsky dowatch _volkov
+Volkov doWatch _frolov
+Frolov doWatch _volkov
+Blonsky doWatch _volkov
 
 exit

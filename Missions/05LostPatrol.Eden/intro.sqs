@@ -1,16 +1,16 @@
-titlecut ["","black in",2]
+titleCut ["","BLACK IN",2]
 
-Lemontov playmove "effectstandtalk"
-Dostoevsky switchmove "FxToHand"
+Lemontov playMove "effectstandtalk"
+Dostoevsky switchMove "FxToHand"
 
-Dostoevsky setmimic "normal"
-lemontov setmimic "normal"
-Rashiv setmimic "normal"
+Dostoevsky setMimic "normal"
+lemontov setMimic "normal"
+Rashiv setMimic "normal"
 
-Lemontov dowatch [1287.25,5971.14,1.60]
-Dostoevsky dowatch [1287.41,5972.46,1.74]
+Lemontov doWatch [1287.25,5971.14,1.60]
+Dostoevsky doWatch [1287.41,5972.46,1.74]
 
-playmusic "Track3"
+playMusic "Track3"
 
 
 _camera = "camera" camcreate [0,0,0]
@@ -69,18 +69,18 @@ _camera camSetPos [1285.25,5971.73,1.41]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Dostoevsky switchmove "FxFromHand"
-Lemontov playmove "effectstand"
+Dostoevsky switchMove "FxFromHand"
+Lemontov playMove "effectstand"
 ~1.5
-Dostoevsky playmove "effectstandsalute"
+Dostoevsky playMove "effectstandsalute"
 ~3
-Dostoevsky playmove "effectstandsaluteend"
+Dostoevsky playMove "effectstandsaluteend"
 ~0.7
-Dostoevsky domove getmarkerpos "Dostoevsky"
-Dostoevsky dowatch [1274.74,5971.48,1.60]
-Lemontov dowatch objnull
+Dostoevsky doMove getMarkerPos "Dostoevsky"
+Dostoevsky doWatch [1274.74,5971.48,1.60]
+Lemontov doWatch objNull
 ~1
-Lemontov domove getmarkerpos "LemontovAway"
+Lemontov doMove getMarkerPos "LemontovAway"
 ~0.5
 ;=== 16:09:11
 _camera camSetTarget [99851.66,22138.88,-4499.42]
@@ -95,15 +95,15 @@ _camera camSetPos [1275.34,5971.34,1.52]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Rashiv setmimic "sad"
+Rashiv setMimic "sad"
 ~1.5
-Dostoevsky setpos getmarkerpos "Dostoevsky"
-Dostoevsky setdir 270
-deletevehicle Lemontov
-Dostoevsky setmimic "smile"
-Dostoevsky dowatch [1274.73,5971.47,1.67]
+Dostoevsky setPos getMarkerPos "Dostoevsky"
+Dostoevsky setDir 270
+deleteVehicle Lemontov
+Dostoevsky setMimic "smile"
+Dostoevsky doWatch [1274.73,5971.47,1.67]
 Dostoevsky say "05v01"
-Rashiv setmimic "normal"
+Rashiv setMimic "normal"
 ;=== 16:11:08
 _camera camSetTarget [97379.10,33130.31,-5043.87]
 _camera camSetPos [1273.73,5970.70,1.42]
@@ -111,7 +111,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~5
-Dostoevsky setpos getmarkerpos "Dostoevsky"
+Dostoevsky setPos getMarkerPos "Dostoevsky"
 ;=== 16:13:15
 _camera camSetTarget [101248.13,4568.86,1953.94]
 _camera camSetPos [1275.79,5971.49,1.52]
@@ -120,8 +120,8 @@ _camera camCommit 0
 @camCommitted _camera
 Dostoevsky say "05v02"
 ~6
-4 fademusic 0
-titlecut["","black out",3]
+4 fadeMusic 0
+titleCut["","BLACK OUT",3]
 ~4
 end=true
 

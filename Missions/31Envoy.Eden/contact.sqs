@@ -1,27 +1,27 @@
-setacctime 1
+setAccTime 1
 
-"1" objstatus "done"
-aP addrating 1000
+"1" objStatus "DONE"
+aP addRating 1000
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
 Lemontov stop true
-Lemontov setpos getmarkerpos "LemontovAway"
+Lemontov setPos getMarkerPos "LemontovAway"
 
-aP setpos getmarkerpos "RashivAway"
+aP setPos getMarkerPos "RashivAway"
 aP action ["WEAPONONBACK"]
 
-Lemontov setbehaviour "careless"
+Lemontov setBehaviour "CARELESS"
 
-ContactLemontov setpos getmarkerpos "ContactLemontov"
-ContactRashiv setpos getmarkerpos "ContactRashiv"
+ContactLemontov setPos getMarkerPos "ContactLemontov"
+ContactRashiv setPos getMarkerPos "ContactRashiv"
 
-ContactLemontov dowatch [9312.98,620.76,1.80]
-ContactRashiv dowatch [9312.98,620.76,1.80]
-Poincare dowatch [9312.13,615.59,1.70]
+ContactLemontov doWatch [9312.98,620.76,1.80]
+ContactRashiv doWatch [9312.98,620.76,1.80]
+Poincare doWatch [9312.13,615.59,1.70]
 
 
 
@@ -33,9 +33,9 @@ _camera camCommit 0
 @camCommitted _camera
 
 Poincare say "31v11"
-Poincare setmimic "surprised"
-ContactRashiv setmimic "smile"
-ContactLemontov setmimic "normal"
+Poincare setMimic "surprised"
+ContactRashiv setMimic "smile"
+ContactLemontov setMimic "normal"
 ~1
 
 ;=== 16:54:00
@@ -53,7 +53,7 @@ _camera camCommit 0
 @camCommitted _camera
 ContactRashiv say "31v12"
 ~2
-ContactRashiv setmimic "normal"
+ContactRashiv setMimic "normal"
 ~4.5
 ;=== 16:55:58
 _camera camSetTarget [27764.40,98230.17,11530.92]
@@ -63,14 +63,14 @@ _camera camCommit 0
 @camCommitted _camera
 Poincare say "31v13"
 ~4.5
-deletevehicle ContactRashiv
-deletevehicle ContactLemontov
+deleteVehicle ContactRashiv
+deleteVehicle ContactLemontov
 
 Lemontov stop false
-Lemontov setpos getmarkerpos "ContactLemontov"
-aP setpos getmarkerpos "ContactRashiv"
-Lemontov setdir 5
-aP setdir 0
+Lemontov setPos getMarkerPos "ContactLemontov"
+aP setPos getMarkerPos "ContactRashiv"
+Lemontov setDir 5
+aP setDir 0
 ~0.5
 player cameraEffect ["terminate","back"]
 camDestroy _camera
@@ -79,13 +79,13 @@ toCastle=true
 
 GuardFire inflame false
 
-Poincare dowatch objnull
+Poincare doWatch objNull
 
 ~0.5
 aP action ["WEAPONINHAND"]
 
 ~2
 
-savegame
+saveGame
 
 exit

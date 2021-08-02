@@ -1,12 +1,12 @@
-titlecut["","black in",3]
+titleCut["","BLACK IN",3]
 
 playMusic "Track6"
 
-setacctime 1
+setAccTime 1
 
-0 fadesound 0
+0 fadeSound 0
 
-6 fadesound 1
+6 fadeSound 1
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -58,7 +58,7 @@ _camera camSetPos [5811.55,3153.87,1.39]
 _camera camSetFOV 0.700
 _camera camCommit 6
 @camCommitted _camera
-Pointer dowatch [5824.81,3173.43,1.45]
+Pointer doWatch [5824.81,3173.43,1.45]
 ~1.5
 ;=== 17:35:42
 _camera camSetTarget [-30172.47,-89522.73,-10457.54]
@@ -66,17 +66,17 @@ _camera camSetPos [5823.17,3184.31,1.03]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Pointer switchmove "FxShow3"
+Pointer switchMove "FxShow3"
 ~1
 loadThemUp=true
-"_x stop false" foreach units group embarking
+"_x stop false" forEach units group embarking
 ;=== 17:31:21
 _camera camSetTarget [31953.17,-92381.96,-13519.73]
 _camera camSetPos [5821.61,3188.72,3.27]
 _camera camSetFOV 0.700
 _camera camCommit 4
 @camCommitted _camera
-Pointer domove getmarkerpos "away"
+Pointer doMove getMarkerPos "away"
 ;=== 17:25:19
 _camera camSetTarget [98711.10,-29355.16,-17530.57]
 _camera camSetPos [5789.59,3165.53,5.62]
@@ -102,8 +102,8 @@ _camera camSetPos [5821.69,3141.46,16.65]
 _camera camSetFOV 0.700
 _camera camCommit 16
 ~13
-titlecut["","black out",3]
-3 fademusic 0
+titleCut["","BLACK OUT",3]
+3 fadeMusic 0
 @camCommitted _camera
 
 

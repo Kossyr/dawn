@@ -1,13 +1,13 @@
-setacctime 1
+setAccTime 1
 
-Astier sideradio "11r02"
+Astier sideRadio "11r02"
 
 ~10
 
 escaping=true
 
-AstierCharges setpos getmarkerpos "astier_hide"
-AstierCharges setbehaviour "stealth"
+AstierCharges setPos getMarkerPos "astier_hide"
+AstierCharges setBehaviour "STEALTH"
 
 ~1
 
@@ -17,27 +17,27 @@ AstierCharges action ["TOUCHOFF"]
 aP removeEventHandler ["Fired", rebelFireCheck]
 
 ~2
-T1 setdammage 1
+T1 setDammage 1
 ~0.5
-T2 setdammage 1
+T2 setDammage 1
 ~0.5
-"11" objstatus "done"
-aP addrating 1000
-aP setcaptive false
+"11" objStatus "DONE"
+aP addRating 1000
+aP setCaptive false
 alarm=true
 setAware=true
 beachClear=true
-PortGunMaster assignasgunner PortGun
-[PortGunMaster] OrderGetIn true
-"_x stop false" foreach units beachGuard
-"_x stop false" foreach units machineGunners
-"_x stop false" foreach units fireCampers
+PortGunMaster assignAsGunner PortGun
+[PortGunMaster] orderGetIn true
+"_x stop false" forEach units beachGuard
+"_x stop false" forEach units machineGunners
+"_x stop false" forEach units fireCampers
 
 beachSounds=true
 
-deletevehicle officer
-deletevehicle Calverra
-deletevehicle gate_keeper
+deleteVehicle officer
+deleteVehicle Calverra
+deleteVehicle gate_keeper
 
 
 BeachFire1 inflame false
@@ -47,12 +47,12 @@ BeachFire4 inflame false
 
 
 ~1
-T3 setdammage 1
+T3 setDammage 1
 ~0.5
-T4 setdammage 1
-"12" objstatus "done"
-aP addrating 1000
-setacctime 1
-Astier sideradio "11r03"
+T4 setDammage 1
+"12" objStatus "DONE"
+aP addRating 1000
+setAccTime 1
+Astier sideRadio "11r03"
 
 exit

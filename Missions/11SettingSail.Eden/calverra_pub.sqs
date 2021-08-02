@@ -1,40 +1,40 @@
-setacctime 1
+setAccTime 1
 
-"4" objstatus "done"
-aP addrating 1000
+"4" objStatus "DONE"
+aP addRating 1000
 
-"Pub" setmarkertype "Empty"
+"Pub" setMarkerType "Empty"
 
 cinema=true
 
 ? (aP == vehicle aP) : goto "pub_cinema" ;
 
-vehicle aP setpos getmarkerpos "player_vehicle_away"
-vehicle aP setdir 0
+vehicle aP setPos getMarkerPos "player_vehicle_away"
+vehicle aP setDir 0
 
 ~1
 
-vehicle aP setpos getmarkerpos "pub_vehicle"
-vehicle aP setdir 325
+vehicle aP setPos getMarkerPos "pub_vehicle"
+vehicle aP setDir 325
 
 aP action ["EJECT"]
-UnassignVehicle aP
+unassignVehicle aP
 
 #pub_cinema
 
 
 
-aP setpos getmarkerpos "player_away"
-Calverra setpos getmarkerpos "calverra_pub";
-RashivPub setpos getmarkerpos "rashiv_pub";
+aP setPos getMarkerPos "player_away"
+Calverra setPos getMarkerPos "calverra_pub";
+RashivPub setPos getMarkerPos "rashiv_pub";
 
 aa = aP saveStatus "10Rashiv"
 aa = RashivPub loadStatus "10Rashiv"
 
-RashivPub dowatch [9526.09,1573.07,1.71]
+RashivPub doWatch [9526.09,1573.07,1.71]
 
-RashivPub setmimic "Normal"
-Calverra setmimic "Angry"
+RashivPub setMimic "Normal"
+Calverra setMimic "Angry"
 
 
 aP action ["WEAPONONBACK"]
@@ -42,7 +42,7 @@ aP action ["WEAPONONBACK"]
 foundCalverra=true
 
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -55,12 +55,12 @@ _camera camCommit 0
 
 RashivPub say "11v62"
 ~1.5
-Calverra dowatch [9527.07,1571.55,1.63]
+Calverra doWatch [9527.07,1571.55,1.63]
 ~1
 Calverra say "11v63"
-Calverra setmimic "Surprised"
+Calverra setMimic "Surprised"
 ~1.2
-Calverra switchmove "FXCivilLookaround2"
+Calverra switchMove "FXCivilLookaround2"
 ;=== 18:23:11
 _camera camSetTarget [-26490.57,94816.05,2912.78]
 _camera camSetPos [9526.43,1572.02,1.42]
@@ -74,11 +74,11 @@ _camera camSetFOV 0.700
 _camera camCommit 22
 ~6
 Calverra say "11v64"
-Calverra setmimic "Sad"
-Calverra switchmove "FXStandhip"
+Calverra setMimic "Sad"
+Calverra switchMove "FXStandhip"
 ~9
 Calverra say "11v65"
-Calverra switchmove "FxShow2"
+Calverra switchMove "FxShow2"
 @camCommitted _camera
 Calverra say "11v66"
 ;=== 18:25:22
@@ -97,7 +97,7 @@ _camera camCommit 0
 @camCommitted _camera
 ~2.5
 Calverra say "11v68"
-Calverra setmimic "smile"
+Calverra setMimic "smile"
 
 ;=== 18:27:15
 _camera camSetTarget [-45186.18,84844.22,-8468.44]
@@ -107,16 +107,16 @@ _camera camCommit 0
 @camCommitted _camera
 
 ~9
-deletevehicle RashivPub
-aP setpos getmarkerpos "rashiv_pub"
-aP setdir 330
-Calverra setmimic "Normal"
-"5" objstatus "active"
-"Fuel" setmarkertype "Marker"
-"Calverra" setmarkertype "Marker"
+deleteVehicle RashivPub
+aP setPos getMarkerPos "rashiv_pub"
+aP setDir 330
+Calverra setMimic "Normal"
+"5" objStatus "ACTIVE"
+"Fuel" setMarkerType "Marker"
+"Calverra" setMarkerType "Marker"
 GoingToDurras=true
-Calverra domove getmarkerpos "calverra_beach"
-Calverra dowatch objnull
+Calverra doMove getMarkerPos "calverra_beach"
+Calverra doWatch objNull
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
@@ -124,11 +124,11 @@ camDestroy _camera
 cinema=false
 
 ~2.5
-setacctime 1
+setAccTime 1
 aP say "11v69"
 
 ~6
 
-savegame
+saveGame
 
 exit

@@ -1,31 +1,31 @@
-titlecut ["","black in",3]
+titleCut ["","BLACK IN",3]
 
 aa = aP loadStatus "09Rashiv"
 
-"_x moveincargo resTransport" foreach units group player
+"_x moveInCargo resTransport" forEach units group player
 
-"2" objstatus "hidden"
-"3" objstatus "hidden"
-"4" objstatus "hidden"
-"5" objstatus "hidden"
+"2" objStatus "HIDDEN"
+"3" objStatus "HIDDEN"
+"4" objStatus "HIDDEN"
+"5" objStatus "HIDDEN"
 
-resTransport addweaponcargo ["AK47",1]
-resTransport addmagazinecargo ["AK74",8]
-resTransport addweaponcargo ["PK",1]
-resTransport addmagazinecargo ["PK",6]
-resTransport addmagazinecargo ["HandGrenade",4]
+resTransport addWeaponCargo ["AK47",1]
+resTransport addMagazineCargo ["AK74",8]
+resTransport addWeaponCargo ["PK",1]
+resTransport addMagazineCargo ["PK",6]
+resTransport addMagazineCargo ["HandGrenade",4]
 
-"Camp" setmarkertype "Empty"
+"Camp" setMarkerType "Empty"
 
-playmusic "Track3"
+playMusic "Track3"
 
-6 fademusic 0.2
-6 fadesound 0.2
+6 fadeMusic 0.2
+6 fadeSound 0.2
 
-enableradio false
+enableRadio false
 
 ~6
-setacctime 1
+setAccTime 1
 partisan1 say "10v04"
 ~4.5
 Poincare say "10v05"
@@ -47,7 +47,7 @@ Poincare say "10v12"
 Poincare say "10v13"
 
 ~15
-setacctime 1
+setAccTime 1
 partisan2 say "10v14"
 ~3.6
 Calvet say "10v15"
@@ -71,8 +71,8 @@ partisan3 say "10v23"
 Poincare say "10v24"
 ~8
 
-2 fadesound 1
-2 fademusic 1
+2 fadeSound 1
+2 fadeMusic 1
 
 
 exit

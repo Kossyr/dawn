@@ -1,21 +1,21 @@
 
-"5" objstatus "done"
-aP addrating 1000
+"5" objStatus "DONE"
+aP addRating 1000
 
 ~3
 
-setacctime 1
+setAccTime 1
 
-? borisRescued : baza sideradio "05r13"
-? not borisRescued : baza sideradio "05r14"
+? borisRescued : baza sideRadio "05r13"
+? not borisRescued : baza sideRadio "05r14"
 
 ~1
 
-enableradio false
+enableRadio false
 
 ~5
 
-setacctime 1
+setAccTime 1
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -26,7 +26,7 @@ _camera camSetPos [3744.58,6773.20,8.13]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-titletext [ localize "STRC_END_SUCCESS","plain"]
+titleText [ localize "STRC_END_SUCCESS","PLAIN"]
 ;=== 16:20:00
 _camera camSetTarget [99991.77,-17891.68,-11242.96]
 _camera camSetPos [3744.58,6773.20,24.13]
@@ -36,7 +36,7 @@ _camera camCommit 12
 
 
 
-titlecut["","black out",2]
+titleCut["","BLACK OUT",2]
 
 ~2
 

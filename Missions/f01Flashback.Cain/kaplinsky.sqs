@@ -1,9 +1,9 @@
-setacctime 1
+setAccTime 1
 
 cinema=true
 canMeetKaplinsky=false
 
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 ~0.5
 
 _camera = "camera" camcreate [0,0,0]
@@ -11,37 +11,37 @@ _camera cameraeffect ["internal","back"]
 
 ? (aP == vehicle aP) : goto "kaplinskyCinema" ;
 
-vehicle aP setpos getmarkerpos "VehicleAway"
-vehicle aP setdir 0
+vehicle aP setPos getMarkerPos "VehicleAway"
+vehicle aP setDir 0
 
 ~0.5
 
-vehicle aP setpos getmarkerpos "CinemaKaplinskyVehicle"
-vehicle aP setdir 0
+vehicle aP setPos getMarkerPos "CinemaKaplinskyVehicle"
+vehicle aP setDir 0
 
 aP action ["EJECT"]
-UnassignVehicle aP
+unassignVehicle aP
 
 #kaplinskyCinema
 
 aP action ["WEAPONONBACK"]
 
-aP setpos getmarkerpos "PlayerAway"
-LemontovDouble setpos getmarkerpos "CinemaKaplinskyPlayer"
-Kaplinsky setpos getmarkerpos "CinemaKaplinsky"
-Kaplinsky dowatch [10469.54,9678.28,1.66]
+aP setPos getMarkerPos "PlayerAway"
+LemontovDouble setPos getMarkerPos "CinemaKaplinskyPlayer"
+Kaplinsky setPos getMarkerPos "CinemaKaplinsky"
+Kaplinsky doWatch [10469.54,9678.28,1.66]
 
-LemontovDouble setdir 215
-LemontovDouble dowatch [10468.25,9676.92,1.66]
-LemontovDouble setmimic "angry"
-Kaplinsky setmimic "normal"
+LemontovDouble setDir 215
+LemontovDouble doWatch [10468.25,9676.92,1.66]
+LemontovDouble setMimic "angry"
+Kaplinsky setMimic "normal"
 
 
 ~0.5
 
-setacctime 1
+setAccTime 1
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 
 ? metKaplinsky : goto "reenter" ;
@@ -59,9 +59,9 @@ _camera camCommit 0
 @camCommitted _camera
 Kaplinsky say "f01v191"
 ~1.5
-Kaplinsky setmimic "smile"
+Kaplinsky setMimic "smile"
 ~4.5
-Kaplinsky setmimic "normal"
+Kaplinsky setMimic "normal"
 ~5
 ;=== 18:52:40
 _camera camSetTarget [74969.04,85168.61,-11846.75]
@@ -70,7 +70,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 LemontovDouble say "f01v192"
-LemontovDouble setmimic "normal"
+LemontovDouble setMimic "normal"
 ~4
 ;=== 18:53:27
 _camera camSetTarget [-27339.18,-82134.34,-11846.55]
@@ -86,7 +86,7 @@ _camera camSetPos [10469.02,9677.80,1.60]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-LemontovDouble setmimic "angry"
+LemontovDouble setMimic "angry"
 LemontovDouble say "f01v194"
 ~2
 ;=== 18:54:04
@@ -95,7 +95,7 @@ _camera camSetPos [10468.74,9677.80,1.56]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Kaplinsky switchmove "FXCivilHandMouth"
+Kaplinsky switchMove "FXCivilHandMouth"
 Kaplinsky say "f01v195"
 ~9
 Kaplinsky say "f01v196"

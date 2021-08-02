@@ -40,10 +40,10 @@ _camera camSetPos [9725.80,9464.59,1.56]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Belsky setmimic "surprised"
+Belsky setMimic "surprised"
 Belsky say "f01v283"
 ~5
-Belsky setmimic "smile"
+Belsky setMimic "smile"
 ~7
 ;=== 20:45:48
 _camera camSetTarget [109692.17,6894.31,-394.73]
@@ -59,7 +59,7 @@ _camera camSetPos [9726.84,9464.81,1.50]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Belsky setmimic "normal"
+Belsky setMimic "normal"
 Belsky say "f01v285"
 ~2
 
@@ -78,19 +78,19 @@ goto "exitDialogue"
 #exitDialogue
 
 
-LemontovDouble dowatch objNull
-LemontovDouble setdir 0
-LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
-Belsky setmimic "normal"
-Belsky dowatch objNull
+LemontovDouble doWatch objNull
+LemontovDouble setDir 0
+LemontovDouble setPos getMarkerPos "PlayerDoubleAway"
+Belsky setMimic "normal"
+Belsky doWatch objNull
 
-aP setpos getmarkerpos "CinemaBelskyPlayer"
-aP setdir 270
+aP setPos getMarkerPos "CinemaBelskyPlayer"
+aP setDir 270
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
-titletext ["","plain"]
+titleText ["","PLAIN"]
 
 metBelsky=true
 cinema=false

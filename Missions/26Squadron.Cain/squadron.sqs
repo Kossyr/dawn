@@ -1,25 +1,25 @@
 
 
-setacctime 1
+setAccTime 1
 
-"1" objstatus "done"
-aP addrating 1000
+"1" objStatus "DONE"
+aP addRating 1000
 
 aP action ["WEAPONONBACK"]
 
 Koltsov stop true
 
-Koltsov setpos getmarkerpos "KoltsovCinema"
-Koltsov setdir 10
+Koltsov setPos getMarkerPos "KoltsovCinema"
+Koltsov setDir 10
 
-AblomovCinema setpos getmarkerpos "AblomovCinema"
-AblomovCinema setdir 350
+AblomovCinema setPos getMarkerPos "AblomovCinema"
+AblomovCinema setDir 350
 
-aP setpos getmarkerpos "CinemaEmpty"
+aP setPos getMarkerPos "CinemaEmpty"
 
-AblomovCinema dowatch [9177.07,9455.18,1.58]
-Koltsov dowatch [9177.07,9455.18,1.58]
-Syomin dowatch [9177.06,9453.35,1.62]
+AblomovCinema doWatch [9177.07,9455.18,1.58]
+Koltsov doWatch [9177.07,9455.18,1.58]
+Syomin doWatch [9177.06,9453.35,1.62]
 
 
 _camera = "camera" camcreate [0,0,0]
@@ -33,7 +33,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Syomin setmimic "Normal"
+Syomin setMimic "Normal"
 Syomin say "26v12"
 
 ;=== 20:52:42
@@ -98,25 +98,25 @@ _camera camCommit 0
 
 Koltsov stop false
 
-Syomin dowatch objnull
-Koltsov dowatch objnull
-AblomovCinema dowatch objnull
+Syomin doWatch objNull
+Koltsov doWatch objNull
+AblomovCinema doWatch objNull
 
-deletevehicle AblomovCinema
-aP setpos getmarkerpos "AblomovCinema"
-aP setdir 350
+deleteVehicle AblomovCinema
+aP setPos getMarkerPos "AblomovCinema"
+aP setDir 350
 
-Syomin assignasdriver mi24_1
-SyominGunner assignasgunner mi24_1
-aP assignasdriver mi24_2
-Koltsov assignasgunner mi24_2
+Syomin assignAsDriver mi24_1
+SyominGunner assignAsGunner mi24_1
+aP assignAsDriver mi24_2
+Koltsov assignAsGunner mi24_2
 
-enableradio true
+enableRadio true
 
-Syomin setbehaviour "Aware"
-SyominGunner setbehaviour "Aware"
-Koltsov setbehaviour "Aware"
-aP setbehaviour "Aware"
+Syomin setBehaviour "AWARE"
+SyominGunner setBehaviour "AWARE"
+Koltsov setBehaviour "AWARE"
+aP setBehaviour "AWARE"
 
 ~1
 
@@ -125,7 +125,7 @@ camDestroy _camera
 
 [Koltsov, aP] join Syomin
 
-Syomin setgroupid ["NOVEMBER","GROUPCOLOR0"]
+Syomin setGroupId ["NOVEMBER","GROUPCOLOR0"]
 
 aP action ["WEAPONINHAND"]
 

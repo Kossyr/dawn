@@ -36,7 +36,7 @@ class Mission
 					rank="LIEUTNANT";
 					skill=1.000000;
 					text="Dostoevsky";
-					init="this moveindriver car; this setidentity ""Dostoevsky""; group this allowfleeing 0; group this setgroupid [""ALPHA"",""GROUPCOLOR0""]; anton = group this";
+					init="this moveInDriver car; this setIdentity ""Dostoevsky""; group this allowFleeing 0; group this setGroupId [""ALPHA"",""GROUPCOLOR0""]; anton = group this";
 				};
 				class Item1
 				{
@@ -49,7 +49,7 @@ class Mission
 					player="PLAYER COMMANDER";
 					skill=0.641898;
 					text="aP";
-					init="this setidentity ""rashiv""; this moveincargo car";
+					init="this setIdentity ""rashiv""; this moveInCargo car";
 				};
 			};
 			class Waypoints
@@ -306,7 +306,7 @@ class Mission
 					vehicle="SoldierWB";
 					leader=1;
 					skill=0.200000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -376,7 +376,7 @@ class Mission
 					vehicle="SoldierWMG";
 					leader=1;
 					skill=0.200000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -446,7 +446,7 @@ class Mission
 					vehicle="SoldierWB";
 					leader=1;
 					skill=0.200000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -562,7 +562,7 @@ class Mission
 					vehicle="OfficerW";
 					leader=1;
 					skill=0.200000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -651,7 +651,7 @@ class Mission
 					vehicle="SoldierWB";
 					leader=1;
 					skill=0.200000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -724,7 +724,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1.000000;
 					text="boris1";
-					init="group this allowfleeing 0; boris = group this";
+					init="group this allowFleeing 0; boris = group this";
 				};
 				class Item1
 				{
@@ -1071,7 +1071,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.200000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -1147,7 +1147,7 @@ class Mission
 					vehicle="SoldierEB";
 					leader=1;
 					skill=0.200000;
-					init="this setdammage 1";
+					init="this setDammage 1";
 				};
 			};
 		};
@@ -1166,7 +1166,7 @@ class Mission
 					vehicle="SoldierEB";
 					leader=1;
 					skill=0.200000;
-					init="this setdammage 1";
+					init="this setDammage 1";
 				};
 			};
 		};
@@ -1185,7 +1185,7 @@ class Mission
 					vehicle="SoldierEB";
 					leader=1;
 					skill=0.200000;
-					init="this setdammage 1";
+					init="this setDammage 1";
 				};
 			};
 		};
@@ -1204,7 +1204,7 @@ class Mission
 					vehicle="SoldierEB";
 					leader=1;
 					skill=0.200000;
-					init="this setdammage 1";
+					init="this setDammage 1";
 				};
 			};
 		};
@@ -1222,7 +1222,7 @@ class Mission
 					vehicle="SoldierEB";
 					leader=1;
 					skill=0.200000;
-					init="this setdammage 1";
+					init="this setDammage 1";
 				};
 			};
 		};
@@ -1288,7 +1288,7 @@ class Mission
 					rank="CORPORAL";
 					skill=1.000000;
 					text="V4";
-					init="THIS SETBEHAVIOUR ""SAFE""; this switchmove ""effectstandsitdown""";
+					init="THIS SETBEHAVIOUR ""SAFE""; this switchMove ""effectstandsitdown""";
 				};
 			};
 		};
@@ -1354,7 +1354,7 @@ class Mission
 					rank="CORPORAL";
 					skill=1.000000;
 					text="ivan";
-					init="this setidentity ""ivan""; THIS SETBEHAVIOUR ""SAFE""";
+					init="this setIdentity ""ivan""; THIS SETBEHAVIOUR ""SAFE""";
 				};
 			};
 		};
@@ -1369,7 +1369,7 @@ class Mission
 			side="EMPTY";
 			vehicle="FlagCarrier";
 			skill=0.200000;
-			init="this setflagtexture ""\flags\ussr.jpg""";
+			init="this setFlagTexture ""\flags\ussr.jpg""";
 		};
 		class Item1
 		{
@@ -1418,7 +1418,7 @@ class Mission
 			vehicle="UAZ";
 			leader=1;
 			skill=0.200000;
-			init="[[0,-0.5,0],0.3,0,this] exec ""fireEffect.sqs""; this setdammage 1";
+			init="[[0,-0.5,0],0.3,0,this] exec ""fireEffect.sqs""; this setDammage 1";
 		};
 		class Item6
 		{
@@ -1437,7 +1437,7 @@ class Mission
 			side="EMPTY";
 			vehicle="FlagCarrier";
 			skill=0.600000;
-			init="this setflagtexture ""\flags\ussr.jpg""";
+			init="this setFlagTexture ""\flags\ussr.jpg""";
 		};
 		class Item8
 		{
@@ -1805,7 +1805,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="transportGetIn";
-			expActiv="""_x assignascargo auto"" foreach units group player; ""_x setunitpos """"up"""""" foreach units group player";
+			expActiv="""_x assignAsCargo auto"" forEach units group player; ""_x setunitpos """"up"""""" forEach units group player";
 			class Effects
 			{
 			};
@@ -1892,7 +1892,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			expCond="clearArea";
-			expActiv="""_x setdammage 1"" foreach thislist";
+			expActiv="""_x setDammage 1"" forEach thislist";
 			class Effects
 			{
 			};
@@ -1922,7 +1922,7 @@ class Mission
 			b=280.000000;
 			activationBy="WEST";
 			age="UNKNOWN";
-			expActiv="""_x setunitpos """"up"""""" foreach thislist";
+			expActiv="""_x setunitpos """"up"""""" forEach thislist";
 			class Effects
 			{
 			};
@@ -2034,7 +2034,7 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="Rashiv";
-					init="this setidentity ""Rashiv""; this setbehaviour ""safe""";
+					init="this setIdentity ""Rashiv""; this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -2072,7 +2072,7 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="Dostoevsky";
-					init="this setidentity ""dostoevsky""; this setbehaviour ""safe""";
+					init="this setIdentity ""dostoevsky""; this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -2092,7 +2092,7 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="Lemontov";
-					init="removeallweapons this; this addweapon ""svddragunov""; this setidentity ""lemontov""; this setbehaviour ""safe""";
+					init="removeAllWeapons this; this addWeapon ""svddragunov""; this setIdentity ""lemontov""; this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -2111,7 +2111,7 @@ class Intro
 					vehicle="SoldierEB";
 					leader=1;
 					skill=0.600000;
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -2219,7 +2219,7 @@ class Intro
 			side="EMPTY";
 			vehicle="FlagCarrier";
 			skill=0.600000;
-			init="this setflagtexture ""\flags\ussr.jpg""";
+			init="this setFlagTexture ""\flags\ussr.jpg""";
 		};
 		class Item6
 		{

@@ -1,6 +1,6 @@
-setacctime 1
+setAccTime 1
 
-titlecut ["","black out",2]
+titleCut ["","BLACK OUT",2]
 
 cinema=true
 
@@ -9,19 +9,19 @@ cinema=true
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-0 fademusic 1
-playmusic ["RTrack10",8]
+0 fadeMusic 1
+playMusic ["RTrack10",8]
 
-uazg setpos getmarkerpos "chotain_uazg_clear"
-uazg setdir 180
+uazg setPos getMarkerPos "chotain_uazg_clear"
+uazg setDir 180
 
-? not (aP in uazg) : aP moveindriver uazg ;
+? not (aP in uazg) : aP moveInDriver uazg ;
 
 ~0.5
 
-setacctime 1
+setAccTime 1
 
-titlecut ["","black in",2]
+titleCut ["","BLACK IN",2]
 
 ;=== 16:13:49
 _camera camSetTarget [61494.18,89423.02,-8793.70]
@@ -48,7 +48,7 @@ _camera camSetTarget [69463.20,-71735.20,7858.09]
 _camera camSetPos [7106.17,6057.25,1.51]
 _camera camSetFOV 0.700
 _camera camCommit 4
-4 fademusic 0.4
+4 fadeMusic 0.4
 @camCommitted _camera
 ;=== 16:15:44
 _camera camSetTarget [83344.77,70741.97,-1793.51]
@@ -57,7 +57,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 am_off say "00v29"
-am_off setmimic "Angry"
+am_off setMimic "Angry"
 ;=== 16:15:52
 _camera camSetTarget [62963.64,88978.79,-1793.82]
 _camera camSetPos [7111.29,6051.72,1.18]
@@ -78,7 +78,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 am_gunner say "00v30"
-am_gunner setmimic "Angry"
+am_gunner setMimic "Angry"
 ~3.3
 ;=== 16:18:42
 _camera camSetTarget [-49382.98,87823.39,-10905.10]
@@ -87,7 +87,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 am_soldier say "00v31"
-am_soldier setmimic "Angry"
+am_soldier setMimic "Angry"
 ;=== 16:18:49
 _camera camSetTarget [-10136.15,103933.20,-10905.50]
 _camera camSetPos [7113.90,6049.89,1.25]
@@ -113,10 +113,10 @@ _camera camSetFOV 0.649
 _camera camCommit 0
 @camCommitted _camera
 am_off say "00v32"
-am_off setmimic "agresive"
+am_off setMimic "agresive"
 ~4
-am_pointer dowatch [7086.41,6029.89,1.37]
-am_pointer setdir 205
+am_pointer doWatch [7086.41,6029.89,1.37]
+am_pointer setDir 205
 ;=== 16:22:05
 _camera camSetTarget [74140.88,80212.80,109.63]
 _camera camSetPos [7084.91,6027.22,1.18]
@@ -129,7 +129,7 @@ _camera camSetPos [7085.59,6026.77,1.18]
 _camera camSetFOV 0.700
 _camera camCommit 4
 ~0.5
-am_pointer switchmove "FxShow3"
+am_pointer switchMove "FxShow3"
 ~2
 firefighterGo=true
 @camCommitted _camera
@@ -141,9 +141,9 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 am_firefighter stop true
-am_firefighter setpos getmarkerpos "firefighter_pos"
-am_firefighter setdir 65
-am_firefighter playmove "Medic"
+am_firefighter setPos getMarkerPos "firefighter_pos"
+am_firefighter setDir 65
+am_firefighter playMove "Medic"
 ~3.5
 firefighterGo2=true
 ~0.5
@@ -174,25 +174,25 @@ _camera camCommit 10
 [[0,0,8],0.5,0,church5] exec "fireEffect.sqs"
 @camCommitted _camera
 ~2
-uazg setpos getmarkerpos "chotain_uazg"
-uazg setdir 180
+uazg setPos getMarkerPos "chotain_uazg"
+uazg setDir 180
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
-aP setbehaviour "Aware"
+aP setBehaviour "AWARE"
 
 cinema=false
 
 ~1
 
-savegame
+saveGame
 
 ~1
 
-0 fademusic 0.2
-playmusic "Track10"
-7 fademusic 0.8
+0 fadeMusic 0.2
+playMusic "Track10"
+7 fadeMusic 0.8
 
 aP say "00v33"
 

@@ -1,17 +1,17 @@
-titlecut["","black in",3]
+titleCut["","BLACK IN",3]
 
-Syomin setmimic "normal"
-Ablomov setmimic "angry"
-Koltsov setmimic "angry"
+Syomin setMimic "normal"
+Ablomov setMimic "angry"
+Koltsov setMimic "angry"
 
 
-Koltsov switchmove "FxStandAtt"
-Ablomov switchmove "FxStandAtt"
+Koltsov switchMove "FxStandAtt"
+Ablomov switchMove "FxStandAtt"
 
-Ablomov dowatch [4859.97,11876.01,1.63]
-Koltsov dowatch [4859.97,11876.01,1.63]
+Ablomov doWatch [4859.97,11876.01,1.63]
+Koltsov doWatch [4859.97,11876.01,1.63]
 
-playmusic "Track1"
+playMusic "Track1"
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -31,9 +31,9 @@ _camera camSetFOV 0.700
 _camera camCommit 5
 
 ~4
-1 fademusic 0.3
+1 fadeMusic 0.3
 @camCommitted _camera
-titlecut["","black in", 0.5]
+titleCut["","BLACK IN", 0.5]
 
 ;=== 20:25:35
 _camera camSetTarget [-74856.77,71603.79,-8785.93]
@@ -124,7 +124,7 @@ _camera camSetPos [4860.53,11875.72,1.59]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Syomin setmimic "angry"
+Syomin setMimic "angry"
 ~6
 Syomin say "40av03"
 ~1
@@ -147,7 +147,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~2
-Syomin switchmove "Fxshow3"
+Syomin switchMove "Fxshow3"
 Syomin say "40av04"
 ~3
 ;=== 20:32:11
@@ -156,8 +156,8 @@ _camera camSetPos [4867.08,11875.50,1.61]
 _camera camSetFOV 0.700
 _camera camCommit 5
 ~4
-titlecut["","black out",1]
-1 fademusic 0
+titleCut["","BLACK OUT",1]
+1 fadeMusic 0
 @camCommitted _camera
 end=true
 player cameraEffect ["terminate","back"]

@@ -2,46 +2,46 @@
 _VolkovPos2=[8238.72,3076.36,1.70]
 _guysWalkingSteps=7
 
-Volkov dowatch [8238.24,3067.51,1.12]
-Volkov setspeedmode "limited"
-Volkov move getmarkerpos "Volkov"
+Volkov doWatch [8238.24,3067.51,1.12]
+Volkov setSpeedMode "limited"
+Volkov move getMarkerPos "Volkov"
 ~1
-Kaplinsky dowatch _VolkovPos2
-LemontovVolkov dowatch _VolkovPos2
-Syomin dowatch _VolkovPos2
-Chernikov dowatch _VolkovPos2
-Kukushkin dowatch _VolkovPos2
-Zubarev dowatch _VolkovPos2
+Kaplinsky doWatch _VolkovPos2
+LemontovVolkov doWatch _VolkovPos2
+Syomin doWatch _VolkovPos2
+Chernikov doWatch _VolkovPos2
+Kukushkin doWatch _VolkovPos2
+Zubarev doWatch _VolkovPos2
 ~2.5
-Syomin dowatch [8235.53,3080.53,1.62]
+Syomin doWatch [8235.53,3080.53,1.62]
 ~0.5
-Kaplinsky dowatch [8235.98,3081.47,1.62]
+Kaplinsky doWatch [8235.98,3081.47,1.62]
 ~1
-Kukushkin dowatch [8241.10,3079.99,1.71]
+Kukushkin doWatch [8241.10,3079.99,1.71]
 ~1
-Kaplinsky switchmove "fxtohand"
-Syomin playmove "Effectstandtalk"
-Chernikov dowatch [8266.50,3077.35,1.85]
+Kaplinsky switchMove "fxtohand"
+Syomin playMove "Effectstandtalk"
+Chernikov doWatch [8266.50,3077.35,1.85]
 ~0.5
-Chernikov setspeedmode "limited"
-Chernikov move getmarkerpos "Chernikov"
+Chernikov setSpeedMode "limited"
+Chernikov move getMarkerPos "Chernikov"
 ~1
-Kukushkin dowatch [8243.80,3081.34,1.71]
+Kukushkin doWatch [8243.80,3081.34,1.71]
 ~1.5
-Kukushkin dowatch [8235.01,3079.41,1.84]
+Kukushkin doWatch [8235.01,3079.41,1.84]
 ~1.8
 _i = 0
 #loop
-Kukushkin playmove "StandWalkF"
+Kukushkin playMove "StandWalkF"
 ~1.4
 _i = _i + 1
 ? _i < 2 : goto "loop" ;
 ~1
-Kukushkin dowatch [8235.98,3081.47,1.62]
+Kukushkin doWatch [8235.98,3081.47,1.62]
 ~1.5
-Kukushkin playmove "EffectStand"
+Kukushkin playMove "EffectStand"
 
-Volkov dowatch [8240.47,3069.32,1.27]
+Volkov doWatch [8240.47,3069.32,1.27]
 
 
 exit

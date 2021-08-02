@@ -24,7 +24,7 @@ _camera camCommit 0
 @camCommitted _camera
 Kuznetsov say "f01v310"
 ~4
-Kuznetsov setmimic "smile"
+Kuznetsov setMimic "smile"
 ~6
 ;=== 17:15:05
 _camera camSetTarget [64887.94,94280.57,-13161.13]
@@ -49,22 +49,22 @@ goto "exitDialogue"
 
 #exitDialogue
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 
-LemontovDouble dowatch objNull
-LemontovDouble setdir 0
-LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
-Kuznetsov setmimic "normal"
-Kuznetsov dowatch objNull
+LemontovDouble doWatch objNull
+LemontovDouble setDir 0
+LemontovDouble setPos getMarkerPos "PlayerDoubleAway"
+Kuznetsov setMimic "normal"
+Kuznetsov doWatch objNull
 
-aP setpos getmarkerpos "CinemaKuznetsovPlayer"
-aP setdir 120
+aP setPos getMarkerPos "CinemaKuznetsovPlayer"
+aP setDir 120
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
-titletext ["","plain"]
+titleText ["","PLAIN"]
 
 metKuznetsov=true
 cinema=false

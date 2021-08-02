@@ -2,25 +2,25 @@
 _interval = 11
 choiceMusic=true
 
-0 fademusic 0
+0 fadeMusic 0
 ~0.1
 #repeat
-1 fademusic 1
-playmusic ["RTrack9", 49.5]
+1 fadeMusic 1
+playMusic ["RTrack9", 49.5]
 
 _i = 0
 #waiting
 ~0.5
 ? not choiceMusic : goto "ex"
 ? _i < _interval : _i = _i + 0.5; goto "waiting" ;
-1 fademusic 0
+1 fadeMusic 0
 ~1
 goto "repeat"
 
 #ex
 
-0.5 fademusic 0
+0.5 fadeMusic 0
 ~0.5
-playmusic ""
+playMusic ""
 
 exit

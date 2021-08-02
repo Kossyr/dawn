@@ -1,10 +1,10 @@
 
-titlecut["","black in",1]
+titleCut["","BLACK IN",1]
 
-"10" objstatus "done"
-aP addrating 1000
+"10" objStatus "DONE"
+aP addRating 1000
 
-setacctime 1
+setAccTime 1
 
 cinema=true
 
@@ -13,34 +13,34 @@ _camera cameraeffect ["internal","back"]
 
 ? (aP == vehicle aP) : goto "ceemetery_cinema" ;
 
-vehicle aP setpos getmarkerpos "player_vehicle_away"
-vehicle aP setdir 0
+vehicle aP setPos getMarkerPos "player_vehicle_away"
+vehicle aP setDir 0
 
 ~1
 
-vehicle aP setpos getmarkerpos "cemetery_vehicle"
-vehicle aP setdir 95
+vehicle aP setPos getMarkerPos "cemetery_vehicle"
+vehicle aP setDir 95
 
 aP action ["EJECT"]
-UnassignVehicle aP
+unassignVehicle aP
 
 #ceemetery_cinema
 
-aP setpos getmarkerpos "player_away"
+aP setPos getMarkerPos "player_away"
 aP action ["WEAPONONBACK"]
 
 aa = aP saveStatus "10Rashiv"
 aa = RashivCemetery loadStatus "10Rashiv"
 
 AstierCharges stop true
-AstierCharges setpos getmarkerpos "astier_charges"
-AstierCemetery setpos getmarkerpos "astier_cemetery";
-RashivCemetery setpos getmarkerpos "rashiv_cemetery";
-RashivCemetery dowatch [9866.93,1582.47,1.62]
-AstierCemetery dowatch [9864.91,1582.48,1.62]
+AstierCharges setPos getMarkerPos "astier_charges"
+AstierCemetery setPos getMarkerPos "astier_cemetery";
+RashivCemetery setPos getMarkerPos "rashiv_cemetery";
+RashivCemetery doWatch [9866.93,1582.47,1.62]
+AstierCemetery doWatch [9864.91,1582.48,1.62]
 
-AstierCemetery setmimic "Normal"
-RashivCemetery setmimic "Normal"
+AstierCemetery setMimic "Normal"
+RashivCemetery setMimic "Normal"
 
 ;=== 14:17:32
 _camera camSetTarget [109418.04,956.59,-9421.82]
@@ -64,7 +64,7 @@ _camera camSetFOV 0.700
 _camera camCommit 5
 @camCommitted _camera
 AstierCemetery say "11v98"
-AstierCemetery setmimic "Smile"
+AstierCemetery setMimic "Smile"
 ;=== 14:21:16
 _camera camSetTarget [108665.82,-11459.41,-8267.82]
 _camera camSetPos [9866.17,1582.54,1.59]
@@ -72,7 +72,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~3
-AstierCemetery setmimic "Sad"
+AstierCemetery setMimic "Sad"
 ~3.2
 AstierCemetery say "11v99"
 ~3
@@ -83,7 +83,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 RashivCemetery say "11v100"
-RashivCemetery setmimic "surprised"
+RashivCemetery setMimic "surprised"
 ~1
 ;=== 14:26:14
 _camera camSetTarget [103772.91,34937.73,-8268.23]
@@ -92,7 +92,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 AstierCemetery say "11v101"
-AstierCemetery setmimic "Normal"
+AstierCemetery setMimic "Normal"
 ~5.5
 ;=== 14:26:59
 _camera camSetTarget [-89334.09,8301.49,-10676.36]
@@ -101,7 +101,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 RashivCemetery say "11v102"
-RashivCemetery setmimic "Normal"
+RashivCemetery setMimic "Normal"
 ;=== 14:27:10
 _camera camSetTarget [-88367.69,-16911.04,-2841.93]
 _camera camSetPos [9865.92,1582.75,1.56]
@@ -123,7 +123,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 RashivCemetery say "11v104"
-RashivCemetery setmimic "Angry"
+RashivCemetery setMimic "Angry"
 ~1.2
 ;=== 14:28:57
 _camera camSetTarget [109811.35,3207.34,-2882.45]
@@ -132,26 +132,26 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 AstierCemetery say "11v105"
-AstierCemetery setmimic "Angry"
+AstierCemetery setMimic "Angry"
 ~3
-deletevehicle AstierCemetery
-deletevehicle RashivCemetery
-aP setpos getmarkerpos "rashiv_cemetery"
-aP setdir 90
+deleteVehicle AstierCemetery
+deleteVehicle RashivCemetery
+aP setPos getMarkerPos "rashiv_cemetery"
+aP setDir 90
 astierChargesFree=true
-AstierCharges setpos getmarkerpos "astier_cemetery"
-removeallweapons AstierCharges
-AstierCharges addweapon "M16"
-AstierCharges addweapon "PipeBomb"
-AstierCharges addweapon "PipeBomb"
-AstierCharges addweapon "PipeBomb"
+AstierCharges setPos getMarkerPos "astier_cemetery"
+removeAllWeapons AstierCharges
+AstierCharges addWeapon "M16"
+AstierCharges addWeapon "PipeBomb"
+AstierCharges addWeapon "PipeBomb"
+AstierCharges addWeapon "PipeBomb"
 
-"11" objstatus "active"
+"11" objStatus "ACTIVE"
 
-boat1 setfuel 1
-boat2 setfuel 1
-boat3 setfuel 1
-boat4 setfuel 1
+boat1 setFuel 1
+boat2 setFuel 1
+boat3 setFuel 1
+boat4 setFuel 1
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
@@ -161,10 +161,10 @@ cinema=false
 
 ~1
 AstierCharges stop false
-AstierCharges setbehaviour "aware"
+AstierCharges setBehaviour "AWARE"
 aP action ["WEAPONINHAND"]
 ~2
 
-savegame
+saveGame
 
 exit

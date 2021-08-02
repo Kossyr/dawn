@@ -1,10 +1,10 @@
-setacctime 1
+setAccTime 1
 
-"4" objstatus "done"
-aP addrating 1000
+"4" objStatus "DONE"
+aP addRating 1000
 
 
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 ~0.5
 
 cinema=true
@@ -14,39 +14,39 @@ _camera cameraeffect ["internal","back"]
 
 ? (aP == vehicle aP) : goto "cinema_logistics" ;
 
-vehicle aP setpos getmarkerpos "CinemaLogisticsVehicle"
-vehicle aP setdir 0
+vehicle aP setPos getMarkerPos "CinemaLogisticsVehicle"
+vehicle aP setDir 0
 
 ~1
 
-vehicle aP setpos getmarkerpos "CinemaLogisticsVehicle"
-vehicle aP setdir 0
+vehicle aP setPos getMarkerPos "CinemaLogisticsVehicle"
+vehicle aP setDir 0
 
 aP action ["EJECT"]
-UnassignVehicle aP
+unassignVehicle aP
 
 #cinema_logistics
 
 aP action ["WEAPONONBACK"]
 
-aP setpos getmarkerpos "Cinema"
-AblomovCinemaLogistics setpos getmarkerpos "CinemaLogistics";
+aP setPos getMarkerPos "Cinema"
+AblomovCinemaLogistics setPos getMarkerPos "CinemaLogistics";
 
 aa = aP saveStatus "35Ablomov"
 aa = AblomovCinemaLogistics loadStatus "35Ablomov"
 
 
-AblomovCinemaLogistics dowatch [4880.60,11878.38,1.64]
-logistics dowatch [4879.00,11877.40,1.64]
+AblomovCinemaLogistics doWatch [4880.60,11878.38,1.64]
+logistics doWatch [4879.00,11877.40,1.64]
 
-AblomovCinemaLogistics setmimic "normal"
-logistics setmimic "normal"
+AblomovCinemaLogistics setMimic "normal"
+logistics setMimic "normal"
 
 ~0.5
 
-setacctime 1
+setAccTime 1
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 ;=== 11:49:12
 _camera camSetTarget [14682.20,111392.57,26.33]
@@ -62,7 +62,7 @@ _camera camCommit 5.5
 AblomovCinemaLogistics say "35v27"
 @camCommitted _camera
 logistics say "35v28"
-logistics setmimic "surprised"
+logistics setMimic "surprised"
 ;=== 11:49:36
 _camera camSetTarget [80832.62,76925.79,26.39]
 _camera camSetPos [4880.12,11877.98,1.54]
@@ -70,7 +70,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~2
-logistics setmimic "normal"
+logistics setMimic "normal"
 ~4.5
 AblomovCinemaLogistics say "35v29"
 ;=== 11:53:22
@@ -87,10 +87,10 @@ _camera camSetPos [4879.85,11877.75,1.50]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-logistics switchmove "FXCivilArmsAkimboR"
+logistics switchMove "FXCivilArmsAkimboR"
 ~2.5
 AblomovCinemaLogistics say "35v31"
-AblomovCinemaLogistics setmimic "Angry"
+AblomovCinemaLogistics setMimic "Angry"
 ;=== 11:54:41
 _camera camSetTarget [-74005.34,73263.90,-2937.31]
 _camera camSetPos [4879.89,11877.07,1.50]
@@ -106,7 +106,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~10.5
-AblomovCinemaLogistics setmimic "normal"
+AblomovCinemaLogistics setMimic "normal"
 AblomovCinemaLogistics say "35v33"
 ;=== 11:55:57
 _camera camSetTarget [-85270.98,-31390.50,-838.24]
@@ -116,7 +116,7 @@ _camera camCommit 0
 @camCommitted _camera
 ~2.5
 logistics say "35v34"
-logistics setmimic "smile"
+logistics setMimic "smile"
 ;=== 11:56:22
 _camera camSetTarget [19306.01,110828.19,-838.21]
 _camera camSetPos [4880.42,11877.92,1.56]
@@ -133,7 +133,7 @@ _camera camCommit 0
 @camCommitted _camera
 ~3.5
 logistics say "35v36"
-logistics setmimic "surprised"
+logistics setMimic "surprised"
 ;=== 11:57:39
 _camera camSetTarget [87640.83,67827.73,-4477.14]
 _camera camSetPos [4880.02,11877.96,1.50]
@@ -141,11 +141,11 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~2
-logistics setmimic "normal"
+logistics setMimic "normal"
 ~5.5
-deletevehicle AblomovCinemaLogistics
-aP setpos getmarkerpos "CinemaLogistics"
-aP setdir 60
+deleteVehicle AblomovCinemaLogistics
+aP setPos getMarkerPos "CinemaLogistics"
+aP setDir 60
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
@@ -153,8 +153,8 @@ camDestroy _camera
 cinema=false
 
 
-"5" objstatus "active"
-"Chapel" setmarkertype "Marker"
+"5" objStatus "ACTIVE"
+"Chapel" setMarkerType "Marker"
 
 logisticsCheck=true
 

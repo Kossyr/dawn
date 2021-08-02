@@ -1,18 +1,18 @@
-titlecut ["","black in",3]
+titleCut ["","BLACK IN",3]
 
 baza = [East,"HQ"]
 
 Kaplinsky stop true
-"_x stop true" foreach units reinforcements
+"_x stop true" forEach units reinforcements
 
-"_x assignascargo transportUaz" foreach units group player
-"_x assignascargo transportUral" foreach units reinforcements
+"_x assignAsCargo transportUaz" forEach units group player
+"_x assignAsCargo transportUral" forEach units reinforcements
 
 
-Crate addweaponcargo ["RPGLauncher",1]
-Crate addmagazinecargo ["RPGLauncher",5]
+Crate addWeaponCargo ["RPGLauncher",1]
+Crate addMagazineCargo ["RPGLauncher",5]
 
-enableradio false
+enableRadio false
 
 ambushStart=false
 boardUaz=false
@@ -23,9 +23,9 @@ retreat2=false
 retreat3=false
 ambushPosition=false
 
-Lemontov dowatch [7417.54,4792.34,1.48]
-Shaposhnikov dowatch [7420.86,4790.64,1.48]
-Kaplinsky dowatch [7420.86,4790.64,1.48]
+Lemontov doWatch [7417.54,4792.34,1.48]
+Shaposhnikov doWatch [7420.86,4790.64,1.48]
+Kaplinsky doWatch [7420.86,4790.64,1.48]
 
 
 ~1.5
@@ -34,22 +34,22 @@ Kaplinsky say "14v01"
 ~6.5
 Lemontov say "14v02"
 ~2
-Lemontov dowatch [7420.51,4792.57,1.48]
+Lemontov doWatch [7420.51,4792.57,1.48]
 ~8.5
 Shaposhnikov say "14v03"
 ~1
-Shaposhnikov dowatch objnull
+Shaposhnikov doWatch objNull
 shaposhnikovGo=true
 ~1.5
-Lemontov dowatch [7415.40,4789.79,1.30]
+Lemontov doWatch [7415.40,4789.79,1.30]
 ~0.5
 Lemontov say "14v04"
 ~0.3
 transportGo=true
 Kaplinsky stop false
-"_x stop false" foreach units reinforcements
+"_x stop false" forEach units reinforcements
 
-Kaplinsky dowatch objnull
-Lemontov dowatch objnull
+Kaplinsky doWatch objNull
+Lemontov doWatch objNull
 
 exit

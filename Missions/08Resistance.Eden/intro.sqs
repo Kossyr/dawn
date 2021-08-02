@@ -1,15 +1,15 @@
-titlecut ["","black in",3]
+titleCut ["","BLACK IN",3]
 
-Calvet setbehaviour "combat"
+Calvet setBehaviour "COMBAT"
 Calvet setunitpos "up"
-part setbehaviour "combat"
+part setBehaviour "COMBAT"
 part setunitpos "up"
 
-Rashiv setmimic "Sad"
+Rashiv setMimic "Sad"
 
 aa = Rashiv loadStatus "07Rashiv"
 
-playmusic "Track16"
+playMusic "Track16"
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -53,15 +53,15 @@ _camera camSetPos [6663.30,4472.93,1.09]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Calvet setpos getmarkerpos "partisan_pos"
-part setpos getmarkerpos "partisan_pos2"
-Calvet dowatch [6662.75,4471.32,1.50]
-part dowatch [6662.75,4471.32,1.50]
+Calvet setPos getMarkerPos "partisan_pos"
+part setPos getMarkerPos "partisan_pos2"
+Calvet doWatch [6662.75,4471.32,1.50]
+part doWatch [6662.75,4471.32,1.50]
 ~3.9
-0.1 fademusic 0.1
+0.1 fadeMusic 0.1
 ~0.1
-playmusic ["RTrack1b",0.7]
-0 fademusic 0.4
+playMusic ["RTrack1b",0.7]
+0 fadeMusic 0.4
 ;=== 17:43:36
 _camera camSetTarget [106618.15,2650.30,2567.49]
 _camera camSetPos [6667.60,4471.76,1.22]
@@ -69,9 +69,9 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-part setmimic "Angry"
-Calvet setmimic "Angry"
-Rashiv setmimic "Surprised"
+part setMimic "Angry"
+Calvet setMimic "Angry"
+Rashiv setMimic "Surprised"
 Calvet say "08v01"
 ~1.5
 ;=== 17:46:58
@@ -113,24 +113,24 @@ _camera camSetPos [6660.78,4470.73,1.00]
 _camera camSetFOV 0.700
 _camera camCommit 4
 @camCommitted _camera
-4 fademusic 0
+4 fadeMusic 0
 ~1.5
-Rashiv playmove "CombatToTakeFlag"
+Rashiv playMove "CombatToTakeFlag"
 ~1
-removeallweapons Rashiv
-Rashiv playmove "TakeFlagToCombat"
+removeAllWeapons Rashiv
+Rashiv playMove "TakeFlagToCombat"
 ~2
 Calvet say "08v03"
 ~2.5
-playmusic "RTrack1a"
-0 fademusic 0.2
+playMusic "RTrack1a"
+0 fadeMusic 0.2
 ;=== 18:04:04
 _camera camSetTarget [87908.59,57303.35,24684.45]
 _camera camSetPos [6669.64,4472.33,1.10]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Rashiv switchmove "FxStandSur"
+Rashiv switchMove "FxStandSur"
 ~5
 ;=== 18:04:52
 _camera camSetTarget [-56798.64,-70748.51,-17685.29]
@@ -139,25 +139,25 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~5
-2 fademusic 1
+2 fadeMusic 1
 ;=== 18:05:17
 _camera camSetTarget [-79068.92,54609.47,-11588.62]
 _camera camSetPos [6671.84,4475.14,32.89]
 _camera camSetFOV 0.700
 _camera camCommit 8
 ~6
-4 fademusic 0
-titlecut["","black out",2]
+4 fadeMusic 0
+titleCut["","BLACK OUT",2]
 @camCommitted _camera
 ~4
-titlecut ["","black in",3]
+titleCut ["","BLACK IN",3]
 
-playmusic ["RTrack9",11]
-0 fademusic 1
+playMusic ["RTrack9",11]
+0 fadeMusic 1
 
-Calvet2 dowatch [6170.34,4989.03,1.21]
-Poincare dowatch [6170.34,4989.03,1.21]
-res2 dowatch [6170.34,4989.03,1.21]
+Calvet2 doWatch [6170.34,4989.03,1.21]
+Poincare doWatch [6170.34,4989.03,1.21]
+res2 doWatch [6170.34,4989.03,1.21]
 
 
 rashivGo=true
@@ -187,7 +187,7 @@ _camera camSetPos [6164.95,4999.46,1.71]
 _camera camSetFOV 0.700
 _camera camCommit 5
 ~1.5
-res3 dowatch [6170.34,4989.03,1.21]
+res3 doWatch [6170.34,4989.03,1.21]
 @camCommitted _camera
 ;=== 19:46:05
 _camera camSetTarget [-15394.55,102446.09,-6005.35]
@@ -202,23 +202,23 @@ _camera camSetFOV 0.700
 _camera camCommit 5
 @camCommitted _camera
 ~1
-Poincare dowatch [6167.68,4991.95,1.73]
-res1 dowatch [6167.68,4991.95,1.73]
-Calvet2 dowatch [6167.68,4991.95,1.73]
-res2 dowatch [6167.68,4991.95,1.73]
-res3 dowatch [6167.68,4991.95,1.73]
-Rashiv2 dowatch [6166.18,4993.77,1.63]
+Poincare doWatch [6167.68,4991.95,1.73]
+res1 doWatch [6167.68,4991.95,1.73]
+Calvet2 doWatch [6167.68,4991.95,1.73]
+res2 doWatch [6167.68,4991.95,1.73]
+res3 doWatch [6167.68,4991.95,1.73]
+Rashiv2 doWatch [6166.18,4993.77,1.63]
 
-res3 setpos getmarkerpos "res3_pos"
-res1 setpos getmarkerpos "follower_pos"
-Rashiv2 setpos getmarkerpos "rashiv_pos"
+res3 setPos getMarkerPos "res3_pos"
+res1 setPos getMarkerPos "follower_pos"
+Rashiv2 setPos getMarkerPos "rashiv_pos"
 
-res3 setdir 195
-Rashiv2 setdir 320
-res1 setdir 260
+res3 setDir 195
+Rashiv2 setDir 320
+res1 setDir 260
 
-Poincare setmimic "Normal"
-Rashiv2 setmimic "Sad"
+Poincare setMimic "Normal"
+Rashiv2 setMimic "Sad"
 
 ;=== 19:47:30
 _camera camSetTarget [-88742.81,35444.60,-7974.23]
@@ -231,7 +231,7 @@ _camera camSetTarget [-74022.84,64631.93,-3501.79]
 _camera camSetPos [6166.99,4993.14,1.40]
 _camera camSetFOV 0.700
 _camera camCommit 3
-3 fademusic 0.3
+3 fadeMusic 0.3
 @camCommitted _camera
 Poincare say "08v04"
 ~2
@@ -243,7 +243,7 @@ _camera camCommit 0
 @camCommitted _camera
 Calvet2 say "08v05"
 ~0.5
-Calvet2 dowatch [6166.02,4993.89,1.60]
+Calvet2 doWatch [6166.02,4993.89,1.60]
 ~1.5
 ;=== 19:49:49
 _camera camSetTarget [-46095.82,-79996.21,-6637.38]
@@ -277,17 +277,17 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Poincare say "08v09"
-Poincare dowatch [6165.09,4990.00,1.50]
+Poincare doWatch [6165.09,4990.00,1.50]
 ~3.5
 Calvet2 say "08v10"
-Calvet2 setmimic "Surprised"
+Calvet2 setMimic "Surprised"
 ~1.5
-Calvet2 dowatch [6167.68,4991.95,1.73]
+Calvet2 doWatch [6167.68,4991.95,1.73]
 ~3.2
 Poincare say "08v11"
-Poincare setmimic "Angry"
+Poincare setMimic "Angry"
 ~2
-Poincare dowatch [6167.68,4991.95,1.73]
+Poincare doWatch [6167.68,4991.95,1.73]
 ;=== 19:54:29
 _camera camSetTarget [-59993.67,79516.90,8385.54]
 _camera camSetPos [6166.59,4993.23,1.42]
@@ -342,7 +342,7 @@ _camera camSetPos [6162.97,4993.76,1.23]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Rashiv2 switchmove "FXCivilLookaround2"
+Rashiv2 switchMove "FXCivilLookaround2"
 ~0.8
 Rashiv2 say "08v15"
 ;=== 19:58:02
@@ -352,10 +352,10 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~2
-Calvet2 setmimic "surprised"
-res1 setmimic "surprised"
-res2 setmimic "surprised"
-res3 setmimic "surprised"
+Calvet2 setMimic "surprised"
+res1 setMimic "surprised"
+res2 setMimic "surprised"
+res3 setMimic "surprised"
 
 ;=== 19:58:29
 _camera camSetTarget [-15949.99,-92221.89,-7618.58]
@@ -370,7 +370,7 @@ _camera camSetFOV 0.700
 _camera camCommit 4
 @camCommitted _camera
 ~1.5
-Calvet2 dowatch [6166.02,4993.89,1.60]
+Calvet2 doWatch [6166.02,4993.89,1.60]
 Calvet2 say "08v16"
 ;=== 20:05:54
 _camera camSetTarget [-25466.42,-89842.74,-2353.88]
@@ -386,12 +386,12 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Poincare say "08v17"
-Poincare setmimic "Normal"
-Calvet2 dowatch [6167.68,4991.95,1.73]
-res1 setmimic "Normal"
-res2 setmimic "Normal"
-res3 setmimic "Normal"
-Calvet2 setmimic "Normal"
+Poincare setMimic "Normal"
+Calvet2 doWatch [6167.68,4991.95,1.73]
+res1 setMimic "Normal"
+res2 setMimic "Normal"
+res3 setMimic "Normal"
+Calvet2 setMimic "Normal"
 ~3
 ;=== 20:06:47
 _camera camSetTarget [-93326.35,-3581.33,-5128.49]
@@ -423,12 +423,12 @@ Calvet2 say "08v19a"
 res1 say "08v19b"
 res3 say "08v19c"
 res2 say "08v20"
-res2 switchmove "FXCivilFoldOnesArms"
-res3 switchmove "FXStandhip"
-Calve2 setmimic "Smile"
-res1 setmimic "Smile"
-res2 setmimic "Smile"
-res3 setmimic "Smile"
+res2 switchMove "FXCivilFoldOnesArms"
+res3 switchMove "FXStandhip"
+Calve2 setMimic "Smile"
+res1 setMimic "Smile"
+res2 setMimic "Smile"
+res3 setMimic "Smile"
 ~2.3
 ;=== 20:28:19
 _camera camSetTarget [-62575.64,77129.32,-8330.92]
@@ -436,11 +436,11 @@ _camera camSetPos [6166.35,4989.54,1.33]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Calvet2 setmimic "Normal"
+Calvet2 setMimic "Normal"
 ~1.5
-res1 setmimic "Normal"
-res2 setmimic "Normal"
-res3 setmimic "Normal"
+res1 setMimic "Normal"
+res2 setMimic "Normal"
+res3 setMimic "Normal"
 ;=== 20:28:56
 _camera camSetTarget [-43991.38,91094.59,-8330.65]
 _camera camSetPos [6166.59,4992.93,1.47]
@@ -453,8 +453,8 @@ _camera camSetPos [6166.75,4993.36,1.49]
 _camera camSetFOV 0.700
 _camera camCommit 14.5
 Poincare say "08v21"
-res2 switchmove ""
-res3 switchmove ""
+res2 switchMove ""
+res3 switchMove ""
 @camCommitted _camera
 ;=== 20:29:34
 _camera camSetTarget [94551.93,-41505.25,-4977.78]
@@ -475,15 +475,15 @@ _camera camSetPos [6166.50,4992.99,1.47]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Poincare setmimic "Sad"
+Poincare setMimic "Sad"
 Poincare say "08v23"
-Poincare switchmove "FXCivilFoldOnesArms"
+Poincare switchMove "FXCivilFoldOnesArms"
 ~3
-Poincare setmimic "Surprised"
+Poincare setMimic "Surprised"
 ~5.5
 Poincare say "08v24"
-Poincare setmimic "Normal"
-Poincare switchmove "FXCivilArmsAkimboR"
+Poincare setMimic "Normal"
+Poincare switchMove "FXCivilArmsAkimboR"
 ~3
 ;=== 20:37:36
 _camera camSetTarget [-11685.89,-93194.77,-6244.25]
@@ -497,7 +497,7 @@ _camera camSetPos [6168.18,4994.68,1.55]
 _camera camSetFOV 0.700
 _camera camCommit 6.5
 @camCommitted _camera
-Rashiv2 setmimic "surprised"
+Rashiv2 setMimic "surprised"
 Rashiv2 say "08v25"
 ;=== 20:38:24
 _camera camSetTarget [30871.44,-91904.79,804.49]
@@ -506,7 +506,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~3
-Rashiv2 setmimic "Normal"
+Rashiv2 setMimic "Normal"
 ~4
 ;=== 20:38:52
 _camera camSetTarget [-57680.05,81938.09,-1664.78]
@@ -515,7 +515,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Poincare say "08v26"
-Poincare switchmove "FXCivilHandMouth"
+Poincare switchMove "FXCivilHandMouth"
 ~6.5
 ;=== 20:42:26
 _camera camSetTarget [67923.05,-73639.23,1868.70]
@@ -523,10 +523,10 @@ _camera camSetPos [6167.13,4992.79,1.55]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Rashiv2 setmimic "Sad"
+Rashiv2 setMimic "Sad"
 Rashiv2 say "08v27"
 ~1.2
-Rashiv2 setmimic "Smile"
+Rashiv2 setMimic "Smile"
 ~3
 ;=== 20:43:13
 _camera camSetTarget [-70842.67,68760.67,1868.83]
@@ -542,7 +542,7 @@ _camera camSetPos [6168.84,4993.51,1.54]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Calvet2 dowatch [6166.02,4993.89,1.60]
+Calvet2 doWatch [6166.02,4993.89,1.60]
 ~2
 ;=== 20:44:41
 _camera camSetTarget [-55275.16,83849.52,2651.77]
@@ -551,7 +551,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~1.2
-titlecut["","black out",3]
+titleCut["","BLACK OUT",3]
 ~4
 end=true
 

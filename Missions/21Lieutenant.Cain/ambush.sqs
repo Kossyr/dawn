@@ -1,23 +1,23 @@
-setacctime 1
+setAccTime 1
 
 _borisSurvived = alive A1 or alive A2 or alive A3 or alive A4 or alive A5
 
 ? not _borisSurvived : goto "borisDead" ;
 
-boris sideradio "21r07"
-aP sideradio "21r08"
-aP sideradio "21r09"
+boris sideRadio "21r07"
+aP sideRadio "21r08"
+aP sideRadio "21r09"
 
-"4" objstatus "done"
-aP addrating 1000
+"4" objStatus "DONE"
+aP addRating 1000
 
 ~5
 
-? alive A1 : A1 domove getmarkerpos "borisRetreat" ;
-? alive A2 : A2 domove getmarkerpos "borisRetreat" ;
-? alive A3 : A3 domove getmarkerpos "borisRetreat" ;
-? alive A4 : A4 domove getmarkerpos "borisRetreat" ;
-? alive A5 : A5 domove getmarkerpos "borisRetreat" ;
+? alive A1 : A1 doMove getMarkerPos "borisRetreat" ;
+? alive A2 : A2 doMove getMarkerPos "borisRetreat" ;
+? alive A3 : A3 doMove getMarkerPos "borisRetreat" ;
+? alive A4 : A4 doMove getMarkerPos "borisRetreat" ;
+? alive A5 : A5 doMove getMarkerPos "borisRetreat" ;
 
 afterAmbush=true
 
@@ -27,15 +27,15 @@ goto "ex"
 
 #borisDead
 
-"4" objstatus "failed"
+"4" objStatus "FAILED"
 
-aP sideradio "21r09"
+aP sideRadio "21r09"
 afterAmbush=true
 
 #ex
 
 ~10
 
-savegame
+saveGame
 
 exit

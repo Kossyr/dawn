@@ -1,6 +1,6 @@
 ~1
 
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 ~0.5
 
 _camera = "camera" camcreate [0,0,0]
@@ -8,42 +8,42 @@ _camera cameraeffect ["internal","back"]
 
 ? (aP == vehicle aP) : goto "shaposhnikovFinalCinema" ;
 
-vehicle aP setpos getmarkerpos "VehicleAway"
-vehicle aP setdir 0
+vehicle aP setPos getMarkerPos "VehicleAway"
+vehicle aP setDir 0
 
 ~0.5
 
-vehicle aP setpos getmarkerpos "CinemaShaposhnikovVehicle"
-vehicle aP setdir 180
+vehicle aP setPos getMarkerPos "CinemaShaposhnikovVehicle"
+vehicle aP setDir 180
 
 aP action ["EJECT"]
-UnassignVehicle aP
+unassignVehicle aP
 
 #shaposhnikovFinalCinema
 
 aP action ["WEAPONONBACK"]
 
-aP setpos getmarkerpos "PlayerAway"
-LemontovDouble setpos getmarkerpos "CinemaShaposhnikovPlayer3"
-Shaposhnikov setpos getmarkerpos "CinemaShaposhnikov3"
-Shaposhnikov setdir 285
-Shaposhnikov dowatch [11438.82,10508.04,1.70]
+aP setPos getMarkerPos "PlayerAway"
+LemontovDouble setPos getMarkerPos "CinemaShaposhnikovPlayer3"
+Shaposhnikov setPos getMarkerPos "CinemaShaposhnikov3"
+Shaposhnikov setDir 285
+Shaposhnikov doWatch [11438.82,10508.04,1.70]
 
 
 
-LemontovDouble setdir 100
-LemontovDouble dowatch [11440.66,10507.57,1.64]
+LemontovDouble setDir 100
+LemontovDouble doWatch [11440.66,10507.57,1.64]
 
 
 
-LemontovDouble setmimic "angry"
-Shaposhnikov setmimic "normal"
+LemontovDouble setMimic "angry"
+Shaposhnikov setMimic "normal"
 
 ~0.5
 
-setacctime 1
+setAccTime 1
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 
 ;=== 9:59:41
@@ -52,7 +52,7 @@ _camera camSetPos [11439.65,10507.78,1.65]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Shaposhnikov switchmove "FxShow2"
+Shaposhnikov switchMove "FxShow2"
 Shaposhnikov say "f01v313"
 ~4
 
@@ -69,7 +69,7 @@ _camera camSetPos [11439.62,10507.83,1.61]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-LemontovDouble playmove "effectstandtalk"
+LemontovDouble playMove "effectstandtalk"
 LemontovDouble say "f01v314"
 ~4
 LemontovDouble say "f01v315"
@@ -98,7 +98,7 @@ _camera camSetPos [11440.77,10507.08,1.62]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-LemontovDouble switchmove "FxShow2"
+LemontovDouble switchMove "FxShow2"
 LemontovDouble say "f01v319"
 ~11
 ;=== 10:04:19
@@ -120,7 +120,7 @@ _camera camSetPos [11439.34,10507.90,1.61]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-LemontovDouble setmimic "sad"
+LemontovDouble setMimic "sad"
 LemontovDouble say "f01v321"
 ~3
 ;=== 10:08:48
@@ -129,7 +129,7 @@ _camera camSetPos [11439.98,10507.76,1.61]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Shaposhnikov setmimic "surprised"
+Shaposhnikov setMimic "surprised"
 Shaposhnikov say "f01v322"
 ~4
 ;=== 10:09:05
@@ -138,7 +138,7 @@ _camera camSetPos [11441.04,10507.85,1.62]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-LemontovDouble setmimic "angry"
+LemontovDouble setMimic "angry"
 LemontovDouble say "f01v323"
 ~11
 LemontovDouble say "f01v324"
@@ -149,7 +149,7 @@ _camera camSetPos [11439.93,10507.74,1.61]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Shaposhnikov setmimic "normal"
+Shaposhnikov setMimic "normal"
 Shaposhnikov say "f01v325"
 ~12
 ;=== 10:09:37
@@ -187,7 +187,7 @@ _camera camSetPos [11438.10,10507.76,1.63]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Shaposhnikov setmimic "surprised"
+Shaposhnikov setMimic "surprised"
 Shaposhnikov say "f01v329"
 ~6
 ;=== 10:39:01
@@ -204,7 +204,7 @@ _camera camSetPos [11439.92,10507.77,1.64]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Shaposhnikov setmimic "sad"
+Shaposhnikov setMimic "sad"
 Shaposhnikov say "f01v331"
 ~4
 ;=== 10:39:47
@@ -221,8 +221,8 @@ _camera camSetPos [11439.77,10507.81,1.64]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Shaposhnikov switchmove "FXCivilArmsAkimboR"
-Shaposhnikov setmimic "normal"
+Shaposhnikov switchMove "FXCivilArmsAkimboR"
+Shaposhnikov setMimic "normal"
 Shaposhnikov say "f01v333"
 ~7
 ;=== 10:40:47
@@ -231,7 +231,7 @@ _camera camSetPos [11438.50,10508.62,1.63]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Shaposhnikov switchmove "FxShow2"
+Shaposhnikov switchMove "FxShow2"
 Shaposhnikov say "f01v334"
 ~10
 ;=== 10:41:00
@@ -248,10 +248,10 @@ _camera camSetPos [11439.91,10507.79,1.64]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Shaposhnikov setmimic "smile"
+Shaposhnikov setMimic "smile"
 Shaposhnikov say "f01v336"
 ~2
-Shaposhnikov setmimic "normal"
+Shaposhnikov setMimic "normal"
 ~2
 ;=== 10:41:35
 _camera camSetTarget [-85838.39,33224.29,4692.57]
@@ -262,26 +262,26 @@ _camera camCommit 0
 LemontovDouble say "f01v337"
 ~2
 
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 ~0.5
-titletext["","plain"]
+titleText["","PLAIN"]
 
-LemontovDouble dowatch objNull
-LemontovDouble setdir 0
-LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
+LemontovDouble doWatch objNull
+LemontovDouble setDir 0
+LemontovDouble setPos getMarkerPos "PlayerDoubleAway"
 
-Shaposhnikov switchmove ""
+Shaposhnikov switchMove ""
 
-aP setpos getmarkerpos "CinemaShaposhnikovPlayer3"
-aP setdir 100
+aP setPos getMarkerPos "CinemaShaposhnikovPlayer3"
+aP setDir 100
 
-LemontovGarb setpos getmarkerpos "LemontovGarb"
+LemontovGarb setPos getMarkerPos "LemontovGarb"
 dayDone=true
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 ~0.5
 
@@ -289,10 +289,10 @@ Hint localize "STRM_HINT_TENT"
 
 ~1
 
-Shaposhnikov dowatch [11440.37,10505.48,1.28]
+Shaposhnikov doWatch [11440.37,10505.48,1.28]
 
 ~3
 
-savegame
+saveGame
 
 exit

@@ -1,9 +1,9 @@
 
-setacctime 1
+setAccTime 1
 
 aP say "11v84"
 ~1.5
-titlecut["","black out",3]
+titleCut["","BLACK OUT",3]
 ~3.5
 cinema = true
 
@@ -12,35 +12,35 @@ _camera cameraeffect ["internal","back"]
 
 ? (aP == vehicle aP) : goto "warehouse_cinema" ;
 
-vehicle aP setpos getmarkerpos "player_vehicle_away"
-vehicle aP setdir 0
+vehicle aP setPos getMarkerPos "player_vehicle_away"
+vehicle aP setDir 0
 
 ~1
 
-vehicle aP setpos getmarkerpos "warehouse_vehicle"
-vehicle aP setdir 60
+vehicle aP setPos getMarkerPos "warehouse_vehicle"
+vehicle aP setDir 60
 
 aP action ["EJECT"]
-UnassignVehicle aP
+unassignVehicle aP
 
 #warehouse_cinema
 
-aP setpos getmarkerpos "player_away"
+aP setPos getMarkerPos "player_away"
 aP action ["WEAPONONBACK"]
 
 aa = aP saveStatus "10Rashiv"
 aa = RashivWarehouse loadStatus "10Rashiv"
 
-WarehouseGuard1 setpos getmarkerpos "guard_warehouse1";
-RashivWarehouse setpos getmarkerpos "rashiv_warehouse";
-RashivWarehouse dowatch [9497.01,1658.53,1.63]
-WarehouseGuard1 dowatch [9496.44,1656.49,1.59]
+WarehouseGuard1 setPos getMarkerPos "guard_warehouse1";
+RashivWarehouse setPos getMarkerPos "rashiv_warehouse";
+RashivWarehouse doWatch [9497.01,1658.53,1.63]
+WarehouseGuard1 doWatch [9496.44,1656.49,1.59]
 
-WarehouseGuard1 setmimic "Angry"
-RashivWarehouse setmimic "Normal"
+WarehouseGuard1 setMimic "Angry"
+RashivWarehouse setMimic "Normal"
 
 ~0.5
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 ;=== 13:56:55
 _camera camSetTarget [50901.52,92641.35,-2567.33]
 _camera camSetPos [9497.11,1652.64,1.25]
@@ -62,12 +62,12 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~5
-deletevehicle RashivWarehouse
-aP setpos getmarkerpos "rashiv_warehouse"
-aP setdir 10
-"Explosives" setmarkertype "Marker"
+deleteVehicle RashivWarehouse
+aP setPos getMarkerPos "rashiv_warehouse"
+aP setDir 10
+"Explosives" setMarkerType "Marker"
 lookingForDistraction=true
-WarehouseGuard1 dowatch objnull
+WarehouseGuard1 doWatch objNull
 
 
 player cameraEffect ["terminate","back"]
@@ -78,11 +78,11 @@ cinema=false
 
 ~3
 aP say "11v87"
-"9" objstatus "active"
+"9" objStatus "ACTIVE"
 
 
 ~6 
 
-savegame
+saveGame
 
 exit

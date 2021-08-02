@@ -1,14 +1,14 @@
-setacctime 1
+setAccTime 1
 
-L1 sideradio "21r03"
-aP sideradio "21r04"
+L1 sideRadio "21r03"
+aP sideRadio "21r04"
 
 ~7
 
-"1" objstatus "done"
-aP addrating 1000
+"1" objStatus "DONE"
+aP addRating 1000
 
-"_x stop false" foreach units group L1
+"_x stop false" forEach units group L1
 
 
 [L1, L2, L3, L4, L5, L6, L7, L8] join aP
@@ -19,19 +19,19 @@ squadPicked=true
 
 ~10
 
-savegame
+saveGame
 
 ~20
 
-setacctime 1
+setAccTime 1
 
-boris sideradio "21r05"
-aP sideradio "21r06"
+boris sideRadio "21r05"
+aP sideRadio "21r06"
 
 ~7
 
-"4" objstatus "active"
+"4" objStatus "ACTIVE"
 toAmbush=true
-"Ambushed" setmarkertype "Marker"
+"Ambushed" setMarkerType "Marker"
 
 exit

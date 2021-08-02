@@ -1,8 +1,8 @@
-setacctime 1
+setAccTime 1
 
-titlecut["","black out",1]
+titleCut["","BLACK OUT",1]
 
-enableradio false
+enableRadio false
 
 ~1
 
@@ -10,33 +10,33 @@ _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
 Lemontov stop true
-Lemontov setdir 280
+Lemontov setDir 280
 
-aP setdir 300
+aP setDir 300
 
-aP setpos getmarkerpos "HarbourCinemaRashivAway"
-Lemontov setpos getmarkerpos "HarbourCinemaLemontovAway"
-group player setbehaviour "careless"
+aP setPos getMarkerPos "HarbourCinemaRashivAway"
+Lemontov setPos getMarkerPos "HarbourCinemaLemontovAway"
+group player setBehaviour "CARELESS"
 aP action ["WEAPONONBACK"]
 
-LemontovCinema setpos getmarkerpos "HarbourCinemaLemontov"
-RashivCinema setpos getmarkerpos "HarbourCinemaRashiv"
+LemontovCinema setPos getMarkerPos "HarbourCinemaLemontov"
+RashivCinema setPos getMarkerPos "HarbourCinemaRashiv"
 
-Kaplinsky playmove "effectstand"
+Kaplinsky playMove "effectstand"
 
-Kaplinsky removeweapon "nvgoggles"
-S1 removeweapon "nvgoggles"
-S2 removeweapon "nvgoggles"
-S3 removeweapon "nvgoggles"
+Kaplinsky removeWeapon "nvgoggles"
+S1 removeWeapon "nvgoggles"
+S2 removeWeapon "nvgoggles"
+S3 removeWeapon "nvgoggles"
 
-LemontovCinema setmimic "normal"
-Kaplinsky setmimic "normal"
+LemontovCinema setMimic "normal"
+Kaplinsky setMimic "normal"
 
-LemontovCinema dowatch [1481.52,5448.49,1.64]
+LemontovCinema doWatch [1481.52,5448.49,1.64]
 
 
 
-titlecut ["","black in",0.5]
+titleCut ["","BLACK IN",0.5]
 
 ;=== 15:06:44
 _camera camSetTarget [-64442.13,80146.20,8639.30]
@@ -67,7 +67,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Kaplinsky say "04v13"
-Kaplinsky setmimic "smile"
+Kaplinsky setMimic "smile"
 ;=== 15:08:17
 _camera camSetTarget [-98165.39,-2408.37,-2744.93]
 _camera camSetPos [1486.44,5448.96,1.31]
@@ -80,7 +80,7 @@ _camera camSetPos [1484.02,5448.12,1.56]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-LemontovCinema setmimic "angry"
+LemontovCinema setMimic "angry"
 LemontovCinema say "04v14"
 
 
@@ -88,27 +88,27 @@ LemontovCinema say "04v14"
 
 Lemontov stop false
 
-Kaplinsky addweapon "nvgoggles"
-S1 addweapon "nvgoggles"
-S2 addweapon "nvgoggles"
-S3 addweapon "nvgoggles"
+Kaplinsky addWeapon "nvgoggles"
+S1 addWeapon "nvgoggles"
+S2 addWeapon "nvgoggles"
+S3 addWeapon "nvgoggles"
 
-deletevehicle LemontovCinema
-deletevehicle RashivCinema
-Lemontov setpos getmarkerpos "HarbourCinemaLemontov"
-aP setpos getmarkerpos "HarbourCinemaRashiv"
+deleteVehicle LemontovCinema
+deleteVehicle RashivCinema
+Lemontov setPos getMarkerPos "HarbourCinemaLemontov"
+aP setPos getMarkerPos "HarbourCinemaRashiv"
 
-"_x stop false" foreach units kaplinskyGroup
+"_x stop false" forEach units kaplinskyGroup
 kaplinskyGroup setcombatmode "blue"
-kaplinskyGroup setbehaviour "aware"
-group player setbehaviour "aware"
+kaplinskyGroup setBehaviour "AWARE"
+group player setBehaviour "AWARE"
 
 [Kaplinsky, S1, S2, S3] join Lemontov
 
 toHarbour=true
 
-"1" objstatus "done"
-aP addrating 1000
+"1" objStatus "DONE"
+aP addRating 1000
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
@@ -119,6 +119,6 @@ aP action ["WEAPONINHAND"]
 
 ~4
 
-savegame
+saveGame
 
 exit

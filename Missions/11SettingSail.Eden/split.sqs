@@ -1,37 +1,37 @@
 
 InTheCity=true
-4 fademusic 0
+4 fadeMusic 0
 ~4
 
-setacctime 1
+setAccTime 1
 
-[aP] join grpnull
+[aP] join grpNull
 
 cinema=true
-aP setpos getmarkerpos "player_away"
-Astier setpos getmarkerpos "astier_away"
+aP setPos getMarkerPos "player_away"
+Astier setPos getMarkerPos "astier_away"
 Astier stop true
 
 aP action ["WEAPONONBACK"]
 
-RashivSplit setpos getmarkerpos "rashiv_split";
-AstierSplit setpos getmarkerpos "astier_split";
-guard setpos getmarkerpos "guard_split";
+RashivSplit setPos getMarkerPos "rashiv_split";
+AstierSplit setPos getMarkerPos "astier_split";
+guard setPos getMarkerPos "guard_split";
 
 aa = aP saveStatus "10Rashiv"
 aa = RashivSplit loadStatus "10Rashiv"
 
-AstierSplit playmove "EffectStand"
+AstierSplit playMove "EffectStand"
 
-AstierSplit setmimic "normal"
-guard setmimic "Normal"
-RashivSplit setmimic "normal"
+AstierSplit setMimic "normal"
+guard setMimic "Normal"
+RashivSplit setMimic "normal"
 
-guard dowatch [9668.23,1527.36,1.63]
-AstierSplit dowatch [9666.04,1526.99,1.72]
-RashivSplit dowatch [9666.04,1526.99,1.72]
+guard doWatch [9668.23,1527.36,1.63]
+AstierSplit doWatch [9666.04,1526.99,1.72]
+RashivSplit doWatch [9666.04,1526.99,1.72]
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -43,7 +43,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 guard say "11v45"
-guard playmove "EffectStandSalute"
+guard playMove "EffectStandSalute"
 ~2
 AstierSplit say "11v46"
 ;=== 17:54:21
@@ -59,7 +59,7 @@ _camera camSetPos [9665.25,1528.19,1.45]
 _camera camSetFOV 0.700
 _camera camCommit 1.5
 ~0.5
-guard playmove "EffectStandSaluteEnd"
+guard playMove "EffectStandSaluteEnd"
 @camCommitted _camera
 guard say "11v47"
 ;=== 17:55:36
@@ -84,15 +84,15 @@ _camera camSetPos [9669.71,1525.98,1.61]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-AstierSplit dowatch [9669.83,1525.59,1.62]
+AstierSplit doWatch [9669.83,1525.59,1.62]
 ~3.5
-deletevehicle RashivSplit
-aP setpos getmarkerpos "rashiv_split"
-aP setdir 295
-AstierSplit dowatch objnull
+deleteVehicle RashivSplit
+aP setPos getMarkerPos "rashiv_split"
+aP setDir 295
+AstierSplit doWatch objNull
 guard say "11v49"
-guard domove getmarkerpos "guard_tent"
-AstierSplit domove getmarkerpos "astier_tent"
+guard doMove getMarkerPos "guard_tent"
+AstierSplit doMove getMarkerPos "astier_tent"
 splitGo=true
 amCar lock false
 
@@ -101,6 +101,6 @@ camDestroy _camera
 
 cinema=false
 
-aP setbehaviour "combat"
+aP setBehaviour "COMBAT"
 
 exit

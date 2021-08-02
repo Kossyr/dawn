@@ -1,21 +1,21 @@
 ? not defending : goto "skip" ;
 
-setacctime 1
+setAccTime 1
 
-leader roman sideradio "15r04"
+leader roman sideRadio "15r04"
 
-"2" objstatus "done"
+"2" objStatus "DONE"
 
 ~5
 
-"3" objstatus "active"
+"3" objStatus "ACTIVE"
 
-"_x setunitpos ""up""" foreach units group player
-"_x setunitpos ""up""" foreach units BaseGroup1
-"_x setunitpos ""up""" foreach units BaseGroup2
-"_x setunitpos ""up""" foreach units BaseGroup3
+"_x setunitpos ""up""" forEach units group player
+"_x setunitpos ""up""" forEach units BaseGroup1
+"_x setunitpos ""up""" forEach units BaseGroup2
+"_x setunitpos ""up""" forEach units BaseGroup3
 
-savegame
+saveGame
 
 toFront=true
 

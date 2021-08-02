@@ -1,17 +1,17 @@
 
 
-setacctime 1
+setAccTime 1
 
-aP sideradio "21r19"
+aP sideRadio "21r19"
 
-? camp1Destroyed and camp2Destroyed : "3" objstatus "done"; aP addrating 1000;
+? camp1Destroyed and camp2Destroyed : "3" objStatus "DONE"; aP addRating 1000;
 
 
 ~3
 
-setacctime 1
+setAccTime 1
 
-enableradio false
+enableRadio false
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -24,7 +24,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-titletext [ localize "STRC_END_SUCCESS","plain"]
+titleText [ localize "STRC_END_SUCCESS","PLAIN"]
 
 ;=== 11:01:00
 _camera camSetTarget [-87253.66,-18142.20,-3547.66]
@@ -34,7 +34,7 @@ _camera camCommit 12
 
 ~10
 
-titlecut ["","black out",2]
+titleCut ["","BLACK OUT",2]
 
 @camCommitted _camera
 end2=true

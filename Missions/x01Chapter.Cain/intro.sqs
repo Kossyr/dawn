@@ -1,26 +1,26 @@
 
-titlecut ["","black in",3]
+titleCut ["","BLACK IN",3]
 
-c1 switchmove "FxInHand"
-c2 switchmove "EffectStandTalk"
+c1 switchMove "FxInHand"
+c2 switchMove "EffectStandTalk"
 
-playmusic "Track3"
-0 fademusic 1
+playMusic "Track3"
+0 fadeMusic 1
 
-rus1 switchmove "FXStandAtt"
-rus2 switchmove "FXStandAtt"
-ivan switchmove "FXStandAtt"
-rus4 switchmove "FXStandAtt"
-rashiv switchmove "FXStandAtt"
+rus1 switchMove "FXStandAtt"
+rus2 switchMove "FXStandAtt"
+ivan switchMove "FXStandAtt"
+rus4 switchMove "FXStandAtt"
+rashiv switchMove "FXStandAtt"
 
-rus1 setmimic "normal"
-rus2 setmimic "normal"
-ivan setmimic "normal"
-rus4 setmimic "normal"
-rashiv setmimic "normal"
+rus1 setMimic "normal"
+rus2 setMimic "normal"
+ivan setMimic "normal"
+rus4 setMimic "normal"
+rashiv setMimic "normal"
 
-Dostoevsky switchmove "effectstandtalk"
-Dostoevsky setmimic "normal"
+Dostoevsky switchMove "effectstandtalk"
+Dostoevsky setMimic "normal"
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -81,7 +81,7 @@ _camera camSetPos [7440.71,4766.01,1.48]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-ivan setmimic "Surprised"
+ivan setMimic "Surprised"
 ivan say "x01v14"
 ;=== 18:58:48
 _camera camSetTarget [-83208.12,-37370.94,-2676.03]
@@ -112,12 +112,12 @@ _camera camCommit 13.5
 @camCommitted _camera
 Dostoevsky say "x01v16"
 ~3
-3 fademusic 0
-Dostoevsky playmove "effectstand"
+3 fadeMusic 0
+Dostoevsky playMove "effectstand"
 ~5.5
-Dostoevsky setmimic "smile"
+Dostoevsky setMimic "smile"
 ~2.5
-titletext["","plain"]
+titleText["","PLAIN"]
 ;=== 19:04:18
 _camera camSetTarget [-92400.48,5594.03,-5562.41]
 _camera camSetPos [7442.51,4763.68,1.61]
@@ -130,18 +130,18 @@ _camera camSetPos [7440.11,4763.70,1.61]
 _camera camSetFOV 0.700
 _camera camCommit 3
 ~2
-playmusic "Track9"
+playMusic "Track9"
 @camCommitted _camera
 
-titlecut ["","black out",1]
+titleCut ["","BLACK OUT",1]
 
-0.5 fademusic 1
+0.5 fadeMusic 1
 
 ~2
 
-titletext [localize "STRM_CHAPTER_TEXT","PLAIN"]
+titleText [localize "STRM_CHAPTER_TEXT","PLAIN"]
 ~3
-3 fademusic 0
+3 fadeMusic 0
 ~3
 
 end=true

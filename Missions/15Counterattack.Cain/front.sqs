@@ -1,21 +1,21 @@
 
 ? not defending : goto "skip" ;
 
-setacctime 1
+setAccTime 1
 
-"_x setunitpos ""auto""" foreach units group player
-"_x setunitpos ""auto""" foreach units BaseGroup1
-"_x setunitpos ""auto""" foreach units BaseGroup2
-"_x setunitpos ""auto""" foreach units BaseGroup3
+"_x setunitpos ""auto""" forEach units group player
+"_x setunitpos ""auto""" forEach units BaseGroup1
+"_x setunitpos ""auto""" forEach units BaseGroup2
+"_x setunitpos ""auto""" forEach units BaseGroup3
 
-leader roman sideradio "15r05"
-baza sideradio "15r06"
-leader roman sideradio "15r07"
+leader roman sideRadio "15r05"
+baza sideRadio "15r06"
+leader roman sideRadio "15r07"
 
 ~18
 
-aP assignasgunner aM
-[aP] Ordergetin true
+aP assignAsGunner aM
+[aP] orderGetIn true
 
 ~15
 
@@ -23,7 +23,7 @@ frontalAttack=true
 
 ~5
 
-savegame
+saveGame
 
 #skip
 

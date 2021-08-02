@@ -8,11 +8,11 @@ ChoppersDestroyed=0
 Distractions=0
 AirAlarm=0
 
-"Spetsnaz" setmarkertype "Empty"
-"EnemyEast" setmarkertype "Empty"
-"EnemyWest" setmarkertype "Empty"
-"EnemySouth" setmarkertype "Empty"
-"6" objstatus "hidden"
+"Spetsnaz" setMarkerType "Empty"
+"EnemyEast" setMarkerType "Empty"
+"EnemyWest" setMarkerType "Empty"
+"EnemySouth" setMarkerType "Empty"
+"6" objStatus "HIDDEN"
 
 backToCamp=false
 ambush=false
@@ -20,12 +20,12 @@ timeoutAmbush=false
 canEnd=false
 joined=false
 
-Rebel9 switchmove "effectstandsitdown"
-Rebel10 switchmove "effectstandsitdown"
-Rebel11 switchmove "effectstandsitdown"
+Rebel9 switchMove "effectstandsitdown"
+Rebel10 switchMove "effectstandsitdown"
+Rebel11 switchMove "effectstandsitdown"
 
-clearmagazinecargo StartingWeapons
-clearweaponcargo StartingWeapons
+clearMagazineCargo StartingWeapons
+clearWeaponCargo StartingWeapons
 
 StartingWeapons AddWeaponCargo ["AK74SU",2]
 StartingWeapons AddMagazineCargo ["AK74",16]
@@ -36,8 +36,8 @@ StartingWeapons AddMagazineCargo ["PipeBomb",6]
 StartingWeapons AddWeaponCargo ["RPGLauncher",1]
 StartingWeapons AddMagazineCargo ["RPGLauncher",2]
 
-clearmagazinecargo WeaponsStash
-clearweaponcargo WeaponsStash
+clearMagazineCargo WeaponsStash
+clearWeaponCargo WeaponsStash
 
 WeaponsStash AddWeaponCargo ["Bizon",1]
 WeaponsStash AddMagazineCargo ["Bizon",4]
@@ -47,7 +47,7 @@ WeaponsStash AddWeaponCargo ["AK74SU",1]
 WeaponsStash AddMagazineCargo ["AK74",8]
 
 ~1
-Rebel5 switchmove "FxToKneel"
+Rebel5 switchMove "FxToKneel"
 ~1.5
 Poincare say "32v01"
 

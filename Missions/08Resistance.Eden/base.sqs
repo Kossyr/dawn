@@ -1,26 +1,26 @@
-setacctime 1
+setAccTime 1
 
-leader player sideradio "08r04"
+leader player sideRadio "08r04"
 
-"2" objstatus "done"
-aP addrating 1000
+"2" objStatus "DONE"
+aP addRating 1000
 
-"_x assignascargo car3" foreach units group player
-driver1 assignasdriver car1
-driver2 assignasdriver car2
-driver3 assignasdriver car3
+"_x assignAsCargo car3" forEach units group player
+driver1 assignAsDriver car1
+driver2 assignAsDriver car2
+driver3 assignAsDriver car3
 
 ~6
 
 getInTrucks=true
 
-driver1 setpos getmarkerpos "driver1"
-driver2 setpos getmarkerpos "driver2"
-driver3 setpos getmarkerpos "driver3"
+driver1 setPos getMarkerPos "driver1"
+driver2 setPos getMarkerPos "driver2"
+driver3 setPos getMarkerPos "driver3"
 
 ~10
 
-savegame
+saveGame
 
 exit
 

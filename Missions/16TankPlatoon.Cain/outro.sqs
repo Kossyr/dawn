@@ -1,18 +1,18 @@
-"4" objstatus "done"
-aP addrating 1000
+"4" objStatus "DONE"
+aP addRating 1000
 
-setacctime 1
-leader player sideradio "16r18"
+setAccTime 1
+leader player sideRadio "16r18"
 
 ~10
 
-enableradio false
+enableRadio false
 
-setacctime 1
+setAccTime 1
 
 _camera = "camera" camCreate [0,0,0] 
 _camera cameraEffect ["internal","back"]
-titletext [ localize "STRC_END_SUCCESS","plain"]
+titleText [ localize "STRC_END_SUCCESS","PLAIN"]
 ;=== 21:07:19
 _camera camSetTarget [79409.53,-56863.82,-24780.20]
 _camera camSetPos [6021.43,6214.31,12.62]
@@ -26,7 +26,7 @@ _camera camSetFOV 0.700
 _camera camCommit 9
 @camCommitted _camera
 ~3
-titlecut ["","black out",2]
+titleCut ["","BLACK OUT",2]
 ~2
 end=true
 player cameraEffect ["terminate","back"]

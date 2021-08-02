@@ -13,11 +13,11 @@ Astier stop false
 
 churchCountdown=false
 
-7 fademusic 0
+7 fadeMusic 0
 
 ~2
 
-setacctime 1
+setAccTime 1
 
 aP say "00v34"
 
@@ -25,68 +25,68 @@ aP say "00v34"
 
 astierChurchGo=true
 
-titlecut ["","black out",2]
+titleCut ["","BLACK OUT",2]
 
 ~2.5
 
 aP action ["WEAPONONBACK"]
 
-astier dowatch objnull
+astier doWatch objNull
 
 aa = aP saveStatus "00Poincare"
 aa = actor2 loadStatus "00Poincare"
 
-unassignvehicle aP
-unassignvehicle Astier
-unassignvehicle res1
-unassignvehicle res2
+unassignVehicle aP
+unassignVehicle Astier
+unassignVehicle res1
+unassignVehicle res2
 
-aP setpos getmarkerpos "chotain_uazg_clear"
-uazg setpos getmarkerpos "chotain_uazg2"
-uazg setdir 195
+aP setPos getMarkerPos "chotain_uazg_clear"
+uazg setPos getMarkerPos "chotain_uazg2"
+uazg setDir 195
 
-actor2 setpos getmarkerpos "chotain_ap"
-actor2 setdir 185
-actor2 dowatch [7111.36,6051.14,1.73]
+actor2 setPos getMarkerPos "chotain_ap"
+actor2 setDir 185
+actor2 doWatch [7111.36,6051.14,1.73]
 
-res3 setpos getmarkerpos "chotain_res3"
-res4 setpos getmarkerpos "chotain_res4"
-res5 setpos getmarkerpos "chotain_res5"
+res3 setPos getMarkerPos "chotain_res3"
+res4 setPos getMarkerPos "chotain_res4"
+res5 setPos getMarkerPos "chotain_res5"
 
-res3 dowatch [7111.64,6052.15,1.67]
-res4 dowatch [7111.64,6052.15,1.67]
-res5 dowatch [7111.64,6052.15,1.67]
+res3 doWatch [7111.64,6052.15,1.67]
+res4 doWatch [7111.64,6052.15,1.67]
+res5 doWatch [7111.64,6052.15,1.67]
 
-Astier assignasdriver ammo1
-res1 assignasdriver ammo2
-res2 assignasdriver ammo3
+Astier assignAsDriver ammo1
+res1 assignAsDriver ammo2
+res2 assignAsDriver ammo3
 
-ammo1 setpos getmarkerpos "chotain_astier"
-ammo2 setpos getmarkerpos "chotain_res1"
-ammo3 setpos getmarkerpos "chotain_res2"
+ammo1 setPos getMarkerPos "chotain_astier"
+ammo2 setPos getMarkerPos "chotain_res1"
+ammo3 setPos getMarkerPos "chotain_res2"
 
-ammo1 setdir 185
-ammo2 setdir 185
-ammo3 setdir 185
+ammo1 setDir 185
+ammo2 setDir 185
+ammo3 setDir 185
 
-ammo1 setfuel 0
-ammo2 setfuel 0
-ammo3 setfuel 0
+ammo1 setFuel 0
+ammo2 setFuel 0
+ammo3 setFuel 0
 
 ~0.5
 
-Astier moveindriver ammo1
-res1 moveindriver ammo2
-res2 moveindriver ammo3
+Astier moveInDriver ammo1
+res1 moveInDriver ammo2
+res2 moveInDriver ammo3
 
-setacctime 1
+setAccTime 1
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
 ~0.5
 
-titlecut["","black in", 1]
+titleCut["","BLACK IN", 1]
 
 ;=== 19:51:38
 _camera camSetTarget [35880.73,-89399.94,-7451.14]
@@ -108,7 +108,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 res3 say "00v35"
-res3 setmimic "smile"
+res3 setMimic "smile"
 ;=== 19:52:52
 _camera camSetTarget [24083.30,-92476.05,-1859.95]
 _camera camSetPos [7110.90,6053.46,1.44]
@@ -121,7 +121,7 @@ _camera camSetPos [7111.77,6051.75,1.51]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-actor2 setmimic "Normal"
+actor2 setMimic "Normal"
 actor2 say "00v36"
 ~3.5
 ;=== 19:54:09
@@ -131,7 +131,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 res3 say "00v37"
-res3 setmimic "Normal"
+res3 setMimic "Normal"
 ;=== 19:54:28
 _camera camSetTarget [-65752.77,-62356.46,-3160.87]
 _camera camSetPos [7113.37,6052.91,1.64]
@@ -152,10 +152,10 @@ _camera camSetPos [7111.58,6052.03,1.50]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-res3 setmimic "surprised"
+res3 setMimic "surprised"
 res3 say "00v39"
 ~2
-res3 setmimic "Normal"
+res3 setMimic "Normal"
 ;=== 19:56:55
 _camera camSetTarget [61609.25,-77780.84,-1165.81]
 _camera camSetPos [7109.60,6053.32,1.36]
@@ -174,7 +174,7 @@ _camera camSetPos [7111.50,6051.32,1.40]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-actor2 switchmove "FXCivilHandMouth"
+actor2 switchMove "FXCivilHandMouth"
 actor2 say "00v40"
 ~8.5
 ;=== 19:58:17
@@ -184,15 +184,15 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 res3 say "00v41"
-res3 setmimic "surprised"
-res3 switchmove "FXCivilArmsAkimboL"
+res3 setMimic "surprised"
+res3 switchMove "FXCivilArmsAkimboL"
 ;=== 19:59:12
 _camera camSetTarget [-76224.87,-49216.32,109.23]
 _camera camSetPos [7113.96,6052.61,1.59]
 _camera camSetFOV 0.700
 _camera camCommit 12
 ~1.5
-res3 setmimic "Normal"
+res3 setMimic "Normal"
 @camCommitted _camera
 ;=== 19:59:41
 _camera camSetTarget [-15107.05,-91448.23,195.07]
@@ -201,7 +201,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~1
-res3 setmimic "Agresive"
+res3 setMimic "Agresive"
 ~3.5
 ;=== 20:00:24
 _camera camSetTarget [99710.80,43113.16,-7078.87]
@@ -209,7 +209,7 @@ _camera camSetPos [7110.41,6051.62,1.37]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-actor2 setmimic "Angry"
+actor2 setMimic "Angry"
 actor2 say "00v42"
 ;=== 20:00:43
 _camera camSetTarget [91098.15,59849.94,-7078.66]
@@ -223,10 +223,10 @@ _camera camSetPos [7111.20,6053.29,1.48]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-res3 setmimic "Hurt"
+res3 setMimic "Hurt"
 res3 say "00v43"
 ~3
-res3 setmimic "Normal"
+res3 setMimic "Normal"
 ~7.5
 ;=== 20:00:24
 _camera camSetTarget [99710.80,43113.16,-7078.87]
@@ -242,12 +242,12 @@ _camera camSetPos [7112.59,6052.88,1.52]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-ammo1 setfuel 1
-ammo2 setfuel 1
-ammo3 setfuel 1
-res3 setmimic "Surprised"
-res4 setmimic "Surprised"
-res5 setmimic "Surprised"
+ammo1 setFuel 1
+ammo2 setFuel 1
+ammo3 setFuel 1
+res3 setMimic "Surprised"
+res4 setMimic "Surprised"
+res5 setMimic "Surprised"
 ~1
 res3 say "00v45"
 ~4.5
@@ -258,23 +258,23 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-res3 dowatch [7091.50,6056.01,2.02]
-res4 dowatch [7091.50,6056.01,2.02]
-res5 dowatch [7091.50,6056.01,2.02]
-actor2 dowatch [7091.50,6056.01,2.02]
+res3 doWatch [7091.50,6056.01,2.02]
+res4 doWatch [7091.50,6056.01,2.02]
+res5 doWatch [7091.50,6056.01,2.02]
+actor2 doWatch [7091.50,6056.01,2.02]
 
-actor2 setmimic "Default"
-res3 setmimic "Default"
-res4 setmimic "Default"
-res5 setmimic "Default"
-Astier dowatch [7114.54,6049.12,1.86]
+actor2 setMimic "Default"
+res3 setMimic "Default"
+res4 setMimic "Default"
+res5 setMimic "Default"
+Astier doWatch [7114.54,6049.12,1.86]
 
 @astierConvoyChurch
 ~1
-unassignvehicle Astier
+unassignVehicle Astier
 Astier action ["EJECT"]
-ammo2 setfuel 0
-ammo3 setfuel 0
+ammo2 setFuel 0
+ammo3 setFuel 0
 
 ~2
 
@@ -289,7 +289,7 @@ _camera camCommit 0
 
 ~2
 
-Astier switchmove "FxShow3"
+Astier switchMove "FxShow3"
 
 ~1.1
 
@@ -309,8 +309,8 @@ _camera camCommit 7
 
 deleteVehicle actor2
 
-aP setpos getmarkerpos "chotain_ap"
-aP setdir 340
+aP setPos getMarkerPos "chotain_ap"
+aP setDir 340
 
 cinem=false
 
@@ -320,19 +320,19 @@ camDestroy _camera
 ~0.5
 
 [res3, res4, res5, aP] join Astier
-res3 assignascargo uazg
-res4 assignascargo uazg
-res5 assignascargo uazg
-aP assignasdriver uazg
-Astier assignasdriver ammo1
-res1 assignasdriver ammo2
-res2 assignasdriver ammo3
+res3 assignAsCargo uazg
+res4 assignAsCargo uazg
+res5 assignAsCargo uazg
+aP assignAsDriver uazg
+Astier assignAsDriver ammo1
+res1 assignAsDriver ammo2
+res2 assignAsDriver ammo3
 
-actor2 dowatch objnull
-res3 dowatch objnull
-res4 dowatch objnull
-res5 dowatch objnull
-Astier dowatch objnull
+actor2 doWatch objNull
+res3 doWatch objNull
+res4 doWatch objNull
+res5 doWatch objNull
+Astier doWatch objNull
 
 ~0.5
 
@@ -340,15 +340,15 @@ astierChurchGo2=true
 
 ~2
 
-savegame
+saveGame
 
 ~0.5
 
-0 fademusic 0
+0 fadeMusic 0
 
-playmusic ["Track2", 10]
+playMusic ["Track2", 10]
 
-20 fademusic 0.5
+20 fadeMusic 0.5
 
 #ex
 

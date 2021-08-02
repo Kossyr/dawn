@@ -1,32 +1,32 @@
-titlecut["","black in",3]
+titleCut["","BLACK IN",3]
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-playmusic "Track5"
+playMusic "Track5"
 
-Lemontov setmimic "Normal"
-Rashiv setmimic "Normal"
-Shaposhnikov setmimic "Normal"
+Lemontov setMimic "Normal"
+Rashiv setMimic "Normal"
+Shaposhnikov setMimic "Normal"
 
-Lemontov disableai "autotarget"
-Rashiv disableai "autotarget"
-Shaposhnikov disableai "autotarget"
+Lemontov disableAI "AUTOTARGET"
+Rashiv disableAI "AUTOTARGET"
+Shaposhnikov disableAI "AUTOTARGET"
 
-Lemontov disableai "move"
-Shaposhnikov disableai "move"
-Rashiv disableai "move"
+Lemontov disableAI "MOVE"
+Shaposhnikov disableAI "MOVE"
+Rashiv disableAI "MOVE"
 
-Shaposhnikov switchmove "OnChair"
-Lemontov switchmove "FXSitHandsOnTable"
+Shaposhnikov switchMove "OnChair"
+Lemontov switchMove "FXSitHandsOnTable"
 
-ourTable setPos [getpos ourTable select 0, getpos ourTable select 1, (getpos ourTable select 2)-0.05]
+ourTable setPos [getPos ourTable select 0, getPos ourTable select 1, (getPos ourTable select 2)-0.05]
 
 _RashivPos = [10718.77,10033.00,1.26]
 _ShaposhnikovPos = [10717.55,10032.24,1.27]
 _LemontovPos = [10716.93,10033.43,1.27]
 
-Lemontov dowatch _RashivPos
+Lemontov doWatch _RashivPos
 
 ;=== 20:08:52
 _camera camSetTarget [38281.55,-85979.20,-4759.47]
@@ -43,7 +43,7 @@ _camera camSetPos [10697.97,10017.80,6.89]
 _camera camSetFOV 0.700
 _camera camCommit 5
 @camCommitted _camera
-1 fademusic 0.3
+1 fadeMusic 0.3
 ~1
 
 ;=== 13:41:46
@@ -60,9 +60,9 @@ _camera camCommit 14
 Lemontov say "23v01"
 
 ~1
-Rashiv switchmove "FxToTable"
+Rashiv switchMove "FxToTable"
 ~3.5
-Rashiv dowatch _LemontovPos
+Rashiv doWatch _LemontovPos
 Lemontov say "23v02"
 @camCommitted _camera
 ;=== 13:43:05
@@ -73,7 +73,7 @@ _camera camCommit 0
 @camCommitted _camera
 Lemontov say "23v03"
 ~6
-Lemontov setmimic "Smile"
+Lemontov setMimic "Smile"
 ;=== 13:43:29
 _camera camSetTarget [-88512.92,22414.05,-46.36]
 _camera camSetPos [10717.59,10033.32,1.12]
@@ -82,8 +82,8 @@ _camera camCommit 0
 @camCommitted _camera
 ~6.5
 Rashiv say "23v04"
-Rashiv setmimic "smile"
-Lemontov setmimic "normal"
+Rashiv setMimic "smile"
+Lemontov setMimic "normal"
 ;=== 13:44:29
 _camera camSetTarget [24998.17,-88940.85,-46.20]
 _camera camSetPos [10718.13,10034.17,1.11]
@@ -110,8 +110,8 @@ _camera camSetPos [10717.83,10033.18,1.12]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Rashiv dowatch _ShaposhnikovPos
-Shaposhnikov setmimic "Sad"
+Rashiv doWatch _ShaposhnikovPos
+Shaposhnikov setMimic "Sad"
 Shaposhnikov say "23v06"
 ;=== 13:46:02
 _camera camSetTarget [22548.48,-89257.92,-1025.93]
@@ -133,8 +133,8 @@ _camera camSetPos [10717.68,10033.58,1.07]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Rashiv dowatch _LemontovPos
-Lemontov setmimic "Angry"
+Rashiv doWatch _LemontovPos
+Lemontov setMimic "Angry"
 Lemontov say "23v08"
 ~8
 ;=== 13:47:34
@@ -143,10 +143,10 @@ _camera camSetPos [10719.17,10033.94,1.12]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Shaposhnikov dowatch _RashivPos
-Rashiv setmimic "surprised"
-Shaposhnikov setmimic "Normal"
-Lemontov setmimic "Normal"
+Shaposhnikov doWatch _RashivPos
+Rashiv setMimic "surprised"
+Shaposhnikov setMimic "Normal"
+Lemontov setMimic "Normal"
 Rashiv say "23v09"
 ;=== 13:48:26
 _camera camSetTarget [667.35,-89257.05,-6220.07]
@@ -155,14 +155,14 @@ _camera camSetFOV 0.700
 _camera camCommit 15
 ~4.5
 Shaposhnikov say "23v10"
-Rashiv dowatch _ShaposhnikovPos
-Lemontov dowatch _ShaposhnikovPos
+Rashiv doWatch _ShaposhnikovPos
+Lemontov doWatch _ShaposhnikovPos
 ~10.5
-Shaposhnikov dowatch _LemontovPos
-Lemontov dowatch _RashivPos
-Rashiv dowatch _LemontovPos
+Shaposhnikov doWatch _LemontovPos
+Lemontov doWatch _RashivPos
+Rashiv doWatch _LemontovPos
 Lemontov say "23v11"
-Lemontov setmimic "Angry"
+Lemontov setMimic "Angry"
 @camCommitted _camera
 ;=== 13:49:48
 _camera camSetTarget [-70709.03,68045.48,-1954.25]
@@ -177,12 +177,12 @@ _camera camSetPos [10717.98,10032.94,1.10]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Shaposhnikov dowatch _RashivPos
+Shaposhnikov doWatch _RashivPos
 Rashiv say "23v12"
-Lemontov setmimic "normal"
-Rashiv setmimic "surprised"
+Lemontov setMimic "normal"
+Rashiv setMimic "surprised"
 ~8
-Rashiv setmimic "Sad"
+Rashiv setMimic "Sad"
 ;=== 13:51:41
 _camera camSetTarget [51686.46,-80602.87,-10197.21]
 _camera camSetPos [10717.08,10035.61,1.25]
@@ -201,14 +201,14 @@ _camera camSetPos [10718.14,10033.43,1.07]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Rashiv setmimic "angry"
+Rashiv setMimic "angry"
 Rashiv say "23v13"
 ~3
-Rashiv setmimic "surprised"
+Rashiv setMimic "surprised"
 ~3
-Rashiv setmimic "sad"
+Rashiv setMimic "sad"
 ~4
-Rashiv setmimic "normal"
+Rashiv setMimic "normal"
 ~6
 ;=== 13:53:09
 _camera camSetTarget [-67972.71,-51531.12,-4053.77]
@@ -216,19 +216,19 @@ _camera camSetPos [10719.20,10034.07,1.06]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Shaposhnikov dowatch _LemontovPos
-Lemontov setmimic "Normal"
+Shaposhnikov doWatch _LemontovPos
+Lemontov setMimic "Normal"
 Lemontov say "23v14"
 ~17.5
-Shaposhnikov dowatch _RashivPos
+Shaposhnikov doWatch _RashivPos
 ;=== 13:54:26
 _camera camSetTarget [-65320.23,73523.04,-13564.37]
 _camera camSetPos [10719.13,10031.93,1.21]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Lemontov setmimic "normal"
-Shaposhnikov setmimic "normal"
+Lemontov setMimic "normal"
+Shaposhnikov setMimic "normal"
 Lemontov say "23v15"
 ~10
 ;=== 13:55:16
@@ -237,8 +237,8 @@ _camera camSetPos [10717.67,10033.38,1.14]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Rashiv setmimic "normal"
-Shaposhnikov dowatch _LemontovPos
+Rashiv setMimic "normal"
+Shaposhnikov doWatch _LemontovPos
 ~6.5
 ;=== 13:56:56
 _camera camSetTarget [41822.29,-84527.39,-9402.45]
@@ -258,7 +258,7 @@ Shaposhnikov say "23v17"
 Lemontov say "23v18"
 @camCommitted _camera
 ~2
-titlecut["", "black out", 3]
+titleCut["", "BLACK OUT", 3]
 ~3
 
 end=true

@@ -15,8 +15,8 @@ _tgt2 = _this select 3
 _gl2prop = _this select 4
 _setvof = _this select 5
 
-_gl1 = "logic" camcreate getpos _tgt
-_gl2 = "logic" camcreate getpos _tgt2
+_gl1 = "logic" camcreate getPos _tgt
+_gl2 = "logic" camcreate getPos _tgt2
 
 #loop
 ?!(startglcam) : goto "endcam"
@@ -46,7 +46,7 @@ _gl1 setPos [_tgtxdir,_tgtydir,_tgtz + (_gl1prop select 2)]
 _gl2 setPos [_tgtxdir2,_tgtydir2,_tgtz2 + (_gl2prop select 2)]
 
 
-_camid camsetpos getpos _gl1
+_camid camsetPos getPos _gl1
 _camid camsettarget _gl2
 _camid camsetfov _Setvof
 _camid camcommit 0
@@ -54,5 +54,5 @@ _camid camcommit 0
 goto "loop"
 #endcam
 @!(startglcam)
-deletevehicle _gl1;deletevehicle _gl2
+deleteVehicle _gl1;deleteVehicle _gl2
 exit

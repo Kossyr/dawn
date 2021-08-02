@@ -1,65 +1,65 @@
-titlecut["","black in",2]
+titleCut["","BLACK IN",2]
 
 
-CastleFlag setpos [9374.02,1057.11,21.64]
+CastleFlag setPos [9374.02,1057.11,21.64]
 
-P1 switchmove "FXStandSur"
-P2 switchmove "FXStandSur"
-P3 switchmove "FXStandSur"
-P4 switchmove "FXStandSur"
-P5 switchmove "FXStandSur"
-P6 switchmove "FXStandSur"
-P7 switchmove "FXStandSur"
-P8 switchmove "FXStandSur"
+P1 switchMove "FXStandSur"
+P2 switchMove "FXStandSur"
+P3 switchMove "FXStandSur"
+P4 switchMove "FXStandSur"
+P5 switchMove "FXStandSur"
+P6 switchMove "FXStandSur"
+P7 switchMove "FXStandSur"
+P8 switchMove "FXStandSur"
 
-P1 disableai "autotarget"
-P2 disableai "autotarget"
-P3 disableai "autotarget"
-P4 disableai "autotarget"
-P5 disableai "autotarget"
-P6 disableai "autotarget"
-P7 disableai "autotarget"
-P8 disableai "autotarget"
+P1 disableAI "AUTOTARGET"
+P2 disableAI "AUTOTARGET"
+P3 disableAI "AUTOTARGET"
+P4 disableAI "AUTOTARGET"
+P5 disableAI "AUTOTARGET"
+P6 disableAI "AUTOTARGET"
+P7 disableAI "AUTOTARGET"
+P8 disableAI "AUTOTARGET"
 
-P1 setmimic "angry"
-P2 setmimic "sad"
-P3 setmimic "sad"
-P4 setmimic "sad"
-P5 setmimic "sad"
-P6 setmimic "sad"
-P7 setmimic "sad"
-P8 setmimic "sad"
+P1 setMimic "angry"
+P2 setMimic "sad"
+P3 setMimic "sad"
+P4 setMimic "sad"
+P5 setMimic "sad"
+P6 setMimic "sad"
+P7 setMimic "sad"
+P8 setMimic "sad"
 
 [[0,0,0],0.2,0,FireObject1] exec "fireEffect.sqs"
 [[0,0,0],0.1,0,FireObject2] exec "fireEffect.sqs"
 [[0,0,0],0.1,0,FireObject3] exec "fireEffect.sqs"
 
-PP1 disableai "autotarget"
-PP2 disableai "autotarget"
-PP3 disableai "autotarget"
-PO disableai "autotarget"
+PP1 disableAI "AUTOTARGET"
+PP2 disableAI "AUTOTARGET"
+PP3 disableAI "AUTOTARGET"
+PO disableAI "AUTOTARGET"
 
-PO switchmove "effectstandtalk"
+PO switchMove "effectstandtalk"
 
-PT setpos [9375.49,1052.84,21.86]
+PT setPos [9375.49,1052.84,21.86]
 
-R1 switchmove "effectstandsitdown"
-R2 switchmove "FxToKneel"
+R1 switchMove "effectstandsitdown"
+R2 switchMove "FxToKneel"
 
-Astier setmimic "sad"
-Poincare setmimic "Angry"
-Lemontov setmimic "normal"
+Astier setMimic "sad"
+Poincare setMimic "Angry"
+Lemontov setMimic "normal"
 
-R1 setmimic "sad"
-R2 setmimic "sad"
-R3 setmimic "normal"
-R4 setmimic "normal"
-R5 setmimic "normal"
-R6 setmimic "normal"
-R7 setmimic "normal"
+R1 setMimic "sad"
+R2 setMimic "sad"
+R3 setMimic "normal"
+R4 setMimic "normal"
+R5 setMimic "normal"
+R6 setMimic "normal"
+R7 setMimic "normal"
 
 
-playmusic "Track16"
+playMusic "Track16"
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -146,7 +146,7 @@ _camera camSetFOV 0.700
 _camera camCommit 4
 ~1
 PT move [9378.68,1058.61,21.82]
-PT setspeedmode "limited"
+PT setSpeedMode "limited"
 @camCommitted _camera
 ;=== 13:11:50
 _camera camSetTarget [-6834.31,79590.00,59955.09]
@@ -169,12 +169,12 @@ _camera camSetPos [9364.39,1070.96,34.94]
 _camera camSetFOV 0.700
 _camera camCommit 8
 ~6
-3 fademusic 0
+3 fadeMusic 0
 @camCommitted _camera
 ~1
 
-playmusic "RTrack9"
-0 fademusic 1
+playMusic "RTrack9"
+0 fadeMusic 1
 
 ; REBEL PART
 
@@ -198,8 +198,8 @@ _camera camSetPos [9062.14,1135.59,1.46]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-0 fademusic 0.3
-Astier switchmove "BinocStand"
+0 fadeMusic 0.3
+Astier switchMove "BinocStand"
 Astier say "32v14"
 ~6.5
 Poincare say "32v15"
@@ -218,13 +218,13 @@ _camera camSetPos [9061.68,1135.73,1.58]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Poincare dowatch [9061.11,1135.91,1.58]
+Poincare doWatch [9061.11,1135.91,1.58]
 Poincare say "32v17"
 ~8.5
 Astier say "32v18"
 ~2
-Astier setmimic "angry"
-Astier dowatch [9060.44,1137.06,1.53]
+Astier setMimic "angry"
+Astier doWatch [9060.44,1137.06,1.53]
 ~0.5
 ;=== 14:17:40
 _camera camSetTarget [-27420.19,-91255.03,-11318.45]
@@ -233,7 +233,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~7.5
-Astier dowatch [9058.30,1129.01,1.59]
+Astier doWatch [9058.30,1129.01,1.59]
 ~0.5
 ;=== 14:18:52
 _camera camSetTarget [19587.56,99982.08,-10545.97]
@@ -246,16 +246,16 @@ _camera camSetTarget [42597.95,94714.23,-10545.71]
 _camera camSetPos [9056.32,1122.38,2.73]
 _camera camSetFOV 0.700
 _camera camCommit 7
-Poincare dowatch [9058.30,1129.01,1.59]
+Poincare doWatch [9058.30,1129.01,1.59]
 ~1
 Astier say "32v19"
-R4 dowatch [9060.97,1135.82,1.63]
-R5 dowatch [9060.97,1135.82,1.63]
+R4 doWatch [9060.97,1135.82,1.63]
+R5 doWatch [9060.97,1135.82,1.63]
 ~1
-R6 dowatch [9060.97,1135.82,1.63]
-R7 dowatch [9060.97,1135.82,1.63]
+R6 doWatch [9060.97,1135.82,1.63]
+R7 doWatch [9060.97,1135.82,1.63]
 ~0.5
-R3 dowatch [9060.97,1135.82,1.63]
+R3 doWatch [9060.97,1135.82,1.63]
 @camCommitted _camera
 ;=== 14:45:34
 _camera camSetTarget [33922.40,97864.10,-4826.79]
@@ -265,7 +265,7 @@ _camera camCommit 0
 @camCommitted _camera
 ~4.5
 Astier say "32v20"
-Astier switchmove "FxShow3"
+Astier switchMove "FxShow3"
 ~5
 [] exec "long_live.sqs"
 ;=== 14:25:31
@@ -282,10 +282,10 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~3
-Lemontov setpos getmarkerpos "Lemontov";
-Lemontov move getmarkerpos "LemontovMove";
-Lemontov setspeedmode "limited";
-Lemontov dowatch [9059.87,1128.56,1.79]
+Lemontov setPos getMarkerPos "Lemontov";
+Lemontov move getMarkerPos "LemontovMove";
+Lemontov setSpeedMode "limited";
+Lemontov doWatch [9059.87,1128.56,1.79]
 ;=== 14:26:38
 _camera camSetTarget [40528.98,95643.70,-8475.39]
 _camera camSetPos [9055.97,1122.83,2.26]
@@ -316,12 +316,12 @@ _camera camSetPos [9056.77,1135.58,1.61]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Lemontov setpos getmarkerpos "LemontovMove"
+Lemontov setPos getMarkerPos "LemontovMove"
 Lemontov say "32v22"
 ~0.5
-Poincare dowatch [9057.43,1136.05,1.68]
-Astier dowatch [9057.43,1136.05,1.68]
-Astier setmimic "normal"
+Poincare doWatch [9057.43,1136.05,1.68]
+Astier doWatch [9057.43,1136.05,1.68]
+Astier setMimic "normal"
 ~4
 Poincare say "32v23"
 ~1
@@ -332,14 +332,14 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~4.5
-Lemontov dowatch [9060.46,1136.94,1.65]
+Lemontov doWatch [9060.46,1136.94,1.65]
 ;=== 14:46:08
 _camera camSetTarget [-87817.75,-21279.12,-10410.92]
 _camera camSetPos [9058.16,1136.38,1.62]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Lemontov setmimic "angry"
+Lemontov setMimic "angry"
 ~2
 ;=== 14:33:28
 _camera camSetTarget [98177.87,-43068.29,-9983.97]
@@ -363,7 +363,7 @@ _camera camSetPos [9058.67,1135.99,1.61]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Lemontov dowatch [9060.88,1135.83,1.67]
+Lemontov doWatch [9060.88,1135.83,1.67]
 Lemontov say "32v26"
 ~3
 ;=== 14:35:17
@@ -386,10 +386,10 @@ _camera camCommit 0
 @camCommitted _camera
 Astier say "32v27"
 ~1
-Astier dowatch [9058.31,1128.73,1.62]
+Astier doWatch [9058.31,1128.73,1.62]
 ~0.5
-Lemontov dowatch [9058.31,1128.73,1.62]
-Poincare dowatch [9058.31,1128.73,1.62]
+Lemontov doWatch [9058.31,1128.73,1.62]
+Poincare doWatch [9058.31,1128.73,1.62]
 ~0.5
 ;=== 14:37:24
 _camera camSetTarget [45929.14,93996.13,-3658.36]
@@ -397,7 +397,7 @@ _camera camSetPos [9055.75,1122.72,2.38]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Astier switchmove "fxshow3"
+Astier switchMove "fxshow3"
 ~2
 ;=== 14:37:59
 _camera camSetTarget [39214.54,96402.27,-3658.91]
@@ -406,15 +406,15 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~2.5
-2 fademusic 1
+2 fadeMusic 1
 ;=== 14:38:38
 _camera camSetTarget [104652.53,-26503.56,-9709.04]
 _camera camSetPos [9060.78,1135.10,19.50]
 _camera camSetFOV 0.700
 _camera camCommit 12
 ~10
-2 fademusic 0
-titlecut["","black out",2]
+2 fadeMusic 0
+titleCut["","BLACK OUT",2]
 @camCommitted _camera
 end=true
 player cameraEffect ["terminate","back"]

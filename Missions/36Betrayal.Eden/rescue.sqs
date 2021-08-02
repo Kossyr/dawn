@@ -1,75 +1,75 @@
 
-setacctime 1
+setAccTime 1
 
 
 
-titlecut["","black out",4]
+titleCut["","BLACK OUT",4]
 ~4
 
-setacctime 1
+setAccTime 1
 
-0 fademusic 1
+0 fadeMusic 1
 
-playmusic "RTrack9"
+playMusic "RTrack9"
 
-enableradio false
+enableRadio false
 
-? alive S1 : S1 setpos getmarkerpos "away"; S1 stop true ;
-? alive S2 : S2 setpos getmarkerpos "away"; S2 stop true ;
-? alive S3 : S3 setpos getmarkerpos "away"; S3 stop true ;
-? alive S4 : S4 setpos getmarkerpos "away"; S4 stop true ;
-? alive S5 : S5 setpos getmarkerpos "away"; S5 stop true ;
-? alive S6 : S6 setpos getmarkerpos "away"; S6 stop true ;
-? alive S7 : S7 setpos getmarkerpos "away"; S7 stop true ;
-? alive S8 : S8 setpos getmarkerpos "away"; S8 stop true ;
-? alive S9 : S9 setpos getmarkerpos "away"; S9 stop true ;
+? alive S1 : S1 setPos getMarkerPos "away"; S1 stop true ;
+? alive S2 : S2 setPos getMarkerPos "away"; S2 stop true ;
+? alive S3 : S3 setPos getMarkerPos "away"; S3 stop true ;
+? alive S4 : S4 setPos getMarkerPos "away"; S4 stop true ;
+? alive S5 : S5 setPos getMarkerPos "away"; S5 stop true ;
+? alive S6 : S6 setPos getMarkerPos "away"; S6 stop true ;
+? alive S7 : S7 setPos getMarkerPos "away"; S7 stop true ;
+? alive S8 : S8 setPos getMarkerPos "away"; S8 stop true ;
+? alive S9 : S9 setPos getMarkerPos "away"; S9 stop true ;
 
-? alive R1 : R1 setpos getmarkerpos "away"; R1 stop true ;
-? alive R2 : R2 setpos getmarkerpos "away"; R2 stop true ;
-? alive R3 : R3 setpos getmarkerpos "away"; R3 stop true ;
-? alive R4 : R4 setpos getmarkerpos "away"; R4 stop true ;
-? alive R5 : R5 setpos getmarkerpos "away"; R5 stop true ;
-? alive R6 : R6 setpos getmarkerpos "away"; R6 stop true ;
-? alive R7 : R7 setpos getmarkerpos "away"; R7 stop true ;
-? alive R8 : R8 setpos getmarkerpos "away"; R8 stop true ;
-? alive R9 : R9 setpos getmarkerpos "away"; R9 stop true ;
+? alive R1 : R1 setPos getMarkerPos "away"; R1 stop true ;
+? alive R2 : R2 setPos getMarkerPos "away"; R2 stop true ;
+? alive R3 : R3 setPos getMarkerPos "away"; R3 stop true ;
+? alive R4 : R4 setPos getMarkerPos "away"; R4 stop true ;
+? alive R5 : R5 setPos getMarkerPos "away"; R5 stop true ;
+? alive R6 : R6 setPos getMarkerPos "away"; R6 stop true ;
+? alive R7 : R7 setPos getMarkerPos "away"; R7 stop true ;
+? alive R8 : R8 setPos getMarkerPos "away"; R8 stop true ;
+? alive R9 : R9 setPos getMarkerPos "away"; R9 stop true ;
 
-aP setpos getmarkerpos "playerAway"
+aP setPos getMarkerPos "playerAway"
 
-LemontovBase setmimic "angry"
-AstierBase setmimic "normal"
-PoincareBase setmimic "normal"
+LemontovBase setMimic "angry"
+AstierBase setMimic "normal"
+PoincareBase setMimic "normal"
 
-B5 setpos getmarkerpos "B5"
-B6 setpos getmarkerpos "B6"
-B7 setpos getmarkerpos "B7"
-B8 setpos getmarkerpos "B4"
-B8 setdir 335
-B8 dowatch [7211.85,6854.00,2.04]
-B9 setpos getmarkerpos "B9"
-B10 setpos getmarkerpos "B10"
+B5 setPos getMarkerPos "B5"
+B6 setPos getMarkerPos "B6"
+B7 setPos getMarkerPos "B7"
+B8 setPos getMarkerPos "B4"
+B8 setDir 335
+B8 doWatch [7211.85,6854.00,2.04]
+B9 setPos getMarkerPos "B9"
+B10 setPos getMarkerPos "B10"
 
-B5 disableai "autotarget"
-B6 disableai "autotarget"
-B7 disableai "autotarget"
-B8 disableai "autotarget"
-B9 disableai "autotarget"
-B10 disableai "autotarget"
+B5 disableAI "AUTOTARGET"
+B6 disableAI "AUTOTARGET"
+B7 disableAI "AUTOTARGET"
+B8 disableAI "AUTOTARGET"
+B9 disableAI "AUTOTARGET"
+B10 disableAI "AUTOTARGET"
 
-LemontovBase setpos getmarkerpos "LemontovBase"
-AstierBase setpos getmarkerpos "AstierBase"
-PoincareBase setpos getmarkerpos "PoincareBase"
+LemontovBase setPos getMarkerPos "LemontovBase"
+AstierBase setPos getMarkerPos "AstierBase"
+PoincareBase setPos getMarkerPos "PoincareBase"
 
-PoincareBase dowatch [7254.22,6784.71,1.63]
-AstierBase dowatch [7256.00,6784.64,1.63]
+PoincareBase doWatch [7254.22,6784.71,1.63]
+AstierBase doWatch [7256.00,6784.64,1.63]
 
 
-B5 setmimic "normal"
-B6 setmimic "normal"
-B7 setmimic "normal"
-B8 setmimic "normal"
-B9 setmimic "normal"
-B10 setmimic "normal"
+B5 setMimic "normal"
+B6 setMimic "normal"
+B7 setMimic "normal"
+B8 setMimic "normal"
+B9 setMimic "normal"
+B10 setMimic "normal"
 
 aa = LemontovBase loadStatus "36Lemontov"
 
@@ -79,32 +79,32 @@ _camera cameraeffect ["internal","back"]
 ; worst ending - russians are here
 ? not badEnding : goto "greetingCinema" ;
 
-B8 setpos getmarkerpos "B8"
-B8 setdir 125
-B8 dowatch objnull
+B8 setPos getMarkerPos "B8"
+B8 setDir 125
+B8 doWatch objNull
 
-KaplinskyBase setpos getmarkerpos "KaplinskyBase"
-B1 setpos getmarkerpos "B1"
-B2 setpos getmarkerpos "B2"
-B3 setpos getmarkerpos "B3"
-B4 setpos getmarkerpos "B4"
+KaplinskyBase setPos getMarkerPos "KaplinskyBase"
+B1 setPos getMarkerPos "B1"
+B2 setPos getMarkerPos "B2"
+B3 setPos getMarkerPos "B3"
+B4 setPos getMarkerPos "B4"
 
-B1 disableai "autotarget"
-B2 disableai "autotarget"
-B3 disableai "autotarget"
-B4 disableai "autotarget"
-KaplinskyBase disableai "autotarget"
+B1 disableAI "AUTOTARGET"
+B2 disableAI "AUTOTARGET"
+B3 disableAI "AUTOTARGET"
+B4 disableAI "AUTOTARGET"
+KaplinskyBase disableAI "AUTOTARGET"
 
-KaplinskyBase setmimic "normal"
-B1 setmimic "angry"
-B2 setmimic "angry"
-B3 setmimic "angry"
-B4 setmimic "angry"
+KaplinskyBase setMimic "normal"
+B1 setMimic "angry"
+B2 setMimic "angry"
+B3 setMimic "angry"
+B4 setMimic "angry"
 
 ; BASE GREETING CINEMA
 #greetingCinema
 ~0.5
-titlecut["","black in",1]
+titleCut["","BLACK IN",1]
 
 ;=== 13:54:40
 _camera camSetTarget [46757.23,-84972.18,2267.56]
@@ -136,9 +136,9 @@ _camera camSetPos [7255.18,6784.57,1.58]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-0 fademusic 0.3
-PoincareBase setmimic "Smile"
-PoincareBase switchmove "FxShow2"
+0 fadeMusic 0.3
+PoincareBase setMimic "Smile"
+PoincareBase switchMove "FxShow2"
 PoincareBase say "36v104"
 ~4.5
 ;=== 10:41:23
@@ -147,10 +147,10 @@ _camera camSetPos [7257.23,6785.25,1.58]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-AstierBase setmimic "smile"
-PoincareBase setmimic "normal"
+AstierBase setMimic "smile"
+PoincareBase setMimic "normal"
 AstierBase say "36v105"
-AstierBase switchmove "FXCivilHandMouth"
+AstierBase switchMove "FXCivilHandMouth"
 ~2
 ;=== 10:43:15
 _camera camSetTarget [-91642.84,-5000.83,-8929.22]
@@ -165,8 +165,8 @@ _camera camSetPos [7254.27,6781.07,1.46]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-PoincareBase setmimic "normal"
-AstierBase setmimic "normal"
+PoincareBase setMimic "normal"
+AstierBase setMimic "normal"
 PoincareBase say "36v106"
 ~5.5
 ;=== 10:44:39
@@ -183,8 +183,8 @@ _camera camSetPos [7254.93,6784.23,1.46]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-PoincareBase setmimic "angry"
-PoincareBase switchmove "FXCivilLookaround"
+PoincareBase setMimic "angry"
+PoincareBase switchMove "FXCivilLookaround"
 PoincareBase say "36v108"
 ~3.5
 ;=== 10:46:04
@@ -194,14 +194,14 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-? badEnding : B4 setmimic "angry"; B4 setdir 165; B4 switchmove "FxShow3"; B4 say "36v110" ;
-? not badEnding : B8 setmimic "angry"; B8 setdir 165; B8 switchmove "FxShow3"; B8 say "36v109" ;
+? badEnding : B4 setMimic "angry"; B4 setDir 165; B4 switchMove "FxShow3"; B4 say "36v110" ;
+? not badEnding : B8 setMimic "angry"; B8 setDir 165; B8 switchMove "FxShow3"; B8 say "36v109" ;
 ~0.5
-PoincareBase dowatch [7218.97,6842.81,1.53]
-AstierBase dowatch [7218.97,6842.81,1.53]
+PoincareBase doWatch [7218.97,6842.81,1.53]
+AstierBase doWatch [7218.97,6842.81,1.53]
 ~1
 
-LemontovBase dowatch [7254.13,6784.73,1.65]
+LemontovBase doWatch [7254.13,6784.73,1.65]
 
 ;=== 10:48:24
 _camera camSetTarget [-45562.52,91749.80,-2082.22]
@@ -216,14 +216,14 @@ _camera camSetPos [7253.99,6787.22,1.25]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-AstierBase setmimic "angry"
-PoincareBase setmimic "angry"
+AstierBase setMimic "angry"
+PoincareBase setMimic "angry"
 AstierBase say "36v111"
 ~2
 
 ? not badEnding : goto "baseChoice" ;
 
-AstierBase dowatch [7255.10,6782.15,1.61]
+AstierBase doWatch [7255.10,6782.15,1.61]
 
 ~1
 ;=== 10:57:19
@@ -242,7 +242,7 @@ _camera camCommit 0
 @camCommitted _camera
 ~1.5
 
-titlecut["","black out",2]
+titleCut["","BLACK OUT",2]
 ~2.5
 
 player cameraEffect ["terminate","back"]
@@ -263,7 +263,7 @@ _camera camCommit 0
 @camCommitted _camera
 
 
-titletext["","plain down"]
+titleText["","PLAIN DOWN"]
 
 [] exec "choice_music.sqs"
 
@@ -284,8 +284,8 @@ choiceMusic=false
 
 LemontovBase say "36v112"
 ~2.5
-AstierBase dowatch [7255.10,6782.15,1.61]
-PoincareBase dowatch [7255.10,6782.15,1.61]
+AstierBase doWatch [7255.10,6782.15,1.61]
+PoincareBase doWatch [7255.10,6782.15,1.61]
 ;=== 11:17:40
 _camera camSetTarget [-39112.29,94993.18,-8250.75]
 _camera camSetPos [7256.29,6780.93,1.50]
@@ -295,9 +295,9 @@ _camera camCommit 0
 ~2.5
 badEnding=false
 goodEnding=false
-titlecut ["","black out",2]
+titleCut ["","BLACK OUT",2]
 ~2.5
-titletext["","plain down"]
+titleText["","PLAIN DOWN"]
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
@@ -313,10 +313,10 @@ exit
 
 LemontovBase say "36v113"
 ~2
-AstierBase dowatch [7255.10,6782.15,1.61]
-PoincareBase dowatch [7255.10,6782.15,1.61]
-AstierBase setmimic "surprised"
-PoincareBase setmimic "surprised"
+AstierBase doWatch [7255.10,6782.15,1.61]
+PoincareBase doWatch [7255.10,6782.15,1.61]
+AstierBase setMimic "surprised"
+PoincareBase setMimic "surprised"
 ;=== 11:17:40
 _camera camSetTarget [-39112.29,94993.18,-8250.75]
 _camera camSetPos [7256.29,6780.93,1.50]
@@ -361,23 +361,23 @@ _camera camSetPos [7257.42,6781.43,1.55]
 _camera camSetFOV 0.700
 _camera camCommit 4
 ~0.5
-PoincareBase setmimic "angry"
+PoincareBase setMimic "angry"
 PoincareBase say "36v125"
-PoincareBase move getmarkerpos "toBoat"
-PoincareBase dowatch objnull
+PoincareBase move getMarkerPos "toBoat"
+PoincareBase doWatch objNull
 ~1
-B5 move getmarkerpos "toBoat"
-B6 move getmarkerpos "toBoat"
-B7 move getmarkerpos "toBoat"
-B8 move getmarkerpos "toBoat"
-B9 move getmarkerpos "toBoat"
-B10 move getmarkerpos "toBoat"
-B5 setspeedmode "limited"
-B6 setspeedmode "limited"
-B7 setspeedmode "limited"
-B8 setspeedmode "limited"
-B9 setspeedmode "limited"
-B10 setspeedmode "limited"
+B5 move getMarkerPos "toBoat"
+B6 move getMarkerPos "toBoat"
+B7 move getMarkerPos "toBoat"
+B8 move getMarkerPos "toBoat"
+B9 move getMarkerPos "toBoat"
+B10 move getMarkerPos "toBoat"
+B5 setSpeedMode "limited"
+B6 setSpeedMode "limited"
+B7 setSpeedMode "limited"
+B8 setSpeedMode "limited"
+B9 setSpeedMode "limited"
+B10 setSpeedMode "limited"
 @camCommitted _camera
 ;=== 12:14:55
 _camera camSetTarget [42807.63,100217.37,-2415.13]
@@ -401,12 +401,12 @@ _camera camSetPos [7254.49,6783.93,1.59]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-AstierBase setmimic "normal"
+AstierBase setMimic "normal"
 AstierBase say "36v128"
 ~6
-AstierBase move getmarkerpos "toBoat"
+AstierBase move getMarkerPos "toBoat"
 ~0.5
-AstierBase dowatch objnull
+AstierBase doWatch objNull
 ;=== 12:16:49
 _camera camSetTarget [39134.20,101147.09,-8839.22]
 _camera camSetPos [7253.86,6781.01,1.40]
@@ -414,30 +414,30 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~2
-titlecut["","black out",1]
+titleCut["","BLACK OUT",1]
 ~1
 
 ; BOAT ESCAPE
 
-AstierBase moveincargo PortShip
-PoincareBase moveincargo PortShip
-B5 moveindriver PortShip
-B6 moveingunner PortShip
-B7 moveincargo PortShip
-B8 moveincargo PortShip
-B9 moveincargo PortShip
-B10 moveincargo PortShip
+AstierBase moveInCargo PortShip
+PoincareBase moveInCargo PortShip
+B5 moveInDriver PortShip
+B6 moveInGunner PortShip
+B7 moveInCargo PortShip
+B8 moveInCargo PortShip
+B9 moveInCargo PortShip
+B10 moveInCargo PortShip
 
-deletevehicle LemontovBase
+deleteVehicle LemontovBase
 
-LemontovPort setpos getmarkerpos "LemontovPort"
-LemontovPort setmimic "angry"
-LemontovPort disableai "autotarget"
+LemontovPort setPos getMarkerPos "LemontovPort"
+LemontovPort setMimic "angry"
+LemontovPort disableAI "AUTOTARGET"
 
 
-titlecut["","black in",1]
+titleCut["","BLACK IN",1]
 
-titletext["","plain down"]
+titleText["","PLAIN DOWN"]
 
 ;=== 12:50:25
 _camera camSetTarget [-88473.38,35280.63,2.08]
@@ -454,8 +454,8 @@ _camera camCommit 8
 
 ~3
 
-B5 move getmarkerpos "BoatMove"
-B5 setspeedmode "limited"
+B5 move getMarkerPos "BoatMove"
+B5 setSpeedMode "limited"
 
 
 @camCommitted _camera
@@ -494,7 +494,7 @@ _camera camSetPos [7337.39,6811.13,1.26]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-LemontovPort setbehaviour "aware"
+LemontovPort setBehaviour "AWARE"
 ~1
 ;=== 12:54:12
 _camera camSetTarget [-80251.87,-41433.75,544.43]
@@ -554,7 +554,7 @@ _camera camCommit 4
 ~1.5
 playsound "tokarev"
 ~0.2
-titlecut["","black out",0.1]
+titleCut["","BLACK OUT",0.1]
 ~0.4
 playsound "tokarev"
 ~0.3
@@ -583,13 +583,13 @@ playsound "tokarev"
 
 ~4
 
-PortShip setpos getmarkerpos "BoatMove"
-PortShip setdir 60
+PortShip setPos getMarkerPos "BoatMove"
+PortShip setDir 60
 
 goodEnding=true
 badEnding=false
 
-deletevehicle LemontovPort
+deleteVehicle LemontovPort
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera

@@ -1,14 +1,14 @@
-setacctime 1
+setAccTime 1
 
-"2" objstatus "done"
-aP addrating 1000
+"2" objStatus "DONE"
+aP addRating 1000
 
-aP sideradio "21r16"
+aP sideRadio "21r16"
 camp3Destroyed=true
 
 ? camp1Destroyed and camp2Destroyed : goto "missionCompleted" ;
 
-baza sideradio "21r18"
+baza sideRadio "21r18"
 finishingUp=true
 
 1 SetRadioMsg localize "STRM_RADIO_TEXT"
@@ -19,7 +19,7 @@ goto "ex"
 
 #missionCompleted
 
-baza sideradio "21r17"
+baza sideRadio "21r17"
 
 ~10
 

@@ -39,7 +39,7 @@ _dur = _this select 2
 
 ; object to center fire on. If nothing, create logic for sound to come from
 private["_obj"]
-if(count _this >= 4) then {_obj = _this select 3} else {_obj = "logic" createvehicle [0,0,0]; _obj setpos _center; _center = [0,0,0]}
+if(count _this >= 4) then {_obj = _this select 3} else {_obj = "logic" createVehicle [0,0,0]; _obj setPos _center; _center = [0,0,0]}
 
 ; Cause damage to object? If so, determine how much to cause
 _dmg = 0
@@ -66,10 +66,10 @@ drop ["cl_fire","","Billboard",100,6*_power/((0.1*(abs speed _obj))+1),[(_center
 ~0.1
 _power = _power - _dur
 _i = _i + 1
-? _dmg > 0 : _obj setdammage (getdammage _obj + _dmg); {if((_x distance _obj) <= (7*_size*_power)) then {_x setdammage (getdammage _x + _dmg)}} foreach _list
+? _dmg > 0 : _obj setDammage (getdammage _obj + _dmg); {if((_x distance _obj) <= (7*_size*_power)) then {_x setDammage (getdammage _x + _dmg)}} forEach _list
 ? _power > 0.2 AND _obj == _obj : goto "loop"
 
 
 #end
-? typeof _obj == "logic" : deletevehicle _obj
+? typeof _obj == "logic" : deleteVehicle _obj
 exit

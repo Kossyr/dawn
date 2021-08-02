@@ -1,9 +1,9 @@
-setacctime 1
+setAccTime 1
 
 cinema=true
 
 
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 ~0.5
 
 _camera = "camera" camcreate [0,0,0]
@@ -11,16 +11,16 @@ _camera cameraeffect ["internal","back"]
 
 ? (aP == vehicle aP) : goto "cinemaDostoevsky" ;
 
-vehicle aP setpos getmarkerpos "VehicleAway"
-vehicle aP setdir 0
+vehicle aP setPos getMarkerPos "VehicleAway"
+vehicle aP setDir 0
 
 ~0.5
 
-vehicle aP setpos getmarkerpos "CinemaDostoevskyVehicle"
-vehicle aP setdir 65
+vehicle aP setPos getMarkerPos "CinemaDostoevskyVehicle"
+vehicle aP setDir 65
 
 aP action ["EJECT"]
-UnassignVehicle aP
+unassignVehicle aP
 
 #cinemaDostoevsky
 
@@ -29,23 +29,23 @@ aa = LemontovDouble loadStatus "f03Lemontov"
 
 aP action ["WEAPONONBACK"]
 
-aP setpos getmarkerpos "PlayerAway"
-Dostoevsky setpos getmarkerpos "CinemaDostoevsky"
-Dostoevsky setmimic "normal"
-Dostoevsky dowatch [2184.12,7026.04,1.61]
+aP setPos getMarkerPos "PlayerAway"
+Dostoevsky setPos getMarkerPos "CinemaDostoevsky"
+Dostoevsky setMimic "normal"
+Dostoevsky doWatch [2184.12,7026.04,1.61]
 
 
-LemontovDouble setpos getmarkerpos "CinemaDostoevskyLemontov"
-LemontovDouble setdir 170
-LemontovDouble dowatch [2184.22,7024.07,1.72]
+LemontovDouble setPos getMarkerPos "CinemaDostoevskyLemontov"
+LemontovDouble setDir 170
+LemontovDouble doWatch [2184.22,7024.07,1.72]
 
-LemontovDouble setmimic "angry"
+LemontovDouble setMimic "angry"
 
 ~0.5
 
-setacctime 1
+setAccTime 1
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 
 ;=== 15:28:46
@@ -55,7 +55,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Dostoevsky say "f03v32"
-Dostoevsky setmimic "smile"
+Dostoevsky setMimic "smile"
 ~2.5
 ;=== 15:31:03
 _camera camSetTarget [58924.14,88132.60,-14070.61]
@@ -72,10 +72,10 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Dostoevsky say "f03v34"
-Dostoevsky setmimic "normal"
-Dostoevsky dowatch [2278.86,6996.65,6.31]
+Dostoevsky setMimic "normal"
+Dostoevsky doWatch [2278.86,6996.65,6.31]
 ~1.5
-Dostoevsky switchmove "fxshow3"
+Dostoevsky switchMove "fxshow3"
 ;=== 15:33:37
 _camera camSetTarget [94346.98,-26330.31,19959.32]
 _camera camSetPos [2182.24,7026.12,1.40]
@@ -88,7 +88,7 @@ _camera camSetPos [2181.29,7025.77,1.52]
 _camera camSetFOV 0.700
 _camera camCommit 4
 ~1.5
-LemontovDouble dowatch [2278.86,6996.65,6.31]
+LemontovDouble doWatch [2278.86,6996.65,6.31]
 @camCommitted _camera
 ;=== 15:35:10
 _camera camSetTarget [-28463.61,-86974.01,-14849.69]
@@ -96,13 +96,13 @@ _camera camSetPos [2184.78,7026.69,1.49]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Dostoevsky dowatch [2184.12,7026.04,1.61]
+Dostoevsky doWatch [2184.12,7026.04,1.61]
 ~1
-Dostoevsky setmimic "sad"
+Dostoevsky setMimic "sad"
 Dostoevsky say "f03v35"
 ~1.5
-Dostoevsky setmimic "normal"
-LemontovDouble dowatch [2184.22,7024.07,1.72]
+Dostoevsky setMimic "normal"
+LemontovDouble doWatch [2184.22,7024.07,1.72]
 ~2
 ;=== 15:36:34
 _camera camSetTarget [2429.24,106438.24,-10681.03]
@@ -118,7 +118,7 @@ _camera camSetPos [2183.29,7026.51,1.74]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Dostoevsky setmimic "smile"
+Dostoevsky setMimic "smile"
 Dostoevsky say "f03v37"
 ~4.5
 ;=== 15:38:00
@@ -135,23 +135,23 @@ _camera camSetPos [2184.16,7025.84,1.60]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Dostoevsky setmimic "normal"
-Dostoevsky playmove "effectstandsalute"
+Dostoevsky setMimic "normal"
+Dostoevsky playMove "effectstandsalute"
 Dostoevsky say "f03v39"
 ~1.5
-Dostoevsky playmove "effectstandsaluteend"
+Dostoevsky playMove "effectstandsaluteend"
 ~1
-LemontovDouble dowatch objNull
-LemontovDouble setdir 0
-LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
+LemontovDouble doWatch objNull
+LemontovDouble setDir 0
+LemontovDouble setPos getMarkerPos "PlayerDoubleAway"
 
-aP setpos getmarkerpos "CinemaDostoevskyLemontov"
-aP setdir 170
+aP setPos getMarkerPos "CinemaDostoevskyLemontov"
+aP setDir 170
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
-titletext ["","plain"]
+titleText ["","PLAIN"]
 
 talkedToDostoevsky=true
 cinema=false
@@ -160,7 +160,7 @@ cinema=false
 
 DostoevskySwitch=true
 
-"Rashiv1" setmarkertype "Empty"
-"Rasshiv2" setmarkertype "Marker"
+"Rashiv1" setMarkerType "Empty"
+"Rasshiv2" setMarkerType "Marker"
 
 exit

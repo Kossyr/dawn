@@ -1,9 +1,9 @@
-setacctime 1
+setAccTime 1
 
-titlecut["","black out",1]
+titleCut["","BLACK OUT",1]
 
-"5" objstatus "done"
-aP addrating 1000
+"5" objStatus "DONE"
+aP addRating 1000
 ~1.1
 
 cinema=true
@@ -13,37 +13,37 @@ _camera cameraeffect ["internal","back"]
 
 ? (aP == vehicle aP) : goto "durras_cinema" ;
 
-vehicle aP setpos getmarkerpos "player_vehicle_away"
-vehicle aP setdir 250
+vehicle aP setPos getMarkerPos "player_vehicle_away"
+vehicle aP setDir 250
 
 ~1
 
-vehicle aP setpos getmarkerpos "durras_car"
-vehicle aP setdir 250
+vehicle aP setPos getMarkerPos "durras_car"
+vehicle aP setDir 250
 
 aP action ["EJECT"]
-UnassignVehicle aP
+unassignVehicle aP
 
 #durras_cinema
 
 aa = aP saveStatus "10Rashiv"
 aa = RashivDurras loadStatus "10Rashiv"
 
-Tracer setpos getmarkerpos "tracer_durras";
-RashivDurras setpos getmarkerpos "rashiv_durras";
-aP setpos getmarkerpos "player_away"
+Tracer setPos getMarkerPos "tracer_durras";
+RashivDurras setPos getMarkerPos "rashiv_durras";
+aP setPos getMarkerPos "player_away"
 aP action ["WEAPONONBACK"]
 
 
-Tracer setmimic "Normal"
-RashivDurras setmimic "Normal"
-RashivDurras dowatch [8819.67,2725.03,1.62]
-Tracer dowatch [8821.70,2724.43,1.67]
+Tracer setMimic "Normal"
+RashivDurras setMimic "Normal"
+RashivDurras doWatch [8819.67,2725.03,1.62]
+Tracer doWatch [8821.70,2724.43,1.67]
 
 
 ~0.5
 
-titlecut["","black in",1]
+titleCut["","BLACK IN",1]
 
 ;=== 19:27:06
 _camera camSetTarget [-75396.29,56609.76,88.89]
@@ -75,14 +75,14 @@ _camera camCommit 0
 RashivDurras say "11v71"
 ~1
 Tracer say "11v72"
-Tracer switchmove "FxToHand"
-Tracer setmimic "Sad"
+Tracer switchMove "FxToHand"
+Tracer setMimic "Sad"
 ~3.5
 RashivDurras say "11v73"
 ~1
 Tracer say "11v74"
-Tracer switchmove "FXCivilArmsAkimboR"
-Tracer setmimic "Angry"
+Tracer switchMove "FXCivilArmsAkimboR"
+Tracer setMimic "Angry"
 ;=== 19:30:02
 _camera camSetTarget [-90061.39,16588.10,-5396.88]
 _camera camSetPos [8820.90,2724.83,1.39]
@@ -103,20 +103,20 @@ _camera camCommit 0
 @camCommitted _camera
 Tracer say "11v75"
 ~6
-deletevehicle RashivDurras
-aP setpos getmarkerpos "rashiv_durras"
-aP setdir 295
-Tracer dowatch objnull
-"6" objstatus "active"
+deleteVehicle RashivDurras
+aP setPos getMarkerPos "rashiv_durras"
+aP setDir 295
+Tracer doWatch objNull
+"6" objStatus "ACTIVE"
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 cinema=false
 ~2
-setacctime 1
+setAccTime 1
 aP say "11v76"
 
 ~7
 
-savegame
+saveGame
 
 exit

@@ -1,26 +1,26 @@
-titlecut ["","black in",2]
+titleCut ["","BLACK IN",2]
 
-A1 moveincargo MyUral
-A2 moveincargo MyUral
-A3 moveincargo MyUral
-A4 moveincargo MyUral
-A5 moveincargo MyUral
+A1 moveInCargo MyUral
+A2 moveInCargo MyUral
+A3 moveInCargo MyUral
+A4 moveInCargo MyUral
+A5 moveInCargo MyUral
 
-0 fadesound 0.2
-playmusic "RTrack9"
+0 fadeSound 0.2
+playMusic "RTrack9"
 
-Rashiv setmimic "sad"
-Morokov setmimic "normal"
-Dostoevsky setmimic "angry"
+Rashiv setMimic "sad"
+Morokov setMimic "normal"
+Dostoevsky setMimic "angry"
 
-A1 setmimic "normal"
-A2 setmimic "normal"
-A3 setmimic "normal"
-A4 setmimic "normal"
-A5 setmimic "normal"
+A1 setMimic "normal"
+A2 setMimic "normal"
+A3 setMimic "normal"
+A4 setMimic "normal"
+A5 setMimic "normal"
 
-Morokov dowatch [5406.25,6086.00,1.61]
-Dostoevsky dowatch [5438.63,6058.24,1.64]
+Morokov doWatch [5406.25,6086.00,1.61]
+Dostoevsky doWatch [5438.63,6058.24,1.64]
 
 MyUral stop true
 
@@ -39,11 +39,11 @@ _camera camSetPos [5406.64,6083.92,1.17]
 _camera camSetFOV 0.700
 _camera camCommit 5
 ~0.5
-S1 switchmove "FxInHand"
-S2 playmove "effectstandtalk"
+S1 switchMove "FxInHand"
+S2 playMove "effectstandtalk"
 ~3
-Morokov setspeedmode "full"
-Morokov move getmarkerpos "Morokov"
+Morokov setSpeedMode "full"
+Morokov move getMarkerPos "Morokov"
 @camCommitted _camera
 
 ;=== 14:53:42
@@ -75,14 +75,14 @@ _camera camCommit 1.5
 Morokov say "06v01"
 
 ~0.35
-Rashiv dowatch [5407.57,6084.80,1.62]
-Rashiv setmimic "normal"
+Rashiv doWatch [5407.57,6084.80,1.62]
+Rashiv setMimic "normal"
 @camCommitted _camera
 ~1
 
 Morokov stop true;
-Morokov setpos getmarkerpos "Morokov";
-Morokov setdir 315;
+Morokov setPos getMarkerPos "Morokov";
+Morokov setDir 315;
 Morokov stop false;
 
 ;=== 15:20:11
@@ -92,11 +92,11 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~0.5
-Morokov setmimic "smile"
+Morokov setMimic "smile"
 ~1.5
 Morokov say "06v02"
 ~0.5
-Morokov switchmove "FxShow2"
+Morokov switchMove "FxShow2"
 
 ;=== 15:21:39
 _camera camSetTarget [102641.66,-17207.08,-1500.17]
@@ -125,7 +125,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Morokov say "06v03"
-Morokov switchmove "FXCivilArmsAkimboR"
+Morokov switchMove "FXCivilArmsAkimboR"
 ~3
 ;=== 15:25:21
 _camera camSetTarget [82735.57,-57152.19,-4536.74]
@@ -155,13 +155,13 @@ _camera camCommit 0
 Morokov say "06v04"
 ~7
 tanksMove=true
-4 fadesound 1
+4 fadeSound 1
 ~3
 Last say "06v05"
 ~0.5
-Morokov setmimic "normal"
+Morokov setMimic "normal"
 ~0.5
-Morokov dowatch [5462.96,6066.97,2.67]
+Morokov doWatch [5462.96,6066.97,2.67]
 ~0.5
 ;=== 15:39:20
 _camera camSetTarget [-86952.64,44186.64,-4118.17]
@@ -170,10 +170,10 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~0.2
-Morokov setmimic "smile"
-Rashiv dowatch [5462.96,6066.97,2.67]
+Morokov setMimic "smile"
+Rashiv doWatch [5462.96,6066.97,2.67]
 ~2
-titletext["","plain"]
+titleText["","PLAIN"]
 ;=== 16:23:09
 _camera camSetTarget [-1638.07,-93679.52,-2299.28]
 _camera camSetPos [5467.52,6039.33,1.73]
@@ -210,7 +210,7 @@ _camera camSetPos [5506.19,6084.23,4.20]
 _camera camSetFOV 0.700
 _camera camCommit 5
 ~1
-MyUral setpos getmarkerpos "MyUralStart"
+MyUral setPos getMarkerPos "MyUralStart"
 MyUral stop false
 carsMove=true
 @camCommitted _camera
@@ -241,8 +241,8 @@ _camera camCommit 5
 @MyUralArrived
 ~1
 carsStop=true
-MyUral setpos getmarkerpos "MyUral"
-MyUral setdir 295
+MyUral setPos getMarkerPos "MyUral"
+MyUral setDir 295
 [] exec "intro_getout.sqs"
 ;=== 16:43:04
 _camera camSetTarget [-85739.23,45370.63,-11613.25]
@@ -287,7 +287,7 @@ _camera camSetFOV 0.700
 _camera camCommit 7
 @camCommitted _camera
 ~1
-Morokov dowatch [5406.25,6086.00,1.61]
+Morokov doWatch [5406.25,6086.00,1.61]
 ~1
 ;=== 16:53:01
 _camera camSetTarget [41280.41,-86850.00,-8629.43]
@@ -296,7 +296,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Morokov say "06v08"
-Rashiv dowatch [5407.57,6084.80,1.62]
+Rashiv doWatch [5407.57,6084.80,1.62]
 
 A1 stop true
 A2 stop true
@@ -304,23 +304,23 @@ A3 stop true
 A4 stop true
 A5 stop true
 
-A1 setpos getmarkerpos "A1"
-A2 setpos getmarkerpos "A2"
-A3 setpos getmarkerpos "A3"
-A4 setpos getmarkerpos "A4"
-A5 setpos getmarkerpos "A5"
+A1 setPos getMarkerPos "A1"
+A2 setPos getMarkerPos "A2"
+A3 setPos getMarkerPos "A3"
+A4 setPos getMarkerPos "A4"
+A5 setPos getMarkerPos "A5"
 
-A1 setdir 280
-A2 setdir 280
-A3 setdir 280
-A4 setdir 280
-A5 setdir 280
+A1 setDir 280
+A2 setDir 280
+A3 setDir 280
+A4 setDir 280
+A5 setDir 280
 
-A1 switchmove "FxStandAtt"
-A2 switchmove "FxStandAtt"
-A3 switchmove "FxStandAtt"
-A4 switchmove "FxStandAtt"
-A5 switchmove "FxStandAtt"
+A1 switchMove "FxStandAtt"
+A2 switchMove "FxStandAtt"
+A3 switchMove "FxStandAtt"
+A4 switchMove "FxStandAtt"
+A5 switchMove "FxStandAtt"
 
 A1 stop false
 A2 stop false
@@ -330,23 +330,23 @@ A5 stop false
 
 ~1
 
-A1 setpos getmarkerpos "A1"
-A2 setpos getmarkerpos "A2"
-A3 setpos getmarkerpos "A3"
-A4 setpos getmarkerpos "A4"
-A5 setpos getmarkerpos "A5"
+A1 setPos getMarkerPos "A1"
+A2 setPos getMarkerPos "A2"
+A3 setPos getMarkerPos "A3"
+A4 setPos getMarkerPos "A4"
+A5 setPos getMarkerPos "A5"
 
-A1 setdir 280
-A2 setdir 280
-A3 setdir 280
-A4 setdir 280
-A5 setdir 280
+A1 setDir 280
+A2 setDir 280
+A3 setDir 280
+A4 setDir 280
+A5 setDir 280
 
-A1 dowatch [5437.92,6062.19,1.73]
-A2 dowatch [5437.73,6060.42,1.73]
-A3 dowatch [5437.54,6058.58,1.73]
-A4 dowatch [5437.34,6056.67,1.73]
-A5 dowatch [5437.15,6054.90,1.73]
+A1 doWatch [5437.92,6062.19,1.73]
+A2 doWatch [5437.73,6060.42,1.73]
+A3 doWatch [5437.54,6058.58,1.73]
+A4 doWatch [5437.34,6056.67,1.73]
+A5 doWatch [5437.15,6054.90,1.73]
 
 ~1
 ;=== 16:53:33
@@ -363,13 +363,13 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~0.5
-Dostoevsky dowatch [5407.57,6084.80,1.62]
+Dostoevsky doWatch [5407.57,6084.80,1.62]
 ~1.5
-Dostoevsky switchmove "FxShow3"
+Dostoevsky switchMove "FxShow3"
 Dostoevsky say "06v09"
 ~0.2
-Morokov dowatch [5437.45,6058.32,1.62]
-Rashiv dowatch [5437.45,6058.32,1.62]
+Morokov doWatch [5437.45,6058.32,1.62]
+Rashiv doWatch [5437.45,6058.32,1.62]
 ~0.8
 ;=== 17:02:01
 _camera camSetTarget [103602.66,-7874.46,-12926.46]
@@ -378,9 +378,9 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~2.5
-Dostoevsky playmove "effectstand"
+Dostoevsky playMove "effectstand"
 ~4.5
-titlecut["","black out",3]
+titleCut["","BLACK OUT",3]
 ~3
 end=true
 

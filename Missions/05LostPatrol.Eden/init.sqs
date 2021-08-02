@@ -1,11 +1,11 @@
-titlecut ["","black in",3]
+titleCut ["","BLACK IN",3]
 
 baza = [East,"HQ"]
 
-"2" objstatus "hidden"
-"3" objstatus "hidden"
-"4" objstatus "hidden"
-"5" objstatus "hidden"
+"2" objStatus "HIDDEN"
+"3" objStatus "HIDDEN"
+"4" objStatus "HIDDEN"
+"5" objStatus "HIDDEN"
 
 ClearWeaponCargo auto
 ClearMagazineCargo auto
@@ -18,22 +18,22 @@ goForest=false
 inLeMoule=false
 allAboard=false
 
-"Forest" setmarkertype "Empty"
+"Forest" setMarkerType "Empty"
 
-"_x stop true" foreach units boris
+"_x stop true" forEach units boris
 
-playmusic "Track2"
+playMusic "Track2"
 
-enableradio false
-
-~3
-
-3 fadesound 0.1
-3 fademusic 0.3
+enableRadio false
 
 ~3
 
-setacctime 1
+3 fadeSound 0.1
+3 fadeMusic 0.3
+
+~3
+
+setAccTime 1
 
 Dostoevsky say "05v03"
 Dostoevsky say "05v04"
@@ -45,8 +45,8 @@ Dostoevsky say "05v09"
 
 ~58
 
-2 fademusic 0.5
-2 fadesound 1
+2 fadeMusic 0.5
+2 fadeSound 1
 
 
 exit

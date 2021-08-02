@@ -1,12 +1,12 @@
 ~1
 
-setacctime 1
+setAccTime 1
 
 playsound "f01v364"
 
 ~6
 
-titlecut["","black out",3]
+titleCut["","BLACK OUT",3]
 ~3
 
 cinema=true
@@ -15,19 +15,19 @@ _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
 
-aP setpos getmarkerpos "PlayerAway"
+aP setPos getMarkerPos "PlayerAway"
 
-LemontovDouble2 setpos getmarkerpos "CinemaVolkovPlayer"
-LemontovDouble2 setmimic "angry"
-LemontovDouble2 dowatch [11409.92,10533.16,1.58]
+LemontovDouble2 setPos getMarkerPos "CinemaVolkovPlayer"
+LemontovDouble2 setMimic "angry"
+LemontovDouble2 doWatch [11409.92,10533.16,1.58]
 
-titlecut["","black in",0.5]
-titletext["","plain"]
+titleCut["","BLACK IN",0.5]
+titleText["","PLAIN"]
 
-setacctime 1
+setAccTime 1
 
-playmusic "RTrack9"
-0 fademusic 1
+playMusic "RTrack9"
+0 fadeMusic 1
 
 
 deleteVehicle Medic1
@@ -107,9 +107,9 @@ _camera camSetPos [11418.46,10519.74,5.61]
 _camera camSetFOV 0.402
 _camera camCommit 4
 ~2
-titlecut["","black out",2]
+titleCut["","BLACK OUT",2]
 @camCommitted _camera
-titlecut["","black in",0.1]
+titleCut["","BLACK IN",0.1]
 ;=== 15:27:11
 _camera camSetTarget [-85806.66,31801.91,-9720.62]
 _camera camSetPos [11410.50,10535.88,0.18]
@@ -122,7 +122,7 @@ _camera camSetPos [11410.45,10536.08,0.18]
 _camera camSetFOV 0.700
 _camera camCommit 1
 @camCommitted _camera
-titlecut["","black in",0.1]
+titleCut["","BLACK IN",0.1]
 ;=== 15:28:07
 _camera camSetTarget [108446.51,15385.62,23777.31]
 _camera camSetPos [11409.36,10536.00,0.77]
@@ -135,7 +135,7 @@ _camera camSetPos [11409.36,10536.00,0.85]
 _camera camSetFOV 0.700
 _camera camCommit 1
 @camCommitted _camera
-titlecut["","black in",0.1]
+titleCut["","BLACK IN",0.1]
 ;=== 15:29:22
 _camera camSetTarget [-84587.46,-16496.86,-7211.98]
 _camera camSetPos [11410.61,10536.27,1.12]
@@ -148,7 +148,7 @@ _camera camSetPos [11410.45,10536.25,1.48]
 _camera camSetFOV 0.700
 _camera camCommit 1
 @camCommitted _camera
-titlecut["","black in",0.1]
+titleCut["","BLACK IN",0.1]
 ;=== 15:29:55
 _camera camSetTarget [109727.18,-3872.04,11332.22]
 _camera camSetPos [11409.23,10536.40,0.83]
@@ -161,7 +161,7 @@ _camera camSetPos [11409.23,10536.40,1.30]
 _camera camSetFOV 0.700
 _camera camCommit 1
 @camCommitted _camera
-titlecut["","black in",0.1]
+titleCut["","BLACK IN",0.1]
 ;=== 15:30:23
 _camera camSetTarget [-47032.27,91386.16,7010.85]
 _camera camSetPos [11410.37,10535.63,1.31]
@@ -174,7 +174,7 @@ _camera camSetPos [11410.45,10535.83,1.31]
 _camera camSetFOV 0.700
 _camera camCommit 1
 @camCommitted _camera
-titlecut["","black in",0.1]
+titleCut["","BLACK IN",0.1]
 ;=== 15:31:12
 _camera camSetTarget [7901.26,110472.62,-263.93]
 _camera camSetPos [11410.02,10534.88,1.50]
@@ -187,12 +187,12 @@ _camera camSetPos [11410.02,10534.88,1.50]
 _camera camSetFOV 0.283
 _camera camCommit 5
 @camCommitted _camera
-1 fademusic 0.3
-VolkovAide setmimic "normal"
-VolkovAide setpos getmarkerpos "CinemaVolkovAide"
-VolkovAide dowatch [11410.10,10535.95,1.67]
-VolkovAide setspeedmode "full"
-VolkovAide move getmarkerpos "CinemaVolkovAide2"
+1 fadeMusic 0.3
+VolkovAide setMimic "normal"
+VolkovAide setPos getMarkerPos "CinemaVolkovAide"
+VolkovAide doWatch [11410.10,10535.95,1.67]
+VolkovAide setSpeedMode "full"
+VolkovAide move getMarkerPos "CinemaVolkovAide2"
 ~1
 VolkovAide say "f01v339"
 ~0.5
@@ -203,7 +203,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~0.5
-LemontovDouble2 dowatch [11406.78,10533.79,1.66]
+LemontovDouble2 doWatch [11406.78,10533.79,1.66]
 ~1
 ;=== 15:46:48
 _camera camSetTarget [-87964.88,3143.46,-8280.54]
@@ -220,19 +220,19 @@ _camera camCommit 0
 @camCommitted _camera
 LemontovDouble2 say "f01v340"
 ~3
-titlecut["","black out",1.5]
+titleCut["","BLACK OUT",1.5]
 ~1.5
-titletext["","plain"]
-Volkov setmimic "angry"
-Volkov setpos getmarkerpos "CinemaVolkov"
+titleText["","PLAIN"]
+Volkov setMimic "angry"
+Volkov setPos getMarkerPos "CinemaVolkov"
 
-VolkovFriend setmimic "normal"
-VolkovFriend setpos getmarkerpos "CinemaVolkovFriend"
+VolkovFriend setMimic "normal"
+VolkovFriend setPos getMarkerPos "CinemaVolkovFriend"
 
-Volkov dowatch [11465.39,10692.17,1.68]
-VolkovFriend dowatch [11464.18,10692.20,1.65]
+Volkov doWatch [11465.39,10692.17,1.68]
+VolkovFriend doWatch [11464.18,10692.20,1.65]
 
-titlecut["","black in",1]
+titleCut["","BLACK IN",1]
 ;=== 19:26:55
 _camera camSetTarget [69173.09,91740.13,-9813.74]
 _camera camSetPos [11453.80,10684.73,6.47]
@@ -245,9 +245,9 @@ _camera camSetPos [11449.36,10685.10,5.92]
 _camera camSetFOV 0.700
 _camera camCommit 6
 ~2
-VolkovFriend switchmove "FxShow2"
+VolkovFriend switchMove "FxShow2"
 @camCommitted _camera
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 ;=== 19:27:54
 _camera camSetTarget [13892.76,110621.59,-2692.44]
 _camera camSetPos [11464.67,10690.32,1.27]
@@ -255,19 +255,19 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~1
-VolkovFriend playmove "effectstandsalute"
+VolkovFriend playMove "effectstandsalute"
 ~1.5
-VolkovFriend playmove "effectstandsaluteend"
-VolkovFriend dowatch objNull
-VolkovFriend setspeedmode "full"
-VolkovFriend move getmarkerpos "CinemaVolkovFriend2"
+VolkovFriend playMove "effectstandsaluteend"
+VolkovFriend doWatch objNull
+VolkovFriend setSpeedMode "full"
+VolkovFriend move getMarkerPos "CinemaVolkovFriend2"
 ~2
-Volkov dowatch [11464.76,10685.79,1.67]
-LemontovDouble2 setdir 0
-LemontovDouble2 setpos getmarkerpos "CinemaVolkovPlayer2"
-LemontovDouble2 dowatch [11464.18,10692.22,1.65]
-LemontovDouble2 setspeedmode "limited"
-LemontovDouble2 move getmarkerpos "CinemaVolkovPlayer3"
+Volkov doWatch [11464.76,10685.79,1.67]
+LemontovDouble2 setDir 0
+LemontovDouble2 setPos getMarkerPos "CinemaVolkovPlayer2"
+LemontovDouble2 doWatch [11464.18,10692.22,1.65]
+LemontovDouble2 setSpeedMode "limited"
+LemontovDouble2 move getMarkerPos "CinemaVolkovPlayer3"
 ~0.5
 ;=== 19:36:53
 _camera camSetTarget [-20064.13,-84040.40,-5493.35]
@@ -281,11 +281,11 @@ _camera camSetPos [11465.66,10692.52,1.48]
 _camera camSetFOV 0.700
 _camera camCommit 5
 ~2
-Volkov dowatch [11461.33,10686.78,1.55]
+Volkov doWatch [11461.33,10686.78,1.55]
 ~2
-Volkov dowatch [11462.96,10690.96,1.67]
+Volkov doWatch [11462.96,10690.96,1.67]
 @camCommitted _camera
-LemontovDouble2 setpos getmarkerpos "CinemaVolkovPlayer3"
+LemontovDouble2 setPos getMarkerPos "CinemaVolkovPlayer3"
 ;=== 20:00:31
 _camera camSetTarget [76189.53,86908.22,1368.78]
 _camera camSetPos [11463.68,10691.66,1.58]
@@ -293,10 +293,10 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Volkov say "f01v341"
-Volkov setmimic "smile"
+Volkov setMimic "smile"
 ~4
-LemontovDouble2 setpos getmarkerpos "CinemaVolkovPlayer3"
-Volkov setmimic "angry"
+LemontovDouble2 setPos getMarkerPos "CinemaVolkovPlayer3"
+Volkov setMimic "angry"
 ~7
 ;=== 20:00:53
 _camera camSetTarget [-59052.10,-60207.23,-871.47]
@@ -312,7 +312,7 @@ _camera camSetPos [11463.65,10691.59,1.58]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Volkov switchmove "FXCivilArmsAkimboR"
+Volkov switchMove "FXCivilArmsAkimboR"
 Volkov say "f01v343"
 ~16
 ;=== 20:02:28
@@ -363,7 +363,7 @@ _camera camSetPos [11462.93,10690.25,1.59]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Volkov switchmove "fxshow2"
+Volkov switchMove "fxshow2"
 Volkov say "f01v350"
 ~19
 Volkov say "f01v351"
@@ -392,7 +392,7 @@ _camera camCommit 0
 @camCommitted _camera
 playsound "f01v354"
 ~3
-LemontovDouble2 setmimic "sad"
+LemontovDouble2 setMimic "sad"
 LemontovDouble2 say "f01v355"
 ~14
 ;=== 20:08:02
@@ -418,8 +418,8 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Volkov say "f01v358"
-LemontovDouble2 setmimic "angry"
-Volkov setmimic "sad"
+LemontovDouble2 setMimic "angry"
+Volkov setMimic "sad"
 ~9
 ;=== 20:10:17
 _camera camSetTarget [75423.44,87538.79,2022.08]
@@ -428,7 +428,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Volkov say "f01v359"
-Volkov setmimic "angry"
+Volkov setMimic "angry"
 ~10
 ;=== 20:10:45
 _camera camSetTarget [-37418.02,97817.80,-4276.17]
@@ -452,9 +452,9 @@ Volkov say "f01v361"
 ;_camera camSetFOV 0.700
 ;_camera camCommit 0
 ;@camCommitted _camera
-titletext["","plain"]
+titleText["","PLAIN"]
 ;~3
-titlecut["","black out",3]
+titleCut["","BLACK OUT",3]
 ~3
 player cameraEffect ["terminate","back"]
 camDestroy _camera

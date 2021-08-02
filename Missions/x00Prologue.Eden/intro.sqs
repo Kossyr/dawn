@@ -55,9 +55,9 @@ astierGlue3=false
 astierArrival=false
 logo=false
 
-playmusic "RTrack6"
-0 fadesound 0
-0 fademusic 1
+playMusic "RTrack6"
+0 fadeSound 0
+0 fadeMusic 1
 
 ;=== 16:20:42
 _camera camSetTarget [107816.13,-9039.41,20081.34]
@@ -66,12 +66,12 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-titlecut["", "black in", 5]
+titleCut["", "BLACK IN", 5]
 
 fishermanCarGo=true
 ~5
 
-0 fadesound 1
+0 fadeSound 1
 
 ;=== 16:21:34
 _camera camSetTarget [109697.25,-9220.09,5234.81]
@@ -129,14 +129,14 @@ _camera camSetFOV 0.700
 _camera camCommit 6
 @camCommitted _camera
 
-titlecut["", "black in", 0.5]
+titleCut["", "BLACK IN", 0.5]
 
 fisherman stop true
-fisherman setpos getmarkerpos "fisherman_pos1"
-fisherman setdir 25
-fisherman playmove "FxToKneel"
+fisherman setPos getMarkerPos "fisherman_pos1"
+fisherman setDir 25
+fisherman playMove "FxToKneel"
 
-0 fadesound 0.1
+0 fadeSound 0.1
 
 ;=== 16:31:15
 _camera camSetTarget [-74307.63,49121.59,21329.98]
@@ -146,10 +146,10 @@ _camera camCommit 0
 @camCommitted _camera
 
 keeperGo=true
-keeper setpos getmarkerpos "keeper_pos1"
+keeper setPos getMarkerPos "keeper_pos1"
 ~3
 
-titlecut["", "black in", 0.5]
+titleCut["", "BLACK IN", 0.5]
 ;=== 16:33:30
 _camera camSetTarget [-43179.38,-84106.55,2552.56]
 _camera camSetPos [10336.67,331.80,2.18]
@@ -174,12 +174,12 @@ _camera camCommit 0
 keeper reveal fisherman
 fisherman reveal keeper
 
-keeper setmimic "smile"
+keeper setMimic "smile"
 keeper say "x00v01"
 
 ~1
-fisherman setmimic "smile"
-fisherman playmove "FxFromKneel"
+fisherman setMimic "smile"
+fisherman playMove "FxFromKneel"
 
 keeper reveal fisherman
 fisherman reveal keeper
@@ -189,8 +189,8 @@ fisherman reveal keeper
 keeper reveal fisherman
 fisherman reveal keeper
 
-keeper dowatch fisherman
-fisherman dowatch keeper
+keeper doWatch fisherman
+fisherman doWatch keeper
 
 ~1
 
@@ -201,11 +201,11 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-fisherman playmove "FxInHand"
+fisherman playMove "FxInHand"
 fisherman say "x00v02"
 
-keeper setpos getmarkerpos "keeper_pos2"
-keeper setdir 175
+keeper setPos getMarkerPos "keeper_pos2"
+keeper setDir 175
 
 ~8.5
 
@@ -217,7 +217,7 @@ _camera camCommit 0
 @camCommitted _camera
 
 keeper say "x00v03"
-keeper switchmove "FxShow4"
+keeper switchMove "FxShow4"
 
 ~4.5
 
@@ -229,7 +229,7 @@ _camera camCommit 0
 @camCommitted _camera
 
 fisherman say "x00v04"
-fisherman switchmove "FXNewcivil"
+fisherman switchMove "FXNewcivil"
 
 ;=== 16:45:43
 _camera camSetTarget [-65817.17,-64336.59,-4802.19]
@@ -241,7 +241,7 @@ _camera camCommit 8
 ~4.5
 
 fisherman say "x00v05"
-fisherman switchmove "FXCivilFoldOnesArms"
+fisherman switchMove "FXCivilFoldOnesArms"
 
 @camCommitted _camera
 
@@ -253,36 +253,36 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-keeper switchmove "FXCivilArmsAkimboR"
+keeper switchMove "FXCivilArmsAkimboR"
 keeper say "x00v06"
 
 ~2
 
-titlecut["", "black out", 2]
+titleCut["", "BLACK OUT", 2]
 ~3
 
 ; part 2 (Saint Pierre)
 
-0 fadesound 1
+0 fadeSound 1
 
-titlecut["", "black in", 2]
+titleCut["", "BLACK IN", 2]
 
-titletext["","plain"]
+titleText["","PLAIN"]
 
-playmusic "RTrack7"
+playMusic "RTrack7"
 
-priest switchmove "fxtohand"
-churchCommoner switchmove "effectstandtalk"
+priest switchMove "fxtohand"
+churchCommoner switchMove "effectstandtalk"
 
-policeman switchmove "FxStandAtt"
+policeman switchMove "FxStandAtt"
 
-seaLover switchmove "FxToKneel"
+seaLover switchMove "FxToKneel"
 
-mechanic switchmove "FxToKneel"
+mechanic switchMove "FxToKneel"
 
-fuelman switchmove "FxStandRotateTable"
+fuelman switchMove "FxStandRotateTable"
 
-angryMan setmimic "Angry"
+angryMan setMimic "Angry"
 
 ;=== 18:09:28
 _camera camSetTarget [-52339.46,74464.95,-28108.84]
@@ -297,7 +297,7 @@ tractorGo=true
 
 ~1
 
-titlecut ["", "black in", 0.5]
+titleCut ["", "BLACK IN", 0.5]
 
 ;=== 18:11:08
 _camera camSetTarget [-62108.07,-67035.38,-11973.85]
@@ -313,9 +313,9 @@ _camera camSetFOV 0.700
 _camera camCommit 4
 ~3.5
 churchGo=true
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 @camCommitted _camera
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 ;=== 18:13:26
 _camera camSetTarget [-45383.44,84655.77,-10973.20]
 _camera camSetPos [9379.93,1711.68,3.34]
@@ -331,9 +331,9 @@ _camera camSetFOV 0.700
 _camera camCommit 4
 ~3.5
 drunkGo=true
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 @camCommitted _camera
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 ;=== 18:20:56
 _camera camSetTarget [-42668.62,86822.53,26.87]
 _camera camSetPos [9549.35,1539.31,2.53]
@@ -348,9 +348,9 @@ _camera camCommit 4
 ~1.5
 bikeGo=true
 ~2
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 @camCommitted _camera
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 ;=== 18:27:18
 _camera camSetTarget [-58060.04,-70728.03,-13411.34]
 _camera camSetPos [9663.50,1613.11,2.02]
@@ -365,9 +365,9 @@ _camera camCommit 4
 ~3
 policeGo=true
 ~0.5
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 @camCommitted _camera
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 ;=== 18:28:34
 _camera camSetTarget [-88735.59,-15106.62,3393.01]
 _camera camSetPos [9802.78,1589.35,2.82]
@@ -380,9 +380,9 @@ _camera camSetPos [9796.28,1578.11,2.53]
 _camera camSetFOV 0.700
 _camera camCommit 4
 ~3.5
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 @camCommitted _camera
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 ;=== 18:34:08
 _camera camSetTarget [-16120.65,97966.36,3568.60]
 _camera camSetPos [9794.54,1448.58,1.61]
@@ -396,11 +396,11 @@ _camera camSetFOV 0.700
 _camera camCommit 4
 ~3.5
 commonerGo=true
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 @camCommitted _camera
-titlecut["","black in",0.5]
-commonerWoman switchmove "FXCivilHandMouth"
-commonerMan switchmove "FXCivilArmsAkimboR"
+titleCut["","BLACK IN",0.5]
+commonerWoman switchMove "FXCivilHandMouth"
+commonerMan switchMove "FXCivilArmsAkimboR"
 
 ;=== 18:44:52
 _camera camSetTarget [70716.55,80313.52,-6827.04]
@@ -414,10 +414,10 @@ _camera camSetPos [9407.17,1615.38,2.00]
 _camera camSetFOV 0.700
 _camera camCommit 4
 ~3.5
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 @camCommitted _camera
-titlecut["","black in",0.5]
-angryMan switchmove "FXStandhip"
+titleCut["","BLACK IN",0.5]
+angryMan switchMove "FXStandhip"
 ;=== 18:49:34
 _camera camSetTarget [107078.53,3093.47,-21904.68]
 _camera camSetPos [9524.88,1600.59,2.36]
@@ -431,10 +431,10 @@ _camera camSetFOV 0.700
 _camera camCommit 4
 ~3.5
 richmanGo=true
-titlecut["","black out", 0.5]
+titleCut["","BLACK OUT", 0.5]
 @camCommitted _camera
-titlecut["","black in",0.5]
-0 fadesound 0.1
+titleCut["","BLACK IN",0.5]
+0 fadeSound 0.1
 ;=== 18:35:04
 _camera camSetTarget [78120.59,-71218.10,-4873.17]
 _camera camSetPos [9647.50,1497.35,2.36]
@@ -455,17 +455,17 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~2
-0 fadesound 1
+0 fadeSound 1
 richman say "x00v07"
 ~1
-fuelman setmimic "Angry"
+fuelman setMimic "Angry"
 ~1
-fuelman switchmove "FXStandEndTable"
+fuelman switchMove "FXStandEndTable"
 ~1.5
 richman stop true
-richman setpos getmarkerpos "richman_pos"
-richman setdir 180
-richman switchmove "FXNewcivil"
+richman setPos getMarkerPos "richman_pos"
+richman setDir 180
+richman switchMove "FXNewcivil"
 ;=== 11:33:25
 _camera camSetTarget [103773.70,-32173.57,-2670.64]
 _camera camSetPos [9648.62,1488.66,1.35]
@@ -509,8 +509,8 @@ _camera camSetFOV 0.700
 _camera camCommit 31
 ~9
 radio say "x00v11"
-richman switchmove "FxToHand"
-fuelman switchmove "FXCivilArmsAkimboR"
+richman switchMove "FxToHand"
+fuelman switchMove "FXCivilArmsAkimboR"
 @camCommitted _camera
 ;=== 12:01:02
 _camera camSetTarget [-18892.38,-89299.05,-30686.67]
@@ -524,11 +524,11 @@ _camera camSetPos [9650.94,1489.62,2.01]
 _camera camSetFOV 0.700
 _camera camCommit 27
 radio say "x00v12"
-fuelman switchmove "FXStandhip"
-richman switchmove "FXNewcivil"
+fuelman switchMove "FXStandhip"
+richman switchMove "FXNewcivil"
 @camCommitted _camera
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 lamentinGo=true
 rioting=true
 
@@ -561,22 +561,22 @@ _camera camSetTarget [48599.95,92526.77,-16508.47]
 _camera camSetPos [1301.91,5992.26,2.00]
 _camera camSetFOV 0.700
 _camera camCommit 5
-riotPunch1 switchmove "StandStrokeFist"
+riotPunch1 switchMove "StandStrokeFist"
 ~1
-riotPunch2 switchmove "StandStrokeFist"
+riotPunch2 switchMove "StandStrokeFist"
 ~1
-riotPunch1 switchmove "StandStrokeFist"
+riotPunch1 switchMove "StandStrokeFist"
 ~0.5
 riotGo=true
-riotPunch2 switchmove "StandStrokeFist"
+riotPunch2 switchMove "StandStrokeFist"
 ~1
-riotPunch1 switchmove "StandStrokeFist"
+riotPunch1 switchMove "StandStrokeFist"
 ~0.5
-riotPunch2 switchmove "StandStrokeFist"
+riotPunch2 switchMove "StandStrokeFist"
 ~0.5
-riotPunch1 switchmove "StandStrokeFist"
+riotPunch1 switchMove "StandStrokeFist"
 ~0.5
-riotPunch2 switchmove "StandStrokeFist"
+riotPunch2 switchMove "StandStrokeFist"
 @camCommitted _camera
 [[0,-0.5,0.5],0.1,30,barrel] exec "fireEffect.sqs"
 ;=== 13:09:59
@@ -591,18 +591,18 @@ _camera camSetPos [1276.70,6019.60,2.00]
 _camera camSetFOV 0.700
 _camera camCommit 8
 ~1.5
-riotMan setmimic "Agresive"
-riotMan switchmove "CombatStrokeGun"
+riotMan setMimic "Agresive"
+riotMan switchMove "CombatStrokeGun"
 ~0.9
 glassShatter=true
-riotCar setdammage 0.3
+riotCar setDammage 0.3
 ~3
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 @camCommitted _camera
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 radio say "x00v14"
-fuelman setmimic "sad"
-richman setmimic "sad"
+fuelman setMimic "sad"
+richman setMimic "sad"
 ;=== 16:03:06
 _camera camSetTarget [103044.94,34818.32,-12825.80]
 _camera camSetPos [9642.36,1486.06,1.54]
@@ -622,34 +622,34 @@ radio say "x00v15"
 
 choppersCloser=true
 
-Daladier setpos getmarkerpos "daladier_init"
-Daladier setdir 355
-salute1 setpos getmarkerpos "salute1"
-salute1 setdir 120
-salute2 setpos getmarkerpos "salute2"
-salute2 setdir 120
-salute3 setpos getmarkerpos "salute3"
-salute3 setdir 120
-salute4 setpos getmarkerpos "salute4"
-salute4 setdir 120
-salute5 setpos getmarkerpos "salute5"
-salute5 setdir 120
-salute6 setpos getmarkerpos "salute6"
-salute6 setdir 120
+Daladier setPos getMarkerPos "daladier_init"
+Daladier setDir 355
+salute1 setPos getMarkerPos "salute1"
+salute1 setDir 120
+salute2 setPos getMarkerPos "salute2"
+salute2 setDir 120
+salute3 setPos getMarkerPos "salute3"
+salute3 setDir 120
+salute4 setPos getMarkerPos "salute4"
+salute4 setDir 120
+salute5 setPos getMarkerPos "salute5"
+salute5 setDir 120
+salute6 setPos getMarkerPos "salute6"
+salute6 setDir 120
 
-titletext["","plain"]
+titleText["","PLAIN"]
 
-playmusic ["RTrack8",18]
+playMusic ["RTrack8",18]
 
 playsound "bum"
 
-Daladier dowatch [4807.72,7029.04,1.57]
+Daladier doWatch [4807.72,7029.04,1.57]
 
 astierArrival=true
 
-titlecut["","white out",0.2]
+titleCut["","WHITE OUT",0.2]
 ~1
-titlecut["","white in",2]
+titleCut["","WHITE IN",2]
 ;=== 16:58:50
 _camera camSetTarget [49276.95,-82476.48,-3379.22]
 _camera camSetPos [4858.07,7046.89,1.68]
@@ -677,7 +677,7 @@ _camera camCommit 0
 	#loop
 
 	_camera camSetTarget _who
-	_camera camSetPos [(getpos _who select 0) + _dx * sin (getdir _who) - _dy * cos (getdir _who), (getpos _who select 1) + _dx * cos (getdir _who) + _dy * sin (getdir _who), (getpos _who select 2)+_dz]
+	_camera camSetPos [(getPos _who select 0) + _dx * sin (getdir _who) - _dy * cos (getdir _who), (getPos _who select 1) + _dx * cos (getdir _who) + _dy * sin (getdir _who), (getPos _who select 2)+_dz]
 	_camera camSetFOV 0.900
 	_camera camCommit 0
 	@camCommitted _camera
@@ -758,17 +758,17 @@ salute6 exec "salutation.sqs"
 ~1
 @camCommitted _camera
 
-salute1 domove getmarkerpos "salute1_1"
-salute2 domove getmarkerpos "salute2_1"
-salute3 domove getmarkerpos "salute3_1"
-salute4 domove getmarkerpos "salute4_1"
-salute5 domove getmarkerpos "salute5_1"
-salute6 domove getmarkerpos "salute6_1"
+salute1 doMove getMarkerPos "salute1_1"
+salute2 doMove getMarkerPos "salute2_1"
+salute3 doMove getMarkerPos "salute3_1"
+salute4 doMove getMarkerPos "salute4_1"
+salute5 doMove getMarkerPos "salute5_1"
+salute6 doMove getMarkerPos "salute6_1"
 
-2 fademusic 0
+2 fadeMusic 0
 ~2
-playmusic ["Track7", 15]
-2 fademusic 1
+playMusic ["Track7", 15]
+2 fadeMusic 1
 ;=== 10:48:42
 _camera camSetTarget [66912.42,-71325.83,-2859.50]
 _camera camSetPos [4805.47,6991.56,1.09]
@@ -777,22 +777,22 @@ _camera camCommit 0
 @camCommitted _camera
 Astier stop true
 Poincare stop true
-Astier setpos getmarkerpos "astier_pos2"
-Poincare setpos getmarkerpos "poincare_pos2"
-Poincare setdir 180
-Astier setdir 180
+Astier setPos getMarkerPos "astier_pos2"
+Poincare setPos getMarkerPos "poincare_pos2"
+Poincare setDir 180
+Astier setDir 180
 
-[Poincare] join grpnull
+[Poincare] join grpNull
 
-Daladier dowatch [4807.72,7029.04,1.57]
-Astier dowatch [4811.06,6985.36,1.72]
-Poincare dowatch [4811.06,6985.36,1.72]
+Daladier doWatch [4807.72,7029.04,1.57]
+Astier doWatch [4811.06,6985.36,1.72]
+Poincare doWatch [4811.06,6985.36,1.72]
 
 ~1.5
-Astier setpos getmarkerpos "astier_pos2"
-Poincare setpos getmarkerpos "poincare_pos2"
-Poincare setdir 180
-Astier setdir 180
+Astier setPos getMarkerPos "astier_pos2"
+Poincare setPos getMarkerPos "poincare_pos2"
+Poincare setDir 180
+Astier setDir 180
 ~1
 ;=== 10:49:13
 _camera camSetTarget [12617.60,-92342.56,-8377.38]
@@ -800,7 +800,7 @@ _camera camSetPos [4810.94,6986.01,1.60]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Daladier setmimic "Smile"
+Daladier setMimic "Smile"
 ~2.5
 ;=== 10:53:43
 _camera camSetTarget [20921.06,105720.80,379.91]
@@ -808,7 +808,7 @@ _camera camSetPos [4807.63,7028.15,1.60]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Astier setmimic "Angry"
+Astier setMimic "Angry"
 ~2.5
 ;=== 10:54:13
 _camera camSetTarget [12630.96,-92662.32,-10.11]
@@ -816,7 +816,7 @@ _camera camSetPos [4807.01,7030.99,1.01]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-2 fademusic 0.3
+2 fadeMusic 0.3
 ~2
 ;=== 10:55:02
 _camera camSetTarget [104379.22,16249.71,440.63]
@@ -824,7 +824,7 @@ _camera camSetPos [4805.62,7028.90,1.45]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Poincare setmimic "cynic"
+Poincare setMimic "cynic"
 Poincare say "x00v16"
 ;=== 10:55:09
 _camera camSetTarget [103436.58,23516.84,441.07]
@@ -832,16 +832,16 @@ _camera camSetPos [4805.67,7028.54,1.45]
 _camera camSetFOV 0.700
 _camera camCommit 3
 @camCommitted _camera
-Astier setmimic "Normal"
+Astier setMimic "Normal"
 Astier say "x00v17"
 ~3
 Poincare say "x00v18"
 ~1
-1 fademusic 1
+1 fadeMusic 1
 AStier stop false
 meetingAstierGo=true
 ~1
-titletext["","plain down"]
+titleText["","PLAIN DOWN"]
 ;=== 15:13:41
 _camera camSetTarget [12366.96,-92608.91,-3683.70]
 _camera camSetPos [4807.10,7030.81,1.27]
@@ -888,19 +888,19 @@ _camera camSetPos [4808.84,7015.63,11.65]
 _camera camSetFOV 0.700
 _camera camCommit 6
 @camCommitted _camera
-1.5 fademusic 0.2
+1.5 fadeMusic 0.2
 ~1.5
 Astier stop true
-Astier setpos getmarkerpos "astier_pos3"
-Astier setdir 180
+Astier setPos getMarkerPos "astier_pos3"
+Astier setDir 180
 Daladier stop true
-Daladier setpos getmarkerpos "daladier_pos1"
-Daladier setdir 0
+Daladier setPos getMarkerPos "daladier_pos1"
+Daladier setDir 0
 
-Astier dowatch [4809.19,7006.64,1.79]
-Daladier dowatch [4809.23,7008.80,1.65]
+Astier doWatch [4809.19,7006.64,1.79]
+Daladier doWatch [4809.23,7008.80,1.65]
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 ;=== 15:31:55
 _camera camSetTarget [104333.55,1574.61,8218.25]
@@ -909,13 +909,13 @@ _camera camSetFOV 0.634
 _camera camCommit 0
 @camCommitted _camera
 
-Astier setmimic "Normal"
-Daladier setmimic "Normal"
+Astier setMimic "Normal"
+Daladier setMimic "Normal"
 Astier say "x00v19"
 ~1.5
 Daladier say "x00v20"
 ~3.5
-Astier setmimic "Angry"
+Astier setMimic "Angry"
 Astier say "x00v21"
 ~2.5
 Daladier say "x00v22"
@@ -927,7 +927,7 @@ _camera camSetFOV 0.634
 _camera camCommit 0
 @camCommitted _camera
 Astier say "x00v23"
-Astier switchmove "FXCivilHandMouth"
+Astier switchMove "FXCivilHandMouth"
 ~3.5
 ;=== 15:44:00
 _camera camSetTarget [-961.00,-92516.59,-7689.26]
@@ -936,10 +936,10 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Daladier say "x00v24"
-Daladier switchmove "FXCivilLookaround"
+Daladier switchMove "FXCivilLookaround"
 ~5.5
 Astier say "x00v25"
-Astier switchmove "FXCivilArmsAkimboL"
+Astier switchMove "FXCivilArmsAkimboL"
 ;=== 15:45:08
 _camera camSetTarget [-885.00,106731.47,-4615.46]
 _camera camSetPos [4809.31,7008.02,1.50]
@@ -953,9 +953,9 @@ _camera camSetPos [4808.94,7007.70,1.50]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Daladier setmimic "Sad"
+Daladier setMimic "Sad"
 Daladier say "x00v26"
-Daladier switchmove "FxShow2"
+Daladier switchMove "FxShow2"
 ;=== 15:46:21
 _camera camSetTarget [-31822.92,-85918.33,-4615.22]
 _camera camSetPos [4809.75,7007.66,1.50]
@@ -968,9 +968,9 @@ _camera camSetPos [4810.21,7005.78,1.50]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Astier setmimic "Normal"
+Astier setMimic "Normal"
 Astier say "x00v27"
-Astier switchmove "Default"
+Astier switchMove "Default"
 ;=== 15:47:35
 _camera camSetTarget [-79017.36,60991.91,-7479.72]
 _camera camSetPos [4810.99,7006.40,1.50]
@@ -983,9 +983,9 @@ _camera camSetPos [4809.36,7007.92,1.50]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Daladier setmimic "Angry"
+Daladier setMimic "Angry"
 Daladier say "x00v28"
-Daladier switchmove "FXCivilArmsAkimboR"
+Daladier switchMove "FXCivilArmsAkimboR"
 ;=== 15:49:01
 _camera camSetTarget [41657.69,-85492.02,-9109.02]
 _camera camSetPos [4808.70,7007.89,1.50]
@@ -1000,7 +1000,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Astier setmimic "Agresive"
+Astier setMimic "Agresive"
 Astier say "x00v29"
 
 ~8.5
@@ -1011,9 +1011,9 @@ _camera camSetPos [4806.85,7007.82,1.23]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Daladier setmimic "Sad"
+Daladier setMimic "Sad"
 Daladier say "x00v30"
-Daladier switchmove "FxToHand"
+Daladier switchMove "FxToHand"
 ;=== 15:51:05
 _camera camSetTarget [99751.54,38399.77,257.52]
 _camera camSetPos [4806.97,7006.78,1.23]
@@ -1026,36 +1026,36 @@ _camera camSetPos [4809.13,7007.24,1.46]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Daladier setmimic "Angry"
+Daladier setMimic "Angry"
 
-3 fademusic 0
+3 fadeMusic 0
 ~1
 fisherman stop true
-fisherman setpos getmarkerpos "fisherman_pos2"
-fisherman setdir 340
-fisherman switchmove "FxToKneel"
+fisherman setPos getMarkerPos "fisherman_pos2"
+fisherman setDir 340
+fisherman switchMove "FxToKneel"
 
 keeper stop true
-keeper setpos getmarkerpos "keeper_pos3"
-keeper setdir 180
-keeper disableai "autotarget"
-keeper switchmove "EffectStandSitDown"
+keeper setPos getMarkerPos "keeper_pos3"
+keeper setDir 180
+keeper disableAI "AUTOTARGET"
+keeper switchMove "EffectStandSitDown"
 
-fisherman setmimic "normal"
-keeper setmimic "normal"
+fisherman setMimic "normal"
+keeper setMimic "normal"
 ~2.5
 
 ; part 4 (The Invasion)
 
-titletext["","plain"]
+titleText["","PLAIN"]
 
-ship setpos getmarkerpos "ship_pos"
+ship setPos getMarkerPos "ship_pos"
 
-titlecut ["","white out", 0.2]
+titleCut ["","WHITE OUT", 0.2]
 
 ~0.2
 
-titlecut ["","white in",1]
+titleCut ["","WHITE IN",1]
 
 ;=== 19:25:58
 _camera camSetTarget [-63426.73,67620.20,-5310.20]
@@ -1076,14 +1076,14 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 fisherman say "x00v32"
-fisherman setmimic "surprised"
-fisherman switchmove "FxFromKneel"
+fisherman setMimic "surprised"
+fisherman switchMove "FxFromKneel"
 ~2
-fisherman dowatch [10376.44,291.37,15.29]
-keeper setdir 90 
-keeper dowatch [10376.44,291.37,15.29]
+fisherman doWatch [10376.44,291.37,15.29]
+keeper setDir 90 
+keeper doWatch [10376.44,291.37,15.29]
 ~1.5
-playmusic "Track9"
+playMusic "Track9"
 ~1
 ;=== 19:27:57
 _camera camSetTarget [-82941.57,36367.46,142.71]
@@ -1091,10 +1091,10 @@ _camera camSetPos [10328.69,302.95,1.29]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-keeper setmimic "surprised"
+keeper setMimic "surprised"
 keeper say "x00v33"
-keeper switchmove "FxShow3"
-1.5 fademusic 1
+keeper switchMove "FxShow3"
+1.5 fadeMusic 1
 ~1.5
 ;=== 19:29:01
 _camera camSetTarget [110042.66,1619.14,7696.30]
@@ -1102,12 +1102,12 @@ _camera camSetPos [10345.46,290.41,6.47]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-titletext["","plain down"]
+titleText["","PLAIN DOWN"]
 ~4
-keeper setpos getmarkerpos "keeper_pos4"
-keeper setdir 90
-fisherman setpos getmarkerpos "fisherman_pos3"
-fisherman setdir 90
+keeper setPos getMarkerPos "keeper_pos4"
+keeper setDir 90
+fisherman setPos getMarkerPos "fisherman_pos3"
+fisherman setDir 90
 
 [_camera,chin,[0,0,-1.5],chin,[0,5,-1.5],0.7] exec "logiccam.sqs"
 @lighthouseSighted
@@ -1119,8 +1119,8 @@ _camera cameraeffect ["internal","back"]
 
 fisherman reveal chin
 keeper reveal chin
-fisherman dowatch chin
-keeper dowatch chin
+fisherman doWatch chin
+keeper doWatch chin
 
 ;=== 19:44:22
 _camera camSetTarget [109948.65,-5286.50,6606.86]
@@ -1134,36 +1134,36 @@ _camera camSetPos [10327.37,298.53,1.22]
 _camera camSetFOV 0.700
 _camera camCommit 5
 ~0.5
-keeper switchmove "FxShow3"
+keeper switchMove "FxShow3"
 ~0.5
-fisherman switchmove "FXCivilHandMouth"
+fisherman switchMove "FXCivilHandMouth"
 ~3
-titlecut ["","black out",1]
+titleCut ["","BLACK OUT",1]
 @camCommitted _camera
 
 ; part 5 (The Meeting is cut short)
 
 chinookGo=true
 
-police1 setpos getmarkerpos "police1_pos"
-police2 setpos getmarkerpos "police2_pos"
+police1 setPos getMarkerPos "police1_pos"
+police2 setPos getMarkerPos "police2_pos"
 
-deletevehicle guard1
-deletevehicle guard2
-deletevehicle guard3
+deleteVehicle guard1
+deleteVehicle guard2
+deleteVehicle guard3
 
-deletevehicle Poincare
-deletevehicle uazg
+deleteVehicle Poincare
+deleteVehicle uazg
 
-Daladier switchmove ""
+Daladier switchMove ""
 
 ~1
 
-titlecut ["","black in",2]
+titleCut ["","BLACK IN",2]
 
-chin2 setpos [4750.45,6814.13,51.92]
+chin2 setPos [4750.45,6814.13,51.92]
 
-chin1 setpos [4737.37,7012.00,63.26]
+chin1 setPos [4737.37,7012.00,63.26]
 
 ;=== 9:56:12
 _camera camSetTarget [25624.62,101330.58,-24864.12]
@@ -1193,8 +1193,8 @@ _camera camCommit 8
 
 police1 reveal chin2
 police2 reveal chin2
-police1 dowatch chin2
-police2 dowatch chin2
+police1 doWatch chin2
+police2 doWatch chin2
 
 ;=== 10:07:37
 _camera camSetTarget chin2
@@ -1208,16 +1208,16 @@ _camera camSetPos [4756.75,6906.12,2.11]
 _camera camSetFOV 0.700
 _camera camCommit 7
 ~5
-2.5 fademusic 0.2
+2.5 fadeMusic 0.2
 @camCommitted _camera
 resCaptured=true
-am setpos getmarkerpos "am"
-am_1 setpos getmarkerpos "am_1"
-am_2 setpos getmarkerpos "am_2"
-am_3 setpos getmarkerpos "am_3"
-am_4 setpos getmarkerpos "am_4"
-am_5 setpos getmarkerpos "am_5"
-am_6 setpos getmarkerpos "am_6"
+am setPos getMarkerPos "am"
+am_1 setPos getMarkerPos "am_1"
+am_2 setPos getMarkerPos "am_2"
+am_3 setPos getMarkerPos "am_3"
+am_4 setPos getMarkerPos "am_4"
+am_5 setPos getMarkerPos "am_5"
+am_6 setPos getMarkerPos "am_6"
 ~0.5
 ;=== 10:38:26
 _camera camSetTarget [22014.12,105515.86,161.08]
@@ -1225,8 +1225,8 @@ _camera camSetPos [4808.76,7007.09,1.47]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Astier setmimic "surprised"
-Astier switchmove "FXCivilLookaround"
+Astier setMimic "surprised"
+Astier switchMove "FXCivilLookaround"
 Astier say "x00v34"
 ;=== 10:38:36
 _camera camSetTarget [-7838.75,106203.91,160.84]
@@ -1234,7 +1234,7 @@ _camera camSetPos [4809.62,7007.03,1.47]
 _camera camSetFOV 0.700
 _camera camCommit 3.5
 ~2
-Astier setmimic "Angry"
+Astier setMimic "Angry"
 @camCommitted _camera
 ;=== 10:40:32
 _camera camSetTarget [-3218.20,-92659.81,-1239.25]
@@ -1242,7 +1242,7 @@ _camera camSetPos [4809.30,7007.66,1.47]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Daladier setmimic "Sad"
+Daladier setMimic "Sad"
 Daladier say "x00v35"
 ~3.5
 ;=== 10:41:21
@@ -1261,8 +1261,8 @@ _camera camCommit 5.5
 
 ; part 6 (The Escape)
 
-playmusic "RTrack5"
-5 fademusic 1
+playMusic "RTrack5"
+5 fadeMusic 1
 
 ;=== 10:42:05
 _camera camSetTarget [-53128.41,-73990.67,-8921.63]
@@ -1272,11 +1272,11 @@ _camera camCommit 0
 @camCommitted _camera
 
 
-Daladier setmimic "Angry"
-Astier setmimic "Normal"
+Daladier setMimic "Angry"
+Astier setMimic "Normal"
 Daladier say "x00v37"
 ~4
-Daladier switchmove "FxShow3"
+Daladier switchMove "FxShow3"
 ~0.6
 ;=== 10:42:43
 _camera camSetTarget [-23296.54,102956.34,-1665.27]
@@ -1287,10 +1287,10 @@ _camera camCommit 0
 arrestGo=true
 am_5 setunitpos "up"
 am_6 setunitpos "up"
-am_5 setbehaviour "combat"
-am_6 setbehaviour "combat"
+am_5 setBehaviour "COMBAT"
+am_6 setBehaviour "COMBAT"
 ~0.5
-Astier switchmove "FXdismay"
+Astier switchMove "FXdismay"
 ~2
 ;=== 12:52:39
 _camera camSetTarget [4403.69,-92988.55,160.86]
@@ -1298,10 +1298,10 @@ _camera camSetPos [4809.28,7010.62,1.04]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-titletext["","plain down"]
-Astier setdir 0
-Astier setpos getmarkerpos "astier_pos3"
-Astier playmove "StandThrowGrenadeStart"
+titleText["","PLAIN DOWN"]
+Astier setDir 0
+Astier setPos getMarkerPos "astier_pos3"
+Astier playMove "StandThrowGrenadeStart"
 ~1
 "SmokeShell" camCreate getMarkerPos "smoke"
 "SmokeShell" camCreate getMarkerPos "smoke_1"
@@ -1314,7 +1314,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~1
-removeallweapons Astier
+removeAllWeapons Astier
 astierEscape=true
 astier stop false
 ~1
@@ -1327,13 +1327,13 @@ _camera camCommit 0
 am_5 say "x00v38"
 manhunt=true
 
-hunter1 setpos getmarkerpos "hunter1"
-hunter2 setpos getmarkerpos "hunter2"
-hunter1 setdir 180
-hunter2 setdir 180
+hunter1 setPos getMarkerPos "hunter1"
+hunter2 setPos getMarkerPos "hunter2"
+hunter1 setDir 180
+hunter2 setDir 180
 
-police_jeep1 setpos getmarkerpos "police_jeep"
-police_jeep1 setdir 65
+police_jeep1 setPos getMarkerPos "police_jeep"
+police_jeep1 setDir 65
 
 ;=== 12:36:47
 _camera camSetTarget [18150.82,-92085.13,160.62]
@@ -1341,9 +1341,9 @@ _camera camSetPos [4807.78,7020.68,1.08]
 _camera camSetFOV 0.700
 _camera camCommit 3
 @camCommitted _camera
-titletext["","plain down"]
-Astier setpos getmarkerpos "astier_pos4"
-Astier setdir 75
+titleText["","PLAIN DOWN"]
+Astier setPos getMarkerPos "astier_pos4"
+Astier setDir 75
 
 ;=== 12:45:15
 _camera camSetTarget [-95123.23,8240.94,160.42]
@@ -1383,7 +1383,7 @@ _camera camSetPos [4889.98,6987.13,1.17]
 _camera camSetFOV 0.700
 _camera camCommit 3
 @camCommitted _camera
-titletext["","plain down"]
+titleText["","PLAIN DOWN"]
 ;=== 13:43:32
 _camera camSetTarget [59997.27,-76442.71,161.08]
 _camera camSetPos [4888.05,7001.10,2.40]
@@ -1418,8 +1418,8 @@ _camera camSetPos [4922.36,6939.07,1.53]
 _camera camSetFOV 0.700
 _camera camCommit 5
 @camCommitted _camera
-astier setpos getmarkerpos "astier_pos5"
-astier setdir 165
+astier setPos getMarkerPos "astier_pos5"
+astier setDir 165
 astier stop true
 ;=== 13:45:38
 _camera camSetTarget [-30470.22,100482.55,160.59]
@@ -1436,13 +1436,13 @@ _camera camCommit 2
 police_jeep1 stop true
 police_jeep2 stop true
 police_jeep1 setunitpos "up"
-police_jeep1 setbehaviour "combat"
-police_jeep1 setdir 340
-police_jeep2 setdir 340
-police_jeep1 setpos getmarkerpos "police_patrol1"
-police_jeep2 setpos getmarkerpos "police_patrol2"
-police_jeep2 setbehaviour "combat"
-police_jeep2 switchmove "crouch"
+police_jeep1 setBehaviour "COMBAT"
+police_jeep1 setDir 340
+police_jeep2 setDir 340
+police_jeep1 setPos getMarkerPos "police_patrol1"
+police_jeep2 setPos getMarkerPos "police_patrol2"
+police_jeep2 setBehaviour "COMBAT"
+police_jeep2 switchMove "crouch"
 police_jeep2 setunitpos "up"
 
 ;=== 13:49:10
@@ -1459,8 +1459,8 @@ _camera camSetFOV 0.700
 _camera camCommit 3
 @camCommitted _camera
 
-Astier dowatch [4923.00,6931.39,1.61]
-Astier setmimic "Angry"
+Astier doWatch [4923.00,6931.39,1.61]
+Astier setMimic "Angry"
 
 ;=== 14:12:16
 _camera camSetTarget [-21937.96,103089.67,-5857.29]
@@ -1477,7 +1477,7 @@ _camera camCommit 2
 astierEscape2=true
 Astier stop false
 ~1
-titletext["","plain down"]
+titleText["","PLAIN DOWN"]
 ;=== 14:29:37
 _camera camSetTarget [-75491.32,-52484.67,161.08]
 _camera camSetPos [4924.01,6958.02,1.25]
@@ -1530,14 +1530,14 @@ _camera camSetFOV 0.362
 _camera camCommit 3
 @camCommitted _camera
 ~1
-Astier setpos getmarkerpos "astier_pos6"
+Astier setPos getMarkerPos "astier_pos6"
 Astier stop true
-Astier setdir 45
+Astier setDir 45
 ~1
-Astier setpos getmarkerpos "astier_pos6"
+Astier setPos getMarkerPos "astier_pos6"
 Astier stop true
-Astier setdir 45
-Astier switchmove "FXCivilLookaround"
+Astier setDir 45
+Astier switchMove "FXCivilLookaround"
 poincareRescue=true
 ;=== 14:43:10
 _camera camSetTarget [98434.52,-28538.65,160.72]
@@ -1550,12 +1550,12 @@ _camera camSetTarget [47724.62,-83414.61,160.51]
 _camera camSetPos [4955.39,6977.84,1.00]
 _camera camSetFOV 0.700
 _camera camCommit 5
-5 fademusic 0
+5 fadeMusic 0
 @camCommitted _camera
-5 fademusic 0.2
-playmusic "RTrack9"
+5 fadeMusic 0.2
+playMusic "RTrack9"
 Poincare2 say "x00v41"
-Poincare2 setmimic "Normal"
+Poincare2 setMimic "Normal"
 ;=== 14:44:21
 _camera camSetTarget uazg2
 _camera camSetPos [4975.42,6979.66,1.12]
@@ -1563,7 +1563,7 @@ _camera camSetFOV 0.375
 _camera camCommit 0
 @camCommitted _camera
 Astier stop false
-Astier assignascargo uazg2
+Astier assignAsCargo uazg2
 AstierGetIn=true
 ~1.5
 ;=== 14:45:19
@@ -1580,7 +1580,7 @@ _camera camCommit 5
 @camCommitted _camera
 @(Astier in uazg2)
 weCanGo=true
-1 fadesound 0.2
+1 fadeSound 0.2
 ~1
 astierGlue2=true
 	
@@ -1590,13 +1590,13 @@ astierGlue2=true
 	_dy = 0;
 	_dz = 1.65;
 	
-    Astier setmimic "Hurt"
+    Astier setMimic "Hurt"
     Astier say "x00v42"
 
 	#loop2
 
 	_camera camSetTarget uazg2
-	_camera camSetPos [(getpos _who select 0) + _dx * sin (getdir _who) - _dy * cos (getdir _who), (getpos _who select 1) + _dx * cos (getdir _who) + _dy * sin (getdir _who), (getpos _who select 2)+_dz]
+	_camera camSetPos [(getPos _who select 0) + _dx * sin (getdir _who) - _dy * cos (getdir _who), (getPos _who select 1) + _dx * cos (getdir _who) + _dy * sin (getdir _who), (getPos _who select 2)+_dz]
 	_camera camSetFOV 0.900
 	_camera camCommit 0
 	@camCommitted _camera
@@ -1607,14 +1607,14 @@ astierGlue2=true
 	#glue2End
 
     astierGlue3=true
-    Poincare2 setmimic "Hurt"
+    Poincare2 setMimic "Hurt"
     Poincare2 say "x00v43"
-    7 fademusic 1
+    7 fadeMusic 1
 
     #loop3
 
 	_camera camSetTarget uazg2
-	_camera camSetPos [(getpos _who select 0) + _dx * sin (getdir _who) - _dy * cos (getdir _who), (getpos _who select 1) + _dx * cos (getdir _who) + _dy * sin (getdir _who), (getpos _who select 2)+_dz]
+	_camera camSetPos [(getPos _who select 0) + _dx * sin (getdir _who) - _dy * cos (getdir _who), (getPos _who select 1) + _dx * cos (getdir _who) + _dy * sin (getdir _who), (getPos _who select 2)+_dz]
 	_camera camSetFOV 0.900
 	_camera camCommit 0
 	@camCommitted _camera
@@ -1625,26 +1625,26 @@ astierGlue2=true
 	#glue3End
 
 
-titletext["","plain down"]
+titleText["","PLAIN DOWN"]
 ;=== 14:50:45
 _camera camSetTarget [19535.63,105497.15,-10333.07]
 _camera camSetPos [5114.79,7098.99,1.51]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-0.5 fadesound 1
+0.5 fadeSound 1
 ;=== 14:50:53
 _camera camSetTarget [19535.63,105497.15,-10333.05]
 _camera camSetPos [5114.79,7098.99,20.44]
 _camera camSetFOV 0.700
 _camera camCommit 10
 ~7
-titlecut["", "black out",3]
+titleCut["", "BLACK OUT",3]
 @camCommitted _camera
 ~1
 logo=true
 ~5
-3 fademusic 0
+3 fadeMusic 0
 ~3
 
 end=true

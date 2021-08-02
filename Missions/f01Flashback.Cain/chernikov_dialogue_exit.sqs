@@ -40,25 +40,25 @@ goto "exitDialogue"
 #exitDialogue
 
 
-LemontovDouble dowatch objNull
-LemontovDouble setdir 0
-LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
-Syomin setmimic "normal"
-Syomin dowatch objNull
+LemontovDouble doWatch objNull
+LemontovDouble setDir 0
+LemontovDouble setPos getMarkerPos "PlayerDoubleAway"
+Syomin setMimic "normal"
+Syomin doWatch objNull
 
-aP setpos getmarkerpos "CinemaChernikovPlayer"
-aP setdir 45
+aP setPos getMarkerPos "CinemaChernikovPlayer"
+aP setDir 45
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
-titletext ["","plain"]
+titleText ["","PLAIN"]
 
 metChernikov=true
 cinema=false
 
 ~1
 
-Chernikov dowatch [9497.82,8609.73,0.75]
+Chernikov doWatch [9497.82,8609.73,0.75]
 
 exit

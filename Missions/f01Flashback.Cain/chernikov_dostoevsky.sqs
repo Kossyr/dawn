@@ -1,9 +1,9 @@
-setacctime 1
+setAccTime 1
 
 cinema=true
 
 
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 ~0.5
 
 _camera = "camera" camcreate [0,0,0]
@@ -11,27 +11,27 @@ _camera cameraeffect ["internal","back"]
 
 ? (aP == vehicle aP) : goto "dostoevskyCinema" ;
 
-vehicle aP setpos getmarkerpos "VehicleAway"
-vehicle aP setdir 0
+vehicle aP setPos getMarkerPos "VehicleAway"
+vehicle aP setDir 0
 
 ~0.5
 
-vehicle aP setpos getmarkerpos "CinemaDostoevskyVehicle"
-vehicle aP setdir 40
+vehicle aP setPos getMarkerPos "CinemaDostoevskyVehicle"
+vehicle aP setDir 40
 
 aP action ["EJECT"]
-UnassignVehicle aP
+unassignVehicle aP
 
 #dostoevskyCinema
 
 aP action ["WEAPONONBACK"]
-aP setpos getmarkerpos "PlayerAway"
+aP setPos getMarkerPos "PlayerAway"
 
 ~0.5
 
-setacctime 1
+setAccTime 1
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 ;=== 17:10:35
 _camera camSetTarget [-64217.31,-57918.96,55.53]
@@ -60,16 +60,16 @@ _camera camCommit 2
 @camCommitted _camera
 ~1
 
-LemontovDouble setpos getmarkerpos "CinemaDostoevskyPlayer"
-Dostoevsky setpos getmarkerpos "CinemaDostoevsky"
+LemontovDouble setPos getMarkerPos "CinemaDostoevskyPlayer"
+Dostoevsky setPos getMarkerPos "CinemaDostoevsky"
 
-LemontovDouble setdir 230
-LemontovDouble dowatch [9748.86,9357.24,1.57]
+LemontovDouble setDir 230
+LemontovDouble doWatch [9748.86,9357.24,1.57]
 
 
-LemontovDouble setmimic "angry"
-Dostoevsky setmimic "normal"
-Dostoevsky dowatch [9755.03,9361.22,1.70]
+LemontovDouble setMimic "angry"
+Dostoevsky setMimic "normal"
+Dostoevsky doWatch [9755.03,9361.22,1.70]
 
 
 ;=== 17:17:03
@@ -79,10 +79,10 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~2
-Dostoevsky setmimic "surprised"
+Dostoevsky setMimic "surprised"
 Dostoevsky say "f01v219"
 ~0.5
-LemontovDouble dowatch [9756.57,9359.88,1.55]
+LemontovDouble doWatch [9756.57,9359.88,1.55]
 ;=== 17:17:10
 _camera camSetTarget [103692.23,-24258.45,-6685.79]
 _camera camSetPos [9754.45,9360.86,1.55]
@@ -103,10 +103,10 @@ _camera camSetPos [9755.55,9360.46,1.55]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-LemontovDouble setmimic "Surprised"
+LemontovDouble setMimic "Surprised"
 LemontovDouble say "f01v220"
 ~2
-LemontovDouble setmimic "angry"
+LemontovDouble setMimic "angry"
 ~4
 ;=== 17:27:49
 _camera camSetTarget [82436.41,-58905.29,-7520.67]
@@ -115,13 +115,13 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Dostoevsky say "f01v221"
-Dostoevsky setmimic "angry"
-Dostoevsky switchmove "FXCivilArmsAkimboR"
+Dostoevsky setMimic "angry"
+Dostoevsky switchMove "FXCivilArmsAkimboR"
 ~11
-Dostoevsky setmimic "smile"
+Dostoevsky setMimic "smile"
 Dostoevsky say "f01v222"
 ~4
-Dostoevsky setmimic "normal"
+Dostoevsky setMimic "normal"
 ~5
 ;=== 17:28:49
 _camera camSetTarget [-60094.56,80518.47,-7520.72]
@@ -137,8 +137,8 @@ _camera camSetPos [9754.32,9361.31,1.55]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Dostoevsky switchmove "FxToHand"
-Dostoevsky setmimic "smile"
+Dostoevsky switchMove "FxToHand"
+Dostoevsky setMimic "smile"
 Dostoevsky say "f01v224"
 ~10
 ;=== 17:29:47
@@ -147,8 +147,8 @@ _camera camSetPos [9755.92,9360.36,1.55]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Dostoevsky switchmove "FxFromHand"
-Dostoevsky setmimic "normal"
+Dostoevsky switchMove "FxFromHand"
+Dostoevsky setMimic "normal"
 Dostoevsky say "f01v225"
 ~7
 ;=== 17:30:01
@@ -167,7 +167,7 @@ _camera camCommit 0
 @camCommitted _camera
 Dostoevsky say "f01v227"
 ~7
-Dostoevsky setmimic "angry"
+Dostoevsky setMimic "angry"
 ~9
 ;=== 17:31:31
 _camera camSetTarget [-65363.93,74871.53,-8029.75]
@@ -175,7 +175,7 @@ _camera camSetPos [9755.68,9360.60,1.55]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Dostoevsky setmimic "normal"
+Dostoevsky setMimic "normal"
 LemontovDouble say "f01v228"
 ~8
 ;=== 17:32:17
@@ -184,7 +184,7 @@ _camera camSetPos [9755.71,9360.59,1.55]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Dostoevsky setmimic "surprised"
+Dostoevsky setMimic "surprised"
 Dostoevsky say "f01v229"
 ~6
 ;=== 17:32:33
@@ -193,12 +193,12 @@ _camera camSetPos [9757.39,9361.93,1.55]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Dostoevsky switchmove "FxShow5"
-Dostoevsky setmimic "normal"
+Dostoevsky switchMove "FxShow5"
+Dostoevsky setMimic "normal"
 ~0.5
-LemontovDouble dowatch [9748.86,9357.24,1.57]
+LemontovDouble doWatch [9748.86,9357.24,1.57]
 ~3.5
-LemontovDouble dowatch [9756.57,9359.88,1.55]
+LemontovDouble doWatch [9756.57,9359.88,1.55]
 ~0.5
 LemontovDouble say "f01v230"
 ~2
@@ -210,7 +210,7 @@ _camera camCommit 0
 @camCommitted _camera
 Dostoevsky say "f01v231"
 ~5
-Dostoevsky setmimic "smile"
+Dostoevsky setMimic "smile"
 ~5
 ;=== 17:33:43
 _camera camSetTarget [-57137.07,83622.59,-3180.50]
@@ -221,24 +221,24 @@ _camera camCommit 0
 LemontovDouble say "f01v232"
 ~3
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 
-LemontovDouble dowatch objNull
-LemontovDouble setdir 0
-LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
+LemontovDouble doWatch objNull
+LemontovDouble setDir 0
+LemontovDouble setPos getMarkerPos "PlayerDoubleAway"
 
-aP setpos getmarkerpos "CinemaDostoevskyPlayer"
-aP setdir 145
+aP setPos getMarkerPos "CinemaDostoevskyPlayer"
+aP setDir 145
 
 
-Dostoevsky setmimic "normal"
-Dostoevsky dowatch objNull
+Dostoevsky setMimic "normal"
+Dostoevsky doWatch objNull
 
-Chernikov setpos getmarkerpos "CinemaChernikov"
+Chernikov setPos getMarkerPos "CinemaChernikov"
 
-"Chernikov2" setmarkertype "Empty"
-"Chernikov3" setmarkertype "Unknown"
+"Chernikov2" setMarkerType "Empty"
+"Chernikov3" setMarkerType "Unknown"
 
 Hint localize "STRM_HINT_DOSTOEVSKY"
 
@@ -249,11 +249,11 @@ cinema=false
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
-titletext ["","plain"]
+titleText ["","PLAIN"]
 
 ~1
 
-Dostoevsky setspeedmode "limited"
-Dostoevsky move getmarkerpos "CinemaDostoevskyFinal"
+Dostoevsky setSpeedMode "limited"
+Dostoevsky move getMarkerPos "CinemaDostoevskyFinal"
 
 exit

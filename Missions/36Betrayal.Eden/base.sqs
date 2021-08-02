@@ -1,18 +1,18 @@
-setacctime 1
+setAccTime 1
 
 clearArea=true
 cinema=true
 
-"4" objstatus "done"
-aP addrating 1000
-"5" objstatus "done"
-aP addrating 1000
+"4" objStatus "DONE"
+aP addRating 1000
+"5" objStatus "DONE"
+aP addRating 1000
 
 2 SetRadioMsg "NULL"
 
 ? choiceSquadB and not choiceReinforcements : goto "onlyRebels" ;
 
-aP sideradio "36r19"
+aP sideRadio "36r19"
 
 badEnding=true
 
@@ -22,16 +22,16 @@ goto "ex"
 
 #onlyRebels
 
-KaplinskyRadio sideradio "36r13"
-aP sideradio "36r19"
+KaplinskyRadio sideRadio "36r13"
+aP sideRadio "36r19"
 
 ~12
 
 #ex
 
-enableradio false
+enableRadio false
 
-savegame
+saveGame
 
 ~10
 

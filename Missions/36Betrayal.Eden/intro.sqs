@@ -1,35 +1,35 @@
-titlecut["","black in",4]
+titleCut["","BLACK IN",4]
 
-ZubarevTable setpos [4916.55,6901.63,4.10]
-ZubarevChair2 setpos [4918.13,6901.46,4.10]
-ZubarevChair1 setpos [4915.55,6900.56,4.10]
-ZubarevChair3 setpos [4914.39,6900.55,4.10]
-ZubarevTableRadio2 setpos [4919.28,6902.70,4.10]
-ZubarevTableRadio1 setpos [4918.69,6903.63,4.10]
-ZubarevRadio1 setpos [4919.22,6902.61,5.07]
-ZubarevRadio2 setpos [4918.51,6903.56,5.07]
-ZubarevVideo setpos [4913.64,6901.89,4.10]
-ZubarevPallets setpos [4913.12,6903.18,4.10]
+ZubarevTable setPos [4916.55,6901.63,4.10]
+ZubarevChair2 setPos [4918.13,6901.46,4.10]
+ZubarevChair1 setPos [4915.55,6900.56,4.10]
+ZubarevChair3 setPos [4914.39,6900.55,4.10]
+ZubarevTableRadio2 setPos [4919.28,6902.70,4.10]
+ZubarevTableRadio1 setPos [4918.69,6903.63,4.10]
+ZubarevRadio1 setPos [4919.22,6902.61,5.07]
+ZubarevRadio2 setPos [4918.51,6903.56,5.07]
+ZubarevVideo setPos [4913.64,6901.89,4.10]
+ZubarevPallets setPos [4913.12,6903.18,4.10]
 
-LemontovHQ setpos [4928.85,6901.20,4.28]
-LemontovHQ disableai "autotarget"
+LemontovHQ setPos [4928.85,6901.20,4.28]
+LemontovHQ disableAI "AUTOTARGET"
 
-Zubarev setpos [4916.33,6904.88,4.34]
+Zubarev setPos [4916.33,6904.88,4.34]
 
-LemontovHQ setspeedmode "limited"
-Zubarev setspeedmode "limited"
+LemontovHQ setSpeedMode "limited"
+Zubarev setSpeedMode "limited"
 
-LemontovHQ setmimic "Angry"
-Zubarev setmimic "Normal"
+LemontovHQ setMimic "Angry"
+Zubarev setMimic "Normal"
 
-LemontovHospital setmimic "Angry"
-LemontovHospital disableai "autotarget"
+LemontovHospital setMimic "Angry"
+LemontovHospital disableAI "AUTOTARGET"
 
-Lemontov setmimic "Angry"
-Lemontov disableai "autotarget"
+Lemontov setMimic "Angry"
+Lemontov disableAI "AUTOTARGET"
 
-Rashiv setmimic "Normal"
-Rashiv disableai "autotarget"
+Rashiv setMimic "Normal"
+Rashiv disableAI "AUTOTARGET"
 
 _window = [4915.55,6906.31,5.67]
 _zubarevWindow = [4916.23,6904.93,5.67]
@@ -37,24 +37,24 @@ _lemontovWindow = [4919.53,6906.05,5.74]
 
 
 
-C3 disableai "autotarget"
+C3 disableAI "AUTOTARGET"
 
-C1 dowatch [4921.81,6969.64,1.62]
-C2 dowatch [4922.73,6969.72,1.62]
-C3 dowatch [4917.22,6977.03,1.62]
-C4 dowatch [4883.55,7038.09,1.63]
-C5 dowatch [4882.95,7038.87,1.63]
+C1 doWatch [4921.81,6969.64,1.62]
+C2 doWatch [4922.73,6969.72,1.62]
+C3 doWatch [4917.22,6977.03,1.62]
+C4 doWatch [4883.55,7038.09,1.63]
+C5 doWatch [4882.95,7038.87,1.63]
 
-C1 switchmove "FXinhand"
-C2 switchmove "effectstand"
-C4 switchmove "fxinhand"
-C5 switchmove "effectstandtalk"
-C6 switchmove "effectstandsitdown"
+C1 switchMove "FXinhand"
+C2 switchMove "effectstand"
+C4 switchMove "fxinhand"
+C5 switchMove "effectstandtalk"
+C6 switchMove "effectstandsitdown"
 
-S1 switchmove "FxStandAtt"
-S2 switchmove "FxStandAtt"
+S1 switchMove "FxStandAtt"
+S2 switchMove "FxStandAtt"
 
-Zubarev dowatch _window
+Zubarev doWatch _window
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -67,7 +67,7 @@ _camera camCommit 0
 @camCommitted _camera
 
 ~2
-C7 switchmove "FxToKneel"
+C7 switchMove "FxToKneel"
 C6 reveal T1
 C7 reveal T1
 C8 reveal T1
@@ -75,7 +75,7 @@ C9 reveal T1
 
 ~3
 
-playmusic "Track13"
+playMusic "Track13"
 
 ;=== 19:26:50
 _camera camSetTarget [28172.61,104213.88,-3568.78]
@@ -127,17 +127,17 @@ _camera camSetTarget T1
 _camera camSetPos [4907.12,7002.61,1.98]
 _camera camSetFOV 0.700
 _camera camCommit 7.5
-C8 switchmove "FxToKneel"
-C6 dowatch T1
-C7 dowatch T1
-C8 dowatch T1
-C9 dowatch T1
+C8 switchMove "FxToKneel"
+C6 doWatch T1
+C7 doWatch T1
+C8 doWatch T1
+C9 doWatch T1
 ~1.5
-C9 switchmove "FxShow3"
+C9 switchMove "FxShow3"
 ~1.5
-C10 switchmove "FxShow5"
+C10 switchMove "FxShow5"
 ~1.5
-C9 playmove "effectstandsitdown"
+C9 playMove "effectstandsitdown"
 ~2.5
 outoftheway=true
 @camCommitted _camera
@@ -162,7 +162,7 @@ _camera camSetPos [4926.97,6970.91,1.06]
 _camera camSetFOV 0.700
 _camera camCommit 4.5
 @camCommitted _camera
-C3 dowatch [4904.80,6967.51,1.50]
+C3 doWatch [4904.80,6967.51,1.50]
 C3 reveal T1
 ;=== 19:38:02
 _camera camSetTarget [-66352.40,-63010.29,-4551.24]
@@ -171,7 +171,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~2
-C3 dowatch T1
+C3 doWatch T1
 ~3
 ;=== 19:41:11
 _camera camSetTarget [-57842.58,84765.03,160.84]
@@ -186,7 +186,7 @@ _camera camSetFOV 0.700
 _camera camCommit 5
 @camCommitted _camera
 
-playmusic "Track5"
+playMusic "Track5"
 
 ;=== 19:41:35
 _camera camSetTarget [-60621.89,-68596.45,161.51]
@@ -206,7 +206,7 @@ _camera camSetPos [4927.92,6915.58,5.46]
 _camera camSetFOV 0.700
 _camera camCommit 3
 LemontovHQ move [4919.57,6906.10,4.22]
-LemontovHQ setspeedmode "limited"
+LemontovHQ setSpeedMode "limited"
 @camCommitted _camera
 ~0.5
 ;=== 20:55:25
@@ -234,7 +234,7 @@ _camera camSetFOV 0.700
 _camera camCommit 2
 @camCommitted _camera
 ~0.5
-LemontovHQ dowatch _zubarevWindow
+LemontovHQ doWatch _zubarevWindow
 ;=== 20:56:07
 _camera camSetTarget [-84529.02,-35319.84,-14510.75]
 _camera camSetPos [4922.01,6907.51,5.91]
@@ -247,7 +247,7 @@ _camera camSetPos [4921.22,6907.61,5.91]
 _camera camSetFOV 0.700
 _camera camCommit 1.5
 @camCommitted _camera
-1 fademusic 0.2
+1 fadeMusic 0.2
 ~1
 ;=== 21:03:54
 _camera camSetTarget [102077.61,30031.90,-4798.92]
@@ -257,10 +257,10 @@ _camera camCommit 0
 @camCommitted _camera
 LemontovHQ say "36v01"
 ~1.5
-Zubarev setmimic "Smile"
+Zubarev setMimic "Smile"
 Zubarev say "36v02"
 ~2.5
-LemontovHQ setpos [4919.57,6906.10,4.22]
+LemontovHQ setPos [4919.57,6906.10,4.22]
 ;=== 21:09:55
 _camera camSetTarget [55901.32,-79102.42,1841.78]
 _camera camSetPos [4915.04,6906.96,5.23]
@@ -282,9 +282,9 @@ _camera camCommit 0
 LemontovHQ say "36v03"
 ~2.5
 Zubarev say "36v04"
-Zubarev setmimic "Normal"
+Zubarev setMimic "Normal"
 ~1
-Zubarev dowatch _lemontovWindow
+Zubarev doWatch _lemontovWindow
 ~1
 ;=== 18:52:16
 _camera camSetTarget [-78455.07,-48187.04,-3477.00]
@@ -309,8 +309,8 @@ _camera camCommit 0
 @camCommitted _camera
 Zubarev say "36v06"
 ~3.5
-Zubarev setmimic "angry"
-Zubarev dowatch _window
+Zubarev setMimic "angry"
+Zubarev doWatch _window
 ~1
 ;=== 18:54:36
 _camera camSetTarget [102999.32,25088.06,-6829.71]
@@ -322,9 +322,9 @@ _camera camCommit 0
 LemontovHQ say "36v07"
 ~2.5
 Zubarev say "36v08"
-Zubarev switchmove "FxToHand"
+Zubarev switchMove "FxToHand"
 ~3
-Zubarev setmimic "smile"
+Zubarev setMimic "smile"
 ~5.5
 ;=== 18:56:28
 _camera camSetTarget [53294.15,-79118.55,16263.98]
@@ -339,14 +339,14 @@ _camera camSetFOV 0.700
 _camera camCommit 10
 Zubarev say "36v09"
 ~3
-Zubarev setmimic "normal"
+Zubarev setMimic "normal"
 ~7.5
 Zubarev say "36v10"
 @camCommitted _camera
 ~16.5
 Zubarev say "36v11"
 ~14.5
-Zubarev switchmove "FxFromHand"
+Zubarev switchMove "FxFromHand"
 ~2
 ;=== 19:01:14
 _camera camSetTarget [-79776.64,-45113.64,-10802.86]
@@ -354,12 +354,12 @@ _camera camSetPos [4920.22,6906.92,5.65]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Zubarev dowatch _lemontovWindow
+Zubarev doWatch _lemontovWindow
 Zubarev say "36v12"
 ~12.5
-Zubarev switchmove "FXCivilArmsAkimboR"
+Zubarev switchMove "FXCivilArmsAkimboR"
 ~0.5
-Zubarev setmimic "angry"
+Zubarev setMimic "angry"
 Zubarev say "36v13"
 ;=== 19:03:12
 _camera camSetTarget [-94079.91,19506.57,-6207.12]
@@ -374,7 +374,7 @@ _camera camSetPos [4918.48,6905.75,5.56]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-LemontovHQ setmimic "surprised"
+LemontovHQ setMimic "surprised"
 LemontovHQ say "36v14"
 ~8.5
 ;=== 19:04:08
@@ -383,11 +383,11 @@ _camera camSetPos [4916.95,6905.82,5.56]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Zubarev setmimic "normal"
+Zubarev setMimic "normal"
 Zubarev say "36v15"
 ~2
-Zubarev setmimic "smile"
-LemontovHQ setmimic "Angry"
+Zubarev setMimic "smile"
+LemontovHQ setMimic "Angry"
 ~4.5
 ;=== 19:04:33
 _camera camSetTarget [102503.81,28654.38,-1870.51]
@@ -403,11 +403,11 @@ _camera camSetPos [4920.02,6906.92,5.56]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Zubarev setmimic "normal"
+Zubarev setMimic "normal"
 Zubarev say "36v17"
 ~2
-Zubarev dowatch _window
-Zubarev setmimic "angry"
+Zubarev doWatch _window
+Zubarev setMimic "angry"
 ~0.5
 ;=== 19:07:38
 _camera camSetTarget [50670.44,-81966.94,3029.94]
@@ -417,10 +417,10 @@ _camera camCommit 0
 @camCommitted _camera
 ~9
 Zubarev say "36v18"
-Zubarev setmimic "normal"
+Zubarev setMimic "normal"
 ~4.5
-Zubarev setmimic "angry"
-Zubarev dowatch _lemontovWindow
+Zubarev setMimic "angry"
+Zubarev doWatch _lemontovWindow
 ;=== 19:09:02
 _camera camSetTarget [-76319.95,-50743.09,-8584.05]
 _camera camSetPos [4920.11,6906.86,5.61]
@@ -437,22 +437,22 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~1.5
-Zubarev dowatch [4915.10,6900.31,5.57]
+Zubarev doWatch [4915.10,6900.31,5.57]
 Zubarev move [4914.55,6902.83,4.23]
-Zubarev setspeedmode "limited"
-titlecut ["","black out",1]
+Zubarev setSpeedMode "limited"
+titleCut ["","BLACK OUT",1]
 ~1
-Zubarev setdir 50
-LemontovHQ setpos [4917.30,6902.27,4.30]
-LemontovHQ dowatch [4915.70,6901.50,5.76]
-Zubarev setpos [4915.58,6901.43,4.17]
-Zubarev dowatch [4917.34,6902.21,5.76]
-Zubarev setmimic "normal"
-LemontovHQ setmimic "Angry"
+Zubarev setDir 50
+LemontovHQ setPos [4917.30,6902.27,4.30]
+LemontovHQ doWatch [4915.70,6901.50,5.76]
+Zubarev setPos [4915.58,6901.43,4.17]
+Zubarev doWatch [4917.34,6902.21,5.76]
+Zubarev setMimic "normal"
+LemontovHQ setMimic "Angry"
 ~1
-titlecut ["","black in",1]
-0 fademusic 0.2
-Zubarev switchmove "effectstandtalk"
+titleCut ["","BLACK IN",1]
+0 fadeMusic 0.2
+Zubarev switchMove "effectstandtalk"
 ;=== 21:18:57
 _camera camSetTarget [-29291.38,-85860.43,-14808.62]
 _camera camSetPos [4917.88,6905.63,5.59]
@@ -466,7 +466,7 @@ _camera camSetPos [4916.69,6904.39,5.59]
 _camera camSetFOV 0.700
 _camera camCommit 10
 ~3
-playmusic "Track6"
+playMusic "Track6"
 @camCommitted _camera
 ;=== 21:19:48
 _camera camSetTarget [-94960.84,3454.48,-3384.46]
@@ -492,7 +492,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Zubarev say "36v23"
-Zubarev switchmove "FxShow2"
+Zubarev switchMove "FxShow2"
 ~3
 ;=== 21:28:50
 _camera camSetTarget [-91548.27,-17740.44,-9181.24]
@@ -500,7 +500,7 @@ _camera camSetPos [4916.38,6901.70,5.62]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Zubarev setmimic "agressive"
+Zubarev setMimic "agressive"
 ~1.5
 ;=== 21:29:34
 _camera camSetTarget [103081.75,23790.66,9019.59]
@@ -508,11 +508,11 @@ _camera camSetPos [4916.75,6902.12,5.61]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Zubarev switchmove ""
-LemontovHQ setmimic "surprised"
+Zubarev switchMove ""
+LemontovHQ setMimic "surprised"
 ~1
-Zubarev setmimic "angry"
-Zubarev switchmove "FXCivilHandMouth"
+Zubarev setMimic "angry"
+Zubarev switchMove "FXCivilHandMouth"
 Zubarev say "36v24"
 ;=== 21:44:35
 _camera camSetTarget [-94119.80,-1776.79,-10609.32]
@@ -534,7 +534,7 @@ _camera camSetPos [4914.57,6901.72,5.63]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-LemontovHQ setmimic "Angry"
+LemontovHQ setMimic "Angry"
 LemontovHQ say "36v26"
 ~3
 ;=== 21:47:45
@@ -550,7 +550,7 @@ _camera camSetPos [4916.52,6901.99,5.49]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Zubarev switchmove "FXCivilArmsAkimboL"
+Zubarev switchMove "FXCivilArmsAkimboL"
 Zubarev say "36v27"
 ~12.5
 Zubarev say "36v28"
@@ -576,10 +576,10 @@ _camera camCommit 0
 @camCommitted _camera
 Zubarev say "36v30"
 ~9
-Zubarev setmimic "normal"
+Zubarev setMimic "normal"
 ~1
 Zubarev say "36v31"
-Zubarev switchmove "FXCivilLookaround2"
+Zubarev switchMove "FXCivilLookaround2"
 ;=== 21:53:52
 _camera camSetTarget [-94177.55,-4749.61,-6516.22]
 _camera camSetPos [4916.41,6901.72,5.65]
@@ -587,7 +587,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~2
-Zubarev setmimic "angry"
+Zubarev setMimic "angry"
 ~6.5
 ;=== 21:57:15
 _camera camSetTarget [83465.77,67580.70,-11985.84]
@@ -609,7 +609,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Zubarev say "36v33"
-Zubarev setmimic "normal"
+Zubarev setMimic "normal"
 ~3
 LemontovHQ say "36v34"
 ~3
@@ -619,9 +619,9 @@ _camera camSetPos [4916.39,6902.30,5.46]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Zubarev switchmove "FXCivilArmsAkimboR"
+Zubarev switchMove "FXCivilArmsAkimboR"
 Zubarev say "36v35"
-Zubarev setmimic "agressive"
+Zubarev setMimic "agressive"
 ~13.5
 ;=== 22:05:10
 _camera camSetTarget [48908.94,-82567.57,-7549.64]
@@ -629,7 +629,7 @@ _camera camSetPos [4915.58,6903.83,5.46]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Zubarev setmimic "Angry"
+Zubarev setMimic "Angry"
 ~3.5
 ;=== 22:05:46
 _camera camSetTarget [-89234.62,-25902.81,-7549.55]
@@ -638,7 +638,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Zubarev say "36v36"
-Zubarev switchmove "FXCivilHandMouth"
+Zubarev switchMove "FXCivilHandMouth"
 ~5
 ;=== 22:08:42
 _camera camSetTarget [6541.71,-90996.70,-20153.18]
@@ -658,10 +658,10 @@ _camera camSetPos [4916.35,6901.91,5.67]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-LemontovHQ playmove "Effectstandsalute"
+LemontovHQ playMove "Effectstandsalute"
 LemontovHQ say "36v37"
 ~1.5
-LemontovHQ playmove "Effectstandsaluteend"
+LemontovHQ playMove "Effectstandsaluteend"
 ~3
 ;=== 22:09:36
 _camera camSetTarget [-93595.54,2505.82,-16438.41]
@@ -669,7 +669,7 @@ _camera camSetPos [4918.34,6901.79,5.67]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Zubarev setmimic "normal"
+Zubarev setMimic "normal"
 Zubarev say "36v38"
 ~4
 ;=== 22:10:01
@@ -678,19 +678,19 @@ _camera camSetPos [4916.52,6901.81,5.56]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-4 fademusic 0
+4 fadeMusic 0
 ~2.5
-titlecut["","black out",2]
+titleCut["","BLACK OUT",2]
 ~3
-titletext["","plain down"]
+titleText["","PLAIN DOWN"]
 
-playmusic "track7"
-0 fademusic 1
+playMusic "track7"
+0 fadeMusic 1
 
-Lemontov dowatch [4828.58,6918.19,1.49]
+Lemontov doWatch [4828.58,6918.19,1.49]
 LemontovToCar=true
 ~0.5
-titlecut["","black in",1]
+titleCut["","BLACK IN",1]
 ;=== 19:16:35
 _camera camSetTarget [-40059.36,96256.07,-233.61]
 _camera camSetPos [4835.49,6901.72,1.33]
@@ -704,10 +704,10 @@ _camera camSetFOV 0.700
 _camera camCommit 6
 @camCommitted _camera
 @(unitReady Lemontov)
-1 fademusic 0.3
+1 fadeMusic 0.3
 ~0.5
-Lemontov setpos getmarkerpos "LemontovCar"
-Lemontov switchmove "FXStandRotateTable"
+Lemontov setPos getMarkerPos "LemontovCar"
+Lemontov switchMove "FXStandRotateTable"
 ;=== 19:31:10
 _camera camSetTarget [50701.36,-81938.54,128.62]
 _camera camSetPos [4827.82,6918.96,1.43]
@@ -738,23 +738,23 @@ _camera camSetPos [4829.76,6917.63,1.54]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Lemontov switchmove "FXStandEndTable"
+Lemontov switchMove "FXStandEndTable"
 ~0.5
-M1 playmove "EffectstandSalute"
+M1 playMove "EffectstandSalute"
 ~0.5
-Rashiv move getmarkerpos "RashivHospital"
-Rashiv setspeedmode "full"
+Rashiv move getMarkerPos "RashivHospital"
+Rashiv setSpeedMode "full"
 ~1
 medicAway=true
 @(unitReady Rashiv)
-Rashiv dowatch [4828.87,6917.15,1.48]
+Rashiv doWatch [4828.87,6917.15,1.48]
 ~1
-Rashiv switchmove "FxShow3"
+Rashiv switchMove "FxShow3"
 Rashiv say "36v41"
 ~1
-Lemontov switchmove ""
-Lemontov dowatch [4809.08,6921.39,1.60]
-Lemontov setmimic "normal"
+Lemontov switchMove ""
+Lemontov doWatch [4809.08,6921.39,1.60]
+Lemontov setMimic "normal"
 ;=== 19:39:05
 _camera camSetTarget [-92648.74,28007.64,-7393.39]
 _camera camSetPos [4810.50,6921.16,1.37]
@@ -770,8 +770,8 @@ _camera camCommit 0
 @camCommitted _camera
 Lemontov say "36v42"
 ~3
-Lemontov move getmarkerpos "LemontovHospital"
-Lemontov setspeedmode "limited"
+Lemontov move getMarkerPos "LemontovHospital"
+Lemontov setSpeedMode "limited"
 ~1.5
 ;=== 19:45:02
 _camera camSetTarget [-92830.46,28082.23,-4137.55]
@@ -780,12 +780,12 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Rashiv say "36v43"
-Rashiv switchmove "FXCivilArmsAkimboR"
-Rashiv dowatch [4810.53,6920.77,1.61]
+Rashiv switchMove "FXCivilArmsAkimboR"
+Rashiv doWatch [4810.53,6920.77,1.61]
 ~1.5
-Lemontov setpos getmarkerpos "LemontovHospitalHelper"
-Lemontov move getmarkerpos "LemontovHospital"
-Lemontov setspeedmode "limited"
+Lemontov setPos getMarkerPos "LemontovHospitalHelper"
+Lemontov move getMarkerPos "LemontovHospital"
+Lemontov setSpeedMode "limited"
 ~0.5
 ;=== 19:52:57
 _camera camSetTarget [103854.78,3852.70,-13263.94]
@@ -794,7 +794,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~1.5
-Lemontov setpos getmarkerpos "LemontovHospitalTrue"
+Lemontov setPos getMarkerPos "LemontovHospitalTrue"
 ;=== 19:53:10
 _camera camSetTarget [-84646.95,51326.74,-4902.66]
 _camera camSetPos [4809.77,6921.07,1.54]
@@ -816,7 +816,7 @@ _camera camSetPos [4809.56,6921.22,1.49]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Lemontov switchmove "FXCivilLookaround2"
+Lemontov switchMove "FXCivilLookaround2"
 ~11
 ;=== 20:29:49
 _camera camSetTarget [-75094.87,65896.30,11872.32]
@@ -833,7 +833,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Lemontov say "36v46"
-Lemontov switchmove "FxShow2"
+Lemontov switchMove "FxShow2"
 ~4.5
 ;=== 20:31:29
 _camera camSetTarget [-43449.14,-80398.57,-6620.71]
@@ -846,7 +846,7 @@ _camera camSetTarget [-7122.77,-92130.80,-6621.02]
 _camera camSetPos [4809.95,6922.88,1.31]
 _camera camSetFOV 0.700
 _camera camCommit 9
-Rashiv setmimic "surprised"
+Rashiv setMimic "surprised"
 Rashiv say "36v47"
 ~1.5
 Lemontov say "36v48"
@@ -870,20 +870,20 @@ _camera camSetTarget [58199.69,-77102.35,-9294.16]
 _camera camSetPos [4809.64,6922.20,1.38]
 _camera camSetFOV 0.700
 _camera camCommit 7.5
-Rashiv setmimic "normal"
+Rashiv setMimic "normal"
 Lemontov say "36v50"
-Lemontov switchmove "FXStandhip"
+Lemontov switchMove "FXStandhip"
 @camCommitted _camera
-Lemontov switchmove ""
+Lemontov switchMove ""
 ;=== 20:40:19
 _camera camSetTarget [-86145.92,47796.26,-7340.43]
 _camera camSetPos [4809.85,6921.04,1.56]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Rashiv setmimic "angry"
+Rashiv setMimic "angry"
 Rashiv say "36v51"
-Rashiv switchmove "FxShow3"
+Rashiv switchMove "FxShow3"
 ~2.5
 ;=== 20:41:59
 _camera camSetTarget [84330.20,-53247.73,-7340.33]
@@ -891,7 +891,7 @@ _camera camSetPos [4810.07,6921.09,1.63]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Lemontov setmimic "sad"
+Lemontov setMimic "sad"
 Lemontov say "36v52"
 ~2.5
 ;=== 20:43:53
@@ -900,8 +900,8 @@ _camera camSetPos [4810.51,6919.38,1.50]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Rashiv setmimic "Angry"
-Rashiv switchmove "FXCivilArmsAkimboL"
+Rashiv setMimic "Angry"
+Rashiv switchMove "FXCivilArmsAkimboL"
 Rashiv say "36v53"
 ~8.5
 ;=== 20:44:26
@@ -920,10 +920,10 @@ _camera camCommit 0
 @camCommitted _camera
 Rashiv say "36v55"
 ~2.5
-Lemontov setmimic "Angry"
+Lemontov setMimic "Angry"
 Lemontov say "36v56"
 ~3.5
-Rashiv setmimic "nornaml"
+Rashiv setMimic "nornaml"
 Rashiv say "36v57"
 ~5.5
 ;=== 20:46:31
@@ -933,7 +933,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Lemontov say "36v58"
-Lemontov setmimic "normal"
+Lemontov setMimic "normal"
 ~6.5
 ;=== 20:47:40
 _camera camSetTarget [-71245.98,70933.87,-10685.86]
@@ -941,10 +941,10 @@ _camera camSetPos [4810.67,6920.27,1.56]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Rashiv setmimic "Angry"
+Rashiv setMimic "Angry"
 Rashiv say "36v59"
 ~3
-Rashiv switchmove "FxShow5"
+Rashiv switchMove "FxShow5"
 ~5.5
 ;=== 20:49:54
 _camera camSetTarget [102808.39,-12954.93,1260.96]
@@ -952,7 +952,7 @@ _camera camSetPos [4809.73,6920.97,1.44]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Lemontov setmimic "normal"
+Lemontov setMimic "normal"
 Lemontov say "36v60"
 ~11.5
 ;=== 20:51:07
@@ -962,7 +962,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Rashiv say "36v61"
-Rashiv switchmove "FXCivilHandMouth"
+Rashiv switchMove "FXCivilHandMouth"
 ~3
 ;=== 20:51:43
 _camera camSetTarget [-78796.41,61143.88,-8197.92]
@@ -979,7 +979,7 @@ _camera camCommit 0
 @camCommitted _camera
 Lemontov say "36v62"
 ~3
-Lemontov setmimic "angry"
+Lemontov setMimic "angry"
 ~2.5
 ;=== 20:55:31
 _camera camSetTarget [-88887.10,41862.57,74.82]
@@ -1003,10 +1003,10 @@ _camera camSetPos [4811.23,6921.34,1.54]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Rashiv setmimic "surprised"
+Rashiv setMimic "surprised"
 Rashiv say "36v65"
 ~2
-Rashiv setmimic "sad"
+Rashiv setMimic "sad"
 ~3.5
 ;=== 20:57:39
 _camera camSetTarget [73276.95,-65533.29,-7754.00]
@@ -1023,11 +1023,11 @@ _camera camSetPos [4810.80,6919.41,1.54]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-titletext["","plain down"]
-Rashiv setmimic "sad"
-Rashiv switchmove "FxStandHip"
-Lemontov dowatch Rashiv
-playmusic ["Track13",50]
+titleText["","PLAIN DOWN"]
+Rashiv setMimic "sad"
+Rashiv switchMove "FxStandHip"
+Lemontov doWatch Rashiv
+playMusic ["Track13",50]
 ;=== 20:59:06
 _camera camSetTarget [-77836.10,-44832.10,-21994.32]
 _camera camSetPos [4811.54,6922.56,1.54]
@@ -1040,9 +1040,9 @@ _camera camSetPos [4809.91,6921.04,1.51]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Rashiv setmimic "Angry"
+Rashiv setMimic "Angry"
 Rashiv say "36v67"
-Rashiv switchmove "FXshow2"
+Rashiv switchMove "FXshow2"
 ~5
 ;=== 21:00:13
 _camera camSetTarget [7361.30,106464.85,-9008.14]
@@ -1051,9 +1051,9 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~3
-Rashiv move getmarkerpos "RashivAway"
-Rashiv setspeedmode "limited"
-Rashiv dowatch objnull
+Rashiv move getMarkerPos "RashivAway"
+Rashiv setSpeedMode "limited"
+Rashiv doWatch objNull
 ~3
 ;=== 21:01:39
 _camera camSetTarget [8588.57,106827.05,-1880.92]
@@ -1061,7 +1061,7 @@ _camera camSetPos [4809.85,6919.31,1.28]
 _camera camSetFOV 0.700
 _camera camCommit 4
 Lemontov say "36v68"
-7 fademusic 1
+7 fadeMusic 1
 @camCommitted _camera
 ~2
 ;=== 21:02:06
@@ -1071,11 +1071,11 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~0.5
-Lemontov setmimic "sad"
+Lemontov setMimic "sad"
 ~1
-titlecut["","black out",3]
-3.5 fadesound 0
-3.5 fademusic 0
+titleCut["","BLACK OUT",3]
+3.5 fadeSound 0
+3.5 fadeMusic 0
 ~3.5
 end=true
 player cameraEffect ["terminate","back"]

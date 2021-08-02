@@ -1,21 +1,21 @@
-enableradio true
+enableRadio true
 
 
 ~1
 
-setacctime 1
+setAccTime 1
 
-driver resTransport globalradio "10r01"
+driver resTransport globalRadio "10r01"
 ~2.5
-leader player sideradio "10r02"
-leader player sideradio "10r03"
+leader player sideRadio "10r02"
+leader player sideRadio "10r03"
 ~6
 [leader player, resTransport, 0.5] exec "eject.sqs"
 resTransport lock false
 ~2
-"1" objstatus "done"
-"2" objstatus "active"
-15 fademusic 0
+"1" objStatus "DONE"
+"2" objStatus "ACTIVE"
+15 fadeMusic 0
 ~8
 transportAway=true
 exit

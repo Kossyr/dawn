@@ -35,7 +35,7 @@ class Mission
 					rank="LIEUTNANT";
 					skill=1.000000;
 					text="Calvet";
-					init="this setidentity ""Calvet""; this setgroupid [""BRAVO"",""GROUPCOLOR0""]; group this allowfleeing 0";
+					init="this setIdentity ""Calvet""; this setGroupId [""BRAVO"",""GROUPCOLOR0""]; group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -47,7 +47,7 @@ class Mission
 					vehicle="SoldierGMG";
 					rank="SERGEANT";
 					skill=1.000000;
-					init="this setidentity ""Rozier""";
+					init="this setIdentity ""Rozier""";
 				};
 				class Item2
 				{
@@ -59,7 +59,7 @@ class Mission
 					vehicle="SoldierGMG";
 					rank="SERGEANT";
 					skill=1.000000;
-					init="this setidentity ""Rochefort""";
+					init="this setIdentity ""Rochefort""";
 				};
 				class Item3
 				{
@@ -71,7 +71,7 @@ class Mission
 					vehicle="SoldierGMedic";
 					rank="SERGEANT";
 					skill=1.000000;
-					init="this setidentity ""Toussaint""";
+					init="this setIdentity ""Toussaint""";
 				};
 				class Item4
 				{
@@ -83,7 +83,7 @@ class Mission
 					vehicle="SoldierGG";
 					rank="CORPORAL";
 					skill=1.000000;
-					init="this setidentity ""Lebas""";
+					init="this setIdentity ""Lebas""";
 				};
 				class Item5
 				{
@@ -95,7 +95,7 @@ class Mission
 					vehicle="SoldierGG";
 					rank="CORPORAL";
 					skill=1.000000;
-					init="this setidentity ""LaCroix""";
+					init="this setIdentity ""LaCroix""";
 				};
 				class Item6
 				{
@@ -108,7 +108,7 @@ class Mission
 					player="PLAYER COMMANDER";
 					skill=0.800000;
 					text="aP";
-					init="this setidentity ""Rashiv""";
+					init="this setIdentity ""Rashiv""";
 				};
 				class Item7
 				{
@@ -120,7 +120,7 @@ class Mission
 					vehicle="SoldierGB";
 					rank="SERGEANT";
 					skill=1.000000;
-					init="this setidentity ""Saunier""";
+					init="this setIdentity ""Saunier""";
 				};
 			};
 			class Waypoints
@@ -225,7 +225,7 @@ class Mission
 					vehicle="SoldierWB";
 					leader=1;
 					skill=0.200000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -471,7 +471,7 @@ class Mission
 					vehicle="SoldierWB";
 					leader=1;
 					skill=0.200000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -564,7 +564,7 @@ class Mission
 					vehicle="SoldierWB";
 					leader=1;
 					skill=0.200000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -649,7 +649,7 @@ class Mission
 					vehicle="SoldierWB";
 					leader=1;
 					skill=0.200000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -896,7 +896,7 @@ class Mission
 					vehicle="OfficerW";
 					leader=1;
 					skill=0.200000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -986,7 +986,7 @@ class Mission
 					rank="COLONEL";
 					skill=0.600000;
 					text="driver1";
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -1089,7 +1089,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="Poincare";
-					init="this setidentity ""Poincare""; this setgroupid [""ALPHA"",""groupcolor0""]";
+					init="this setIdentity ""Poincare""; this setGroupId [""ALPHA"",""groupcolor0""]";
 				};
 			};
 		};
@@ -1187,7 +1187,7 @@ class Mission
 					vehicle="OfficerW";
 					leader=1;
 					skill=0.200000;
-					init="group this allowfleeing 0; am_attack1 = group this";
+					init="group this allowFleeing 0; am_attack1 = group this";
 				};
 				class Item1
 				{
@@ -1369,7 +1369,7 @@ class Mission
 					vehicle="OfficerW";
 					leader=1;
 					skill=0.200000;
-					init="group this allowfleeing 0; am_attack2 = group this";
+					init="group this allowFleeing 0; am_attack2 = group this";
 				};
 				class Item1
 				{
@@ -1758,7 +1758,7 @@ class Mission
 			vehicle="ReammoBoxEast";
 			leader=1;
 			skill=0.200000;
-			init="clearmagazinecargo this; clearweaponcargo this";
+			init="clearMagazineCargo this; clearWeaponCargo this";
 		};
 		class Item29
 		{
@@ -1768,7 +1768,7 @@ class Mission
 			vehicle="ReammoBoxEast";
 			leader=1;
 			skill=0.200000;
-			init="clearmagazinecargo this; clearweaponcargo this";
+			init="clearMagazineCargo this; clearWeaponCargo this";
 		};
 		class Item30
 		{
@@ -2074,7 +2074,7 @@ class Mission
 			age="UNKNOWN";
 			text="SWITCH TO AWARE";
 			expCond="baseAware";
-			expActiv="""_x setbehaviour """"aware"""""" foreach thislist";
+			expActiv="""_x setBehaviour """"AWARE"""""" forEach thislist";
 			class Effects
 			{
 			};
@@ -2133,7 +2133,7 @@ class Mission
 			age="UNKNOWN";
 			text="BASE TAKEN";
 			expCond="{alive _x} count thislist <= 1";
-			expActiv="[] exec ""base.sqs""; ""_x setdammage 1"" foreach thislist";
+			expActiv="[] exec ""base.sqs""; ""_x setDammage 1"" forEach thislist";
 			class Effects
 			{
 			};
@@ -2383,7 +2383,7 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="Rashiv";
-					init="this setidentity ""Rashiv""";
+					init="this setIdentity ""Rashiv""";
 				};
 			};
 		};
@@ -2403,7 +2403,7 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="Calvet";
-					init="this setidentity ""Calvet""";
+					init="this setIdentity ""Calvet""";
 				};
 			};
 		};
@@ -2423,7 +2423,7 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="part";
-					init="this setidentity ""Rozier""";
+					init="this setIdentity ""Rozier""";
 				};
 			};
 		};
@@ -2443,7 +2443,7 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="Poincare";
-					init="this setidentity ""Poincare""; this setbehaviour ""Careless""";
+					init="this setIdentity ""Poincare""; this setBehaviour ""CARELESS""";
 				};
 			};
 		};
@@ -2463,7 +2463,7 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="res2";
-					init="this setbehaviour ""safe""; this setidentity ""Rocherfort""";
+					init="this setBehaviour ""SAFE""; this setIdentity ""Rocherfort""";
 				};
 			};
 		};
@@ -2483,7 +2483,7 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="res3";
-					init="this setbehaviour ""safe""; this setidentity ""Saunier""";
+					init="this setBehaviour ""SAFE""; this setIdentity ""Saunier""";
 				};
 			};
 		};
@@ -2503,7 +2503,7 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="Rashiv2";
-					init="this setidentity ""Rashiv""; this setbehaviour ""safe""; removeallweapons this";
+					init="this setIdentity ""Rashiv""; this setBehaviour ""SAFE""; removeAllWeapons this";
 				};
 			};
 			class Waypoints
@@ -2547,7 +2547,7 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="Calvet2";
-					init="this setidentity ""Calvet""";
+					init="this setIdentity ""Calvet""";
 				};
 			};
 		};
@@ -2567,7 +2567,7 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="res1";
-					init="this reveal Rashiv2; this dotarget Rashiv2; this setidentity ""Rozier""";
+					init="this reveal Rashiv2; this dotarget Rashiv2; this setIdentity ""Rozier""";
 				};
 			};
 			class Waypoints

@@ -1,10 +1,10 @@
-setacctime 1
+setAccTime 1
 
 cinema=true
 canMeetSyomin=false
 
 
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 ~0.5
 
 _camera = "camera" camcreate [0,0,0]
@@ -12,38 +12,38 @@ _camera cameraeffect ["internal","back"]
 
 ? (aP == vehicle aP) : goto "syominCinema" ;
 
-vehicle aP setpos getmarkerpos "VehicleAway"
-vehicle aP setdir 0
+vehicle aP setPos getMarkerPos "VehicleAway"
+vehicle aP setDir 0
 
 ~0.5
 
-vehicle aP setpos getmarkerpos "CinemaSyominVehicle"
-vehicle aP setdir 90
+vehicle aP setPos getMarkerPos "CinemaSyominVehicle"
+vehicle aP setDir 90
 
 aP action ["EJECT"]
-UnassignVehicle aP
+unassignVehicle aP
 
 #syominCinema
 
 aP action ["WEAPONONBACK"]
 
-aP setpos getmarkerpos "PlayerAway"
-LemontovDouble setpos getmarkerpos "CinemaSyominPlayer"
-Syomin setpos getmarkerpos "CinemaSyomin"
-Syomin dowatch [9189.83,9464.85,1.69]
+aP setPos getMarkerPos "PlayerAway"
+LemontovDouble setPos getMarkerPos "CinemaSyominPlayer"
+Syomin setPos getMarkerPos "CinemaSyomin"
+Syomin doWatch [9189.83,9464.85,1.69]
 
 
-LemontovDouble setdir 5
-LemontovDouble dowatch [9189.93,9466.53,1.69]
-LemontovDouble setmimic "angry"
-Syomin setmimic "normal"
+LemontovDouble setDir 5
+LemontovDouble doWatch [9189.93,9466.53,1.69]
+LemontovDouble setMimic "angry"
+Syomin setMimic "normal"
 
 
 ~0.5
 
-setacctime 1
+setAccTime 1
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 ? metSyomin : goto "reenter" ;
 ? not metSyomin : goto "introduction"
@@ -56,7 +56,7 @@ _camera camSetPos [9189.87,9465.87,1.60]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Syomin setmimic "smile"
+Syomin setMimic "smile"
 Syomin say "f01v112"
 ~13
 ;=== 13:26:59
@@ -73,7 +73,7 @@ _camera camSetPos [9190.22,9464.44,1.60]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Syomin setmimic "normal"
+Syomin setMimic "normal"
 Syomin say "f01v114"
 ~10
 ;=== 13:27:43
@@ -98,7 +98,7 @@ _camera camSetPos [9189.79,9465.47,1.60]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-LemontovDouble setmimic "surprised"
+LemontovDouble setMimic "surprised"
 LemontovDouble say "f01v117"
 ~3
 ;=== 13:28:33
@@ -115,7 +115,7 @@ _camera camSetPos [9189.71,9465.38,1.60]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-LemontovDouble setmimic "angry"
+LemontovDouble setMimic "angry"
 LemontovDouble say "f01v119"
 ~3
 ;=== 13:28:57
@@ -124,10 +124,10 @@ _camera camSetPos [9189.77,9466.07,1.60]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Syomin setmimic "sad"
+Syomin setMimic "sad"
 Syomin say "f01v120"
 ~6
-Syomin setmimic "smile"
+Syomin setMimic "smile"
 ~6
 
 goto "dialogue"

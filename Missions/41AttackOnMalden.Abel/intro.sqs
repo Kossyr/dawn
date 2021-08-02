@@ -1,40 +1,40 @@
-titlecut["","black in",0.2]
+titleCut["","BLACK IN",0.2]
 
 sirens=true
 
-Ablomov setmimic "sad"
+Ablomov setMimic "sad"
 
-playmusic "Track8"
+playMusic "Track8"
 
-0 fademusic 0.5
+0 fadeMusic 0.5
 
-para setpos [6182.98,3758.30,92.17-4]
+para setPos [6182.98,3758.30,92.17-4]
 
-Crouch1 setbehaviour "combat"
-Crouch1 switchmove "crouch"
+Crouch1 setBehaviour "COMBAT"
+Crouch1 switchMove "crouch"
 Crouch1 setunitpos "up"
 
-Crouch2 setbehaviour "combat"
-Crouch2 switchmove "crouch"
+Crouch2 setBehaviour "COMBAT"
+Crouch2 switchMove "crouch"
 Crouch2 setunitpos "up"
 
-Crouch3 setbehaviour "combat"
-Crouch3 switchmove "crouch"
+Crouch3 setBehaviour "COMBAT"
+Crouch3 switchMove "crouch"
 Crouch3 setunitpos "up"
 
-Lie setbehaviour "combat"
+Lie setBehaviour "COMBAT"
 Lie setunitpos "down"
 
-Walker setbehaviour "combat"
+Walker setBehaviour "COMBAT"
 Walker setunitpos "up"
 
-0 fadesound 0
+0 fadeSound 0
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-setacctime 0.3
-1 fadesound 0.4
+setAccTime 0.3
+1 fadeSound 0.4
 
 ;=== 15:39:26
 _camera camSetTarget su25
@@ -48,9 +48,9 @@ _camera camSetPos [6170.39,3739.09,85.97]
 _camera camSetFOV 0.700
 _camera camCommit 1.5
 ~0.5
-setacctime 0.5
+setAccTime 0.5
 @camCommitted _camera
-1 fadesound 1
+1 fadeSound 1
 ;=== 15:54:44
 _camera camSetTarget su25
 _camera camSetPos [6154.59,4116.62,3.62]
@@ -63,7 +63,7 @@ _camera camSetPos [6154.33,4121.87,0.65]
 _camera camSetFOV 0.700
 _camera camCommit 1
 @camCommitted _camera
-setacctime 1
+setAccTime 1
 ~2
 
 [[0,0,0.5],0.5,0,su25] exec "fireEffect.sqs"
@@ -95,22 +95,22 @@ _camera camSetPos [5861.74,3531.62,12.06]
 _camera camSetFOV 0.700
 _camera camCommit 7
 @camCommitted _camera
-titlecut["","white out",2]
-2 fadesound 0
-2 fademusic 0
+titleCut["","WHITE OUT",2]
+2 fadeSound 0
+2 fadeMusic 0
 ~2
 
-playmusic "Track10"
-1 fademusic 1
+playMusic "Track10"
+1 fadeMusic 1
 
-0 fadesound 0.5
+0 fadeSound 0.5
 
 sirens=false
 beachSirens=true
 
 
 
-titlecut["","white in",1]
+titleCut["","WHITE IN",1]
 
 beachMove1=true
 
@@ -146,9 +146,9 @@ _camera camCommit 4
 ~1
 beachMove2=true
 ~1
-AmmoTaker switchmove "CombatToTakeFlag"
+AmmoTaker switchMove "CombatToTakeFlag"
 ~1.5
-AmmoTaker switchmove "TakeFlagToCombat"
+AmmoTaker switchMove "TakeFlagToCombat"
 @camCommitted _camera
 ;=== 17:54:09
 _camera camSetTarget [80189.36,64982.54,-17377.26]
@@ -156,7 +156,7 @@ _camera camSetPos [5132.58,1236.48,1.65]
 _camera camSetFOV 0.700
 _camera camCommit 4
 ~0.8
-AmmoTaker switchmove "CombatReloadMagazine"
+AmmoTaker switchMove "CombatReloadMagazine"
 ~1.5
 beachMove3=true
 @camCommitted _camera
@@ -198,11 +198,11 @@ _camera camCommit 5
 invasionMove=true
 @camCommitted _camera
 
-Walker switchmove "CombatWalkF"
-Walker switchmove "CombatWalkF"
-Walker switchmove "CombatWalkF"
-Walker switchmove "CombatWalkF"
-Walker switchmove "CombatWalkF"
+Walker switchMove "CombatWalkF"
+Walker switchMove "CombatWalkF"
+Walker switchMove "CombatWalkF"
+Walker switchMove "CombatWalkF"
+Walker switchMove "CombatWalkF"
 
 ;=== 17:56:37
 _camera camSetTarget [27280.74,-96232.28,-3471.27]
@@ -217,19 +217,19 @@ _camera camSetPos [5156.58,1218.68,1.47]
 _camera camSetFOV 0.700
 _camera camCommit 5
 @camCommitted _camera
-Walker switchmove "CombatToCrouch"
+Walker switchMove "CombatToCrouch"
 ;=== 17:56:53
 _camera camSetTarget [27280.74,-96232.28,-3470.94]
 _camera camSetPos [5156.58,1218.68,1.47-0.3]
 _camera camSetFOV 0.700
 _camera camCommit 1
 @camCommitted _camera
-3 fademusic 0
+3 fadeMusic 0
 ~2
-Walker switchmove "Crouch"
+Walker switchMove "Crouch"
 
-titlecut["","black out",1]
-1 fadesound 0
+titleCut["","BLACK OUT",1]
+1 fadeSound 0
 ~1
 end=true
 player cameraEffect ["terminate","back"]

@@ -1,23 +1,23 @@
-setacctime 1
+setAccTime 1
 
 inTheCity=false
 
-playmusic "Track7"
-30 fademusic 1
+playMusic "Track7"
+30 fadeMusic 1
 
 alarm=false
 
-"13" objstatus "done"
-aP addrating 1000
+"13" objStatus "DONE"
+aP addRating 1000
 
-Astier sideradio "11r04"
-Poincare sideradio "11r05"
-Calvet sideradio "11r06"
-aP sideradio "11r07"
-Astier sideradio "11r08"
+Astier sideRadio "11r04"
+Poincare sideRadio "11r05"
+Calvet sideRadio "11r06"
+aP sideRadio "11r07"
+Astier sideRadio "11r08"
 ~32
 
-setacctime 1
+setAccTime 1
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -36,11 +36,11 @@ _camera camSetPos [9721.64,1512.61,12.91]
 _camera camSetFOV 0.700
 _camera camCommit 26
 ~10
-titletext [ localize "STRC_END_SUCCESS","plain"]
+titleText [ localize "STRC_END_SUCCESS","PLAIN"]
 ~8
-titlecut["","black out",8]
+titleCut["","BLACK OUT",8]
 ~6
-2 fademusic 0
+2 fadeMusic 0
 @camCommitted _camera
 
 

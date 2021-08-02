@@ -1,40 +1,40 @@
-setacctime 1
+setAccTime 1
 
-leader roman groupradio "18r08"
+leader roman groupRadio "18r08"
 
 ~5
 
 clearForest=true
 
-titlecut ["", "black out", 4]
+titleCut ["", "BLACK OUT", 4]
 
 ~5
 
-setacctime 1
+setAccTime 1
 
-us_off playmove "FxToHand"
-talk switchmove "effectstandtalk"
-sitdown switchmove "effectstandsitdown"
+us_off playMove "FxToHand"
+talk switchMove "effectstandtalk"
+sitdown switchMove "effectstandsitdown"
 
 [] exec "dip.sqs"
 
-aP setpos getmarkerpos "playerReturn"
+aP setPos getMarkerPos "playerReturn"
 aP setunitpos "up"
-aP setdir 160
+aP setDir 160
 aP action ["weaponinhand"]
 
-Double setpos getmarkerpos "playerBase"
+Double setPos getMarkerPos "playerBase"
 
 
 _camera = "camera" camCreate [0,0,0] 
 _camera cameraEffect ["internal","back"]
 
 
-titlecut ["", "black in", 2]
+titleCut ["", "BLACK IN", 2]
 
 
 ShowCinemaBorder false
-CutRSC ["binocular","plain down",0.05]
+CutRSC ["binocular","PLAIN DOWN",0.05]
 
 
 ;=== 15:17:09
@@ -97,10 +97,10 @@ _camera camSetFOV 0.149
 _camera camCommit 6
 @camCommitted _camera
 
-titletext ["","plain down"]
+titleText ["","PLAIN DOWN"]
 
-aP sideradio "18r09"
-Lemontov sideradio "18r10"
+aP sideRadio "18r09"
+Lemontov sideRadio "18r10"
 
 ;=== 15:18:53
 _camera camSetTarget [-85173.06,38943.14,-25587.64]
@@ -126,41 +126,41 @@ CutRSC ["Default","Plain Down",100]
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
-titlecut ["", "black in", 1]
+titleCut ["", "BLACK IN", 1]
 
-aP setpos getmarkerpos "playerReturn"
+aP setPos getMarkerPos "playerReturn"
 
-deletevehicle Double
+deleteVehicle Double
 
 ~1
 
 toConvoy=true
 
-"3" objstatus "done"
-aP addrating 1000
+"3" objStatus "DONE"
+aP addRating 1000
 
-Lemontov sideradio "18r11"
+Lemontov sideRadio "18r11"
 
-"BaseDeer" setmarkertype "Warning"
+"BaseDeer" setMarkerType "Warning"
 
 ~45
 
-setacctime 1
+setAccTime 1
 
-Lemontov sideradio "18r12"
+Lemontov sideRadio "18r12"
 
-leader leonid sideradio "18r13"
+leader leonid sideRadio "18r13"
 
-Lemontov sideradio "18r14"
+Lemontov sideRadio "18r14"
 
 ~15
 
 toBase=true
 
-"Escape" setmarkertype "End"
+"Escape" setMarkerType "End"
 
-"4" objstatus "failed"
+"4" objStatus "FAILED"
 
-"5" objstatus "active"
+"5" objStatus "ACTIVE"
 
 exit

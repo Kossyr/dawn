@@ -2,7 +2,7 @@ stealingTruck=false
 
 ~0.5
 
-setacctime 1
+setAccTime 1
 DurrasGuard1 say "11v78"
 
 _escapeTime = 4
@@ -18,14 +18,14 @@ _i = _i + 1
 
 ? _i < _escapeTime : goto "loop"
 
-setacctime 1
+setAccTime 1
 
-titlecut["","black in",0.5]
-? aP in FuelTruck : aP action ["EJECT"] ; UnassignVehicle aP ;
-aP setpos getmarkerpos "rashiv_durras_front"
-aP setdir 250
-FuelTruck setpos getmarkerpos "durras_truck"
-FuelTruck setdir 70
+titleCut["","BLACK IN",0.5]
+? aP in FuelTruck : aP action ["EJECT"] ; unassignVehicle aP ;
+aP setPos getMarkerPos "rashiv_durras_front"
+aP setDir 250
+FuelTruck setPos getMarkerPos "durras_truck"
+FuelTruck setDir 70
 stealingTruck=true
 
 Tracer say "11v80"
@@ -35,16 +35,16 @@ goto "ex"
 #truckIsGone
 
 Tracer say "11v79"
-"6" objstatus "done"
-aP addrating 1000
-"7" objstatus "active"
+"6" objStatus "DONE"
+aP addRating 1000
+"7" objStatus "ACTIVE"
 hasTruck=true
-Calverra setpos getmarkerpos "calverra_beach"
+Calverra setPos getMarkerPos "calverra_beach"
 ~3
-setacctime 1
+setAccTime 1
 aP say "11v81"
 ~7
-savegame
+saveGame
 
 #ex
 

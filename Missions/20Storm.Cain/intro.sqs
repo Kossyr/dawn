@@ -1,20 +1,20 @@
-titlecut["","black in",4]
+titleCut["","BLACK IN",4]
 
-Frolov setmimic "normal"
-Kukushkin setmimic "normal"
+Frolov setMimic "normal"
+Kukushkin setMimic "normal"
 
-C1 removeweapon "nvgoggles"
-C2 removeweapon "nvgoggles"
-C3 removeweapon "nvgoggles"
-C4 removeweapon "nvgoggles"
-C5 removeweapon "nvgoggles"
-C6 removeweapon "nvgoggles"
-C7 removeweapon "nvgoggles"
+C1 removeWeapon "nvgoggles"
+C2 removeWeapon "nvgoggles"
+C3 removeWeapon "nvgoggles"
+C4 removeWeapon "nvgoggles"
+C5 removeWeapon "nvgoggles"
+C6 removeWeapon "nvgoggles"
+C7 removeWeapon "nvgoggles"
 
-Frolov dowatch [7920.74,9064.43,1.62]
-Kukushkin dowatch [7920.01,9063.53,1.64]
+Frolov doWatch [7920.74,9064.43,1.62]
+Kukushkin doWatch [7920.01,9063.53,1.64]
 
-playmusic "Track5"
+playMusic "Track5"
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -33,8 +33,8 @@ _camera camSetPos [7929.72,9060.87,2.71]
 _camera camSetFOV 0.700
 _camera camCommit 6
 ~3
-C7 setspeedmode "limited"
-C7 move getmarkerpos "C7"
+C7 setSpeedMode "limited"
+C7 move getMarkerPos "C7"
 @camCommitted _camera
 
 ;=== 18:31:39
@@ -42,9 +42,9 @@ _camera camSetTarget [-90399.38,12039.23,-17829.23]
 _camera camSetPos [7928.28,9063.31,2.23]
 _camera camSetFOV 0.700
 _camera camCommit 3
-3 fademusic 0.3
+3 fadeMusic 0.3
 @camCommitted _camera
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 ;=== 18:32:38
 _camera camSetTarget [-76272.48,-44291.91,-7909.58]
 _camera camSetPos [7920.74,9063.92,1.56]
@@ -65,7 +65,7 @@ _camera camSetPos [7920.36,9064.10,1.63]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Kukushkin setmimic "smile"
+Kukushkin setMimic "smile"
 Kukushkin say "20v02"
 ~4
 ;=== 18:34:28
@@ -88,10 +88,10 @@ _camera camSetPos [7920.36,9063.97,1.63]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Kukushkin setmimic "sad"
+Kukushkin setMimic "sad"
 Kukushkin say "20v04"
 ~3
-Kukushkin setmimic "normal"
+Kukushkin setMimic "normal"
 ~4
 ;=== 18:36:08
 _camera camSetTarget [-32060.32,-81462.71,-14231.86]
@@ -144,16 +144,16 @@ _camera camSetPos [7920.34,9064.04,1.62]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Kukushkin setmimic "smile"
+Kukushkin setMimic "smile"
 Kukushkin say "20v08"
-Kukushkin playmove "effectstandsalute"
+Kukushkin playMove "effectstandsalute"
 giveSignal=true
 ~2.5
-Kukushkin playmove "effectstandsaluteend"
+Kukushkin playMove "effectstandsaluteend"
 ~1.5
-Kukushkin setmimic "surprised"
+Kukushkin setMimic "surprised"
 ~1
-Frolov dowatch [7918.97,9062.35,1.71]
+Frolov doWatch [7918.97,9062.35,1.71]
 ;=== 18:40:47
 _camera camSetTarget [-48664.04,-68406.81,28346.64]
 _camera camSetPos [7920.99,9065.64,1.19]
@@ -167,45 +167,45 @@ _camera camSetPos [7919.42,9063.01,1.54]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Frolov setmimic "angry"
+Frolov setMimic "angry"
 Frolov say "20v09"
 ~3
-1 fademusic 1
-Frolov setbehaviour "aware"
+1 fadeMusic 1
+Frolov setBehaviour "AWARE"
 ~0.5
-Kukushkin setbehaviour "aware"
-C1 setbehaviour "aware"
-C2 setbehaviour "aware"
-C3 setbehaviour "aware"
-C4 setbehaviour "aware"
-C5 setbehaviour "aware"
-C6 setbehaviour "aware"
-C7 setbehaviour "aware"
+Kukushkin setBehaviour "AWARE"
+C1 setBehaviour "AWARE"
+C2 setBehaviour "AWARE"
+C3 setBehaviour "AWARE"
+C4 setBehaviour "AWARE"
+C5 setBehaviour "AWARE"
+C6 setBehaviour "AWARE"
+C7 setBehaviour "AWARE"
 Frolov assignascommander T1
-Frolov setspeedmode "limited"
+Frolov setSpeedMode "limited"
 [Frolov] orderGetIn true
 ~0.5
 
 Kukushkin assignascommander T3
-C1 assignasdriver T3
-C2 assignasgunner T3
+C1 assignAsDriver T3
+C2 assignAsGunner T3
 C3 assignascommander T2
-C6 assignasgunner T2
-C5 assignasdriver T2
-C4 assignasdriver T1
-C7 assignasgunner T1
+C6 assignAsGunner T2
+C5 assignAsDriver T2
+C4 assignAsDriver T1
+C7 assignAsGunner T1
 
-Kukushkin setspeedmode "limited"
-C1 setspeedmode "limited"
-C2 setspeedmode "limited"
-C3 setspeedmode "limited"
-C4 setspeedmode "limited"
-C5 setspeedmode "limited"
-C6 setspeedmode "limited"
-C7 setspeedmode "limited"
+Kukushkin setSpeedMode "limited"
+C1 setSpeedMode "limited"
+C2 setSpeedMode "limited"
+C3 setSpeedMode "limited"
+C4 setSpeedMode "limited"
+C5 setSpeedMode "limited"
+C6 setSpeedMode "limited"
+C7 setSpeedMode "limited"
 [Kukushkin, C1, C2, C3, C4, C5, C6, C7] orderGetIn true
 
-titletext["","plain down"]
+titleText["","PLAIN DOWN"]
 
 ;=== 18:49:06
 _camera camSetTarget [-61275.02,75596.01,-27762.48]
@@ -228,12 +228,12 @@ F3 inflame false
 @camCommitted _camera
 
 ~2
-Zubarev setspeedmode "limited"
-Zubarev move getmarkerpos "ZubarevAway"
+Zubarev setSpeedMode "limited"
+Zubarev move getMarkerPos "ZubarevAway"
 ~1.5
-3 fademusic 0
+3 fadeMusic 0
 
-titlecut["", "black out", 3]
+titleCut["", "BLACK OUT", 3]
 
 ~3
 

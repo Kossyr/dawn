@@ -1,20 +1,20 @@
-titlecut["","black in",3]
+titleCut["","BLACK IN",3]
 
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-Lemontov setmimic "Cynical"
-Shaposhnikov setmimic "Normal"
-Zubarev setmimic "Normal"
-Volkov setmimic "Angry"
+Lemontov setMimic "Cynical"
+Shaposhnikov setMimic "Normal"
+Zubarev setMimic "Normal"
+Volkov setMimic "Angry"
 
-Lemontov disableai "autotarget"
-Shaposhnikov disableai "autotarget"
-Zubarev disableai "autotarget"
-Volkov disableai "autotarget"
+Lemontov disableAI "AUTOTARGET"
+Shaposhnikov disableAI "AUTOTARGET"
+Zubarev disableAI "AUTOTARGET"
+Volkov disableAI "AUTOTARGET"
 
-playmusic ["Track3", 0.8]
+playMusic ["Track3", 0.8]
 
 ;=== 20:28:59
 _camera camSetTarget [36278.02,-86613.57,-3653.48]
@@ -53,17 +53,17 @@ _camera camSetFOV 0.700
 _camera camCommit 5
 @camCommitted _camera
 
-1 fademusic 0.3
+1 fadeMusic 0.3
 
 ~1
 
-Lemontov setpos getmarkerpos "volkovLemontov"
+Lemontov setPos getMarkerPos "volkovLemontov"
 Lemontov stop true
-Lemontov setdir 0
+Lemontov setDir 0
 
-Shaposhnikov setpos getmarkerpos "volkovShaposhnikov"
+Shaposhnikov setPos getMarkerPos "volkovShaposhnikov"
 Shaposhnikov stop true
-Shaposhnikov setdir 310
+Shaposhnikov setDir 310
 
 
 ; beginning
@@ -85,13 +85,13 @@ _camera camCommit 4
 
 ~1
 
-Lemontov setpos getmarkerpos "volkovLemontov"
+Lemontov setPos getMarkerPos "volkovLemontov"
 Lemontov stop true
-Lemontov setdir 0
+Lemontov setDir 0
 
-Shaposhnikov setpos getmarkerpos "volkovShaposhnikov"
+Shaposhnikov setPos getMarkerPos "volkovShaposhnikov"
 Shaposhnikov stop true
-Shaposhnikov setdir 310
+Shaposhnikov setDir 310
 
 @camCommitted _camera
 
@@ -104,8 +104,8 @@ _camera camCommit 0
 
 ~3.5
 
-Lemontov dowatch [8558.04,9305.68,1.71]
-Shaposhnikov dowatch [8558.04,9305.68,1.71]
+Lemontov doWatch [8558.04,9305.68,1.71]
+Shaposhnikov doWatch [8558.04,9305.68,1.71]
 
 
 Lemontov say "21v02"
@@ -121,22 +121,22 @@ _camera camCommit 0
 
 Zubarev say "21v03"
 
-5 fademusic 0
+5 fadeMusic 0
 
 ~5
 
-playmusic ["Track6", 16]
+playMusic ["Track6", 16]
 
-0 fademusic 1
+0 fadeMusic 1
 
 ; volkov arrival
 
 
-Volkov setpos getmarkerpos "volkovFirst"
+Volkov setPos getMarkerPos "volkovFirst"
 Volkov stop true
-Volkov setdir 40
+Volkov setDir 40
 
-Volkov dowatch [8545.92,9298.42,1.73]
+Volkov doWatch [8545.92,9298.42,1.73]
 
 ; boots
 ;=== 20:02:19
@@ -157,7 +157,7 @@ _camera camCommit 1
 
 ; shaposhnikov 
 
-titlecut ["", "white in", 0.5]
+titleCut ["", "WHITE IN", 0.5]
 
 ;=== 19:55:14
 _camera camSetTarget [77042.08,-63437.29,-4242.29]
@@ -166,7 +166,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Shaposhnikov setmimic "surprised"
+Shaposhnikov setMimic "surprised"
 
 ~1.5
 
@@ -192,7 +192,7 @@ _camera camCommit 1
 ; Zubarev
 
 
-titlecut ["", "white in", 0.5]
+titleCut ["", "WHITE IN", 0.5]
 
 ;=== 19:55:38
 _camera camSetTarget [-28373.74,102133.03,-4242.05]
@@ -201,7 +201,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Zubarev setmimic "Smile"
+Zubarev setMimic "Smile"
 
 ~1.5
 
@@ -223,7 +223,7 @@ _camera camCommit 1
 
 ; Lemontov
 
-titlecut ["", "white in", 0.5]
+titleCut ["", "WHITE IN", 0.5]
 
 ;=== 19:57:03
 _camera camSetTarget [3406.11,-90468.98,-4242.22]
@@ -232,7 +232,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Lemontov setmimic "angry"
+Lemontov setMimic "angry"
 
 ~1.5
 
@@ -253,29 +253,29 @@ _camera camCommit 1
 @camCommitted _camera
 
 
-2 fademusic 0.3
+2 fadeMusic 0.3
 
 ~2
 
 ; volkov
 
-Volkov dowatch objnull
-Volkov setpos getmarkerpos "volkovSecond"
+Volkov doWatch objNull
+Volkov setPos getMarkerPos "volkovSecond"
 Volkov stop true
-Volkov setdir 150
+Volkov setDir 150
 
-Zubarev setpos getmarkerpos "volkovZubarev"
-Zubarev setdir 150
+Zubarev setPos getMarkerPos "volkovZubarev"
+Zubarev setDir 150
 
 ; rest of volkov discussion
 
 
-Shaposhnikov dowatch [8557.53,9305.28,1.67]
-Lemontov dowatch [8557.53,9305.28,1.67]
+Shaposhnikov doWatch [8557.53,9305.28,1.67]
+Lemontov doWatch [8557.53,9305.28,1.67]
 
 Shaposhnikov say "21v04"
 
-Shaposhnikov playmove "effectstandsalute"
+Shaposhnikov playMove "effectstandsalute"
 
 ;=== 20:11:56
 _camera camSetTarget [106587.50,-7605.18,-10106.44]
@@ -287,18 +287,18 @@ _camera camCommit 0
 
 ~1
 
-Lemontov playmove "effectstandsalute"
+Lemontov playMove "effectstandsalute"
 
 ~0.5
 
-Shaposhnikov playmove "effectstandsaluteend"
+Shaposhnikov playMove "effectstandsaluteend"
 
 ~1.5
 
-Lemontov playmove "effectstandsaluteend"
+Lemontov playMove "effectstandsaluteend"
 
-Shaposhnikov setmimic "Normal"
-Lemontov setmimic "Angry"
+Shaposhnikov setMimic "Normal"
+Lemontov setMimic "Angry"
 
 ~1
 
@@ -353,7 +353,7 @@ Zubarev doWatch [8557.53,9305.28,1.67]
 
 ~9.2
 
-Volkov dowatch [8559.14,9305.98,1.70]
+Volkov doWatch [8559.14,9305.98,1.70]
 
 Volkov say "21v09"
 
@@ -364,7 +364,7 @@ _camera camSetFOV 0.700
 _camera camCommit 7.5
 @camCommitted _camera
 
-Zubarev setmimic "sad"
+Zubarev setMimic "sad"
 Zubarev say "21v10"
 
 ;=== 20:17:47
@@ -383,7 +383,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Lemontov setmimic "cynical"
+Lemontov setMimic "cynical"
 
 ~2
 
@@ -398,7 +398,7 @@ Volkov say "21v11"
 
 ~8.5
 
-Zubarev setmimic "hurt"
+Zubarev setMimic "hurt"
 Zubarev say "21v12"
 
 ~1
@@ -407,7 +407,7 @@ Volkov say "21v13"
 
 ~2
 
-Volkov dowatch [8557.83,9303.31,1.66]
+Volkov doWatch [8557.83,9303.31,1.66]
 
 
 ~0.5
@@ -419,20 +419,20 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Zubarev dowatch  [8557.83,9303.31,1.66]
+Zubarev doWatch  [8557.83,9303.31,1.66]
 
 ~6
 
 Volkov say "21v14"
 
-Shaposhnikov setmimic "surprised"
-Zubarev setmimic "surprised"
+Shaposhnikov setMimic "surprised"
+Zubarev setMimic "surprised"
 
 ~10
 
-Lemontov playmove "effectstandsalute"
+Lemontov playMove "effectstandsalute"
 
-Lemontov setmimic "normal"
+Lemontov setMimic "normal"
 ;=== 20:21:43
 _camera camSetTarget [-11875.42,-87896.60,-11498.43]
 _camera camSetPos [8558.12,9304.48,1.54]
@@ -444,7 +444,7 @@ Lemontov say "21v15"
 
 ~2
 
-Lemontov playmove "effectstandsaluteend"
+Lemontov playMove "effectstandsaluteend"
 
 ~1
 
@@ -457,8 +457,8 @@ _camera camCommit 0
 
 Volkov say "21v16"
 
-Zubarev setmimic "angry"
-Shaposhnikov setmimic "normal"
+Zubarev setMimic "angry"
+Shaposhnikov setMimic "normal"
 
 
 ;=== 20:22:05
@@ -470,35 +470,35 @@ _camera camCommit 7
 
 ~5
 
-Shaposhnikov playmove "effectstandsalute"
-Lemontov playmove "effectstandsalute"
+Shaposhnikov playMove "effectstandsalute"
+Lemontov playMove "effectstandsalute"
 
 @camCommitted _camera
 
-3 fademusic 0
+3 fadeMusic 0
 
-titlecut ["", "black out", 3]
+titleCut ["", "BLACK OUT", 3]
 
 ~1
-Shaposhnikov playmove "effectstandsaluteend"
-Lemontov playmove "effectstandsaluteend"
+Shaposhnikov playMove "effectstandsaluteend"
+Lemontov playMove "effectstandsaluteend"
 
 ~4
 
-playmusic "Track5"
+playMusic "Track5"
 
-0 fademusic 1
+0 fadeMusic 1
 
-titlecut["","black in",3]
+titleCut["","BLACK IN",3]
 
 
-Lemontov2 setmimic "Cynical"
-Shaposhnikov2 setmimic "Surprised"
+Lemontov2 setMimic "Cynical"
+Shaposhnikov2 setMimic "Surprised"
 
-Lemontov2 disableai "autotarget"
-Shaposhnikov2 disableai "autotarget"
+Lemontov2 disableAI "AUTOTARGET"
+Shaposhnikov2 disableAI "AUTOTARGET"
 
-Lemontov2 switchmove "EffectStand"
+Lemontov2 switchMove "EffectStand"
 
 ;=== 22:07:51
 _camera camSetTarget [85344.58,75006.40,-5882.30]
@@ -509,8 +509,8 @@ _camera camCommit 0
 
 ~3
 
-Lemontov2 dowatch [9573.21,10036.35,1.73]
-Shaposhnikov2 dowatch [9574.78,10038.00,1.73]
+Lemontov2 doWatch [9573.21,10036.35,1.73]
+Shaposhnikov2 doWatch [9574.78,10038.00,1.73]
 
 stan=true
 
@@ -524,7 +524,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-4 fademusic 0.3
+4 fadeMusic 0.3
 
 ~4
 ;=== 22:11:01
@@ -583,8 +583,8 @@ _camera camCommit 4.5
 
 ; teleport rashiv and guard
 
-Rashiv setpos getmarkerpos "lemontovRashivFirst"
-guard setpos getmarkerpos "lemontovGuardFirst"
+Rashiv setPos getMarkerPos "lemontovRashivFirst"
+guard setPos getMarkerPos "lemontovGuardFirst"
 
 ;=== 22:18:44
 _camera camSetTarget [-88476.66,-8825.99,-5329.06]
@@ -607,11 +607,11 @@ guard say "21v22"
 
 ~1.5
 
-Shaposhnikov2 dowatch [9574.78,10038.00,1.73]
+Shaposhnikov2 doWatch [9574.78,10038.00,1.73]
 
 ~0.8
 
-Shaposhnikov2 setmimic "surprised"
+Shaposhnikov2 setMimic "surprised"
 Shaposhnikov2 say "21v23"
 
 ~1.5
@@ -623,40 +623,40 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Lemontov2 setmimic "smile"
+Lemontov2 setMimic "smile"
 Lemontov2 say "21v24"
 
 ~2
 
-titlecut ["", "black out", 1]
+titleCut ["", "BLACK OUT", 1]
 ~1
 
-titlecut ["", "black in", 0.5]
+titleCut ["", "BLACK IN", 0.5]
 
-Lemontov2 dowatch objnull
-Shaposhnikov2 dowatch objnull
+Lemontov2 doWatch objNull
+Shaposhnikov2 doWatch objNull
 
-Lemontov2 switchmove "";
-Lemontov2 setmimic "normal";
-Lemontov2 setpos getmarkerpos "lemontovLemontov";
-Lemontov2 setdir 185;
+Lemontov2 switchMove "";
+Lemontov2 setMimic "normal";
+Lemontov2 setPos getMarkerPos "lemontovLemontov";
+Lemontov2 setDir 185;
 Lemontov2 stop true;
 
-Shaposhnikov2 setmimic "normal";
-Shaposhnikov2 setpos getmarkerpos "lemontovShaposhnikov";
-Shaposhnikov2 setdir 155;
+Shaposhnikov2 setMimic "normal";
+Shaposhnikov2 setPos getMarkerPos "lemontovShaposhnikov";
+Shaposhnikov2 setDir 155;
 Shaposhnikov2 stop true;
 
-Rashiv setmimic "normal";
-guard setmimic "normal";
+Rashiv setMimic "normal";
+guard setMimic "normal";
 
-Rashiv setpos getmarkerpos "lemontovRashivSecond";
-guard setpos getmarkerpos "lemontovGuardSecond";
+Rashiv setPos getMarkerPos "lemontovRashivSecond";
+guard setPos getMarkerPos "lemontovGuardSecond";
 
-Shaposhnikov2 dowatch [9574.66,10031.11,1.67]
-Lemontov2 dowatch [9574.66,10031.11,1.67]
-guard dowatch [9577.07,10033.56,1.67]
-Rashiv dowatch [9577.07,10033.56,1.67]
+Shaposhnikov2 doWatch [9574.66,10031.11,1.67]
+Lemontov2 doWatch [9574.66,10031.11,1.67]
+guard doWatch [9577.07,10033.56,1.67]
+Rashiv doWatch [9577.07,10033.56,1.67]
 
 
 ;=== 22:33:06
@@ -676,26 +676,26 @@ _camera camCommit 8
 
 ~1.5
 
-guard playmove "effectstandsalute"
+guard playMove "effectstandsalute"
 
 ~1.2
 
-guard playmove "effectstandsaluteend"
+guard playMove "effectstandsaluteend"
 
-guard domove getmarkerpos "getout"
+guard doMove getMarkerPos "getout"
 
 ~1.5
 
-Lemontov2 dowatch [9576.38,10031.46,1.67]
-Shaposhnikov2 dowatch [9576.38,10031.46,1.67]
+Lemontov2 doWatch [9576.38,10031.46,1.67]
+Shaposhnikov2 doWatch [9576.38,10031.46,1.67]
 
 Rashiv say "21v25"
 
-Rashiv playmove "effectstandsalute"
+Rashiv playMove "effectstandsalute"
 
 ~1
 
-Rashiv playmove "effectstandsaluteend"
+Rashiv playMove "effectstandsaluteend"
 
 @camCommitted _camera
 
@@ -728,7 +728,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Rashiv setmimic "surprised"
+Rashiv setMimic "surprised"
 Rashiv say "21v27"
 
 ~3.5
@@ -749,14 +749,14 @@ Lemontov2 say "21v28"
 
 ~15.5
 
-Rashiv dowatch [9574.87,10032.96,1.67]
+Rashiv doWatch [9574.87,10032.96,1.67]
 
-Shaposhnikov2 setmimic "smile"
+Shaposhnikov2 setMimic "smile"
 Shaposhnikov2 say "21v29"
 
 
 @camCommitted _camera
-Rashiv dowatch [9577.07,10033.56,1.67]
+Rashiv doWatch [9577.07,10033.56,1.67]
 
 ;=== 22:38:38
 _camera camSetTarget [39097.97,105365.16,-6208.96]
@@ -778,22 +778,22 @@ _camera camCommit 0
 
 ~4
 
-Shaposhnikov2 setmimic "normal"
-rashiv setmimic "normal"
-Lemontov2 setmimic "angry"
+Shaposhnikov2 setMimic "normal"
+rashiv setMimic "normal"
+Lemontov2 setMimic "angry"
 Lemontov2 say "21v31"
 
 ~4
 
-rashiv playmove "effectstandsalute"
+rashiv playMove "effectstandsalute"
 
 ~1
 
-rashiv playmove "effectstandsaluteend"
+rashiv playMove "effectstandsaluteend"
 
-titlecut ["", "black out", 3]
+titleCut ["", "BLACK OUT", 3]
 
-4 fademusic 0
+4 fadeMusic 0
 
 ~4
 

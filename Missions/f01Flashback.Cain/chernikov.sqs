@@ -1,12 +1,12 @@
-setacctime 1
+setAccTime 1
 
 cinema=true
 canMeetChernikov=false
 
-"Chernikov3" setmarkertype "Marker"
+"Chernikov3" setMarkerType "Marker"
 
 
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 ~0.5
 
 _camera = "camera" camcreate [0,0,0]
@@ -14,40 +14,40 @@ _camera cameraeffect ["internal","back"]
 
 ? (aP == vehicle aP) : goto "chernikovCinema" ;
 
-vehicle aP setpos getmarkerpos "VehicleAway"
-vehicle aP setdir 0
+vehicle aP setPos getMarkerPos "VehicleAway"
+vehicle aP setDir 0
 
 ~0.5
 
-vehicle aP setpos getmarkerpos "CinemaChernikovVehicle"
-vehicle aP setdir 220
+vehicle aP setPos getMarkerPos "CinemaChernikovVehicle"
+vehicle aP setDir 220
 
 aP action ["EJECT"]
-UnassignVehicle aP
+unassignVehicle aP
 
 #chernikovCinema
 
 aP action ["WEAPONONBACK"]
 
-aP setpos getmarkerpos "PlayerAway"
-LemontovDouble setpos getmarkerpos "CinemaChernikovPlayer"
-Chernikov setpos getmarkerpos "CinemaChernikov"
-Chernikov dowatch [9497.82,8609.73,0.75]
+aP setPos getMarkerPos "PlayerAway"
+LemontovDouble setPos getMarkerPos "CinemaChernikovPlayer"
+Chernikov setPos getMarkerPos "CinemaChernikov"
+Chernikov doWatch [9497.82,8609.73,0.75]
 
 
-LemontovDouble setdir 45
-LemontovDouble dowatch [9494.92,8610.03,1.66]
+LemontovDouble setDir 45
+LemontovDouble doWatch [9494.92,8610.03,1.66]
 
 
-LemontovDouble setmimic "angry"
-Chernikov setmimic "normal"
+LemontovDouble setMimic "angry"
+Chernikov setMimic "normal"
 
 
 ~0.5
 
-setacctime 1
+setAccTime 1
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 ? metChernikov : goto "reenter" ;
 ? not metChernikov : goto "introduction"
@@ -63,7 +63,7 @@ _camera camCommit 0
 @camCommitted _camera
 LemontovDouble say "f01v233"
 ~2
-Chernikov dowatch [9492.95,8609.14,1.66]
+Chernikov doWatch [9492.95,8609.14,1.66]
 ~1
 ;=== 21:12:50
 _camera camSetTarget [99027.63,52240.80,-8923.45]
@@ -71,7 +71,7 @@ _camera camSetPos [9493.88,8609.53,1.55]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Chernikov setmimic "smile"
+Chernikov setMimic "smile"
 Chernikov say "f01v234"
 ~6
 ;=== 21:13:49
@@ -88,7 +88,7 @@ _camera camSetPos [9492.64,8608.52,1.59]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Chernikov setmimic "normal"
+Chernikov setMimic "normal"
 Chernikov say "f01v236"
 ~8
 ;=== 21:14:44
@@ -114,7 +114,7 @@ goto "dialogue"
 ; RE-ENTERING CONVERSATION
 #reenter
 
-Chernikov dowatch [9492.95,8609.14,1.66]
+Chernikov doWatch [9492.95,8609.14,1.66]
 
 ;=== 21:14:57
 _camera camSetTarget [100990.73,47455.58,-10903.22]

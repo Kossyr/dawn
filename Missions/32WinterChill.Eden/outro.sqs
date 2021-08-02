@@ -1,16 +1,16 @@
-setacctime 1
+setAccTime 1
 
-"6" objstatus "done"
-aP addrating 1000
+"6" objStatus "DONE"
+aP addRating 1000
 
 ? not joined : [K1, K2, K3, K4, K5] join aP ; joined=true ; ~ 8;
 
 ~6
 
-Kaplinsky sideradio "32r07"
-aP sideradio "32r08"
-Kaplinsky sideradio "32r09"
-aP sideradio "32r10"
+Kaplinsky sideRadio "32r07"
+aP sideRadio "32r08"
+Kaplinsky sideRadio "32r09"
+aP sideRadio "32r10"
 
 ~16
 
@@ -27,12 +27,12 @@ _camera camCommit 0
 
 ~1
 
-enableradio false
+enableRadio false
 
-titletext [ localize "STRC_END_SUCCESS","plain"]
+titleText [ localize "STRC_END_SUCCESS","PLAIN"]
 
 ~10
-titlecut["","black out",2]
+titleCut["","BLACK OUT",2]
 ~2
 end=true
 player cameraEffect ["terminate","back"]

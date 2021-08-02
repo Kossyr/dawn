@@ -1,22 +1,22 @@
-titlecut["","black in",4]
+titleCut["","BLACK IN",4]
 
 
-Guard switchmove "FxStandAtt"
-F1 switchmove "FxInKneel"
-F2 switchmove "effectstandsitdown"
+Guard switchMove "FxStandAtt"
+F1 switchMove "FxInKneel"
+F2 switchMove "effectstandsitdown"
 
-Dyaconsen setmimic "normal"
-Epgayd setmimic "normal"
-Lemontov setmimic "Angry"
+Dyaconsen setMimic "normal"
+Epgayd setMimic "normal"
+Lemontov setMimic "Angry"
 
 
-Dyaconsen dowatch [7285.46,7914.04,1.67]
-Epgayd dowatch [7285.40,7913.03,1.67]
+Dyaconsen doWatch [7285.46,7914.04,1.67]
+Epgayd doWatch [7285.40,7913.03,1.67]
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-playmusic "Track6"
+playMusic "Track6"
 
 
 ;=== 16:07:38
@@ -62,10 +62,10 @@ _camera camSetPos [7280.48,7896.99,6.87]
 _camera camSetFOV 0.700
 _camera camCommit 7
 ~6
-titlecut["","black out",1]
+titleCut["","BLACK OUT",1]
 @camCommitted _camera
-titlecut["","black in", 0.5]
-0.5 fademusic 0.3
+titleCut["","BLACK IN", 0.5]
+0.5 fadeMusic 0.3
 
 ;=== 16:19:57
 _camera camSetTarget [70539.34,-68088.09,-14739.26]
@@ -143,9 +143,9 @@ _camera camCommit 0
 @camCommitted _camera
 
 Epgayd say "39v06"
-Epgayd setmimic "sad"
+Epgayd setMimic "sad"
 ~3
-Epgayd setmimic "angry"
+Epgayd setMimic "angry"
 ~2
 ;=== 16:23:19
 _camera camSetTarget [65601.66,88182.30,-12319.55]
@@ -179,7 +179,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Epgayd setmimic "normal"
+Epgayd setMimic "normal"
 Epgayd say "39v08"
 ~3
 ;=== 16:24:43
@@ -196,7 +196,7 @@ _camera camSetPos [7284.28,7913.44,1.66]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Epgayd setmimic "surprised"
+Epgayd setMimic "surprised"
 Epgayd say "39v10"
 ~3
 ;=== 16:25:25
@@ -235,7 +235,7 @@ _camera camSetPos [7285.09,7913.64,1.64]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Epgayd setmimic "smile"
+Epgayd setMimic "smile"
 ~3
 ;=== 16:40:48
 _camera camSetTarget [-26948.98,-85218.98,-12247.35]
@@ -244,9 +244,9 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Dyaconsen say "39v13"
-Dyaconsen playmove "effectstandsalute"
+Dyaconsen playMove "effectstandsalute"
 ~1.5
-Dyaconsen playmove "effectstandsaluteend"
+Dyaconsen playMove "effectstandsaluteend"
 ~1
 ;=== 16:41:41
 _camera camSetTarget [15030.56,107146.44,-9464.36]
@@ -261,60 +261,60 @@ _camera camSetPos [7285.41,7913.28,1.63]
 _camera camSetFOV 0.362
 _camera camCommit 10
 
-Epgayd setmimic "angry"
+Epgayd setMimic "angry"
 Epgayd say "39v14"
 ~6
 Epgayd say "39v15"
 
 @camCommitted _camera
 ~1
-2 fademusic 0
+2 fadeMusic 0
 ~1
-titlecut["","black out",2]
+titleCut["","BLACK OUT",2]
 ~1
 boatAway=true
 ~1
-Esc addweapon "nvgoggles"
+Esc addWeapon "nvgoggles"
 
-titletext["","plain"]
+titleText["","PLAIN"]
 
 ~1
 
-0 fademusic 1
-0 fadesound 0
-playmusic "Track10"
+0 fadeMusic 1
+0 fadeSound 0
+playMusic "Track10"
 
 skiptime 8
 
 
-Lemontov setbehaviour "combat"
-Lemontov switchmove "crouch"
+Lemontov setBehaviour "COMBAT"
+Lemontov switchMove "crouch"
 Lemontov setunitpos "up"
 
-s3 setbehaviour "combat"
-s3 switchmove "crouch"
+s3 setBehaviour "COMBAT"
+s3 switchMove "crouch"
 s3 setunitpos "up"
 
-s4 setbehaviour "combat"
-s4 switchmove "crouch"
+s4 setBehaviour "COMBAT"
+s4 switchMove "crouch"
 s4 setunitpos "up"
 
 
-Kaplinsky setbehaviour "combat"
+Kaplinsky setBehaviour "COMBAT"
 Kaplinsky setunitpos "up"
-Kaplinsky setspeedmode "limited"
-Kaplinsky move getmarkerpos "kaplinsky"
+Kaplinsky setSpeedMode "limited"
+Kaplinsky move getMarkerPos "kaplinsky"
 
 s1 setunitpos "up"
 s2 setunitpos "up"
-s1 setbehaviour "combat"
-s2 setbehaviour "combat"
-s1 setspeedmode "limited"
-s2 setspeedmode "limited"
-s1 move getmarkerpos "s1"
-s2 move getmarkerpos "s2"
+s1 setBehaviour "COMBAT"
+s2 setBehaviour "COMBAT"
+s1 setSpeedMode "limited"
+s2 setSpeedMode "limited"
+s1 move getMarkerPos "s1"
+s2 move getMarkerPos "s2"
 
-titlecut["","black in",1]
+titleCut["","BLACK IN",1]
 
 ;=== 17:02:10
 _camera camSetTarget [-56585.12,-76394.95,-8798.20]
@@ -336,8 +336,8 @@ _camera camSetFOV 0.700
 _camera camCommit 3
 @camCommitted _camera
 
-titlecut["","black out",2]
-2 fademusic 0
+titleCut["","BLACK OUT",2]
+2 fadeMusic 0
 ~2
 end=true
 player cameraEffect ["terminate","back"]

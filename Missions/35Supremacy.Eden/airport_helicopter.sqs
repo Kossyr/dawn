@@ -1,9 +1,9 @@
-setacctime 1
+setAccTime 1
 
-"3" objstatus "done"
-aP addrating 1000
+"3" objStatus "DONE"
+aP addRating 1000
 
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 ~0.5
 
 cinema=true
@@ -13,35 +13,35 @@ _camera cameraeffect ["internal","back"]
 
 ? (aP == vehicle aP) : goto "cinema_helicopter" ;
 
-vehicle aP setpos getmarkerpos "CinemaHelicopterVehicle"
-vehicle aP setdir 0
+vehicle aP setPos getMarkerPos "CinemaHelicopterVehicle"
+vehicle aP setDir 0
 
 ~1
 
-vehicle aP setpos getmarkerpos "CinemaHelicopterVehicle"
-vehicle aP setdir 0
+vehicle aP setPos getMarkerPos "CinemaHelicopterVehicle"
+vehicle aP setDir 0
 
 aP action ["EJECT"]
-UnassignVehicle aP
+unassignVehicle aP
 
 #cinema_helicopter
 
 aP action ["WEAPONONBACK"]
 
-aP setpos getmarkerpos "Cinema"
-AblomovCinemaHelicopter setpos getmarkerpos "CinemaHelicopter";
+aP setPos getMarkerPos "Cinema"
+AblomovCinemaHelicopter setPos getMarkerPos "CinemaHelicopter";
 
 aa = aP saveStatus "35Ablomov"
 aa = AblomovCinemaHelicopter loadStatus "35Ablomov"
 
-AblomovCinemaHelicopter setmimic "normal"
+AblomovCinemaHelicopter setMimic "normal"
 ~0.5
 
-setacctime 1
+setAccTime 1
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
-AblomovCinemaHelicopter dowatch [4813.27,11833.41,1.56]
+AblomovCinemaHelicopter doWatch [4813.27,11833.41,1.56]
 
 ;=== 11:26:11
 _camera camSetTarget [-86820.74,51857.86,25.87]
@@ -54,7 +54,7 @@ _camera camSetTarget [-93685.42,-3860.88,-7108.01]
 _camera camSetPos [4817.22,11834.50,1.38]
 _camera camSetFOV 0.700
 _camera camCommit 4
-AblomovCinemaHelicopter switchmove "FXShow3"
+AblomovCinemaHelicopter switchMove "FXShow3"
 @camCommitted _camera
 ;=== 11:28:45
 _camera camSetTarget [24589.13,109857.84,-521.40]
@@ -62,10 +62,10 @@ _camera camSetPos [4813.21,11834.30,1.56]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-AblomovCinemaHelicopter switchmove "FXShow4"
+AblomovCinemaHelicopter switchMove "FXShow4"
 AblomovCinemaHelicopter say "35v24"
 ~3
-AblomovCinemaHelicopter dowatch [4811.92,11834.86,0.84]
+AblomovCinemaHelicopter doWatch [4811.92,11834.86,0.84]
 ;=== 11:30:02
 _camera camSetTarget [94982.74,52504.14,14688.82]
 _camera camSetPos [4811.07,11834.18,0.79]
@@ -73,9 +73,9 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~1
-AblomovCinemaHelicopter switchmove "FxToKneel"
+AblomovCinemaHelicopter switchMove "FxToKneel"
 ~2
-AblomovCinemaHelicopter switchmove "FxFromKneel"
+AblomovCinemaHelicopter switchMove "FxFromKneel"
 ~2
 ;=== 11:31:21
 _camera camSetTarget [-92626.00,-10644.75,-33.04]
@@ -83,10 +83,10 @@ _camera camSetPos [4814.58,11834.83,1.48]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-AblomovCinemaHelicopter dowatch [4812.22,11834.12,1.74]
+AblomovCinemaHelicopter doWatch [4812.22,11834.12,1.74]
 ~1
 AblomovCinemaHelicopter say "35v25"
-AblomovCinemaHelicopter setmimic "surprised"
+AblomovCinemaHelicopter setMimic "surprised"
 ~4.5
 ;=== 11:32:22
 _camera camSetTarget [77867.56,80101.33,-1597.88]
@@ -95,21 +95,21 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 AblomovCinemaHelicopter say "35v26"
-AblomovCinemaHelicopter setmimic "angry"
+AblomovCinemaHelicopter setMimic "angry"
 ~1
-AblomovCinemaHelicopter dowatch [4862.43,11869.49,1.75]
+AblomovCinemaHelicopter doWatch [4862.43,11869.49,1.75]
 ~3
-deletevehicle AblomovCinemaHelicopter
-aP setpos getmarkerpos "CinemaHelicopter"
-aP setdir 45
+deleteVehicle AblomovCinemaHelicopter
+aP setPos getMarkerPos "CinemaHelicopter"
+aP setDir 45
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
 cinema=false
 
-"4" objstatus "active"
-"Logistics" setmarkertype "Marker"
+"4" objStatus "ACTIVE"
+"Logistics" setMarkerType "Marker"
 
 helicopterCheck=true
 

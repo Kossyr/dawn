@@ -1,14 +1,14 @@
 
-playmusic "Track2"
+playMusic "Track2"
 
-car1 setfuel 1
-car2 setfuel 1
+car1 setFuel 1
+car2 setFuel 1
 
 ~4
 
-setacctime 1
+setAccTime 1
 
-titlecut ["","black in",0.5]
+titleCut ["","BLACK IN",0.5]
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -22,22 +22,22 @@ _camera camCommit 0
 
 ~5
 
-titlecut ["","black out",3]
+titleCut ["","BLACK OUT",3]
 
 ~3
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
-titlecut["","black in",2]
+titleCut["","BLACK IN",2]
 
-car1 setpos getmarkerpos "driver1_1"
-car2 setpos getmarkerpos "driver2_1"
-car3 setpos getmarkerpos "driver3_1"
+car1 setPos getMarkerPos "driver1_1"
+car2 setPos getMarkerPos "driver2_1"
+car3 setPos getMarkerPos "driver3_1"
 
-car1 setdir 10
-car2 setdir 350
-car3 setdir 350
+car1 setDir 10
+car2 setDir 350
+car3 setDir 350
 
 carsGo=true
 

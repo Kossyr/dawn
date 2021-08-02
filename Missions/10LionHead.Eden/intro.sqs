@@ -1,24 +1,24 @@
-titlecut ["","black in",10000]
+titleCut ["","BLACK IN",10000]
 
-c1 assignasdriver car
-"_x assignascargo car" foreach units poincareGroup
+c1 assignAsDriver car
+"_x assignAsCargo car" forEach units poincareGroup
 
 aa = Rashiv loadStatus "09Rashiv"
 
-Rashiv dowatch [4206.99,4898.10,1.65]
-Rashiv setmimic "Normal"
-Calvet dowatch [4207.98,4896.66,1.67]
+Rashiv doWatch [4206.99,4898.10,1.65]
+Rashiv setMimic "Normal"
+Calvet doWatch [4207.98,4896.66,1.67]
 
-car setfuel 0
+car setFuel 0
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-playmusic "RTrack9"
+playMusic "RTrack9"
 
 ~1.5
 
-titlecut["","black in",2]
+titleCut["","BLACK IN",2]
 
 ;=== 16:59:17
 _camera camSetTarget [-3539.91,104597.51,61.19]
@@ -39,8 +39,8 @@ _camera camSetPos [4210.88,4895.90,1.61]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-0 fademusic 0.2
-Calvet setmimic "Smile"
+0 fadeMusic 0.2
+Calvet setMimic "Smile"
 Calvet say "10v01"
 ;=== 17:00:44
 _camera camSetTarget [-82261.36,55124.14,61.31]
@@ -61,20 +61,20 @@ _camera camSetPos [4207.37,4897.62,1.58]
 _camera camSetFOV 0.700
 _camera camCommit 7
 @camCommitted _camera
-Calvet setmimic "Normal"
+Calvet setMimic "Normal"
 Calvet say "10v03"
 ~3
-1 fademusic 1
-titlecut ["","black in",0.5]
-Calvet dowatch objnull
-Rashiv dowatch objnull
-Calvet setpos getmarkerpos "calvet_pos"
-Rashiv setpos getmarkerpos "rashiv_pos"
-Calvet assignascargo car
-Rashiv assignascargo car
+1 fadeMusic 1
+titleCut ["","BLACK IN",0.5]
+Calvet doWatch objNull
+Rashiv doWatch objNull
+Calvet setPos getMarkerPos "calvet_pos"
+Rashiv setPos getMarkerPos "rashiv_pos"
+Calvet assignAsCargo car
+Rashiv assignAsCargo car
 [Calvet, Rashiv] orderGetIn true
-Calvet setdir 225
-Rashiv setdir 225
+Calvet setDir 225
+Rashiv setDir 225
 ;=== 17:04:04
 _camera camSetTarget [20763.73,-93703.46,61.18]
 _camera camSetPos [4194.83,4914.10,1.11]
@@ -87,7 +87,7 @@ _camera camSetPos [4194.66,4912.97,1.17]
 _camera camSetFOV 0.700
 _camera camCommit 8
 @(Rashiv in car and Calvet in car)
-car setfuel 1
+car setFuel 1
 
 ;=== 17:06:20
 _camera camSetTarget [-46552.24,-81247.59,61.40]
@@ -101,8 +101,8 @@ _camera camSetPos [4199.92,4916.31,8.83]
 _camera camSetFOV 0.700
 _camera camCommit 10
 ~7
-titlecut["","black out",3]
-3 fademusic 0
+titleCut["","BLACK OUT",3]
+3 fadeMusic 0
 @camCommitted _camera
 end=true
 

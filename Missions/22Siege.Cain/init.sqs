@@ -2,15 +2,15 @@ titleCut ["","BLACK IN", 3]
 
 baza = [East,"HQ"]
 
-"_x stop true" foreach units leonid
+"_x stop true" forEach units leonid
 
-heli setfuel 0
+heli setFuel 0
 
-"Base" setmarkertype "Empty"
-"Breakthrough1" setmarkertype "Empty"
-"Breakthrough2" setmarkertype "Empty"
+"Base" setMarkerType "Empty"
+"Breakthrough1" setMarkerType "Empty"
+"Breakthrough2" setMarkerType "Empty"
 
-"3" objstatus "hidden"
+"3" objStatus "HIDDEN"
 
 
 getReady=false
@@ -25,19 +25,19 @@ fly=false
 heli1 flyinheight 140
 heli2 flyinheight 140
 
-heli setgroupid ["NOVEMBER", "GROUPCOLOR0"]
+heli setGroupId ["NOVEMBER", "GROUPCOLOR0"]
 
 ~1
 
 aP action ["WEAPONINHAND"]
 
-aw = "aware"
+aw = "AWARE"
 
-"_x setbehaviour aw" foreach units leonid
+"_x setBehaviour aw" forEach units leonid
 
 ~1
 
-"_x stop false" foreach units leonid
+"_x stop false" forEach units leonid
 
 aP say "22v13"
 

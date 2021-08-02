@@ -1,20 +1,20 @@
-setacctime 1
+setAccTime 1
 
 canHill=false
 
 ? retreat : goto "ex" ;
 
-baza sideradio "06r07"
-baza sideradio "06r08"
+baza sideRadio "06r07"
+baza sideRadio "06r08"
 
-"4" objstatus "failed"
-"5" objstatus "Active"
+"4" objStatus "FAILED"
+"5" objStatus "Active"
 
 ~4
 retreat=true
-"Provins" setmarkertype "End"
+"Provins" setMarkerType "End"
 
-? not hillTaken : "3" objstatus "failed" ;
+? not hillTaken : "3" objStatus "FAILED" ;
 
 #ex
 

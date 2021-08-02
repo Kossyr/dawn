@@ -1,17 +1,17 @@
-titlecut["","black in",1.5]
+titleCut["","BLACK IN",1.5]
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-playmusic ["RTrack9",2]
+playMusic ["RTrack9",2]
 
 
-MedicBody switchmove "FxToKneel"
-MedicTalk switchmove "effectstandtalk"
-MedicHands switchmove "FxToHand"
-MedicM dowatch [9709.56,9469.27,1.68]
-Zubarev dowatch [9719.24,9465.84,1.63]
-Zubarev setmimic "normal"
+MedicBody switchMove "FxToKneel"
+MedicTalk switchMove "effectstandtalk"
+MedicHands switchMove "FxToHand"
+MedicM doWatch [9709.56,9469.27,1.68]
+Zubarev doWatch [9719.24,9465.84,1.63]
+Zubarev setMimic "normal"
 
 ;=== 19:20:49
 _camera camSetTarget [80927.23,79556.25,-3583.02]
@@ -25,7 +25,7 @@ _camera camSetPos [9705.90,9459.10,1.88]
 _camera camSetFOV 0.700
 _camera camCommit 6
 ~4
-MedicS dowatch [9710.17,9470.61,1.69]
+MedicS doWatch [9710.17,9470.61,1.69]
 @camCommitted _camera
 ~1.5
 ;=== 19:22:33
@@ -60,23 +60,23 @@ _camera camSetPos [9718.87,9466.26,1.43]
 _camera camSetFOV 0.700
 _camera camCommit 3
 @camCommitted _camera
-1 fademusic 0.3
+1 fadeMusic 0.3
 ~1
 kukushkin stop true;
-kukushkin setpos getmarkerpos "kukushkin";
-kukushkin setdir 325;
-kukushkin dowatch [9718.46,9466.86,1.63]
+kukushkin setPos getMarkerPos "kukushkin";
+kukushkin setDir 325;
+kukushkin doWatch [9718.46,9466.86,1.63]
 ;=== 19:29:48
 _camera camSetTarget [69631.14,-70598.80,54.42]
 _camera camSetPos [9718.51,9466.66,1.40]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-kukushkin playmove "effectstandsalute"
+kukushkin playMove "effectstandsalute"
 kukushkin say "29v01"
-kukushkin setmimic "normal"
+kukushkin setMimic "normal"
 ~2
-kukushkin playmove "effectstandsaluteend"
+kukushkin playMove "effectstandsaluteend"
 ~3.5
 ;=== 19:32:20
 _camera camSetTarget [-53953.60,86575.39,54.20]
@@ -85,8 +85,8 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 zubarev say "29v02"
-kukushkin setpos getmarkerpos "kukushkin"
-kukushkin setdir 325
+kukushkin setPos getMarkerPos "kukushkin"
+kukushkin setDir 325
 kukushkin stop false
 ~9.5
 ;=== 19:33:35
@@ -95,7 +95,7 @@ _camera camSetPos [9710.54,9463.34,0.15]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-kukushkin dowatch [9711.54,9463.92,0.32]
+kukushkin doWatch [9711.54,9463.92,0.32]
 kukushkin say "29v03"
 ~2.5
 ;=== 19:35:26
@@ -104,7 +104,7 @@ _camera camSetPos [9719.26,9464.41,1.31]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-kukushkin dowatch [9718.46,9466.86,1.63]
+kukushkin doWatch [9718.46,9466.86,1.63]
 zubarev say "29v04"
 ;=== 19:35:55
 _camera camSetTarget [22074.09,108646.01,-3173.37]
@@ -119,7 +119,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 kukushkin say "29v05"
-kukushkin setmimic "surprised"
+kukushkin setMimic "surprised"
 ~2.5
 ;=== 19:43:16
 _camera camSetTarget [-70235.63,69498.73,1885.25]
@@ -142,7 +142,7 @@ _camera camSetPos [9718.84,9466.27,1.52]
 _camera camSetFOV 0.700
 _camera camCommit 7.5
 ~3
-kukushkin setmimic "Normal"
+kukushkin setMimic "Normal"
 @camCommitted _camera
 ;=== 19:46:53
 _camera camSetTarget [-9124.22,107536.88,-5115.96]
@@ -172,12 +172,12 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 kukushkin say "29v10"
-kukushkin setmimic "smile"
-kukushkin playmove "effectstandsalute"
+kukushkin setMimic "smile"
+kukushkin playMove "effectstandsalute"
 ~1
-kukushkin playmove "effectstandsaluteend"
-titlecut["","black out",3]
-4 fademusic 0
+kukushkin playMove "effectstandsaluteend"
+titleCut["","BLACK OUT",3]
+4 fadeMusic 0
 ~4
 end=true
 player cameraEffect ["terminate","back"]

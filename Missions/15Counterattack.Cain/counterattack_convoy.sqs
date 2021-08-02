@@ -1,35 +1,35 @@
 
-setacctime 1
+setAccTime 1
 
-leader convoy sideradio "15r16"
+leader convoy sideRadio "15r16"
 
 
-playmusic "Track1"
+playMusic "Track1"
 
 ~3
 
 ? {alive _x} count units group player <= 4 : goto "skipDeleting" ;
 
-? {alive _x} count units group player <= 5 : deletevehicle R6; goto "skipDeleting" ;
+? {alive _x} count units group player <= 5 : deleteVehicle R6; goto "skipDeleting" ;
 
-? {alive _x} count units group player <= 6 ; deletevehicle R6; deletevehicle R5; goto "skipDeleting" ;
+? {alive _x} count units group player <= 6 ; deleteVehicle R6; deleteVehicle R5; goto "skipDeleting" ;
 
-? {alive _x} count units group player <= 7 ; deletevehicle R6; deletevehicle R5; deletevehicle R4; goto "skipDeleting" ;
+? {alive _x} count units group player <= 7 ; deleteVehicle R6; deleteVehicle R5; deleteVehicle R4; goto "skipDeleting" ;
 
-deletevehicle R3
-deletevehicle R4
-deletevehicle R5
-deletevehicle R6
+deleteVehicle R3
+deleteVehicle R4
+deleteVehicle R5
+deleteVehicle R6
 
 #skipDeleting
 
-"_x moveincargo auto" foreach units reinforcements
+"_x moveInCargo auto" forEach units reinforcements
 
-"unassignvehicle _x" foreach units group player
+"unassignVehicle _x" forEach units group player
 
-units group player allowgetin true
+units group player allowGetIn true
 
-"_x assignascargo auto" foreach units group player
+"_x assignAsCargo auto" forEach units group player
 
 
 getInConvoy=true

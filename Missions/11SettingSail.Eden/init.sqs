@@ -1,18 +1,18 @@
-titlecut ["","black in",3]
+titleCut ["","BLACK IN",3]
 
 Astier reveal amCar
 aP reveal amCar
 
-Astier assignasdriver amCar
-aP assignascargo amCar
+Astier assignAsDriver amCar
+aP assignAsCargo amCar
 
 Astier stop true
 
-"_x stop true" foreach units beachGuard
-"_x stop true" foreach units machineGunners
-"_x stop true" foreach units fireCampers
+"_x stop true" forEach units beachGuard
+"_x stop true" forEach units machineGunners
+"_x stop true" forEach units fireCampers
 
-enableradio false
+enableRadio false
 
 gateGo=false
 splitGo=false
@@ -33,47 +33,47 @@ fuelDone=false
 explosivesDone=false
 escaping=false
 
-"3" objstatus "hidden"
-"4" objstatus "hidden"
-"5" objstatus "hidden"
-"6" objstatus "hidden"
-"7" objstatus "hidden"
-"9" objstatus "hidden"
-"10" objstatus "hidden"
-"11" objstatus "hidden"
+"3" objStatus "HIDDEN"
+"4" objStatus "HIDDEN"
+"5" objStatus "HIDDEN"
+"6" objStatus "HIDDEN"
+"7" objStatus "HIDDEN"
+"9" objStatus "HIDDEN"
+"10" objStatus "HIDDEN"
+"11" objStatus "HIDDEN"
 
-"Fuel" setmarkertype "Empty"
-"Calverra" setmarkertype "Empty"
-"Explosives" setmarkertype "Empty"
-"Cemetery" setmarkertype "Empty"
-"Pub" setmarkertype "Empty"
+"Fuel" setMarkerType "Empty"
+"Calverra" setMarkerType "Empty"
+"Explosives" setMarkerType "Empty"
+"Cemetery" setMarkerType "Empty"
+"Pub" setMarkerType "Empty"
 
-aP setcaptive true
-Astier setcaptive true
+aP setCaptive true
+Astier setCaptive true
 
-boat1 setfuel 0
-boat2 setfuel 0
-boat3 setfuel 0
-boat4 setfuel 0
+boat1 setFuel 0
+boat2 setFuel 0
+boat3 setFuel 0
+boat4 setFuel 0
 
-drunk1 setpos [9539.23,1551.85,0.52]
-drunk2 setpos [9540.01,1552.78,0.52]
-barman setpos [9536.85,1553.12,0.47]
+drunk1 setPos [9539.23,1551.85,0.52]
+drunk2 setPos [9540.01,1552.78,0.52]
+barman setPos [9536.85,1553.12,0.47]
 
-Calverra dowatch [9523.55,1577.14,1.14]
+Calverra doWatch [9523.55,1577.14,1.14]
 
 rebelFireCheck = aP AddEventHandler ["fired", {_this exec "rebel_fire_check.sqs"}]
 
-playmusic "Track1"
+playMusic "Track1"
 
 ~0.5
 
-resGuardian switchmove "EffectStandTalk"
-captive1 switchmove "FXStandSur"
-captive2 switchmove "FXStandSur"
-captive3 switchmove "FXStandSur"
-captive4 switchmove "FXStandSur"
-captive5 switchmove "FXStandSur"
+resGuardian switchMove "EffectStandTalk"
+captive1 switchMove "FXStandSur"
+captive2 switchMove "FXStandSur"
+captive3 switchMove "FXStandSur"
+captive4 switchMove "FXStandSur"
+captive5 switchMove "FXStandSur"
 
 ~1.5
 

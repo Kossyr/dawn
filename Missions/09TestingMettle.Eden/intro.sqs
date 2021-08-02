@@ -1,14 +1,14 @@
-titlecut ["","black in",3]
+titleCut ["","BLACK IN",3]
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-playmusic "Track5"
+playMusic "Track5"
 
 aa = Rashiv loadStatus "08Rashiv"
 
-Rashiv dowatch [8928.73,3766.04,1.62]
-Calvet dowatch [8927.76,3767.18,1.60]
+Rashiv doWatch [8928.73,3766.04,1.62]
+Calvet doWatch [8927.76,3767.18,1.60]
 
 
 ;=== 17:56:07
@@ -36,9 +36,9 @@ _camera camSetTarget [102691.85,-30949.79,1947.89]
 _camera camSetPos [8927.44,3766.54,1.40]
 _camera camSetFOV 0.700
 _camera camCommit 5
-2 fademusic 0.2
+2 fadeMusic 0.2
 ~2.5
-Calvet setmimic "Smile"
+Calvet setMimic "Smile"
 Calvet say "09v01"
 @camCommitted _camera
 ;=== 18:00:04
@@ -52,10 +52,10 @@ _camera camSetTarget [-81012.91,47108.50,-5451.18]
 _camera camSetPos [8928.39,3766.78,1.58]
 _camera camSetFOV 0.700
 _camera camCommit 6.8
-Rashiv setmimic "Smile"
+Rashiv setMimic "Smile"
 Rashiv say "09v02"
 ~3
-Rashiv setmimic "Normal"
+Rashiv setMimic "Normal"
 @camCommitted _camera
 
 ;=== 18:11:49
@@ -64,7 +64,7 @@ _camera camSetPos [8926.56,3767.35,1.46]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Calvet setmimic "Sad"
+Calvet setMimic "Sad"
 Calvet say "09v03"
 ;=== 18:12:09
 _camera camSetTarget [102761.18,-30436.08,-4806.69]
@@ -80,23 +80,23 @@ _camera camCommit 0
 @camCommitted _camera
 Rashiv say "09v04"
 ~2
-Poincare setpos getmarkerpos "poincare_pos"
-Poincare setdir 300
+Poincare setPos getMarkerPos "poincare_pos"
+Poincare setDir 300
 ~0.5
 ;=== 18:17:29
 _camera camSetTarget [107480.64,-12299.20,-5174.69]
 _camera camSetPos [8926.79,3766.94,1.43]
 _camera camSetFOV 0.700
 _camera camCommit 0
-Calvet setmimic "normal"
+Calvet setMimic "normal"
 Calvet say "09v05"
 @camCommitted _camera
 ~6
-Poincare dowatch [8927.78,3767.13,1.68]
-Rashiv dowatch [8929.45,3767.38,1.71]
+Poincare doWatch [8927.78,3767.13,1.68]
+Rashiv doWatch [8929.45,3767.38,1.71]
 Poincare say "09v06"
 ~1
-Calvet dowatch [8929.45,3767.38,1.71]
+Calvet doWatch [8929.45,3767.38,1.71]
 ;=== 11:52:32
 _camera camSetTarget [-88189.25,27082.08,-4678.96]
 _camera camSetPos [8931.29,3766.24,1.22]
@@ -105,8 +105,8 @@ _camera camCommit 0
 @camCommitted _camera
 ~1.5
 Poincare stop true
-Poincare setpos getmarkerpos "poincare_pos2"
-Poincare setdir 255
+Poincare setPos getMarkerPos "poincare_pos2"
+Poincare setDir 255
 ;=== 11:38:04
 _camera camSetTarget [103565.51,35341.64,7068.31]
 _camera camSetPos [8929.07,3767.24,1.57]
@@ -121,7 +121,7 @@ _camera camSetPos [8930.62,3766.43,1.41]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Rashiv setmimic "Angry"
+Rashiv setMimic "Angry"
 Rashiv say "09v07"
 ~2.5
 ;=== 11:51:02
@@ -145,7 +145,7 @@ _camera camSetPos [8928.73,3767.06,1.40]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Rashiv setmimic "Angry"
+Rashiv setMimic "Angry"
 Rashiv say "09v10"
 ~2.5
 ;=== 11:52:02
@@ -155,8 +155,8 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Poincare say "09v11"
-Rashiv setmimic "Sad"
-Calvet setmimic "Sad"
+Rashiv setMimic "Sad"
+Calvet setMimic "Sad"
 Rashiv reveal Poincare
 Calvet reveal Poincare
 ;=== 11:52:12
@@ -181,12 +181,12 @@ _camera camCommit 8
 Rashiv reveal Poincare
 Calvet reveal Poincare
 ~0.5
-Rashiv dowatch Poincare
-Calvet dowatch Poincare
-3 fademusic 1
+Rashiv doWatch Poincare
+Calvet doWatch Poincare
+3 fadeMusic 1
 ~5
-titlecut["","black out",3]
-3 fademusic 0
+titleCut["","BLACK OUT",3]
+3 fadeMusic 0
 @camCommitted _camera
 ~1
 end=true

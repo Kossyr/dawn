@@ -1,4 +1,4 @@
-showcinemaborder false
+showCinemaBorder false
 
 ~1
 
@@ -10,27 +10,27 @@ audience3 = [SOL_3, SOL_7, SOL_11, SOL_15, SOL_19, SOL_23, SOL_27, SOL_31, SOL_3
 audience4 = [SOL_4, SOL_8, SOL_12, SOL_16, SOL_20, SOL_24, SOL_28, SOL_32, SOL_36, SOL_40, SOL_44, SOL_48, SOL_52, SOL_53]
 
 
-"_x dowatch [9594.42,1575.02,1.69]" foreach audience
+"_x doWatch [9594.42,1575.02,1.69]" forEach audience
 
-Lemontov setmimic "angry"
-Volkov setmimic "angry"
-Zubarev setmimic "normal"
-Kukushkin setmimic "normal"
+Lemontov setMimic "angry"
+Volkov setMimic "angry"
+Zubarev setMimic "normal"
+Kukushkin setMimic "normal"
 
 
 Volkov stop true;
-Volkov setpos getmarkerpos "VolkovGroup";
-Volkov setdir 305;
-Volkov dowatch [9572.72,1562.58,1.65];
+Volkov setPos getMarkerPos "VolkovGroup";
+Volkov setDir 305;
+Volkov doWatch [9572.72,1562.58,1.65];
 Volkov stop false;
-Lemontov switchmove "";
-Zubarev switchmove "";
-Kukushkin switchmove "";
-Lemontov dowatch [9574.40,1561.04,1.69];
-Kukushkin dowatch [9574.40,1561.04,1.69];
-Zubarev dowatch [9574.40,1561.04,1.69];
-Kukushkin setmimic "normal";
-Zubarev setmimic "normal";
+Lemontov switchMove "";
+Zubarev switchMove "";
+Kukushkin switchMove "";
+Lemontov doWatch [9574.40,1561.04,1.69];
+Kukushkin doWatch [9574.40,1561.04,1.69];
+Zubarev doWatch [9574.40,1561.04,1.69];
+Kukushkin setMimic "normal";
+Zubarev setMimic "normal";
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]

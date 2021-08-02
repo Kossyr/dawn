@@ -1,25 +1,25 @@
-titlecut ["","black in",3]
+titleCut ["","BLACK IN",3]
 
-rusak1 playmove "effectstandtalk"
-rusak2 switchmove "FXTOHAND"
-Dostoevsky playmove "effectstandtalk"
-rusak1 setmimic "hurt"
-rusak2 setmimic "normal"
+rusak1 playMove "effectstandtalk"
+rusak2 switchMove "FXTOHAND"
+Dostoevsky playMove "effectstandtalk"
+rusak1 setMimic "hurt"
+rusak2 setMimic "normal"
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-playmusic "RTrack2"
+playMusic "RTrack2"
 
-rusak2 dowatch [5028.59,3960.29,1.49]
-rusak1 dowatch [5027.60,3958.63,1.64]
-Dostoevsky dowatch [5017.98,3967.95,1.72]
-aP dowatch [5017.62,3969.83,1.72]
+rusak2 doWatch [5028.59,3960.29,1.49]
+rusak1 doWatch [5027.60,3958.63,1.64]
+Dostoevsky doWatch [5017.98,3967.95,1.72]
+aP doWatch [5017.62,3969.83,1.72]
 
 
-setacctime 1
+setAccTime 1
 
-Dostoevsky setmimic "smile"
-aP setmimic "normal"
+Dostoevsky setMimic "smile"
+aP setMimic "normal"
 
 ;=== 15:28:09
 _camera camSetTarget [39602.23,91171.40,-34528.07]
@@ -34,7 +34,7 @@ _camera camSetPos [5028.37,3959.20,1.57]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-0.8 fademusic 0.1
+0.8 fadeMusic 0.1
 rusak1 say "04v01"
 ;=== 15:29:52
 _camera camSetTarget [-9066.21,102959.73,15.82]
@@ -43,7 +43,7 @@ _camera camSetFOV 0.700
 _camera camCommit 6
 @camCommitted _camera
 ~3
-rusak1 playmove "effectstand"
+rusak1 playMove "effectstand"
 ;=== 15:30:54
 _camera camSetTarget [22717.34,-94460.87,15.59]
 _camera camSetPos [5027.92,3961.60,1.57]
@@ -79,7 +79,7 @@ _camera camCommit 4
 Dostoevsky say "04v04"
 @camCommitted _camera
 ~10
-Dostoevsky setmimic "normal"
+Dostoevsky setMimic "normal"
 Dostoevsky say "04v05"
 ~12
 ;=== 15:36:18
@@ -114,20 +114,20 @@ _camera camSetPos [5017.74,3968.85,1.69]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Dostoevsky playmove "effectstand"
+Dostoevsky playMove "effectstand"
 Dostoevsky say "04v07"
 ~1
-titlecut ["","black out",2]
+titleCut ["","BLACK OUT",2]
 ~3
-titlecut ["","black in",3]
+titleCut ["","BLACK IN",3]
 
-Lemontov setmimic "angry"
-Kaplinsky setmimic "normal"
-aP2 setmimic "normal"
+Lemontov setMimic "angry"
+Kaplinsky setMimic "normal"
+aP2 setMimic "normal"
 
-aP2 dowatch [2132.31,4728.69,1.61]
-Lemontov dowatch [2119.03,4719.99,1.62]
-Kaplinsky dowatch [2120.01,4719.39,1.67]
+aP2 doWatch [2132.31,4728.69,1.61]
+Lemontov doWatch [2119.03,4719.99,1.62]
+Kaplinsky doWatch [2120.01,4719.39,1.67]
 
 jed=true
 
@@ -148,7 +148,7 @@ _camera camCommit 4
 ~2
 [] exec "intro_dip.sqs"
 @camCommitted _camera
-aP2 dowatch [2116.17,4721.23,1.00]
+aP2 doWatch [2116.17,4721.23,1.00]
 ~0.5
 
 ;=== 11:46:52
@@ -170,10 +170,10 @@ _camera camSetPos [2120.13,4718.70,1.54]
 _camera camSetFOV 0.700
 _camera camCommit 6
 @camCommitted _camera
-Kaplinsky playmove "effectstandsalute"
+Kaplinsky playMove "effectstandsalute"
 ~1.5
-Kaplinsky dowatch objNull
-Kaplinsky move getmarkerpos "Kaplinsky"
+Kaplinsky doWatch objNull
+Kaplinsky move getMarkerPos "Kaplinsky"
 ~0.5
 ;=== 11:48:09
 _camera camSetTarget [-71573.93,-62665.58,-5267.01]
@@ -187,8 +187,8 @@ _camera camSetPos [2120.48,4720.07,1.60]
 _camera camSetFOV 0.700
 _camera camCommit 4
 ~3
-aP2 dowatch [2120.01,4719.39,1.67]
-Lemontov dowatch [2127.40,4726.23,1.65]
+aP2 doWatch [2120.01,4719.39,1.67]
+Lemontov doWatch [2127.40,4726.23,1.65]
 @camCommitted _camera
 ~1.5
 ;=== 11:49:11
@@ -197,17 +197,17 @@ _camera camSetPos [2128.85,4726.80,1.50]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-aP2 move getmarkerpos "LemontovPlayer"
-aP2 setspeedmode "normal"
+aP2 move getMarkerPos "LemontovPlayer"
+aP2 setSpeedMode "normal"
 ;=== 11:49:17
 _camera camSetTarget [-80721.24,-50869.73,-6663.87]
 _camera camSetPos [2127.92,4725.08,1.79]
 _camera camSetFOV 0.700
 _camera camCommit 4
 @camCommitted _camera
-Lemontov dowatch [2121.27,4721.01,1.65]
+Lemontov doWatch [2121.27,4721.01,1.65]
 aP2 stop true
-aP2 setpos getmarkerpos "LemontovPlayer"
+aP2 setPos getMarkerPos "LemontovPlayer"
 aP2 stop false
 ;=== 11:53:13
 _camera camSetTarget [-68122.47,-66346.91,3959.37]
@@ -239,9 +239,9 @@ _camera camCommit 0
 @camCommitted _camera
 ~3
 Lemontov say "04v10"
-5 fademusic 0
+5 fadeMusic 0
 ~4
-titlecut ["","black out",1]
+titleCut ["","BLACK OUT",1]
 ~1
 titleText["","PLAIN DOWN"]
 ~0.1

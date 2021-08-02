@@ -1,40 +1,40 @@
-setacctime 1
+setAccTime 1
 
-titlecut ["", "black out", 1]
+titleCut ["", "BLACK OUT", 1]
 
-"1" objstatus "done"
-aP addrating 1000
+"1" objStatus "DONE"
+aP addRating 1000
 
 ~1
 
 yashin stop true
-yashin setpos getmarkerpos "yashinCinema"
-yashin setdir 320
+yashin setPos getMarkerPos "yashinCinema"
+yashin setDir 320
 
 aP stop true
 aP action ["WEAPONONBACK"]
-aP setdir 300
-aP setpos getmarkerpos "CinemaEmpty"
+aP setDir 300
+aP setPos getMarkerPos "CinemaEmpty"
 
-RashivCinema setdir 300;
-RashivCinema setpos getmarkerpos "rashivCinema";
+RashivCinema setDir 300;
+RashivCinema setPos getMarkerPos "rashivCinema";
 
-setacctime 1
+setAccTime 1
 
 ~1
 
-yashin setpos getmarkerpos "yashinCinema";
-yashin setdir 320;
+yashin setPos getMarkerPos "yashinCinema";
+yashin setDir 320;
 
-RashivCinema dowatch [4259.81,2935.72,1.62]
-yashin dowatch [4259.81,2935.72,1.62]
-relief dowatch [4262.02,2933.31,1.62]
+RashivCinema doWatch [4259.81,2935.72,1.62]
+yashin doWatch [4259.81,2935.72,1.62]
+relief doWatch [4262.02,2933.31,1.62]
 
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-titlecut["","black in",1]
+titleCut["","BLACK IN",1]
 
 relief say "12v30"
 
@@ -77,10 +77,10 @@ _camera camCommit 0
 @camCommitted _camera
 
 
-RashivCinema setmimic "Cynical"
+RashivCinema setMimic "Cynical"
 RashivCinema say "12v33"
 
-relief dowatch [4262.72,2934.75,1.62]
+relief doWatch [4262.72,2934.75,1.62]
 
 
 ~3.5
@@ -116,21 +116,21 @@ yashin say "12v37"
 
 ~4.5
 
-RashivCinema setpos getmarkerpos "GetOut"
-aP setpos getmarkerpos "RashivCinema"
+RashivCinema setPos getMarkerPos "GetOut"
+aP setPos getMarkerPos "RashivCinema"
 
 yashin stop false
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
-yashin dowatch objnull
-relief dowatch objnull
+yashin doWatch objNull
+relief doWatch objNull
 
-relief assignascargo uaz
-yashin assignasdriver uaz
+relief assignAsCargo uaz
+yashin assignAsDriver uaz
 
-[aP] join grpnull
+[aP] join grpNull
 
 relief_done=true
 
@@ -142,7 +142,7 @@ relief say "12v38"
 
 ~3.5
 
-aP addweapon "nvgoggles"
+aP addWeapon "nvgoggles"
 
 Hint localize "STRM_TEXT_NV"
 

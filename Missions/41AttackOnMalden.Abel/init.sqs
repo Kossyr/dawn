@@ -10,7 +10,7 @@ afterCrashSite=false
 ChapoiWestCheck=false
 ChapoiEastPresent=false
 
-enableradio false
+enableRadio false
 
 [[0,0,0.5],0.5,0,su25] exec "fireEffect.sqs"
 [[0,0,0],0.4,0,CrashFire1] exec "fireEffect.sqs"
@@ -35,19 +35,19 @@ _i = 12
 
 #moveinLoop
 
-_playerGroup select _i moveincargo LeonidChopper
+_playerGroup select _i moveInCargo LeonidChopper
 
 _i = _i - 1
 
 ? _i >= 0 : goto "moveinLoop"
 
-"_x moveincargo LeonidRedChopper" foreach units group LeonidRedGroup
-"_x moveincargo LeonidGreenChopper" foreach units group LeonidGreenGroup
-"_x moveincargo LeonidBlackChopper" foreach units group LeonidBlackGroup
-"_x moveincargo LeonidChopper2" foreach units group LeonidGroup2
-"_x moveincargo LeonidRedChoppe2r" foreach units group LeonidRedGroup2
-"_x moveincargo LeonidGreenChopper2" foreach units group LeonidGreenGroup2
-"_x moveincargo LeonidBlackChopper2" foreach units group LeonidBlackGroup2
+"_x moveInCargo LeonidRedChopper" forEach units group LeonidRedGroup
+"_x moveInCargo LeonidGreenChopper" forEach units group LeonidGreenGroup
+"_x moveInCargo LeonidBlackChopper" forEach units group LeonidBlackGroup
+"_x moveInCargo LeonidChopper2" forEach units group LeonidGroup2
+"_x moveInCargo LeonidRedChoppe2r" forEach units group LeonidRedGroup2
+"_x moveInCargo LeonidGreenChopper2" forEach units group LeonidGreenGroup2
+"_x moveInCargo LeonidBlackChopper2" forEach units group LeonidBlackGroup2
 
 _height = 200
 LeonidChopper flyinheight _height
@@ -59,10 +59,10 @@ LeonidRedChopper2 flyinheight _height
 LeonidBlackChopper2 flyinheight _height
 LeonidGreenChopper2 flyinheight _height
 
-LeonidBlackChopper setspeedmode "limited"
-LeonidBlackChopper2 setspeedmode "limited"
-LeonidGreenChopper setspeedmode "limited"
-LeonidGreenChopper2 setspeedmode "limited"
+LeonidBlackChopper setSpeedMode "limited"
+LeonidBlackChopper2 setSpeedMode "limited"
+LeonidGreenChopper setSpeedMode "limited"
+LeonidGreenChopper2 setSpeedMode "limited"
 
 [] exec "aircraft_briefing.sqs"
 [] exec "troops_check.sqs"

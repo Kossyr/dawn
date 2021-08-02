@@ -42,7 +42,7 @@ class Mission
 					player="PLAYER COMMANDER";
 					skill=0.850671;
 					text="aP";
-					init="this setidentity ""Rashiv""";
+					init="this setIdentity ""Rashiv""";
 				};
 				class Item1
 				{
@@ -56,7 +56,7 @@ class Mission
 					rank="MAJOR";
 					skill=1.000000;
 					text="Lemontov";
-					init="group this allowfleeing 0; group this setgroupid [""DELTA"",""GROUPCOLOR0""]; this setidentity ""Lemontov""; removeallweapons this; this addmagazine ""SVDDRAGUNOV""; this addmagazine ""SVDDRAGUNOV"";  this addmagazine ""SVDDRAGUNOV""; this addmagazine ""SVDDRAGUNOV"";  this addweapon ""SVDDRAGUNOV""; this addweapon ""nvgoggles""; this addmagazine ""mine""; this addmagazine ""mine""; this addmagazine ""mine""";
+					init="group this allowFleeing 0; group this setGroupId [""DELTA"",""GROUPCOLOR0""]; this setIdentity ""Lemontov""; removeAllWeapons this; this addMagazine ""SVDDRAGUNOV""; this addMagazine ""SVDDRAGUNOV"";  this addMagazine ""SVDDRAGUNOV""; this addMagazine ""SVDDRAGUNOV"";  this addWeapon ""SVDDRAGUNOV""; this addWeapon ""nvgoggles""; this addMagazine ""mine""; this addMagazine ""mine""; this addMagazine ""mine""";
 				};
 				class Item2
 				{
@@ -69,7 +69,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=1.000000;
 					text="Kaplinsky";
-					init="this setidentity ""Kaplinsky""; this removemagazine ""pipebomb""; this removemagazine ""pipebomb""; this removemagazine ""pipebomb""";
+					init="this setIdentity ""Kaplinsky""; this removeMagazine ""pipebomb""; this removeMagazine ""pipebomb""; this removeMagazine ""pipebomb""";
 				};
 			};
 			class Waypoints
@@ -183,7 +183,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.600000;
 					text="T1";
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -317,7 +317,7 @@ class Mission
 					side="EAST";
 					vehicle="SoldierEB";
 					skill=1.000000;
-					init="this moveincargo transportUral";
+					init="this moveInCargo transportUral";
 				};
 				class Item3
 				{
@@ -327,7 +327,7 @@ class Mission
 					side="EAST";
 					vehicle="SoldierEB";
 					skill=1.000000;
-					init="this moveincargo transportUral";
+					init="this moveInCargo transportUral";
 				};
 			};
 			class Waypoints
@@ -390,7 +390,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
-					init="""_x moveincargo truck"" foreach units group this; group this allowfleeing 0; amInfantry = group this";
+					init="""_x moveInCargo truck"" forEach units group this; group this allowFleeing 0; amInfantry = group this";
 				};
 				class Item1
 				{
@@ -675,7 +675,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=1.000000;
 					text="Shaposhnikov";
-					init="this setidentity ""Shaposhnikov""";
+					init="this setIdentity ""Shaposhnikov""";
 				};
 			};
 			class Waypoints
@@ -739,7 +739,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1.000000;
 					text="Re1";
-					init="reinforcements = group this; group this allowfleeing 0";
+					init="reinforcements = group this; group this allowFleeing 0";
 				};
 				class Item2
 				{
@@ -1353,7 +1353,7 @@ class Mission
 			vehicle="FlagCarrier";
 			leader=1;
 			skill=0.466667;
-			init="this setflagtexture ""\flags\ussr.jpg""";
+			init="this setFlagTexture ""\flags\ussr.jpg""";
 		};
 		class Item5
 		{
@@ -1459,7 +1459,7 @@ class Mission
 			vehicle="ReammoBoxEast";
 			skill=0.600000;
 			text="Crate";
-			init="clearmagazinecargo this; clearweaponcargo this";
+			init="clearMagazineCargo this; clearWeaponCargo this";
 		};
 		class Item15
 		{
@@ -2010,7 +2010,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			expCond="{alive _x} count thislist <= 1 and (not canmove T1 or not canfire T1) and (not canmove T2 or not canfire T2) and (not canmove T3 or not canfire T3) and (not canmove T4 or not canfire T4)";
-			expActiv="[] exec ""outro.sqs""; ""_x setdammage 1"" foreach thislist";
+			expActiv="[] exec ""outro.sqs""; ""_x setDammage 1"" forEach thislist";
 			class Effects
 			{
 			};
@@ -2285,7 +2285,7 @@ class Intro
 					rank="SERGEANT";
 					skill=0.466667;
 					text="embarking";
-					init="""_x assignascargo truck"" foreach units group this; ""_x stop true"" foreach units group this";
+					init="""_x assignAsCargo truck"" forEach units group this; ""_x stop true"" forEach units group this";
 				};
 				class Item1
 				{
@@ -2414,7 +2414,7 @@ class Intro
 					leader=1;
 					skill=0.466667;
 					text="Pointer";
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -2433,7 +2433,7 @@ class Intro
 					vehicle="SoldierWG";
 					leader=1;
 					skill=0.466667;
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -2452,7 +2452,7 @@ class Intro
 					vehicle="SoldierWG";
 					leader=1;
 					skill=0.466667;
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 			class Waypoints
@@ -2557,7 +2557,7 @@ class Intro
 			vehicle="FlagCarrier";
 			leader=1;
 			skill=0.466667;
-			init="this setflagtexture ""\flags\usa.jpg""";
+			init="this setFlagTexture ""\flags\usa.jpg""";
 		};
 	};
 	class Markers

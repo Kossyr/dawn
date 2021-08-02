@@ -1,10 +1,10 @@
-setacctime 1
-enableradio false
-"4" objstatus "done"
-aP addrating 1000
+setAccTime 1
+enableRadio false
+"4" objStatus "DONE"
+aP addRating 1000
 
-? not patrolDone : "2" objstatus "failed"
-? not ammoDone : "3" objstatus "failed"
+? not patrolDone : "2" objStatus "FAILED"
+? not ammoDone : "3" objStatus "FAILED"
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -14,7 +14,7 @@ _camera camSetPos [6389.94,8036.89,45.44]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-titletext [ localize "STRC_END_SUCCESS","plain"]
+titleText [ localize "STRC_END_SUCCESS","PLAIN"]
 ;=== 19:57:18
 _camera camSetTarget [-77405.95,-30060.31,-39078.41]
 _camera camSetPos [6346.68,8008.90,47.64]
@@ -22,7 +22,7 @@ _camera camSetFOV 0.700
 _camera camCommit 8
 @camCommitted _camera
 ~2
-titlecut ["","black out",2]
+titleCut ["","BLACK OUT",2]
 ~2
 ? splneno==2 : end=true ; goto "ex" ;
 ? splneno==1 : end2=true ; goto "ex" ;

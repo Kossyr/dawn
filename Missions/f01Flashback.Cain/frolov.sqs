@@ -1,10 +1,10 @@
-setacctime 1
+setAccTime 1
 
 cinema=true
 canMeetFrolov=false
 
 
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 ~0.5
 
 _camera = "camera" camcreate [0,0,0]
@@ -12,37 +12,37 @@ _camera cameraeffect ["internal","back"]
 
 ? (aP == vehicle aP) : goto "frolovCinema" ;
 
-vehicle aP setpos getmarkerpos "VehicleAway"
-vehicle aP setdir 0
+vehicle aP setPos getMarkerPos "VehicleAway"
+vehicle aP setDir 0
 
 ~0.5
 
-vehicle aP setpos getmarkerpos "CinemaFrolovVehicle"
-vehicle aP setdir 35
+vehicle aP setPos getMarkerPos "CinemaFrolovVehicle"
+vehicle aP setDir 35
 
 aP action ["EJECT"]
-UnassignVehicle aP
+unassignVehicle aP
 
 #frolovCinema
 
 aP action ["WEAPONONBACK"]
 
-aP setpos getmarkerpos "PlayerAway"
-LemontovDouble setpos getmarkerpos "CinemaFrolovPlayer"
-Frolov setpos getmarkerpos "CinemaFrolov"
-Frolov dowatch [8553.84,9292.20,1.69]
+aP setPos getMarkerPos "PlayerAway"
+LemontovDouble setPos getMarkerPos "CinemaFrolovPlayer"
+Frolov setPos getMarkerPos "CinemaFrolov"
+Frolov doWatch [8553.84,9292.20,1.69]
 
-LemontovDouble setdir 290
-LemontovDouble dowatch [8551.83,9292.44,1.62]
-LemontovDouble setmimic "angry"
-Frolov setmimic "normal"
+LemontovDouble setDir 290
+LemontovDouble doWatch [8551.83,9292.44,1.62]
+LemontovDouble setMimic "angry"
+Frolov setMimic "normal"
 
 
 ~0.5
 
-setacctime 1
+setAccTime 1
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 
 ? metFrolov : goto "reenter" ;
@@ -58,9 +58,9 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Frolov say "f01v164"
-Frolov setmimic "surprised"
+Frolov setMimic "surprised"
 ~5
-Frolov setmimic "smile"
+Frolov setMimic "smile"
 ~3
 ;=== 10:36:02
 _camera camSetTarget [108173.79,13102.60,-7726.25]
@@ -76,9 +76,9 @@ _camera camSetPos [8554.29,9292.61,1.61]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Frolov setmimic "normal"
+Frolov setMimic "normal"
 Frolov say "f01v166"
-Frolov switchmove "FXCivilArmsAkimboL"
+Frolov switchMove "FXCivilArmsAkimboL"
 ~10
 ;=== 10:36:36
 _camera camSetTarget [-89903.97,25215.68,-7167.09]
@@ -86,7 +86,7 @@ _camera camSetPos [8552.35,9292.32,1.61]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Frolov setmimic "sad"
+Frolov setMimic "sad"
 Frolov say "f01v167"
 ~11
 ;=== 10:36:50
@@ -103,11 +103,11 @@ _camera camSetPos [8552.73,9292.29,1.61]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Frolov setmimic "normal"
-Frolov switchmove "FXCivilLookaround2"
+Frolov setMimic "normal"
+Frolov switchMove "FXCivilLookaround2"
 Frolov say "f01v169"
 ~6
-Frolov switchmove "FxShow2"
+Frolov switchMove "FxShow2"
 Frolov say "f01v170"
 ~9
 Frolov say "f01v171"
@@ -126,7 +126,7 @@ _camera camSetPos [8552.62,9292.30,1.61]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Frolov setmimic "smile"
+Frolov setMimic "smile"
 Frolov say "f01v173"
 ~3
 

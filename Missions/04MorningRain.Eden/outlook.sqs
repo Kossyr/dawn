@@ -1,51 +1,51 @@
-setacctime 1
+setAccTime 1
 
-Lemontov setcaptive true
+Lemontov setCaptive true
 
-group player setbehaviour "stealth"
+group player setBehaviour "STEALTH"
 
 LamentinReady=true
 
-"_x stop false" foreach units specops
+"_x stop false" forEach units specops
 Grenadier1 stop false
 Grenadier2 stop false
 Grenadier3 stop false
 Grenadier4 stop false
-"_x setpos getmarkerpos ""specops""" foreach units specops
-"_x setpos getmarkerpos ""yelena_lamentin""" foreach units yelena
-Grenadier1 setpos getmarkerpos "Grenadier1"
-Grenadier2 setpos getmarkerpos "Grenadier2"
-Grenadier3 setpos getmarkerpos "Grenadier3"
-Grenadier4 setpos getmarkerpos "Grenadier4"
+"_x setPos getMarkerPos ""specops""" forEach units specops
+"_x setPos getMarkerPos ""yelena_lamentin""" forEach units yelena
+Grenadier1 setPos getMarkerPos "Grenadier1"
+Grenadier2 setPos getMarkerPos "Grenadier2"
+Grenadier3 setPos getMarkerPos "Grenadier3"
+Grenadier4 setPos getMarkerPos "Grenadier4"
 
 ~1
 
-setacctime 1
-Lemontov groupradio "04r13"
+setAccTime 1
+Lemontov groupRadio "04r13"
 
-"6" objstatus "done"
-aP addrating 1000
-
-~10
-
-"_x setunitpos ""down""" foreach units group player
-
-LemontovDab setgroupid ["DELTA","GROUPCOLOR0"]
+"6" objStatus "DONE"
+aP addRating 1000
 
 ~10
 
+"_x setunitpos ""down""" forEach units group player
 
-setacctime 1
+LemontovDab setGroupId ["DELTA","GROUPCOLOR0"]
 
-LemontovDab sideradio "04r14"
-enableradio false
+~10
+
+
+setAccTime 1
+
+LemontovDab sideRadio "04r14"
+enableRadio false
 
 ~7
 
-Lemontov setgroupid ["DELTA","GROUPCOLOR0"]
+Lemontov setGroupId ["DELTA","GROUPCOLOR0"]
 
 
-playmusic "RTrack5"
+playMusic "RTrack5"
 
 yelena setcombatmode "YELLOW"
 specops setcombatmode "YELLOW"
@@ -68,35 +68,35 @@ Spec4 action ["TOUCHOFF"]
 
 ~5
 
-deletevehicle Spec1
-deletevehicle Spec2
-deletevehicle Spec3
-deletevehicle Spec4
+deleteVehicle Spec1
+deleteVehicle Spec2
+deleteVehicle Spec3
+deleteVehicle Spec4
 
 ~14
 
-enableradio true
+enableRadio true
 
 ~1
 
-setacctime 1
+setAccTime 1
 
-leader yelena sideradio "04r15"
-Lemontov sideradio "04r16"
+leader yelena sideRadio "04r15"
+Lemontov sideRadio "04r16"
 
 ~4
 
-"8" objstatus "active"
+"8" objStatus "ACTIVE"
 
-"_x stop false" foreach units patrol
-"_x setcaptive true" foreach units patrol
-Patrol1 setpos getmarkerpos "Patrol1"
-Patrol2 setpos getmarkerpos "Patrol2"
-Patrol3 setpos getmarkerpos "Patrol3"
+"_x stop false" forEach units patrol
+"_x setCaptive true" forEach units patrol
+Patrol1 setPos getMarkerPos "Patrol1"
+Patrol2 setPos getMarkerPos "Patrol2"
+Patrol3 setPos getMarkerPos "Patrol3"
 
 ~1
 
-savegame
+saveGame
 
 exit
 

@@ -40,19 +40,19 @@ goto "exitDialogue"
 
 #exitDialogue
 
-LemontovDouble dowatch objNull
-LemontovDouble setdir 0
-LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
-Frolov setmimic "normal"
-Frolov dowatch objNull
+LemontovDouble doWatch objNull
+LemontovDouble setDir 0
+LemontovDouble setPos getMarkerPos "PlayerDoubleAway"
+Frolov setMimic "normal"
+Frolov doWatch objNull
 
-aP setpos getmarkerpos "CinemaFrolovPlayer"
-aP setdir 290
+aP setPos getMarkerPos "CinemaFrolovPlayer"
+aP setDir 290
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
-titletext ["","plain"]
+titleText ["","PLAIN"]
 
 metFrolov=true
 cinema=false

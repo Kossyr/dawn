@@ -1,9 +1,9 @@
-setacctime 1
+setAccTime 1
 
-"7" objstatus "done"
-aP addrating 1000
+"7" objStatus "DONE"
+aP addRating 1000
 
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 ~0.5
 
 cinema=true
@@ -13,44 +13,44 @@ _camera cameraeffect ["internal","back"]
 
 ? (aP == vehicle aP) : goto "beach_cinema" ;
 
-vehicle aP setpos getmarkerpos "player_vehicle_away"
-vehicle aP setdir 0
+vehicle aP setPos getMarkerPos "player_vehicle_away"
+vehicle aP setDir 0
 
 ~1
 
-vehicle aP setpos getmarkerpos "beach_vehicle"
-vehicle aP setdir 10
+vehicle aP setPos getMarkerPos "beach_vehicle"
+vehicle aP setDir 10
 
 aP action ["EJECT"]
-UnassignVehicle aP
+unassignVehicle aP
 
 #beach_cinema
 
-FuelTruck setpos getmarkerpos "beach_truck"
-FuelTruck setdir 110
+FuelTruck setPos getMarkerPos "beach_truck"
+FuelTruck setDir 110
 
 goingToDurras=false
 
 aP action ["WEAPONONBACK"]
 
-aP setpos getmarkerpos "player_away"
-Calverra setpos getmarkerpos "calverra_beach";
-RashivBeach setpos getmarkerpos "rashiv_beach";
+aP setPos getMarkerPos "player_away"
+Calverra setPos getMarkerPos "calverra_beach";
+RashivBeach setPos getMarkerPos "rashiv_beach";
 
 aa = aP saveStatus "10Rashiv"
 aa = RashivBeach loadStatus "10Rashiv"
 
-RashivBeach dowatch [9693.00,1473.54,1.62]
-Calverra dowatch [9693.33,1475.69,1.58]
+RashivBeach doWatch [9693.00,1473.54,1.62]
+Calverra doWatch [9693.33,1475.69,1.58]
 
-Calverra setmimic "Smile"
-RashivBeach setmimic "Normal"
+Calverra setMimic "Smile"
+RashivBeach setMimic "Normal"
 
 ~0.5
 
-setacctime 1
+setAccTime 1
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 
 ;=== 19:09:04
@@ -62,7 +62,7 @@ _camera camCommit 0
 
 
 Calverra say "11v82"
-Calverra setmimic "Surprised"
+Calverra setMimic "Surprised"
 ~3.5
 Calverra say "11v83"
 ;=== 19:09:22
@@ -84,19 +84,19 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~1.5
-deletevehicle RashivBeach
-aP setpos getmarkerpos "rashiv_beach"
-aP setdir 185
+deleteVehicle RashivBeach
+aP setPos getMarkerPos "rashiv_beach"
+aP setDir 185
 
 
-"3" objstatus "done"
-aP addrating 1000
+"3" objStatus "DONE"
+aP addRating 1000
 FuelTruck lock true
 fuelDone=true
-Calverra setmimic "normal"
-deletevehicle Tracer
-deletevehicle DurrasGuard1
-deletevehicle DurrasGuard2
+Calverra setMimic "normal"
+deleteVehicle Tracer
+deleteVehicle DurrasGuard1
+deleteVehicle DurrasGuard2
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
@@ -105,12 +105,12 @@ cinema=false
 
 ~1
 
-setacctime 1
+setAccTime 1
 ? explosivesDone : aP say "11v95" ;
 ? not explosivesDone : aP say "11v93" ;
 
 ~6
 
-savegame
+saveGame
 
 exit

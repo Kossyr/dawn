@@ -1,16 +1,16 @@
-titlecut["","black in",2]
+titleCut["","BLACK IN",2]
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-Koltsov setmimic "Normal"
-Ablomov setmimic "Normal"
-Syomin setmimic "Normal"
+Koltsov setMimic "Normal"
+Ablomov setMimic "Normal"
+Syomin setMimic "Normal"
 
-Koltsov dowatch [4827.34,11860.04,1.59]
-Ablomov dowatch [4827.34,11860.04,1.59]
+Koltsov doWatch [4827.34,11860.04,1.59]
+Ablomov doWatch [4827.34,11860.04,1.59]
 
-playmusic "Track13"
+playMusic "Track13"
 
 ;=== 19:46:45
 _camera camSetTarget [52308.88,83610.53,50988.93]
@@ -31,7 +31,7 @@ _camera camSetPos [4827.16,11858.82,1.35]
 _camera camSetFOV 0.700
 _camera camCommit 4
 ~2
-2 fademusic 0.2
+2 fadeMusic 0.2
 Syomin say "35v01"
 @camCommitted _camera
 
@@ -62,8 +62,8 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~1.5
-1 fademusic 1
-titlecut["","white in",0.5]
+1 fadeMusic 1
+titleCut["","WHITE IN",0.5]
 ;=== 20:21:34
 _camera camSetTarget [-73243.38,-46023.23,23589.23]
 _camera camSetPos [4814.34,11870.68,0.69]
@@ -71,7 +71,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~1.5
-titlecut["","white in",0.5]
+titleCut["","WHITE IN",0.5]
 ;=== 20:22:29
 _camera camSetTarget [78778.50,71473.83,31258.03]
 _camera camSetPos [4809.56,11865.39,1.54]
@@ -84,7 +84,7 @@ _camera camSetPos [4809.56,11865.39,2.23]
 _camera camSetFOV 0.700
 _camera camCommit 1.5
 @camCommitted _camera
-titlecut["","white in",0.5]
+titleCut["","WHITE IN",0.5]
 ;=== 20:23:15
 _camera camSetTarget [104360.80,20238.42,-4475.23]
 _camera camSetPos [4813.46,11867.76,1.72]
@@ -92,16 +92,16 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~1.5
-Koltsov setmimic "Smile"
-Ablomov setmimic "Smile"
-titlecut["","white in",0.5]
+Koltsov setMimic "Smile"
+Ablomov setMimic "Smile"
+titleCut["","WHITE IN",0.5]
 ;=== 20:23:35
 _camera camSetTarget [65478.70,-67548.09,4062.14]
 _camera camSetPos [4828.41,11858.11,1.37]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-0.5 fademusic 0.2
+0.5 fadeMusic 0.2
 ~0.5
 Koltsov say "35v03"
 ~1
@@ -141,21 +141,21 @@ Syomin assignAsDriver SyominHeli
 [Syomin] orderGetIn true
 ~3
 deleteVehicle Koltsov
-KoltsovDouble setpos getmarkerpos "KoltsovStart";
-KoltsovDouble setdir 295;
+KoltsovDouble setPos getMarkerPos "KoltsovStart";
+KoltsovDouble setDir 295;
 ;=== 20:31:07
 _camera camSetTarget [60247.92,-71205.31,5439.32]
 _camera camSetPos [4829.35,11857.76,1.50]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Ablomov setmimic "Normal"
+Ablomov setMimic "Normal"
 Ablomov say "35v08"
 ~1.5
-Ablomov dowatch [4828.89,11856.47,1.60]
+Ablomov doWatch [4828.89,11856.47,1.60]
 ~1
-Ablomov setmimic "surprised"
-KoltsovDouble domove getmarkerpos "KoltsovEnd";
+Ablomov setMimic "surprised"
+KoltsovDouble doMove getMarkerPos "KoltsovEnd";
 ;~1.5
 ;=== 20:55:39
 _camera camSetTarget [-93640.96,-5554.09,26.46]
@@ -165,13 +165,13 @@ _camera camCommit 0
 @camCommitted _camera
 ~1
 Ablomov say "35v09"
-Ablomov dowatch [4814.55,11854.93,1.65]
+Ablomov doWatch [4814.55,11854.93,1.65]
 ~1.5
 deleteVehicle KoltsovDouble
-KoltsovTriple setpos getmarkerpos "KoltsovEnd"
-KoltsovTriple setdir 270
-KoltsovTriple switchmove "FXdismay"
-KoltsovTriple setmimic "Sad"
+KoltsovTriple setPos getMarkerPos "KoltsovEnd"
+KoltsovTriple setDir 270
+KoltsovTriple switchMove "FXdismay"
+KoltsovTriple setMimic "Sad"
 KoltsovTriple say "35v10"
 ;=== 21:04:02
 _camera camSetTarget [-85793.39,-30449.56,25.57]
@@ -180,14 +180,14 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~2
-KoltsovTriple dowatch [4829.73,11856.98,1.60]
-KoltsovTriple setpos getmarkerpos "KoltsovEnd"
-KoltsovTriple setdir 90
-KoltsovTriple switchmove "FXShow3"
+KoltsovTriple doWatch [4829.73,11856.98,1.60]
+KoltsovTriple setPos getMarkerPos "KoltsovEnd"
+KoltsovTriple setDir 90
+KoltsovTriple switchMove "FXShow3"
 ~3
-KoltsovTriple setmimic "Smile"
+KoltsovTriple setMimic "Smile"
 ~1
-KoltsovTriple assignasdriver KoltsovHeli
+KoltsovTriple assignAsDriver KoltsovHeli
 [KoltsovTriple] orderGetIn true
 Syomin action ["ENGINE ON", SyominHeli]
 ~2
@@ -209,10 +209,10 @@ _camera camSetPos [4828.85,11857.08,1.55]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Ablomov setmimic "Hurt"
+Ablomov setMimic "Hurt"
 ~1
-titlecut["","black out",3]
-4 fadesound 0
+titleCut["","BLACK OUT",3]
+4 fadeSound 0
 ~4
 end=true
 player cameraEffect ["terminate","back"]

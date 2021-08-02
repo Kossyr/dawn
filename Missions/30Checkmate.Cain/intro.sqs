@@ -1,20 +1,20 @@
-titlecut["","black in",1.5]
+titleCut["","BLACK IN",1.5]
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-villaFlag setpos [1894.85,7388.12,3.32]
+villaFlag setPos [1894.85,7388.12,3.32]
 
-uaz setfuel 0
+uaz setFuel 0
 
-off dowatch [1877.14,7380.50,1.67]
+off doWatch [1877.14,7380.50,1.67]
 
-kukushkin dowatch [1903.04,7377.60,1.27]
+kukushkin doWatch [1903.04,7377.60,1.27]
 
-Kukushkin setmimic "Normal"
-Zubarev setmimic "Smile"
+Kukushkin setMimic "Normal"
+Zubarev setMimic "Smile"
 
-playmusic ["Track12",3]
+playMusic ["Track12",3]
 
 
 ;=== 15:41:49
@@ -27,18 +27,18 @@ _camera camCommit 0
 
 ~0.2
 
-captive1 switchmove "FXStandSur"
-captive2 switchmove "FXStandSur"
-captive3 switchmove "FXStandSur"
-captive4 switchmove "FXStandSur"
-captive5 switchmove "FXStandSur"
-captive6 switchmove "FXStandSur"
-captive7 switchmove "FXStandSur"
-captive8 switchmove "FXStandSur"
-captive9 switchmove "FXStandSur"
-captive10 switchmove "FXStandSur"
-captive11 switchmove "FXStandSur"
-captive12 switchmove "FXStandSur"
+captive1 switchMove "FXStandSur"
+captive2 switchMove "FXStandSur"
+captive3 switchMove "FXStandSur"
+captive4 switchMove "FXStandSur"
+captive5 switchMove "FXStandSur"
+captive6 switchMove "FXStandSur"
+captive7 switchMove "FXStandSur"
+captive8 switchMove "FXStandSur"
+captive9 switchMove "FXStandSur"
+captive10 switchMove "FXStandSur"
+captive11 switchMove "FXStandSur"
+captive12 switchMove "FXStandSur"
 
 captive1 stop true
 captive2 stop true
@@ -53,7 +53,7 @@ captive10 stop true
 captive11 stop true
 captive12 stop true
 
-off switchmove "FxInHand"
+off switchMove "FxInHand"
 
 
 
@@ -87,14 +87,14 @@ _camera camSetPos [1901.87,7372.43,3.67]
 _camera camSetFOV 0.700
 _camera camCommit 5
 ~2
-kukushkin playmove "StandTakeFlag"
+kukushkin playMove "StandTakeFlag"
 ~1
 sovietFlag setflagOwner Kukushkin
 ~1
-kukushkin playmove "StandTakeFlagToStand"
+kukushkin playMove "StandTakeFlagToStand"
 @camCommitted _camera
 ~1
-kukushkin dowatch [1899.34,7376.48,1.60]
+kukushkin doWatch [1899.34,7376.48,1.60]
 ~3
 ;=== 15:46:39
 _camera camSetTarget [40512.35,99371.59,-6649.10]
@@ -104,8 +104,8 @@ _camera camCommit 0
 @camCommitted _camera
 kukushkin say "30v01"
 ~1.5
-kukushkin domove [1903.00,7389.50,3.33]
-kukushkin dowatch objnull
+kukushkin doMove [1903.00,7389.50,3.33]
+kukushkin doWatch objNull
 ~0.6
 ;=== 15:46:50
 _camera camSetTarget [-13046.22,106253.07,-82.16]
@@ -120,13 +120,13 @@ _camera camSetPos [1899.54,7376.49,1.48]
 _camera camSetFOV 0.700
 _camera camCommit 4
 ~2
-titletextu["","plain down"]
+titleTextu["","PLAIN DOWN"]
 @camCommitted _camera
 sovietFlag setflagOwner KukushkinBalcony
-deletevehicle kukushkin
+deleteVehicle kukushkin
 ~1.5
-KukushkinBalcony setpos [1897.21,7386.88,3.61]
-titlecut["","black in",0.5]
+KukushkinBalcony setPos [1897.21,7386.88,3.61]
+titleCut["","BLACK IN",0.5]
 ;=== 15:50:16
 _camera camSetTarget [99607.54,13667.38,-20175.22]
 _camera camSetPos [1893.03,7386.71,4.70]
@@ -134,12 +134,12 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~0.5
-KukushkinBalcony playmove "StandTakeFlag"
-KukushkinBalcony dowatch [1895.07,7387.15,9.40]
+KukushkinBalcony playMove "StandTakeFlag"
+KukushkinBalcony doWatch [1895.07,7387.15,9.40]
 ~1.5
 
-crew1 dowatch [1896.63,7386.87,5.32]
-crew2 dowatch [1896.63,7386.87,5.32]
+crew1 doWatch [1896.63,7386.87,5.32]
+crew2 doWatch [1896.63,7386.87,5.32]
 
 ;=== 16:04:18
 _camera camSetTarget [-62239.70,73298.73,39388.38]
@@ -149,13 +149,13 @@ _camera camCommit 0
 @camCommitted _camera
 villaFlag setflagOwner carrier
 ~3
-villaFlag setflagtexture "\flags\ussr.jpg"
-villaFlag setflagOwner objnull
-sovietFlag setflagOwner objnull
-deletevehicle carrier
-KukushkinBalcony playmove "effectStandSalute"
-uaz setpos getmarkerpos "uaz"
-uaz setfuel 1
+villaFlag setFlagTexture "\flags\ussr.jpg"
+villaFlag setflagOwner objNull
+sovietFlag setflagOwner objNull
+deleteVehicle carrier
+KukushkinBalcony playMove "effectStandSalute"
+uaz setPos getMarkerPos "uaz"
+uaz setFuel 1
 ;=== 16:18:39
 _camera camSetTarget [56781.55,-20339.12,-78717.55]
 _camera camSetPos [1893.04,7387.58,11.40]
@@ -175,7 +175,7 @@ _camera camSetPos [1887.98,7373.04,2.00]
 _camera camSetFOV 0.700
 _camera camCommit 5
 @camCommitted _camera
-Zubarev dowatch [1896.63,7386.87,5.32]
+Zubarev doWatch [1896.63,7386.87,5.32]
 ~1
 ;=== 16:27:25
 _camera camSetTarget [-30783.91,-87131.73,129.01]
@@ -184,8 +184,8 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Zubarev say "30v02"
-KukushkinBalcony playmove "effectStandSaluteend"
-KukushkinBalcony dowatch [1895.89,7376.11,1.67]
+KukushkinBalcony playMove "effectStandSaluteend"
+KukushkinBalcony doWatch [1895.89,7376.11,1.67]
 ~4.5
 ;=== 16:28:58
 _camera camSetTarget [27827.29,103944.93,-1750.95]
@@ -193,7 +193,7 @@ _camera camSetPos [1896.51,7383.82,4.51]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-KukushkinBalcony setmimic "smile"
+KukushkinBalcony setMimic "smile"
 KukushkinBalcony say "30v03"
 ~3
 ;=== 16:29:59
@@ -202,9 +202,9 @@ _camera camSetPos [1896.48,7387.37,4.89]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-KukushkinBalcony switchmove "FxShow3"
+KukushkinBalcony switchMove "FxShow3"
 ~3.5
-titlecut["","black out",4]
+titleCut["","BLACK OUT",4]
 ~5
 end=true
 player cameraEffect ["terminate","back"]

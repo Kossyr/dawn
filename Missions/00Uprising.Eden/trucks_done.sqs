@@ -1,6 +1,6 @@
-setacctime 1
+setAccTime 1
 
-Astier groupradio "00r02"
+Astier groupRadio "00r02"
 
 trucksClear=true
 
@@ -8,16 +8,16 @@ cinema=true
 
 ~5
 
-titlecut ["","black out",2]
+titleCut ["","BLACK OUT",2]
 ~1
 
-enableradio false
+enableRadio false
 
 astierCareless=true
 
 ~1
 
-setacctime 1
+setAccTime 1
 
 aa = aP saveStatus "00Poincare"
 aa = actor loadStatus "00Poincare"
@@ -31,34 +31,34 @@ res1 action ["WEAPONONBACK"]
 res2 action ["WEAPONONBACK"]
 aP action ["WEAPONONBACK"]
 
-Astier setpos getmarkerpos "trucks_astier"
-res1 setpos getmarkerpos "trucks_clear_res1"
-res2 setpos getmarkerpos "trucks_clear_res2"
-actor setpos getmarkerpos "trucks_ap"
+Astier setPos getMarkerPos "trucks_astier"
+res1 setPos getMarkerPos "trucks_clear_res1"
+res2 setPos getMarkerPos "trucks_clear_res2"
+actor setPos getMarkerPos "trucks_ap"
 
-aP setpos getmarkerpos "trucks_clear_ap"
+aP setPos getMarkerPos "trucks_clear_ap"
 
-Astier setdir 295
-actor setdir 290
+Astier setDir 295
+actor setDir 290
 Astier stop false
 
-actor dowatch [5755.66,7013.63,2.00]
+actor doWatch [5755.66,7013.63,2.00]
 
-[res1, res2] join grpnull
-
-~0.5
-Astier setpos getmarkerpos "trucks_astier"
-Astier setdir 295
-Astier dowatch [5751.68,7013.69,2.00]
+[res1, res2] join grpNull
 
 ~0.5
+Astier setPos getMarkerPos "trucks_astier"
+Astier setDir 295
+Astier doWatch [5751.68,7013.69,2.00]
 
-titlecut ["","black in",1]
+~0.5
+
+titleCut ["","BLACK IN",1]
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-setacctime 1
+setAccTime 1
 
 ;=== 22:08:06
 _camera camSetTarget [-27008.13,101448.20,193.89]
@@ -79,10 +79,10 @@ _camera camSetPos [5758.53,7028.95,1.83]
 _camera camSetFOV 0.700
 _camera camCommit 3
 ~2
-Astier switchmove "FXCivilLookaround"
+Astier switchMove "FXCivilLookaround"
 @camCommitted _camera
 Astier say "00v26"
-Astier setmimic "Smile"
+Astier setMimic "Smile"
 ;=== 22:23:47
 _camera camSetTarget [94603.12,-38879.20,194.15]
 _camera camSetPos [5755.46,7012.99,1.50]
@@ -102,12 +102,12 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~1
-Astier dowatch [5755.72,6996.10,1.43]
+Astier doWatch [5755.72,6996.10,1.43]
 ~1
 Astier say "00v27"
 ~2.5
-Astier setmimic "Normal"
-Astier dowatch [5758.05,7011.10,1.58]
+Astier setMimic "Normal"
+Astier doWatch [5758.05,7011.10,1.58]
 ;=== 22:25:02
 _camera camSetTarget [-70457.56,71358.61,-6917.95]
 _camera camSetPos [5758.05,7011.10,1.58]
@@ -119,20 +119,20 @@ Astier say "00v28"
 
 ~2
 
-res1 setpos getmarkerpos "trucks_res1"
-res2 setpos getmarkerpos "trucks_res2"
+res1 setPos getMarkerPos "trucks_res1"
+res2 setPos getMarkerPos "trucks_res2"
 deleteVehicle actor
 
-res1 setdir 205
-res2 setdir 25
+res1 setDir 205
+res2 setDir 25
 
-res1 switchmove ""
-res2 switchmove "FxInHand"
+res1 switchMove ""
+res2 switchMove "FxInHand"
 
-aP setpos getmarkerpos "trucks_ap"
-aP setdir 290
+aP setPos getMarkerPos "trucks_ap"
+aP setDir 290
 
-enableradio true
+enableRadio true
 
 trucksDone=true
 
@@ -145,15 +145,15 @@ cinema=false
 
 ~0.5
 
-aP assignasdriver uazg
+aP assignAsDriver uazg
 [aP] orderGetIn true
 
 ~2
 
-Astier dowatch [5751.68,7013.69,2.00]
+Astier doWatch [5751.68,7013.69,2.00]
 
 ~5
 
-savegame
+saveGame
 
 exit

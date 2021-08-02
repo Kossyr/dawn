@@ -40,7 +40,7 @@ _camera camSetPos [9611.76,10073.66,1.59]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Zubarev setmimic "angry"
+Zubarev setMimic "angry"
 Zubarev say "f01v110"
 ~4
 
@@ -57,19 +57,19 @@ goto "exitDialogue"
 
 #exitDialogue
 
-LemontovDouble dowatch objNull
-LemontovDouble setdir 0
-LemontovDouble setpos getmarkerpos "PlayerDoubleAway"
-Zubarev setmimic "normal"
-Zubarev dowatch objNull
+LemontovDouble doWatch objNull
+LemontovDouble setDir 0
+LemontovDouble setPos getMarkerPos "PlayerDoubleAway"
+Zubarev setMimic "normal"
+Zubarev doWatch objNull
 
-aP setpos getmarkerpos "CinemaZubarevPlayer"
-aP setdir 340
+aP setPos getMarkerPos "CinemaZubarevPlayer"
+aP setDir 340
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
-titletext ["","plain"]
+titleText ["","PLAIN"]
 
 metZubarev=true
 cinema=false

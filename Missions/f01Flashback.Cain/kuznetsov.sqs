@@ -1,9 +1,9 @@
-setacctime 1
+setAccTime 1
 
 cinema=true
 canMeetKuznetsov=false
 
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 ~0.5
 
 _camera = "camera" camcreate [0,0,0]
@@ -11,36 +11,36 @@ _camera cameraeffect ["internal","back"]
 
 ? (aP == vehicle aP) : goto "kuznetsovCinema" ;
 
-vehicle aP setpos getmarkerpos "VehicleAway"
-vehicle aP setdir 0
+vehicle aP setPos getMarkerPos "VehicleAway"
+vehicle aP setDir 0
 
 ~0.5
 
-vehicle aP setpos getmarkerpos "CinemaKuznetsovVehicle"
-vehicle aP setdir 210
+vehicle aP setPos getMarkerPos "CinemaKuznetsovVehicle"
+vehicle aP setDir 210
 
 aP action ["EJECT"]
-UnassignVehicle aP
+unassignVehicle aP
 
 #kuznetsovCinema
 
 aP action ["WEAPONONBACK"]
 
-aP setpos getmarkerpos "PlayerAway"
-LemontovDouble setpos getmarkerpos "CinemaKuznetsovPlayer"
-Kuznetsov setpos getmarkerpos "CinemaKuznetsov"
-Kuznetsov dowatch [11888.93,10510.44,1.68]
+aP setPos getMarkerPos "PlayerAway"
+LemontovDouble setPos getMarkerPos "CinemaKuznetsovPlayer"
+Kuznetsov setPos getMarkerPos "CinemaKuznetsov"
+Kuznetsov doWatch [11888.93,10510.44,1.68]
 
-LemontovDouble setdir 120
-LemontovDouble dowatch [11890.65,10509.67,1.57]
-LemontovDouble setmimic "angry"
-Kuznetsov setmimic "smile"
+LemontovDouble setDir 120
+LemontovDouble doWatch [11890.65,10509.67,1.57]
+LemontovDouble setMimic "angry"
+Kuznetsov setMimic "smile"
 
 ~0.5
 
-setacctime 1
+setAccTime 1
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 ? metKuznetsov : goto "reenter" ;
 ? not metKuznetsov : goto "introduction"
@@ -58,10 +58,10 @@ _camera camCommit 0
 @camCommitted _camera
 Kuznetsov say "f01v287"
 ~3
-Kuznetsov setmimic "normal"
-Kuznetsov playmove "effectstandsalute"
+Kuznetsov setMimic "normal"
+Kuznetsov playMove "effectstandsalute"
 ~2
-Kuznetsov playmove "effectstandsaluteend"
+Kuznetsov playMove "effectstandsaluteend"
 ~1
 ;=== 18:24:58
 _camera camSetTarget [-82061.18,43951.17,-7405.90]
@@ -69,7 +69,7 @@ _camera camSetPos [11889.73,10510.16,1.58]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-LemontovDouble setmimic "surprised"
+LemontovDouble setMimic "surprised"
 LemontovDouble say "f01v288"
 ~5
 ;=== 18:25:23
@@ -78,7 +78,7 @@ _camera camSetPos [11889.80,10510.13,1.62]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Kuznetsov switchmove "FXCivilArmsAkimboL"
+Kuznetsov switchMove "FXCivilArmsAkimboL"
 Kuznetsov say "f01v289"
 ~11
 ;=== 18:25:36
@@ -87,7 +87,7 @@ _camera camSetPos [11889.62,10510.22,1.63]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-LemontovDouble setmimic "normal"
+LemontovDouble setMimic "normal"
 LemontovDouble say "f01v290"
 ~5
 ;=== 18:25:47
@@ -96,8 +96,8 @@ _camera camSetPos [11888.18,10510.15,1.64]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Kuznetsov setmimic "smile"
-Kuznetsov switchmove "FxToHand"
+Kuznetsov setMimic "smile"
+Kuznetsov switchMove "FxToHand"
 Kuznetsov say "f01v291"
 ~8
 ;=== 18:26:00
@@ -106,8 +106,8 @@ _camera camSetPos [11889.67,10510.12,1.62]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Kuznetsov setmimic "normal"
-Kuznetsov switchmove "FxFromHand"
+Kuznetsov setMimic "normal"
+Kuznetsov switchMove "FxFromHand"
 ~3
 ;=== 18:26:21
 _camera camSetTarget [-87351.17,10425.80,-12279.63]
@@ -115,7 +115,7 @@ _camera camSetPos [11891.66,10510.07,1.53]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-LemontovDouble setmimic "normal"
+LemontovDouble setMimic "normal"
 LemontovDouble say "f01v292"
 ~1
 ;=== 18:26:34
@@ -139,9 +139,9 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Kuznetsov say "f01v312"
-Kuznetsov playmove "effectstandsalute"
+Kuznetsov playMove "effectstandsalute"
 ~2
-Kuznetsov playmove "effectstandsaluteend"
+Kuznetsov playMove "effectstandsaluteend"
 ~1
 
 

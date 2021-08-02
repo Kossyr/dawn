@@ -1,47 +1,47 @@
-setacctime 1
+setAccTime 1
 
-"2" objstatus "done"
-aP addrating 1000
+"2" objStatus "DONE"
+aP addRating 1000
 
-playmusic "RTrack9"
+playMusic "RTrack9"
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-deletevehicle Poincare
+deleteVehicle Poincare
 
 Lemontov stop true
-Lemontov setpos getmarkerpos "LemontovAway"
+Lemontov setPos getMarkerPos "LemontovAway"
 
-aP setpos getmarkerpos "RashivAway"
+aP setPos getMarkerPos "RashivAway"
 aP action ["WEAPONONBACK"]
 
-Lemontov setbehaviour "careless"
+Lemontov setBehaviour "CARELESS"
 
-CastleLemontov setpos getmarkerpos "CastleLemontov"
-CastleRashiv setpos getmarkerpos "CastleRashiv"
+CastleLemontov setPos getMarkerPos "CastleLemontov"
+CastleRashiv setPos getMarkerPos "CastleRashiv"
 
 _AstierWatch = [9369.97,1041.31,1.64]
 _RashivWatch = [9369.71,1038.45,1.67]
 _LemontovWatch = [9368.42,1037.38,1.64]
 
-CastleLemontov dowatch _AstierWatch
-CastleRashiv dowatch _AstierWatch
-Astier dowatch _RashivWatch
-C1 dowatch _RashivWatch
-C2 dowatch _RashivWatch
-C3 dowatch _RashivWatch
-C4 dowatch _RashivWatch
-C5 dowatch _RashivWatch
-C6 dowatch _RashivWatch
+CastleLemontov doWatch _AstierWatch
+CastleRashiv doWatch _AstierWatch
+Astier doWatch _RashivWatch
+C1 doWatch _RashivWatch
+C2 doWatch _RashivWatch
+C3 doWatch _RashivWatch
+C4 doWatch _RashivWatch
+C5 doWatch _RashivWatch
+C6 doWatch _RashivWatch
 
-C5 setmimic "normal"
-CastleRashiv setmimic "normal"
-CastleLemontov setmimic "normal"
+C5 setMimic "normal"
+CastleRashiv setMimic "normal"
+CastleLemontov setMimic "normal"
 
-"_x setpos getmarkerpos ""backdoor""" foreach units backdoor
+"_x setPos getMarkerPos ""backdoor""" forEach units backdoor
 
 ;=== 9:36:25
 _camera camSetTarget [-10823.24,95918.62,24391.59]
@@ -72,7 +72,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Astier setmimic "surprised"
+Astier setMimic "surprised"
 Astier say "31v14"
 
 ;=== 9:37:38
@@ -83,11 +83,11 @@ _camera camCommit 16.5
 
 ~4
 
-Astier setmimic "normal"
+Astier setMimic "normal"
 
 ~3
 
-Astier setmimic "smile"
+Astier setMimic "smile"
 
 @camCommitted _camera
 
@@ -99,12 +99,12 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-CastleRashiv setmimic "smile"
+CastleRashiv setMimic "smile"
 CastleRashiv say "31v15"
 
 ~8
 
-CastleRashiv setmimic "normal"
+CastleRashiv setMimic "normal"
 
 ~4.5
 
@@ -119,8 +119,8 @@ Astier say "31v16"
 
 ~3
 
-Astier setmimic "normal"
-Astier dowatch _LemontovWatch
+Astier setMimic "normal"
+Astier doWatch _LemontovWatch
 
 ~1
 
@@ -133,12 +133,12 @@ _camera camCommit 0
 
 ~1
 
-C1 dowatch _LemontovWatch
-C2 dowatch _LemontovWatch
-C3 dowatch _LemontovWatch
-C4 dowatch _LemontovWatch
-C5 dowatch _LemontovWatch
-C6 dowatch _LemontovWatch
+C1 doWatch _LemontovWatch
+C2 doWatch _LemontovWatch
+C3 doWatch _LemontovWatch
+C4 doWatch _LemontovWatch
+C5 doWatch _LemontovWatch
+C6 doWatch _LemontovWatch
 
 ~2
 
@@ -149,21 +149,21 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-CastleLemontov setmimic "surprised"
+CastleLemontov setMimic "surprised"
 CastleLemontov say "31v17"
 
 ~1.5
 
-CastleRashiv setmimic "normal"
-CastleRashiv dowatch _LemontovWatch
+CastleRashiv setMimic "normal"
+CastleRashiv doWatch _LemontovWatch
 
 ~0.8
 
 CastleRashiv say "31v18"
-CastleLemontov setmimic "normal"
+CastleLemontov setMimic "normal"
 ~1.2
 
-CastleRashiv dowatch _AstierWatch
+CastleRashiv doWatch _AstierWatch
 
 ;=== 9:47:09
 _camera camSetTarget [-42422.83,-84334.78,-5175.79]
@@ -176,13 +176,13 @@ _camera camCommit 0
 
 CastleRashiv say "31v19"
 
-Astier dowatch _RashivWatch
-C1 dowatch _RashivWatch
-C2 dowatch _RashivWatch
-C3 dowatch _RashivWatch
-C4 dowatch _RashivWatch
-C5 dowatch _RashivWatch
-C6 dowatch _RashivWatch
+Astier doWatch _RashivWatch
+C1 doWatch _RashivWatch
+C2 doWatch _RashivWatch
+C3 doWatch _RashivWatch
+C4 doWatch _RashivWatch
+C5 doWatch _RashivWatch
+C6 doWatch _RashivWatch
 
 ~3.5
 
@@ -193,17 +193,17 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Astier setmimic "angry"
+Astier setMimic "angry"
 
 Astier say "31v20"
 
 ~4
 
-Astier setmimic "normal"
+Astier setMimic "normal"
 
 ~8.5
 
-Astier setmimic "sad"
+Astier setMimic "sad"
 Astier say "31v21"
 
 ~3.5
@@ -221,7 +221,7 @@ _camera camSetFOV 0.700
 _camera camCommit 10
 @camCommitted _camera
 
-Astier setmimic "angry"
+Astier setMimic "angry"
 Astier say "31v22"
 
 ;=== 10:01:07
@@ -233,7 +233,7 @@ _camera camCommit 0
 
 ~17.5
 
-Astier setmimic "normal"
+Astier setMimic "normal"
 Astier say "31v23"
 
 ~4
@@ -245,7 +245,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-CastleRashiv setmimic "sad"
+CastleRashiv setMimic "sad"
 CastleRashiv say "31v24"
 
 ~15.5
@@ -257,7 +257,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Astier setmimic "angry"
+Astier setMimic "angry"
 Astier say "31v25"
 
 ;=== 10:06:31
@@ -266,7 +266,7 @@ _camera camSetPos [9370.54,1040.07,1.53]
 _camera camSetFOV 0.700
 _camera camCommit 15.5
 ~8
-Astier setmimic "sad"
+Astier setMimic "sad"
 @camCommitted _camera
 
 Astier say "31v26"
@@ -279,7 +279,7 @@ _camera camCommit 0
 @camCommitted _camera
 
 CastleRashiv say "31v27"
-CastleRashiv setmimic "normal"
+CastleRashiv setMimic "normal"
 
 ~8.5
 
@@ -298,12 +298,12 @@ _camera camSetPos [9369.97,1039.04,1.53]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-CastleLemontov setmimic "smile"
+CastleLemontov setMimic "smile"
 CastleLemontov say "31v29"
 
 ~2.5
 
-CastleRashiv setmimic "surprised"
+CastleRashiv setMimic "surprised"
 CastleRashiv say "31v30"
 ~4.5
 ;=== 10:32:04
@@ -312,10 +312,10 @@ _camera camSetPos [9369.94,1040.73,1.50]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Astier setmimic "surprised"
+Astier setMimic "surprised"
 Astier say "31v31"
 ~1
-Astier setmimic "sad"
+Astier setMimic "sad"
 ~1.5
 ;=== 10:32:32
 _camera camSetTarget [2950.04,-98689.67,3792.85]
@@ -323,7 +323,7 @@ _camera camSetPos [9369.76,1039.11,1.52]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-CastleRashiv setmimic "hurt"
+CastleRashiv setMimic "hurt"
 CastleRashiv say "31v32"
 ~1
 ;=== 10:33:09
@@ -333,7 +333,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Astier setmimic "hurt"
+Astier setMimic "hurt"
 Astier say "31v33"
 
 ;=== 10:33:23
@@ -342,7 +342,7 @@ _camera camSetPos [9370.35,1040.84,1.51]
 _camera camSetFOV 0.700
 _camera camCommit 14.5
 ~3
-Astier setmimic "sad"
+Astier setMimic "sad"
 @camCommitted _camera
 
 explosionSound=true
@@ -350,23 +350,23 @@ ATTACK=true
 
 ~0.5
 
-Astier setmimic "Angry"
+Astier setMimic "Angry"
 Astier say "31v34"
 ~2
 
 partisansDefence=true
 
-C1 dowatch objnull
-C2 dowatch objnull
-C3 dowatch objnull
-C4 dowatch objnull
-C5 dowatch objnull
-C6 dowatch objnull
+C1 doWatch objNull
+C2 doWatch objNull
+C3 doWatch objNull
+C4 doWatch objNull
+C5 doWatch objNull
+C6 doWatch objNull
 
 ~3
 
-deletevehicle CastleRashiv
-deletevehicle CastleLemontov
+deleteVehicle CastleRashiv
+deleteVehicle CastleLemontov
 
 ;=== 10:36:05
 _camera camSetTarget [12970.58,100891.48,-3879.07]
@@ -376,31 +376,31 @@ _camera camCommit 0
 @camCommitted _camera
 
 Astier say "31v35"
-Astier setmimic "normal"
+Astier setMimic "normal"
 
 ~4.2
 
-Astier dowatch objnull
+Astier doWatch objNull
 
-Lemontov setpos getmarkerpos "CastleLemontov"
-aP setpos getmarkerpos "CastleRashiv"
+Lemontov setPos getMarkerPos "CastleLemontov"
+aP setPos getMarkerPos "CastleRashiv"
 
-Lemontov setdir 10
-aP setdir 5
+Lemontov setDir 10
+aP setDir 5
 
 Lemontov stop false
 ~0.5
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
-savegame
+saveGame
 
-playmusic "Track1"
-10 fademusic 1
+playMusic "Track1"
+10 fadeMusic 1
 
-enableradio true
+enableRadio true
 
-Lemontov setbehaviour "aware"
+Lemontov setBehaviour "AWARE"
 
 MainFire1 inflame false
 MainFire2 inflame false
@@ -410,8 +410,8 @@ astierDefence=true
 
 ~1
 
-titletext["","plain down"]
-Lemontov sideradio "31r02"
+titleText["","PLAIN DOWN"]
+Lemontov sideRadio "31r02"
 
 ~1
 
@@ -419,12 +419,12 @@ aP action ["WEAPONINHAND"]
 
 ~2
 
-enableradio false
+enableRadio false
 
-[Lemontov] join grpnull
+[Lemontov] join grpNull
 
-"3" objstatus "active"
-"Retreat" setmarkertype "End"
+"3" objStatus "ACTIVE"
+"Retreat" setMarkerType "End"
 
 toBoat=true
 

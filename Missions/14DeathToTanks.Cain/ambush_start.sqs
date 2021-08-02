@@ -1,26 +1,26 @@
 ~2
 
-setacctime 1
+setAccTime 1
 
-Lemontov groupradio "14r04"
+Lemontov groupRadio "14r04"
 
 
 group player setcombatMode "Red"
-group player setbehaviour "combat"
+group player setBehaviour "COMBAT"
 
 reinforcements setcombatMode "Red"
-reinforcements setbehaviour "combat"
+reinforcements setBehaviour "COMBAT"
 
 
-"_x setunitpos ""auto""" foreach units group player
-"_x setunitpos ""auto""" foreach units reinforcements
+"_x setunitpos ""auto""" forEach units group player
+"_x setunitpos ""auto""" forEach units reinforcements
 
-TRUCK setfuel 0
-[TRUCK] join grpnull
+TRUCK setFuel 0
+[TRUCK] join grpNull
 
 ambushStart=true
 
-"3" objstatus "done"
+"3" objStatus "DONE"
 
 ~2
 

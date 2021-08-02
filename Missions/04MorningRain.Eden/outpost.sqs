@@ -1,9 +1,9 @@
-setacctime 1
+setAccTime 1
 
-"4" objstatus "done"
-aP addrating 1000
+"4" objStatus "DONE"
+aP addRating 1000
 
-Lemontov sideradio "04r12"
+Lemontov sideRadio "04r12"
 
 clearArea=true
 
@@ -12,29 +12,29 @@ clearArea=true
 group player setcombatmode "BLUE"
 yelena setcombatmode "BLUE"
 
-"_x setunitpos ""up""" foreach units group player
+"_x setunitpos ""up""" forEach units group player
 
 ~2
 
-[Kaplinsky, S1, S2, S3] join grpnull
+[Kaplinsky, S1, S2, S3] join grpNull
 
-? alive Kaplinsky : Kaplinsky domove getmarkerpos "hide"
-? alive S1 : S1 domove getmarkerpos "hide"
-? alive S2 : S2 domove getmarkerpos "hide"
-? alive S3 : S3 domove getmarkerpos "hide"
+? alive Kaplinsky : Kaplinsky doMove getMarkerPos "hide"
+? alive S1 : S1 doMove getMarkerPos "hide"
+? alive S2 : S2 doMove getMarkerPos "hide"
+? alive S3 : S3 doMove getMarkerPos "hide"
 
 toOutlook=true
 
 ~5
 
-savegame
+saveGame
 
 ~20
 
-? alive Kaplinsky : deletevehicle Kaplinsky
-? alive S1 : deletevehicle S1
-? alive S2 : deletevehicle S2
-? alive S3 : deletevehicle S3
+? alive Kaplinsky : deleteVehicle Kaplinsky
+? alive S1 : deleteVehicle S1
+? alive S2 : deleteVehicle S2
+? alive S3 : deleteVehicle S3
 
 
 exit

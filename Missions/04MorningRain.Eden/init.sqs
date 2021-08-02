@@ -1,25 +1,25 @@
-titlecut ["","black in",3]
+titleCut ["","BLACK IN",3]
 
 player action ["NVGOGGLES"]
 
-enableradio false
+enableRadio false
 
 S1 stop true
 S2 stop true
 S3 stop true
-"_x stop true" foreach units ivan
-"_x stop true" foreach units yelena
-"_x stop true" foreach units patrol
+"_x stop true" forEach units ivan
+"_x stop true" forEach units yelena
+"_x stop true" forEach units patrol
 
-"_x setunitpos ""up""" foreach units ivan
+"_x setunitpos ""up""" forEach units ivan
 
 Grenadier1 stop true
 Grenadier2 stop true
 Grenadier3 stop true
 Grenadier4 stop true
-"_x stop true" foreach units specops
+"_x stop true" forEach units specops
 
-"8" objstatus "hidden"
+"8" objStatus "HIDDEN"
 
 toHarbour=false
 toCheckpoint=false
@@ -29,12 +29,12 @@ LamentinPhase1=false
 
 Lemontov exec "invincibility.sqs"
 
-playmusic "Track5"
+playMusic "Track5"
 
 ~1
-enableradio true
+enableRadio true
 ~2
-Lemontov groupradio "04r01"
-enableradio false
+Lemontov groupRadio "04r01"
+enableRadio false
 
 exit

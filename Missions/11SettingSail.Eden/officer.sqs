@@ -1,12 +1,12 @@
-setacctime 1
+setAccTime 1
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-officer setmimic "Angry"
-officer setpos getmarkerpos "officer_split"
+officer setMimic "Angry"
+officer setPos getMarkerPos "officer_split"
 ;=== 18:06:23
 _camera camSetTarget officer
 _camera camSetPos [9687.13,1536.78,1.55]
@@ -17,22 +17,22 @@ _camera camCommit 0
 officer say "11v50"
 ~9
 
-officer domove getmarkerpos "officer_split_away"
+officer doMove getMarkerPos "officer_split_away"
 ~1
 
-"3" objstatus "active"
-"4" objstatus "active"
+"3" objStatus "ACTIVE"
+"4" objStatus "ACTIVE"
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
 ~2
-setacctime 1
+setAccTime 1
 aP say "11v51"
 
-8 fadesound 1
+8 fadeSound 1
 ~8
 
-savegame
+saveGame
 
 exit

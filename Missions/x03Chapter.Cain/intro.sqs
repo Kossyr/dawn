@@ -1,18 +1,18 @@
-titlecut["","black in",3]
+titleCut["","BLACK IN",3]
 
-Guard switchmove "FxStandAtt"
+Guard switchMove "FxStandAtt"
 
-Rashiv setmimic "Normal"
-Yashin setmimic "Normal"
+Rashiv setMimic "Normal"
+Yashin setMimic "Normal"
 
-salute1 dowatch [5313.21,3360.78,6.43]
-salute2 dowatch [5313.21,3360.78,6.43]
+salute1 doWatch [5313.21,3360.78,6.43]
+salute2 doWatch [5313.21,3360.78,6.43]
 
 Lemontov2 stop true
 
-Rashiv dowatch [5262.15,3383.22,0.51]
+Rashiv doWatch [5262.15,3383.22,0.51]
 
-playmusic "Track3"
+playMusic "Track3"
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -25,7 +25,7 @@ _camera camCommit 0
 @camCommitted _camera
 ~3
 
-kneeler switchmove "FxToKneel"
+kneeler switchMove "FxToKneel"
 
 ;=== 16:46:24
 _camera camSetTarget [-40557.82,91748.97,-9032.78]
@@ -40,8 +40,8 @@ _camera camSetPos [5307.92,3353.00,4.76]
 _camera camSetFOV 0.700
 _camera camCommit 8
 ~3
-salute1 playmove "EffectStandSalute"
-salute2 playmove "EffectStandSalute"
+salute1 playMove "EffectStandSalute"
+salute2 playMove "EffectStandSalute"
 @camCommitted _camera
 ~1
 ;=== 19:50:17
@@ -56,7 +56,7 @@ _camera camSetPos [5354.29,3375.50,2.24]
 _camera camSetFOV 0.700
 _camera camCommit 6
 ~1
-soldat1 switchmove "FXCivilArmsAkimboR"
+soldat1 switchMove "FXCivilArmsAkimboR"
 @camCommitted _camera
 ;=== 16:55:10
 _camera camSetTarget [77005.45,72493.93,-9036.45]
@@ -88,15 +88,15 @@ _camera camSetPos [5266.08,3383.76,1.41]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Rashiv switchmove "FxToKneel"
+Rashiv switchMove "FxToKneel"
 ;=== 16:56:19
 _camera camSetTarget [105039.68,9898.58,-1617.20]
 _camera camSetPos [5265.35,3383.72,0.72]
 _camera camSetFOV 0.700
 _camera camCommit 3
-3 fademusic 0.2
+3 fadeMusic 0.2
 @camCommitted _camera
-Rashiv setmimic "Sad"
+Rashiv setMimic "Sad"
 Rashiv say "x03v01"
 ~2
 ;=== 17:00:25
@@ -106,8 +106,8 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~1.5
-Yashin dowatch [5267.22,3383.82,0.89]
-Yashin setmimic "Cynic"
+Yashin doWatch [5267.22,3383.82,0.89]
+Yashin setMimic "Cynic"
 Yashin say "x03v02"
 ;=== 17:02:16
 _camera camSetTarget [104797.52,-6276.30,360.01]
@@ -116,14 +116,14 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~6
-Yashin setmimic "Smile"
+Yashin setMimic "Smile"
 Yashin say "x03v03"
 ~1
-Rashiv setmimic "Normal"
-Rashiv switchmove "FxFromKneel"
+Rashiv setMimic "Normal"
+Rashiv switchMove "FxFromKneel"
 ~1
-Rashiv dowatch [5268.65,3384.16,1.64]
-Yashin dowatch [5267.34,3383.67,1.62]
+Rashiv doWatch [5268.65,3384.16,1.64]
+Yashin doWatch [5267.34,3383.67,1.62]
 ~2.5
 Rashiv say "x03v04"
 ;=== 17:04:44
@@ -142,9 +142,9 @@ _camera camCommit 0
 @camCommitted _camera
 Yashin say "x03v05"
 
-Messenger setpos getmarkerpos "Messenger"
-Messenger domove getmarkerpos "MessengerGo"
-Messenger dowatch [5267.34,3383.67,1.62]
+Messenger setPos getMarkerPos "Messenger"
+Messenger doMove getMarkerPos "MessengerGo"
+Messenger doWatch [5267.34,3383.67,1.62]
 
 ~3
 ;=== 17:35:25
@@ -154,14 +154,14 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Messenger say "x03v06"
-Rashiv dowatch [5269.01,3380.10,1.54]
-Yashin dowatch [5269.01,3380.10,1.54]
-Yashin setmimic "Normal"
-Rashiv setmimic "Normal"
+Rashiv doWatch [5269.01,3380.10,1.54]
+Yashin doWatch [5269.01,3380.10,1.54]
+Yashin setMimic "Normal"
+Rashiv setMimic "Normal"
 @(unitReady Messenger)
-Messenger playmove "effectStandsalute"
+Messenger playMove "effectStandsalute"
 ~1.2
-Messenger playmove "effectstandsaluteend"
+Messenger playMove "effectstandsaluteend"
 ~1.5
 ;=== 17:38:05
 _camera camSetTarget [54434.96,90013.66,-8743.39]
@@ -177,16 +177,16 @@ _camera camSetPos [5267.36,3385.67,1.49]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Messenger dowatch objnull
-Messenger domove getmarkerpos "MessengerOut"
-Rashiv dowatch [5268.65,3384.16,1.64]
-Yashin dowatch [5267.34,3383.67,1.62]
+Messenger doWatch objNull
+Messenger doMove getMarkerPos "MessengerOut"
+Rashiv doWatch [5268.65,3384.16,1.64]
+Yashin doWatch [5267.34,3383.67,1.62]
 ~0.5
 Rashiv say "x03v08"
 ~2
-Yashin dowatch Rashiv
+Yashin doWatch Rashiv
 ~2
-Rashiv assignasdriver uaz
+Rashiv assignAsDriver uaz
 [Rashiv] orderGetIn true
 ;=== 17:44:19
 _camera camSetTarget [6666.11,103245.48,-4971.08]
@@ -195,21 +195,21 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~2
-4 fademusic 0
-titlecut ["","black out",3]
+4 fadeMusic 0
+titleCut ["","BLACK OUT",3]
 ~4
 
-titletext["","plain down"]
+titleText["","PLAIN DOWN"]
 
-titlecut["","black in",2]
+titleCut["","BLACK IN",2]
 
-playmusic "Track5"
-0 fademusic 1
+playMusic "Track5"
+0 fadeMusic 1
 
-Lemontov dowatch [7554.57,4777.94,1.69]
-Volkov dowatch [7554.48,4776.42,1.69]
-Volkov setmimic "Angry"
-Lemontov setmimic "Normal"
+Lemontov doWatch [7554.57,4777.94,1.69]
+Volkov doWatch [7554.48,4776.42,1.69]
+Volkov setMimic "Angry"
+Lemontov setMimic "Normal"
 
 ;=== 18:49:15
 _camera camSetTarget [93463.67,55919.67,-245.90]
@@ -223,8 +223,8 @@ _camera camSetPos [7548.05,4766.60,2.57]
 _camera camSetFOV 0.700
 _camera camCommit 8
 @camCommitted _camera
-titlecut ["","black in",0.5]
-0.5 fademusic 0.2
+titleCut ["","BLACK IN",0.5]
+0.5 fadeMusic 0.2
 ;=== 18:51:16
 _camera camSetTarget [61550.48,88908.37,-2497.76]
 _camera camSetPos [7554.31,4777.32,1.62]
@@ -245,9 +245,9 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~1
-Lemontov dowatch [7554.52,4777.34,0.72]
+Lemontov doWatch [7554.52,4777.34,0.72]
 ~0.8
-Lemontov setmimic "surprised"
+Lemontov setMimic "surprised"
 ~1.2
 ;=== 20:05:20
 _camera camSetTarget [4648.63,102606.88,-20491.74]
@@ -270,7 +270,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Lemontov say "x03v10"
-Lemontov dowatch [7554.57,4777.94,1.69]
+Lemontov doWatch [7554.57,4777.94,1.69]
 ~1.5
 ;=== 19:04:28
 _camera camSetTarget [42722.52,98141.34,-6755.54]
@@ -300,7 +300,7 @@ _camera camSetPos [7553.93,4778.59,1.53]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Lemontov setmimic "normal"
+Lemontov setMimic "normal"
 Lemontov say "x03v13"
 ~2
 ;=== 19:06:23
@@ -362,10 +362,10 @@ _camera camSetPos [7553.94,4778.35,1.59]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Lemontov playmove "EffectStandSalute"
+Lemontov playMove "EffectStandSalute"
 Lemontov say "x03v20"
 ~1.5
-Lemontov playmove "EffectStandSaluteEnd"
+Lemontov playMove "EffectStandSaluteEnd"
 ~3.5
 ;=== 19:15:48
 _camera camSetTarget [11358.93,104624.71,-3982.34]
@@ -388,9 +388,9 @@ _camera camSetPos [7554.47,4776.86,1.59]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Lemontov setmimic "surprised"
+Lemontov setMimic "surprised"
 ~1
-Lemontov setmimic "Normal"
+Lemontov setMimic "Normal"
 ~1
 ;=== 19:18:03
 _camera camSetTarget [10242.81,104700.31,2876.84]
@@ -406,28 +406,28 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Rashiv2 setpos getmarkerpos "RashivGo"
-uaz2 setpos getmarkerpos "uazGo"
+Rashiv2 setPos getMarkerPos "RashivGo"
+uaz2 setPos getMarkerPos "uazGo"
 
-2 fademusic 0
+2 fadeMusic 0
 ~0.5
-Lemontov playmove "effectStandsalute"
+Lemontov playMove "effectStandsalute"
 ~1
-Lemontov playmove "effectstandsaluteend"
+Lemontov playMove "effectstandsaluteend"
 ~0.5
-Lemontov dowatch [7552.49,4773.23,1.59]
+Lemontov doWatch [7552.49,4773.23,1.59]
 ~1
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 ~0.5
 
-playmusic ["Track7", 84]
-1 fademusic 0.5
+playMusic ["Track7", 84]
+1 fadeMusic 0.5
 
-deletevehicle Lemontov
-Lemontov2 setpos getmarkerpos "LemontovTeleport"
+deleteVehicle Lemontov
+Lemontov2 setPos getMarkerPos "LemontovTeleport"
 Lemontov2 stop false
-Lemontov2 dowatch [7552.36,4765.03,1.22]
-titlecut["","black in",0.5]
+Lemontov2 doWatch [7552.36,4765.03,1.22]
+titleCut["","BLACK IN",0.5]
 ;=== 19:31:05
 _camera camSetTarget [7551.73,104774.45,22.44]
 _camera camSetPos [7552.43,4770.50,1.31]
@@ -440,11 +440,11 @@ _camera camSetPos [7552.43,4765.46,1.31]
 _camera camSetFOV 0.700
 _camera camCommit 4
 ~0.5
-Lemontov2 setmimic "Surprised"
+Lemontov2 setMimic "Surprised"
 Lemontov2 say "x03v23"
 @camCommitted _camera
-Lemontov2 setmimic "Normal"
-Rashiv2 setmimic "Smile"
+Lemontov2 setMimic "Normal"
+Rashiv2 setMimic "Smile"
 ;=== 19:35:57
 _camera camSetTarget [42565.41,-88597.55,-7527.78]
 _camera camSetPos [7551.54,4767.53,1.33]
@@ -452,10 +452,10 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Rashiv2 say "x03v24"
-Lemontov2 dowatch [7552.30,4764.03,1.67]
-Rashiv2 dowatch [7552.42,4766.27,1.63]
+Lemontov2 doWatch [7552.30,4764.03,1.67]
+Rashiv2 doWatch [7552.42,4766.27,1.63]
 ~2
-Lemontov2 setpos getmarkerpos "LemontovGo"
+Lemontov2 setPos getMarkerPos "LemontovGo"
 ;=== 19:41:08
 _camera camSetTarget [85578.39,66090.06,-12273.34]
 _camera camSetPos [7551.94,4765.44,1.57]
@@ -464,7 +464,7 @@ _camera camCommit 0
 @camCommitted _camera
 Lemontov2 say "x03v25"
 ~3.5
-Rashiv2 setmimic "Surprised"
+Rashiv2 setMimic "Surprised"
 ;=== 19:38:18
 _camera camSetTarget [28020.51,-92673.27,-9299.70]
 _camera camSetPos [7552.22,4764.69,1.60]
@@ -481,14 +481,14 @@ _camera camCommit 0
 @camCommitted _camera
 Lemontov2 say "x03v27"
 ~4
-titlecut ["","black out",5]
+titleCut ["","BLACK OUT",5]
 ~3
-3 fademusic 1
-titletext["","plain down"]
+3 fadeMusic 1
+titleText["","PLAIN DOWN"]
 ~3
-titletext [localize "STRM_CHAPTER_TEXT","PLAIN"]
+titleText [localize "STRM_CHAPTER_TEXT","PLAIN"]
 ~6
-2 fademusic 0
+2 fadeMusic 0
 ~2
 end=true
 

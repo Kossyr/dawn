@@ -1,17 +1,17 @@
-titlecut["","black in",3]
+titleCut["","BLACK IN",3]
 
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-playmusic "track5"
+playMusic "track5"
 
-Lemontov setmimic "Angry"
-s1 setmimic "normal"
-s2 setmimic "normal"
-s1 dowatch [6356.90,6595.33,1.46]
+Lemontov setMimic "Angry"
+s1 setMimic "normal"
+s2 setMimic "normal"
+s1 doWatch [6356.90,6595.33,1.46]
 
-s2 switchmove "TakeFlag"
+s2 switchMove "TakeFlag"
 
 ;=== 12:30:48
 _camera camSetTarget [-60906.37,-66465.79,12193.62]
@@ -28,8 +28,8 @@ _camera camSetFOV 0.700
 _camera camCommit 5
 
 
-s2 switchmove "TakeFlagToCombat"
-3 fademusic 0.5
+s2 switchMove "TakeFlagToCombat"
+3 fadeMusic 0.5
 ~3
 
 Lemontov say "19v01"
@@ -53,7 +53,7 @@ _camera camSetFOV 0.700
 _camera camCommit 4.5
 @camCommitted _camera
 
-s2 switchmove "TakeFlagToCombat"
+s2 switchMove "TakeFlagToCombat"
 
 ;=== 12:34:19
 _camera camSetTarget [28642.98,-90233.48,-10820.92]
@@ -62,9 +62,9 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-s2 playmove "TakeFlagToCombat"
+s2 playMove "TakeFlagToCombat"
 
-s2 dowatch [6356.90,6595.33,1.46]
+s2 doWatch [6356.90,6595.33,1.46]
 
 s1 say "19v02"
 
@@ -88,12 +88,12 @@ _camera camCommit 12
 
 ~4
 
-Lemontov setmimic "Angry"
+Lemontov setMimic "Angry"
 
 @camCommitted _camera
-3 fademusic 0
+3 fadeMusic 0
 
-titlecut["", "black out", 3]
+titleCut["", "BLACK OUT", 3]
 
 ~3
 

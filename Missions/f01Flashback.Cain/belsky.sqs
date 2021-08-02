@@ -1,10 +1,10 @@
-setacctime 1
+setAccTime 1
 
 cinema=true
 canMeetBelsky=false
 
 
-titlecut["","black out",0.5]
+titleCut["","BLACK OUT",0.5]
 ~0.5
 
 _camera = "camera" camcreate [0,0,0]
@@ -12,37 +12,37 @@ _camera cameraeffect ["internal","back"]
 
 ? (aP == vehicle aP) : goto "belskyCinema" ;
 
-vehicle aP setpos getmarkerpos "VehicleAway"
-vehicle aP setdir 0
+vehicle aP setPos getMarkerPos "VehicleAway"
+vehicle aP setDir 0
 
 ~0.5
 
-vehicle aP setpos getmarkerpos "CinemaBelskyVehicle"
-vehicle aP setdir 35
+vehicle aP setPos getMarkerPos "CinemaBelskyVehicle"
+vehicle aP setDir 35
 
 aP action ["EJECT"]
-UnassignVehicle aP
+unassignVehicle aP
 
 #belskyCinema
 
 aP action ["WEAPONONBACK"]
 
-aP setpos getmarkerpos "PlayerAway"
-LemontovDouble setpos getmarkerpos "CinemaBelskyPlayer"
-Belsky setpos getmarkerpos "CinemaBelsky"
-Belsky dowatch [9726.95,9464.66,1.68]
+aP setPos getMarkerPos "PlayerAway"
+LemontovDouble setPos getMarkerPos "CinemaBelskyPlayer"
+Belsky setPos getMarkerPos "CinemaBelsky"
+Belsky doWatch [9726.95,9464.66,1.68]
 
-LemontovDouble setdir 270
-LemontovDouble dowatch [9725.03,9464.75,1.67]
+LemontovDouble setDir 270
+LemontovDouble doWatch [9725.03,9464.75,1.67]
 
-LemontovDouble setmimic "angry"
-Belsky setmimic "normal"
+LemontovDouble setMimic "angry"
+Belsky setMimic "normal"
 
 ~0.5
 
-setacctime 1
+setAccTime 1
 
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 
 ? metBelsky : goto "reenter" ;
 ? not metBelsky : goto "introduction"
@@ -81,9 +81,9 @@ _camera camSetPos [9725.72,9464.74,1.59]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Belsky setmimic "surprised"
+Belsky setMimic "surprised"
 ~2
-Belsky setmimic "normal"
+Belsky setMimic "normal"
 ~4
 
 

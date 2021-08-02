@@ -1,4 +1,4 @@
-titlecut["","black in",2]
+titleCut["","BLACK IN",2]
 
 ; SAINT PHILLIPPE CINEMA
 
@@ -7,21 +7,21 @@ _camera cameraeffect ["internal","back"]
 
 bmpReady=false
 
-playmusic "Track8"
+playMusic "Track8"
 
-"_x stop true" foreach units GroupBeach1
-"_x stop true" foreach units GroupBeach2
-"_x stop true" foreach units GroupBeach3
+"_x stop true" forEach units GroupBeach1
+"_x stop true" forEach units GroupBeach2
+"_x stop true" forEach units GroupBeach3
 
-"_x stop true" foreach units SoldiersE
-"_x stop true" foreach units SoldiersW
+"_x stop true" forEach units SoldiersE
+"_x stop true" forEach units SoldiersW
 BMPE stop true
 BMPW stop true
 
-"_x stop true" foreach units RashivGroup
+"_x stop true" forEach units RashivGroup
 
-C2 dowatch [4605.04,10733.47,1.70]
-C1 dowatch [4605.84,10733.20,1.70]
+C2 doWatch [4605.04,10733.47,1.70]
+C1 doWatch [4605.84,10733.20,1.70]
 
 ;=== 19:09:54
 _camera camSetTarget [13211.24,110228.94,19.27]
@@ -32,10 +32,10 @@ _camera camCommit 0
 
 ~1
 
-C1 playmove "EffectStandTalk"
-C2 switchmove "FXInHand"
-H2 switchmove "effectstandsitdown"
-H3 switchmove "FXToKneel"
+C1 playMove "EffectStandTalk"
+C2 switchMove "FXInHand"
+H2 switchMove "effectstandsitdown"
+H3 switchMove "FXToKneel"
 
 ~3
 
@@ -110,18 +110,18 @@ _camera camSetPos [4376.37,10892.42,1.11]
 _camera camSetFOV 0.700
 _camera camCommit 5
 @camCommitted _camera
-2 fademusic 0
+2 fadeMusic 0
 ~1.5
 
-titlecut["","white out",0.5]
+titleCut["","WHITE OUT",0.5]
 ~0.5
 
-playmusic "Track1"
-4 fademusic 1
+playMusic "Track1"
+4 fadeMusic 1
 
 ; BEACH CINEMA
 
-titlecut["","white in",0.5]
+titleCut["","WHITE IN",0.5]
 
 beachGo=true
 
@@ -149,7 +149,7 @@ _camera camCommit 12
 
 		;=== 17:26:18
 		_camera camSetTarget _who
-		_camera camSetPos [(getpos _who select 0) + _dx * sin (getdir _who) - _dy * cos (getdir _who), (getpos _who select 1) + _dx * cos (getdir _who) + _dy * sin (getdir _who), (getpos _who select 2)+_dz]
+		_camera camSetPos [(getPos _who select 0) + _dx * sin (getdir _who) - _dy * cos (getdir _who), (getPos _who select 1) + _dx * cos (getdir _who) + _dy * sin (getdir _who), (getPos _who select 2)+_dz]
 		_camera camSetFOV 0.700
 		_camera camCommit 0
 		@camCommitted _camera
@@ -204,8 +204,8 @@ _camera camCommit 0
 
 
 ~6
-1 fademusic 0
-titlecut["","white out",1]
+1 fadeMusic 0
+titleCut["","WHITE OUT",1]
 ~1
 
 deleteVehicle driver BMP1
@@ -223,13 +223,13 @@ deleteVehicle gunner BMP3
 deleteVehicle commander BMP3
 deleteVehicle BMP3
 
-"deleteVehicle _x" foreach units BeachGroup1
-"deleteVehicle _x" foreach units BeachGroup2
-"deleteVehicle _x" foreach units BeachGroup3
+"deleteVehicle _x" forEach units BeachGroup1
+"deleteVehicle _x" forEach units BeachGroup2
+"deleteVehicle _x" forEach units BeachGroup3
 
 ; HARBOUR CINEMA
 
-titlecut["","white in",1]
+titleCut["","WHITE IN",1]
 
 
 ;=== 21:20:09
@@ -259,25 +259,25 @@ _camera camCommit 5
 
 harbourBombs=true
 
-Ship1 setdammage 1
+Ship1 setDammage 1
 "Shell105" camCreate getMarkerPos "Bomb_6"
 ~0.5
-Ship2 setdammage 1
+Ship2 setDammage 1
 "Shell105" camCreate getMarkerPos "Bomb_7"
 ~0.5
-H1 setpos getmarkerpos "Harbour"
-H1 setdir 165
-H1 switchmove "FXDismay"
+H1 setPos getMarkerPos "Harbour"
+H1 setDir 165
+H1 switchMove "FXDismay"
 
-BMPE setpos getmarkerpos "BMPE"
-BMPW setpos getmarkerpos "BMPW"
-"_x setpos getmarkerpos ""SoldiersE""" foreach units SoldiersE
-"_x setpos getmarkerpos ""SoldiersW""" foreach units SoldiersW
+BMPE setPos getMarkerPos "BMPE"
+BMPW setPos getMarkerPos "BMPW"
+"_x setPos getMarkerPos ""SoldiersE""" forEach units SoldiersE
+"_x setPos getMarkerPos ""SoldiersW""" forEach units SoldiersW
 
 BMPE stop false
 BMPW stop false
-"_x stop false" foreach units SoldiersE
-"_x stop false" foreach units SoldiersW
+"_x stop false" forEach units SoldiersE
+"_x stop false" forEach units SoldiersW
 
 
 ;=== 21:30:44
@@ -287,20 +287,20 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-playmusic ["Track1", 142]
-1.5 fademusic 0.2
+playMusic ["Track1", 142]
+1.5 fadeMusic 0.2
 ~1.5
 harbourEscape=true
 alarm=true
-1 fademusic 1
+1 fadeMusic 1
 "Shell105" camCreate getMarkerPos "Bomb_8"
 ~0.5
-H1 setdammage 1
-MachineGun setdammage 1
+H1 setDammage 1
+MachineGun setDammage 1
 "Shell105" camCreate getMarkerPos "Bomb_9"
 ~0.2
-H2 setdammage 1
-H3 setdammage 1
+H2 setDammage 1
+H3 setDammage 1
 "Shell105" camCreate getMarkerPos "Bomb_10"
 
 
@@ -345,12 +345,12 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Yashin setpos getmarkerpos "yashin"
-Rashiv setpos getmarkerpos "Rashiv"
+Yashin setPos getMarkerPos "yashin"
+Rashiv setPos getMarkerPos "Rashiv"
 
-"_x setpos getmarkerpos ""RashivGroup""" foreach units RashivGroup
+"_x setPos getMarkerPos ""RashivGroup""" forEach units RashivGroup
 
-"_x stop false" foreach units RashivGroup
+"_x stop false" forEach units RashivGroup
 
 
 ;=== 21:57:21
@@ -362,7 +362,7 @@ _camera camCommit 7
 
 rashivGo=true
 
-titlecut["","white in",0.5]
+titleCut["","WHITE IN",0.5]
 
 ;=== 22:11:32
 _camera camSetTarget [-49916.64,-73523.35,836.85]
@@ -379,12 +379,12 @@ _camera camSetFOV 0.700
 _camera camCommit 5
 @camCommitted _camera
 
-Rashiv switchmove "CommandForward"
+Rashiv switchMove "CommandForward"
 ~1
 
-titlecut ["","black out",3]
-2.5 fadesound 0
-2.5 fademusic 0
+titleCut ["","BLACK OUT",3]
+2.5 fadeSound 0
+2.5 fadeMusic 0
 ~2.5
 end=true
 player cameraEffect ["terminate","back"]

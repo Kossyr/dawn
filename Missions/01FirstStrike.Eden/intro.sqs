@@ -1,13 +1,13 @@
-titlecut["","black in",4]
+titleCut["","BLACK IN",4]
 
-playmusic "Track8"
+playMusic "Track8"
 
-0 fadesound 0
+0 fadeSound 0
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-fisherman setmimic "smile"
+fisherman setMimic "smile"
 
 ;=== 14:33:31
 _camera camSetTarget [107284.90,34408.16,1.87]
@@ -21,7 +21,7 @@ _camera camSetPos [10749.27,8543.77,4.18]
 _camera camSetFOV 0.700
 _camera camCommit 10
 @camCommitted _camera
-fisherman switchmove "FxStandHip"
+fisherman switchMove "FxStandHip"
 ;=== 14:40:01
 _camera camSetTarget [54247.33,98474.00,4668.75]
 _camera camSetPos [10756.37,8547.15,1.65]
@@ -45,10 +45,10 @@ _camera camSetTarget [88783.23,-52633.04,12983.24]
 _camera camSetPos [10754.68,8549.11,1.00]
 _camera camSetFOV 0.700
 _camera camCommit 6
-6 fadesound 1
+6 fadeSound 1
 ~1
-fisherman dowatch [10754.36,8543.29,2.14]
-fisherman setmimic "surprised"
+fisherman doWatch [10754.36,8543.29,2.14]
+fisherman setMimic "surprised"
 @camCommitted _camera
 ;=== 14:34:49
 _camera camSetTarget [-64077.90,-56493.04,12983.18]
@@ -62,8 +62,8 @@ _camera camSetPos [10759.94,8548.84,0.85]
 _camera camSetFOV 0.700
 _camera camCommit 12
 ~9
-3 fademusic 0
-titlecut["","black out",3]
+3 fadeMusic 0
+titleCut["","BLACK OUT",3]
 @camCommitted _camera
 end=true
 player cameraEffect ["terminate","back"]

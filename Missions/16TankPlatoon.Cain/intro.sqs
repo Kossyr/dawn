@@ -1,8 +1,8 @@
 
-titlecut["","black in", 3]
+titleCut["","BLACK IN", 3]
 
-Frolov setmimic "normal"
-Kukushkin setmimic "normal"
+Frolov setMimic "normal"
+Kukushkin setMimic "normal"
 playMusic "track5"
 
 
@@ -24,10 +24,10 @@ _camera camSetPos [7750.25,8091.42,7.04]
 _camera camSetFOV 0.700
 _camera camCommit 6
 ~0.5
-crewer1 switchmove "FxToKneel"
-crewer2 switchmove "FxToHand"
+crewer1 switchMove "FxToKneel"
+crewer2 switchMove "FxToHand"
 @camCommitted _camera
-titlecut["","black in",0.5]
+titleCut["","BLACK IN",0.5]
 ;=== 15:37:24
 _camera camSetTarget [107289.85,10741.92,-8569.86]
 _camera camSetPos [7720.26,8096.11,1.51]
@@ -61,13 +61,13 @@ _camera camSetFOV 0.700
 _camera camCommit 5
 @camCommitted _camera
 
-0 fademusic 0.2
+0 fadeMusic 0.2
 Kukushkin stop true;
-Kukushkin setpos getmarkerpos "Kukushkin";
-Kukushkin setdir 305;
-Kukushkin dowatch [7754.27,8100.61,1.67];
+Kukushkin setPos getMarkerPos "Kukushkin";
+Kukushkin setDir 305;
+Kukushkin doWatch [7754.27,8100.61,1.67];
 Kukushkin stop false;
-Frolov dowatch [7756.32,8099.30,1.64];
+Frolov doWatch [7756.32,8099.30,1.64];
 
 ;=== 15:43:15
 _camera camSetTarget [89066.30,-48436.92,-13548.68]
@@ -76,9 +76,9 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Kukushkin say "16v01"
-Kukushkin playmove "EffectStandSalute"
+Kukushkin playMove "EffectStandSalute"
 ~3
-Kukushkin playmove "EffectStandSaluteEnd"
+Kukushkin playMove "EffectStandSaluteEnd"
 ~2
 ;=== 15:44:39
 _camera camSetTarget [-63971.50,76896.18,-10728.15]
@@ -86,7 +86,7 @@ _camera camSetPos [7756.89,8098.27,1.62]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Kukushkin setpos getmarkerpos "Kukushkin";
+Kukushkin setPos getMarkerPos "Kukushkin";
 Frolov say "16v02"
 ~3
 ;=== 15:45:15
@@ -105,9 +105,9 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Kukushkin say "16v04"
-Kukushkin setmimic "surprised"
+Kukushkin setMimic "surprised"
 ~4
-Frolov setmimic "angry"
+Frolov setMimic "angry"
 Frolov say "16v05"
 ;=== 15:46:28
 _camera camSetTarget [-85034.32,42704.42,-13548.58]
@@ -128,10 +128,10 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~2
-Frolov setmimic "normal"
+Frolov setMimic "normal"
 Frolov say "16v06"
 ~7
-Frolov setmimic "angry"
+Frolov setMimic "angry"
 Frolov say "16v07"
 ~5
 ;=== 15:49:20
@@ -141,13 +141,13 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 Kukushkin say "16v08"
-Kukushkin setmimic "normal"
-Kukushkin playmove "EffectStandSalute"
+Kukushkin setMimic "normal"
+Kukushkin playMove "EffectStandSalute"
 ~1
-Kukushkin playmove "EffectStandSaluteEnd"
+Kukushkin playMove "EffectStandSaluteEnd"
 ~2
-titlecut["","black out",2]
-2 fademusic 0
+titleCut["","BLACK OUT",2]
+2 fadeMusic 0
 ~2
 end=true
 

@@ -52,7 +52,7 @@ class Mission
 					rank="MAJOR";
 					skill=1.000000;
 					text="aP";
-					init="this setbehaviour ""safe""; this setidentity ""Lemontov""; this setgroupid [""delta"",""groupcolor0""]; removeallweapons this; this addweapon ""binocular""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addmagazine ""SVDDragunov""; this addweapon ""SVDDragunov""; this addmagazine ""tokarevmag""; this addmagazine ""tokarevmag""; this addmagazine ""tokarevmag""; this addmagazine ""tokarevmag""; this addweapon ""tokarev""; this addweapon ""nvgoggles""";
+					init="this setBehaviour ""SAFE""; this setIdentity ""Lemontov""; this setGroupId [""delta"",""groupcolor0""]; removeAllWeapons this; this addWeapon ""binocular""; this addMagazine ""SVDDragunov""; this addMagazine ""SVDDragunov""; this addMagazine ""SVDDragunov""; this addMagazine ""SVDDragunov""; this addMagazine ""SVDDragunov""; this addMagazine ""SVDDragunov""; this addMagazine ""SVDDragunov""; this addMagazine ""SVDDragunov""; this addMagazine ""SVDDragunov""; this addMagazine ""SVDDragunov""; this addWeapon ""SVDDragunov""; this addMagazine ""tokarevmag""; this addMagazine ""tokarevmag""; this addMagazine ""tokarevmag""; this addMagazine ""tokarevmag""; this addWeapon ""tokarev""; this addWeapon ""nvgoggles""";
 				};
 			};
 			class Waypoints
@@ -109,7 +109,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=1.000000;
 					text="S1";
-					init="this setidentity ""Kaplinsky""; spetsnazGroup = group this; group this allowfleeing 0";
+					init="this setIdentity ""Kaplinsky""; spetsnazGroup = group this; group this allowFleeing 0";
 				};
 			};
 			class Waypoints
@@ -251,7 +251,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=1.000000;
 					text="R1";
-					init="this setidentity ""Astier""; rebelGroup = group this; group this allowfleeing 0";
+					init="this setIdentity ""Astier""; rebelGroup = group this; group this allowFleeing 0";
 				};
 			};
 			class Waypoints
@@ -394,7 +394,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=1.000000;
 					text="ivanGroup1";
-					init="this setgroupid [""kilo"",""groupcolor1""]; group this allowfleeing 0; ivanInfantry1 = group this";
+					init="this setGroupId [""kilo"",""groupcolor1""]; group this allowFleeing 0; ivanInfantry1 = group this";
 				};
 				class Item1
 				{
@@ -601,7 +601,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=1.000000;
 					text="ivanGroup2";
-					init="this setgroupid [""kilo"",""groupcolor2""]; group this allowfleeing 0; ivanInfantry2 = group this";
+					init="this setGroupId [""kilo"",""groupcolor2""]; group this allowFleeing 0; ivanInfantry2 = group this";
 				};
 				class Item1
 				{
@@ -806,7 +806,7 @@ class Mission
 					leader=1;
 					skill=1.000000;
 					text="ivanCrew1";
-					init="this setgroupid [""kilo"",""groupcolor3""]; group this allowfleeing 0; ivanBmpCrew = group this";
+					init="this setGroupId [""kilo"",""groupcolor3""]; group this allowFleeing 0; ivanBmpCrew = group this";
 				};
 				class Item1
 				{
@@ -946,7 +946,7 @@ class Mission
 					vehicle="SoldierWB";
 					leader=1;
 					skill=0.600000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -1007,7 +1007,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="AstierRadio";
-					init="this setgroupid [""alpha"",""groupcolor0""]";
+					init="this setGroupId [""alpha"",""groupcolor0""]";
 				};
 			};
 		};
@@ -1027,7 +1027,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="KaplinskyRadio";
-					init="this setgroupid [""zulu"",""groupcolor0""]";
+					init="this setGroupId [""zulu"",""groupcolor0""]";
 				};
 			};
 		};
@@ -1047,7 +1047,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="IvanRadio";
-					init="this setgroupid [""kilo"",""groupcolor0""]";
+					init="this setGroupId [""kilo"",""groupcolor0""]";
 				};
 			};
 		};
@@ -1067,7 +1067,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="Valet";
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 			class Waypoints
@@ -1118,7 +1118,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.600000;
 					text="LemontovMontignac";
-					init="this setidentity ""Lemontov""; this setbehaviour ""safe""; this moveindriver CarMontignac";
+					init="this setIdentity ""Lemontov""; this setBehaviour ""SAFE""; this moveInDriver CarMontignac";
 				};
 			};
 			class Waypoints
@@ -1192,7 +1192,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.600000;
 					text="R6";
-					init="this setbehaviour ""Safe""; this setidentity ""Vaillancourt""";
+					init="this setBehaviour ""SAFE""; this setIdentity ""Vaillancourt""";
 				};
 			};
 		};
@@ -1213,7 +1213,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.700000;
 					text="R5";
-					init="this setbehaviour ""Safe""; this setidentity ""LaCroix""";
+					init="this setBehaviour ""SAFE""; this setIdentity ""LaCroix""";
 				};
 			};
 		};
@@ -1234,7 +1234,7 @@ class Mission
 					rank="LIEUTNANT";
 					skill=0.900000;
 					text="R2";
-					init="this setbehaviour ""Safe""; this setidentity ""Lebas""";
+					init="this setBehaviour ""SAFE""; this setIdentity ""Lebas""";
 				};
 			};
 		};
@@ -1254,7 +1254,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="R9";
-					init="this setbehaviour ""Safe""; this setidentity ""Toussaint""";
+					init="this setBehaviour ""SAFE""; this setIdentity ""Toussaint""";
 				};
 			};
 		};
@@ -1275,7 +1275,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.700000;
 					text="R4";
-					init="this setbehaviour ""Safe""; this setidentity ""Rochefort""";
+					init="this setBehaviour ""SAFE""; this setIdentity ""Rochefort""";
 				};
 			};
 		};
@@ -1296,7 +1296,7 @@ class Mission
 					rank="LIEUTNANT";
 					skill=0.900000;
 					text="R3";
-					init="this setbehaviour ""Safe""; this setidentity ""Rozier""";
+					init="this setBehaviour ""SAFE""; this setIdentity ""Rozier""";
 				};
 			};
 		};
@@ -1317,7 +1317,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.600000;
 					text="R8";
-					init="this setbehaviour ""Safe""; this setidentity ""Batteux""";
+					init="this setBehaviour ""SAFE""; this setIdentity ""Batteux""";
 				};
 			};
 		};
@@ -1338,7 +1338,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.600000;
 					text="R7";
-					init="this setbehaviour ""Safe""; this setidentity ""Saunier""";
+					init="this setBehaviour ""SAFE""; this setIdentity ""Saunier""";
 				};
 			};
 		};
@@ -1359,7 +1359,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1.000000;
 					text="S5";
-					init="this setbehaviour ""Safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -1379,7 +1379,7 @@ class Mission
 					leader=1;
 					skill=0.700000;
 					text="S9";
-					init="this setbehaviour ""Safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -1400,7 +1400,7 @@ class Mission
 					rank="LIEUTNANT";
 					skill=1.000000;
 					text="S2";
-					init="this setbehaviour ""Safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -1421,7 +1421,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1.000000;
 					text="S4";
-					init="this setbehaviour ""Safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -1442,7 +1442,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.700000;
 					text="S8";
-					init="this setbehaviour ""Safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -1463,7 +1463,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.700000;
 					text="S7";
-					init="this setbehaviour ""Safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -1484,7 +1484,7 @@ class Mission
 					rank="LIEUTNANT";
 					skill=1.000000;
 					text="S3";
-					init="this setbehaviour ""Safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -1505,7 +1505,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1.000000;
 					text="S6";
-					init="this setbehaviour ""Safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -1526,7 +1526,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=1.000000;
 					text="AstierMontignac";
-					init="this setidentity ""Astier""; this setbehaviour ""safe""; this removeweapon ""binocular""";
+					init="this setIdentity ""Astier""; this setBehaviour ""SAFE""; this removeWeapon ""binocular""";
 				};
 			};
 		};
@@ -1547,7 +1547,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=1.000000;
 					text="KaplinskyMontignac";
-					init="this setidentity ""Kaplinsky""; this setbehaviour ""safe""";
+					init="this setIdentity ""Kaplinsky""; this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -1567,7 +1567,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="M1";
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -1587,7 +1587,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="M2";
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -1607,7 +1607,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="M3";
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -1627,7 +1627,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="M4";
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -1647,7 +1647,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="M5";
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -1668,7 +1668,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.600000;
 					text="LemontovMontignac2";
-					init="this setidentity ""Lemontov""; this setbehaviour ""safe""; this moveindriver CarMontignac";
+					init="this setIdentity ""Lemontov""; this setBehaviour ""SAFE""; this moveInDriver CarMontignac";
 				};
 			};
 		};
@@ -1737,7 +1737,7 @@ class Mission
 					vehicle="OfficerW";
 					leader=1;
 					skill=0.600000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -1807,7 +1807,7 @@ class Mission
 					vehicle="SoldierWMG";
 					leader=1;
 					skill=0.600000;
-					init="this allowfleeing 0";
+					init="this allowFleeing 0";
 				};
 			};
 			class Waypoints
@@ -1870,7 +1870,7 @@ class Mission
 					vehicle="SoldierWB";
 					leader=1;
 					skill=0.600000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -1972,7 +1972,7 @@ class Mission
 					vehicle="SoldierWMG";
 					leader=1;
 					skill=0.600000;
-					init="this allowfleeing 0";
+					init="this allowFleeing 0";
 				};
 			};
 			class Waypoints
@@ -2035,7 +2035,7 @@ class Mission
 					vehicle="SoldierWG";
 					leader=1;
 					skill=0.600000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -2101,7 +2101,7 @@ class Mission
 					rank="MAJOR";
 					skill=1.000000;
 					text="LemontovForest";
-					init="this setidentity ""Lemontov""; this setbehaviour ""careless""; this setcaptive true";
+					init="this setIdentity ""Lemontov""; this setBehaviour ""CARELESS""; this setCaptive true";
 				};
 			};
 		};
@@ -2122,7 +2122,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=1.000000;
 					text="KaplinskyForest";
-					init="this setidentity ""Kaplinsky""; this setbehaviour ""careless""; this setcaptive true; removeallweapons this; this addmagazine ""tokarevmag""; this addweapon ""tokarev""; this addweapon ""ak74su""";
+					init="this setIdentity ""Kaplinsky""; this setBehaviour ""CARELESS""; this setCaptive true; removeAllWeapons this; this addMagazine ""tokarevmag""; this addWeapon ""tokarev""; this addWeapon ""ak74su""";
 				};
 			};
 		};
@@ -2227,7 +2227,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.700000;
 					text="AstierForest";
-					init="this setidentity ""Astier""; this setbehaviour ""safe""";
+					init="this setIdentity ""Astier""; this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -2248,7 +2248,7 @@ class Mission
 					rank="LIEUTNANT";
 					skill=0.600000;
 					text="PoincareForest";
-					init="this setidentity ""Poincare""; this setbehaviour ""safe""";
+					init="this setIdentity ""Poincare""; this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -2269,7 +2269,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.400000;
 					text="F5";
-					init="this setbehaviour ""safe""; this setidentity ""Rozier""";
+					init="this setBehaviour ""SAFE""; this setIdentity ""Rozier""";
 				};
 			};
 		};
@@ -2290,7 +2290,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.700000;
 					text="F6";
-					init="this setbehaviour ""safe""; this setidentity ""Vaillancourt""";
+					init="this setBehaviour ""SAFE""; this setIdentity ""Vaillancourt""";
 				};
 			};
 		};
@@ -2311,7 +2311,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.413519;
 					text="F7";
-					init="this setbehaviour ""safe""; this setidentity ""LaCroix""";
+					init="this setBehaviour ""SAFE""; this setIdentity ""LaCroix""";
 				};
 			};
 		};
@@ -2332,7 +2332,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.400000;
 					text="F10";
-					init="this setbehaviour ""safe""; this setidentity ""Saunier""";
+					init="this setBehaviour ""SAFE""; this setIdentity ""Saunier""";
 				};
 			};
 		};
@@ -2353,7 +2353,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.413519;
 					text="F8";
-					init="this setbehaviour ""safe""; this setidentity ""Batteux""";
+					init="this setBehaviour ""SAFE""; this setIdentity ""Batteux""";
 				};
 			};
 		};
@@ -2374,7 +2374,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.400000;
 					text="F9";
-					init="this setbehaviour ""safe""; this setidentity ""Lebas""";
+					init="this setBehaviour ""SAFE""; this setIdentity ""Lebas""";
 				};
 			};
 		};
@@ -2395,7 +2395,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.600000;
 					text="LemontovForestRunner";
-					init="this setidentity ""Lemontov""";
+					init="this setIdentity ""Lemontov""";
 				};
 			};
 		};
@@ -2416,7 +2416,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.600000;
 					text="AstierForestRunner";
-					init="this setidentity ""Astier""";
+					init="this setIdentity ""Astier""";
 				};
 			};
 		};
@@ -2437,7 +2437,7 @@ class Mission
 					rank="LIEUTNANT";
 					skill=0.600000;
 					text="PoincareForestRunner";
-					init="this setidentity ""Poincare""";
+					init="this setIdentity ""Poincare""";
 				};
 			};
 		};
@@ -2456,7 +2456,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="LemontovBase";
-					init="this setidentity ""Lemontov""; this setbehaviour ""safe""";
+					init="this setIdentity ""Lemontov""; this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -2476,7 +2476,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="B9";
-					init="this setidentity ""Rochefort""";
+					init="this setIdentity ""Rochefort""";
 				};
 			};
 		};
@@ -2496,7 +2496,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="B6";
-					init="this setidentity ""Batteux""";
+					init="this setIdentity ""Batteux""";
 				};
 			};
 		};
@@ -2516,7 +2516,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="AstierBase";
-					init="this setidentity ""Astier""; this setbehaviour ""safe""";
+					init="this setIdentity ""Astier""; this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -2536,7 +2536,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="PoincareBase";
-					init="this setidentity ""Poincare""; this setbehaviour ""safe""; removeallweapons this";
+					init="this setIdentity ""Poincare""; this setBehaviour ""SAFE""; removeAllWeapons this";
 				};
 			};
 		};
@@ -2556,7 +2556,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="KaplinskyBase";
-					init="this setidentity ""Kaplinsky""; this setbehaviour ""safe""";
+					init="this setIdentity ""Kaplinsky""; this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -2576,7 +2576,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="B5";
-					init="this setidentity ""LaCroix""";
+					init="this setIdentity ""LaCroix""";
 				};
 			};
 		};
@@ -2596,7 +2596,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="B8";
-					init="this setidentity ""Rozier""";
+					init="this setIdentity ""Rozier""";
 				};
 			};
 		};
@@ -2616,7 +2616,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="B10";
-					init="this setidentity ""Saunier""";
+					init="this setIdentity ""Saunier""";
 				};
 			};
 		};
@@ -2636,7 +2636,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="B7";
-					init="this setidentity ""Vaillancourt""";
+					init="this setIdentity ""Vaillancourt""";
 				};
 			};
 		};
@@ -2732,7 +2732,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="LemontovPort";
-					init="this setidentity ""Lemontov""; this setbehaviour ""safe""; removeallweapons this; this addmagazine ""TokarevMag""; this addweapon ""Tokarev""";
+					init="this setIdentity ""Lemontov""; this setBehaviour ""SAFE""; removeAllWeapons this; this addMagazine ""TokarevMag""; this addWeapon ""Tokarev""";
 				};
 			};
 		};
@@ -2751,7 +2751,7 @@ class Mission
 					vehicle="SoldierWB";
 					leader=1;
 					skill=0.600000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -2861,7 +2861,7 @@ class Mission
 					vehicle="SoldierWG";
 					leader=1;
 					skill=0.600000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -2944,7 +2944,7 @@ class Mission
 					vehicle="SoldierWSaboteurXMS";
 					leader=1;
 					skill=0.600000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -3046,7 +3046,7 @@ class Mission
 					vehicle="SoldierWB";
 					leader=1;
 					skill=0.300000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -3105,7 +3105,7 @@ class Mission
 					vehicle="SoldierWB";
 					leader=1;
 					skill=0.300000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -3156,7 +3156,7 @@ class Mission
 					vehicle="SoldierWMG";
 					leader=1;
 					skill=0.300000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -3224,7 +3224,7 @@ class Mission
 					vehicle="OfficerW";
 					leader=1;
 					skill=0.390000;
-					init="group this allowfleeing 0";
+					init="group this allowFleeing 0";
 				};
 				class Item1
 				{
@@ -5250,7 +5250,7 @@ class Mission
 					vehicle="SoldierEB";
 					leader=1;
 					skill=0.600000;
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -5269,7 +5269,7 @@ class Mission
 					vehicle="SoldierEB";
 					leader=1;
 					skill=0.600000;
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -5288,7 +5288,7 @@ class Mission
 					vehicle="SoldierECrew";
 					leader=1;
 					skill=0.600000;
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -5712,7 +5712,7 @@ class Mission
 			side="EMPTY";
 			vehicle="FlagCarrier";
 			skill=1.000000;
-			init="this setflagtexture ""\flags\ussr.jpg""";
+			init="this setFlagTexture ""\flags\ussr.jpg""";
 		};
 		class Item42
 		{
@@ -6551,7 +6551,7 @@ class Mission
 			vehicle="FlagCarrier";
 			leader=1;
 			skill=1.000000;
-			init="this setflagtexture ""\flags\usa.jpg""";
+			init="this setFlagTexture ""\flags\usa.jpg""";
 		};
 		class Item128
 		{
@@ -6561,7 +6561,7 @@ class Mission
 			vehicle="FlagCarrier";
 			leader=1;
 			skill=1.000000;
-			init="this setflagtexture ""\flags\usa.jpg""";
+			init="this setFlagTexture ""\flags\usa.jpg""";
 		};
 		class Item129
 		{
@@ -6571,7 +6571,7 @@ class Mission
 			vehicle="FlagCarrier";
 			leader=1;
 			skill=1.000000;
-			init="this setflagtexture ""\flags\usa.jpg""";
+			init="this setFlagTexture ""\flags\usa.jpg""";
 		};
 		class Item130
 		{
@@ -6581,7 +6581,7 @@ class Mission
 			vehicle="FlagCarrier";
 			leader=1;
 			skill=1.000000;
-			init="this setflagtexture ""\flags\usa.jpg""";
+			init="this setFlagTexture ""\flags\usa.jpg""";
 		};
 		class Item131
 		{
@@ -6591,7 +6591,7 @@ class Mission
 			vehicle="FlagCarrier";
 			leader=1;
 			skill=1.000000;
-			init="this setflagtexture ""\flags\usa.jpg""";
+			init="this setFlagTexture ""\flags\usa.jpg""";
 		};
 		class Item132
 		{
@@ -6601,7 +6601,7 @@ class Mission
 			vehicle="FlagCarrier";
 			leader=1;
 			skill=1.000000;
-			init="this setflagtexture ""\flags\usa.jpg""";
+			init="this setFlagTexture ""\flags\usa.jpg""";
 		};
 		class Item133
 		{
@@ -7031,7 +7031,7 @@ class Mission
 			vehicle="FlagCarrier";
 			leader=1;
 			skill=0.600000;
-			init="this setflagtexture ""\flags\ussr.jpg""";
+			init="this setFlagTexture ""\flags\ussr.jpg""";
 		};
 		class Item176
 		{
@@ -8343,7 +8343,7 @@ class Mission
 			age="UNKNOWN";
 			text="ENTRE DEUX TAKEN";
 			expCond="{alive _x} count thislist <= 1";
-			expActiv="[] exec ""entre_deux.sqs""; ""_x setdammage 1"" foreach thislist";
+			expActiv="[] exec ""entre_deux.sqs""; ""_x setDammage 1"" forEach thislist";
 			class Effects
 			{
 			};
@@ -8556,7 +8556,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			expCond="clearArea";
-			expActiv="""_x setdammage 1"" foreach thislist";
+			expActiv="""_x setDammage 1"" forEach thislist";
 			class Effects
 			{
 			};
@@ -8858,7 +8858,7 @@ class Intro
 					rank="COLONEL";
 					skill=1.000000;
 					text="Zubarev";
-					init="this setidentity ""Zubarev""; this setbehaviour ""Safe""; this removeweapon ""binocular""";
+					init="this setIdentity ""Zubarev""; this setBehaviour ""SAFE""; this removeWeapon ""binocular""";
 				};
 			};
 		};
@@ -8880,7 +8880,7 @@ class Intro
 					rank="MAJOR";
 					skill=1.000000;
 					text="LemontovHQ";
-					init="this setidentity ""Lemontov""; this setbehaviour ""safe""";
+					init="this setIdentity ""Lemontov""; this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -8962,7 +8962,7 @@ class Intro
 					vehicle="SoldierEB";
 					leader=1;
 					skill=0.200000;
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -8982,7 +8982,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="C5";
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -9002,7 +9002,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="C4";
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -9021,7 +9021,7 @@ class Intro
 					vehicle="SoldierEB";
 					leader=1;
 					skill=0.200000;
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -9041,7 +9041,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="C10";
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -9061,7 +9061,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="C9";
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -9081,7 +9081,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="C8";
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -9101,7 +9101,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="C7";
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -9121,7 +9121,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="C6";
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -9140,7 +9140,7 @@ class Intro
 					vehicle="SoldierEB";
 					leader=1;
 					skill=0.200000;
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -9159,7 +9159,7 @@ class Intro
 					vehicle="SoldierEB";
 					leader=1;
 					skill=0.200000;
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -9178,7 +9178,7 @@ class Intro
 					vehicle="SoldierEB";
 					leader=1;
 					skill=0.200000;
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -9198,7 +9198,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="S2";
-					init="this setbehaviour ""Safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -9218,7 +9218,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="S1";
-					init="this setbehaviour ""Safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -9237,7 +9237,7 @@ class Intro
 					vehicle="OfficerE";
 					leader=1;
 					skill=0.200000;
-					init="this setbehaviour ""Safe""; this removeweapon ""binocular""";
+					init="this setBehaviour ""SAFE""; this removeWeapon ""binocular""";
 				};
 			};
 		};
@@ -9257,7 +9257,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="C3";
-					init="this setbehaviour ""Careless""";
+					init="this setBehaviour ""CARELESS""";
 				};
 			};
 		};
@@ -9277,7 +9277,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="Rashiv";
-					init="this setidentity ""Rashiv""; this removeweapon ""binocular""; this setbehaviour ""safe""";
+					init="this setIdentity ""Rashiv""; this removeWeapon ""binocular""; this setBehaviour ""SAFE""";
 				};
 			};
 			class Waypoints
@@ -9312,7 +9312,7 @@ class Intro
 					rank="MAJOR";
 					skill=1.000000;
 					text="Lemontov";
-					init="this setidentity ""Lemontov""; this setbehaviour ""safe""";
+					init="this setIdentity ""Lemontov""; this setBehaviour ""SAFE""";
 				};
 			};
 			class Waypoints
@@ -9357,7 +9357,7 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="C2";
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -9377,7 +9377,7 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="C1";
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -9397,7 +9397,7 @@ class Intro
 					leader=1;
 					lock="LOCKED";
 					skill=1.000000;
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 			class Waypoints
@@ -9456,7 +9456,7 @@ class Intro
 					leader=1;
 					lock="LOCKED";
 					skill=1.000000;
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 			class Waypoints
@@ -9514,7 +9514,7 @@ class Intro
 					vehicle="Woman2";
 					leader=1;
 					skill=0.600000;
-					init="this setbehaviour ""Careless""";
+					init="this setBehaviour ""CARELESS""";
 				};
 			};
 			class Waypoints
@@ -9572,7 +9572,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="M1";
-					init="this setbehaviour ""safe""";
+					init="this setBehaviour ""SAFE""";
 				};
 			};
 			class Waypoints
@@ -10110,7 +10110,7 @@ class Intro
 			side="EMPTY";
 			vehicle="FlagCarrier";
 			skill=1.000000;
-			init="this setflagtexture ""\flags\ussr.jpg""";
+			init="this setFlagTexture ""\flags\ussr.jpg""";
 		};
 		class Item49
 		{
