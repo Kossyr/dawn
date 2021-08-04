@@ -3715,7 +3715,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="am";
-					init="this setunitpos ""up""; this setBehaviour ""COMBAT""";
+					init="this setUnitPos ""up""; this setBehaviour ""COMBAT""";
 				};
 			};
 		};
@@ -3736,7 +3736,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="am_1";
-					init="this setunitpos ""up""; this setBehaviour ""COMBAT""";
+					init="this setUnitPos ""up""; this setBehaviour ""COMBAT""";
 				};
 			};
 		};
@@ -3757,7 +3757,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="am_2";
-					init="this setunitpos ""up""; this setBehaviour ""COMBAT""";
+					init="this setUnitPos ""up""; this setBehaviour ""COMBAT""";
 				};
 			};
 		};
@@ -3778,7 +3778,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="am_4";
-					init="this setunitpos ""up""; this setBehaviour ""COMBAT""";
+					init="this setUnitPos ""up""; this setBehaviour ""COMBAT""";
 				};
 			};
 		};
@@ -3799,7 +3799,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="am_3";
-					init="this setunitpos ""up""; this setBehaviour ""COMBAT""";
+					init="this setUnitPos ""up""; this setBehaviour ""COMBAT""";
 				};
 			};
 		};
@@ -3946,7 +3946,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="hunter1";
-					init="this setunitpos ""up""; this setBehaviour ""COMBAT""";
+					init="this setUnitPos ""up""; this setBehaviour ""COMBAT""";
 				};
 			};
 			class Waypoints
@@ -4019,7 +4019,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="hunter2";
-					init="this setunitpos ""up""; this setBehaviour ""COMBAT""";
+					init="this setUnitPos ""up""; this setBehaviour ""COMBAT""";
 				};
 			};
 			class Waypoints
@@ -4092,7 +4092,7 @@ class Intro
 					leader=1;
 					skill=0.200000;
 					text="police_jeep1";
-					init="this setunitpos ""up""; this setBehaviour ""COMBAT""";
+					init="this setUnitPos ""up""; this setBehaviour ""COMBAT""";
 				};
 				class Item1
 				{
@@ -4104,7 +4104,7 @@ class Intro
 					vehicle="Civilian11";
 					skill=0.200000;
 					text="police_jeep2";
-					init="this setunitpos ""up""; this setBehaviour ""COMBAT""";
+					init="this setUnitPos ""up""; this setBehaviour ""COMBAT""";
 				};
 			};
 			class Waypoints
@@ -4222,7 +4222,7 @@ class Intro
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
-					init="""_x setunitpos """"up"""""" forEach units group this";
+					init="""_x setUnitPos """"up"""""" forEach units group this";
 				};
 				class Item1
 				{
@@ -5206,7 +5206,7 @@ class Intro
 			activationBy="CIV";
 			age="UNKNOWN";
 			expCond="true";
-			expActiv="""_x stop true"" forEach thislist; ""_x setDir 275"" forEach thislist";
+			expActiv="""_x stop true"" forEach thisList; ""_x setDir 275"" forEach thisList";
 			class Effects
 			{
 			};
@@ -5220,7 +5220,7 @@ class Intro
 			activationBy="GUER";
 			age="UNKNOWN";
 			expCond="true";
-			expActiv="""_x stop true"" forEach thislist; ""_x setDir 95"" forEach thislist";
+			expActiv="""_x stop true"" forEach thisList; ""_x setDir 95"" forEach thisList";
 			class Effects
 			{
 			};
@@ -5234,7 +5234,7 @@ class Intro
 			activationBy="CIV";
 			age="UNKNOWN";
 			expCond="true";
-			expActiv="""_x stop true"" forEach thislist";
+			expActiv="""_x stop true"" forEach thisList";
 			class Effects
 			{
 			};
@@ -5248,7 +5248,7 @@ class Intro
 			activationBy="CIV";
 			age="UNKNOWN";
 			expCond="true";
-			expActiv="""_x stop true"" forEach thislist";
+			expActiv="""_x stop true"" forEach thisList";
 			class Effects
 			{
 			};
@@ -5262,7 +5262,7 @@ class Intro
 			activationBy="CIV";
 			age="UNKNOWN";
 			expCond="true";
-			expActiv="""_x stop true"" forEach thislist";
+			expActiv="""_x stop true"" forEach thisList";
 			class Effects
 			{
 			};
@@ -5276,7 +5276,7 @@ class Intro
 			activationBy="CIV";
 			age="UNKNOWN";
 			expCond="true";
-			expActiv="""_x stop true"" forEach thislist";
+			expActiv="""_x stop true"" forEach thisList";
 			class Effects
 			{
 			};
@@ -5290,7 +5290,7 @@ class Intro
 			activationBy="GUER";
 			age="UNKNOWN";
 			expCond="true";
-			expActiv="""_x stop true"" forEach thislist";
+			expActiv="""_x stop true"" forEach thisList";
 			class Effects
 			{
 			};
@@ -5304,7 +5304,7 @@ class Intro
 			activationBy="GUER";
 			age="UNKNOWN";
 			expCond="true";
-			expActiv="""_x stop true"" forEach thislist";
+			expActiv="""_x stop true"" forEach thisList";
 			class Effects
 			{
 			};
@@ -5425,7 +5425,7 @@ class Intro
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="resCaptured";
-			expActiv="""_x switchMove """"FxStandSur"""""" forEach thislist";
+			expActiv="""_x switchMove """"FxStandSur"""""" forEach thisList";
 			class Effects
 			{
 			};
@@ -5467,7 +5467,7 @@ class Intro
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="manhunt";
-			expActiv="""_x stop false"" forEach thislist; ""_x setBehaviour """"AWARE"""""" forEach thislist";
+			expActiv="""_x stop false"" forEach thisList; ""_x setBehaviour """"AWARE"""""" forEach thisList";
 			class Effects
 			{
 			};

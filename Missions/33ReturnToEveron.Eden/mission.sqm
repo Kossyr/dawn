@@ -1174,7 +1174,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
-					init="group this allowFleeing 0; ""_x setunitpos """"up"""""" forEach units group this";
+					init="group this allowFleeing 0; ""_x setUnitPos """"up"""""" forEach units group this";
 				};
 				class Item1
 				{
@@ -1226,7 +1226,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
-					init="group this allowFleeing 0; ""_x setunitpos """"up"""""" forEach units group this";
+					init="group this allowFleeing 0; ""_x setUnitPos """"up"""""" forEach units group this";
 				};
 				class Item1
 				{
@@ -5215,8 +5215,8 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="CITY TAKEN";
-			expCond="{alive _x} count thislist <= 2";
-			expActiv="[] exec ""city.sqs""; ""_x setDammage 1"" forEach thislist";
+			expCond="{alive _x} count thisList <= 2";
+			expActiv="[] exec ""city.sqs""; ""_x setDammage 1"" forEach thisList";
 			class Effects
 			{
 			};
@@ -5231,8 +5231,8 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="BASE TAKEN";
-			expCond="{alive _x} count thislist <= 1";
-			expActiv="[] exec ""base.sqs""; ""_x setDammage 1"" forEach thislist";
+			expCond="{alive _x} count thisList <= 1";
+			expActiv="[] exec ""base.sqs""; ""_x setDammage 1"" forEach thisList";
 			class Effects
 			{
 			};
@@ -5272,8 +5272,8 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="AIRPORT TAKEN";
-			expCond="{alive _x} count thislist <= 2 and (not canmove T1 or not canfire T1) and (not canmove T2 or not canfire T2) and (not canmove T3 or not canfire T3) and (not canmove T4 or not canfire T4) and (not canmove T5 or not canfire T5) and (not canmove T6 or not canfire T6) and (not canmove AntiAirGun or not canfire AntiAirGun)";
-			expActiv="[] exec ""outro.sqs""; ""_x setDammage 1"" forEach thislist";
+			expCond="{alive _x} count thisList <= 2 and (not canmove T1 or not canfire T1) and (not canmove T2 or not canfire T2) and (not canmove T3 or not canfire T3) and (not canmove T4 or not canfire T4) and (not canmove T5 or not canfire T5) and (not canmove T6 or not canfire T6) and (not canmove AntiAirGun or not canfire AntiAirGun)";
+			expActiv="[] exec ""outro.sqs""; ""_x setDammage 1"" forEach thisList";
 			class Effects
 			{
 			};
@@ -5604,7 +5604,7 @@ class Intro
 				{
 					position[]={4382.870605,5.735625,10848.559570};
 					type="HOLD";
-					expActiv="""_x setunitpos """"up"""""" forEach units group this";
+					expActiv="""_x setUnitPos """"up"""""" forEach units group this";
 					synchronizations[]={7};
 					class Effects
 					{
@@ -6291,7 +6291,7 @@ class Intro
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
-					init="SoldiersE = group this; ""_x setunitpos """"up"""""" forEach units group this";
+					init="SoldiersE = group this; ""_x setUnitPos """"up"""""" forEach units group this";
 				};
 				class Item1
 				{
@@ -6410,7 +6410,7 @@ class Intro
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
-					init="SoldiersW = group this; ""_x setunitpos """"up"""""" forEach units group this";
+					init="SoldiersW = group this; ""_x setUnitPos """"up"""""" forEach units group this";
 				};
 				class Item1
 				{
@@ -6618,7 +6618,7 @@ class Intro
 					rank="SERGEANT";
 					skill=0.466667;
 					text="Yashin";
-					init="this setIdentity ""yashin""; this setcombatmode ""blue""; this disableAI ""AUTOTARGET""; this setunitpos ""up""";
+					init="this setIdentity ""yashin""; this setCombatMode ""blue""; this disableAI ""AUTOTARGET""; this setUnitPos ""up""";
 				};
 			};
 		};
@@ -6639,7 +6639,7 @@ class Intro
 					rank="SERGEANT";
 					skill=0.466667;
 					text="Rashiv";
-					init="this setIdentity ""Rashiv""; this setcombatmode ""blue""; this removeWeapon ""binocular""; this disableAI ""AUTOTARGET""; this setBehaviour ""COMBAT""; this setunitpos ""up""";
+					init="this setIdentity ""Rashiv""; this setCombatMode ""blue""; this removeWeapon ""binocular""; this disableAI ""AUTOTARGET""; this setBehaviour ""COMBAT""; this setUnitPos ""up""";
 				};
 			};
 		};
@@ -6659,7 +6659,7 @@ class Intro
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
-					init="RashivGroup = group this; ""_x setunitpos """"up"""""" forEach units group this";
+					init="RashivGroup = group this; ""_x setUnitPos """"up"""""" forEach units group this";
 				};
 				class Item1
 				{

@@ -2074,7 +2074,7 @@ class Mission
 			age="UNKNOWN";
 			text="SWITCH TO AWARE";
 			expCond="baseAware";
-			expActiv="""_x setBehaviour """"AWARE"""""" forEach thislist";
+			expActiv="""_x setBehaviour """"AWARE"""""" forEach thisList";
 			class Effects
 			{
 			};
@@ -2132,8 +2132,8 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="BASE TAKEN";
-			expCond="{alive _x} count thislist <= 1";
-			expActiv="[] exec ""base.sqs""; ""_x setDammage 1"" forEach thislist";
+			expCond="{alive _x} count thisList <= 1";
+			expActiv="[] exec ""base.sqs""; ""_x setDammage 1"" forEach thisList";
 			class Effects
 			{
 			};

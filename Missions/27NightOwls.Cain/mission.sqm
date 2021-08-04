@@ -4545,8 +4545,8 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="CAMP CLEARED";
-			expCond="{alive _x} count thislist <= 2";
-			expActiv="[] exec ""camp.sqs""; ""_x setDammage 1"" forEach thislist";
+			expCond="{alive _x} count thisList <= 2";
+			expActiv="[] exec ""camp.sqs""; ""_x setDammage 1"" forEach thisList";
 			class Effects
 			{
 			};
@@ -4589,7 +4589,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="MOUNTAIN TOP SEIZED";
-			expCond="{alive _x} count thislist <= 2";
+			expCond="{alive _x} count thisList <= 2";
 			expActiv="mountainTopDone=true";
 			class Effects
 			{

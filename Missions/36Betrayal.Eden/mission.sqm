@@ -2143,7 +2143,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1.000000;
 					text="F2";
-					init="this setunitpos ""up""";
+					init="this setUnitPos ""up""";
 				};
 			};
 		};
@@ -2164,7 +2164,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1.000000;
 					text="F1";
-					init="this setunitpos ""up""";
+					init="this setUnitPos ""up""";
 				};
 			};
 		};
@@ -2185,7 +2185,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1.000000;
 					text="F3";
-					init="this setunitpos ""up""";
+					init="this setUnitPos ""up""";
 				};
 			};
 		};
@@ -2206,7 +2206,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1.000000;
 					text="F4";
-					init="this setunitpos ""up""";
+					init="this setUnitPos ""up""";
 				};
 			};
 		};
@@ -8342,8 +8342,8 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="ENTRE DEUX TAKEN";
-			expCond="{alive _x} count thislist <= 1";
-			expActiv="[] exec ""entre_deux.sqs""; ""_x setDammage 1"" forEach thislist";
+			expCond="{alive _x} count thisList <= 1";
+			expActiv="[] exec ""entre_deux.sqs""; ""_x setDammage 1"" forEach thisList";
 			class Effects
 			{
 			};
@@ -8556,7 +8556,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			expCond="clearArea";
-			expActiv="""_x setDammage 1"" forEach thislist";
+			expActiv="""_x setDammage 1"" forEach thisList";
 			class Effects
 			{
 			};

@@ -820,7 +820,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=1.000000;
 					text="Ablomov";
-					init="this setIdentity ""Ablomov""; this setunitpos ""down""; this setcombatmode ""blue""; this setCaptive true";
+					init="this setIdentity ""Ablomov""; this setUnitPos ""down""; this setCombatMode ""blue""; this setCaptive true";
 				};
 			};
 		};
@@ -1320,7 +1320,7 @@ class Mission
 					vehicle="SoldierWB";
 					leader=1;
 					skill=0.400000;
-					init="group this allowFleeing 0; ""_x setunitpos """"up"""""" forEach units group this; CrashReinfor = group this";
+					init="group this allowFleeing 0; ""_x setUnitPos """"up"""""" forEach units group this; CrashReinfor = group this";
 				};
 				class Item1
 				{
@@ -2833,7 +2833,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.600000;
-					init="group this allowFleeing 0; ""_x setunitpos """"up"""""" forEach units group this";
+					init="group this allowFleeing 0; ""_x setUnitPos """"up"""""" forEach units group this";
 				};
 				class Item1
 				{
@@ -2919,7 +2919,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.600000;
-					init="group this allowFleeing 0; ""_x setunitpos """"up"""""" forEach units group this";
+					init="group this allowFleeing 0; ""_x setUnitPos """"up"""""" forEach units group this";
 				};
 				class Item1
 				{
@@ -3630,7 +3630,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.600000;
-					init="group this allowFleeing 0; ""_x setunitpos """"up"""""" forEach units group this";
+					init="group this allowFleeing 0; ""_x setUnitPos """"up"""""" forEach units group this";
 				};
 				class Item1
 				{
@@ -3707,7 +3707,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.600000;
-					init="group this allowFleeing 0; ""_x setunitpos """"up"""""" forEach units group this";
+					init="group this allowFleeing 0; ""_x setUnitPos """"up"""""" forEach units group this";
 				};
 				class Item1
 				{
@@ -3792,7 +3792,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.600000;
-					init="group this allowFleeing 0; ""_x setunitpos """"up"""""" forEach units group this";
+					init="group this allowFleeing 0; ""_x setUnitPos """"up"""""" forEach units group this";
 				};
 				class Item1
 				{
@@ -3872,7 +3872,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.600000;
-					init="group this allowFleeing 0; ""_x setunitpos """"up"""""" forEach units group this";
+					init="group this allowFleeing 0; ""_x setUnitPos """"up"""""" forEach units group this";
 				};
 				class Item1
 				{
@@ -3944,7 +3944,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.600000;
-					init="group this allowFleeing 0; ""_x setunitpos """"up"""""" forEach units group this";
+					init="group this allowFleeing 0; ""_x setUnitPos """"up"""""" forEach units group this";
 				};
 				class Item1
 				{
@@ -4016,7 +4016,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.600000;
-					init="group this allowFleeing 0; ""_x setunitpos """"up"""""" forEach units group this";
+					init="group this allowFleeing 0; ""_x setUnitPos """"up"""""" forEach units group this";
 				};
 				class Item1
 				{
@@ -4165,7 +4165,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.600000;
-					init="finalAssault2 = group this; group this allowFleeing 0; ""_x setunitpos """"up"""""" forEach units group this;  this removeWeapon ""binocular""";
+					init="finalAssault2 = group this; group this allowFleeing 0; ""_x setUnitPos """"up"""""" forEach units group this;  this removeWeapon ""binocular""";
 				};
 				class Item1
 				{
@@ -4270,7 +4270,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.600000;
-					init="finalAssault1 = group this; group this allowFleeing 0; ""_x setunitpos """"up"""""" forEach units group this; this removeWeapon ""binocular""";
+					init="finalAssault1 = group this; group this allowFleeing 0; ""_x setUnitPos """"up"""""" forEach units group this; this removeWeapon ""binocular""";
 				};
 				class Item1
 				{
@@ -4385,7 +4385,7 @@ class Mission
 					leader=1;
 					rank="LIEUTNANT";
 					skill=1.000000;
-					init="group this allowFleeing 0; ""_x setunitpos """"up"""""" forEach units group this; reinforcements = group this";
+					init="group this allowFleeing 0; ""_x setUnitPos """"up"""""" forEach units group this; reinforcements = group this";
 				};
 				class Item1
 				{
@@ -5036,7 +5036,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=1.000000;
 					text="CinemaAblomov";
-					init="this setIdentity ""Ablomov""; this setcombatmode ""blue""; this setunitpos ""down""";
+					init="this setIdentity ""Ablomov""; this setCombatMode ""blue""; this setUnitPos ""down""";
 				};
 			};
 		};
@@ -5057,7 +5057,7 @@ class Mission
 					rank="LIEUTNANT";
 					skill=1.000000;
 					text="CinemaRashiv";
-					init="this setIdentity ""Rashiv""; this setcombatmode ""blue""";
+					init="this setIdentity ""Rashiv""; this setCombatMode ""blue""";
 				};
 			};
 		};
@@ -7411,7 +7411,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			expCond="clearCrashSite";
-			expActiv="""_x setDammage 1"" forEach thislist";
+			expActiv="""_x setDammage 1"" forEach thisList";
 			class Effects
 			{
 			};
@@ -7742,8 +7742,8 @@ class Mission
 			b=100.000000;
 			activationBy="WEST";
 			age="UNKNOWN";
-			expCond="{alive _x} count thislist <= 2";
-			expActiv="ChapoiWestCheck=true; ""_x setDammage 1"" forEach thislist";
+			expCond="{alive _x} count thisList <= 2";
+			expActiv="ChapoiWestCheck=true; ""_x setDammage 1"" forEach thisList";
 			class Effects
 			{
 			};
@@ -7780,8 +7780,8 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="ASSAULT REPELLED";
-			expCond="{alive _x} count thislist <= 3";
-			expActiv="""_x setDammage 1"" forEach thislist; [] exec ""outro.sqs""";
+			expCond="{alive _x} count thisList <= 3";
+			expActiv="""_x setDammage 1"" forEach thisList; [] exec ""outro.sqs""";
 			class Effects
 			{
 			};
@@ -10341,7 +10341,7 @@ class Intro
 			activationBy="WEST";
 			age="UNKNOWN";
 			expCond="true";
-			expActiv="""_x setcombatmode """"green"""""" forEach thislist";
+			expActiv="""_x setCombatMode """"green"""""" forEach thisList";
 			class Effects
 			{
 			};

@@ -6949,7 +6949,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="WEST BEATEN - FORTIFICATIONS ALMOST DONE";
-			expCond="{alive _x} count thislist <= 2";
+			expCond="{alive _x} count thisList <= 2";
 			expActiv="fortificationsWest=true";
 			class Effects
 			{
@@ -7083,8 +7083,8 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="BASE TAKEN";
-			expCond="{alive _x} count thislist <= 4";
-			expActiv="[] exec ""outro.sqs""; ""_x setDammage 1"" forEach thislist";
+			expCond="{alive _x} count thisList <= 4";
+			expActiv="[] exec ""outro.sqs""; ""_x setDammage 1"" forEach thisList";
 			class Effects
 			{
 			};

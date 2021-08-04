@@ -1,0 +1,40 @@
+
+_bombType = "Shell105"
+_bombs = [BeachBomb, BeachBomb_1, BeachBomb_2, BeachBomb_3, BeachBomb_4, BeachBomb_5, BeachBomb_6, BeachBomb_7, BeachBomb_8, BeachBomb_9, BeachBomb_10, BeachBomb_11, BeachBomb_12, BeachBomb_13, BeachBomb_14, BeachBomb_15, BeachBomb_16, BeachBomb_17, BeachBomb_18, BeachBomb_19, BeachBomb_20, BeachBomb_21]
+
+_i = 0
+_amount = count _bombs
+
+; first wave of bombs
+
+#loop1
+
+_randomInterval = random 1
+
+~_randomInterval
+
+_bombType camCreate getPos (_bombs select _i)
+
+_i = _i + 1
+
+? _i < _amount : goto "loop1" ;
+
+; second wave of bombs
+
+_i = 0
+
+#loop2
+
+_randomInterval = random 1
+
+~_randomInterval
+
+_randomBomb = random _amount
+
+_bombType camCreate getPos (_bombs select _randomBomb)
+
+_i = _i + 1
+
+? _i < _amount : goto "loop2" ;
+
+exit

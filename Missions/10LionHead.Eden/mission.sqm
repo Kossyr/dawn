@@ -2337,7 +2337,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="valleyAware";
-			expActiv="""_x setBehaviour """"AWARE"""""" forEach thislist";
+			expActiv="""_x setBehaviour """"AWARE"""""" forEach thisList";
 			class Effects
 			{
 			};
@@ -2392,7 +2392,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="VALLEY CLEARED";
-			expCond="{alive _x} count thislist <= 0";
+			expCond="{alive _x} count thisList <= 0";
 			expActiv="[] exec ""valley_done.sqs""";
 			class Effects
 			{

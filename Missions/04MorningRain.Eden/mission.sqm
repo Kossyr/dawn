@@ -2243,7 +2243,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="Grenadier1";
-					init="this setunitpos ""down""";
+					init="this setUnitPos ""down""";
 				};
 			};
 			class Waypoints
@@ -2314,7 +2314,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="Grenadier2";
-					init="this setunitpos ""down""";
+					init="this setUnitPos ""down""";
 				};
 			};
 			class Waypoints
@@ -2454,7 +2454,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="Grenadier3";
-					init="this setunitpos ""down""";
+					init="this setUnitPos ""down""";
 				};
 			};
 			class Waypoints
@@ -2524,7 +2524,7 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="Grenadier4";
-					init="this setunitpos ""down""";
+					init="this setUnitPos ""down""";
 				};
 			};
 			class Waypoints
@@ -5046,7 +5046,7 @@ class Mission
 			rectangular=1;
 			activationBy="WEST";
 			age="UNKNOWN";
-			expCond="{alive _x} count thislist == 0";
+			expCond="{alive _x} count thisList == 0";
 			expActiv="[] exec ""harbour.sqs""";
 			class Effects
 			{
@@ -5144,7 +5144,7 @@ class Mission
 			rectangular=1;
 			activationBy="WEST";
 			age="UNKNOWN";
-			expCond="{alive _x} count thislist == 0";
+			expCond="{alive _x} count thisList == 0";
 			expActiv="[] exec ""checkpoint.sqs""";
 			class Effects
 			{
@@ -5159,7 +5159,7 @@ class Mission
 			rectangular=1;
 			activationBy="WEST";
 			age="UNKNOWN";
-			expCond="{alive _x} count thislist == 0";
+			expCond="{alive _x} count thisList == 0";
 			expActiv="[] exec ""checkpoint_yelena.sqs""";
 			class Effects
 			{
@@ -5187,7 +5187,7 @@ class Mission
 			rectangular=1;
 			activationBy="WEST";
 			age="UNKNOWN";
-			expCond="{alive _x} count thislist <= 1";
+			expCond="{alive _x} count thisList <= 1";
 			expActiv="[] exec ""outpost.sqs""";
 			class Effects
 			{
@@ -5203,7 +5203,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			expCond="clearArea";
-			expActiv="""_x setDammage 1"" forEach thislist";
+			expActiv="""_x setDammage 1"" forEach thisList";
 			class Effects
 			{
 			};
@@ -5301,8 +5301,8 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="LAMENTIN SEIZED";
-			expCond="{alive _x} count thislist <= 2";
-			expActiv="[] exec ""outro.sqs""; ""_x setDammage 1"" forEach thislist";
+			expCond="{alive _x} count thisList <= 2";
+			expActiv="[] exec ""outro.sqs""; ""_x setDammage 1"" forEach thisList";
 			class Effects
 			{
 			};
@@ -5317,7 +5317,7 @@ class Mission
 			age="UNKNOWN";
 			text="WEST STOP";
 			expCond="true";
-			expActiv="""_x stop true"" forEach thislist";
+			expActiv="""_x stop true"" forEach thisList";
 			class Effects
 			{
 			};
@@ -5332,7 +5332,7 @@ class Mission
 			age="UNKNOWN";
 			text="WEST GET READY";
 			expCond="lamentinReady";
-			expActiv="""_x stop false"" forEach thislist";
+			expActiv="""_x stop false"" forEach thisList";
 			class Effects
 			{
 			};
