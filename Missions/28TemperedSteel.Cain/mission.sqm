@@ -6516,7 +6516,7 @@ class Mission
 		{
 			position[]={8634.677734,70.486092,8185.838867};
 			name="Yuri";
-			text="@STRM_MARKER_YURI";
+			text="@STRM_MARKER_YURY";
 			type="Marker";
 			colorName="ColorBlue";
 		};
@@ -6949,7 +6949,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="WEST BEATEN - FORTIFICATIONS ALMOST DONE";
-			expCond="{alive _x} count thisList <= 2";
+			expCond="{alive _x} count thislist <= 2";
 			expActiv="fortificationsWest=true";
 			class Effects
 			{
@@ -7083,8 +7083,8 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="BASE TAKEN";
-			expCond="{alive _x} count thisList <= 4";
-			expActiv="[] exec ""outro.sqs""; ""_x setDammage 1"" forEach thisList";
+			expCond="{alive _x} count thislist <= 4";
+			expActiv="[] exec ""outro.sqs""; ""_x setDammage 1"" forEach thislist";
 			class Effects
 			{
 			};

@@ -5254,7 +5254,7 @@ class Mission
 			age="UNKNOWN";
 			text="FREEZE UNTIL WE ARE HERE";
 			expCond="freeze";
-			expActiv="""_x stop true"" forEach thisList";
+			expActiv="""_x stop true"" forEach thislist";
 			class Effects
 			{
 			};
@@ -5268,7 +5268,7 @@ class Mission
 			age="UNKNOWN";
 			text="LET'S GO";
 			expCond="unfreeze";
-			expActiv="""_x stop false"" forEach thisList";
+			expActiv="""_x stop false"" forEach thislist";
 			class Effects
 			{
 			};
@@ -5282,8 +5282,8 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="INITIAL ATTACK REPELLED";
-			expCond="{alive _x} count thisList <= 2";
-			expActiv="[] exec ""base_secured.sqs""; ""_x setDammage 1"" forEach thisList";
+			expCond="{alive _x} count thislist <= 2";
+			expActiv="[] exec ""base_secured.sqs""; ""_x setDammage 1"" forEach thislist";
 			class Effects
 			{
 			};
@@ -5408,8 +5408,8 @@ class Mission
 			b=270.000000;
 			activationBy="WEST";
 			age="UNKNOWN";
-			expCond="(not canmove T1 or not canfire T1) and (not canmove T2 or not canfire T2) and {alive _x} count thisList <= 2";
-			expActiv="[] exec ""base_secured2.sqs""; ""_x setDammage 1"" forEach thisList";
+			expCond="(not canmove T1 or not canfire T1) and (not canmove T2 or not canfire T2) and {alive _x} count thislist <= 2";
+			expActiv="[] exec ""base_secured2.sqs""; ""_x setDammage 1"" forEach thislist";
 			class Effects
 			{
 			};

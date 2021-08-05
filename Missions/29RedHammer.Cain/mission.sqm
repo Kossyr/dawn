@@ -7244,7 +7244,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="FORTIFICATIONS SEIZED";
-			expCond="playerFront and {alive _x} count thisList <= 5 and (not canmove F1 or not canfire F1) and (not canmove F2 or not canfire F2) and (not canmove F3 or not canfire F3) and (not canmove F4 or not canfire F4)";
+			expCond="playerFront and {alive _x} count thislist <= 5 and (not canmove F1 or not canfire F1) and (not canmove F2 or not canfire F2) and (not canmove F3 or not canfire F3) and (not canmove F4 or not canfire F4)";
 			expActiv="[] exec ""front_done.sqs""";
 			class Effects
 			{
@@ -7278,7 +7278,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="FORTIFICATIONS SEIZED";
-			expCond="{alive _x} count thisList <= 2";
+			expCond="{alive _x} count thislist <= 2";
 			expActiv="[] exec ""deeper.sqs""";
 			class Effects
 			{
@@ -7310,7 +7310,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="BASE TAKEN";
-			expCond="{alive _x} count thisList <= 5";
+			expCond="{alive _x} count thislist <= 5";
 			expActiv="[] exec ""base.sqs""";
 			class Effects
 			{
@@ -7433,7 +7433,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="LAST BASE TAKEN";
-			expCond="{alive _x} count thisList <= 3 and (not canmove H1 or not canfire H1) and (not canmove H2 or not canfire H2) and (not canmove H3 or not canfire H3)";
+			expCond="{alive _x} count thislist <= 3 and (not canmove H1 or not canfire H1) and (not canmove H2 or not canfire H2) and (not canmove H3 or not canfire H3)";
 			expActiv="[] exec ""base2.sqs""";
 			class Effects
 			{
@@ -7542,7 +7542,7 @@ class Mission
 			activationBy="WEST";
 			type="SWITCH";
 			age="UNKNOWN";
-			expCond="""Tank"" counttype thisList < 1 and tatyanaJunction";
+			expCond="""Tank"" counttype thislist < 1 and tatyanaJunction";
 			class Effects
 			{
 			};
@@ -7556,7 +7556,7 @@ class Mission
 			activationBy="WEST";
 			type="SWITCH";
 			age="UNKNOWN";
-			expCond="""Tank"" counttype thisList < 1 and tatyanaRoad";
+			expCond="""Tank"" counttype thislist < 1 and tatyanaRoad";
 			class Effects
 			{
 			};
@@ -7570,7 +7570,7 @@ class Mission
 			activationBy="WEST";
 			type="SWITCH";
 			age="UNKNOWN";
-			expCond="""Tank"" counttype thisList < 1 and tatyanaBase";
+			expCond="""Tank"" counttype thislist < 1 and tatyanaBase";
 			class Effects
 			{
 			};

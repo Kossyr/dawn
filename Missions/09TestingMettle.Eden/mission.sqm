@@ -2990,7 +2990,7 @@ class Mission
 			age="UNKNOWN";
 			text="ALERT AND REINFORCEMENTS";
 			expCond="lemouleAware";
-			expActiv="""_x setBehaviour """"AWARE"""""" forEach thisList";
+			expActiv="""_x setBehaviour """"AWARE"""""" forEach thislist";
 			class Effects
 			{
 			};
@@ -3049,7 +3049,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="ENEMIES WERE KILLED";
-			expCond="{alive _x} count thisList <= 1";
+			expCond="{alive _x} count thislist <= 1";
 			expActiv="carEnemy=true";
 			class Effects
 			{
@@ -3171,8 +3171,8 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="ATTACK REPELLED";
-			expCond="{alive _x} count thisList <= 2 and (not canmove tank or not canfire tank) and {alive _x} count units att1 <= 1 and {alive _x} count units att2 <= 1";
-			expActiv="[] exec ""outro.sqs""; ""_x setDammage 1"" forEach thisList";
+			expCond="{alive _x} count thislist <= 2 and (not canmove tank or not canfire tank) and {alive _x} count units att1 <= 1 and {alive _x} count units att2 <= 1";
+			expActiv="[] exec ""outro.sqs""; ""_x setDammage 1"" forEach thislist";
 			class Effects
 			{
 			};

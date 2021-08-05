@@ -31,7 +31,7 @@ LemontovForestRunner setPos getMarkerPos "LemontovForestRunner"
 KaplinskyForest setPos getMarkerPos "LemontovForest"
 
 LemontovForestRunner move getMarkerPos "RunLemontov"
-LemontovForestRunner setSpeedMode "limited"
+LemontovForestRunner setSpeedMode "LIMITED"
 
 LemontovForestRunner setMimic "angry"
 
@@ -45,9 +45,9 @@ F4 doWatch [6309.40,7422.82,1.45]
 ? goodEnding : goto "lemontovRunsAlone" ;
 
 AstierForestRunner move getMarkerPos "RunAstier"
-AstierForestRunner setSpeedMode "limited"
+AstierForestRunner setSpeedMode "LIMITED"
 PoincareForestRunner move getMarkerPos "RunPoincare"
-PoincareForestRunner setSpeedMode "limited"
+PoincareForestRunner setSpeedMode "LIMITED"
 AstierForestRunner setPos getMarkerPos "AstierForestRunner"
 PoincareForestRunner setPos getMarkerPos "PoincareForestRunner"
 AstierForestRunner setMimic "normal"
@@ -87,15 +87,15 @@ _camera camCommit 0
 @camCommitted _camera
 ~1.5
 LemontovForestRunner move getMarkerPos "RunLemontov2"
-LemontovForestRunner setSpeedMode "limited"
+LemontovForestRunner setSpeedMode "LIMITED"
 
 ; ignore rebels if Lemontov is alone
 ? goodEnding : goto "lemontovRunsAlone2" ;
 
 AstierForestRunner move getMarkerPos "RunAstier2"
-AstierForestRunner setSpeedMode "limited"
+AstierForestRunner setSpeedMode "LIMITED"
 PoincareForestRunner move getMarkerPos "RunPoincare2"
-PoincareForestRunner setSpeedMode "limited"
+PoincareForestRunner setSpeedMode "LIMITED"
 
 #lemontovRunsAlone2
 
@@ -399,11 +399,11 @@ F1 move getMarkerPos "LeavingForest"
 F2 move getMarkerPos "LeavingForest"
 F3 move getMarkerPos "LeavingForest"
 F4 move getMarkerPos "LeavingForest"
-KaplinskyForest setSpeedMode "limited"
-F1 setSpeedMode "limited"
-F2 setSpeedMode "limited"
-F3 setSpeedMode "limited"
-F4 setSpeedMode "limited"
+KaplinskyForest setSpeedMode "LIMITED"
+F1 setSpeedMode "LIMITED"
+F2 setSpeedMode "LIMITED"
+F3 setSpeedMode "LIMITED"
+F4 setSpeedMode "LIMITED"
 ~1.5
 ;=== 19:01:18
 _camera camSetTarget [34596.95,95648.29,-37521.68]
@@ -421,7 +421,7 @@ titleText["","PLAIN DOWN"]
 playsound "36v139"
 ~6
 LemontovForest move getMarkerPos "LeavingForest"
-LemontovForest setSpeedMode "limited"
+LemontovForest setSpeedMode "LIMITED"
 LemontovForest doWatch objNull
 ~8
 titleText [ localize "STRC_END_SUCCESS","PLAIN"]
@@ -554,11 +554,11 @@ F1 move getMarkerPos "LeavingForest"
 F2 move getMarkerPos "LeavingForest"
 F3 move getMarkerPos "LeavingForest"
 F4 move getMarkerPos "LeavingForest"
-KaplinskyForest setSpeedMode "limited"
-F1 setSpeedMode "limited"
-F2 setSpeedMode "limited"
-F3 setSpeedMode "limited"
-F4 setSpeedMode "limited"
+KaplinskyForest setSpeedMode "LIMITED"
+F1 setSpeedMode "LIMITED"
+F2 setSpeedMode "LIMITED"
+F3 setSpeedMode "LIMITED"
+F4 setSpeedMode "LIMITED"
 F1 doWatch objNull
 F2 doWatch objNull
 F3 doWatch objNull
@@ -581,7 +581,7 @@ titleText["","PLAIN DOWN"]
 playsound "36v138"
 ~3
 LemontovForest move getMarkerPos "LeavingForest"
-LemontovForest setSpeedMode "limited"
+LemontovForest setSpeedMode "LIMITED"
 LemontovForest doWatch objNull
 @camCommitted _camera
 
@@ -589,7 +589,7 @@ PortShip setPos getMarkerPos "BoatIsland"
 PortShip setDir 65
 
 B5 move getMarkerPos "BoatMove2"
-B5 setSpeedMode "limited"
+B5 setSpeedMode "LIMITED"
 
 ~1
 

@@ -8342,8 +8342,8 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="ENTRE DEUX TAKEN";
-			expCond="{alive _x} count thisList <= 1";
-			expActiv="[] exec ""entre_deux.sqs""; ""_x setDammage 1"" forEach thisList";
+			expCond="{alive _x} count thislist <= 1";
+			expActiv="[] exec ""entre_deux.sqs""; ""_x setDammage 1"" forEach thislist";
 			class Effects
 			{
 			};
@@ -8556,7 +8556,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			expCond="clearArea";
-			expActiv="""_x setDammage 1"" forEach thisList";
+			expActiv="""_x setDammage 1"" forEach thislist";
 			class Effects
 			{
 			};
