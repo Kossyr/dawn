@@ -14,7 +14,7 @@ AstierCharges setBehaviour "STEALTH"
 AstierCharges action ["TOUCHOFF"]
 
 ~1
-aP removeEventHandler ["Fired", rebelFireCheck]
+player removeEventHandler ["Fired", rebelFireCheck]
 
 ~2
 T1 setDammage 1
@@ -22,8 +22,8 @@ T1 setDammage 1
 T2 setDammage 1
 ~0.5
 "11" objStatus "DONE"
-aP addRating 1000
-aP setCaptive false
+player addRating 1000
+player setCaptive false
 alarm=true
 setAware=true
 beachClear=true
@@ -51,7 +51,7 @@ T3 setDammage 1
 ~0.5
 T4 setDammage 1
 "12" objStatus "DONE"
-aP addRating 1000
+player addRating 1000
 setAccTime 1
 Astier sideRadio "11r03"
 

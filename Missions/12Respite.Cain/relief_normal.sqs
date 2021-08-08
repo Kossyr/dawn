@@ -3,7 +3,7 @@ setAccTime 1
 titleCut ["", "BLACK OUT", 1]
 
 "1" objStatus "DONE"
-aP addRating 1000
+player addRating 1000
 
 ~1
 
@@ -11,10 +11,10 @@ yashin stop true
 yashin setPos getMarkerPos "yashinCinema"
 yashin setDir 320
 
-aP stop true
-aP action ["WEAPONONBACK"]
-aP setDir 300
-aP setPos getMarkerPos "CinemaEmpty"
+player stop true
+player action ["WEAPONONBACK"]
+player setDir 300
+player setPos getMarkerPos "CinemaEmpty"
 
 RashivCinema setDir 300;
 RashivCinema setPos getMarkerPos "rashivCinema";
@@ -117,7 +117,7 @@ yashin say "12v37"
 ~4.5
 
 RashivCinema setPos getMarkerPos "GetOut"
-aP setPos getMarkerPos "RashivCinema"
+player setPos getMarkerPos "RashivCinema"
 
 yashin stop false
 
@@ -142,7 +142,7 @@ relief say "12v38"
 
 ~3.5
 
-aP addWeapon "nvgoggles"
+player addWeapon "nvgoggles"
 
 Hint localize "STRM_TEXT_NV"
 

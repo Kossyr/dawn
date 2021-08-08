@@ -3746,7 +3746,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="aP in nakladak";
+			expCond="player in nakladak";
 			expActiv="nakladak lock true";
 			class Effects
 			{
@@ -3760,7 +3760,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=7;
 			text="OUT OF BOUNDS - WARNING";
-			expCond="this and alive aP and not jedeme and not (aP in nakladak)";
+			expCond="this and alive player and not jedeme and not (player in nakladak)";
 			expActiv="[] exec ""outofbounds_rashiv_private.sqs""";
 			class Effects
 			{
@@ -3776,7 +3776,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=7;
 			text="OUT OF BOUNDS";
-			expCond="this and alive aP and not jedeme and not (aP in nakladak)";
+			expCond="this and alive player and not jedeme and not (player in nakladak)";
 			expActiv="[] exec ""outofbounds.sqs""";
 			class Effects
 			{
@@ -3829,7 +3829,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="LAST ALIVE";
-			expCond="alive aP and {alive _x} count units anton == 1 and tanksShowDone";
+			expCond="alive player and {alive _x} count units anton == 1 and tanksShowDone";
 			class Effects
 			{
 			};
@@ -3983,7 +3983,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=7;
 			text="OUT OF BOUNDS - WARNING";
-			expCond="this and alive aP and not (aP in nakladak) and jedeme";
+			expCond="this and alive player and not (player in nakladak) and jedeme";
 			expActiv="[] exec ""outofbounds_rashiv_alone.sqs""";
 			class Effects
 			{
@@ -4001,7 +4001,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=7;
 			text="OUT OF BOUNDS - KILL";
-			expCond="this and alive aP and not (aP in nakladak) and jedeme";
+			expCond="this and alive player and not (player in nakladak) and jedeme";
 			expActiv="[] exec ""outofbounds.sqs""";
 			class Effects
 			{
@@ -4026,7 +4026,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="TELL US YOU ARE ALONE";
-			expCond="aP == leader anton and tanksShowDone";
+			expCond="player == leader anton and tanksShowDone";
 			expActiv="[] exec ""last.sqs""";
 			class Effects
 			{

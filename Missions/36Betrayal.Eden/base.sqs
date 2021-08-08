@@ -4,15 +4,15 @@ clearArea=true
 cinema=true
 
 "4" objStatus "DONE"
-aP addRating 1000
+player addRating 1000
 "5" objStatus "DONE"
-aP addRating 1000
+player addRating 1000
 
 2 SetRadioMsg "NULL"
 
 ? choiceSquadB and not choiceReinforcements : goto "onlyRebels" ;
 
-aP sideRadio "36r19"
+player sideRadio "36r19"
 
 badEnding=true
 
@@ -23,7 +23,7 @@ goto "ex"
 #onlyRebels
 
 KaplinskyRadio sideRadio "36r13"
-aP sideRadio "36r19"
+player sideRadio "36r19"
 
 ~12
 
@@ -35,7 +35,7 @@ saveGame
 
 ~10
 
-aa = aP saveStatus "36Lemontov"
+aa = player saveStatus "36Lemontov"
 
 [] exec "rescue.sqs"
 

@@ -5192,7 +5192,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=8;
 			text="OUT OF BOUNDS - WARNING";
-			expCond="this and alive aP and (not (aP in ural))";
+			expCond="this and alive player and (not (player in ural))";
 			expActiv="[] exec ""outofbounds_rashiv_corporal.sqs""";
 			class Effects
 			{
@@ -5210,7 +5210,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=8;
 			text="OUT OF BOUNDS - KILL";
-			expCond="this and alive aP and (not (aP in ural))";
+			expCond="this and alive player and (not (player in ural))";
 			expActiv="[] exec ""outofbounds.sqs""";
 			class Effects
 			{
@@ -5368,7 +5368,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="(vehicle aP == aP) and frontalAttack2";
+			expCond="(vehicle player == aP) and frontalAttack2";
 			expActiv="units group player allowGetIn false; ""unassignVehicle _x"" forEach units group player";
 			class Effects
 			{
@@ -5459,7 +5459,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="aP in auto";
+			expCond="player in auto";
 			expActiv="auto lock true";
 			class Effects
 			{
@@ -5572,7 +5572,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="defending and alive aP and {alive _x} count units group player == 1";
+			expCond="defending and alive player and {alive _x} count units group player == 1";
 			expActiv="[] exec ""outro2.sqs""";
 			class Effects
 			{

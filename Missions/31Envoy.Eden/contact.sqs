@@ -1,7 +1,7 @@
 setAccTime 1
 
 "1" objStatus "DONE"
-aP addRating 1000
+player addRating 1000
 
 titleCut["","BLACK IN",0.5]
 
@@ -11,8 +11,8 @@ _camera cameraeffect ["internal","back"]
 Lemontov stop true
 Lemontov setPos getMarkerPos "LemontovAway"
 
-aP setPos getMarkerPos "RashivAway"
-aP action ["WEAPONONBACK"]
+player setPos getMarkerPos "RashivAway"
+player action ["WEAPONONBACK"]
 
 Lemontov setBehaviour "CARELESS"
 
@@ -68,9 +68,9 @@ deleteVehicle ContactLemontov
 
 Lemontov stop false
 Lemontov setPos getMarkerPos "ContactLemontov"
-aP setPos getMarkerPos "ContactRashiv"
+player setPos getMarkerPos "ContactRashiv"
 Lemontov setDir 5
-aP setDir 0
+player setDir 0
 ~0.5
 player cameraEffect ["terminate","back"]
 camDestroy _camera
@@ -82,7 +82,7 @@ GuardFire inflame false
 Poincare doWatch objNull
 
 ~0.5
-aP action ["WEAPONINHAND"]
+player action ["WEAPONINHAND"]
 
 ~2
 

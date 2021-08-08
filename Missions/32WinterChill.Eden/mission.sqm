@@ -7136,7 +7136,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			expCond="SuppliesDestroyed >= 4";
-			expActiv="aP addRating 500";
+			expActiv="player addRating 500";
 			class Effects
 			{
 			};
@@ -7148,7 +7148,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			expCond="SuppliesDestroyed == 5";
-			expActiv="aP addRating 500";
+			expActiv="player addRating 500";
 			class Effects
 			{
 			};
@@ -7172,7 +7172,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			expCond="ShipsDestroyed >= 2";
-			expActiv="aP addRating 500";
+			expActiv="player addRating 500";
 			class Effects
 			{
 			};
@@ -7184,7 +7184,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			expCond="ShipsDestroyed == 3";
-			expActiv="aP addRating 500";
+			expActiv="player addRating 500";
 			class Effects
 			{
 			};
@@ -7280,7 +7280,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			expCond="ChoppersDestroyed >= 4";
-			expActiv="aP addRating 1000";
+			expActiv="player addRating 1000";
 			class Effects
 			{
 			};
@@ -7292,7 +7292,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			expCond="ChoppersDestroyed >= 5";
-			expActiv="aP addRating 1000";
+			expActiv="player addRating 1000";
 			class Effects
 			{
 			};
@@ -7304,7 +7304,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			expCond="ChoppersDestroyed >= 6";
-			expActiv="aP addRating 1000";
+			expActiv="player addRating 1000";
 			class Effects
 			{
 			};
@@ -7622,7 +7622,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			text="SPECOPS REPELLED";
-			expCond="not alive B3 and not alive B4 and not alive B5 and not alive B6 and not alive B7 and not alive B8 and not alive B9 and not alive B10 and alive aP and canEnd";
+			expCond="not alive B3 and not alive B4 and not alive B5 and not alive B6 and not alive B7 and not alive B8 and not alive B9 and not alive B10 and alive player and canEnd";
 			expActiv="[] exec ""outro.sqs""";
 			class Effects
 			{
@@ -7636,7 +7636,7 @@ class Mission
 			activationBy="MEMBER";
 			age="UNKNOWN";
 			idVehicle=309;
-			expCond="(this or (aP distance K1 <= 35 or aP distance K2 <= 35 or aP distance K3 <= 35 or aP distance K4 <= 35 or aP distance K5 <= 35)) and alive aP and not joined";
+			expCond="(this or (player distance K1 <= 35 or player distance K2 <= 35 or player distance K3 <= 35 or player distance K4 <= 35 or player distance K5 <= 35)) and alive player and not joined";
 			expActiv="[K1, K2, K3, K4, K5] join aP; joined=true";
 			class Effects
 			{
@@ -7706,7 +7706,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=0;
 			text="OUT OF BOUNDS - WARNING";
-			expCond="this and alive aP and ambush";
+			expCond="this and alive player and ambush";
 			expActiv="[] exec ""outofbounds_lemontov.sqs""";
 			class Effects
 			{
@@ -7723,7 +7723,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=0;
 			text="OUT OF BOUNDS - KILL";
-			expCond="this and alive aP and ambush";
+			expCond="this and alive player and ambush";
 			expActiv="[] exec ""outofbounds.sqs""";
 			class Effects
 			{

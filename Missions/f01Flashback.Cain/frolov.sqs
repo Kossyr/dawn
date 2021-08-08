@@ -10,24 +10,24 @@ titleCut["","BLACK OUT",0.5]
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-? (aP == vehicle aP) : goto "frolovCinema" ;
+? (player == vehicle aP) : goto "frolovCinema" ;
 
-vehicle aP setPos getMarkerPos "VehicleAway"
-vehicle aP setDir 0
+vehicle player setPos getMarkerPos "VehicleAway"
+vehicle player setDir 0
 
 ~0.5
 
-vehicle aP setPos getMarkerPos "CinemaFrolovVehicle"
-vehicle aP setDir 35
+vehicle player setPos getMarkerPos "CinemaFrolovVehicle"
+vehicle player setDir 35
 
-aP action ["EJECT"]
+player action ["EJECT"]
 unassignVehicle aP
 
 #frolovCinema
 
-aP action ["WEAPONONBACK"]
+player action ["WEAPONONBACK"]
 
-aP setPos getMarkerPos "PlayerAway"
+player setPos getMarkerPos "PlayerAway"
 LemontovDouble setPos getMarkerPos "CinemaFrolovPlayer"
 Frolov setPos getMarkerPos "CinemaFrolov"
 Frolov doWatch [8553.84,9292.20,1.69]

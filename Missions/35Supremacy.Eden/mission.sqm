@@ -2223,7 +2223,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=4;
-			expCond="this and (vehicle aP == aP) and canEnd";
+			expCond="this and (vehicle player == aP) and canEnd";
 			expActiv="[] exec ""outro.sqs""";
 			class Effects
 			{
@@ -2247,7 +2247,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="getDammage ablomovHelicopter >= 0.25 and alive aP and (vehicle aP == ablomovHelicopter)";
+			expCond="getDammage ablomovHelicopter >= 0.25 and alive player and (vehicle player == ablomovHelicopter)";
 			expActiv="[] exec ""heli_light.sqs""";
 			class Effects
 			{
@@ -2259,7 +2259,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="getDammage ablomovHelicopter >= 0.5 and alive aP and (vehicle aP == ablomovHelicopter)";
+			expCond="getDammage ablomovHelicopter >= 0.5 and alive player and (vehicle player == ablomovHelicopter)";
 			expActiv="[] exec ""heli_medium.sqs""";
 			class Effects
 			{
@@ -2271,7 +2271,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="getDammage ablomovHelicopter >= 0.7 and alive aP and (vehicle aP == ablomovHelicopter)";
+			expCond="getDammage ablomovHelicopter >= 0.7 and alive player and (vehicle player == ablomovHelicopter)";
 			expActiv="[] exec ""heli_severe.sqs""";
 			class Effects
 			{
@@ -2286,7 +2286,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=4;
-			expCond="this and (vehicle aP == ablomovHelicopter) and canEnd";
+			expCond="this and (vehicle player == ablomovHelicopter) and canEnd";
 			expActiv="[] exec ""outro_welcome.sqs""";
 			class Effects
 			{
@@ -2330,7 +2330,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=4;
-			expCond="this and alive aP and not cinema";
+			expCond="this and alive player and not cinema";
 			expActiv="[] exec ""outofbounds_ablomov.sqs""";
 			class Effects
 			{
@@ -2346,7 +2346,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=4;
-			expCond="this and alive aP and not cinema";
+			expCond="this and alive player and not cinema";
 			expActiv="[] exec ""outofbounds.sqs""";
 			class Effects
 			{

@@ -1,7 +1,7 @@
 
 setAccTime 1
 
-aP say "11v84"
+player say "11v84"
 ~1.5
 titleCut["","BLACK OUT",3]
 ~3.5
@@ -10,25 +10,25 @@ cinema = true
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-? (aP == vehicle aP) : goto "warehouse_cinema" ;
+? (player == vehicle aP) : goto "warehouse_cinema" ;
 
-vehicle aP setPos getMarkerPos "player_vehicle_away"
-vehicle aP setDir 0
+vehicle player setPos getMarkerPos "player_vehicle_away"
+vehicle player setDir 0
 
 ~1
 
-vehicle aP setPos getMarkerPos "warehouse_vehicle"
-vehicle aP setDir 60
+vehicle player setPos getMarkerPos "warehouse_vehicle"
+vehicle player setDir 60
 
-aP action ["EJECT"]
+player action ["EJECT"]
 unassignVehicle aP
 
 #warehouse_cinema
 
-aP setPos getMarkerPos "player_away"
-aP action ["WEAPONONBACK"]
+player setPos getMarkerPos "player_away"
+player action ["WEAPONONBACK"]
 
-aa = aP saveStatus "10Rashiv"
+aa = player saveStatus "10Rashiv"
 aa = RashivWarehouse loadStatus "10Rashiv"
 
 WarehouseGuard1 setPos getMarkerPos "guard_warehouse1";
@@ -63,8 +63,8 @@ _camera camCommit 0
 @camCommitted _camera
 ~5
 deleteVehicle RashivWarehouse
-aP setPos getMarkerPos "rashiv_warehouse"
-aP setDir 10
+player setPos getMarkerPos "rashiv_warehouse"
+player setDir 10
 "Explosives" setMarkerType "Marker"
 lookingForDistraction=true
 WarehouseGuard1 doWatch objNull
@@ -77,7 +77,7 @@ camDestroy _camera
 cinema=false
 
 ~3
-aP say "11v87"
+player say "11v87"
 "9" objStatus "ACTIVE"
 
 

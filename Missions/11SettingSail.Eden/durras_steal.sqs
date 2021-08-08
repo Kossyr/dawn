@@ -21,9 +21,9 @@ _i = _i + 1
 setAccTime 1
 
 titleCut["","BLACK IN",0.5]
-? aP in FuelTruck : aP action ["EJECT"] ; unassignVehicle aP ;
-aP setPos getMarkerPos "rashiv_durras_front"
-aP setDir 250
+? player in FuelTruck : player action ["EJECT"] ; unassignVehicle player ;
+player setPos getMarkerPos "rashiv_durras_front"
+player setDir 250
 FuelTruck setPos getMarkerPos "durras_truck"
 FuelTruck setDir 70
 stealingTruck=true
@@ -36,13 +36,13 @@ goto "ex"
 
 Tracer say "11v79"
 "6" objStatus "DONE"
-aP addRating 1000
+player addRating 1000
 "7" objStatus "ACTIVE"
 hasTruck=true
 Calverra setPos getMarkerPos "calverra_beach"
 ~3
 setAccTime 1
-aP say "11v81"
+player say "11v81"
 ~7
 saveGame
 

@@ -19,7 +19,7 @@ churchCountdown=false
 
 setAccTime 1
 
-aP say "00v34"
+player say "00v34"
 
 ~5
 
@@ -29,11 +29,11 @@ titleCut ["","BLACK OUT",2]
 
 ~2.5
 
-aP action ["WEAPONONBACK"]
+player action ["WEAPONONBACK"]
 
 astier doWatch objNull
 
-aa = aP saveStatus "00Poincare"
+aa = player saveStatus "00Poincare"
 aa = actor2 loadStatus "00Poincare"
 
 unassignVehicle aP
@@ -41,7 +41,7 @@ unassignVehicle Astier
 unassignVehicle res1
 unassignVehicle res2
 
-aP setPos getMarkerPos "chotain_uazg_clear"
+player setPos getMarkerPos "chotain_uazg_clear"
 uazg setPos getMarkerPos "chotain_uazg2"
 uazg setDir 195
 
@@ -309,8 +309,8 @@ _camera camCommit 7
 
 deleteVehicle actor2
 
-aP setPos getMarkerPos "chotain_ap"
-aP setDir 340
+player setPos getMarkerPos "chotain_ap"
+player setDir 340
 
 cinem=false
 
@@ -323,7 +323,7 @@ camDestroy _camera
 res3 assignAsCargo uazg
 res4 assignAsCargo uazg
 res5 assignAsCargo uazg
-aP assignAsDriver uazg
+player assignAsDriver uazg
 Astier assignAsDriver ammo1
 res1 assignAsDriver ammo2
 res2 assignAsDriver ammo3

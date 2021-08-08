@@ -2,7 +2,7 @@ aaDestroyed=aaDestroyed+1
 
 setAccTime 1
 
-aP addRating 1000
+player addRating 1000
 
 ? aaDestroyed == 1 : goto "OneDestroyed" ;
 ? aaDestroyed == 2 : goto "TwoDestroyed" ;
@@ -11,25 +11,25 @@ aP addRating 1000
 
 #OneDestroyed
 
-aP sideRadio "39r04"
+player sideRadio "39r04"
 
 goto "exitMe"
 
 #TwoDestroyed
 
-aP sideRadio "39r05"
+player sideRadio "39r05"
 
 goto "exitMe"
 
 #ThreeDestroyed
 
-aP sideRadio "39r06"
+player sideRadio "39r06"
 
 goto "exitMe"
 
 #FourDestroyed
 
-aP sideRadio "39r07"
+player sideRadio "39r07"
 
 goto "exitMe"
 

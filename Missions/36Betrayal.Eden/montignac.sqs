@@ -11,7 +11,7 @@ playMusic ["RTrack8",10]
 
 cinema=true
 
-aa = aP saveStatus "36Lemontov"
+aa = player saveStatus "36Lemontov"
 aa = LemontovMontignac loadStatus "36Lemontov"
 aa = LemontovMontignac2 loadStatus "36Lemontov"
 
@@ -61,8 +61,8 @@ _camera camCommit 0
 
 deleteVehicle playerCar
 unassignVehicle aP
-aP action ["WEAPONONBACK"]
-aP setPos getMarkerPos "playerAway"
+player action ["WEAPONONBACK"]
+player setPos getMarkerPos "playerAway"
 
 ;=== 21:08:04
 _camera camSetTarget [-40508.37,96186.14,1910.62]
@@ -414,8 +414,8 @@ KaplinskyMontignac say "36v103"
 LemontovMontignac2 doWatch [4828.29,6987.61,1.52]
 ~2.5
 deleteVehicle LemontovMontignac2
-aP setPos getMarkerPos "LemontovMontignacMeeting"
-aP setDir 100
+player setPos getMarkerPos "LemontovMontignacMeeting"
+player setDir 100
 deleteVehicle KaplinskyMontignac
 deleteVehicle AstierMontignac
 
@@ -533,8 +533,8 @@ LemontovMontignac2 doWatch [4804.51,6985.68,1.78]
 ~2.5
 
 deleteVehicle LemontovMontignac2
-aP setPos getMarkerPos "LemontovMontignacMeeting"
-aP setDir 260
+player setPos getMarkerPos "LemontovMontignacMeeting"
+player setDir 260
 
 deleteVehicle KaplinskyMontignac
 deleteVehicle AstierMontignac
@@ -560,10 +560,10 @@ meetingDone=true
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
-aP setBehaviour "AWARE"
+player setBehaviour "AWARE"
 
 "1" objStatus "DONE"
-aP addRating 1000
+player addRating 1000
 
 cinema=false
 

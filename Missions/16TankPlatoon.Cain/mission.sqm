@@ -2593,7 +2593,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=19;
 			text="THEY JOIN THE TANK CREW";
-			expActiv="aP exec ""crew.sqs""";
+			expActiv="player exec ""crew.sqs""";
 			class Effects
 			{
 			};
@@ -2657,7 +2657,7 @@ class Mission
 			age="UNKNOWN";
 			text="NORTHERN TANKS DESTROYED";
 			expCond="not canmove utok1 and not canmove utok2 and not canmove utok3";
-			expActiv="aP exec ""outro.sqs""";
+			expActiv="player exec ""outro.sqs""";
 			class Effects
 			{
 			};
@@ -2702,7 +2702,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=0;
 			text="OUT OF BOUNDS - WARNING";
-			expCond="this and alive aP and not tankisti";
+			expCond="this and alive player and not tankisti";
 			expActiv="[] exec ""outofbounds_kukushkin_platoon.sqs""";
 			class Effects
 			{
@@ -2720,7 +2720,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=0;
 			text="OUT OF BOUNDS - KILL";
-			expCond="this and alive aP and not tankisti";
+			expCond="this and alive player and not tankisti";
 			expActiv="[] exec ""outofbounds.sqs""";
 			class Effects
 			{
@@ -2737,7 +2737,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=0;
 			text="OUT OF BOUNDS - WARNING";
-			expCond="this and alive aP and joinedPlatoon";
+			expCond="this and alive player and joinedPlatoon";
 			expActiv="[] exec ""outofbounds_kukushkin_platoon.sqs""";
 			class Effects
 			{
@@ -2754,7 +2754,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=0;
 			text="OUT OF BOUNDS - KILL";
-			expCond="this and alive aP and joinedPlatoon";
+			expCond="this and alive player and joinedPlatoon";
 			expActiv="[] exec ""outofbounds.sqs""";
 			class Effects
 			{

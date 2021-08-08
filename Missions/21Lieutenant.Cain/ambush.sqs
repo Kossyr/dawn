@@ -5,11 +5,11 @@ _borisSurvived = alive A1 or alive A2 or alive A3 or alive A4 or alive A5
 ? not _borisSurvived : goto "borisDead" ;
 
 boris sideRadio "21r07"
-aP sideRadio "21r08"
-aP sideRadio "21r09"
+player sideRadio "21r08"
+player sideRadio "21r09"
 
 "4" objStatus "DONE"
-aP addRating 1000
+player addRating 1000
 
 ~5
 
@@ -29,7 +29,7 @@ goto "ex"
 
 "4" objStatus "FAILED"
 
-aP sideRadio "21r09"
+player sideRadio "21r09"
 afterAmbush=true
 
 #ex

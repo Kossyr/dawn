@@ -19,7 +19,7 @@ astierCareless=true
 
 setAccTime 1
 
-aa = aP saveStatus "00Poincare"
+aa = player saveStatus "00Poincare"
 aa = actor loadStatus "00Poincare"
 
 Astier stop true
@@ -29,14 +29,14 @@ res2 stop true
 Astier action ["WEAPONONBACK"]
 res1 action ["WEAPONONBACK"]
 res2 action ["WEAPONONBACK"]
-aP action ["WEAPONONBACK"]
+player action ["WEAPONONBACK"]
 
 Astier setPos getMarkerPos "trucks_astier"
 res1 setPos getMarkerPos "trucks_clear_res1"
 res2 setPos getMarkerPos "trucks_clear_res2"
 actor setPos getMarkerPos "trucks_ap"
 
-aP setPos getMarkerPos "trucks_clear_ap"
+player setPos getMarkerPos "trucks_clear_ap"
 
 Astier setDir 295
 actor setDir 290
@@ -129,8 +129,8 @@ res2 setDir 25
 res1 switchMove ""
 res2 switchMove "FxInHand"
 
-aP setPos getMarkerPos "trucks_ap"
-aP setDir 290
+player setPos getMarkerPos "trucks_ap"
+player setDir 290
 
 enableRadio true
 
@@ -145,7 +145,7 @@ cinema=false
 
 ~0.5
 
-aP assignAsDriver uazg
+player assignAsDriver uazg
 [aP] orderGetIn true
 
 ~2

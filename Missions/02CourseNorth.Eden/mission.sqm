@@ -1855,7 +1855,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=10;
 			text="OUT OF BOUNDS - WARNING";
-			expCond="this and not (aP in auto) and alive aP";
+			expCond="this and not (player in auto) and alive aP";
 			expActiv="[] exec ""outofbounds_rashiv_private.sqs""";
 			class Effects
 			{
@@ -1933,7 +1933,7 @@ class Mission
 			idVehicle=10;
 			text="RETREAT TO FIGARI";
 			expCond="this and done";
-			expActiv="aP exec ""outro.sqs""";
+			expActiv="player exec ""outro.sqs""";
 			class Effects
 			{
 			};
@@ -1961,7 +1961,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			text="OUT OF BOUNDS - KILL";
-			expCond="this and not (aP in auto) and alive aP";
+			expCond="this and not (player in auto) and alive aP";
 			expActiv="[] exec ""outofbounds.sqs""";
 			class Effects
 			{

@@ -1,7 +1,7 @@
 setAccTime 1
 
 "2" objStatus "DONE"
-aP addRating 1000
+player addRating 1000
 
 playMusic "RTrack9"
 
@@ -15,8 +15,8 @@ deleteVehicle Poincare
 Lemontov stop true
 Lemontov setPos getMarkerPos "LemontovAway"
 
-aP setPos getMarkerPos "RashivAway"
-aP action ["WEAPONONBACK"]
+player setPos getMarkerPos "RashivAway"
+player action ["WEAPONONBACK"]
 
 Lemontov setBehaviour "CARELESS"
 
@@ -383,10 +383,10 @@ Astier setMimic "normal"
 Astier doWatch objNull
 
 Lemontov setPos getMarkerPos "CastleLemontov"
-aP setPos getMarkerPos "CastleRashiv"
+player setPos getMarkerPos "CastleRashiv"
 
 Lemontov setDir 10
-aP setDir 5
+player setDir 5
 
 Lemontov stop false
 ~0.5
@@ -415,7 +415,7 @@ Lemontov sideRadio "31r02"
 
 ~1
 
-aP action ["WEAPONINHAND"]
+player action ["WEAPONINHAND"]
 
 ~2
 

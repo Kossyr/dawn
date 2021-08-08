@@ -1,7 +1,7 @@
 setAccTime 1
 
 "3" objStatus "DONE"
-aP addRating 1000
+player addRating 1000
 
 titleCut["","BLACK OUT",0.5]
 ~0.5
@@ -11,27 +11,27 @@ cinema=true
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-? (aP == vehicle aP) : goto "cinema_helicopter" ;
+? (player == vehicle aP) : goto "cinema_helicopter" ;
 
-vehicle aP setPos getMarkerPos "CinemaHelicopterVehicle"
-vehicle aP setDir 0
+vehicle player setPos getMarkerPos "CinemaHelicopterVehicle"
+vehicle player setDir 0
 
 ~1
 
-vehicle aP setPos getMarkerPos "CinemaHelicopterVehicle"
-vehicle aP setDir 0
+vehicle player setPos getMarkerPos "CinemaHelicopterVehicle"
+vehicle player setDir 0
 
-aP action ["EJECT"]
+player action ["EJECT"]
 unassignVehicle aP
 
 #cinema_helicopter
 
-aP action ["WEAPONONBACK"]
+player action ["WEAPONONBACK"]
 
-aP setPos getMarkerPos "Cinema"
+player setPos getMarkerPos "Cinema"
 AblomovCinemaHelicopter setPos getMarkerPos "CinemaHelicopter";
 
-aa = aP saveStatus "35Ablomov"
+aa = player saveStatus "35Ablomov"
 aa = AblomovCinemaHelicopter loadStatus "35Ablomov"
 
 AblomovCinemaHelicopter setMimic "normal"
@@ -100,8 +100,8 @@ AblomovCinemaHelicopter setMimic "angry"
 AblomovCinemaHelicopter doWatch [4862.43,11869.49,1.75]
 ~3
 deleteVehicle AblomovCinemaHelicopter
-aP setPos getMarkerPos "CinemaHelicopter"
-aP setDir 45
+player setPos getMarkerPos "CinemaHelicopter"
+player setDir 45
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera

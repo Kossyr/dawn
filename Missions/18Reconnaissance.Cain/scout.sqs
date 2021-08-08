@@ -18,10 +18,10 @@ sitdown switchMove "effectstandsitdown"
 
 [] exec "dip.sqs"
 
-aP setPos getMarkerPos "playerReturn"
-aP setUnitPos "up"
-aP setDir 160
-aP action ["weaponinhand"]
+player setPos getMarkerPos "playerReturn"
+player setUnitPos "up"
+player setDir 160
+player action ["weaponinhand"]
 
 Double setPos getMarkerPos "playerBase"
 
@@ -99,7 +99,7 @@ _camera camCommit 6
 
 titleText ["","PLAIN DOWN"]
 
-aP sideRadio "18r09"
+player sideRadio "18r09"
 Lemontov sideRadio "18r10"
 
 ;=== 15:18:53
@@ -128,7 +128,7 @@ camDestroy _camera
 
 titleCut ["", "BLACK IN", 1]
 
-aP setPos getMarkerPos "playerReturn"
+player setPos getMarkerPos "playerReturn"
 
 deleteVehicle Double
 
@@ -137,7 +137,7 @@ deleteVehicle Double
 toConvoy=true
 
 "3" objStatus "DONE"
-aP addRating 1000
+player addRating 1000
 
 Lemontov sideRadio "18r11"
 

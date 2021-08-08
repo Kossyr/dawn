@@ -1,6 +1,6 @@
 setAccTime 1
 
-aP say "11v90"
+player say "11v90"
 
 ~2
 
@@ -14,25 +14,25 @@ cinema = true
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-? (aP == vehicle aP) : goto "tractor_cinema" ;
+? (player == vehicle aP) : goto "tractor_cinema" ;
 
-vehicle aP setPos getMarkerPos "player_vehicle_away"
-vehicle aP setDir 0
+vehicle player setPos getMarkerPos "player_vehicle_away"
+vehicle player setDir 0
 
 ~1
 
-vehicle aP setPos getMarkerPos "tractor_vehicle"
-vehicle aP setDir 60
+vehicle player setPos getMarkerPos "tractor_vehicle"
+vehicle player setDir 60
 
-aP action ["EJECT"]
+player action ["EJECT"]
 unassignVehicle aP
 
 #tractor_cinema
 
-aP setPos getMarkerPos "player_away"
-aP action ["WEAPONINHAND"]
+player setPos getMarkerPos "player_away"
+player action ["WEAPONINHAND"]
 
-aa = aP saveStatus "10Rashiv"
+aa = player saveStatus "10Rashiv"
 aa = RashivTractor loadStatus "10Rashiv"
 
 RashivTractor setMimic "Normal"
@@ -133,13 +133,13 @@ WarehouseGuard2 doMove getMarkerPos "guard_warehouse2_tractor"
 ~3
 
 "9" objStatus "DONE"
-aP addRating 1000
+player addRating 1000
 
 warehouseBan=false
 
 deleteVehicle RashivTractor
-aP setPos getMarkerPos "rashiv_warehouse_tractor"
-aP setDir 285
+player setPos getMarkerPos "rashiv_warehouse_tractor"
+player setDir 285
 
 
 player cameraEffect ["terminate","back"]

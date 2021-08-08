@@ -1664,7 +1664,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="aP in auto";
+			expCond="player in auto";
 			expActiv="auto lock true";
 			class Effects
 			{
@@ -1832,7 +1832,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="""alive _x"" count units boris == 0 and not transportCome and (rescuePossible or aP == leader group aP)";
+			expCond="""alive _x"" count units boris == 0 and not transportCome and (rescuePossible or player == leader group aP)";
 			expActiv="[] exec ""rescue_fail.sqs""";
 			class Effects
 			{
@@ -1861,7 +1861,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=6;
 			text="OUT OF BOUNDS - WARNING";
-			expCond="this and alive aP and goForest";
+			expCond="this and alive player and goForest";
 			expActiv="[] exec ""outofbounds_rashiv_private.sqs""";
 			class Effects
 			{
@@ -1878,7 +1878,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=6;
 			text="OUT OF BOUNDS - KILL";
-			expCond="this and alive aP and goForest";
+			expCond="this and alive player and goForest";
 			expActiv="[] exec ""outofbounds.sqs""";
 			class Effects
 			{
@@ -1978,7 +1978,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=6;
 			text="OUT OF BOUNDS - WARNING";
-			expCond="this and alive aP and not (aP in car) and not allAboard";
+			expCond="this and alive player and not (player in car) and not allAboard";
 			expActiv="[] exec ""outofbounds_rashiv_private.sqs""";
 			class Effects
 			{
@@ -1995,7 +1995,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=6;
 			text="OUT OF BOUNDS - KILL";
-			expCond="this and alive aP and not (aP in car) and not allAboard";
+			expCond="this and alive player and not (player in car) and not allAboard";
 			expActiv="[] exec ""outofbounds.sqs""";
 			class Effects
 			{

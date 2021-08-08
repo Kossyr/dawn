@@ -16,9 +16,9 @@ playMusic "Track5"
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-aP action ["WEAPONONBACK"]
+player action ["WEAPONONBACK"]
 
-aP setPos getMarkerPos "PlayerAway"
+player setPos getMarkerPos "PlayerAway"
 [aP] join grpNull
 
 LemontovDouble setPos getMarkerPos "CinemaShaposhnikovPlayer"
@@ -592,8 +592,8 @@ Shaposhnikov move getMarkerPos "CinemaShaposhnikov3"
 
 Shaposhnikov doWatch [11440.37,10505.48,1.28]
 
-aP setPos getMarkerPos "CinemaShaposhnikovPlayer2"
-aP setDir 180
+player setPos getMarkerPos "CinemaShaposhnikovPlayer2"
+player setDir 180
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera

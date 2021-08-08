@@ -1,10 +1,10 @@
 titleCut ["","BLACK IN",3]
 
 Astier reveal amCar
-aP reveal amCar
+player reveal amCar
 
 Astier assignAsDriver amCar
-aP assignAsCargo amCar
+player assignAsCargo amCar
 
 Astier stop true
 
@@ -48,7 +48,7 @@ escaping=false
 "Cemetery" setMarkerType "Empty"
 "Pub" setMarkerType "Empty"
 
-aP setCaptive true
+player setCaptive true
 Astier setCaptive true
 
 boat1 setFuel 0
@@ -62,7 +62,7 @@ barman setPos [9536.85,1553.12,0.47]
 
 Calverra doWatch [9523.55,1577.14,1.14]
 
-rebelFireCheck = aP AddEventHandler ["fired", {_this exec "rebel_fire_check.sqs"}]
+rebelFireCheck = player AddEventHandler ["fired", {_this exec "rebel_fire_check.sqs"}]
 
 playMusic "Track1"
 

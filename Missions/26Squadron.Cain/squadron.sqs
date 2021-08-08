@@ -3,9 +3,9 @@
 setAccTime 1
 
 "1" objStatus "DONE"
-aP addRating 1000
+player addRating 1000
 
-aP action ["WEAPONONBACK"]
+player action ["WEAPONONBACK"]
 
 Koltsov stop true
 
@@ -15,7 +15,7 @@ Koltsov setDir 10
 AblomovCinema setPos getMarkerPos "AblomovCinema"
 AblomovCinema setDir 350
 
-aP setPos getMarkerPos "CinemaEmpty"
+player setPos getMarkerPos "CinemaEmpty"
 
 AblomovCinema doWatch [9177.07,9455.18,1.58]
 Koltsov doWatch [9177.07,9455.18,1.58]
@@ -103,12 +103,12 @@ Koltsov doWatch objNull
 AblomovCinema doWatch objNull
 
 deleteVehicle AblomovCinema
-aP setPos getMarkerPos "AblomovCinema"
-aP setDir 350
+player setPos getMarkerPos "AblomovCinema"
+player setDir 350
 
 Syomin assignAsDriver mi24_1
 SyominGunner assignAsGunner mi24_1
-aP assignAsDriver mi24_2
+player assignAsDriver mi24_2
 Koltsov assignAsGunner mi24_2
 
 enableRadio true
@@ -116,7 +116,7 @@ enableRadio true
 Syomin setBehaviour "AWARE"
 SyominGunner setBehaviour "AWARE"
 Koltsov setBehaviour "AWARE"
-aP setBehaviour "AWARE"
+player setBehaviour "AWARE"
 
 ~1
 
@@ -127,7 +127,7 @@ camDestroy _camera
 
 Syomin setGroupId ["NOVEMBER","GROUPCOLOR0"]
 
-aP action ["WEAPONINHAND"]
+player action ["WEAPONINHAND"]
 
 takeOff=true
 

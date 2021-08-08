@@ -15,7 +15,7 @@ playMusic ["RTrack10",8]
 uazg setPos getMarkerPos "chotain_uazg_clear"
 uazg setDir 180
 
-? not (aP in uazg) : aP moveInDriver uazg ;
+? not (player in uazg) : player moveInDriver uazg ;
 
 ~0.5
 
@@ -180,7 +180,7 @@ uazg setDir 180
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
-aP setBehaviour "AWARE"
+player setBehaviour "AWARE"
 
 cinema=false
 
@@ -194,7 +194,7 @@ saveGame
 playMusic "Track10"
 7 fadeMusic 0.8
 
-aP say "00v33"
+player say "00v33"
 
 ~4.5
 

@@ -2483,7 +2483,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="PLAYER AT THE TOP OF THE TOWER";
-			expCond="aP distance Astier <= 3";
+			expCond="player distance Astier <= 3";
 			expActiv="[] exec ""outro.sqs""";
 			class Effects
 			{
@@ -2496,7 +2496,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="PLAYER ON THE FIRST FLOOR";
-			expCond="aP distance tower3 <= 3";
+			expCond="player distance tower3 <= 3";
 			expActiv="[] exec ""castle_tower.sqs""";
 			class Effects
 			{
@@ -2526,7 +2526,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=10;
 			text="OUT OF BOUNDS - WARNING";
-			expCond="this and alive aP and not (aP in resTransport)";
+			expCond="this and alive player and not (player in resTransport)";
 			expActiv="[] exec ""outofbounds_rashiv_alone.sqs""";
 			class Effects
 			{
@@ -2544,7 +2544,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=10;
 			text="OUT OF BOUNDS - KILL";
-			expCond="this and alive aP and not (aP in resTransport)";
+			expCond="this and alive player and not (player in resTransport)";
 			expActiv="[] exec ""outofbounds.sqs""";
 			class Effects
 			{

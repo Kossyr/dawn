@@ -5349,7 +5349,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			text="OUT OF BOUNDS - WARNING";
-			expCond="aP distance Lemontov > 100 and alive aP";
+			expCond="player distance Lemontov > 100 and alive aP";
 			expActiv="[] exec ""outofbounds_rashiv_lemontov.sqs""; playerAway=true";
 			expDesactiv="playerAway=false";
 			class Effects
@@ -5383,7 +5383,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=26;
 			text="ACCESS TO LAMENTIN";
-			expCond="this and alive aP and not toLamentin";
+			expCond="this and alive player and not toLamentin";
 			expActiv="[] exec ""outofbounds_rashiv_lemontov.sqs""";
 			class Effects
 			{
@@ -5400,7 +5400,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=26;
 			text="ACCESS TO LAMENTIN";
-			expCond="this and alive aP and not toLamentin ";
+			expCond="this and alive player and not toLamentin ";
 			expActiv="[] exec ""outofbounds.sqs""";
 			class Effects
 			{
@@ -5421,7 +5421,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			idVehicle=26;
-			expCond="this and LamentinPhase1 and alive aP and not toLamentin";
+			expCond="this and LamentinPhase1 and alive player and not toLamentin";
 			expActiv="[] exec ""outofbounds_rashiv_lemontov.sqs""; playerAway2=true";
 			expDesactiv="playerAway2=false";
 			class Effects

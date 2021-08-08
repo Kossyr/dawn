@@ -9,27 +9,27 @@ titleCut["","BLACK OUT",0.5]
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-? (aP == vehicle aP) : goto "cinemaRashiv" ;
+? (player == vehicle aP) : goto "cinemaRashiv" ;
 
-vehicle aP setPos getMarkerPos "VehicleAway"
-vehicle aP setDir 0
+vehicle player setPos getMarkerPos "VehicleAway"
+vehicle player setDir 0
 
 ~0.5
 
-vehicle aP setPos getMarkerPos "CinemaRashivVehicle"
-vehicle aP setDir 145
+vehicle player setPos getMarkerPos "CinemaRashivVehicle"
+vehicle player setDir 145
 
-aP action ["EJECT"]
+player action ["EJECT"]
 unassignVehicle aP
 
 #cinemaRashiv
 
-aa = aP saveStatus "f03Lemontov"
+aa = player saveStatus "f03Lemontov"
 aa = LemontovDouble loadStatus "f03Lemontov"
 
-aP action ["WEAPONONBACK"]
+player action ["WEAPONONBACK"]
 
-aP setPos getMarkerPos "PlayerAway"
+player setPos getMarkerPos "PlayerAway"
 CinemaRashiv setPos getMarkerPos "CinemaRashiv"
 CinemaRashiv setMimic "normal"
 
@@ -378,8 +378,8 @@ Rashiv doWatch [2304.17,6986.35,1.55]
 Rashiv setDir 30
 Rashiv setMimic "normal"
 
-aP setPos getMarkerPos "CinemaRashivLemontov"
-aP setDir 210
+player setPos getMarkerPos "CinemaRashivLemontov"
+player setDir 210
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera

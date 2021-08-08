@@ -8,24 +8,24 @@ titleCut["","BLACK OUT",0.5]
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-? (aP == vehicle aP) : goto "dockhandCinema" ;
+? (player == vehicle aP) : goto "dockhandCinema" ;
 
-vehicle aP setPos getMarkerPos "VehicleAway"
-vehicle aP setDir 0
+vehicle player setPos getMarkerPos "VehicleAway"
+vehicle player setDir 0
 
 ~0.5
 
-vehicle aP setPos getMarkerPos "CinemaDockhandVehicle"
-vehicle aP setDir 25
+vehicle player setPos getMarkerPos "CinemaDockhandVehicle"
+vehicle player setDir 25
 
-aP action ["EJECT"]
+player action ["EJECT"]
 unassignVehicle aP
 
 #dockhandCinema
 
-aP action ["WEAPONONBACK"]
+player action ["WEAPONONBACK"]
 
-aP setPos getMarkerPos "PlayerAway"
+player setPos getMarkerPos "PlayerAway"
 LemontovDouble setPos getMarkerPos "CinemaDockhandPlayer"
 Dockhand setPos getMarkerPos "CinemaDockhand"
 
@@ -68,8 +68,8 @@ LemontovDouble doWatch objNull
 LemontovDouble setDir 0
 LemontovDouble setPos getMarkerPos "PlayerDoubleAway"
 
-aP setPos getMarkerPos "CinemaDockhandPlayer"
-aP setDir 5
+player setPos getMarkerPos "CinemaDockhandPlayer"
+player setDir 5
 
 
 "Chernikov1" setMarkerType "Empty"

@@ -7,7 +7,7 @@ titleCut["","BLACK OUT",1]
 ~1
 Frolov action ["EJECT"]
 unassignVehicle Frolov
-aP action ["EJECT"]
+player action ["EJECT"]
 unassignVehicle aP
 ourTank setPos getMarkerPos "ourTank"
 ourTank setDir 185
@@ -35,14 +35,14 @@ p6 setDir 10
 p7 setPos getMarkerPos "p7"
 p7 setDir 45
 
-aP setPos getMarkerPos "AwayPlayer"
+player setPos getMarkerPos "AwayPlayer"
 Frolov setPos getMarkerPos "AwayFrolov"
 
 CinemaFrolov setPos getMarkerPos "CinemaFrolov";
 CinemaKukushkin setPos getMarkerPos "CinemaKukushkin";
 
 ~0.5
-aP action ["WEAPONONBACK"]
+player action ["WEAPONONBACK"]
 Frolov action ["WEAPONONBACK"]
 ourTank setPos getMarkerPos "ourTank"
 ourTank setDir 185
@@ -97,9 +97,9 @@ _camera camCommit 8
 titleText["","PLAIN"]
 deleteVehicle CinemaFrolov
 deleteVehicle CinemaKukushkin
-aP setPos getMarkerPos "CinemaKukushkin"
+player setPos getMarkerPos "CinemaKukushkin"
 Frolov setPos getMarkerPos "CinemaFrolov"
-aP setDir 180
+player setDir 180
 Frolov setDir 180
 titleCut["","BLACK IN",0.5]
 enableRadio true
@@ -116,7 +116,7 @@ camDestroy _camera
 
 Frolov AssignAsCommander tank1
 p1 AssignAsCommander tank2
-aP assignascommander ourTank
+player assignascommander ourTank
 p2 assignAsGunner tank1
 p3 assignAsDriver tank1
 p4 assignAsGunner tank2
@@ -125,12 +125,12 @@ p6 assignAsGunner ourTank
 p7 assignAsDriver ourTank
 
 "1" objStatus "DONE"
-aP addRating 1000
+player addRating 1000
 platoonGetIn=true
 
 ~1
 
-aP action ["WEAPONINHAND"]
+player action ["WEAPONINHAND"]
 
 ~5
 

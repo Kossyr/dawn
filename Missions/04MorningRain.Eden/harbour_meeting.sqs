@@ -12,12 +12,12 @@ _camera cameraeffect ["internal","back"]
 Lemontov stop true
 Lemontov setDir 280
 
-aP setDir 300
+player setDir 300
 
-aP setPos getMarkerPos "HarbourCinemaRashivAway"
+player setPos getMarkerPos "HarbourCinemaRashivAway"
 Lemontov setPos getMarkerPos "HarbourCinemaLemontovAway"
 group player setBehaviour "CARELESS"
-aP action ["WEAPONONBACK"]
+player action ["WEAPONONBACK"]
 
 LemontovCinema setPos getMarkerPos "HarbourCinemaLemontov"
 RashivCinema setPos getMarkerPos "HarbourCinemaRashiv"
@@ -96,7 +96,7 @@ S3 addWeapon "nvgoggles"
 deleteVehicle LemontovCinema
 deleteVehicle RashivCinema
 Lemontov setPos getMarkerPos "HarbourCinemaLemontov"
-aP setPos getMarkerPos "HarbourCinemaRashiv"
+player setPos getMarkerPos "HarbourCinemaRashiv"
 
 "_x stop false" forEach units kaplinskyGroup
 kaplinskyGroup setCombatMode "blue"
@@ -108,14 +108,14 @@ group player setBehaviour "AWARE"
 toHarbour=true
 
 "1" objStatus "DONE"
-aP addRating 1000
+player addRating 1000
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
 
 ~1
 
-aP action ["WEAPONINHAND"]
+player action ["WEAPONINHAND"]
 
 ~4
 

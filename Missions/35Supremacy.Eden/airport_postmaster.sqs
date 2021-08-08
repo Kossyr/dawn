@@ -1,7 +1,7 @@
 setAccTime 1
 
 "2" objStatus "DONE"
-aP addRating 1000
+player addRating 1000
 
 
 titleCut["","BLACK OUT",0.5]
@@ -12,27 +12,27 @@ cinema=true
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-? (aP == vehicle aP) : goto "cinema_postmaster" ;
+? (player == vehicle aP) : goto "cinema_postmaster" ;
 
-vehicle aP setPos getMarkerPos "CinemaPostmasterVehicle"
-vehicle aP setDir 180
+vehicle player setPos getMarkerPos "CinemaPostmasterVehicle"
+vehicle player setDir 180
 
 ~1
 
-vehicle aP setPos getMarkerPos "CinemaPostmasterVehicle"
-vehicle aP setDir 180
+vehicle player setPos getMarkerPos "CinemaPostmasterVehicle"
+vehicle player setDir 180
 
-aP action ["EJECT"]
+player action ["EJECT"]
 unassignVehicle aP
 
 #cinema_postmaster
 
-aP action ["WEAPONONBACK"]
+player action ["WEAPONONBACK"]
 
-aP setPos getMarkerPos "Cinema"
+player setPos getMarkerPos "Cinema"
 AblomovCinemaPostmaster setPos getMarkerPos "CinemaPostmaster";
 
-aa = aP saveStatus "35Ablomov"
+aa = player saveStatus "35Ablomov"
 aa = AblomovCinemaPostmaster loadStatus "35Ablomov"
 
 AblomovCinemaPostmaster doWatch [4881.02,12013.07,1.64]
@@ -132,8 +132,8 @@ _camera camCommit 0
 @camCommitted _camera
 ~1.5
 deleteVehicle AblomovCinemaPostmaster
-aP setPos getMarkerPos "CinemaPostmaster"
-aP setDir 350
+player setPos getMarkerPos "CinemaPostmaster"
+player setDir 350
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera

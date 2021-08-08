@@ -2970,7 +2970,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="POINCARE WENT BACK FOR THE CAR";
-			expCond="trucksDone and (aP in uazg)";
+			expCond="trucksDone and (player in uazg)";
 			expActiv="[] exec ""chotain_info.sqs""";
 			class Effects
 			{
@@ -3122,7 +3122,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="FUEL EM UP";
-			expCond="astierChurchGo2 and (aP in uazg) and (Astier in ammo1)";
+			expCond="astierChurchGo2 and (player in uazg) and (Astier in ammo1)";
 			expActiv="ammo2 setFuel 1; ammo3 setFuel 1";
 			class Effects
 			{
@@ -3479,7 +3479,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			expCond="this and alive aP and not cinema";
+			expCond="this and alive player and not cinema";
 			expActiv="[] exec ""out.sqs""";
 			class Effects
 			{
@@ -3495,8 +3495,8 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			expCond="this and alive aP and not cinema";
-			expActiv="aP setDammage 1";
+			expCond="this and alive player and not cinema";
+			expActiv="player setDammage 1";
 			class Effects
 			{
 			};

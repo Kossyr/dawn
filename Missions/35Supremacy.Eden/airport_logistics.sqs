@@ -1,7 +1,7 @@
 setAccTime 1
 
 "4" objStatus "DONE"
-aP addRating 1000
+player addRating 1000
 
 
 titleCut["","BLACK OUT",0.5]
@@ -12,27 +12,27 @@ cinema=true
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-? (aP == vehicle aP) : goto "cinema_logistics" ;
+? (player == vehicle aP) : goto "cinema_logistics" ;
 
-vehicle aP setPos getMarkerPos "CinemaLogisticsVehicle"
-vehicle aP setDir 0
+vehicle player setPos getMarkerPos "CinemaLogisticsVehicle"
+vehicle player setDir 0
 
 ~1
 
-vehicle aP setPos getMarkerPos "CinemaLogisticsVehicle"
-vehicle aP setDir 0
+vehicle player setPos getMarkerPos "CinemaLogisticsVehicle"
+vehicle player setDir 0
 
-aP action ["EJECT"]
+player action ["EJECT"]
 unassignVehicle aP
 
 #cinema_logistics
 
-aP action ["WEAPONONBACK"]
+player action ["WEAPONONBACK"]
 
-aP setPos getMarkerPos "Cinema"
+player setPos getMarkerPos "Cinema"
 AblomovCinemaLogistics setPos getMarkerPos "CinemaLogistics";
 
-aa = aP saveStatus "35Ablomov"
+aa = player saveStatus "35Ablomov"
 aa = AblomovCinemaLogistics loadStatus "35Ablomov"
 
 
@@ -144,8 +144,8 @@ _camera camCommit 0
 logistics setMimic "normal"
 ~5.5
 deleteVehicle AblomovCinemaLogistics
-aP setPos getMarkerPos "CinemaLogistics"
-aP setDir 60
+player setPos getMarkerPos "CinemaLogistics"
+player setDir 60
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
@@ -160,6 +160,6 @@ logisticsCheck=true
 
 ~5
 
-aP say "35v37"
+player say "35v37"
 
 exit

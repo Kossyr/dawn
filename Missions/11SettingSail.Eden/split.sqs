@@ -8,17 +8,17 @@ setAccTime 1
 [aP] join grpNull
 
 cinema=true
-aP setPos getMarkerPos "player_away"
+player setPos getMarkerPos "player_away"
 Astier setPos getMarkerPos "astier_away"
 Astier stop true
 
-aP action ["WEAPONONBACK"]
+player action ["WEAPONONBACK"]
 
 RashivSplit setPos getMarkerPos "rashiv_split";
 AstierSplit setPos getMarkerPos "astier_split";
 guard setPos getMarkerPos "guard_split";
 
-aa = aP saveStatus "10Rashiv"
+aa = player saveStatus "10Rashiv"
 aa = RashivSplit loadStatus "10Rashiv"
 
 AstierSplit playMove "EffectStand"
@@ -87,8 +87,8 @@ _camera camCommit 0
 AstierSplit doWatch [9669.83,1525.59,1.62]
 ~3.5
 deleteVehicle RashivSplit
-aP setPos getMarkerPos "rashiv_split"
-aP setDir 295
+player setPos getMarkerPos "rashiv_split"
+player setDir 295
 AstierSplit doWatch objNull
 guard say "11v49"
 guard doMove getMarkerPos "guard_tent"
@@ -101,6 +101,6 @@ camDestroy _camera
 
 cinema=false
 
-aP setBehaviour "COMBAT"
+player setBehaviour "COMBAT"
 
 exit

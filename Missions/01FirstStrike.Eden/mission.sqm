@@ -1307,7 +1307,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="PLAYER JUMPER OUT OF HELICOPTER";
-			expCond="not (aP in heli)";
+			expCond="not (player in heli)";
 			expActiv="[] exec ""outside.sqs""";
 			class Effects
 			{
@@ -1337,8 +1337,8 @@ class Mission
 			activationBy="EAST";
 			age="UNKNOWN";
 			text="RUSSIANS ARE IN THE VILLAGE AND NATO IS DEFEATED";
-			expCond="this and alive aP and victory";
-			expActiv="aP exec ""outro.sqs""";
+			expCond="this and alive player and victory";
+			expActiv="player exec ""outro.sqs""";
 			class Effects
 			{
 			};
@@ -1395,7 +1395,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=9;
 			text="OUT OF BOUNDS - WARNING";
-			expCond="this and alive aP and not (aP in heli)";
+			expCond="this and alive player and not (player in heli)";
 			expActiv="[] exec ""outofbounds_rashiv_private.sqs""";
 			class Effects
 			{
@@ -1410,7 +1410,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			text="OUT OF BOUNDS - KILL";
-			expCond="this and alive aP and not (aP in heli)";
+			expCond="this and alive player and not (player in heli)";
 			expActiv="[] exec ""outofbounds.sqs""";
 			class Effects
 			{

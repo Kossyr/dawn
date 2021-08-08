@@ -1,5 +1,5 @@
 "2" objStatus "DONE"
-aP addRating 1000
+player addRating 1000
 
 setAccTime 1
 
@@ -41,10 +41,10 @@ _posYashin = getPos Yashin
 ? alive P9 : P9 setPos getMarkerPos "CinemaAwayP9" ;
 ? alive P10 : P10 setPos getMarkerPos "CinemaAwayP10" ;
 ? alive Yashin : Yashin setPos getMarkerPos "CinemaAwayYashin" ;
-aP setPos getMarkerPos "CinemaAwayRashiv"
-aP action ["WEAPONONBACK"]
+player setPos getMarkerPos "CinemaAwayRashiv"
+player action ["WEAPONONBACK"]
 
-aa = aP saveStatus "41Rashiv"
+aa = player saveStatus "41Rashiv"
 aa = CinemaRashiv loadStatus "41Rashiv"
 CinemaRashiv removeWeapon "binocular"
 
@@ -210,7 +210,7 @@ _camera camCommit 4
 enableRadio true
 ~0.5
 titleText ["","PLAIN DOWN"]
-aP sideRadio "41r16"
+player sideRadio "41r16"
 CinemaRashiv say "41r16_lip"
 @camCommitted _camera
 ~1
@@ -296,8 +296,8 @@ CinemaRashiv setMimic "sad"
 
 
 deleteVehicle CinemaRashiv
-aP setPos getMarkerPos "CinemaRashiv"
-aP setDir 260
+player setPos getMarkerPos "CinemaRashiv"
+player setDir 260
 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
@@ -317,14 +317,14 @@ alarming=true
 
 ~0.5
 
-aP action ["WEAPONINHAND"]
+player action ["WEAPONINHAND"]
 
 ~0.5
 
 setAccTime 1
 
 titleText["","PLAIN DOWN"]
-aP sideRadio "41r18"
+player sideRadio "41r18"
 ~4
 
 saveGame

@@ -3,12 +3,12 @@ setAccTime 1
 soundHorn=false
 
 "8" objStatus "DONE"
-aP addRating 1000
+player addRating 1000
 
 explosivesDone=true
 
-? fuelDone : aP say "11v95" ;
-? not fuelDone : aP say "11v94" ;
+? fuelDone : player say "11v95" ;
+? not fuelDone : player say "11v94" ;
 
 ~10
 WarehouseGuard1 doMove getMarkerPos "guard_warehouse1"
