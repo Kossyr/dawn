@@ -1,12 +1,19 @@
 
 _leader = _this select 0
-_vehicle = _this select 1
-_interval = _this select 2
+
+_vehicle = vehicle _leader
+? _vehicle == _leader : goto "exitMe" ;
+
+_interval = 1
+? count _this >= 2 : _interval = _this select 1 ;
+
+_order = true
+? count _this >= 3 : _order = _this select 2 ;
 
 _group = units _leader
-
 _total = count _group
 _i = 0
+? not _order : _i = _total ;
 
 #loop
 
@@ -15,8 +22,13 @@ unassignVehicle (_group select _i)
 
 ~_interval
 
-_i = _i + 1
+? _order : _i = _i + 1 ; goto "loopCondition" ;
+? not _order : _i = _i - 1 ; goto "loopCondition" ;
 
+#loopCondition
 ? _i < _total : goto "loop"
+
+
+#exitMe
 
 exit
