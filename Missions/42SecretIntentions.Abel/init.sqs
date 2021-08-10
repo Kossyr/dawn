@@ -1,4 +1,6 @@
-titleCut["","BLACK IN",3]
+titleCut["","BLACK IN",5]
+
+baza = [East,"HQ"]
 
 "3" objStatus "HIDDEN"
 "ToHill" setMarkerType "Empty"
@@ -18,13 +20,14 @@ baseReached=false
 baseEntered=false
 baseCleared=false
 
+specsDetected=false
+specsClose=false
+
 canEnd=false
 
-~15
+[] exec "beach_init.sqs"
 
-[] exec "beach_bombardment.sqs"
-
-~15
+~30
 
 [] exec "fenceriders.sqs"
 
