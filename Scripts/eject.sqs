@@ -12,24 +12,42 @@ _order = true
 
 _group = units _leader
 _total = count _group
-_i = 0
-? not _order : _i = _total ;
 
-#loop
+? _order : goto "countUp" ;
+? not _order : goto "countDown" ;
+
+; leader -> last unit
+#countUp
+
+_i = 0
+
+#loopCountUp
 
 (_group select _i) action ["eject", _vehicle]
 unassignVehicle (_group select _i)
 
 ~_interval
 
-? _order : _i = _i + 1 ; goto "loopConditionOrder" ;
-? not _order : _i = _i - 1 ; goto "loopConditionNotOrder" ;
+_i = _i + 1
 
-#loopConditionOrder
-? _i < _total : goto "loop" ;
+? _i < _total : goto "loopCountUp" ;
 goto "exitMe"
-$loopConditionNotOrder
-? _i > 0 : goto "loop" ;
+
+; last unit -> leader
+#countDown
+
+_i = _total
+
+#loopCountDown
+
+(_group select _i) action ["eject", _vehicle]
+unassignVehicle (_group select _i)
+
+~_interval
+
+_i = _i - 1
+
+? _i > 0 : goto "loopCountDown" ;
 goto "exitMe"
 
 #exitMe
