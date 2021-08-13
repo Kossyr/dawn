@@ -22,12 +22,15 @@ unassignVehicle (_group select _i)
 
 ~_interval
 
-? _order : _i = _i + 1 ; goto "loopCondition" ;
-? not _order : _i = _i - 1 ; goto "loopCondition" ;
+? _order : _i = _i + 1 ; goto "loopConditionOrder" ;
+? not _order : _i = _i - 1 ; goto "loopConditionNotOrder" ;
 
-#loopCondition
-? _i < _total : goto "loop"
-
+#loopConditionOrder
+? _i < _total : goto "loop" ;
+goto "exitMe"
+$loopConditionNotOrder
+? _i > 0 : goto "loop" ;
+goto "exitMe"
 
 #exitMe
 
