@@ -1835,7 +1835,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=19;
+		items=20;
 		class Item0
 		{
 			position[]={4871.969238,24.660000,11740.142578};
@@ -1976,6 +1976,14 @@ class Mission
 			position[]={5085.732422,22.391825,12353.213867};
 			name="CinemaChapel";
 			type="Empty";
+		};
+		class Item19
+		{
+			position[]={8668.861328,105.165115,3034.831787};
+			name="WarningEnemyTerritory";
+			text="@STRC_MARKER_ENEMY";
+			type="Warning";
+			colorName="ColorRed";
 		};
 	};
 	class Sensors
@@ -2301,7 +2309,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=4;
 			expCond="this and walkingAround and not cinema";
-			expActiv="[] exec ""outofbounds_ablomov.sqs""";
+			expActiv="[] exec ""away_ablomov.sqs""";
 			class Effects
 			{
 			};
@@ -2315,7 +2323,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=4;
 			expCond="this and walkingAround and not cinema";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};
@@ -2331,7 +2339,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=4;
 			expCond="this and alive player and not cinema";
-			expActiv="[] exec ""outofbounds_ablomov.sqs""";
+			expActiv="[] exec ""away_ablomov.sqs""";
 			class Effects
 			{
 			};
@@ -2347,7 +2355,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=4;
 			expCond="this and alive player and not cinema";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};

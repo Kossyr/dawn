@@ -1473,7 +1473,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=29;
+		items=30;
 		class Item0
 		{
 			position[]={7430.583984,20.879999,4857.662109};
@@ -1749,6 +1749,14 @@ class Mission
 			colorName="ColorBlack";
 			a=0.100000;
 			b=0.100000;
+		};
+		class Item29
+		{
+			position[]={4235.729004,104.764099,3985.850098};
+			name="WarningEnemyTerritory";
+			text="@STRC_MARKER_ENEMY";
+			type="Warning";
+			colorName="ColorRed";
 		};
 	};
 	class Sensors
@@ -2080,9 +2088,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			text="OUT OF BOUNDS - WARNING";
+			text="AWAY - WARNING";
 			expCond="this and alive player and not boardUaz";
-			expActiv="[] exec ""outofbounds_rashiv_lemontov.sqs""";
+			expActiv="[] exec ""away_rashiv_lemontov.sqs""";
 			class Effects
 			{
 			};
@@ -2097,9 +2105,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			text="OUT OF BOUNDS - KILL";
+			text="AWAY - KILL";
 			expCond="this and alive player and not boardUaz";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};
@@ -2115,9 +2123,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			text="OUT OF BOUNDS - WARNING";
+			text="AWAY - WARNING";
 			expCond="this and alive player and ambushPosition";
-			expActiv="[] exec ""outofbounds_rashiv_lemontov.sqs""";
+			expActiv="[] exec ""away_rashiv_lemontov.sqs""";
 			class Effects
 			{
 			};
@@ -2133,9 +2141,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			text="OUT OF BOUNDS - KILL";
+			text="AWAY - KILL";
 			expCond="this and alive player and ambushPosition";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};

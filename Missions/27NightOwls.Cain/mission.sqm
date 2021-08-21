@@ -4079,7 +4079,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=33;
+		items=34;
 		class Item0
 		{
 			position[]={6041.463867,415.934967,6192.175781};
@@ -4390,6 +4390,14 @@ class Mission
 			colorName="ColorBlack";
 			a=0.100000;
 			b=0.100000;
+		};
+		class Item33
+		{
+			position[]={3762.536133,142.109756,4701.157715};
+			name="WarningEnemyTerritory";
+			text="@STRC_MARKER_ENEMY";
+			type="Warning";
+			colorName="ColorRed";
 		};
 	};
 	class Sensors
@@ -4728,9 +4736,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			text="OUT OF BOUNDS - WARNING";
+			text="AWAY - WARNING";
 			expCond="this and alive aP";
-			expActiv="[] exec ""outofbounds_lemontov.sqs""";
+			expActiv="[] exec ""away_lemontov.sqs""";
 			class Effects
 			{
 			};
@@ -4746,9 +4754,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			text="OUT OF BOUNDS - KILL";
+			text="AWAY - KILL";
 			expCond="this and alive aP";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};

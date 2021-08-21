@@ -4628,7 +4628,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=38;
+		items=39;
 		class Item0
 		{
 			position[]={4417.020996,33.196949,5874.707031};
@@ -4915,6 +4915,14 @@ class Mission
 			position[]={1529.901978,7.769431,5327.326172};
 			name="HarbourCinemaRashivAway";
 			type="Empty";
+		};
+		class Item38
+		{
+			position[]={4542.662109,31.997009,5744.897461};
+			name="WarningEnemyTerritory";
+			text="@STRC_MARKER_ENEMY";
+			type="Warning";
+			colorName="ColorRed";
 		};
 	};
 	class Sensors
@@ -5348,9 +5356,9 @@ class Mission
 			timeoutMax=20.000000;
 			interruptable=1;
 			age="UNKNOWN";
-			text="OUT OF BOUNDS - WARNING";
+			text="AWAY - WARNING";
 			expCond="player distance Lemontov > 100 and alive aP";
-			expActiv="[] exec ""outofbounds_rashiv_lemontov.sqs""; playerAway=true";
+			expActiv="[] exec ""away_rashiv_lemontov.sqs""; playerAway=true";
 			expDesactiv="playerAway=false";
 			class Effects
 			{
@@ -5384,7 +5392,7 @@ class Mission
 			idVehicle=26;
 			text="ACCESS TO LAMENTIN";
 			expCond="this and alive player and not toLamentin";
-			expActiv="[] exec ""outofbounds_rashiv_lemontov.sqs""";
+			expActiv="[] exec ""away_rashiv_lemontov.sqs""";
 			class Effects
 			{
 			};
@@ -5401,7 +5409,7 @@ class Mission
 			idVehicle=26;
 			text="ACCESS TO LAMENTIN";
 			expCond="this and alive player and not toLamentin ";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};
@@ -5422,7 +5430,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=26;
 			expCond="this and LamentinPhase1 and alive player and not toLamentin";
-			expActiv="[] exec ""outofbounds_rashiv_lemontov.sqs""; playerAway2=true";
+			expActiv="[] exec ""away_rashiv_lemontov.sqs""; playerAway2=true";
 			expDesactiv="playerAway2=false";
 			class Effects
 			{

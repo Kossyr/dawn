@@ -4667,7 +4667,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=49;
+		items=50;
 		class Item0
 		{
 			position[]={9375.764648,191.128799,1037.245972};
@@ -4992,6 +4992,14 @@ class Mission
 			position[]={9450.538086,27.307379,1681.258423};
 			name="tractor_vehicle";
 			type="Empty";
+		};
+		class Item49
+		{
+			position[]={6981.732910,83.564301,4046.208984};
+			name="WarningEnemyTerritory";
+			text="@STRC_MARKER_ENEMY";
+			type="Warning";
+			colorName="ColorRed";
 		};
 	};
 	class Sensors
@@ -5596,7 +5604,7 @@ class Mission
 			idVehicle=0;
 			text="OUTOF BOUNDS - WARNING";
 			expCond="this and alive player and inTheCastle";
-			expActiv="[] exec ""outofbounds_rashiv_alone.sqs""";
+			expActiv="[] exec ""away_rashiv_alone.sqs""";
 			class Effects
 			{
 			};
@@ -5612,7 +5620,7 @@ class Mission
 			idVehicle=0;
 			text="OUTOF BOUNDS - KILL";
 			expCond="this and alive player and inTheCastle";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};
@@ -5700,9 +5708,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			text="OUT OF BOUNDS - WARNING";
+			text="AWAY - WARNING";
 			expCond="this and not cinema and alive player and inTheCity and not goingToDurras";
-			expActiv="[] exec ""outofbounds_rashiv_alone.sqs""";
+			expActiv="[] exec ""away_rashiv_alone.sqs""";
 			class Effects
 			{
 			};
@@ -5718,9 +5726,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			text="OUT OF BOUNDS - KILL";
+			text="AWAY - KILL";
 			expCond="this and not cinema and alive player and inTheCity and not goingToDurras";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};
@@ -5736,9 +5744,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			text="OUT OF BOUNDS - WARNING";
+			text="AWAY - WARNING";
 			expCond="this and not cinema and alive player and inTheCity and goingToDurras";
-			expActiv="[] exec ""outofbounds_rashiv_alone.sqs""";
+			expActiv="[] exec ""away_rashiv_alone.sqs""";
 			class Effects
 			{
 			};
@@ -5754,9 +5762,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			text="OUT OF BOUNDS - KILL";
+			text="AWAY - KILL";
 			expCond="this and not cinema and alive player and inTheCity and goingToDurras";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};

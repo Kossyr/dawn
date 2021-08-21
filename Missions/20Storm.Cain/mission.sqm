@@ -2571,7 +2571,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=37;
+		items=38;
 		class Item0
 		{
 			position[]={7175.600098,16.867477,8787.278320};
@@ -2930,6 +2930,14 @@ class Mission
 			a=0.100000;
 			b=0.100000;
 		};
+		class Item37
+		{
+			position[]={4324.326172,357.820007,5276.322266};
+			name="WarningEnemyTerritory";
+			text="@STRC_MARKER_ENEMY";
+			type="Warning";
+			colorName="ColorRed";
+		};
 	};
 	class Sensors
 	{
@@ -3028,9 +3036,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=2;
-			text="OUT OF BOUNDS - WARNING";
+			text="AWAY - WARNING";
 			expCond="this and alive aP";
-			expActiv="[] exec ""outofbounds_kukushkin_platoon.sqs""";
+			expActiv="[] exec ""away_kukushkin_platoon.sqs""";
 			class Effects
 			{
 			};
@@ -3044,7 +3052,7 @@ class Mission
 			activationBy="VEHICLE";
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
-			text="OUT OF BOUNDS - WARNING";
+			text="AWAY - WARNING";
 			expCond="this and alive aP";
 			class Effects
 			{
@@ -3060,9 +3068,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=2;
-			text="OUT OF BOUNDS -KILL";
+			text="AWAY -KILL";
 			expCond="this and alive aP";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};

@@ -6590,7 +6590,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=53;
+		items=54;
 		class Item0
 		{
 			position[]={3270.840820,267.597382,6898.270508};
@@ -7081,6 +7081,14 @@ class Mission
 			a=0.100000;
 			b=0.100000;
 		};
+		class Item53
+		{
+			position[]={4275.201172,41.494175,3693.365479};
+			name="WarningEnemyTerritory";
+			text="@STRC_MARKER_ENEMY";
+			type="Warning";
+			colorName="ColorRed";
+		};
 	};
 	class Sensors
 	{
@@ -7404,7 +7412,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=0;
 			expCond="this and alive player and sendReinforcements";
-			expActiv="[] exec ""outofbounds_kukushkin.sqs""";
+			expActiv="[] exec ""away_kukushkin.sqs""";
 			class Effects
 			{
 			};
@@ -7419,7 +7427,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=0;
 			expCond="this and alive player and sendReinforcements";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};
@@ -7479,7 +7487,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=0;
 			expCond="this and alive aP";
-			expActiv="[] exec ""outofbounds_kukushkin.sqs""";
+			expActiv="[] exec ""away_kukushkin.sqs""";
 			class Effects
 			{
 			};
@@ -7496,7 +7504,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=0;
 			expCond="this and alive aP";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};

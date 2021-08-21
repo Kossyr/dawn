@@ -1604,7 +1604,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=4;
+		items=5;
 		class Item0
 		{
 			position[]={2520.597168,83.204994,5383.737305};
@@ -1641,6 +1641,14 @@ class Mission
 			type="Start";
 			colorName="ColorGreen";
 			angle=110.000000;
+		};
+		class Item4
+		{
+			position[]={5554.536621,185.184143,7148.409180};
+			name="WarningEnemyTerritory";
+			text="@STRC_MARKER_ENEMY";
+			type="Warning";
+			colorName="ColorRed";
 		};
 	};
 	class Sensors
@@ -1860,9 +1868,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=6;
-			text="OUT OF BOUNDS - WARNING";
+			text="AWAY - WARNING";
 			expCond="this and alive player and goForest";
-			expActiv="[] exec ""outofbounds_rashiv_private.sqs""";
+			expActiv="[] exec ""away_rashiv_private.sqs""";
 			class Effects
 			{
 			};
@@ -1877,9 +1885,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=6;
-			text="OUT OF BOUNDS - KILL";
+			text="AWAY - KILL";
 			expCond="this and alive player and goForest";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};
@@ -1977,9 +1985,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=6;
-			text="OUT OF BOUNDS - WARNING";
+			text="AWAY - WARNING";
 			expCond="this and alive player and not (player in car) and not allAboard";
-			expActiv="[] exec ""outofbounds_rashiv_private.sqs""";
+			expActiv="[] exec ""away_rashiv_private.sqs""";
 			class Effects
 			{
 			};
@@ -1994,9 +2002,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=6;
-			text="OUT OF BOUNDS - KILL";
+			text="AWAY - KILL";
 			expCond="this and alive player and not (player in car) and not allAboard";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};

@@ -2361,7 +2361,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=9;
+		items=10;
 		class Item0
 		{
 			position[]={5007.353027,16.472088,3997.244141};
@@ -2440,6 +2440,14 @@ class Mission
 			position[]={6564.361328,74.755531,5358.324707};
 			name="Minefield";
 			text="@STRM_MARKER_MINEFIELD";
+			type="Warning";
+			colorName="ColorRed";
+		};
+		class Item9
+		{
+			position[]={9192.644531,52.028954,2007.699219};
+			name="WarningEnemyTerritory";
+			text="@STRC_MARKER_ENEMY";
 			type="Warning";
 			colorName="ColorRed";
 		};
@@ -2709,9 +2717,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			text="OUT OF BOUNDS - WARNING";
+			text="AWAY - WARNING";
 			expCond="this and alive aP";
-			expActiv="[] exec ""outofbounds_kukushkin.sqs""";
+			expActiv="[] exec ""away_kukushkin.sqs""";
 			class Effects
 			{
 			};
@@ -2727,9 +2735,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			text="OUT OF BOUNDS - KILL";
+			text="AWAY - KILL";
 			expCond="this and alive aP";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};

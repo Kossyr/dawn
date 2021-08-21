@@ -2249,7 +2249,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=38;
+		items=39;
 		class Item0
 		{
 			position[]={4007.144531,282.317322,5212.071777};
@@ -2578,6 +2578,14 @@ class Mission
 			name="p5";
 			type="Empty";
 		};
+		class Item38
+		{
+			position[]={3969.760986,256.465729,5231.129883};
+			name="WarningEnemyTerritory";
+			text="@STRC_MARKER_ENEMY";
+			type="Warning";
+			colorName="ColorRed";
+		};
 	};
 	class Sensors
 	{
@@ -2701,9 +2709,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			text="OUT OF BOUNDS - WARNING";
+			text="AWAY - WARNING";
 			expCond="this and alive player and not tankisti";
-			expActiv="[] exec ""outofbounds_kukushkin_platoon.sqs""";
+			expActiv="[] exec ""away_kukushkin_platoon.sqs""";
 			class Effects
 			{
 			};
@@ -2719,9 +2727,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			text="OUT OF BOUNDS - KILL";
+			text="AWAY - KILL";
 			expCond="this and alive player and not tankisti";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};
@@ -2736,9 +2744,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			text="OUT OF BOUNDS - WARNING";
+			text="AWAY - WARNING";
 			expCond="this and alive player and joinedPlatoon";
-			expActiv="[] exec ""outofbounds_kukushkin_platoon.sqs""";
+			expActiv="[] exec ""away_kukushkin_platoon.sqs""";
 			class Effects
 			{
 			};
@@ -2753,9 +2761,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			text="OUT OF BOUNDS - KILL";
+			text="AWAY - KILL";
 			expCond="this and alive player and joinedPlatoon";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};

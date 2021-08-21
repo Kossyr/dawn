@@ -3503,7 +3503,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=8;
+		items=9;
 		class Item0
 		{
 			position[]={5503.905762,80.459999,6083.324219};
@@ -3525,27 +3525,27 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={3853.440674,74.612923,6645.519043};
+			position[]={3405.441162,30.026674,6906.938965};
 			name="elipsa1";
 			markerType="ELLIPSE";
 			type="Flag";
 			colorName="ColorRed";
 			fillName="Horizontal";
 			a=3500.000000;
-			b=600.000000;
+			b=1500.000000;
 			angle=140.000000;
 		};
 		class Item3
 		{
-			position[]={6581.048828,123.312332,6618.482422};
+			position[]={6244.431152,162.073044,7397.877441};
 			name="elipsa2";
 			markerType="ELLIPSE";
 			type="Flag";
 			colorName="ColorRed";
 			fillName="Horizontal";
-			a=1600.000000;
-			b=600.000000;
-			angle=220.000000;
+			a=1000.000000;
+			b=1600.000000;
+			angle=119.400505;
 		};
 		class Item4
 		{
@@ -3576,6 +3576,14 @@ class Mission
 			text="@STRM_MARKER_BAY";
 			type="End";
 			colorName="ColorBlue";
+		};
+		class Item8
+		{
+			position[]={4324.095703,68.414963,7391.611816};
+			name="WarningEnemyTerritory";
+			text="@STRC_MARKER_ENEMY";
+			type="Warning";
+			colorName="ColorRed";
 		};
 	};
 	class Sensors
@@ -3759,9 +3767,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=7;
-			text="OUT OF BOUNDS - WARNING";
+			text="AWAY - WARNING";
 			expCond="this and alive player and not jedeme and not (player in nakladak)";
-			expActiv="[] exec ""outofbounds_rashiv_private.sqs""";
+			expActiv="[] exec ""away_rashiv_private.sqs""";
 			class Effects
 			{
 			};
@@ -3775,9 +3783,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=7;
-			text="OUT OF BOUNDS";
+			text="AWAY";
 			expCond="this and alive player and not jedeme and not (player in nakladak)";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};
@@ -3982,9 +3990,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=7;
-			text="OUT OF BOUNDS - WARNING";
+			text="AWAY - WARNING";
 			expCond="this and alive player and not (player in nakladak) and jedeme";
-			expActiv="[] exec ""outofbounds_rashiv_alone.sqs""";
+			expActiv="[] exec ""away_rashiv_alone.sqs""";
 			class Effects
 			{
 			};
@@ -4000,9 +4008,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=7;
-			text="OUT OF BOUNDS - KILL";
+			text="AWAY - KILL";
 			expCond="this and alive player and not (player in nakladak) and jedeme";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};

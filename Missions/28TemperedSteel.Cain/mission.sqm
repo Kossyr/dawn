@@ -6293,7 +6293,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=53;
+		items=54;
 		class Item0
 		{
 			position[]={7371.698242,20.879999,4831.367188};
@@ -6766,6 +6766,14 @@ class Mission
 			a=0.100000;
 			b=0.100000;
 		};
+		class Item53
+		{
+			position[]={3738.661377,191.079849,5153.223633};
+			name="WarningEnemyTerritory";
+			text="@STRC_MARKER_ENEMY";
+			type="Warning";
+			colorName="ColorRed";
+		};
 	};
 	class Sensors
 	{
@@ -7200,9 +7208,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			text="OUT OF BOUNDS - WARNING";
+			text="AWAY - WARNING";
 			expCond="this and alive aP";
-			expActiv="[] exec ""outofbounds_rashiv.sqs""";
+			expActiv="[] exec ""away_rashiv.sqs""";
 			class Effects
 			{
 			};
@@ -7218,9 +7226,9 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			text="OUT OF BOUNDS - KILL";
+			text="AWAY - KILL";
 			expCond="this and alive aP";
-			expActiv="[] exec ""outofbounds.sqs""";
+			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
 			};
