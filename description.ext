@@ -607,6 +607,31 @@ class RscTitles
        h = 1;
       };
    };
+   class RD_Chapter_V
+   {
+    idd = -1;
+    movingEnable = 0;
+    duration = 10;
+    fadein = 1;
+    name = "Red Dawn - Chapter V";
+    controls[] = {"rd_chapter_v"};
+
+     class rd_chapter_v
+      {
+       type = 0;
+       idc = -1;
+       style = 48;
+       colorBackground[] = {1,1,1,1};
+       text = "resources\RD_Chapter_V.paa";
+       colorText[] = {1,1,1,1};
+       font = "AudreysHandI48";
+       size = 1;
+       x = 0;
+       y = 0;
+       w = 1;
+       h = 1;
+      };
+   };
 };
 
 class MissionDefault
@@ -1201,7 +1226,7 @@ class Campaign
 
 	class ChapterIV
 	{
-		name = "Chapter IV - Homecoming";
+		name = "Chapter IV - Invasion";
 
 		cutscene = ;
 
@@ -1308,4 +1333,33 @@ class Campaign
 			template = 42SecretIntentions.Abel;
 		};
 	};
+	class ChapterV
+	{
+		name = "Chapter V - Endgame";
+
+		cutscene = ;
+
+		firstMission = x05Chapter;
+		lost = ;
+		end1 = ;
+		end2 = ;
+		end3 = ;
+		end4 = ;
+		end5 = ;
+		end6 = ;
+
+		class x05Chapter: MissionDefault
+		{
+			noAward=true;
+			end1 = ;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = ;
+			template = x05Chapter.Abel;
+		};
+
+	
 };
