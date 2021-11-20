@@ -128,7 +128,7 @@ class Mission
 					rank="LIEUTNANT";
 					skill=0.886482;
 					text="Dostoevsky";
-					init="this setIdentity ""Dostoevsky""; this moveInCargo auto; group this allowFleeing 0; group this setGroupId [""ALPHA"",""GROUPCOLOR0""]; anton = group this";
+					init="this setIdentity ""Dostoevsky""; group this allowFleeing 0; group this setGroupId [""ALPHA"",""GROUPCOLOR0""]; anton = group this";
 				};
 				class Item1
 				{
@@ -138,7 +138,7 @@ class Mission
 					vehicle="SoldierEMG";
 					rank="SERGEANT";
 					skill=0.786482;
-					init="this moveInCargo auto";
+					text="A1";
 				};
 				class Item2
 				{
@@ -148,8 +148,7 @@ class Mission
 					vehicle="SoldierEMG";
 					rank="SERGEANT";
 					skill=0.786482;
-					text="kulomet";
-					init="this moveInCargo auto";
+					text="A2";
 				};
 				class Item3
 				{
@@ -159,7 +158,7 @@ class Mission
 					vehicle="SoldierEG";
 					rank="SERGEANT";
 					skill=0.786482;
-					init="this moveInCargo auto";
+					text="A3";
 				};
 				class Item4
 				{
@@ -169,7 +168,7 @@ class Mission
 					vehicle="SoldierELAW";
 					rank="SERGEANT";
 					skill=0.686482;
-					init="this moveInCargo auto";
+					text="A5";
 				};
 				class Item5
 				{
@@ -179,7 +178,7 @@ class Mission
 					vehicle="SoldierEMedic";
 					rank="CORPORAL";
 					skill=0.686482;
-					init="this moveInCargo auto";
+					text="A6";
 				};
 				class Item6
 				{
@@ -190,7 +189,7 @@ class Mission
 					player="PLAYER COMMANDER";
 					skill=0.629722;
 					text="aP";
-					init="this setIdentity ""Rashiv""; this moveInCargo auto";
+					init="this setIdentity ""Rashiv""";
 				};
 				class Item7
 				{
@@ -200,8 +199,8 @@ class Mission
 					vehicle="SoldierEB";
 					rank="CORPORAL";
 					skill=0.686482;
-					text="ivan";
-					init="this moveInCargo auto; this setIdentity ""ivan""";
+					text="Morokov";
+					init="this setIdentity ""Morokov""";
 				};
 				class Item8
 				{
@@ -211,7 +210,7 @@ class Mission
 					vehicle="SoldierEB";
 					rank="CORPORAL";
 					skill=0.686482;
-					init="this moveInCargo auto";
+					text="A4";
 				};
 			};
 			class Waypoints
@@ -226,7 +225,7 @@ class Mission
 					speed="NORMAL";
 					combat="AWARE";
 					description="@STRM_WAYPOINT_FOREST";
-					synchronizations[]={6};
+					synchronizations[]={10};
 					class Effects
 					{
 					};
@@ -495,15 +494,25 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
-					position[]={5475.890137,80.459999,6083.042969};
-					type="GUARD";
+					position[]={5477.717285,80.459999,6083.212891};
+					type="HOLD";
 					combatMode="YELLOW";
 					formation="LINE";
 					speed="NORMAL";
 					combat="AWARE";
+					synchronizations[]={12};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={5477.165527,80.459999,6080.166016};
+					type="GUARD";
 					class Effects
 					{
 					};
@@ -549,7 +558,7 @@ class Mission
 					formation="LINE";
 					speed="LIMITED";
 					combat="AWARE";
-					synchronizations[]={8};
+					synchronizations[]={9};
 					class Effects
 					{
 					};
@@ -694,7 +703,7 @@ class Mission
 					formation="LINE";
 					speed="NORMAL";
 					combat="AWARE";
-					synchronizations[]={7};
+					synchronizations[]={8};
 					class Effects
 					{
 					};
@@ -978,7 +987,7 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={5372.078613,79.044662,5985.625488};
+					position[]={5413.617676,80.259964,5991.226074};
 					azimut=200.000000;
 					id=72;
 					side="WEST";
@@ -989,7 +998,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={5368.989258,78.527634,5987.363281};
+					position[]={5410.528320,80.338463,5992.963867};
 					azimut=200.000000;
 					id=73;
 					side="WEST";
@@ -1000,11 +1009,31 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=1;
+				items=3;
 				class Item0
 				{
-					position[]={5371.105469,78.400589,5975.753906};
+					position[]={5410.735840,80.396584,5987.573730};
+					type="HOLD";
+					synchronizations[]={11};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={5367.829590,77.026581,5970.078125};
+					speed="FULL";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={5374.086914,78.048752,5964.270020};
 					type="SENTRY";
+					speed="NORMAL";
 					class Effects
 					{
 					};
@@ -1122,7 +1151,7 @@ class Mission
 				{
 					position[]={5055.848145,124.071648,6704.097168};
 					type="HOLD";
-					synchronizations[]={5};
+					synchronizations[]={7};
 					class Effects
 					{
 					};
@@ -1309,7 +1338,7 @@ class Mission
 				{
 					position[]={5451.265137,80.459999,6074.524414};
 					type="HOLD";
-					synchronizations[]={9};
+					synchronizations[]={5};
 					class Effects
 					{
 					};
@@ -1368,7 +1397,7 @@ class Mission
 				{
 					position[]={5446.336914,75.398857,6140.277832};
 					type="HOLD";
-					synchronizations[]={10};
+					synchronizations[]={6};
 					class Effects
 					{
 					};
@@ -1384,7 +1413,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={5368.274902,77.403053,5972.820313};
+					position[]={5366.904297,77.056709,5972.820313};
 					type="SENTRY";
 					class Effects
 					{
@@ -1761,7 +1790,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=8;
+		items=9;
 		class Item0
 		{
 			position[]={5083.334961,86.756111,4796.202637};
@@ -1782,18 +1811,18 @@ class Mission
 		class Item2
 		{
 			position[]={5543.137207,63.262318,5479.380859};
-			name="foxtrot";
-			text="@STRM_MARKER_FOXTROT";
+			name="Fyodor";
+			text="@STRM_MARKER_FYODOR";
 			type="Marker";
-			colorName="ColorBlack";
+			colorName="ColorGreen";
 		};
 		class Item3
 		{
 			position[]={5962.540039,87.008369,5888.081543};
-			name="charlie";
-			text="@STRM_MARKER_CHARLIE";
+			name="Leonid";
+			text="@STRM_MARKER_LEONID";
 			type="Marker";
-			colorName="ColorYellow";
+			colorName="ColorGreen";
 		};
 		class Item4
 		{
@@ -1833,10 +1862,18 @@ class Mission
 			type="Warning";
 			colorName="ColorRed";
 		};
+		class Item8
+		{
+			position[]={5259.128418,57.801048,5767.158691};
+			name="Anton";
+			text="@STRM_MARKER_ANTON";
+			type="Marker";
+			colorName="ColorGreen";
+		};
 	};
 	class Sensors
 	{
-		items=11;
+		items=12;
 		class Item0
 		{
 			position[]={5378.647949,71.951851,5506.411133};
@@ -1871,19 +1908,18 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={5259.875000,57.374393,5764.564941};
-			a=15.000000;
-			b=15.000000;
+			position[]={5259.451172,57.377007,5765.194336};
+			a=5.000000;
+			b=5.000000;
 			activationBy="LEADER";
 			type="SWITCH";
 			age="UNKNOWN";
 			idVehicle=3;
 			text="READY TO GO";
-			expActiv="[] exec ""forest.sqs""";
+			expActiv="[] exec ""attack.sqs""";
 			class Effects
 			{
 			};
-			synchronizations[]={5,6,7,8};
 		};
 		class Item3
 		{
@@ -1993,7 +2029,7 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={5382.635254,76.615654,5945.543945};
+			position[]={5385.526855,79.183357,5951.986328};
 			a=45.000000;
 			rectangular=1;
 			activationBy="WEST";
@@ -2003,7 +2039,20 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={9,10};
+			synchronizations[]={5,6};
+		};
+		class Item11
+		{
+			position[]={5164.455078,61.431793,5965.351074};
+			a=0.000000;
+			b=0.000000;
+			type="SWITCH";
+			age="UNKNOWN";
+			expCond="AttackStart";
+			class Effects
+			{
+			};
+			synchronizations[]={7,8,9,10,11,12};
 		};
 	};
 };

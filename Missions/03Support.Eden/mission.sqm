@@ -206,8 +206,8 @@ class Mission
 					vehicle="SoldierEB";
 					rank="CORPORAL";
 					skill=0.900000;
-					text="ivan";
-					init="this moveInCargo bvp; this setIdentity ""ivan""";
+					text="Morokov";
+					init="this moveInCargo bvp; this setIdentity ""Morokov""";
 				};
 				class Item6
 				{
@@ -2171,7 +2171,7 @@ class Intro
 					vehicle="SoldierEB";
 					leader=1;
 					skill=0.200000;
-					text="aP";
+					text="Rashiv";
 					init="this setIdentity ""Rashiv""; this setBehaviour ""SAFE""";
 				};
 			};
@@ -2191,8 +2191,8 @@ class Intro
 					vehicle="SoldierEB";
 					leader=1;
 					skill=0.600000;
-					text="ivan";
-					init="this setIdentity ""ivan""; this setBehaviour ""SAFE""";
+					text="Morokov";
+					init="this setIdentity ""Morokov""; this setBehaviour ""SAFE""";
 				};
 			};
 		};
@@ -2327,12 +2327,14 @@ class Intro
 			};
 			class Waypoints
 			{
-				items=3;
+				items=2;
 				class Item0
 				{
 					position[]={5060.475586,61.905235,4280.736328};
+					type="HOLD";
 					speed="FULL";
 					combat="CARELESS";
+					synchronizations[]={0};
 					class Effects
 					{
 					};
@@ -2340,16 +2342,8 @@ class Intro
 				};
 				class Item1
 				{
-					position[]={5060.554688,61.373787,4278.038086};
-					synchronizations[]={0};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-				class Item2
-				{
-					position[]={5001.995605,16.334999,3895.267578};
+					position[]={4997.104980,16.334999,3892.048340};
+					type="HOLD";
 					class Effects
 					{
 					};
@@ -2360,14 +2354,14 @@ class Intro
 	};
 	class Vehicles
 	{
-		items=6;
+		items=16;
 		class Item0
 		{
 			position[]={4960.786133,16.334999,3919.240967};
 			azimut=60.000000;
 			id=2;
 			side="EMPTY";
-			vehicle="CampEast";
+			vehicle="CampEastC";
 			leader=1;
 			skill=0.200000;
 		};
@@ -2377,7 +2371,7 @@ class Intro
 			azimut=150.000000;
 			id=3;
 			side="EMPTY";
-			vehicle="CampEast";
+			vehicle="CampEastC";
 			leader=1;
 			skill=0.200000;
 		};
@@ -2387,7 +2381,7 @@ class Intro
 			azimut=230.000000;
 			id=4;
 			side="EMPTY";
-			vehicle="CampEast";
+			vehicle="CampEastC";
 			leader=1;
 			skill=0.200000;
 		};
@@ -2421,13 +2415,112 @@ class Intro
 			leader=1;
 			skill=0.600000;
 		};
+		class Item6
+		{
+			position[]={4975.476074,16.334999,3961.728516};
+			azimut=260.000000;
+			id=16;
+			side="EMPTY";
+			vehicle="CampEastC";
+			leader=1;
+			skill=0.200000;
+		};
+		class Item7
+		{
+			position[]={4977.321289,16.334999,3951.587891};
+			azimut=260.000000;
+			id=17;
+			side="EMPTY";
+			vehicle="CampEastC";
+			leader=1;
+			skill=0.200000;
+		};
+		class Item8
+		{
+			position[]={4993.865234,16.334999,3937.264160};
+			azimut=125.000000;
+			id=18;
+			side="EMPTY";
+			vehicle="CampEastC";
+			leader=1;
+			skill=0.200000;
+		};
+		class Item9
+		{
+			position[]={4999.417480,16.334999,3939.427979};
+			azimut=5.000000;
+			id=19;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			skill=0.200000;
+		};
+		class Item10
+		{
+			position[]={4994.366211,16.334999,3931.714844};
+			azimut=290.000000;
+			id=20;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			skill=0.200000;
+		};
+		class Item11
+		{
+			position[]={5078.669434,16.334999,3887.111328};
+			id=21;
+			side="EMPTY";
+			vehicle="Ural";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item12
+		{
+			position[]={5084.574219,16.334999,3884.644775};
+			azimut=20.000000;
+			id=22;
+			side="EMPTY";
+			vehicle="Ural";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item13
+		{
+			position[]={5067.104004,16.334999,3903.728027};
+			azimut=195.000000;
+			id=23;
+			side="EMPTY";
+			vehicle="UAZ";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item14
+		{
+			position[]={5007.691895,16.334999,3970.065430};
+			azimut=340.000000;
+			id=24;
+			side="EMPTY";
+			vehicle="CampEastC";
+			leader=1;
+			skill=0.200000;
+		};
+		class Item15
+		{
+			position[]={5017.108398,16.334999,3973.173828};
+			azimut=340.000000;
+			id=25;
+			side="EMPTY";
+			vehicle="CampEastC";
+			leader=1;
+			skill=0.200000;
+		};
 	};
 	class Markers
 	{
 		items=1;
 		class Item0
 		{
-			position[]={5006.621582,16.334999,3903.474365};
+			position[]={5008.868164,16.334999,3903.904785};
 			name="off";
 			type="Flag";
 		};
@@ -2440,6 +2533,7 @@ class Intro
 			position[]={5102.749023,53.869457,4236.625000};
 			a=0.000000;
 			b=0.000000;
+			type="SWITCH";
 			age="UNKNOWN";
 			expCond="jdi";
 			class Effects

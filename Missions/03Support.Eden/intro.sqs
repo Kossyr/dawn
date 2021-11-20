@@ -1,15 +1,14 @@
 titleCut ["","BLACK IN",8]
 
-player switchMove "FXToKneel"
-player setMimic "sad"
-ivan switchMove "effectstandsitdown"
-rusak switchMove "effectstand"
+Rashiv switchMove "FXToKneel"
+Rashiv setMimic "sad"
+Morokov switchMove "effectstandsitdown"
 rusak2 switchMove "FxToHand"
 rusak setMimic "surprised"
 playMusic "RTrack9"
 
 rusak doWatch [4993.64,3889.81,0.73]
-ivan doWatch [4992.23,3891.05,1.60]
+Morokov doWatch [4992.23,3891.05,1.60]
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -25,20 +24,20 @@ _camera camCommit 0
 _camera camSetTarget [-73351.87,66031.55,17.47]
 _camera camSetPos [4995.30,3888.88,0.83]
 _camera camSetFOV 0.700
-_camera camCommit 7
-@camCommitted _camera
-1 fadeMusic 0.1
+_camera camCommit 6
+~5
+1 fadeMusic 0.3
 rusak say "03v01"
-~2.5
+@camCommitted _camera
+~0.5
 ;=== 19:11:04
 _camera camSetTarget [101232.27,21463.46,-20690.98]
 _camera camSetPos [4990.99,3890.39,1.48]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-ivan setMimic "angry"
-ivan say "03v02"
-~5.5
+Morokov say "03v02"
+~2.5
 ;=== 19:12:07
 _camera camSetTarget [55353.02,90029.95,6592.38]
 _camera camSetPos [4991.20,3888.01,0.84]
@@ -49,60 +48,89 @@ _camera camCommit 0
 _camera camSetTarget [96930.33,42668.19,6592.46]
 _camera camSetPos [4990.29,3889.56,1.01]
 _camera camSetFOV 0.700
-_camera camCommit 23.2
+_camera camCommit 13
 rusak say "03v03"
-~1.2
-ivan say "03v04"
-~9
-rusak setMimic "hurt"
+~2.5
+Morokov say "03v04"
+~6.5
+rusak setMimic "normal"
 rusak say "03v05"
 @camCommitted _camera
+~0.5
 ;=== 19:14:43
 _camera camSetTarget [-17321.76,-93482.30,-4461.08]
 _camera camSetPos [4993.57,3893.14,1.01]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-ivan setMimic "normal"
+Morokov setMimic "normal"
+Morokov say "03v06"
+~2.5
+;=== 16:19:51
+_camera camSetTarget [-29998.42,97566.95,582.82]
+_camera camSetPos [4992.65,3890.36,1.41]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+rusak setMimic "sad"
+rusak say "03v07"
+~2
 rusak setMimic "normal"
-ivan say "03v06"
-~5
+~5.5
+;=== 16:20:52
+_camera camSetTarget [88283.19,-51247.18,-4735.03]
+_camera camSetPos [4992.74,3890.15,0.66]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Morokov say "03v08"
+~2
+Morokov doWatch [4972.30,3887.65,2.00]
+~0.5
 ;=== 19:15:14
 _camera camSetTarget [-93565.43,-12410.86,-4461.21]
 _camera camSetPos [4995.69,3890.60,1.01]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-
+~1
 rusak doWatch [4972.30,3887.65,2.00]
-ivan setMimic "sad"
-rusak setMimic "sad"
-rusak say "03v07"
-~1
-ivan doWatch [4972.30,3887.65,2.00]
-~1
-ivan say "03v08"
-~3
-rusak say "03v09"
-~2
-ivan say "03v10"
-jdi=true
-~1
-Dostoevsky setPos getMarkerPos "off"
-Dostoevsky doWatch [4993.10,3890.60,1.54]
-~1
-;=== 19:18:33
-_camera camSetTarget Dostoevsky
-_camera camSetPos [4992.45,3888.49,1.01]
+~4
+;=== 16:23:05
+_camera camSetTarget [104493.35,-886.62,-8714.57]
+_camera camSetPos [4989.72,3890.87,1.30]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-rusak doWatch [5001.47,3895.80,1.44]
-ivan doWatch [5001.47,3895.80,1.44]
+rusak say "03v09"
+~2
+jdi=true
+Dostoevsky setPos getMarkerPos "off"
+Dostoevsky doWatch [4993.10,3890.60,1.54]
+~2
+;=== 19:15:14
+_camera camSetTarget [-93565.43,-12410.86,-4461.21]
+_camera camSetPos [4995.69,3890.60,1.01]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Morokov say "03v10"
+~1
+;=== 16:26:15
+_camera camSetTarget [83420.56,65727.69,-4945.62]
+_camera camSetPos [4990.57,3888.56,1.23]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 Dostoevsky say "03v11"
-~4
-rusak playMove "effectstand"
-ivan playMove "effectstand"
+~0.5
+rusak doWatch [5001.47,3895.80,1.44]
+~0.5
+Morokov doWatch [5001.47,3895.80,1.44]
+~1.5
+Morokov playMove "effectstand"
+~1.5
+1 fadeMusic 0.8
 ;=== 19:19:25
 _camera camSetTarget [100493.69,33398.57,2117.02]
 _camera camSetPos [4970.71,3886.79,0.62]
@@ -111,8 +139,8 @@ _camera camCommit 0
 @camCommitted _camera
 titleText["","PLAIN DOWN"]
 ~4
-player switchMove "FXfromKneel"
-player setMimic "normal"
+Rashiv switchMove "FXfromKneel"
+Rashiv setMimic "normal"
 ;=== 19:20:55
 _camera camSetTarget [100493.69,33398.57,2117.14]
 _camera camSetPos [4970.71,3886.79,1.20]
@@ -123,7 +151,8 @@ _camera camCommit 3
 
 titleCut ["","BLACK OUT",3]
 4 fadeMusic 0
-~4
+@camCommitted _camera
+~2
 
 end=true
 
