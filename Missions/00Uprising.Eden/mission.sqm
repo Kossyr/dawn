@@ -3328,7 +3328,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			text="POINCARE DESTROYED ANY OV THE VEHICLES";
+			text="POINCARE DESTROYED ANY OF THE VEHICLES";
 			expCond="(not canmove ammo1 or not canmove ammo2 or not canmove ammo3 or not canmove uazg) and not carClear";
 			expActiv="[] exec ""outro3.sqs""";
 			class Effects
@@ -3345,6 +3345,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="AWAY - WARNING";
 			expCond="this and alive player and not cinema";
 			expActiv="[] exec ""out.sqs""";
 			class Effects
@@ -3361,6 +3362,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
+			text="AWAY - KILL";
 			expCond="this and alive player and not cinema";
 			expActiv="player setDammage 1";
 			class Effects
