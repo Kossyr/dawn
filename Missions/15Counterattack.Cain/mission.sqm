@@ -2809,6 +2809,7 @@ class Mission
 				class Item2
 				{
 					position[]={6798.490723,436.274994,6669.899902};
+					speed="LIMITED";
 					class Effects
 					{
 					};
@@ -2868,6 +2869,7 @@ class Mission
 				class Item2
 				{
 					position[]={6864.117188,436.274994,6694.164063};
+					speed="LIMITED";
 					class Effects
 					{
 					};
@@ -5429,7 +5431,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			expCond="not canmove T1 and not canmove T2";
-			expActiv="""4"" objStatus ""DONE""";
+			expActiv="[] exec ""tanks_destroyed.sqs""";
 			class Effects
 			{
 			};
@@ -5674,7 +5676,7 @@ class Intro
 					leader=1;
 					rank="CORPORAL";
 					skill=0.200000;
-					text="aP";
+					text="Rashiv";
 					init="this setIdentity ""rashiv""; this setBehaviour ""SAFE""";
 				};
 			};
@@ -5745,7 +5747,7 @@ class Intro
 			};
 			class Waypoints
 			{
-				items=6;
+				items=5;
 				class Item0
 				{
 					position[]={7750.446289,311.236053,8104.354980};
@@ -5766,7 +5768,7 @@ class Intro
 				};
 				class Item2
 				{
-					position[]={7755.737305,311.130737,8083.387207};
+					position[]={7753.547363,311.181976,8078.275391};
 					class Effects
 					{
 					};
@@ -5774,21 +5776,13 @@ class Intro
 				};
 				class Item3
 				{
-					position[]={7743.177246,311.264984,8089.614746};
+					position[]={7724.405762,311.264984,8084.967773};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 				};
 				class Item4
-				{
-					position[]={7726.507813,311.264984,8098.199219};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-				class Item5
 				{
 					position[]={7743.862305,311.264984,8104.259277};
 					type="CYCLE";
@@ -5802,7 +5796,7 @@ class Intro
 	};
 	class Vehicles
 	{
-		items=6;
+		items=7;
 		class Item0
 		{
 			position[]={7716.909180,311.264984,8099.833496};
@@ -5849,7 +5843,7 @@ class Intro
 			azimut=240.000000;
 			id=5;
 			side="EMPTY";
-			vehicle="Barrel1";
+			vehicle="Barrel2";
 			leader=1;
 			skill=0.200000;
 		};
@@ -5862,6 +5856,16 @@ class Intro
 			leader=1;
 			skill=0.200000;
 			init="this setFlagTexture ""\flags\ussr.jpg""";
+		};
+		class Item6
+		{
+			position[]={7747.040039,311.326508,8120.602051};
+			azimut=160.000000;
+			id=13;
+			side="EMPTY";
+			vehicle="Barrel1";
+			leader=1;
+			skill=0.200000;
 		};
 	};
 	class Sensors

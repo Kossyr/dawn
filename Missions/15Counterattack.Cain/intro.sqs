@@ -9,25 +9,27 @@ _camera cameraeffect ["internal","back"]
 
 Lemontov playMove "effectstandtalk"
 lemontov setMimic "smile"
-player setMimic "normal"
+Rashiv setMimic "normal"
 
-player doWatch [7746.87,8118.93,1.70]
+Rashiv doWatch [7746.87,8118.93,1.70]
 lemontov doWatch [7747.83,8117.03,1.70]
 
-
-;=== 15:11:31
-_camera camSetTarget [-60610.91,75738.29,-26938.63]
-_camera camSetPos [7775.42,8061.62,13.80]
+;=== 11:56:23
+_camera camSetTarget [-62301.13,77367.87,-16591.46]
+_camera camSetPos [7770.81,8058.04,12.01]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-;=== 15:14:24
-_camera camSetTarget [-69963.41,63793.82,-28855.04]
-_camera camSetPos [7772.88,8064.48,13.75]
+
+;=== 11:56:36
+_camera camSetTarget [-59181.00,78491.94,-23309.61]
+_camera camSetPos [7771.46,8071.62,9.52]
 _camera camSetFOV 0.700
-_camera camCommit 4
+_camera camCommit 5
 @camCommitted _camera
-~2
+
+~1
+
 ;=== 15:17:13
 _camera camSetTarget [-64987.76,74975.62,-15166.45]
 _camera camSetPos [7748.05,8117.84,1.66]
@@ -40,7 +42,7 @@ lemontov say "15v01"
 _camera camSetTarget [-58610.61,81307.83,-15165.88]
 _camera camSetPos [7748.68,8116.57,1.66]
 _camera camSetFOV 0.700
-_camera camCommit 6.5
+_camera camCommit 6
 @camCommitted _camera
 ;=== 15:19:42
 _camera camSetTarget [54868.90,-79614.68,-8775.94]
@@ -48,11 +50,11 @@ _camera camSetPos [7747.52,8117.91,1.61]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-player say "15v02"
-player playMove "effectstandsalute"
+Rashiv say "15v02"
+Rashiv playMove "effectstandsalute"
 ~1.5
-player playMove "effectstandsaluteend"
-~5
+Rashiv playMove "effectstandsaluteend"
+~4.5
 ;=== 15:21:50
 _camera camSetTarget [-44990.84,92983.92,-3748.19]
 _camera camSetPos [7747.43,8118.15,1.62]
@@ -60,59 +62,72 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 lemontov say "15v03"
-lemontov setMimic "sad"
-lemontov playMove "effectstand"
-~7
 lemontov setMimic "normal"
-lemontov say "15v04"
-~6.5
+lemontov playMove "effectstand"
+~6
 ;=== 15:23:22
 _camera camSetTarget [61698.81,-76046.47,2690.41]
 _camera camSetPos [7747.54,8117.64,1.62]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-player setMimic "surprised"
-player say "15v05"
-~13.5
+Rashiv setMimic "surprised"
+Rashiv say "15v04"
+~4
 ;=== 15:24:37
 _camera camSetTarget [-37130.03,95114.92,20745.44]
 _camera camSetPos [7747.33,8118.17,1.48]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-lemontov say "15v06"
-lemontov setMimic "surprised"
+lemontov say "15v05"
 ;=== 15:24:43
 _camera camSetTarget [-64213.79,75743.71,-15443.42]
 _camera camSetPos [7748.12,8117.71,1.74]
 _camera camSetFOV 0.700
-_camera camCommit 10.5
-
-~5
-
-lemontov setMimic "sad"
-
+_camera camCommit 9
 @camCommitted _camera
 
+;=== 15:23:22
+_camera camSetTarget [61698.81,-76046.47,2690.41]
+_camera camSetPos [7747.54,8117.64,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Rashiv say "15v06"
+~4
+;=== 15:17:19
+_camera camSetTarget [-58610.61,81307.83,-15165.88]
+_camera camSetPos [7748.68,8116.57,1.66]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 lemontov say "15v07"
-lemontov setMimic "normal"
-~6
+lemontov setMimic "angry"
+~4
+;=== 15:21:50
+_camera camSetTarget [-44990.84,92983.92,-3748.19]
+_camera camSetPos [7747.43,8118.15,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~4
 ;=== 15:27:33
 _camera camSetTarget [56438.83,-78957.91,-6544.21]
 _camera camSetPos [7747.56,8117.74,1.66]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-player setMimic "sad"
-player say "15v08"
+Rashiv setMimic "sad"
+Rashiv say "15v08"
 ~0.1
-player playMove "effectstandsalute"
-~1
-3 fadeMusic 0
-player playMove "effectstandsaluteend"
+Rashiv playMove "effectstandsalute"
+~1.5
+Rashiv playMove "effectstandsaluteend"
+~0.5
+2 fadeMusic 0
 titleCut ["","BLACK OUT",2]
-~3
+~2
 end=true 
 player cameraEffect ["terminate","back"]
 camDestroy _camera
