@@ -1864,7 +1864,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="LEAVING";
-			expCond="odchazime";
+			expCond="troopsLeave";
 			class Effects
 			{
 			};
@@ -1893,7 +1893,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="DONE";
-			expCond="splneno";
+			expCond="objectiveDone";
 			class Effects
 			{
 			};
@@ -1908,7 +1908,7 @@ class Mission
 			activationBy="LEADER";
 			age="UNKNOWN";
 			idVehicle=3;
-			expCond="this and splneno";
+			expCond="this and objectiveDone";
 			expActiv="player exec ""outro.sqs""";
 			class Effects
 			{
@@ -1942,8 +1942,8 @@ class Mission
 			timeoutMax=280.000000;
 			age="UNKNOWN";
 			text="COUNT DOWN";
-			expCond="odpocet_start";
-			expActiv="odpocet=true";
+			expCond="missionCountDownStart";
+			expActiv="missionCountDown=true";
 			class Effects
 			{
 			};
@@ -1986,7 +1986,7 @@ class Mission
 			angle=40.000000;
 			activationBy="WEST";
 			age="UNKNOWN";
-			expCond="{alive _x} count thislist <= 4 or odpocet";
+			expCond="{alive _x} count thislist <= 4 or missionCountDown";
 			expActiv="[] exec ""final.sqs""";
 			class Effects
 			{
@@ -1999,7 +1999,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="TANKS ARE OUT";
-			expCond="(not canmove tank or not canfire tank) and (not canmove bvp or not canfire bvp) and not splneno";
+			expCond="(not canmove tank or not canfire tank) and (not canmove bvp or not canfire bvp) and not objectiveDone";
 			expActiv="[] exec ""tanks.sqs""";
 			class Effects
 			{
@@ -2153,7 +2153,7 @@ class Intro
 					vehicle="SoldierEB";
 					leader=1;
 					skill=0.600000;
-					text="rusak";
+					text="R1";
 					init="this setBehaviour ""SAFE""";
 				};
 			};
@@ -2192,7 +2192,7 @@ class Intro
 					vehicle="SoldierEB";
 					leader=1;
 					skill=0.600000;
-					text="rusak2";
+					text="R2";
 					init="this setBehaviour ""SAFE""";
 				};
 			};
@@ -2477,7 +2477,7 @@ class Intro
 			b=0.000000;
 			type="SWITCH";
 			age="UNKNOWN";
-			expCond="jdi";
+			expCond="DostoevskyGo";
 			class Effects
 			{
 			};

@@ -1,25 +1,25 @@
 titleCut ["","BLACK IN",3]
 
-rusak1 playMove "effectstandtalk"
-rusak2 switchMove "FXTOHAND"
+R1 playMove "effectstandtalk"
+R2 switchMove "FXTOHAND"
 Dostoevsky playMove "effectstandtalk"
-rusak1 setMimic "hurt"
-rusak2 setMimic "normal"
+R1 setMimic "hurt"
+R2 setMimic "normal"
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
 playMusic "RTrack2"
 
-rusak2 doWatch [5028.59,3960.29,1.49]
-rusak1 doWatch [5027.60,3958.63,1.64]
+R2 doWatch [5028.59,3960.29,1.49]
+R1 doWatch [5027.60,3958.63,1.64]
 Dostoevsky doWatch [5017.98,3967.95,1.72]
-aP doWatch [5017.62,3969.83,1.72]
+Rashiv doWatch [5017.62,3969.83,1.72]
 
 
 setAccTime 1
 
 Dostoevsky setMimic "smile"
-aP setMimic "normal"
+Rashiv setMimic "normal"
 
 ;=== 10:32:26
 _camera camSetTarget [45120.72,91570.04,-26666.34]
@@ -117,13 +117,13 @@ titleCut ["","BLACK IN",3]
 
 Lemontov setMimic "angry"
 Kaplinsky setMimic "normal"
-aP2 setMimic "normal"
+Rashiv2 setMimic "normal"
 
-aP2 doWatch [2132.31,4728.69,1.61]
+Rashiv2 doWatch [2132.31,4728.69,1.61]
 Lemontov doWatch [2119.03,4719.99,1.62]
 Kaplinsky doWatch [2120.01,4719.39,1.67]
 
-jed=true
+goAway=true
 
 titleText["","PLAIN DOWN"]
 
@@ -142,7 +142,7 @@ _camera camCommit 4
 ~2
 [] exec "intro_dip.sqs"
 @camCommitted _camera
-aP2 doWatch [2116.17,4721.23,1.00]
+Rashiv2 doWatch [2116.17,4721.23,1.00]
 ~0.5
 
 ;=== 11:46:52
@@ -181,7 +181,7 @@ _camera camSetPos [2120.48,4720.07,1.60]
 _camera camSetFOV 0.700
 _camera camCommit 4
 ~3
-aP2 doWatch [2120.01,4719.39,1.67]
+Rashiv2 doWatch [2120.01,4719.39,1.67]
 Lemontov doWatch [2127.40,4726.23,1.65]
 @camCommitted _camera
 ~1.5
@@ -191,8 +191,8 @@ _camera camSetPos [2128.85,4726.80,1.50]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-aP2 move getMarkerPos "LemontovPlayer"
-aP2 setSpeedMode "NORMAL"
+Rashiv2 move getMarkerPos "LemontovPlayer"
+Rashiv2 setSpeedMode "NORMAL"
 ;=== 11:49:17
 _camera camSetTarget [-80721.24,-50869.73,-6663.87]
 _camera camSetPos [2127.92,4725.08,1.79]
@@ -200,9 +200,9 @@ _camera camSetFOV 0.700
 _camera camCommit 4
 @camCommitted _camera
 Lemontov doWatch [2121.27,4721.01,1.65]
-aP2 stop true
-aP2 setPos getMarkerPos "LemontovPlayer"
-aP2 stop false
+Rashiv2 stop true
+Rashiv2 setPos getMarkerPos "LemontovPlayer"
+Rashiv2 stop false
 ;=== 11:53:13
 _camera camSetTarget [-68122.47,-66346.91,3959.37]
 _camera camSetPos [2120.68,4720.16,1.53]

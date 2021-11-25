@@ -146,7 +146,7 @@ class Mission
 					formation="LINE";
 					speed="NORMAL";
 					combat="AWARE";
-					expActiv="jedeme=true";
+					expActiv="ConvoyMove=true";
 					class Effects
 					{
 					};
@@ -241,7 +241,7 @@ class Mission
 					vehicle="Ural";
 					lock="LOCKED";
 					skill=0.200000;
-					text="auto";
+					text="ConvoyTruck1";
 					init="group this allowFleeing 0; group this setGroupId [""CHARLIE"",""GROUPCOLOR0""]; leonid = group this; this lock true; ClearWeaponCargo this;  ClearMagazineCargo this";
 				};
 				class Item1
@@ -254,8 +254,8 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.200000;
-					text="municak";
-					init="this lock true; ClearWeaponCargo this;  ClearMagazineCargo this";
+					text="ConvoyAmmoTruck";
+					init="this lock true; ClearWeaponCargo this; ClearMagazineCargo this";
 				};
 				class Item2
 				{
@@ -266,7 +266,7 @@ class Mission
 					side="EAST";
 					vehicle="Ural";
 					skill=0.200000;
-					text="nakladak";
+					text="ConvoyTruck2";
 					init="ClearWeaponCargo this;  ClearMagazineCargo this";
 				};
 				class Item3
@@ -276,7 +276,7 @@ class Mission
 					side="EAST";
 					vehicle="SoldierEB";
 					skill=0.200000;
-					init="this moveInCargo nakladak";
+					init="this moveInCargo ConvoyTruck2";
 				};
 				class Item4
 				{
@@ -285,7 +285,7 @@ class Mission
 					side="EAST";
 					vehicle="SoldierEB";
 					skill=0.200000;
-					init="this moveInCargo nakladak";
+					init="this moveInCargo ConvoyTruck2";
 				};
 				class Item5
 				{
@@ -296,7 +296,7 @@ class Mission
 					vehicle="UralRefuel";
 					rank="CORPORAL";
 					skill=0.200000;
-					text="fuel";
+					text="ConvoyFuelTruck";
 				};
 			};
 			class Waypoints
@@ -421,7 +421,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.968010;
 					text="sec";
-					init="this setGroupId [""BRAVO"",""GROUPCOLOR0""]; group this allowFleeing 0; boris = group this; this moveInCargo auto";
+					init="this setGroupId [""BRAVO"",""GROUPCOLOR0""]; group this allowFleeing 0; boris = group this; ""_x moveInCargo ConvoyTruck1"" forEach units group this";
 				};
 				class Item1
 				{
@@ -431,7 +431,6 @@ class Mission
 					vehicle="SoldierEMG";
 					rank="CORPORAL";
 					skill=0.924201;
-					init="this moveInCargo auto";
 				};
 				class Item2
 				{
@@ -441,7 +440,6 @@ class Mission
 					vehicle="SoldierEG";
 					rank="CORPORAL";
 					skill=0.733333;
-					init="this moveInCargo auto";
 				};
 				class Item3
 				{
@@ -451,7 +449,6 @@ class Mission
 					vehicle="SoldierEB";
 					rank="CORPORAL";
 					skill=0.633333;
-					init="this moveInCargo auto";
 				};
 				class Item4
 				{
@@ -461,7 +458,6 @@ class Mission
 					vehicle="SoldierEMG";
 					rank="CORPORAL";
 					skill=0.709340;
-					init="this moveInCargo auto";
 				};
 				class Item5
 				{
@@ -470,7 +466,6 @@ class Mission
 					side="EAST";
 					vehicle="SoldierEMG";
 					skill=0.676007;
-					init="this moveInCargo auto";
 				};
 				class Item6
 				{
@@ -479,7 +474,6 @@ class Mission
 					side="EAST";
 					vehicle="SoldierEB";
 					skill=0.808774;
-					init="this moveInCargo auto";
 				};
 				class Item7
 				{
@@ -488,7 +482,6 @@ class Mission
 					side="EAST";
 					vehicle="SoldierEB";
 					skill=0.880394;
-					init="this moveInCargo auto";
 				};
 				class Item8
 				{
@@ -497,7 +490,6 @@ class Mission
 					side="EAST";
 					vehicle="SoldierEMedic";
 					skill=1.000000;
-					init="this moveInCargo auto";
 				};
 			};
 			class Waypoints
@@ -4150,7 +4142,7 @@ class Mission
 			b=0.000000;
 			type="SWITCH";
 			age="UNKNOWN";
-			expCond="jedeme";
+			expCond="ConvoyMove";
 			expActiv="[] exec ""retreat.sqs""";
 			class Effects
 			{
@@ -4237,7 +4229,7 @@ class Mission
 			timeoutMax=2.000000;
 			age="UNKNOWN";
 			text="FIRST VEHICLE DESTROYED";
-			expCond="not canmove municak";
+			expCond="not canmove ConvoyAmmoTruck";
 			expActiv="[] exec ""convoy_battle.sqs""";
 			class Effects
 			{
@@ -4308,8 +4300,8 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="player in nakladak";
-			expActiv="nakladak lock true";
+			expCond="player in ConvoyTruck2";
+			expActiv="ConvoyTruck2 lock true";
 			class Effects
 			{
 			};
@@ -4322,7 +4314,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=7;
 			text="AWAY - WARNING";
-			expCond="this and alive player and not jedeme and not (player in nakladak)";
+			expCond="this and alive player and not ConvoyMove and not (player in ConvoyTruck2)";
 			expActiv="[] exec ""away_rashiv_private.sqs""";
 			class Effects
 			{
@@ -4338,7 +4330,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=7;
 			text="AWAY";
-			expCond="this and alive player and not jedeme and not (player in nakladak)";
+			expCond="this and alive player and not ConvoyMove and not (player in ConvoyTruck2)";
 			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
@@ -4545,7 +4537,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=7;
 			text="AWAY - WARNING";
-			expCond="this and alive player and not (player in nakladak) and jedeme";
+			expCond="this and alive player and not (player in ConvoyTruck2) and ConvoyMove";
 			expActiv="[] exec ""away_rashiv_alone.sqs""";
 			class Effects
 			{
@@ -4563,7 +4555,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=7;
 			text="AWAY - KILL";
-			expCond="this and alive player and not (player in nakladak) and jedeme";
+			expCond="this and alive player and not (player in ConvoyTruck2) and ConvoyMove";
 			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
