@@ -73,28 +73,27 @@ deleteVehicle Spec2
 deleteVehicle Spec3
 deleteVehicle Spec4
 
-~14
+~15
 
 enableRadio true
 
 ~1
 
+
 setAccTime 1
 
-leader yelena sideRadio "04r15"
-Lemontov sideRadio "04r16"
+"_x setUnitPos ""auto""" forEach units group player
 
-~4
-
-"8" objStatus "ACTIVE"
-
-"_x stop false" forEach units patrol
-"_x setCaptive true" forEach units patrol
-Patrol1 setPos getMarkerPos "Patrol1"
-Patrol2 setPos getMarkerPos "Patrol2"
-Patrol3 setPos getMarkerPos "Patrol3"
+Lemontov sideRadio "04r17"
 
 ~1
+
+"7" objStatus "DONE"
+player addRating 1000
+
+toLamentin=true
+
+~3
 
 saveGame
 
