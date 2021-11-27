@@ -5323,7 +5323,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			text="AWAY - WARNING";
-			expCond="player distance Lemontov > 150 and alive aP";
+			expCond="player distance Lemontov > 150 and alive player";
 			expActiv="[] exec ""away_rashiv_lemontov.sqs""; playerAway=true";
 			expDesactiv="playerAway=false";
 			class Effects
@@ -5340,7 +5340,7 @@ class Mission
 			timeoutMax=80.000000;
 			interruptable=1;
 			age="UNKNOWN";
-			expCond="playerAway and alive aP";
+			expCond="playerAway and alive player";
 			expActiv="[] exec ""outro2.sqs""";
 			class Effects
 			{
@@ -5390,7 +5390,7 @@ class Mission
 			timeoutMax=80.000000;
 			interruptable=1;
 			age="UNKNOWN";
-			expCond="playerAway2 and alive aP";
+			expCond="playerAway2 and alive player";
 			expActiv="[] exec ""outro2.sqs""";
 			class Effects
 			{

@@ -1587,7 +1587,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=6;
 			text="VICTORY";
-			expCond="this and canEnd and (vehicle aP==aP) and alive aP";
+			expCond="this and canEnd and (vehicle player==player) and alive player";
 			expActiv="[] exec ""outro.sqs""";
 			class Effects
 			{
@@ -1633,7 +1633,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=16;
 			text="AWAY - WARNING";
-			expCond="this and alive aP";
+			expCond="this and alive player";
 			expActiv="[] exec ""away_ablomov_squadron.sqs""";
 			class Effects
 			{
@@ -1650,7 +1650,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=16;
 			text="AWAY - KILL";
-			expCond="this and alive aP";
+			expCond="this and alive player";
 			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{

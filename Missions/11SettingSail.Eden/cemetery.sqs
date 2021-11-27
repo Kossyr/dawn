@@ -11,7 +11,7 @@ cinema=true
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-? (player == vehicle aP) : goto "ceemetery_cinema" ;
+? (player == vehicle player) : goto "ceemetery_cinema" ;
 
 vehicle player setPos getMarkerPos "player_vehicle_away"
 vehicle player setDir 0
@@ -22,7 +22,7 @@ vehicle player setPos getMarkerPos "cemetery_vehicle"
 vehicle player setDir 95
 
 player action ["EJECT"]
-unassignVehicle aP
+unassignVehicle player
 
 #ceemetery_cinema
 

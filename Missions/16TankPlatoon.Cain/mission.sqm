@@ -2601,7 +2601,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=19;
 			text="THEY JOIN THE TANK CREW";
-			expActiv="player exec ""crew.sqs""";
+			expActiv="[] exec ""crew.sqs""";
 			class Effects
 			{
 			};
@@ -2710,7 +2710,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=0;
 			text="AWAY - WARNING";
-			expCond="this and alive player and not tankisti";
+			expCond="this and alive player and not joinedPlatoon";
 			expActiv="[] exec ""away_kukushkin_platoon.sqs""";
 			class Effects
 			{
@@ -2728,7 +2728,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=0;
 			text="AWAY - KILL";
-			expCond="this and alive player and not tankisti";
+			expCond="this and alive player and not joinedPlatoon";
 			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{

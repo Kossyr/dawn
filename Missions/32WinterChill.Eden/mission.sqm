@@ -2434,8 +2434,8 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={3824.696289,52.215199,6822.708008};
-					type="SAD";
+					position[]={4835.284180,24.660000,11826.836914};
+					type="GETOUT";
 					class Effects
 					{
 					};
@@ -7331,7 +7331,7 @@ class Mission
 			activationBy="VEHICLE";
 			age="UNKNOWN";
 			idVehicle=0;
-			expCond="this and alive aP";
+			expCond="this and alive player";
 			expActiv="[] exec ""stash.sqs""";
 			class Effects
 			{
@@ -7370,7 +7370,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			idVehicle=0;
-			expCond="this and alive aP";
+			expCond="this and alive player";
 			expActiv="[] exec ""start.sqs""";
 			class Effects
 			{
@@ -7385,7 +7385,7 @@ class Mission
 			activationBy="WEST";
 			activationType="EAST D";
 			age="UNKNOWN";
-			expCond="this and alive aP";
+			expCond="this and alive player";
 			expActiv="[] exec ""air_start.sqs""";
 			class Effects
 			{
@@ -7637,7 +7637,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=309;
 			expCond="(this or (player distance K1 <= 35 or player distance K2 <= 35 or player distance K3 <= 35 or player distance K4 <= 35 or player distance K5 <= 35)) and alive player and not joined";
-			expActiv="[K1, K2, K3, K4, K5] join aP; joined=true";
+			expActiv="[K1, K2, K3, K4, K5] join player; joined=true";
 			class Effects
 			{
 			};
@@ -7654,7 +7654,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=0;
 			text="AWAY - WARNING";
-			expCond="this and alive aP";
+			expCond="this and alive player";
 			expActiv="[] exec ""away_lemontov.sqs""";
 			class Effects
 			{
@@ -7671,7 +7671,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			text="AWAY - WARNING";
-			expCond="this and alive aP";
+			expCond="this and alive player";
 			expActiv="[] exec ""away_lemontov.sqs""";
 			class Effects
 			{
@@ -7689,7 +7689,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=0;
 			text="AWAY - KILL";
-			expCond="this and alive aP";
+			expCond="this and alive player";
 			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{

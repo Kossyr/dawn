@@ -5,10 +5,14 @@ enableRadio false
 
 titleCut["","BLACK OUT",1]
 ~1
+
+
+joinedPlatoon=true
+
 Frolov action ["EJECT"]
 unassignVehicle Frolov
 player action ["EJECT"]
-unassignVehicle aP
+unassignVehicle player
 ourTank setPos getMarkerPos "ourTank"
 ourTank setDir 185
 
@@ -47,7 +51,6 @@ Frolov action ["WEAPONONBACK"]
 ourTank setPos getMarkerPos "ourTank"
 ourTank setDir 185
 
-joinedPlatoon=true
 
 
 CinemaFrolov setMimic "normal"

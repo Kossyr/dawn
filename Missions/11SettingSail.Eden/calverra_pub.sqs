@@ -7,7 +7,7 @@ player addRating 1000
 
 cinema=true
 
-? (player == vehicle aP) : goto "pub_cinema" ;
+? (player == vehicle player) : goto "pub_cinema" ;
 
 vehicle player setPos getMarkerPos "player_vehicle_away"
 vehicle player setDir 0
@@ -18,7 +18,7 @@ vehicle player setPos getMarkerPos "pub_vehicle"
 vehicle player setDir 325
 
 player action ["EJECT"]
-unassignVehicle aP
+unassignVehicle player
 
 #pub_cinema
 

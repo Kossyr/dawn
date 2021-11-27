@@ -2309,7 +2309,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="""alive _x"" count units boris == 0 and not transportCome and (rescuePossible or player == leader group aP)";
+			expCond="""alive _x"" count units boris == 0 and not transportCome and (rescuePossible or player == leader group player)";
 			expActiv="[] exec ""rescue_fail.sqs""";
 			class Effects
 			{

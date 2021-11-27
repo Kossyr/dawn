@@ -10,7 +10,7 @@ titleCut["","BLACK OUT",0.5]
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-? (player == vehicle aP) : goto "belskyCinema" ;
+? (player == vehicle player) : goto "belskyCinema" ;
 
 vehicle player setPos getMarkerPos "VehicleAway"
 vehicle player setDir 0
@@ -21,7 +21,7 @@ vehicle player setPos getMarkerPos "CinemaBelskyVehicle"
 vehicle player setDir 35
 
 player action ["EJECT"]
-unassignVehicle aP
+unassignVehicle player
 
 #belskyCinema
 

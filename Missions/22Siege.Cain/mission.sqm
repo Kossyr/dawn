@@ -7521,7 +7521,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			text="EAST NOT HERE - OVER";
-			expCond="this and not final and alive aP";
+			expCond="this and not final and alive player";
 			expActiv="[] exec ""outro2.sqs""";
 			class Effects
 			{
@@ -7537,7 +7537,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			text="EAST NOT PRESENT - OVER";
-			expCond="this and final and alive aP";
+			expCond="this and final and alive player";
 			expActiv="[] exec ""outro3.sqs""";
 			class Effects
 			{
@@ -7555,7 +7555,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=22;
 			text="AWAY - WARNING";
-			expCond="this and not fly and alive aP";
+			expCond="this and not fly and alive player";
 			expActiv="[] exec ""away_rashiv.sqs""";
 			class Effects
 			{
@@ -7573,7 +7573,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=22;
 			text="AWAY - KILL";
-			expCond="this and not fly and alive aP";
+			expCond="this and not fly and alive player";
 			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
@@ -7591,7 +7591,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=22;
 			text="AWAY - WARNING";
-			expCond="this and fly and not (player in heli) and alive aP";
+			expCond="this and fly and not (player in heli) and alive player";
 			expActiv="[] exec ""away_rashiv.sqs""";
 			class Effects
 			{
@@ -7609,7 +7609,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=22;
 			text="AWAY - KILL";
-			expCond="this and fly and not (player in heli) and alive aP";
+			expCond="this and fly and not (player in heli) and alive player";
 			expActiv="[] exec ""away.sqs""";
 			class Effects
 			{
