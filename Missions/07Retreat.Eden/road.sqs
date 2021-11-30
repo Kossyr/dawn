@@ -9,10 +9,23 @@ player addRating 1000
 
 leader anton groupRadio "07r05"
 
-deleteVehicle driver ConvoyFuelTruck
-driver ConvoyFuelTruck setPos [0, 0, 0]
+~5
 
-~15
+_antonSize = count units anton
+_borisSize = count units boris
+_leonidSize = count units leonid
+
+? _antonSize + _leonidSize <= 12 : units leonid join leader anton ;
+~1
+_antonSize = count units anton
+? _antonSize + _borisSize <= 12 : units boris join leader anton ;
+~1
+_borisSize = count units boris
+_leonidSize = count units leonid
+? _borisSize > 0 and _borisSize + _leonidSize <= 12 : units leonid join leader boris ;
+
+
+~7
 
 saveGame
 

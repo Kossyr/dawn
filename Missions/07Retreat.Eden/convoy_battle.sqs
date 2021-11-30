@@ -15,9 +15,9 @@ ConvoyTruck2 lock false
 playMusic "RTrack4"
 
 
-munice=true
+SaintPierreSwitch=true
 
-utok=true
+convoyAmbushAttack=true
 
 ConvoyTruck2 setFuel 0
 ConvoyFuelTruck setFuel 0
@@ -31,7 +31,13 @@ leader anton groupRadio "07r04"
 [leader anton, 0.5] exec "eject.sqs"
 [leader boris, 0.5] exec "eject.sqs"
 
-~40
+~8
+
+"unAssignVehicle _x" forEach units anton
+"unAssignVehicle _x" forEach units boris
+"unAssignVehicle _x" forEach units leonid
+
+~55
 
 ConvoyTruck2 setDammage 1
 ConvoyTruck1 setDammage 1

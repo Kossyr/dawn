@@ -3022,7 +3022,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="count units anton <= 3 and hillGo";
+			expCond="{alive _x} count units group player <= 3 and {alive _x} count units boris <= 4 and hillGo";
 			expActiv="[] exec ""retreat.sqs""";
 			class Effects
 			{

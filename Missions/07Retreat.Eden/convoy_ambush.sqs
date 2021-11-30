@@ -1,7 +1,7 @@
 
 leonid setSpeedMode "fast"
 
-palte=true
+convoyAmbushRockets=true
 
 raketa1 reveal ConvoyAmmoTruck
 raketa2 reveal ConvoyAmmoTruck
@@ -25,9 +25,17 @@ raketa1 doFire ConvoyAmmoTruck
 raketa2 doFire ConvoyAmmoTruck
 raketa3 doFire ConvoyAmmoTruck
 
-~8
+_total = 16
+_i = 0
+_interval = 0.5
 
-if (canmove ConvoyAmmoTruck) then { ConvoyAmmoTruck setDammage 1 }
+#loop
+
+~_interval
+
+if (canmove ConvoyAmmoTruck) then { _i = _i + 1; goto "loop"; }
+
+convoyAmbushStart=true
 
 exit
 
