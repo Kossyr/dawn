@@ -2871,7 +2871,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=15;
+		items=16;
 		class Item0
 		{
 			position[]={7906.294434,1.650686,7203.409180};
@@ -3022,7 +3022,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="{alive _x} count units group player <= 3 and {alive _x} count units boris <= 4 and hillGo";
+			expCond="{alive _x} count units group player <= 3 and hillGo";
 			expActiv="[] exec ""retreat.sqs""";
 			class Effects
 			{
@@ -3085,6 +3085,18 @@ class Mission
 			age="UNKNOWN";
 			expCond="player in fyodor1";
 			expActiv="fyodor1 lock true";
+			class Effects
+			{
+			};
+		};
+		class Item15
+		{
+			position[]={6423.918945,129.326141,7010.093262};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			expCond="{alive _x} count units group player <= 4 and hillGo";
+			expActiv="units boris join leader player";
 			class Effects
 			{
 			};
