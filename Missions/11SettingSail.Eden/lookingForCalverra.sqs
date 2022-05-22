@@ -1,22 +1,23 @@
 setAccTime 1
 
-? not alive responser : goto "ex" ;
+responder = _this
+
+? not alive responder : goto "ex" ;
 
 player say "11v52"
-responser = _this
 ~2.5
 
-? not alive responser : goto "ex" ;
+? not alive responder : goto "ex" ;
 
 randomResponse = random 8
-? randomResponse < 1 : responser say "11v53" ; goto "ex" 
-? randomResponse < 2 : responser say "11v54" ; goto "ex" 
-? randomResponse < 3 : responser say "11v55" ; goto "ex" 
-? randomResponse < 4 : responser say "11v56" ; goto "ex" 
-? randomResponse < 5 : responser say "11v57" ; goto "ex" 
-? randomResponse < 6 : responser say "11v58" ; goto "ex" 
-? randomResponse < 7 : responser say "11v59" ; goto "ex" 
-? randomResponse < 8 : responser say "11v60" ; "Pub" setMarkerType "Unknown"; goto "ex" 
+? randomResponse < 1 : responder say "11v53" ; goto "ex" 
+? randomResponse < 2 : responder say "11v54" ; goto "ex" 
+? randomResponse < 3 : responder say "11v55" ; goto "ex" 
+? randomResponse < 4 : responder say "11v56" ; goto "ex" 
+? randomResponse < 5 : responder say "11v57" ; goto "ex" 
+? randomResponse < 6 : responder say "11v58" ; goto "ex" 
+? randomResponse < 7 : responder say "11v59" ; goto "ex" 
+? randomResponse < 8 : responder say "11v60" ; "Pub" setMarkerType "Unknown"; goto "ex" 
 
 #ex
 
