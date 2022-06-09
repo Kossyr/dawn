@@ -1,3 +1,894 @@
 titleCut ["","BLACK IN",3]
 
+; ############
+; ## Overall setup
+; ############
+
+LemontovHangar setMimic "Angry"
+LemontovHangar setSpeedMode "LIMITED"
+
+Dyaconsen setMimic "Angry"
+Dyaconsen setSpeedMode "LIMITED"
+
+Kaplinsky setMimic "Angry"
+Kaplinsky setSpeedMode "LIMITED"
+
+LemontovHangar disableAI "AUTOTARGET"
+
+Dyaconsen disableAI "AUTOTARGET"
+
+; ########################
+; ############
+; ## PART 1
+; ############
+; ########################
+
+LemontovHangar setUnitPos "UP"
+LemontovHangar setBehaviour "COMBAT"
+LemontovHangar setCaptive true
+
+Dyaconsen setUnitPos "UP"
+Dyaconsen setBehaviour "COMBAT"
+Dyaconsen setCaptive true
+
+Kaplinsky setUnitPos "UP"
+Kaplinsky setBehaviour "COMBAT"
+Kaplinsky setCaptive true
+
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+? debug : [] exec "debug.sqs"; goto "debug" ;
+
+[LemontovHangar, 4] exec "combat_walk.sqs"
+
+;=== 18:35:54
+_camera camSetTarget [-86284.09,30707.86,-669.26]
+_camera camSetPos [10085.05,4015.21,2.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 18:36:06
+_camera camSetTarget [-88024.68,22060.16,-6963.82]
+_camera camSetPos [10085.78,4020.34,1.40]
+_camera camSetFOV 0.700
+_camera camCommit 4
+
+~0.5
+
+[Kaplinsky, 5] exec "combat_walk.sqs"
+
+@camCommitted _camera
+
+;=== 18:39:33
+_camera camSetTarget [89635.34,53699.79,34709.83]
+_camera camSetPos [10079.33,4020.53,0.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:39:44
+_camera camSetTarget [84727.16,70315.37,5762.66]
+_camera camSetPos [10081.03,4020.00,0.87]
+_camera camSetFOV 0.700
+_camera camCommit 3.5
+
+~0.5
+
+LemontovHangar doWatch [10093.66,4037.00,2.10]
+~0.9
+LemontovHangar playMove "CombatToCrouch"
+
+@camCommitted _camera
+
+;=== 18:45:05
+_camera camSetTarget [-89143.64,15006.70,-5709.58]
+_camera camSetPos [10085.26,4021.63,0.73]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:45:20
+_camera camSetTarget [-89440.52,-3831.59,-5709.69]
+_camera camSetPos [10085.31,4022.13,0.72]
+_camera camSetFOV 0.700
+_camera camCommit 2.5
+@camCommitted _camera
+
+
+;=== 18:43:27
+_camera camSetTarget [43644.92,98158.40,3525.06]
+_camera camSetPos [10084.48,4023.00,1.09]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:43:32
+_camera camSetTarget [77062.52,78196.56,3524.67]
+_camera camSetPos [10084.48,4023.00,1.09]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+
+;=== 18:43:44
+_camera camSetTarget [72805.99,81829.09,3524.66]
+_camera camSetPos [10084.48,4023.00,1.09]
+_camera camSetFOV 0.700
+_camera camCommit 1
+@camCommitted _camera
+
+;=== 18:43:52
+_camera camSetTarget [92106.03,61121.53,3525.13]
+_camera camSetPos [10084.48,4023.00,1.09]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+~1
+
+;=== 18:47:27
+_camera camSetTarget [-80279.47,-38732.95,2511.16]
+_camera camSetPos [10085.23,4022.73,0.73]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+LemontovHangar say "x05v01"
+~4
+
+LemontovHangar playMove "CrouchToCombat"
+
+Kaplinsky doWatch [10083.76,4021.50,1.27]
+
+Kaplinsky setBehaviour "Aware"
+
+;=== 18:53:30
+_camera camSetTarget [59048.83,91209.66,447.69]
+_camera camSetPos [10081.72,4019.95,0.95]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Kaplinsky say "x05v02"
+
+LemontovHangar doWatch objNull
+
+~0.6
+
+~1.5
+[LemontovHangar, 5] exec "combat_walk.sqs"
+
+~0.5
+
+Kaplinsky doWatch [10043.93,4011.72,1.90]
+
+;=== 18:55:20
+_camera camSetTarget [-86668.80,26938.80,-10599.04]
+_camera camSetPos [10087.48,4020.12,1.30]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 18:55:28
+_camera camSetTarget [-88699.44,15288.86,-10598.30]
+_camera camSetPos [10093.77,4020.08,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 5
+
+
+~1
+
+Kaplinsky say "x05v03"
+Kaplinsky switchMove "FxShow3"
+
+~0.5
+
+kaplinskySpetz=true
+
+@camCommitted _camera
+
+titleText["","PLAIN"]
+
+;=== 19:01:47
+_camera camSetTarget [110070.80,2138.59,-1090.67]
+_camera camSetPos [10095.14,4021.68,1.33]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:01:55
+_camera camSetTarget [110070.80,2138.59,-1090.45]
+_camera camSetPos [10110.71,4021.39,1.26]
+_camera camSetFOV 0.700
+_camera camCommit 6
+
+~3
+
+deleteVehicle S1
+deleteVehicle S2
+deleteVehicle S5
+
+Kaplinsky setBehaviour "COMBAT"
+S3 setBehaviour "COMBAT"
+S4 setBehaviour "COMBAT"
+
+;S3 setPos [10085.86,4018.71,0.09]
+S3 setPos [10086.56,4020.26,0.11]
+S3 doWatch [10090.92,4034.96,1.58]
+
+S4 setPos [10095.23,4021.84,0.05]
+S4 doWatch [10084.80,4033.81,1.28]
+
+Kaplinsky setPos [10083.69,4022.22,0.05]
+Kaplinsky doWatch [10094.02,4034.70,0.43]
+
+LemontovHangar setPos getMarkerPos "LemontovHangarAway"
+
+~2
+Kaplinsky playMove "CombatToCrouch"
+
+@camCommitted _camera
+~0.5
+;=== 19:02:24
+_camera camSetTarget [106677.34,29975.80,-1090.86]
+_camera camSetPos [10110.71,4021.39,1.26]
+_camera camSetFOV 0.700
+_camera camCommit 1
+@camCommitted _camera
+;=== 19:02:43
+_camera camSetTarget [94868.59,57083.80,-1091.12]
+_camera camSetPos [10114.56,4021.91,1.26]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+;=== 19:02:55
+_camera camSetTarget [56735.48,92482.38,-1091.03]
+_camera camSetPos [10115.38,4021.59,1.26]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+~0.5
+
+LemontovHangar setPos [10115.61,4022.20,0.05]
+LemontovHangar setDir 10
+LemontovHangar doWatch [10125.10,4041.24,1.72]
+
+;=== 19:33:22
+_camera camSetTarget [-86834.66,-19508.10,-6802.11]
+_camera camSetPos [10117.50,4022.86,1.07]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 19:33:29
+_camera camSetTarget [-86834.66,-19508.10,-6802.45]
+_camera camSetPos [10117.50,4022.86,1.07]
+_camera camSetFOV 0.523
+_camera camCommit 5
+~1
+[S3, 3] exec "combat_walk.sqs"
+~1
+[S4, 4] exec "combat_walk.sqs"
+~1.5
+Kaplinsky playMove "CrouchToCombat"
+~0.6
+[Kaplinsky, 3] exec "combat_walk.sqs"
+@camCommitted _camera
+
+deleteVehicle S3
+deleteVehicle S4
+Kaplinsky setBehaviour "Aware"
+
+
+titleCut["","BLACK IN",0.5]
+;=== 20:08:46
+_camera camSetTarget [101322.99,44890.29,-3469.98]
+_camera camSetPos [10121.86,4023.00,1.71]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:08:51
+_camera camSetTarget [87372.75,67428.47,-3469.97]
+_camera camSetPos [10121.99,4024.44,1.71]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+titleCut["","BLACK IN",0.5]
+;=== 20:09:16
+_camera camSetTarget [-31568.27,94641.02,-7104.39]
+_camera camSetPos [10116.62,4023.80,1.71]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:09:20
+_camera camSetTarget [-69056.03,64693.41,-7104.06]
+_camera camSetPos [10116.62,4023.80,1.71]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+titleCut["","BLACK IN",0.5]
+;=== 20:09:37
+_camera camSetTarget [93840.95,58134.06,-7944.61]
+_camera camSetPos [10115.29,4037.53,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:09:46
+_camera camSetTarget [104327.02,36605.87,-7944.33]
+_camera camSetPos [10116.33,4036.47,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+
+;=== 20:10:27
+_camera camSetTarget [-45202.96,-79208.72,3518.14]
+_camera camSetPos [10116.72,4023.61,1.09]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:10:34
+_camera camSetTarget [-45202.96,-79208.72,3517.68]
+_camera camSetPos [10116.72,4023.61,1.09]
+_camera camSetFOV 0.380
+_camera camCommit 2.5
+@camCommitted _camera
+~1
+
+[LemontovHangar, 6] exec "combat_walk.sqs"
+
+
+;=== 20:11:48
+_camera camSetTarget [-10389.14,100259.00,-17655.01]
+_camera camSetPos [10126.49,3997.67,6.07]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:11:57
+_camera camSetTarget [-10591.06,101206.43,-11007.03]
+_camera camSetPos [10125.66,4001.45,6.06]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+;=== 20:12:20
+_camera camSetTarget [-62784.31,-63114.78,-13097.14]
+_camera camSetPos [10135.85,4044.64,1.80]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 20:12:35
+_camera camSetTarget [-54792.22,-71017.47,-12264.40]
+_camera camSetPos [10130.29,4042.12,1.78]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~1
+
+
+LemontovHangar setPos [10120.59,4031.80,0.25]
+LemontovHangar setBehaviour "Aware"
+
+;=== 20:16:45
+_camera camSetTarget [108800.66,-11912.19,-2391.64]
+_camera camSetPos [10111.79,4045.44,1.23]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:16:53
+_camera camSetTarget [95366.21,-48166.25,-2391.41]
+_camera camSetPos [10113.14,4045.37,1.23]
+_camera camSetFOV 0.700
+_camera camCommit 1.5
+@camCommitted _camera
+;=== 20:17:03
+_camera camSetTarget [58819.72,-83257.55,-2391.85]
+_camera camSetPos [10113.53,4045.65,1.23]
+_camera camSetFOV 0.700
+_camera camCommit 1.5
+@camCommitted _camera
+~1
+
+;=== 20:19:41
+_camera camSetTarget [-80011.70,-39267.45,-1002.03]
+_camera camSetPos [10121.75,4032.65,1.29]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1.5
+
+;=== 20:20:59
+_camera camSetTarget [102578.93,37122.87,-18806.78]
+_camera camSetPos [10111.79,4032.97,4.05]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 20:21:06
+_camera camSetTarget [108140.48,10005.63,-18806.40]
+_camera camSetPos [10112.83,4031.64,4.05]
+_camera camSetFOV 0.700
+_camera camCommit 6
+~1
+LemontovHangar doWatch [10128.66,4030.14,1.67]
+~2.5
+LemontovHangar doWatch [10125.10,4041.24,1.72]
+@camCommitted _camera
+
+
+Dyaconsen setPos [10114.82,4038.71,0.23]
+Dyaconsen doWatch [10120.54,4032.08,1.49]
+
+~0.5
+
+Dyaconsen say "x05v04"
+[Dyaconsen, 3] exec "combat_walk.sqs"
+
+;=== 20:25:21
+_camera camSetTarget [-70957.20,61809.78,-9339.39]
+_camera camSetPos [10122.11,4031.18,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:25:36
+_camera camSetTarget [-79415.80,47564.44,-9339.75]
+_camera camSetPos [10122.54,4031.62,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 1.5
+~0.2
+LemontovHangar doWatch [10118.18,4033.78,1.57]
+@camCommitted _camera
+
+;=== 20:29:27
+_camera camSetTarget [-62461.40,72454.77,-7105.81]
+_camera camSetPos [10118.24,4034.51,1.34]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:34:55
+_camera camSetTarget [-55254.54,79477.38,-5848.04]
+_camera camSetPos [10119.14,4033.21,1.33]
+_camera camSetFOV 0.504
+_camera camCommit 0
+@camCommitted _camera
+;=== 20:35:00
+_camera camSetTarget [-55254.54,79477.38,-5847.63]
+_camera camSetPos [10119.14,4033.21,1.33]
+_camera camSetFOV 0.788
+_camera camCommit 2
+@camCommitted _camera
+~1
+Dyaconsen setBehaviour "Aware"
+~1
+
+Dyaconsen doWatch [10120.48,4031.83,1.70]
+Dyaconsen setPos [10118.14,4034.26,0.33]
+
+;=== 20:37:48
+_camera camSetTarget [81551.60,-65806.32,-4449.06]
+_camera camSetPos [10119.87,4032.42,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+LemontovHangar setMimic "Surprised"
+LemontovHangar say "x05v05"
+
+~2
+
+Dyaconsen say "x05v06"
+Dyaconsen say "x05v07"
+
+;=== 16:29:11
+_camera camSetTarget [-32672.18,94375.61,2689.35]
+_camera camSetPos [10118.82,4032.63,1.41]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 16:29:35
+_camera camSetTarget [-57484.73,77575.20,4648.00]
+_camera camSetPos [10119.02,4033.23,1.41]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+
+;=== 16:30:04
+_camera camSetTarget [-87884.57,15763.53,-16000.52]
+_camera camSetPos [10122.52,4032.24,1.63]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~5
+
+;=== 16:30:23
+_camera camSetTarget [-9778.18,-93938.82,-2352.00]
+_camera camSetPos [10120.57,4032.44,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+LemontovHangar setMimic "Normal"
+LemontovHangar say "x05v08"
+~2
+
+Dyaconsen setMimic "Sad"
+Dyaconsen say "x05v09"
+
+;=== 16:30:53
+_camera camSetTarget [-49994.37,83688.85,-6407.11]
+_camera camSetPos [10118.75,4033.37,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+;=== 16:31:12
+_camera camSetTarget [-49994.37,83688.85,-6407.20]
+_camera camSetPos [10118.75,4033.37,1.61]
+_camera camSetFOV 0.521
+_camera camCommit 3
+@camCommitted _camera
+
+
+LemontovHangar setMimic "Angry"
+LemontovHangar say "x05v10"
+
+;=== 16:32:01
+_camera camSetTarget [100056.01,-36411.97,-16552.64]
+_camera camSetPos [10116.50,4034.52,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 16:32:24
+_camera camSetTarget [105989.18,-19062.88,-16552.71]
+_camera camSetPos [10116.49,4033.87,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+
+;=== 16:32:43
+_camera camSetTarget [87268.88,-59279.84,-6265.64]
+_camera camSetPos [10119.99,4032.23,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+
+Dyaconsen say "x05v11"
+
+;=== 16:32:59
+_camera camSetTarget [31525.50,101251.38,-9475.01]
+_camera camSetPos [10117.92,4033.20,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 16:33:16
+_camera camSetTarget [-3294.27,103034.85,-4308.50]
+_camera camSetPos [10118.36,4033.41,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+~2
+
+;=== 16:34:02
+_camera camSetTarget [97825.66,-43932.57,-2630.26]
+_camera camSetPos [10119.91,4032.16,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+LemontovHangar say "x05v12"
+
+~0.5
+
+;=== 16:35:08
+_camera camSetTarget [-12023.68,97738.47,-26930.38]
+_camera camSetPos [10124.29,4023.84,4.32]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 16:35:18
+_camera camSetTarget [-61346.12,68560.63,-26930.29]
+_camera camSetPos [10124.29,4023.84,4.32]
+_camera camSetFOV 0.700
+_camera camCommit 5
+
+~0.5
+
+LemontovHangar doWatch [10121.01,4041.83,0.61]
+~1.5
+LemontovHangar doWatch [10110.09,4032.95,1.30]
+~1.5
+LemontovHangar doWatch [10118.18,4033.78,1.57]
+
+@camCommitted _camera
+
+
+;=== 16:37:28
+_camera camSetTarget [-83013.45,38100.61,-12820.14]
+_camera camSetPos [10121.97,4031.73,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Dyaconsen setMimic "Surprised"
+Dyaconsen say "x05v13"
+
+~4
+
+LemontovHangar say "x05v14"
+
+;=== 16:38:10
+_camera camSetTarget [21070.11,-95191.52,-5852.72]
+_camera camSetPos [10120.39,4033.01,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 16:38:33
+_camera camSetTarget [44867.41,-89725.91,1424.16]
+_camera camSetPos [10120.11,4032.72,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+~2
+
+Dyaconsen setMimic "Angry"
+Dyaconsen say "x05v15"
+
+;=== 16:39:49
+_camera camSetTarget [-46402.23,86425.02,-4074.36]
+_camera camSetPos [10119.14,4032.72,1.45]
+_camera camSetFOV 0.439
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 16:39:49
+_camera camSetTarget [-46402.23,86425.02,-4074.36]
+_camera camSetPos [10119.14,4032.72,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 4
+~2
+Dyaconsen setBehaviour "Combat"
+@camCommitted _camera
+
+;=== 16:41:22
+_camera camSetTarget [27995.21,-93548.20,-12527.24]
+_camera camSetPos [10118.43,4036.70,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+LemontovHangar say "x05v16"
+~0.5
+LemontovHangar setBehaviour "Combat"
+~5
+
+;=== 16:43:27
+_camera camSetTarget [-70253.35,63128.52,-6901.26]
+_camera camSetPos [10118.98,4033.26,1.42]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Dyaconsen say "x05v17"
+~4
+
+LemontovHangar say "x05v18"
+LemontovHangar say "x05v19"
+LemontovHangar say "x05v20"
+
+;=== 16:44:44
+_camera camSetTarget [103272.63,-29086.78,-14969.83]
+_camera camSetPos [10116.65,4034.15,1.38]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 16:44:54
+_camera camSetTarget [106423.52,26391.17,-14970.25]
+_camera camSetPos [10116.10,4032.71,1.38]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+
+;=== 16:46:41
+_camera camSetTarget [79452.11,-67682.59,-7041.24]
+_camera camSetPos [10119.61,4032.96,1.38]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 16:46:41
+_camera camSetTarget [79452.11,-67682.59,-7041.24]
+_camera camSetPos [10119.61,4032.96,1.38]
+_camera camSetFOV 0.500
+_camera camCommit 5
+@camCommitted _camera
+
+;=== 16:47:32
+_camera camSetTarget [-82928.27,-32457.47,-3126.33]
+_camera camSetPos [10122.49,4033.59,1.10]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~5
+
+;=== 16:48:19
+_camera camSetTarget [-52462.61,81569.59,-8435.74]
+_camera camSetPos [10119.03,4032.90,1.46]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Dyaconsen setMimic "Surprised"
+Dyaconsen say "x05v21"
+
+~0.3
+
+Dyaconsen setBehaviour "Aware"
+~1.5
+
+Kaplinsky setBehaviour "Aware"
+Kaplinsky doWatch objNull
+Kaplinsky setPos [10107.56,4021.54,0.05]
+Kaplinsky say "x05v22"
+Kaplinsky setBehaviour "Normal"
+
+;=== 16:49:30
+_camera camSetTarget [-68242.18,-58081.30,-607.49]
+_camera camSetPos [10122.81,4035.70,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~1
+
+LemontovHangar setBehaviour "Aware"
+
+~2
+;=== 16:53:32
+_camera camSetTarget [38294.04,-91646.73,-7162.58]
+_camera camSetPos [10120.27,4032.66,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+LemontovHangar say "x05v23"
+~1
+
+Kaplinsky setPos [10115.61,4022.20,0.05]
+Kaplinsky doWatch [10120.55,4031.45,1.64]
+
+;=== 16:53:55
+_camera camSetTarget [-38615.39,91080.53,-6883.57]
+_camera camSetPos [10118.62,4033.39,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Dyaconsen say "x05v24"
+
+~1
+
+;=== 16:54:49
+_camera camSetTarget [64250.88,-80049.55,-308.95]
+_camera camSetPos [10120.20,4032.29,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+LemontovHangar say "x05v25"
+
+~1
+
+;=== 16:54:09
+_camera camSetTarget [-38719.23,91266.04,2350.48]
+_camera camSetPos [10118.48,4033.63,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Dyaconsen setMimic "Angry"
+Dyaconsen say "x05v26"
+
+~1
+
+;=== 16:55:23
+_camera camSetTarget [64050.18,-79737.81,8640.64]
+_camera camSetPos [10120.27,4032.18,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+LemontovHangar say "x05v27"
+
+deleteVehicle Dyaconsen
+
+~1
+
+;=== 17:06:06
+_camera camSetTarget [-22057.86,-90188.51,-9290.48]
+_camera camSetPos [10120.63,4033.16,1.49]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Kaplinsky say "x05v28"
+
+~1.5
+
+;=== 17:06:37
+_camera camSetTarget [22677.40,102974.82,-7058.09]
+_camera camSetPos [10115.86,4020.39,1.49]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 17:06:44
+_camera camSetTarget [522.10,103306.41,-7057.62]
+_camera camSetPos [10116.67,4020.39,1.49]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+LemontovHangar doWatch [10115.63,4022.27,1.49]
+
+~0.5
+
+;=== 17:07:50
+_camera camSetTarget [65571.01,86185.29,-13230.53]
+_camera camSetPos [10119.96,4030.87,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+LemontovHangar say "x05v29"
+~1.5
+
+;=== 17:08:20
+_camera camSetTarget [-77795.62,-43537.60,-3051.83]
+_camera camSetPos [10116.40,4022.71,1.36]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Kaplinsky say "x05v30"
+
+~4
+
+;=== 17:09:02
+_camera camSetTarget [13788.27,103473.05,-9755.20]
+_camera camSetPos [10116.13,4020.87,1.36]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+LemontovHangar say "x05v31"
+
+~1
+
+Kaplinsky say "x05v32"
+
+~1
+
+;=== 17:09:39
+_camera camSetTarget [-84362.88,-28624.23,-2770.56]
+_camera camSetPos [10116.47,4022.58,1.36]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~3
+
+titleCut["","BLACK OUT",1.5]
+~1.5
+
+deleteVehicle LemontovHangar
+deleteVehicle Kaplinsky
+
+
+
+#debug
 exit
