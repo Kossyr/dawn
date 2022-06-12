@@ -1,14 +1,109 @@
-LemontovHangar setPos [10120.59,4031.80,0.25]
-LemontovHangar setBehaviour "Aware"
-LemontovHangar doWatch [10118.18,4033.78,1.57]
-
-
-Kaplinsky setPos [10115.61,4022.20,0.05]
-Kaplinsky doWatch [10120.55,4031.45,1.64]
-Kaplinsky setBehaviour "Aware"
 
 deleteVehicle Dyaconsen
 
+LemontovMeeting setPos getMarkerPos "LemontovMeeting"
+KaplinskyMeeting setPos getMarkerPos "KaplinskyMeeting"
+
+Volkov doWatch [11597.18,4441.34,1.54]
+Zubarev doWatch [11597.18,4441.34,1.54]
+Kukushkin doWatch [11597.18,4441.34,1.54]
+Syomin doWatch [11597.18,4441.34,1.54]
+Chernikov doWatch [11597.18,4441.34,1.54]
+
+MeetingS1 doWatch [11597.18,4441.34,1.54]
+MeetingS2 doWatch [11597.18,4441.34,1.54]
+MeetingS3 doWatch [11597.18,4441.34,1.54]
+MeetingS4 doWatch [11597.18,4441.34,1.54]
+
+
+
+
+LemontovMeeting doWatch [11593.72,4441.48,1.55]
+
+
+MeetingS4 doWatch [11595.58,4443.54,1.55]
+MeetingS2 doWatch [11595.79,4437.12,1.78]
+~1
+LemontovMeeting doWatch [11593.72,4441.51,1.67]
+~0.5
+MeetingS2 playMove "StandWalkL"
+~1
+MeetingS4 playMove "StandWalkR"
+
+~2.5
+MeetingS2 doWatch [11597.18,4441.34,1.54]
+MeetingS4 doWatch [11597.18,4441.34,1.54]
+
+KaplinskyMeeting doWatch [11597.18,4441.34,1.54]
+
+
+~1
+
+MeetingS1 setBehaviour "AWARE"
+MeetingS2 setBehaviour "AWARE"
+MeetingS3 setBehaviour "AWARE"
+MeetingS4 setBehaviour "AWARE"
+
+LemontovMeeting setMimic "Angry"
+KaplinskyMeeting setMimic "Angry"
+
 ~4
 
-LemontovHangar doWatch [10115.63,4022.27,1.49]
+
+~0.5
+MeetingS3 playMove "CombatWalkB"
+MeetingS4 playMove "CombatWalkB"
+~1
+MeetingS3 setBehaviour "Aware"
+MeetingS4 setBehaviour "Aware"
+~0.5
+Volkov doWatch [11596.99,4428.95,1.71]
+
+
+
+exit
+
+~2
+
+
+deleteVehicle LemontovCar
+deleteVehicle KaplinskyCar
+
+
+MeetingS4 doWatch [11595.58,4443.54,1.55]
+MeetingS2 doWatch [11595.79,4437.12,1.78]
+
+
+
+~1.5
+
+MeetingS4 playMove "StandWalkR"
+MeetingS2 playMove "StandWalkL"
+
+~2
+
+MeetingS1 doWatch [11596.99,4441.25,1.43]
+MeetingS2 doWatch [11596.99,4441.25,1.43]
+MeetingS3 doWatch [11596.99,4441.25,1.43]
+MeetingS4 doWatch [11596.99,4441.25,1.43]
+
+MeetingS1 setBehaviour "aware"
+MeetingS2 setBehaviour "aware"
+MeetingS3 setBehaviour "aware"
+MeetingS4 setBehaviour "aware"
+
+KaplinskyMeeting doWatch [11596.99,4441.25,1.43]
+
+~3
+
+MeetingS3 playMove "CombatRunB"
+MeetingS4 playMove "CombatRunB"
+
+
+exit
+
+[Livanokh, 5] exec "walk.sqs"
+
+
+
+exit

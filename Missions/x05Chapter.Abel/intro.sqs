@@ -1,8 +1,13 @@
 titleCut ["","BLACK IN",3]
 
+LemontovCar moveInCargo CarTaxi
+KaplinskyCar moveInCargo CarTaxi
+
+; ########################
 ; ############
-; ## Overall setup
+; ## PART 1
 ; ############
+; ########################
 
 LemontovHangar setMimic "Angry"
 LemontovHangar setSpeedMode "LIMITED"
@@ -10,18 +15,8 @@ LemontovHangar setSpeedMode "LIMITED"
 Dyaconsen setMimic "Angry"
 Dyaconsen setSpeedMode "LIMITED"
 
-Kaplinsky setMimic "Angry"
-Kaplinsky setSpeedMode "LIMITED"
-
-LemontovHangar disableAI "AUTOTARGET"
-
-Dyaconsen disableAI "AUTOTARGET"
-
-; ########################
-; ############
-; ## PART 1
-; ############
-; ########################
+KaplinskyHangar setMimic "Angry"
+KaplinskyHangar setSpeedMode "LIMITED"
 
 LemontovHangar setUnitPos "UP"
 LemontovHangar setBehaviour "COMBAT"
@@ -31,9 +26,15 @@ Dyaconsen setUnitPos "UP"
 Dyaconsen setBehaviour "COMBAT"
 Dyaconsen setCaptive true
 
-Kaplinsky setUnitPos "UP"
-Kaplinsky setBehaviour "COMBAT"
-Kaplinsky setCaptive true
+KaplinskyHangar setUnitPos "UP"
+KaplinskyHangar setBehaviour "COMBAT"
+KaplinskyHangar setCaptive true
+
+LemontovHangar disableAI "AUTOTARGET"
+LemontovMeeting disableAI "AUTOTARGET"
+
+KaplinskyHangar disableAI "AUTOTARGET"
+KaplinskyMeeting disableAI "AUTOTARGET"
 
 
 _camera = "camera" camcreate [0,0,0]
@@ -41,6 +42,8 @@ _camera cameraeffect ["internal","back"]
 
 
 ? debug : [] exec "debug.sqs"; goto "debug" ;
+
+playMusic "Track6"
 
 [LemontovHangar, 4] exec "combat_walk.sqs"
 
@@ -59,7 +62,7 @@ _camera camCommit 4
 
 ~0.5
 
-[Kaplinsky, 5] exec "combat_walk.sqs"
+[KaplinskyHangar, 5] exec "combat_walk.sqs"
 
 @camCommitted _camera
 
@@ -78,7 +81,7 @@ _camera camCommit 3.5
 ~0.5
 
 LemontovHangar doWatch [10093.66,4037.00,2.10]
-~0.9
+~1
 LemontovHangar playMove "CombatToCrouch"
 
 @camCommitted _camera
@@ -137,9 +140,9 @@ LemontovHangar say "x05v01"
 
 LemontovHangar playMove "CrouchToCombat"
 
-Kaplinsky doWatch [10083.76,4021.50,1.27]
+KaplinskyHangar doWatch [10083.76,4021.50,1.27]
 
-Kaplinsky setBehaviour "Aware"
+KaplinskyHangar setBehaviour "Aware"
 
 ;=== 18:53:30
 _camera camSetTarget [59048.83,91209.66,447.69]
@@ -148,7 +151,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Kaplinsky say "x05v02"
+KaplinskyHangar say "x05v02"
 
 LemontovHangar doWatch objNull
 
@@ -159,7 +162,7 @@ LemontovHangar doWatch objNull
 
 ~0.5
 
-Kaplinsky doWatch [10043.93,4011.72,1.90]
+KaplinskyHangar doWatch [10043.93,4011.72,1.90]
 
 ;=== 18:55:20
 _camera camSetTarget [-86668.80,26938.80,-10599.04]
@@ -176,8 +179,8 @@ _camera camCommit 5
 
 ~1
 
-Kaplinsky say "x05v03"
-Kaplinsky switchMove "FxShow3"
+KaplinskyHangar say "x05v03"
+KaplinskyHangar switchMove "FxShow3"
 
 ~0.5
 
@@ -201,28 +204,27 @@ _camera camCommit 6
 
 ~3
 
-deleteVehicle S1
-deleteVehicle S2
-deleteVehicle S5
+deleteVehicle HangarS1
+deleteVehicle HangarS2
+deleteVehicle HangarS5
 
-Kaplinsky setBehaviour "COMBAT"
-S3 setBehaviour "COMBAT"
-S4 setBehaviour "COMBAT"
+KaplinskyHangar setBehaviour "COMBAT"
+HangarS3 setBehaviour "COMBAT"
+HangarS4 setBehaviour "COMBAT"
 
-;S3 setPos [10085.86,4018.71,0.09]
-S3 setPos [10086.56,4020.26,0.11]
-S3 doWatch [10090.92,4034.96,1.58]
+HangarS3 setPos [10086.56,4020.26,0.11]
+HangarS3 doWatch [10090.92,4034.96,1.58]
 
-S4 setPos [10095.23,4021.84,0.05]
-S4 doWatch [10084.80,4033.81,1.28]
+HangarS4 setPos [10095.23,4021.84,0.05]
+HangarS4 doWatch [10084.80,4033.81,1.28]
 
-Kaplinsky setPos [10083.69,4022.22,0.05]
-Kaplinsky doWatch [10094.02,4034.70,0.43]
+KaplinskyHangar setPos [10083.69,4022.22,0.05]
+KaplinskyHangar doWatch [10094.02,4034.70,0.43]
 
 LemontovHangar setPos getMarkerPos "LemontovHangarAway"
 
 ~2
-Kaplinsky playMove "CombatToCrouch"
+KaplinskyHangar playMove "CombatToCrouch"
 
 @camCommitted _camera
 ~0.5
@@ -262,18 +264,18 @@ _camera camSetPos [10117.50,4022.86,1.07]
 _camera camSetFOV 0.523
 _camera camCommit 5
 ~1
-[S3, 3] exec "combat_walk.sqs"
+[HangarS3, 3] exec "combat_walk.sqs"
 ~1
-[S4, 4] exec "combat_walk.sqs"
+[HangarS4, 4] exec "combat_walk.sqs"
 ~1.5
-Kaplinsky playMove "CrouchToCombat"
+KaplinskyHangar playMove "CrouchToCombat"
 ~0.6
-[Kaplinsky, 3] exec "combat_walk.sqs"
+[KaplinskyHangar, 3] exec "combat_walk.sqs"
 @camCommitted _camera
 
-deleteVehicle S3
-deleteVehicle S4
-Kaplinsky setBehaviour "Aware"
+deleteVehicle HangarS3
+deleteVehicle HangarS4
+KaplinskyHangar setBehaviour "Aware"
 
 
 titleCut["","BLACK IN",0.5]
@@ -732,11 +734,11 @@ Dyaconsen say "x05v21"
 Dyaconsen setBehaviour "Aware"
 ~2
 
-Kaplinsky setBehaviour "Aware"
-Kaplinsky doWatch objNull
-Kaplinsky setPos [10107.56,4021.54,0.05]
-Kaplinsky say "x05v22"
-Kaplinsky setBehaviour "Normal"
+KaplinskyHangar setBehaviour "Aware"
+KaplinskyHangar doWatch objNull
+KaplinskyHangar setPos [10107.56,4021.54,0.05]
+KaplinskyHangar say "x05v22"
+KaplinskyHangar setBehaviour "Normal"
 
 ;=== 16:49:30
 _camera camSetTarget [-68242.18,-58081.30,-607.49]
@@ -760,8 +762,8 @@ _camera camCommit 0
 LemontovHangar say "x05v23"
 ~1.4
 
-Kaplinsky setPos [10115.61,4022.20,0.05]
-Kaplinsky doWatch [10120.55,4031.45,1.64]
+KaplinskyHangar setPos [10115.61,4022.20,0.05]
+KaplinskyHangar doWatch [10120.55,4031.45,1.64]
 
 ;=== 16:53:55
 _camera camSetTarget [-38615.39,91080.53,-6883.57]
@@ -818,7 +820,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Kaplinsky say "x05v28"
+KaplinskyHangar say "x05v28"
 
 ~2
 
@@ -855,7 +857,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Kaplinsky say "x05v30"
+KaplinskyHangar say "x05v30"
 
 ~5
 
@@ -870,7 +872,7 @@ LemontovHangar say "x05v31"
 
 ~1.5
 
-Kaplinsky say "x05v32"
+KaplinskyHangar say "x05v32"
 
 ~1
 
@@ -886,10 +888,677 @@ _camera camCommit 0
 titleCut["","BLACK OUT",1.5]
 ~1.5
 
+
+playMusic "Track7"
+
 deleteVehicle LemontovHangar
-deleteVehicle Kaplinsky
+deleteVehicle KaplinskyHangar
+
+CarTaxiMove=true
+CarTaxi setPos getMarkerPos "CarHangar"
+
+titleCut["","BLACK IN",1.5]
+
+;=== 12:16:43
+_camera camSetTarget [93568.02,51941.65,-27059.23]
+_camera camSetPos [10099.65,3994.69,8.06]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 12:16:51
+_camera camSetTarget [97141.98,43110.04,-29879.26]
+_camera camSetPos [10111.24,3992.48,9.74]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+;=== 12:17:06
+_camera camSetTarget [99023.92,48845.60,-9052.66]
+_camera camSetPos [10111.24,3992.48,15.28]
+_camera camSetFOV 0.700
+_camera camCommit 6
+~4.5
+titleCut["","BLACK OUT",1.5]
+@camCommitted _camera
+
+; ########################
+; ############
+; ## PART 2
+; ############
+; ########################
+
+Zubarev setMimic "Normal"
+Volkov setMimic "Normal"
+Syomin setMimic "Normal"
+Kukushkin setMimic "Normal"
+Chernikov setMimic "Normal"
+
+MeetingS1 setMimic "Normal"
+MeetingS2 setMimic "Normal"
+MeetingS3 setMimic "Normal"
+MeetingS4 setMimic "Normal"
+
+LemontovCar setMimic "Angry"
+LemontovCar setSpeedMode "LIMITED"
+
+KaplinskyCar setMimic "Normal"
+KaplinskyCar setSpeedMode "LIMITED"
+
+LemontovMeeting setMimic "Angry"
+KaplinskyMeeting setMimic "Normal"
 
 
+CarTaxi setPos getMarkerPos "CarMeeting"
+CarTaxi setDir 80
+
+titleCut["","BLACK IN",1.5]
+
+;=== 12:37:09
+_camera camSetTarget [-86432.15,23696.82,-2923.76]
+_camera camSetPos [11637.91,4367.99,4.28]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 12:37:19
+_camera camSetTarget [-85146.16,29288.00,-2923.16]
+_camera camSetPos [11660.40,4380.90,3.80]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+;=== 12:37:35
+_camera camSetTarget [-5578.76,102540.23,-8233.33]
+_camera camSetPos [11670.16,4385.35,4.88]
+_camera camSetFOV 0.700
+_camera camCommit 3.5
+@camCommitted _camera
+~1.5
+;=== 12:38:31
+_camera camSetTarget [99092.88,-43692.31,-6277.27]
+_camera camSetPos [11662.66,4436.26,1.38]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 12:38:40
+_camera camSetTarget [105949.66,37152.34,-6277.44]
+_camera camSetPos [11662.91,4435.23,1.39]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+
+;=== 12:42:00
+_camera camSetTarget [109972.80,-11395.54,-8515.56]
+_camera camSetPos [11607.95,4463.66,2.51]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 12:42:11
+_camera camSetTarget [110687.21,-6579.50,-7677.95]
+_camera camSetPos [11596.79,4460.71,2.38]
+_camera camSetFOV 0.700
+_camera camCommit 5.5
+~0.5
+Belsky doWatch [11668.31,4457.70,0.99]
+@camCommitted _camera
+
+Belsky doWatch objNull
+
+[_camera,CarTaxi,[-100,0.5,1.6],CarTaxi,[0,10,1.3],0.7] exec "logiccam.sqs"
+~5.5
+startglcam=false
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+_camera = "camera" camcreate [11582.40,4435.25,3.32]
+_camera cameraeffect ["internal","back"]
+
+;=== 12:45:39
+_camera camSetTarget [108790.20,26745.32,-7255.29]
+_camera camSetPos [11582.40,4435.25,3.32]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 12:45:49
+_camera camSetTarget [111320.98,3758.79,-7255.89]
+_camera camSetPos [11588.16,4442.25,2.31]
+_camera camSetFOV 0.700
+_camera camCommit 7.5
+~4
+carTaxiMoveBack=true
+@camCommitted _camera
+~2
+
+
+deleteVehicle KaplinskyCar
+deleteVehicle LemontovCar
+
+LemontovMeeting setPos getMarkerPos "LemontovMeeting"
+KaplinskyMeeting setPos getMarkerPos "KaplinskyMeeting"
+
+Volkov doWatch [11597.18,4441.34,1.54]
+Zubarev doWatch [11597.18,4441.34,1.54]
+Kukushkin doWatch [11597.18,4441.34,1.54]
+Syomin doWatch [11597.18,4441.34,1.54]
+Chernikov doWatch [11597.18,4441.34,1.54]
+
+MeetingS1 doWatch [11597.18,4441.34,1.54]
+MeetingS2 doWatch [11597.18,4441.34,1.54]
+MeetingS3 doWatch [11597.18,4441.34,1.54]
+MeetingS4 doWatch [11597.18,4441.34,1.54]
+
+LemontovMeeting doWatch [11594.30,4439.83,1.66]
+
+
+;=== 13:03:55
+_camera camSetTarget [-59001.73,74659.81,-9208.07]
+_camera camSetPos [11595.13,4439.22,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Volkov say "x05v33"
+
+~3.5
+;=== 13:07:44
+_camera camSetTarget [92840.38,55839.34,-27483.04]
+_camera camSetPos [11589.83,4438.24,2.47]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:07:57
+_camera camSetTarget [60437.67,87933.09,-25322.45]
+_camera camSetPos [11592.58,4434.31,2.45]
+_camera camSetFOV 0.700
+_camera camCommit 5
+
+LemontovMeeting say "x05v34"
+MeetingS4 doWatch [11595.58,4443.54,1.55]
+MeetingS2 doWatch [11595.79,4437.12,1.78]
+~1
+LemontovMeeting doWatch [11593.72,4441.51,1.67]
+~0.5
+MeetingS2 playMove "StandWalkL"
+~1
+MeetingS4 playMove "StandWalkR"
+@camCommitted _camera
+LemontovMeeting doWatch [11594.30,4439.83,1.66]
+
+MeetingS2 doWatch [11597.18,4441.34,1.54]
+MeetingS4 doWatch [11597.18,4441.34,1.54]
+
+KaplinskyMeeting doWatch [11597.18,4441.34,1.54]
+
+;=== 13:13:52
+_camera camSetTarget [-88191.05,-1879.04,1695.80]
+_camera camSetPos [11594.96,4439.94,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Volkov say "x05v35"
+~2
+
+KaplinskyMeeting setUnitPos "UP"
+KaplinskyMeeting setBehaviour "COMBAT"
+
+Volkov setMimic "Angry"
+~2
+
+;=== 13:15:37
+_camera camSetTarget [-42606.92,-78579.76,-12967.83]
+_camera camSetPos [11600.23,4444.39,1.24]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+MeetingS1 setBehaviour "AWARE"
+MeetingS2 setBehaviour "AWARE"
+MeetingS3 setBehaviour "AWARE"
+MeetingS4 setBehaviour "AWARE"
+
+KaplinskyMeeting say "x05v36"
+
+LemontovMeeting setMimic "Angry"
+KaplinskyMeeting setMimic "Angry"
+
+MeetingS1 setMimic "Angry"
+MeetingS2 setMimic "Angry"
+MeetingS3 setMimic "Angry"
+MeetingS4 setMimic "Angry"
+
+~3.5
+
+;=== 13:17:22
+_camera camSetTarget [108977.82,23197.84,-12829.05]
+_camera camSetPos [11596.00,4441.26,1.34]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+LemontovMeeting say "x05v37"
+~1.5
+KaplinskyMeeting say "x05v38"
+~3
+
+LemontovMeeting say "x05v39"
+LemontovMeeting say "x05v40"
+
+~1.5
+
+;=== 13:18:37
+_camera camSetTarget [-43126.75,-74693.29,-27214.56]
+_camera camSetPos [11601.08,4447.67,2.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:18:47
+_camera camSetTarget [65548.61,-75841.76,-25324.63]
+_camera camSetPos [11591.85,4448.15,2.60]
+_camera camSetFOV 0.700
+_camera camCommit 5
+~2
+LemontovMeeting doWatch [11593.72,4441.51,1.67]
+~2
+LemontovMeeting doWatch [11594.30,4439.83,1.66]
+@camCommitted _camera
+
+;=== 13:19:53
+_camera camSetTarget [106053.68,35863.02,-9492.14]
+_camera camSetPos [11596.04,4440.97,1.38]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+
+;=== 13:20:12
+_camera camSetTarget [-65578.86,67380.11,-9075.56]
+_camera camSetPos [11595.11,4439.49,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Volkov say "x05v41"
+~1
+Volkov setMimic "Smile"
+~2
+Volkov setMimic "Angry"
+~0.5
+titleText["","PLAIN DOWN"]
+titleCut["","WHITE IN",0.5]
+;=== 13:22:27
+_camera camSetTarget [87635.75,61219.17,-31493.50]
+_camera camSetPos [11590.65,4437.26,2.97]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 13:22:35
+_camera camSetTarget [70348.96,78965.65,-31493.59]
+_camera camSetPos [11592.85,4435.75,2.61]
+_camera camSetFOV 0.700
+_camera camCommit 1
+@camCommitted _camera
+
+titleCut["","WHITE IN",0.5]
+;=== 13:23:04
+_camera camSetTarget [-86603.81,17027.99,-14075.74]
+_camera camSetPos [11594.89,4440.94,1.67]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:23:09
+_camera camSetTarget [-84482.31,28328.15,-14075.34]
+_camera camSetPos [11594.97,4441.40,1.68]
+_camera camSetFOV 0.700
+_camera camCommit 1
+@camCommitted _camera
+
+titleCut["","WHITE IN",0.5]
+
+;=== 13:23:32
+_camera camSetTarget [-83466.48,-25501.47,-8093.29]
+_camera camSetPos [11600.90,4439.08,1.27]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+
+titleCut["","WHITE IN",0.5]
+
+;=== 13:24:16
+_camera camSetTarget [110736.55,12662.96,-10185.73]
+_camera camSetPos [11598.52,4442.69,1.21]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+
+titleCut["","WHITE IN",0.5]
+;=== 13:24:36
+_camera camSetTarget [90296.04,65287.02,-10186.38]
+_camera camSetPos [11593.93,4444.18,1.25]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+titleCut["","WHITE IN",0.5]
+;=== 13:24:59
+_camera camSetTarget [109090.98,26663.48,-964.52]
+_camera camSetPos [11596.35,4441.15,1.38]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:25:06
+_camera camSetTarget [109090.98,26663.48,-964.52]
+_camera camSetPos [11596.35,4441.15,1.38]
+_camera camSetFOV 0.384
+_camera camCommit 3
+@camCommitted _camera
+
+LemontovMeeting setUnitPos "UP"
+LemontovMeeting setBehaviour "COMBAT"
+
+LemontovMeeting say "x05v42"
+;=== 13:27:44
+_camera camSetTarget [73849.38,-72777.24,-12689.16]
+_camera camSetPos [11594.91,4443.21,1.29]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~0.5
+
+MeetingS3 setUnitPos "UP"
+MeetingS4 setUnitPos "UP"
+
+MeetingS3 setBehaviour "COMBAT"
+MeetingS4 setBehaviour "COMBAT"
+
+~0.5
+
+;=== 13:28:53
+_camera camSetTarget [88042.66,67255.52,-14483.24]
+_camera camSetPos [11593.68,4443.59,1.36]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+MeetingS1 setUnitPos "UP"
+MeetingS2 setUnitPos "UP"
+
+MeetingS1 setBehaviour "COMBAT"
+MeetingS2 setBehaviour "COMBAT"
+
+~1
+
+;=== 13:29:34
+_camera camSetTarget [-60555.86,67977.16,-27474.40]
+_camera camSetPos [11601.90,4436.12,2.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:29:44
+_camera camSetTarget [-54025.12,-65816.97,-27474.08]
+_camera camSetPos [11602.56,4448.32,3.01]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+;=== 13:30:03
+_camera camSetTarget [-75385.65,-43408.07,-11986.02]
+_camera camSetPos [11598.29,4442.68,1.32]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Zubarev say "x05v43"
+Zubarev setMimic "Angry"
+~2
+;=== 13:30:32
+_camera camSetTarget [-87763.31,11375.08,-8922.97]
+_camera camSetPos [11594.67,4441.39,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~2.5
+
+;=== 13:35:48
+_camera camSetTarget [94086.66,56981.50,-20819.79]
+_camera camSetPos [11592.86,4439.72,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+LemontovMeeting say "x05v44"
+LemontovMeeting doWatch [11593.72,4441.48,1.55]
+~3
+
+;=== 13:36:35
+_camera camSetTarget [-48199.08,83606.16,-12540.16]
+_camera camSetPos [11594.15,4441.18,1.65]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Zubarev setMimic "Smile"
+Zubarev say "x05v45"
+~1.5
+;=== 13:38:05
+_camera camSetTarget [99783.70,-42480.00,-4600.87]
+_camera camSetPos [11596.29,4441.93,1.16]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovMeeting say "x05v46"
+~1
+;=== 13:39:05
+_camera camSetTarget [-82384.84,-28426.10,-9344.64]
+_camera camSetPos [11594.87,4440.10,1.66]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Volkov setMimic "Angry"
+Volkov say "x05v47"
+Volkov say "x05v48"
+~4
+;=== 13:39:53
+_camera camSetTarget [80609.09,69898.28,-30825.39]
+_camera camSetPos [11591.24,4436.81,2.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:40:02
+_camera camSetTarget [61201.15,85600.35,-30825.25]
+_camera camSetPos [11593.33,4435.11,2.54]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+Volkov say "x05v49"
+
+;=== 13:41:10
+_camera camSetTarget [-77020.52,50309.96,-6553.47]
+_camera camSetPos [11595.27,4439.71,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+Zubarev setMimic "Angry"
+Zubarev say "x05v50"
+~0.8
+Volkov say "x05v51"
+Volkov say "x05v52"
+~3
+;=== 13:42:45
+_camera camSetTarget [-60575.59,-64548.30,-5576.31]
+_camera camSetPos [11597.64,4442.65,1.17]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+;=== 13:58:21
+_camera camSetTarget [110954.36,7481.43,-10876.99]
+_camera camSetPos [11595.87,4441.74,1.23]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:58:26
+_camera camSetTarget [110954.36,7481.43,-10877.11]
+_camera camSetPos [11595.87,4441.74,1.23]
+_camera camSetFOV 0.481
+_camera camCommit 1.5
+@camCommitted _camera
+;=== 13:59:28
+_camera camSetTarget [95244.46,58057.28,-11301.06]
+_camera camSetPos [11593.25,4443.77,1.19]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:59:33
+_camera camSetTarget [95244.46,58057.28,-11300.60]
+_camera camSetPos [11593.25,4443.77,1.19]
+_camera camSetFOV 0.456
+_camera camCommit 1.5
+@camCommitted _camera
+;=== 14:02:06
+_camera camSetTarget [-72935.48,-48224.05,-8929.99]
+_camera camSetPos [11601.34,4439.98,1.16]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:02:11
+_camera camSetTarget [-72935.48,-48224.05,-8930.17]
+_camera camSetPos [11601.34,4439.98,1.16]
+_camera camSetFOV 0.450
+_camera camCommit 1.5
+@camCommitted _camera
+
+;=== 14:03:30
+_camera camSetTarget [-65675.62,58587.48,-33082.87]
+_camera camSetPos [11603.28,4436.51,3.09]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:03:36
+_camera camSetTarget [-65675.62,58587.48,-33082.60]
+_camera camSetPos [11603.28,4436.51,3.56]
+_camera camSetFOV 0.700
+_camera camCommit 1.5
+@camCommitted _camera
+
+;=== 14:03:55
+_camera camSetTarget [-8120.92,101649.02,-12689.59]
+_camera camSetPos [11594.10,4438.18,1.43]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:04:00
+_camera camSetTarget [-55015.66,77934.40,-12689.08]
+_camera camSetPos [11595.65,4439.06,1.46]
+_camera camSetFOV 0.700
+_camera camCommit 1.5
+@camCommitted _camera
+
+;=== 14:04:13
+_camera camSetTarget [9328.54,-92190.98,-25593.26]
+_camera camSetPos [11597.09,4449.52,2.82]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:04:19
+_camera camSetTarget [67471.88,-74429.40,-25592.36]
+_camera camSetPos [11592.69,4448.02,2.74]
+_camera camSetFOV 0.700
+_camera camCommit 1.5
+@camCommitted _camera
+
+;=== 14:03:02
+_camera camSetTarget [20399.57,5152.02,-99583.81]
+_camera camSetPos [11596.14,4441.30,11.49]
+_camera camSetFOV 0.445
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:03:09
+_camera camSetTarget [20399.57,5152.02,-99583.61]
+_camera camSetPos [11596.14,4441.30,11.49]
+_camera camSetFOV 0.648
+_camera camCommit 3
+@camCommitted _camera
+
+;=== 14:12:35
+_camera camSetTarget [111387.43,-1309.79,-2924.71]
+_camera camSetPos [11596.07,4441.65,1.17]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:12:43
+_camera camSetTarget [111387.43,-1309.79,-2924.82]
+_camera camSetPos [11596.07,4441.65,1.17]
+_camera camSetFOV 0.393
+_camera camCommit 4
+@camCommitted _camera
+~1
+LemontovMeeting setMimic "sad"
+~0.5
+LemontovMeeting say "x05v53"
+~1
+LemontovMeeting setMimic "Angry"
+~0.5
+
+
+;=== 14:44:38
+_camera camSetTarget [-58175.42,-63336.55,-23151.26]
+_camera camSetPos [11601.62,4445.63,1.99]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:44:48
+_camera camSetTarget [-42286.08,-76543.52,-23151.30]
+_camera camSetPos [11600.29,4447.35,1.99]
+_camera camSetFOV 0.700
+_camera camCommit 4
+
+LemontovMeeting playMove "CombatToTakeFlag"
+~1
+removeAllWeapons LemontovMeeting
+LemontovMeeting setBehaviour "Safe"
+LemontovMeeting playMove "TakeFlagToCombat"
+@camCommitted _camera
+LemontovMeeting doWatch [11594.16,4439.77,1.65]
+
+;=== 14:46:36
+_camera camSetTarget [-86117.68,-15737.42,-6699.70]
+_camera camSetPos [11595.04,4440.05,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Volkov say "x05v54"
+~1
+Volkov doWatch [11596.99,4428.95,1.71]
+~1
+;=== 14:48:33
+_camera camSetTarget [48922.80,96153.89,-13938.85]
+_camera camSetPos [11593.81,4437.78,1.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Volkov playMove "FxShow3"
+~0.2
+MeetingS1 setBehaviour "AWARE"
+MeetingS2 setBehaviour "AWARE"
+KaplinskyMeeting setBehaviour "AWARE"
+~1
+;=== 14:49:34
+_camera camSetTarget [26268.48,-93793.30,-11579.41]
+_camera camSetPos [11596.76,4442.97,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~0.5
+MeetingS3 playMove "CombatWalkB"
+MeetingS4 playMove "CombatWalkB"
+~1
+MeetingS3 setBehaviour "Aware"
+MeetingS4 setBehaviour "Aware"
+~0.5
 
 #debug
+
 exit
