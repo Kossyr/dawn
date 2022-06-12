@@ -1,0 +1,1015 @@
+version=11;
+class Mission
+{
+	randomSeed=11513347;
+	class Intel
+	{
+		briefingName="@STRCN_x05";
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"bis_resistance",
+		"HMMWV"
+	};
+	addOnsAuto[]=
+	{
+		"bis_resistance",
+		"HMMWV"
+	};
+	randomSeed=13022723;
+	class Intel
+	{
+		startWeather=0.700000;
+		forecastWeather=0.700000;
+		month=2;
+		day=11;
+		hour=10;
+		minute=50;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7778.745117,191.098312,7440.641602};
+					id=2;
+					side="EAST";
+					vehicle="SoldierEB";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					init="this exec ""photo.sqs""";
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10125.799805,28.799999,4016.057617};
+					azimut=315.000000;
+					id=84;
+					side="EAST";
+					vehicle="SoldierESaboteurPipe";
+					leader=1;
+					rank="MAJOR";
+					skill=0.600000;
+					text="LemontovHangar";
+					init="this setidentity ""Lemontov""";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10123.802734,28.799999,4018.499512};
+					azimut=144.000000;
+					id=85;
+					side="WEST";
+					vehicle="SoldierWSaboteurDay";
+					leader=1;
+					rank="MAJOR";
+					skill=0.600000;
+					text="Dyaconsen";
+					init="this setIdentity ""Dyaconsen""; this removeWeapon ""binocular""";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=83;
+		class Item0
+		{
+			position[]={10122.152344,28.983873,4033.194824};
+			id=0;
+			side="EMPTY";
+			vehicle="ResHousehangar_2";
+			leader=1;
+			skill=0.600000;
+			text="Hangar1";
+		};
+		class Item1
+		{
+			position[]={10090.750000,28.842493,4033.352051};
+			id=1;
+			side="EMPTY";
+			vehicle="ResHousehangar_2";
+			leader=1;
+			skill=0.600000;
+			text="Hangar2";
+		};
+		class Item2
+		{
+			position[]={10114.417969,28.781044,3989.468750};
+			id=3;
+			side="EMPTY";
+			vehicle="Truck5tRefuel";
+			leader=1;
+			skill=0.814861;
+		};
+		class Item3
+		{
+			position[]={10146.498047,28.781498,3989.721436};
+			azimut=350.000000;
+			id=4;
+			side="EMPTY";
+			vehicle="Truck5tRepair";
+			leader=1;
+			skill=0.814861;
+		};
+		class Item4
+		{
+			position[]={10126.096680,28.799999,4005.304932};
+			id=5;
+			side="EMPTY";
+			vehicle="FlagCarrier";
+			skill=0.600000;
+			init="this setFlagTexture ""\flags\usa.jpg""";
+		};
+		class Item5
+		{
+			position[]={10090.916992,29.026365,4037.965820};
+			azimut=30.833090;
+			id=6;
+			side="EMPTY";
+			vehicle="Shed";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item6
+		{
+			position[]={10098.241211,29.026361,4038.628906};
+			azimut=100.000000;
+			id=7;
+			side="EMPTY";
+			vehicle="Shed";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item7
+		{
+			position[]={10092.352539,29.026365,4038.791016};
+			azimut=205.832993;
+			id=8;
+			side="EMPTY";
+			vehicle="M113";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+		};
+		class Item8
+		{
+			position[]={10098.875000,29.026365,4038.419922};
+			azimut=200.832993;
+			id=9;
+			side="EMPTY";
+			vehicle="ReammoBoxWest";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.4]";
+		};
+		class Item9
+		{
+			position[]={10101.507813,29.026365,4038.063477};
+			azimut=135.832993;
+			id=10;
+			side="EMPTY";
+			vehicle="ReammoBoxWest";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.4] ";
+		};
+		class Item10
+		{
+			position[]={10095.826172,29.026365,4039.114746};
+			azimut=24.657600;
+			id=11;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.44]";
+		};
+		class Item11
+		{
+			position[]={10094.533203,29.026365,4037.331787};
+			azimut=-20.342400;
+			id=12;
+			side="EMPTY";
+			vehicle="Barrel1";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.30]";
+		};
+		class Item12
+		{
+			position[]={10093.829102,29.026365,4036.228271};
+			azimut=-25.342400;
+			id=13;
+			side="EMPTY";
+			vehicle="Barrel2";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.30]";
+		};
+		class Item13
+		{
+			position[]={10100.833984,29.026361,4028.652832};
+			azimut=270.000000;
+			id=14;
+			side="EMPTY";
+			vehicle="Jeep";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.35]";
+		};
+		class Item14
+		{
+			position[]={10101.660156,29.026361,4033.205078};
+			azimut=345.000000;
+			id=15;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.4]";
+		};
+		class Item15
+		{
+			position[]={10102.158203,29.026361,4035.793457};
+			azimut=240.000000;
+			id=16;
+			side="EMPTY";
+			vehicle="Barrel2";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.30]";
+		};
+		class Item16
+		{
+			position[]={10102.988281,29.026361,4034.642578};
+			azimut=150.000000;
+			id=17;
+			side="EMPTY";
+			vehicle="Barrel2";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.30]";
+		};
+		class Item17
+		{
+			position[]={10081.313477,29.026361,4037.521240};
+			azimut=180.000000;
+			id=18;
+			side="EMPTY";
+			vehicle="Truck5t";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.41]";
+		};
+		class Item18
+		{
+			position[]={10078.000977,29.026361,4024.871094};
+			azimut=180.000000;
+			id=19;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+1.3]";
+		};
+		class Item19
+		{
+			position[]={10078.000977,29.026361,4027.373047};
+			azimut=95.000000;
+			id=20;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+1.15]";
+		};
+		class Item20
+		{
+			position[]={10080.445313,29.026361,4025.353027};
+			azimut=45.000000;
+			id=21;
+			side="EMPTY";
+			vehicle="ReammoBoxWest";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+1] ";
+		};
+		class Item21
+		{
+			position[]={10101.652344,29.026361,4026.020508};
+			azimut=82.736214;
+			id=22;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.44]";
+		};
+		class Item22
+		{
+			position[]={10099.458008,29.026361,4026.174072};
+			azimut=37.736229;
+			id=23;
+			side="EMPTY";
+			vehicle="Barrel1";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.30]";
+		};
+		class Item23
+		{
+			position[]={10098.147461,29.026361,4026.183594};
+			azimut=32.736229;
+			id=24;
+			side="EMPTY";
+			vehicle="Barrel2";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.30]";
+		};
+		class Item24
+		{
+			position[]={10098.619141,29.026361,4034.019043};
+			azimut=-158.382492;
+			id=25;
+			side="EMPTY";
+			vehicle="Jeep";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.35]";
+		};
+		class Item25
+		{
+			position[]={10126.813477,28.983873,4043.292236};
+			azimut=30.000000;
+			id=26;
+			side="EMPTY";
+			vehicle="VideoTable";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item26
+		{
+			position[]={10129.424805,28.983873,4040.487549};
+			azimut=265.000000;
+			id=27;
+			side="EMPTY";
+			vehicle="Tablemap";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item27
+		{
+			position[]={10079.419922,30.141861,4027.294189};
+			azimut=90.000000;
+			id=28;
+			side="EMPTY";
+			vehicle="Paleta2";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.45]";
+		};
+		class Item28
+		{
+			position[]={10096.198242,29.026361,4035.501709};
+			azimut=200.000000;
+			id=29;
+			side="EMPTY";
+			vehicle="Paleta2";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.45]";
+		};
+		class Item29
+		{
+			position[]={10134.316406,28.983873,4039.320557};
+			azimut=540.210022;
+			id=30;
+			side="EMPTY";
+			vehicle="Table";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item30
+		{
+			position[]={10134.157227,28.983873,4039.342529};
+			azimut=720.210022;
+			id=31;
+			side="EMPTY";
+			vehicle="Vysilacka";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+1.2]";
+		};
+		class Item31
+		{
+			position[]={10133.085938,28.983873,4039.454834};
+			azimut=329.500000;
+			id=32;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item32
+		{
+			position[]={10134.300781,28.983873,4040.566895};
+			azimut=540.210022;
+			id=33;
+			side="EMPTY";
+			vehicle="TableX";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item33
+		{
+			position[]={10134.145508,28.983873,4040.591064};
+			azimut=720.210022;
+			id=34;
+			side="EMPTY";
+			vehicle="Vysilacka";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+1.2]";
+		};
+		class Item34
+		{
+			position[]={10133.284180,28.983873,4040.656250};
+			azimut=364.500000;
+			id=35;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item35
+		{
+			position[]={10134.375977,28.983873,4042.111084};
+			azimut=540.210022;
+			id=36;
+			side="EMPTY";
+			vehicle="Table";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item36
+		{
+			position[]={10134.211914,28.983873,4042.142334};
+			azimut=720.210022;
+			id=37;
+			side="EMPTY";
+			vehicle="Vysilacka";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+1.2]";
+		};
+		class Item37
+		{
+			position[]={10133.147461,28.983873,4042.245605};
+			azimut=359.500000;
+			id=38;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item38
+		{
+			position[]={10134.343750,28.983873,4043.537109};
+			azimut=540.210022;
+			id=39;
+			side="EMPTY";
+			vehicle="Table";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item39
+		{
+			position[]={10134.189453,28.983873,4043.560791};
+			azimut=720.210022;
+			id=40;
+			side="EMPTY";
+			vehicle="Vysilacka";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+1.2]";
+		};
+		class Item40
+		{
+			position[]={10133.123047,28.983873,4043.674805};
+			azimut=760.208984;
+			id=41;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item41
+		{
+			position[]={10124.326172,28.983873,4041.473877};
+			azimut=325.000000;
+			id=42;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item42
+		{
+			position[]={10130.456055,28.983873,4041.535889};
+			azimut=130.000000;
+			id=43;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item43
+		{
+			position[]={10130.488281,28.983873,4039.262939};
+			azimut=240.000000;
+			id=44;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item44
+		{
+			position[]={10125.564453,28.983873,4040.009033};
+			azimut=300.000000;
+			id=45;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item45
+		{
+			position[]={10124.326172,28.983873,4040.315674};
+			azimut=315.000000;
+			id=46;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item46
+		{
+			position[]={10127.910156,28.983873,4040.232666};
+			azimut=355.000000;
+			id=47;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item47
+		{
+			position[]={10131.171875,28.983873,4025.136230};
+			azimut=371.849030;
+			id=48;
+			side="EMPTY";
+			vehicle="ReammoBoxWest";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.4]";
+		};
+		class Item48
+		{
+			position[]={10128.520508,28.983873,4025.077637};
+			azimut=306.849152;
+			id=49;
+			side="EMPTY";
+			vehicle="ReammoBoxWest";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.4] ";
+		};
+		class Item49
+		{
+			position[]={10134.099609,28.983873,4029.198975};
+			azimut=516.016174;
+			id=50;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.4]";
+		};
+		class Item50
+		{
+			position[]={10134.009766,28.983873,4026.564209};
+			azimut=411.016052;
+			id=51;
+			side="EMPTY";
+			vehicle="Barrel2";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.30]";
+		};
+		class Item51
+		{
+			position[]={10133.014648,28.983873,4027.569824};
+			azimut=321.016113;
+			id=52;
+			side="EMPTY";
+			vehicle="Barrel2";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.30]";
+		};
+		class Item52
+		{
+			position[]={10129.193359,28.983873,4029.863770};
+			azimut=265.000000;
+			id=53;
+			side="EMPTY";
+			vehicle="HMMWV";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.35]";
+		};
+		class Item53
+		{
+			position[]={10135.465820,29.427357,4037.899414};
+			azimut=179.565994;
+			id=54;
+			side="EMPTY";
+			vehicle="Paleta2";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.3]";
+		};
+		class Item54
+		{
+			position[]={10135.589844,28.983873,4040.263672};
+			id=55;
+			side="EMPTY";
+			vehicle="Barrel2";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.30]";
+		};
+		class Item55
+		{
+			position[]={10135.569336,28.983873,4043.347656};
+			id=56;
+			side="EMPTY";
+			vehicle="Paleta2";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.3]";
+		};
+		class Item56
+		{
+			position[]={10135.554688,28.983873,4042.192871};
+			id=57;
+			side="EMPTY";
+			vehicle="Barrel2";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.30]";
+		};
+		class Item57
+		{
+			position[]={10134.498047,28.983873,4035.174072};
+			azimut=365.046997;
+			id=58;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.3]";
+		};
+		class Item58
+		{
+			position[]={10131.708008,29.360237,4033.955566};
+			azimut=275.046997;
+			id=59;
+			side="EMPTY";
+			vehicle="Paleta2";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.3]";
+		};
+		class Item59
+		{
+			position[]={10109.157227,28.983873,4032.781250};
+			azimut=541.031982;
+			id=60;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.3]";
+		};
+		class Item60
+		{
+			position[]={10109.453125,28.983873,4035.449707};
+			azimut=456.032104;
+			id=61;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.3]";
+		};
+		class Item61
+		{
+			position[]={10108.472656,28.983873,4026.347656};
+			azimut=460.046631;
+			id=62;
+			side="EMPTY";
+			vehicle="ReammoBoxWest";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.4]";
+		};
+		class Item62
+		{
+			position[]={10108.333008,28.983873,4028.994141};
+			azimut=395.046753;
+			id=63;
+			side="EMPTY";
+			vehicle="ReammoBoxWest";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.4] ";
+		};
+		class Item63
+		{
+			position[]={10111.125000,28.983873,4028.710693};
+			azimut=94.418152;
+			id=64;
+			side="EMPTY";
+			vehicle="Paleta2";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.3]";
+		};
+		class Item64
+		{
+			position[]={10111.296875,28.983873,4032.750000};
+			azimut=541.031982;
+			id=65;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.3]";
+		};
+		class Item65
+		{
+			position[]={10111.592773,28.983873,4035.418457};
+			azimut=456.032104;
+			id=66;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.3]";
+		};
+		class Item66
+		{
+			position[]={10109.604492,28.983873,4041.078125};
+			azimut=179.565994;
+			id=67;
+			side="EMPTY";
+			vehicle="Paleta2";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.3]";
+		};
+		class Item67
+		{
+			position[]={10110.075195,28.983873,4042.918945};
+			azimut=50.000000;
+			id=68;
+			side="EMPTY";
+			vehicle="Barrel2";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.30]";
+		};
+		class Item68
+		{
+			position[]={10112.094727,28.983873,4042.002930};
+			azimut=50.000000;
+			id=69;
+			side="EMPTY";
+			vehicle="Barrel2";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.30]";
+		};
+		class Item69
+		{
+			position[]={10118.988281,28.983873,4041.346191};
+			azimut=342.502014;
+			id=70;
+			side="EMPTY";
+			vehicle="Table";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item70
+		{
+			position[]={10120.231445,28.983873,4040.567383};
+			azimut=207.501572;
+			id=71;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item71
+		{
+			position[]={10118.018555,28.983873,4040.045654};
+			azimut=317.501526;
+			id=72;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item72
+		{
+			position[]={10118.412109,28.983873,4042.766602};
+			azimut=432.501526;
+			id=73;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item73
+		{
+			position[]={10110.415039,28.983873,4025.850586};
+			azimut=25.000000;
+			id=74;
+			side="EMPTY";
+			vehicle="Barrel1";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.30]";
+		};
+		class Item74
+		{
+			position[]={10111.809570,28.983873,4025.852051};
+			azimut=-3.649720;
+			id=75;
+			side="EMPTY";
+			vehicle="Barrel1";
+			leader=1;
+			skill=0.600000;
+			init="this setPos [getPos this select 0, getPos this select 1, (getPos this select 2)+0.30]";
+		};
+		class Item75
+		{
+			position[]={10129.164063,28.983873,4030.475342};
+			azimut=90.000000;
+			id=76;
+			side="EMPTY";
+			vehicle="Shed";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item76
+		{
+			position[]={10121.410156,28.983873,4038.339600};
+			azimut=318.073700;
+			id=77;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item77
+		{
+			position[]={10123.412109,28.983873,4037.964111};
+			azimut=-66.658920;
+			id=78;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item78
+		{
+			position[]={10122.567383,28.983873,4039.739990};
+			azimut=335.641327;
+			id=79;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item79
+		{
+			position[]={10122.286133,28.983873,4040.993896};
+			azimut=333.217773;
+			id=80;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item80
+		{
+			position[]={10126.014648,28.983873,4037.963623};
+			azimut=270.772888;
+			id=81;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item81
+		{
+			position[]={10127.703125,28.983873,4038.381592};
+			azimut=254.533554;
+			id=82;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+		class Item82
+		{
+			position[]={10124.597656,28.983873,4038.779541};
+			azimut=289.201416;
+			id=83;
+			side="EMPTY";
+			vehicle="ChairHangar";
+			leader=1;
+			skill=0.600000;
+			init="this setpos [(getpos this select 0), (getpos this select 1), (getpos this select 2)+0.25]";
+		};
+	};
+};
+class OutroWin
+{
+	randomSeed=4548611;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=7509507;
+	class Intel
+	{
+	};
+};

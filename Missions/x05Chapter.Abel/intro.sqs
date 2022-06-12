@@ -36,6 +36,8 @@ LemontovMeeting disableAI "AUTOTARGET"
 KaplinskyHangar disableAI "AUTOTARGET"
 KaplinskyMeeting disableAI "AUTOTARGET"
 
+Dyaconsen disableAI "AUTOTARGET"
+
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
@@ -134,7 +136,7 @@ _camera camSetPos [10085.23,4022.73,0.73]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-
+0 fadeMusic 0.3
 LemontovHangar say "x05v01"
 ~4
 
@@ -158,6 +160,7 @@ LemontovHangar doWatch objNull
 ~0.6
 
 ~1.5
+3 fadeMusic 1
 [LemontovHangar, 5] exec "combat_walk.sqs"
 
 ~0.5
@@ -416,6 +419,8 @@ LemontovHangar doWatch [10125.10,4041.24,1.72]
 
 Dyaconsen setPos [10114.82,4038.71,0.23]
 Dyaconsen doWatch [10120.54,4032.08,1.49]
+
+0.5 fadeMusic 0.3
 
 ~0.5
 
@@ -888,6 +893,8 @@ _camera camCommit 0
 titleCut["","BLACK OUT",1.5]
 ~1.5
 
+1.5 fadeMusic 1
+
 
 playMusic "Track7"
 
@@ -998,9 +1005,14 @@ _camera camSetFOV 0.700
 _camera camCommit 5.5
 ~0.5
 Belsky doWatch [11668.31,4457.70,0.99]
+~1
+BelskyFriend1 doWatch [11668.31,4457.70,0.99]
+BelskyFriend2 doWatch [11668.31,4457.70,0.99]
 @camCommitted _camera
 
 Belsky doWatch objNull
+BelskyFriend1 doWatch objNull
+BelskyFriend2 doWatch objNull
 
 [_camera,CarTaxi,[-100,0.5,1.6],CarTaxi,[0,10,1.3],0.7] exec "logiccam.sqs"
 ~5.5
@@ -1054,7 +1066,7 @@ _camera camSetPos [11595.13,4439.22,1.55]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-
+0 fadeMusic 0.3
 Volkov say "x05v33"
 
 ~3.5
@@ -1558,6 +1570,26 @@ MeetingS4 playMove "CombatWalkB"
 MeetingS3 setBehaviour "Aware"
 MeetingS4 setBehaviour "Aware"
 ~0.5
+Volkov doWatch [11597.18,4441.34,1.54]
+;=== 16:03:38
+_camera camSetTarget [2962.19,103747.48,-7810.86]
+_camera camSetPos [11598.30,4429.05,1.68]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~0.2
+playSound "door_open"
+~0.8
+;=== 16:05:32
+_camera camSetTarget [6379.71,103823.56,-9766.99]
+_camera camSetPos [11597.30,4439.93,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+LemontovMeeting doWatch [11597.18,4441.34,1.54]
+~1
+Livanokh setPos getMarkerPos "Livanokh"
+
 
 #debug
 
