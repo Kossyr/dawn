@@ -31,7 +31,7 @@ class Intro
 	};
 	class Groups
 	{
-		items=32;
+		items=33;
 		class Item0
 		{
 			side="EAST";
@@ -799,20 +799,74 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={11601.231445,15.612291,4432.138672};
-					id=237;
+					position[]={11613.269531,15.191547,4452.722656};
+					id=239;
 					side="LOGIC";
 					vehicle="Logic";
 					leader=1;
 					skill=0.600000;
-					init="this exec ""camera.sqs""; debug=true";
+					init="debug=true";
+				};
+			};
+		};
+		class Item32
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9688.356445,39.329998,3945.425293};
+					azimut=75.000000;
+					id=240;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					skill=0.600000;
+					text="ChernikovMeeting";
+					init="this setIdentity ""Chernikov""; this setbehaviour ""safe""";
+				};
+			};
+			class Waypoints
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9689.049805,39.329998,3945.630859};
+					type="HOLD";
+					speed="FULL";
+					synchronizations[]={3};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={11611.539063,14.857588,4461.887207};
+					type="HOLD";
+					synchronizations[]={4};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={11602.156250,15.502001,4439.260254};
+					type="HOLD";
+					class Effects
+					{
+					};
+					showWP="NEVER";
 				};
 			};
 		};
 	};
 	class Vehicles
 	{
-		items=207;
+		items=208;
 		class Item0
 		{
 			position[]={10122.152344,28.983873,4033.194824};
@@ -2924,7 +2978,7 @@ class Intro
 		{
 			position[]={11590.958984,15.854338,4423.440430};
 			azimut=170.000000;
-			id=238;
+			id=237;
 			side="EMPTY";
 			vehicle="Barrel2";
 			leader=1;
@@ -2934,16 +2988,27 @@ class Intro
 		{
 			position[]={11590.958984,15.822420,4425.804688};
 			azimut=280.000000;
-			id=239;
+			id=238;
 			side="EMPTY";
 			vehicle="Barrel2";
 			leader=1;
 			skill=0.600000;
 		};
+		class Item207
+		{
+			position[]={11613.244141,14.421944,4473.087402};
+			azimut=165.000000;
+			id=241;
+			side="EMPTY";
+			vehicle="UAZ";
+			leader=1;
+			skill=0.600000;
+			text="BelskyCar";
+		};
 	};
 	class Markers
 	{
-		items=6;
+		items=10;
 		class Item0
 		{
 			position[]={10081.412109,28.811045,3997.307129};
@@ -2976,14 +3041,38 @@ class Intro
 		};
 		class Item5
 		{
-			position[]={11598.063477,15.683735,4429.920410};
+			position[]={11597.903320,15.684970,4429.967773};
 			name="Livanokh";
+			type="Flag";
+		};
+		class Item6
+		{
+			position[]={11562.203125,16.119745,4431.596191};
+			name="SyominGone";
+			type="Flag";
+		};
+		class Item7
+		{
+			position[]={11562.083984,15.979939,4439.161621};
+			name="KukushkinGone";
+			type="Flag";
+		};
+		class Item8
+		{
+			position[]={11585.023438,15.332740,4455.166504};
+			name="ChernikovGone";
+			type="Flag";
+		};
+		class Item9
+		{
+			position[]={11593.582031,15.391049,4451.645508};
+			name="ChernikovMeeting";
 			type="Flag";
 		};
 	};
 	class Sensors
 	{
-		items=3;
+		items=5;
 		class Item0
 		{
 			position[]={10044.882813,27.818121,4003.691650};
@@ -3022,6 +3111,32 @@ class Intro
 			{
 			};
 			synchronizations[]={2};
+		};
+		class Item3
+		{
+			position[]={9688.962891,39.329998,3941.769287};
+			a=0.000000;
+			b=0.000000;
+			type="SWITCH";
+			age="UNKNOWN";
+			expCond="ChernikovGo";
+			class Effects
+			{
+			};
+			synchronizations[]={3};
+		};
+		class Item4
+		{
+			position[]={11619.383789,14.912161,4458.949219};
+			a=0.000000;
+			b=0.000000;
+			type="SWITCH";
+			age="UNKNOWN";
+			expCond="ChernikovGo2";
+			class Effects
+			{
+			};
+			synchronizations[]={4};
 		};
 	};
 };
