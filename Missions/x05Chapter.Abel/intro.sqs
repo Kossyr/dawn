@@ -3,12 +3,6 @@ titleCut ["","BLACK IN",3]
 LemontovCar moveInCargo CarTaxi
 KaplinskyCar moveInCargo CarTaxi
 
-; ########################
-; ############
-; ## PART 1
-; ############
-; ########################
-
 LemontovHangar setMimic "Angry"
 LemontovHangar setSpeedMode "LIMITED"
 
@@ -37,6 +31,69 @@ KaplinskyHangar disableAI "AUTOTARGET"
 KaplinskyMeeting disableAI "AUTOTARGET"
 
 Dyaconsen disableAI "AUTOTARGET"
+
+Zubarev setMimic "Normal"
+Volkov setMimic "Normal"
+Syomin setMimic "Normal"
+Kukushkin setMimic "Normal"
+Chernikov setMimic "Normal"
+
+MeetingS1 setMimic "Normal"
+MeetingS2 setMimic "Normal"
+MeetingS3 setMimic "Normal"
+MeetingS4 setMimic "Normal"
+
+LemontovCar setMimic "Angry"
+LemontovCar setSpeedMode "LIMITED"
+
+KaplinskyCar setMimic "Normal"
+KaplinskyCar setSpeedMode "LIMITED"
+
+LemontovMeeting setMimic "Angry"
+KaplinskyMeeting setMimic "Normal"
+
+Livanokh setMimic "Angry"
+
+ChernikovMeeting setMimic "Normal"
+Belsky setMimic "Normal"
+
+ZubarevChapoi setMimic "Normal"
+ZubarevChapoi moveInCargo ChapoiUral1
+
+ZubarevSoldier1 setMimic "Normal"
+ZubarevSoldier2 setMimic "Normal"
+ZubarevSoldier3 setMimic "Normal"
+ZubarevSoldier4 setMimic "Normal"
+ZubarevSoldier5 setMimic "Normal"
+ZubarevSoldier6 setMimic "Normal"
+
+ZubarevSoldier1 setUnitPos "UP"
+ZubarevSoldier2 setUnitPos "UP"
+ZubarevSoldier3 setUnitPos "UP"
+ZubarevSoldier4 setUnitPos "UP"
+ZubarevSoldier5 setUnitPos "UP"
+ZubarevSoldier6 setUnitPos "UP"
+
+ZubarevSoldier1 moveInCargo ChapoiUral1
+ZubarevSoldier2 moveInCargo ChapoiUral1
+ZubarevSoldier3 moveInCargo ChapoiUral1
+ZubarevSoldier4 moveInCargo ChapoiUral1
+ZubarevSoldier5 moveInCargo ChapoiUral1
+ZubarevSoldier6 moveInCargo ChapoiUral1
+
+BelskyLePort setMimic "Normal"
+BelskyFriendLePort1 setMimic "Normal"
+BelskyFriendLePort2 setMimic "Normal"
+
+BelskyFriendLePort1 doWatch [8247.16,3133.56,1.69]
+BelskyFriendLePort2 doWatch [8245.96,3133.30,1.69]
+
+
+; ########################
+; ############
+; ## PART 1
+; ############
+; ########################
 
 
 _camera = "camera" camcreate [0,0,0]
@@ -933,30 +990,6 @@ titleCut["","BLACK OUT",1.5]
 ; ## PART 2
 ; ############
 ; ########################
-
-Zubarev setMimic "Normal"
-Volkov setMimic "Normal"
-Syomin setMimic "Normal"
-Kukushkin setMimic "Normal"
-Chernikov setMimic "Normal"
-
-MeetingS1 setMimic "Normal"
-MeetingS2 setMimic "Normal"
-MeetingS3 setMimic "Normal"
-MeetingS4 setMimic "Normal"
-
-LemontovCar setMimic "Angry"
-LemontovCar setSpeedMode "LIMITED"
-
-KaplinskyCar setMimic "Normal"
-KaplinskyCar setSpeedMode "LIMITED"
-
-LemontovMeeting setMimic "Angry"
-KaplinskyMeeting setMimic "Normal"
-
-Livanokh setMimic "Angry"
-
-Belsky setMimic "Normal"
 
 
 CarTaxi setPos getMarkerPos "CarMeeting"
@@ -2418,9 +2451,6 @@ Livanokh say "x05v99"
 ; ############
 ; ########################
 
-ChernikovMeeting setMimic "Normal"
-Belsky setMimic "Normal"
-
 titleText["","PLAIN"]
 
 ;=== 14:22:14
@@ -2633,6 +2663,197 @@ Belsky assignAsDriver BelskyCar
 titleCut["","BLACK OUT",3]
 
 ~3
+
+0 fademusic 1
+playMusic "ColdWarDawn"
+
+BelskyFriendLePort1 reveal BelskyLePort
+BelskyFriendLePort2 reveal BelskyLePort
+
+LePortGo=true
+
+~0.5
+
+titleCut["","BLACK IN",2]
+
+;=== 13:02:56
+_camera camSetTarget [17009.38,-96325.50,4646.01]
+_camera camSetPos [8177.15,3176.42,1.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 13:03:05
+_camera camSetTarget [4024.16,-96413.70,-8063.26]
+_camera camSetPos [8176.01,3172.25,1.66]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+titleCut["","BLACK IN",0.5]
+
+BelskyFriendLePort1 reveal BelskyLePort
+BelskyFriendLePort2 reveal BelskyLePort
+
+[BelskyLePort, 15] exec "stand_walk.sqs"
+
+;=== 13:05:33
+_camera camSetTarget [-47410.34,85885.02,-6971.95]
+_camera camSetPos [8271.22,3116.37,4.96]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:05:43
+_camera camSetTarget [-60958.00,74346.80,-11572.56]
+_camera camSetPos [8268.13,3119.90,4.45]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+
+BelskyFriendLePort1 reveal BelskyLePort
+BelskyFriendLePort2 reveal BelskyLePort
+
+;=== 13:06:25
+_camera camSetTarget [104356.02,-22787.83,-9482.16]
+_camera camSetPos [8243.45,3136.01,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 13:06:31
+_camera camSetTarget [105685.22,-17231.38,-9482.67]
+_camera camSetPos [8243.79,3134.93,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 5
+~1
+BelskyFriendLePort1 reveal BelskyLePort
+BelskyFriendLePort2 reveal BelskyLePort
+~1
+BelskyFriendLePort1 reveal BelskyLePort
+BelskyFriendLePort2 reveal BelskyLePort
+~1
+BelskyFriendLePort1 reveal BelskyLePort
+BelskyFriendLePort2 reveal BelskyLePort
+~1
+BelskyFriendLePort1 doWatch [8250.18,3136.74,1.65]
+BelskyFriendLePort2 doWatch [8250.18,3136.74,1.65]
+@camCommitted _camera
+BelskyFriendLePort1 reveal BelskyLePort
+BelskyFriendLePort2 reveal BelskyLePort
+BelskyFriendLePort1 doWatch BelskyLePort
+BelskyFriendLePort2 doWatch BelskyLePort
+
+;=== 13:07:33
+_camera camSetTarget [-88650.19,-19411.24,-10040.69]
+_camera camSetPos [8253.74,3135.80,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+BelskyFriendLePort1 say "x05v106"
+
+;=== 13:07:42
+_camera camSetTarget [-79996.62,-42405.25,-11711.04]
+_camera camSetPos [8253.96,3137.90,1.97]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+
+[_camera,BelskyLePort,[0,1.1,1.4],BelskyLePort,[180,0,1.3],0.7] exec "logiccam.sqs"
+BelskyLePort say "x05v107"
+~6
+titleText["","PLAIN"]
+startglcam=false
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+_camera = "camera" camcreate [8248.79,3131.47,1.84]
+_camera cameraeffect ["internal","back"]
+
+;=== 13:14:30
+_camera camSetTarget [-52275.08,82306.46,-8235.25]
+_camera camSetPos [8248.79,3131.47,1.84]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+BelskyFriendLePort1 doWatch [8247.16,3133.56,1.69]
+BelskyFriendLePort2 doWatch [8245.96,3133.30,1.69]
+
+;=== 13:14:39
+_camera camSetTarget [-52215.48,82228.48,-9350.77]
+_camera camSetPos [8247.69,3131.98,1.72]
+_camera camSetFOV 0.700
+_camera camCommit 3.5
+@camCommitted _camera
+
+;=== 13:17:26
+_camera camSetTarget [-62727.79,72913.63,-9761.74]
+_camera camSetPos [8239.44,3143.09,1.89]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:17:39
+_camera camSetTarget [-80295.03,46260.96,-17388.87]
+_camera camSetPos [8237.03,3146.17,1.96]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+;=== 13:17:49
+_camera camSetTarget [-86411.48,21493.71,-26536.13]
+_camera camSetPos [8235.55,3146.98,1.96]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+;=== 13:17:59
+_camera camSetTarget [-77610.49,49040.63,-22874.12]
+_camera camSetPos [8235.55,3146.98,1.96]
+_camera camSetFOV 0.700
+_camera camCommit 1.5
+@camCommitted _camera
+;=== 13:18:11
+_camera camSetTarget [-52298.01,77230.05,-29091.60]
+_camera camSetPos [8234.41,3147.37,1.68]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+;=== 13:18:21
+_camera camSetTarget [-47113.66,78317.59,-35842.02]
+_camera camSetPos [8233.16,3148.28,1.68]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+~0.5
+
+BelskyLePort setPos [8232.09,3149.05,0.20]
+BelskyLePort setDir 10
+BelskyLePort doWatch [8232.16,3149.68,1.17]
+BelskyLePort switchMove "FXStandRotateTable"
+
+BelskyLePort say "x05v108"
+BelskyLePort setMimic "Angry"
+
+;=== 13:21:07
+_camera camSetTarget [63027.95,-80485.22,1562.34]
+_camera camSetPos [8231.34,3150.66,1.25]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+~3
+BelskyLePort switchMove "FXStandShowTable"
+~1
+BelskyLePort say "x05v109"
+;=== 13:21:49
+_camera camSetTarget [-88642.71,19221.34,-18864.90]
+_camera camSetPos [8233.47,3149.42,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~3
+
+titleCut["","WHITE IN",1]
 
 #debug
 
