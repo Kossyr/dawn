@@ -1601,8 +1601,8 @@ removeAllWeapons LemontovMeeting
 LemontovMeeting setBehaviour "Safe"
 LemontovMeeting playMove "TakeFlagToCombat"
 @camCommitted _camera
-;LemontovMeeting doWatch [11594.16,4439.77,1.65]
 ~1
+1 fadeMusic 0
 ;=== 14:46:36
 _camera camSetTarget [-86117.68,-15737.42,-6699.70]
 _camera camSetPos [11595.04,4440.05,1.60]
@@ -1612,6 +1612,8 @@ _camera camCommit 0
 LemontovMeeting setPos getMarkerPos "LemontovMeeting"
 Volkov say "x05v54"
 Volkov setMimic "Normal"
+playMusic "Track6"
+1 fadeMusic 0.3
 ~1
 Volkov doWatch [11596.99,4428.95,1.71]
 ~1
@@ -1717,7 +1719,7 @@ _camera camCommit 0
 _camera camSetTarget [20589.55,-94898.21,-7259.12]
 _camera camSetPos [11597.84,4430.60,1.66]
 _camera camSetFOV 0.700
-_camera camCommit 4
+_camera camCommit 3.5
 @camCommitted _camera
 
 ~0.5
@@ -1786,7 +1788,14 @@ _camera camCommit 0
 
 Volkov say "x05v58"
 Volkov setMimic "Angry"
-~3.5
+~3
+
+Zubarev switchMove "FxShow3"
+Kukushkin switchMove "FxShow3"
+Syomin switchMove "FxShow3"
+Chernikov switchMove "FxShow3"
+
+~0.5
 
 ;=== 12:00:35
 _camera camSetTarget [-71954.55,56399.94,-17809.07]
@@ -1794,11 +1803,6 @@ _camera camSetPos [11603.74,4435.90,2.11]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-
-Zubarev switchMove "FxShow3"
-Kukushkin switchMove "FxShow3"
-Syomin switchMove "FxShow3"
-Chernikov switchMove "FxShow3"
 
 Zubarev say "x05v59a"
 Kukushkin say "x05v59b"
@@ -1823,7 +1827,7 @@ titleText [ localize "STRM_x05v59","PLAIN DOWN"]
 _camera camSetTarget [-75357.98,48868.19,-21514.57]
 _camera camSetPos [11603.36,4437.13,2.12]
 _camera camSetFOV 0.700
-_camera camCommit 1
+_camera camCommit 1.5
 @camCommitted _camera
 
 MeetingS1 setMimic "Normal"
@@ -1922,7 +1926,7 @@ _camera camSetPos [11597.22,4438.70,1.66]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-~5
+~6
 
 ;=== 12:14:38
 _camera camSetTarget [4165.61,103763.68,-8909.50]
@@ -2169,7 +2173,7 @@ _camera camCommit 0
 Volkov setMimic "Smile"
 ~1.5
 Volkov setMimic "Angry"
-~3
+~4
 
 ;=== 13:26:31
 _camera camSetTarget [21019.30,103705.30,-7584.55]
@@ -2254,11 +2258,9 @@ MeetingS3 setMimic "Angry"
 MeetingS4 setMimic "Angry"
 KaplinskyMeeting setMimic "Angry"
 
-~1
-
 LemontovMeeting switchMove "FXCivilLookaround"
 
-~2
+~3
 
 ;=== 13:40:52
 _camera camSetTarget [-22957.36,-88650.26,-11782.81]
@@ -2333,7 +2335,7 @@ _camera camSetPos [11597.33,4439.22,1.65]
 _camera camSetFOV 0.423
 _camera camCommit 5
 @camCommitted _camera
-~7
+~8
 
 ;=== 13:45:15
 _camera camSetTarget [6891.47,103959.23,-8581.58]
@@ -2413,11 +2415,9 @@ Volkov setMimic "Angry"
 Volkov say "x05v96"
 Volkov playMove "EffectStandSalute"
 
-~1.5
+~2
 
 Volkov playMove "EffectStandSaluteEnd"
-
-~0.5
 
 Livanokh say "x05v97"
 
@@ -2533,7 +2533,7 @@ _camera camSetPos [11611.77,4462.05,1.48]
 _camera camSetFOV 0.636
 _camera camCommit 2
 @camCommitted _camera
-~0.5
+~1.5
 
 ;=== 14:34:39
 _camera camSetTarget [-72867.64,-48734.25,-5719.71]
@@ -3119,7 +3119,7 @@ _camera camCommit 0
 _camera camSetTarget [104045.68,7077.00,-18598.05]
 _camera camSetPos [5863.83,3556.81,1.72]
 _camera camSetFOV 0.700
-_camera camCommit 2.5
+_camera camCommit 2
 @camCommitted _camera
 
 ;=== 14:06:37
@@ -3332,7 +3332,9 @@ setAccTime 0.5
 titleCut["","BLACK OUT",0.25]
 ~0.25
 titleText["","PLAIN"]
-~3
+~1.5
+1.5 fadeSound 0
+~1.5
 ; camera far away from fighting
 ;=== 14:30:54
 _camera camSetTarget [6465.46,110920.54,93.47]
