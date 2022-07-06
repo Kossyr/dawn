@@ -2762,10 +2762,11 @@ _camera camSetPos [8253.96,3137.90,1.97]
 _camera camSetFOV 0.700
 _camera camCommit 3
 @camCommitted _camera
-
+~0.5
 [_camera,BelskyLePort,[0,1.1,1.4],BelskyLePort,[180,0,1.3],0.7] exec "logiccam.sqs"
+~0.5
 BelskyLePort say "x05v107"
-~6
+~4
 titleText["","PLAIN"]
 startglcam=false
 player cameraEffect ["terminate","back"]
@@ -2844,7 +2845,7 @@ _camera camCommit 0
 @camCommitted _camera
 
 
-~3
+~4
 BelskyLePort switchMove "FXStandShowTable"
 ~1
 BelskyLePort say "x05v109"
@@ -2862,9 +2863,11 @@ BelskyLePort setMimic "Angry"
 
 titleCut["","WHITE OUT",0.5]
 
+ChapoiCarsGo=true
+
 ~0.5
 
-ChapoiCarsGo=true
+titleText["","PLAIN"]
 
 ~0.5
 
@@ -2987,7 +2990,7 @@ Shaposhnikov say "x05v112"
 _camera camSetTarget [104261.18,19947.59,-7135.17]
 _camera camSetPos [5875.23,3559.46,1.78]
 _camera camSetFOV 0.700
-_camera camCommit 1.5
+_camera camCommit 2.5
 @camCommitted _camera
 ;=== 12:54:48
 _camera camSetTarget [-93140.80,-5602.01,-10481.90]
@@ -2999,7 +3002,7 @@ ZubarevSoldier1 action ["eject", _vehicle]
 unassignVehicle ZubarevSoldier1
 ~0.5
 Shaposhnikov setMimic "Angry"
-~2
+~4
 Levitsky say "x05v113"
 ~1
 Levitsky doWatch [5865.02,3556.99,1.60]
@@ -3124,7 +3127,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-Shaposhnikov say "x05v116"
+ZubarevChapoi say "x05v116"
 
 ;=== 14:07:54
 _camera camSetTarget [102205.42,26590.00,-13765.47]
@@ -3132,7 +3135,7 @@ _camera camSetPos [5879.66,3560.75,1.58]
 _camera camSetFOV 0.700
 _camera camCommit 3
 @camCommitted _camera
-~0.5
+~1
 
 ;=== 14:08:54
 _camera camSetTarget [10745.19,101977.55,-16946.69]
@@ -3145,7 +3148,7 @@ _camera camCommit 0
 ChapoiRadio say "x05v111a"
 titleText[localize "STRM_x05v111", "PLAIN DOWN"]
 
-~1.5
+~1.8
 
 ;=== 14:10:19
 _camera camSetTarget [-84547.21,-32849.60,9807.54]
@@ -3163,7 +3166,7 @@ _camera camSetPos [8233.17,3150.07,1.15]
 _camera camSetFOV 0.700
 _camera camCommit 1.5
 @camCommitted _camera
-~0.5
+~0.6
 
 ;=== 14:12:15
 _camera camSetTarget [101325.48,-16055.59,-22359.85]
@@ -3174,7 +3177,7 @@ _camera camCommit 0
 
 ChapoiRadio say "x05v111c"
 
-~1
+~1.2
 
 Levitsky setMimic "Surprised"
 
@@ -3196,7 +3199,7 @@ Levitsky setDir 255
 Levitsky say "x05v114"
 Levitsky switchMove "FXdismay"
 
-~1
+~1.2
 
 Levitsky doWatch [5885.35,3562.59,2.00]
 titleText["","PLAIN"]
