@@ -88,6 +88,12 @@ BelskyFriendLePort2 setMimic "Normal"
 BelskyFriendLePort1 doWatch [8247.16,3133.56,1.69]
 BelskyFriendLePort2 doWatch [8245.96,3133.30,1.69]
 
+Shaposhnikov setMimic "Normal"
+Levitsky setMimic "Normal"
+
+ZubarevChapoi disableAI "AUTOTARGET"
+ZubarevChapoi disableAI "TARGET"
+
 
 ; ########################
 ; ############
@@ -98,9 +104,6 @@ BelskyFriendLePort2 doWatch [8245.96,3133.30,1.69]
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
-
-
-? debug : [] exec "debug.sqs"; goto "debug" ;
 
 playMusic "Track6"
 
@@ -2663,6 +2666,7 @@ Belsky assignAsDriver BelskyCar
 titleCut["","BLACK OUT",3]
 
 ~3
+#debug
 
 0 fademusic 1
 playMusic "ColdWarDawn"
@@ -2850,11 +2854,482 @@ _camera camSetPos [8233.47,3149.42,1.50]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
+~1.5
+BelskyLePort setMimic "Sad"
+~1.5
+BelskyLePort setMimic "Angry"
+~2
 
+titleCut["","WHITE OUT",0.5]
+
+~0.5
+
+ChapoiCarsGo=true
+
+~0.5
+
+titleCut["","WHITE IN",0.5]
+
+;=== 12:26:26
+_camera camSetTarget [105752.02,9251.15,3549.71]
+_camera camSetPos [5977.42,3522.25,2.18]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+;=== 12:26:39
+_camera camSetTarget [105752.02,9251.15,3549.64]
+_camera camSetPos [5975.01,3522.12,1.74]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+;=== 12:26:50
+_camera camSetTarget [-87476.38,-32047.64,-2050.76]
+_camera camSetPos [5957.58,3531.58,1.82]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 12:26:59
+_camera camSetTarget [-90191.33,-23954.46,-650.57]
+_camera camSetPos [5954.42,3531.87,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+;=== 12:29:44
+_camera camSetTarget [-58212.49,80042.43,-5332.31]
+_camera camSetPos [5934.93,3517.25,1.42]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+ChapoiGuard doWatch [5936.91,3525.11,1.40]
+
+;=== 12:29:53
+_camera camSetTarget [-81584.50,51579.00,-5471.39]
+_camera camSetPos [5934.97,3518.52,1.32]
+_camera camSetFOV 0.700
+_camera camCommit 4
+~2
+ChapoiGuard doWatch [5926.77,3524.54,1.40]
+@camCommitted _camera
+
+
+;=== 12:30:52
+_camera camSetTarget [20171.16,-94343.86,-14378.63]
+_camera camSetPos [5908.88,3576.02,5.72]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 12:31:00
+_camera camSetTarget [20581.90,-94283.43,-14378.75]
+_camera camSetPos [5904.31,3573.47,4.17]
+_camera camSetFOV 0.700
+_camera camCommit 3.5
+@camCommitted _camera
+~1
+
+;=== 12:43:10
+_camera camSetTarget [105364.04,10921.08,-6799.83]
+_camera camSetPos [5871.22,3560.01,2.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 12:43:18
+_camera camSetTarget [105273.11,14276.97,-2186.14]
+_camera camSetPos [5874.38,3559.50,2.18]
+_camera camSetFOV 0.700
+_camera camCommit 3
+~2
+[] exec "chapoi_arrival.sqs"
+@camCommitted _camera
+
+;=== 12:43:43
+_camera camSetTarget [-85937.20,42070.43,-8898.70]
+_camera camSetPos [5913.67,3557.44,2.00]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 12:43:51
+_camera camSetTarget [-90844.89,25543.88,-12378.08]
+_camera camSetPos [5913.06,3559.54,1.92]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+;=== 12:52:26
+_camera camSetTarget [-56045.64,-74183.53,-10757.62]
+_camera camSetPos [5905.29,3567.21,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+ZubarevChapoi action ["eject", ChapoiUral1]
+unassignVehicle ZubarevChapoi
+
+;=== 12:52:31
+_camera camSetTarget [-51142.05,-77850.24,-10757.41]
+_camera camSetPos [5904.40,3566.68,1.36]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+
+;=== 12:53:24
+_camera camSetTarget [102664.79,21077.87,-17962.07]
+_camera camSetPos [5873.91,3559.32,2.11]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Shaposhnikov say "x05v112"
+;=== 12:53:32
+_camera camSetTarget [104261.18,19947.59,-7135.17]
+_camera camSetPos [5875.23,3559.46,1.78]
+_camera camSetFOV 0.700
+_camera camCommit 1.5
+@camCommitted _camera
+;=== 12:54:48
+_camera camSetTarget [-93140.80,-5602.01,-10481.90]
+_camera camSetPos [5879.60,3560.34,1.49]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+ZubarevSoldier1 action ["eject", _vehicle]
+unassignVehicle ZubarevSoldier1
+~0.5
+Shaposhnikov setMimic "Angry"
+~2
+Levitsky say "x05v113"
+~1
+Levitsky doWatch [5865.02,3556.99,1.60]
+~2.5
+[Levitsky,5] exec "stand_run.sqs"
+~1.5
+titleText["","PLAIN"]
+;=== 13:06:30
+_camera camSetTarget [104197.34,18058.43,-10897.11]
+_camera camSetPos [5862.42,3556.86,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 13:06:44
+_camera camSetTarget [102836.50,-13647.17,-17271.31]
+_camera camSetPos [5863.17,3556.74,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+~1
+
+;=== 13:00:45
+_camera camSetTarget [-90034.50,-12672.29,9667.13]
+_camera camSetPos [8233.64,3149.84,1.17]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+ZubarevSoldier1 setPos getMarkerPos "ZubarevSoldier1"
+ZubarevSoldier1 setDir 290
+ZubarevSoldier2 setPos getMarkerPos "ZubarevSoldier2"
+ZubarevSoldier2 setDir 255
+ZubarevSoldier3 setPos getMarkerPos "ZubarevSoldier3"
+ZubarevSoldier3 setDir 285
+ZubarevSoldier4 setPos getMarkerPos "ZubarevSoldier4"
+ZubarevSoldier4 setDir 215
+ZubarevSoldier5 setPos getMarkerPos "ZubarevSoldier5"
+ZubarevSoldier5 setDir 205
+ZubarevSoldier6 setPos getMarkerPos "ZubarevSoldier6"
+ZubarevSoldier6 setDir 225
+
+ZubarevChapoi setPos getMarkerPos "ZubarevChapoi"
+ZubarevChapoi setDir 260
+
+
+BelskyLePort setMimic "Angry"
+BelskyLePort say "x05v110"
+
+;=== 13:00:53
+_camera camSetTarget [-89104.68,23461.03,10642.33]
+_camera camSetPos [8233.19,3149.39,1.17]
+_camera camSetFOV 0.700
+_camera camCommit 3
+~0.5
+BelskyLePort switchMove "FXStandShowTable"
+~0.5
+ZubarevSoldier1 setPos getMarkerPos "ZubarevSoldier1"
+ZubarevSoldier1 setDir 290
+ZubarevSoldier1 doWatch [5873.02,3567.67,2.12]
+ZubarevSoldier2 setPos getMarkerPos "ZubarevSoldier2"
+ZubarevSoldier2 setDir 255
+ZubarevSoldier2 doWatch [5870.71,3556.49,1.48]
+ZubarevSoldier3 setPos getMarkerPos "ZubarevSoldier3"
+ZubarevSoldier3 setDir 285
+ZubarevSoldier3 doWatch [5891.01,3577.76,1.48]
+ZubarevSoldier4 setPos getMarkerPos "ZubarevSoldier4"
+ZubarevSoldier4 setDir 215
+ZubarevSoldier4 doWatch [5878.89,3543.09,1.58]
+ZubarevSoldier5 setPos getMarkerPos "ZubarevSoldier5"
+ZubarevSoldier5 setDir 205
+ZubarevSoldier5 doWatch [5889.12,3546.94,1.76]
+ZubarevSoldier6 setPos getMarkerPos "ZubarevSoldier6"
+ZubarevSoldier6 setDir 225
+ZubarevSoldier6 doWatch [5894.62,3541.85,1.58]
+
+ZubarevChapoi setPos getMarkerPos "ZubarevChapoi"
+ZubarevChapoi setDir 260
+ZubarevChapoi doWatch [5878.26,3560.59,1.65]
+
+Shaposhnikov doWatch [5880.92,3561.11,1.62]
+
+Levitsky setPos [5865.65,3556.75,0.20]
+Levitsky setDir 155
+Levitsky doWatch [5866.55,3555.11,1.26]
+
+
+@camCommitted _camera
+~0.5
+titleText["","PLAIN"]
+
+;=== 14:05:39
+_camera camSetTarget [102897.38,533.70,-23930.95]
+_camera camSetPos [5863.64,3556.15,1.72]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:05:46
+_camera camSetTarget [104045.68,7077.00,-18598.05]
+_camera camSetPos [5863.83,3556.81,1.72]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+
+;=== 14:06:37
+_camera camSetTarget [-93122.98,14207.30,-9177.95]
+_camera camSetPos [5879.06,3560.54,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+Shaposhnikov say "x05v115"
+Shaposhnikov setMimic "Normal"
+
+
+~4
+
+;=== 14:07:45
+_camera camSetTarget [104916.39,4340.44,-13765.28]
+_camera camSetPos [5879.04,3561.19,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Shaposhnikov say "x05v116"
+
+;=== 14:07:54
+_camera camSetTarget [102205.42,26590.00,-13765.47]
+_camera camSetPos [5879.66,3560.75,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+~0.5
+
+;=== 14:08:54
+_camera camSetTarget [10745.19,101977.55,-16946.69]
+_camera camSetPos [5866.23,3554.19,1.34]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+ChapoiRadio say "x05v111a"
+titleText[localize "STRM_x05v111", "PLAIN DOWN"]
+
+~1.5
+
+;=== 14:10:19
+_camera camSetTarget [-84547.21,-32849.60,9807.54]
+_camera camSetPos [8233.51,3150.01,1.16]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Belsky setMimic "Angry"
+Belsky say "x05v111b"
+
+;=== 14:10:39
+_camera camSetTarget [-81550.67,-39439.93,11199.56]
+_camera camSetPos [8233.17,3150.07,1.15]
+_camera camSetFOV 0.700
+_camera camCommit 1.5
+@camCommitted _camera
+~0.5
+
+;=== 14:12:15
+_camera camSetTarget [101325.48,-16055.59,-22359.85]
+_camera camSetPos [5863.79,3556.82,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+ChapoiRadio say "x05v111c"
+
+~1
+
+Levitsky setMimic "Surprised"
+
+;=== 14:12:49
+_camera camSetTarget [-34134.39,95193.45,-1554.18]
+_camera camSetPos [5865.94,3556.20,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~0.5
+
+;=== 14:13:07
+_camera camSetTarget [-85442.35,-32737.93,-18522.23]
+_camera camSetPos [5867.65,3557.52,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Levitsky setDir 255
+Levitsky say "x05v114"
+Levitsky switchMove "FXdismay"
+
+~1
+
+Levitsky doWatch [5885.35,3562.59,2.00]
+titleText["","PLAIN"]
+
+;=== 14:18:01
+_camera camSetTarget [105391.19,13316.36,-1493.69]
+_camera camSetPos [5880.26,3561.02,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+ZubarevChapoi setMimic "Smile"
+;=== 14:18:08
+_camera camSetTarget [105391.19,13316.36,-1493.52]
+_camera camSetPos [5880.26,3561.02,1.59]
+_camera camSetFOV 0.503
+_camera camCommit 1
+@camCommitted _camera
+
+;=== 14:19:11
+_camera camSetTarget [-87322.02,-32475.25,-3817.19]
+_camera camSetPos [5878.89,3560.84,1.59]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Shaposhnikov setMimic "Angry"
+;=== 14:19:19
+_camera camSetTarget [-87322.02,-32475.25,-3816.75]
+_camera camSetPos [5878.89,3560.84,1.59]
+_camera camSetFOV 0.569
+_camera camCommit 1
+@camCommitted _camera
+
+;=== 14:19:56
+_camera camSetTarget [103816.28,16433.43,-15524.60]
+_camera camSetPos [5879.68,3560.93,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+ZubarevChapoi setMimic "Angry"
+ZubarevChapoi say "x05v117"
+~1.5
+ZubarevChapoi switchMove "HandGunStand"
+playsound "tokarev"
+Shaposhnikov setMimic "Surprised"
+~0.5
+playsound "tokarev"
+titleText["","PLAIN"]
+;=== 14:22:32
+_camera camSetTarget [-92168.41,-11927.44,-12058.87]
+_camera camSetPos [5879.43,3560.82,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+setAccTime 0.5
+Shaposhnikov switchMove "StandDying"
+Shaposhnikov setDammage 1
+~1
+
+;=== 14:27:22
+_camera camSetTarget [105659.51,10105.85,437.18]
+_camera camSetPos [5874.68,3560.58,0.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~1
+setAccTime 1
+;=== 14:28:12
+_camera camSetTarget [-86473.70,14799.47,-36617.39]
+_camera camSetPos [5878.17,3560.83,0.76]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 14:28:19
+_camera camSetTarget [-70846.29,8994.21,-63852.00]
+_camera camSetPos [5877.22,3560.95,0.76]
+_camera camSetFOV 0.700
+_camera camCommit 4
+~1.5
+[] exec "chapoi_execution.sqs"
+ZubarevChapoi setPos getMarkerPos "ZubarevChapoi"
+@camCommitted _camera
+deleteVehicle Levitsky
+~1.5
+;=== 14:56:47
+_camera camSetTarget [103950.15,22055.87,-6271.51]
+_camera camSetPos [5879.19,3560.78,1.30]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+ZubarevChapoi say "x05v118"
+
+
+~0.5
+
+deleteVehicle ChapoiLoyalist1
+deleteVehicle ChapoiLoyalist2
+deleteVehicle ChapoiLoyalist3
+deleteVehicle ChapoiGuard
+
+"deleteVehicle _x" forEach units ChapoiGroup1
+"deleteVehicle _x" forEach units ChapoiGroup2
+
+~5
+setAccTime 0.5
+ZubarevChapoiLeaving=true
+[ZubarevChapoi, 4] exec "stand_walk.sqs"
+
+~1.3
+
+titleCut["","BLACK OUT",0.25]
+~0.25
+titleText["","PLAIN"]
+~3
+; camera far away from fighting
+;=== 14:30:54
+_camera camSetTarget [6465.46,110920.54,93.47]
+_camera camSetPos [6465.46,10920.54,2.00]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+setAccTime 1
+
+title=true
+
+~7
+3 fademusic 0
 ~3
 
-titleCut["","WHITE IN",1]
 
-#debug
+end=true
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
 
 exit

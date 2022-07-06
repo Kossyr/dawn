@@ -1,0 +1,46 @@
+
+
+ChapoiUral1 setFuel 0
+ChapoiUral2 setFuel 0
+ChapoiUral3 setFuel 0
+
+
+~0.5
+
+[leader ChapoiGroup1, 1.5] exec "eject.sqs"
+[leader ChapoiGroup2, 1.5] exec "eject.sqs"
+
+_interval = 1.5
+_vehicle = ChapoiUral1
+
+ZubarevSoldier2 action ["eject", _vehicle]
+unassignVehicle ZubarevSoldier2
+
+~_interval
+
+ZubarevSoldier3 action ["eject", _vehicle]
+unassignVehicle ZubarevSoldier3
+
+~_interval
+
+ZubarevSoldier4 action ["eject", _vehicle]
+unassignVehicle ZubarevSoldier4
+
+~_interval
+
+ZubarevSoldier5 action ["eject", _vehicle]
+unassignVehicle ZubarevSoldier5
+
+~_interval
+
+ZubarevSoldier6 action ["eject", _vehicle]
+unassignVehicle ZubarevSoldier6
+
+; skip soldier 1 for now
+;~_interval
+
+;ZubarevSoldier1 action ["eject", _vehicle]
+;unassignVehicle ZubarevSoldier1
+
+
+exit
