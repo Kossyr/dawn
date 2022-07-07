@@ -1143,7 +1143,7 @@ _camera camCommit 0
 _camera camSetTarget [60437.67,87933.09,-25322.45]
 _camera camSetPos [11592.58,4434.31,2.45]
 _camera camSetFOV 0.700
-_camera camCommit 5
+_camera camCommit 4.5
 
 LemontovMeeting say "x05v34"
 MeetingS4 doWatch [11595.58,4443.54,1.55]
@@ -1367,17 +1367,25 @@ MeetingS2 setBehaviour "COMBAT"
 
 ~1
 
+titleText["","PLAIN"]
+
 ;=== 13:29:34
-_camera camSetTarget [-60555.86,67977.16,-27474.40]
-_camera camSetPos [11601.90,4436.12,2.53]
+;_camera camSetTarget [-60555.86,67977.16,-27474.40]
+;_camera camSetPos [11601.90,4436.12,2.53]
+;_camera camSetFOV 0.700
+;_camera camCommit 0
+;@camCommitted _camera
+;=== 13:29:44
+_camera camSetTarget [-54025.12,-65816.97,-27474.08]
+_camera camSetPos [11602.56,4448.32,3.01]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ;=== 13:29:44
 _camera camSetTarget [-54025.12,-65816.97,-27474.08]
 _camera camSetPos [11602.56,4448.32,3.01]
-_camera camSetFOV 0.700
-_camera camCommit 4
+_camera camSetFOV 0.500
+_camera camCommit 3
 @camCommitted _camera
 
 ;=== 13:30:03
@@ -1581,7 +1589,7 @@ LemontovMeeting say "x05v53"
 ~1
 LemontovMeeting setMimic "Angry"
 ~0.5
-
+titleText["","PLAIN"]
 
 ;=== 14:44:38
 _camera camSetTarget [-58175.42,-63336.55,-23151.26]
@@ -1601,8 +1609,8 @@ removeAllWeapons LemontovMeeting
 LemontovMeeting setBehaviour "Safe"
 LemontovMeeting playMove "TakeFlagToCombat"
 @camCommitted _camera
-~1
 1 fadeMusic 0
+~1
 ;=== 14:46:36
 _camera camSetTarget [-86117.68,-15737.42,-6699.70]
 _camera camSetPos [11595.04,4440.05,1.60]
@@ -1776,9 +1784,9 @@ _camera camCommit 0
 _camera camSetTarget [22977.59,-94906.70,-964.75]
 _camera camSetPos [11597.20,4438.78,1.63]
 _camera camSetFOV 0.700
-_camera camCommit 3
+_camera camCommit 2
 @camCommitted _camera
-~2
+~3
 ;=== 11:59:54
 _camera camSetTarget [-46922.87,84064.71,-15325.72]
 _camera camSetPos [11594.98,4439.01,1.63]
@@ -1827,7 +1835,7 @@ titleText [ localize "STRM_x05v59","PLAIN DOWN"]
 _camera camSetTarget [-75357.98,48868.19,-21514.57]
 _camera camSetPos [11603.36,4437.13,2.12]
 _camera camSetFOV 0.700
-_camera camCommit 1.5
+_camera camCommit 2
 @camCommitted _camera
 
 MeetingS1 setMimic "Normal"
@@ -2417,8 +2425,6 @@ Volkov playMove "EffectStandSalute"
 
 ~2
 
-Volkov playMove "EffectStandSaluteEnd"
-
 Livanokh say "x05v97"
 
 ~1
@@ -2816,31 +2822,31 @@ _camera camCommit 0
 _camera camSetTarget [-80295.03,46260.96,-17388.87]
 _camera camSetPos [8237.03,3146.17,1.96]
 _camera camSetFOV 0.700
-_camera camCommit 3
+_camera camCommit 2.5
 @camCommitted _camera
 ;=== 13:17:49
 _camera camSetTarget [-86411.48,21493.71,-26536.13]
 _camera camSetPos [8235.55,3146.98,1.96]
 _camera camSetFOV 0.700
-_camera camCommit 2
+_camera camCommit 1.5
 @camCommitted _camera
 ;=== 13:17:59
 _camera camSetTarget [-77610.49,49040.63,-22874.12]
 _camera camSetPos [8235.55,3146.98,1.96]
 _camera camSetFOV 0.700
-_camera camCommit 1.5
+_camera camCommit 1
 @camCommitted _camera
 ;=== 13:18:11
 _camera camSetTarget [-52298.01,77230.05,-29091.60]
 _camera camSetPos [8234.41,3147.37,1.68]
 _camera camSetFOV 0.700
-_camera camCommit 2
+_camera camCommit 1.5
 @camCommitted _camera
 ;=== 13:18:21
 _camera camSetTarget [-47113.66,78317.59,-35842.02]
 _camera camSetPos [8233.16,3148.28,1.68]
 _camera camSetFOV 0.700
-_camera camCommit 2
+_camera camCommit 1.5
 @camCommitted _camera
 ~0.5
 
@@ -3119,7 +3125,7 @@ _camera camCommit 0
 _camera camSetTarget [104045.68,7077.00,-18598.05]
 _camera camSetPos [5863.83,3556.81,1.72]
 _camera camSetFOV 0.700
-_camera camCommit 2
+_camera camCommit 1.5
 @camCommitted _camera
 
 ;=== 14:06:37
@@ -3240,7 +3246,6 @@ _camera camSetPos [5878.89,3560.84,1.59]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
-Shaposhnikov setMimic "Angry"
 ;=== 14:19:19
 _camera camSetTarget [-87322.02,-32475.25,-3816.75]
 _camera camSetPos [5878.89,3560.84,1.59]
@@ -3284,7 +3289,7 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-~1
+~2
 setAccTime 1
 ;=== 14:28:12
 _camera camSetTarget [-86473.70,14799.47,-36617.39]
@@ -3323,7 +3328,9 @@ deleteVehicle ChapoiGuard
 "deleteVehicle _x" forEach units ChapoiGroup1
 "deleteVehicle _x" forEach units ChapoiGroup2
 
-~5
+~2
+titleText["","PLAIN"]
+~3
 setAccTime 0.5
 [ZubarevChapoi, 4] exec "stand_walk.sqs"
 
@@ -3331,17 +3338,9 @@ setAccTime 0.5
 
 titleCut["","BLACK OUT",0.25]
 ~0.25
-titleText["","PLAIN"]
 ~1.5
 1.5 fadeSound 0
 ~1.5
-; camera far away from fighting
-;=== 14:30:54
-_camera camSetTarget [6465.46,110920.54,93.47]
-_camera camSetPos [6465.46,10920.54,2.00]
-_camera camSetFOV 0.700
-_camera camCommit 0
-@camCommitted _camera
 setAccTime 1
 
 title=true
