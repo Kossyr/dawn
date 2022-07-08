@@ -1,0 +1,46 @@
+titleCut ["","BLACK IN",3]
+
+Rashiv setMimic "Sad"
+Rashiv removeWeapon "binocular"
+Rashiv removeWeapon "AK74"
+Rashiv disableAI "AUTOTARGET"
+
+Yashin setMimic "Normal"
+
+RedHandCommander setMimic "Normal"
+RedHandSoldier1 setMimic "Angry"
+RedHandSoldier2 setMimic "Angry"
+RedHandSoldier3 setMimic "Angry"
+RedHandSoldier4 setMimic "Angry"
+RedHandSoldier5 setMimic "Angry"
+
+RedHandCommander setSpeedMode "LIMITED"
+RedHandSoldier1 setSpeedMode "LIMITED"
+RedHandSoldier2 setSpeedMode "LIMITED"
+RedHandSoldier3 setSpeedMode "LIMITED"
+RedHandSoldier4 setSpeedMode "LIMITED"
+RedHandSoldier5 setSpeedMode "LIMITED"
+
+
+RedHandCommander moveInCargo ConvoyCar
+RedHandSoldier1 moveInCargo ConvoyCar
+RedHandSoldier2 moveInCargo ConvoyCar
+
+RedHandSoldier3 moveInCargo ConvoyTruck1
+RedHandSoldier4 moveInCargo ConvoyTruck1
+RedHandSoldier5 moveInCargo ConvoyTruck1
+
+"_x moveInCargo ConvoyTruck1" forEach units PlaceholderGroup1
+"_x moveInCargo ConvoyTruck2" forEach units PlaceholderGroup2
+
+
+? debug : [] exec "debug.sqs"; goto "debug" ;
+
+
+exit
+
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+exit
