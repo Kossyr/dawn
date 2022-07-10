@@ -22,6 +22,9 @@ RedHandSoldier4 setSpeedMode "LIMITED"
 RedHandSoldier5 setSpeedMode "LIMITED"
 
 
+"_x moveInCargo ConvoyTruck1" forEach units PlaceholderGroup1
+"_x moveInCargo ConvoyTruck2" forEach units PlaceholderGroup2
+
 RedHandCommander moveInCargo ConvoyCar
 RedHandSoldier1 moveInCargo ConvoyCar
 RedHandSoldier2 moveInCargo ConvoyCar
@@ -30,17 +33,573 @@ RedHandSoldier3 moveInCargo ConvoyTruck1
 RedHandSoldier4 moveInCargo ConvoyTruck1
 RedHandSoldier5 moveInCargo ConvoyTruck1
 
-"_x moveInCargo ConvoyTruck1" forEach units PlaceholderGroup1
-"_x moveInCargo ConvoyTruck2" forEach units PlaceholderGroup2
 
+ConvoyCar stop true
+ConvoyTruck1 stop true
+ConvoyTruck2 stop true
 
-? debug : [] exec "debug.sqs"; goto "debug" ;
+Yashin stop true
 
+playMusic "RTrack10"
 
-exit
 
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
+;=== 10:59:27
+_camera camSetTarget [-37142.32,93732.33,1098.59]
+_camera camSetPos [4331.37,2743.35,10.27]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 11:00:01
+_camera camSetTarget [83322.55,64057.75,1098.52]
+_camera camSetPos [4331.37,2743.35,10.27]
+_camera camSetFOV 0.700
+_camera camCommit 9
+@camCommitted _camera
+;=== 11:00:16
+_camera camSetTarget [97361.30,37503.20,-11614.20]
+_camera camSetPos [4335.04,2743.64,8.47]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+;=== 10:58:39
+_camera camSetTarget [70910.55,76893.92,8646.37]
+_camera camSetPos [4353.95,2747.65,7.95]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Yashin setPos getMarkerPos "Yashin"
+Yashin stop false
+
+;=== 10:58:51
+_camera camSetTarget [71080.44,77083.14,4595.42]
+_camera camSetPos [4348.81,2741.91,3.00]
+_camera camSetFOV 0.700
+_camera camCommit 7
+~4
+YashinGo=true
+@camCommitted _camera
+;=== 11:06:45
+_camera camSetTarget [89692.32,-46910.82,15872.96]
+_camera camSetPos [4342.36,2761.06,1.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 11:07:05
+_camera camSetTarget [63271.93,-76505.82,15734.76]
+_camera camSetPos [4347.52,2766.90,1.46]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+
+;=== 11:07:37
+_camera camSetTarget Yashin
+_camera camSetPos [4357.34,2765.67,0.97]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 11:07:45
+_camera camSetTarget Yashin
+_camera camSetPos [4357.57,2763.76,0.96]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+;=== 11:08:35
+_camera camSetTarget [103031.25,17492.51,-6592.98]
+_camera camSetPos [4350.38,2762.02,1.48]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 11:08:42
+_camera camSetTarget [102914.67,18601.63,-5754.87]
+_camera camSetPos [4352.15,2762.34,1.67]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+;=== 11:08:59
+_camera camSetTarget [-89074.45,-31617.79,9345.96]
+_camera camSetPos [4374.67,2765.13,1.33]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 11:09:12
+_camera camSetTarget [-93447.09,23060.85,-4312.99]
+_camera camSetPos [4371.05,2765.14,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 5
+~3
+Yashin doWatch [4370.16,2765.50,1.65]
+@camCommitted _camera
+
+~1
+
+Yashin say "43av01"
+
+~1
+
+Yashin setPos getMarkerPos "YashinChurch"
+
+;=== 11:12:41
+_camera camSetTarget [-85301.58,-41101.09,-5896.04]
+_camera camSetPos [4362.23,2764.40,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~2
+
+;=== 11:13:39
+_camera camSetTarget [-95531.08,5977.67,-2919.60]
+_camera camSetPos [4371.00,2765.21,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Rashiv say "43av02"
+Rashiv say "43av03"
+;=== 11:13:49
+_camera camSetTarget [-95410.43,8633.68,-2919.66]
+_camera camSetPos [4370.86,2765.33,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 3
+~1.5
+Rashiv setMimic "Sad"
+@camCommitted _camera
+
+~2
+
+;=== 11:14:41
+_camera camSetTarget [103660.57,-1818.65,-10738.87]
+_camera camSetPos [4357.95,2765.55,1.87]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+;=== 11:14:48
+_camera camSetTarget [103654.39,7502.52,-10739.19]
+_camera camSetPos [4359.04,2764.43,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+
+
+;=== 11:17:21
+_camera camSetTarget [-94840.69,12790.91,-7393.93]
+_camera camSetPos [4371.09,2765.28,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~2
+
+Yashin say "43av04"
+Yashin say "43av05"
+
+~1
+
+;=== 11:17:59
+_camera camSetTarget [-94228.19,-12123.98,-7394.02]
+_camera camSetPos [4362.24,2764.23,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~4
+Yashin setMimic "Sad"
+~3
+
+;=== 11:18:51
+_camera camSetTarget [-95499.21,7357.19,-2082.24]
+_camera camSetPos [4370.99,2765.37,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Rashiv say "43av06"
+
+ConvoyCar setPos getMarkerPos "ConvoyCar"
+ConvoyTruck1 setPos getMarkerPos "ConvoyTruck1"
+ConvoyTruck2 setPos getMarkerPos "ConvoyTruck2"
+ConvoyCar setDir 25
+ConvoyTruck1 setDir 25
+ConvoyTruck2 setDir 25
+
+ConvoyCar stop false
+ConvoyTruck1 stop false
+ConvoyTruck2 stop false
+
+~2
+
+ConvoyGo=true
+
+~2
+
+;=== 11:22:01
+_camera camSetTarget [-71016.74,-62742.58,-5054.77]
+_camera camSetPos [4362.35,2764.57,1.51]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Rashiv setMimic "Sad"
+Yashin say "43av07"
+
+~2
+
+Yashin setMimic "Normal"
+Yashin doWatch [4327.52,2732.74,2.21]
+
+~1
+
+;=== 11:24:33
+_camera camSetTarget [-61421.52,-72325.38,-6608.63]
+_camera camSetPos [4323.57,2723.37,1.25]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 11:24:41
+_camera camSetTarget [-66504.76,-67537.61,-6607.64]
+_camera camSetPos [4327.88,2730.21,1.05]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+;=== 11:25:43
+_camera camSetTarget [94603.20,45533.55,-5073.94]
+_camera camSetPos [4360.66,2763.49,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Yashin say "43av08"
+
+~3
+
+;=== 11:26:29
+_camera camSetTarget [-94558.34,16402.17,-5074.48]
+_camera camSetPos [4371.07,2765.22,1.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Yashin doWatch [4370.16,2765.50,1.65]
+Rashiv setMimic "Sad"
+Rashiv say "43av09"
+
+~2
+
+[] exec "intro_convoy.sqs"
+
+~2
+
+;=== 11:27:39
+_camera camSetTarget [-88929.86,-31956.06,-9414.42]
+_camera camSetPos [4362.92,2764.25,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Yashin setMimic "Smile"
+Yashin say "43av10"
+
+~4.5
+
+Yashin doWatch objNull
+YashinLeave=true
+
+~2
+
+titleText["","PLAIN"]
+
+;=== 11:31:36
+_camera camSetTarget [-93827.10,-13050.11,-10219.01]
+_camera camSetPos [4371.08,2765.52,1.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Rashiv setMimic "Sad"
+
+RedHandFree=true
+
+RedHandCommander setPos getMarkerPos "RedHandCommander"
+RedHandSoldier1 setPos getMarkerPos "RedHandSoldier1"
+RedHandSoldier2 setPos getMarkerPos "RedHandSoldier2"
+RedHandSoldier3 setPos getMarkerPos "RedHandSoldier3"
+RedHandSoldier4 setPos getMarkerPos "RedHandSoldier4"
+RedHandSoldier5 setPos getMarkerPos "RedHandSoldier5"
+
+
+RedHandSoldier1 doWatch [4342.50,2754.73,1.42]
+RedHandSoldier2 doWatch [4347.24,2750.26,1.30]
+RedHandSoldier3 doWatch [4349.46,2755.96,1.51]
+RedHandSoldier4 doWatch [4350.68,2754.30,1.46]
+RedHandSoldier5 doWatch [4352.73,2752.57,1.43]
+
+RedHandCommander doWatch [4340.48,2747.83,1.61]
+
+
+~1
+
+RedHandCommander setPos getMarkerPos "RedHandCommander"
+RedHandSoldier1 setPos getMarkerPos "RedHandSoldier1"
+RedHandSoldier2 setPos getMarkerPos "RedHandSoldier2"
+RedHandSoldier3 setPos getMarkerPos "RedHandSoldier3"
+RedHandSoldier4 setPos getMarkerPos "RedHandSoldier4"
+RedHandSoldier5 setPos getMarkerPos "RedHandSoldier5"
+
+~1.5
+
+;=== 12:17:22
+_camera camSetTarget [-89596.86,-27322.16,-16323.30]
+_camera camSetPos [4346.59,2744.96,1.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 12:17:51
+_camera camSetTarget [-64889.59,-67515.58,-16323.92]
+_camera camSetPos [4339.97,2746.78,1.54]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+~0.5
+;=== 12:18:57
+_camera camSetTarget [64996.60,82159.34,-3519.43]
+_camera camSetPos [4336.54,2742.12,1.95]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+Yashin say "43av11"
+Yashin say "43av12"
+
+;=== 12:19:06
+_camera camSetTarget [59743.54,85622.05,-7712.47]
+_camera camSetPos [4338.00,2743.53,1.76]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+
+;=== 12:19:52
+_camera camSetTarget [-12718.58,-94469.09,-15909.33]
+_camera camSetPos [4341.73,2751.96,1.52]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 12:19:59
+_camera camSetTarget [-20815.55,-92695.70,-15909.92]
+_camera camSetPos [4340.72,2751.43,1.41]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+
+Yashin setPos getMarkerPos "YashinConvoy"
+YashinFree=true
+Yashin doWatch [4338.88,2745.93,1.61]
+Yashin setMimic "Smile"
+;=== 12:22:32
+_camera camSetTarget [78116.91,69902.94,-6737.14]
+_camera camSetPos [4339.98,2747.00,1.63]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+RedHandCommander doWatch [4340.49,2747.47,1.52]
+
+~3
+
+;=== 12:29:52
+_camera camSetTarget [-59903.73,-72334.60,-15225.76]
+_camera camSetPos [4339.80,2746.84,1.51]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+RedHandCommander say "43av13"
+
+~3
+
+;=== 12:30:21
+_camera camSetTarget [98104.10,37501.80,-494.72]
+_camera camSetPos [4339.86,2747.15,1.62]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Yashin setMimic "Surprised"
+Yashin say "43av14"
+~0.5
+Yashin setMimic "Normal"
+~1.5
+
+;=== 12:31:21
+_camera camSetTarget [-84090.01,-39595.03,-19540.99]
+_camera camSetPos [4343.45,2747.45,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+RedHandCommander say "43av15"
+
+;=== 12:31:36
+_camera camSetTarget [-83455.13,-40960.24,-19403.98]
+_camera camSetPos [4342.16,2747.62,1.47]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+~0.5
+
+;=== 12:32:11
+_camera camSetTarget [-93862.23,-11769.61,-11663.47]
+_camera camSetPos [4371.27,2765.59,1.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+Yashin switchMove "StandDyingVer2"
+Yashin setDammage 1
+RedHandCommander setMimic "Angry"
+
+playMusic "RTrack4"
+
+~0.5
+
+playSound "tokarev"
+
+~0.5
+
+playSound "tokarev"
+
+Rashiv setMimic "Surprised"
+Rashiv switchMove "FXdismay"
+Rashiv say "43av16"
+
+;=== 12:33:23
+_camera camSetTarget [98313.80,-30644.59,-7483.41]
+_camera camSetPos [4368.02,2766.09,1.31]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~1
+
+titleText["","PLAIN"]
+
+setAccTime 0.5
+RedHandCommander switchMove "HandGunStandToStand1"
+
+;=== 12:36:23
+_camera camSetTarget [-47899.44,85582.73,-20093.34]
+_camera camSetPos [4340.69,2743.61,1.46]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~0.15
+
+RedHandSoldier2 say "43av17"
+
+~1
+
+setAccTime 1
+
+~1.5
+
+;=== 12:39:10
+_camera camSetTarget [-61310.08,-70649.95,-17287.12]
+_camera camSetPos [4339.46,2746.58,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+RedHandCommander say "43av18"
+
+~0.5
+
+RedHandCommander doWatch [4326.44,2731.07,2.05]
+~1.5
+RedHandCommander switchMove "FxShow3"
+
+;=== 12:53:40
+_camera camSetTarget [90424.34,49878.18,-18940.71]
+_camera camSetPos [4321.68,2729.78,2.65]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+;=== 12:53:52
+_camera camSetTarget [84913.43,60093.09,-14525.03]
+_camera camSetPos [4322.46,2729.62,2.62]
+_camera camSetFOV 0.700
+_camera camCommit 2
+~1
+ConvoyTruck1 setFuel 1
+ConvoyTruck2 setFuel 1
+ConvoyLeave=true
+@camCommitted _camera
+
+;=== 12:54:46
+_camera camSetTarget [-44662.03,-83159.20,-14664.62]
+_camera camSetPos [4339.40,2748.94,2.00]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 12:55:05
+_camera camSetTarget [-49872.78,-80256.12,-12962.63]
+_camera camSetPos [4341.06,2747.81,1.63]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+RedHandCommander doWatch [4340.49,2747.47,1.52]
+
+~1
+
+;=== 12:58:23
+_camera camSetTarget [-90954.38,-22830.66,-16146.58]
+_camera camSetPos [4340.89,2745.77,1.47]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+RedHandCommander say "43av19"
+
+~2
+
+;=== 12:58:58
+_camera camSetTarget [5900.52,-95971.45,-15743.88]
+_camera camSetPos [4339.05,2749.50,1.38]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+[] exec "intro_commander.sqs"
+RedHandCommander say "43av20"
+
+~3
+
+titleCut["","BLACK OUT",1.5]
+
+1.5 fadeMusic 0
+1.5 fadeSound 0
+~1.5
+
+
+end=true
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
 
 exit

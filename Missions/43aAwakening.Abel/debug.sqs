@@ -1,4 +1,97 @@
 
+exit
+
+
+~1
+
+Yashin setPos getMarkerPos "YashinChurch"
+Yashin stop false
+YashinGo=true
+Yashin doWatch [4370.16,2765.50,1.65]
+
+exit
+
+~1
+
+ConvoyCar setPos getMarkerPos "ConvoyCar"
+ConvoyTruck1 setPos getMarkerPos "ConvoyTruck1"
+ConvoyTruck2 setPos getMarkerPos "ConvoyTruck2"
+ConvoyCar setDir 25
+ConvoyTruck1 setDir 25
+ConvoyTruck2 setDir 25
+
+ConvoyCar stop false
+ConvoyTruck1 stop false
+ConvoyTruck2 stop false
+
+
+Yashin setPos getMarkerPos "YashinChurch"
+Yashin stop false
+YashinGo=true
+Yashin doWatch [4370.16,2765.50,1.65]
+
+~1
+
+ConvoyGo=true
+
+~12
+
+[] exec "intro_convoy.sqs"
+
+~8
+
+Yashin doWatch objNull
+YashinLeave=true
+
+
+RedHandFree=true
+
+RedHandCommander setPos getMarkerPos "RedHandCommander"
+RedHandSoldier1 setPos getMarkerPos "RedHandSoldier1"
+RedHandSoldier2 setPos getMarkerPos "RedHandSoldier2"
+RedHandSoldier3 setPos getMarkerPos "RedHandSoldier3"
+RedHandSoldier4 setPos getMarkerPos "RedHandSoldier4"
+RedHandSoldier5 setPos getMarkerPos "RedHandSoldier5"
+
+
+RedHandSoldier1 doWatch [4342.50,2754.73,1.42]
+RedHandSoldier2 doWatch [4347.24,2750.26,1.30]
+RedHandSoldier3 doWatch [4349.46,2755.96,1.51]
+RedHandSoldier4 doWatch [4350.68,2754.30,1.46]
+RedHandSoldier5 doWatch [4352.73,2752.57,1.43]
+
+RedHandCommander doWatch [4340.48,2747.83,1.61]
+
+
+~1
+
+RedHandCommander setPos getMarkerPos "RedHandCommander"
+RedHandSoldier1 setPos getMarkerPos "RedHandSoldier1"
+RedHandSoldier2 setPos getMarkerPos "RedHandSoldier2"
+RedHandSoldier3 setPos getMarkerPos "RedHandSoldier3"
+RedHandSoldier4 setPos getMarkerPos "RedHandSoldier4"
+RedHandSoldier5 setPos getMarkerPos "RedHandSoldier5"
+
+
+~16
+
+Yashin setPos getMarkerPos "YashinConvoy"
+YashinFree=true
+
+
+exit
+
+
+YashinGo=true
+
+
+
+
+
+
+
+exit
+
 ejecting=false
 ConvoyGo=true
 
@@ -44,6 +137,12 @@ unAssignVehicle RedHandSoldier2
 RedHandSoldier5 action ["eject", ConvoyTruck1]
 unAssignVehicle RedHandSoldier5
 
+~2
+
+
+ConvoyTruck1 setFuel 1
+ConvoyTruck2 setFuel 1
+
 ~10
 
 ConvoyLeader = leader ConvoyCar
@@ -53,8 +152,6 @@ ConvoyReduced=true
 
 ~5
 
-ConvoyTruck1 setFuel 1
-ConvoyTruck2 setFuel 1
 
 ConvoyLeave=true
 

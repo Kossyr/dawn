@@ -1,0 +1,43 @@
+
+ConvoyCar setFuel 0
+ConvoyTruck1 setFuel 0
+ConvoyTruck2 setFuel 0
+
+
+RedHandCommander action ["eject", ConvoyCar]
+unAssignVehicle RedHandCommander
+
+~0.5
+
+RedHandSoldier3 action ["eject", ConvoyTruck1]
+unAssignVehicle RedHandSoldier3
+
+
+ConvoyLeader = leader ConvoyCar
+ConvoyLeader action ["eject", ConvoyCar]
+deleteVehicle ConvoyLeader
+ConvoyReduced=true
+
+~1.5
+
+RedHandSoldier1 action ["eject", ConvoyCar]
+unAssignVehicle RedHandSoldier1
+
+~0.5
+
+
+RedHandSoldier4 action ["eject", ConvoyTruck1]
+unAssignVehicle RedHandSoldier4
+
+~1.5
+
+RedHandSoldier2 action ["eject", ConvoyCar]
+unAssignVehicle RedHandSoldier2
+
+~0.5
+
+RedHandSoldier5 action ["eject", ConvoyTruck1]
+unAssignVehicle RedHandSoldier5
+
+
+exit
