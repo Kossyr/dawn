@@ -1,0 +1,26 @@
+
+churchFirefight=true
+
+? alive RedHandSoldier3 : _speaker = RedHandSoldier3 ; goto "firefightStarts" ;
+? alive RedHandSoldier1 : _speaker = RedHandSoldier1 ; goto "firefightStarts" ;
+? alive RedHandSoldier2 : _speaker = RedHandSoldier2 ; goto "firefightStarts" ;
+? alive RedHandSoldier4 : _speaker = RedHandSoldier4 ; goto "firefightStarts" ;
+? alive RedHandSoldier5 : _speaker = RedHandSoldier5 ; goto "firefightStarts" ;
+
+goto "commanderCalls"
+
+#firefightStarts
+
+_speaker say "43av24"
+
+#commanderCalls
+
+~1.5
+
+? alive RedHandCommander : RedHandCommander say "43av25" ;
+
+~5
+
+? alive RedHandCommander : RedHandCommander say "43av26" ;
+
+exit

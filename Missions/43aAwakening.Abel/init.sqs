@@ -1,24 +1,57 @@
 titleCut ["","BLACK IN", 2]
 
-aP removeWeapon "AK74"
-aP removeMagazine "AK74"
-aP removeMagazine "AK74"
-aP removeMagazine "AK74"
-aP removeMagazine "AK74"
-aP removeMagazine "HandGrenade"
-aP removeMagazine "HandGrenade"
-aP removeMagazine "HandGrenade"
-aP removeMagazine "HandGrenade"
+player removeWeapon "AK74"
+player removeMagazine "AK74"
+player removeMagazine "AK74"
+player removeMagazine "AK74"
+player removeMagazine "AK74"
+player removeMagazine "HandGrenade"
+player removeMagazine "HandGrenade"
+player removeMagazine "HandGrenade"
+player removeMagazine "HandGrenade"
 
-aP addMagazine "SmokeShell"
+player addMagazine "SmokeShell"
+
+RedHandCommando = [RedHandCommander, RedHandSoldier1, RedHandSoldier2, RedHandSoldier3, RedHandSoldier4, RedHandSoldier5]
+
+RedHandSoldier1 removeMagazine "HandGrenade"
+RedHandSoldier1 removeMagazine "HandGrenade"
+RedHandSoldier1 removeMagazine "HandGrenade"
+RedHandSoldier1 removeMagazine "HandGrenade"
+RedHandSoldier1 removeMagazine "HandGrenade"
+RedHandSoldier1 removeMagazine "HandGrenade"
+
+RedHandSoldier3 removeMagazine "HandGrenade"
+RedHandSoldier3 removeMagazine "HandGrenade"
+RedHandSoldier3 removeMagazine "HandGrenade"
+RedHandSoldier3 removeMagazine "HandGrenade"
+RedHandSoldier3 removeMagazine "HandGrenade"
+RedHandSoldier3 removeMagazine "HandGrenade"
+
+RedHandSoldier1 setUnitPos "UP"
+RedHandSoldier3 setUnitPos "UP"
+
+RedHandCommander removeWeapon "Binocular"
+
+churchDone=false
+churchFirefight=false
+churchPlayerRevealed=false
+churchCountdown=false
+ChurchFirstWave=false
+ChurchSecondWave=false
+ChurchThirdWave=false
 
 
 
-
+"Camp" setMarkerType "Empty"
+"Enemy2" setMarkerType "Empty"
+"EnemyAttack2" setMarkerType "Empty"
 
 
 ~0.5
 
+
+[] exec "church_init.sqs"
 
 
 Yashin switchMove "StandDyingVer2"
