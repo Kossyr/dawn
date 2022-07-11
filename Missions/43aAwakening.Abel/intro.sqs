@@ -63,7 +63,7 @@ _camera camCommit 9
 _camera camSetTarget [97361.30,37503.20,-11614.20]
 _camera camSetPos [4335.04,2743.64,8.47]
 _camera camSetFOV 0.700
-_camera camCommit 4
+_camera camCommit 5.5
 @camCommitted _camera
 
 ;=== 10:58:39
@@ -139,6 +139,8 @@ _camera camCommit 5
 ~3
 Yashin doWatch [4370.16,2765.50,1.65]
 @camCommitted _camera
+
+1 fadeMusic 0.5
 
 ~1
 
@@ -251,10 +253,15 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
+0 fadeMusic 0.3
+playMusic "ColdWarDawn"
+
 Rashiv setMimic "Sad"
 Yashin say "43av07"
 
-~2.5
+~3.5
+
+1 fadeMusic 0.7
 
 Yashin setMimic "Normal"
 Yashin doWatch [4327.52,2732.74,2.21]
@@ -340,6 +347,13 @@ RedHandSoldier2 setPos getMarkerPos "RedHandSoldier2"
 RedHandSoldier3 setPos getMarkerPos "RedHandSoldier3"
 RedHandSoldier4 setPos getMarkerPos "RedHandSoldier4"
 RedHandSoldier5 setPos getMarkerPos "RedHandSoldier5"
+
+unassignVehicle RedHandCommander
+unassignVehicle RedHandSoldier1
+unassignVehicle RedHandSoldier2
+unassignVehicle RedHandSoldier3
+unassignVehicle RedHandSoldier4
+unassignVehicle RedHandSoldier5
 
 
 RedHandSoldier1 doWatch [4342.50,2754.73,1.42]
@@ -459,6 +473,9 @@ _camera camSetPos [4342.16,2747.62,1.47]
 _camera camSetFOV 0.700
 _camera camCommit 2
 @camCommitted _camera
+
+0.5 fadeMusic 0
+
 ~0.5
 
 titleText["","PLAIN"]
@@ -475,6 +492,7 @@ Yashin setDammage 1
 RedHandCommander setMimic "Angry"
 
 playMusic "RTrack4"
+0 fadeMusic 1
 
 ~0.5
 
@@ -507,6 +525,8 @@ _camera camSetPos [4340.69,2743.61,1.46]
 _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
+
+0.5 fadeMusic 0.6
 
 ~0.5
 
