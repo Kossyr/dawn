@@ -2254,7 +2254,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=79;
+		items=83;
 		class Item0
 		{
 			position[]={7077.480469,37.914341,7433.312988};
@@ -2780,10 +2780,34 @@ class Mission
 			name="farmstead_uazg";
 			type="Empty";
 		};
+		class Item79
+		{
+			position[]={6956.291016,106.608185,5974.559082};
+			name="chotain_astier2_out";
+			type="Empty";
+		};
+		class Item80
+		{
+			position[]={6973.025391,107.583733,5984.974609};
+			name="chotain_res1_out";
+			type="Empty";
+		};
+		class Item81
+		{
+			position[]={6992.576660,107.918060,5996.990723};
+			name="chotain_res2_out";
+			type="Empty";
+		};
+		class Item82
+		{
+			position[]={7052.589355,108.044998,5988.354492};
+			name="test";
+			type="Flag";
+		};
 	};
 	class Sensors
 	{
-		items=41;
+		items=43;
 		class Item0
 		{
 			position[]={6055.311035,188.096863,6989.253906};
@@ -3106,7 +3130,7 @@ class Mission
 		};
 		class Item23
 		{
-			position[]={6381.368164,72.598389,5669.547852};
+			position[]={6341.160156,72.849724,5692.952637};
 			a=100.000000;
 			b=40.000000;
 			angle=120.000000;
@@ -3193,9 +3217,9 @@ class Mission
 			position[]={7425.787109,1.793249,6350.663086};
 			a=0.000000;
 			b=0.000000;
-			timeoutMin=35.000000;
-			timeoutMid=35.000000;
-			timeoutMax=35.000000;
+			timeoutMin=40.000000;
+			timeoutMid=40.000000;
+			timeoutMax=40.000000;
 			interruptable=1;
 			age="UNKNOWN";
 			text="CHURCH COUNTDOWN";
@@ -3210,9 +3234,9 @@ class Mission
 			position[]={7493.902832,1.793249,6346.479492};
 			a=0.000000;
 			b=0.000000;
-			timeoutMin=60.000000;
-			timeoutMid=60.000000;
-			timeoutMax=60.000000;
+			timeoutMin=70.000000;
+			timeoutMid=70.000000;
+			timeoutMax=70.000000;
 			interruptable=1;
 			age="UNKNOWN";
 			text="CHURCH COUNTDOWN";
@@ -3227,9 +3251,9 @@ class Mission
 			position[]={7559.180664,1.793249,6348.571777};
 			a=0.000000;
 			b=0.000000;
-			timeoutMin=80.000000;
-			timeoutMid=80.000000;
-			timeoutMax=80.000000;
+			timeoutMin=95.000000;
+			timeoutMid=95.000000;
+			timeoutMax=95.000000;
 			interruptable=1;
 			age="UNKNOWN";
 			text="CHURCH COUNTDOWN";
@@ -3365,6 +3389,38 @@ class Mission
 			text="AWAY - KILL";
 			expCond="this and alive player and not cinema";
 			expActiv="player setDammage 1";
+			class Effects
+			{
+			};
+		};
+		class Item41
+		{
+			position[]={6949.011230,109.938286,6092.967773};
+			a=0.000000;
+			b=0.000000;
+			timeoutMin=160.000000;
+			timeoutMid=160.000000;
+			timeoutMax=160.000000;
+			age="UNKNOWN";
+			text="COUNTDOWN TO LET THEM TRY TO GET OUT OF CHOTAIN";
+			expCond="chotainCountdown";
+			expActiv="player exec ""chotain_skip.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item42
+		{
+			position[]={7071.780273,108.044998,6030.440430};
+			a=70.000000;
+			b=80.000000;
+			angle=41.752602;
+			rectangular=1;
+			activationBy="GUER";
+			repeating=1;
+			age="UNKNOWN";
+			text="ChotainArea";
+			name="ChotainArea";
 			class Effects
 			{
 			};
