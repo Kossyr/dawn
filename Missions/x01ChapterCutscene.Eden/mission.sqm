@@ -363,7 +363,6 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="res2";
-					init="this setUnitPos ""up""";
 				};
 			};
 		};
@@ -383,7 +382,6 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="res3";
-					init="this setUnitPos ""up""";
 				};
 			};
 		};
@@ -447,7 +445,6 @@ class Intro
 					leader=1;
 					skill=0.600000;
 					text="res1";
-					init="this setUnitPos ""up""";
 				};
 			};
 		};
@@ -585,7 +582,7 @@ class Intro
 	};
 	class Sensors
 	{
-		items=3;
+		items=2;
 		class Item0
 		{
 			position[]={7935.736328,1.793249,10378.800781};
@@ -610,18 +607,6 @@ class Intro
 			{
 			};
 			synchronizations[]={0};
-		};
-		class Item2
-		{
-			position[]={6398.900879,71.060211,5476.725586};
-			a=0.000000;
-			b=0.000000;
-			age="UNKNOWN";
-			expCond="not alive Daladier";
-			expActiv="res1 setBehaviour ""CARELESS""; res2 setBehaviour ""CARELESS""; res3 setBehaviour ""CARELESS""; res1 setUnitPos ""auto""; res2 setUnitPos ""auto""; res3 setUnitPos ""auto""; res1 action [""WEAPONONBACK""]; res2 action [""WEAPONONBACK""]; res3 action [""WEAPONONBACK""]";
-			class Effects
-			{
-			};
 		};
 	};
 };

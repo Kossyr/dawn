@@ -27,6 +27,13 @@ res2 reveal Daladier
 res3 reveal Daladier
 
 Astier disableAI "AUTOTARGET"
+Astier disableAI "TARGET"
+
+Poincare disableAI "AUTOTARGET"
+Poincare disableAI "TARGET"
+
+Calvet disableAI "AUTOTARGET"
+Calvet disableAI "TARGET"
 
 ~2
 
@@ -167,10 +174,7 @@ Astier say "x01v07"
 Astier doWatch objNull
 playMusic ["Track16", 10]
 astierLeave=true
-Daladier addRating -50000
-res1 reveal Daladier
-res2 reveal Daladier
-res3 reveal Daladier
+[] exec "intro_execution.sqs"
 ;=== 12:24:05
 _camera camSetTarget [-65767.85,-63612.75,-4210.41]
 _camera camSetPos [6383.83,5494.44,1.50]
@@ -191,9 +195,6 @@ Calvet doWatch Astier
 Astier doWatch [6397.21,5650.83,2.00]
 Poincare doWatch [6385.24,5496.10,1.61]
 Calvet doWatch [6385.24,5496.10,1.61]
-res1 doWatch [6385.24,5496.10,1.61]
-res2 doWatch [6385.24,5496.10,1.61]
-res3 doWatch [6385.24,5496.10,1.61]
 
 ;=== 12:28:06
 _camera camSetTarget [-22799.41,100835.97,-7528.78]
@@ -220,6 +221,8 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 ~5
+Astier setPos getMarkerPos "astier_pos"
+Astier setDir 5
 ;=== 12:29:35
 _camera camSetTarget [-7704.70,104496.25,-351.03]
 _camera camSetPos [6385.68,5494.81,1.53]

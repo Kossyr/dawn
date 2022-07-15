@@ -1,0 +1,62 @@
+
+res1 reveal Daladier
+res2 reveal Daladier
+res3 reveal Daladier
+
+res1 setBehaviour "COMBAT"
+res1 setUnitPos "UP"
+
+res2 setBehaviour "COMBAT"
+res2 setUnitPos "UP"
+
+res3 setBehaviour "COMBAT"
+res3 setUnitPos "UP"
+
+Daladier addRating -50000
+res1 reveal Daladier
+res2 reveal Daladier
+res3 reveal Daladier
+
+@(not alive Daladier)
+
+~1
+
+res1 removeMagazine "AK47"
+res1 removeMagazine "AK47"
+res1 removeMagazine "AK47"
+res1 removeMagazine "AK47"
+res1 removeMagazine "AK47"
+res1 removeMagazine "AK47"
+
+res2 removeMagazine "AK47"
+res2 removeMagazine "AK47"
+res2 removeMagazine "AK47"
+res2 removeMagazine "AK47"
+res2 removeMagazine "AK47"
+res2 removeMagazine "AK47"
+
+res3 removeMagazine "AK47"
+res3 removeMagazine "AK47"
+res3 removeMagazine "AK47"
+res3 removeMagazine "AK47"
+res3 removeMagazine "AK47"
+res3 removeMagazine "AK47"
+
+~0.5
+
+res1 setBehaviour "CARELESS"
+res2 setBehaviour "CARELESS"
+res3 setBehaviour "CARELESS"
+
+res1 setUnitPos "AUTO"
+res2 setUnitPos "AUTO"
+res3 setUnitPos "AUTO"
+
+~1.5
+
+
+res1 doWatch [6385.24,5496.10,1.61]
+res2 doWatch [6385.24,5496.10,1.61]
+res3 doWatch [6385.24,5496.10,1.61]
+
+exit
