@@ -4012,7 +4012,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=31;
+		items=33;
 		class Item0
 		{
 			position[]={5665.873047,104.397011,6153.527832};
@@ -4160,7 +4160,7 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={6418.283203,71.335045,5527.606934};
+			position[]={6413.696289,71.334015,5531.046875};
 			a=0.000000;
 			b=0.000000;
 			type="SWITCH";
@@ -4273,7 +4273,7 @@ class Mission
 			a=150.000000;
 			b=30.000000;
 			rectangular=1;
-			activationBy="VEHICLE";
+			activationBy="LEADER";
 			type="SWITCH";
 			age="UNKNOWN";
 			idVehicle=0;
@@ -4445,7 +4445,7 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="(not canmove b1 or not canfire b1) and (not canmove b2 or not canfire b2)";
+			expCond="not alive b1 and not alive b2";
 			expActiv="amTanks setcombatMode ""Blue""";
 			class Effects
 			{
@@ -4460,6 +4460,38 @@ class Mission
 			text="TELL US YOU ARE ALONE";
 			expCond="player == leader anton and tanksShowDone";
 			expActiv="[] exec ""last.sqs""";
+			class Effects
+			{
+			};
+		};
+		class Item31
+		{
+			position[]={6443.252441,67.746353,4715.429688};
+			a=0.000000;
+			b=0.000000;
+			timeoutMin=2.000000;
+			timeoutMid=2.000000;
+			timeoutMax=2.000000;
+			age="UNKNOWN";
+			text="DESTROY THE TANK IF CAN'T FIGHT";
+			expCond="not canMove b1 or not canFire b1";
+			expActiv="b1 setDammage 1";
+			class Effects
+			{
+			};
+		};
+		class Item32
+		{
+			position[]={6443.252441,59.326958,4676.817871};
+			a=0.000000;
+			b=0.000000;
+			timeoutMin=2.000000;
+			timeoutMid=2.000000;
+			timeoutMax=2.000000;
+			age="UNKNOWN";
+			text="DESTROY THE TANK IF CAN'T FIGHT";
+			expCond="not canMove b2 or not canFire b2";
+			expActiv="b2 setDammage 1";
 			class Effects
 			{
 			};
