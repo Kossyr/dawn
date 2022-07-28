@@ -1,0 +1,43 @@
+
+CampAttackersSW1=true
+[] exec "camp_grenades.sqs"
+
+~1.5
+
+[[0,1.25,-0.5],0.1,0,CampCar] exec "fireEffect.sqs"
+CampCar setDammage 1
+
+[] exec "camp_smokes.sqs"
+
+~1
+
+
+[[0,0,0],0.05,0,CampAmmoCrate1] exec "fireEffect.sqs"
+[[0,0,0],0.1,0,CampAmmoCrate2] exec "fireEffect.sqs"
+CampAmmoCrate1 setDammage 1
+CampAmmoCrate2 setDammage 1
+
+enableRadio true
+
+~1.5
+
+setAccTime 1
+
+RashivCaller1 sideRadio "43ar01"
+player sideRadio "43ar02"
+
+[] exec "camp_red_smoke.sqs"
+
+
+campUniformsCountdown=true
+campDefendersSW1=true
+
+
+
+~16
+
+player say "43av35"
+
+campDefendersSW2=true
+
+exit

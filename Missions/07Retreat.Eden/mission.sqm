@@ -1520,7 +1520,6 @@ class Mission
 				class Item5
 				{
 					position[]={7666.969238,140.074783,4487.705078};
-					combatMode="GREEN";
 					class Effects
 					{
 					};
@@ -1529,6 +1528,7 @@ class Mission
 				class Item6
 				{
 					position[]={8739.471680,102.655365,2925.538574};
+					combatMode="BLUE";
 					class Effects
 					{
 					};
@@ -4445,8 +4445,8 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			expCond="not alive b1 and not alive b2";
-			expActiv="amTanks setcombatMode ""Blue""";
+			expCond="(not canMove b1 or not canFire b1) and (not canMove b2 or not canFire b2)";
+			expActiv="amTanks setcombatMode ""BLUE""";
 			class Effects
 			{
 			};

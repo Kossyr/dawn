@@ -1,0 +1,20 @@
+
+_grenade = "Grenade"
+_grenades = [GrenadeSpot1, GrenadeSpot2, GrenadeSpot3, GrenadeSpot4, GrenadeSpot5, GrenadeSpot6]
+
+_i = 0
+_amount = count _grenades
+
+#loop
+
+_randomInterval = random 2
+
+~_randomInterval
+
+_grenade camCreate getPos (_grenades select _i)
+
+_i = _i + 1
+
+? _i < _amount : goto "loop" ;
+
+exit
